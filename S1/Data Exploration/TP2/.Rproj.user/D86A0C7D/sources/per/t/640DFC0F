@@ -1,0 +1,32 @@
+{
+    "id": "640DFC0F",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1664872954070.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "expression": "Commandes",
+        "caption": "Commandes",
+        "totalObservations": 6,
+        "displayedObservations": 6,
+        "variables": 2,
+        "cacheKey": "61FC87EB",
+        "object": "Commandes",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=Commandes&cache_key=61FC87EB&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 94006402719632,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1664872954070,
+    "read_only": false,
+    "read_only_alternatives": []
+}

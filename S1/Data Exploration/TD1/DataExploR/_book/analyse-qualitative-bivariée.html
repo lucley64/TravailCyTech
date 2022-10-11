@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7 Analyse qualitative bivariée | Analyse exploratoire des données</title>
+  <meta name="description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7 Analyse qualitative bivariée | Analyse exploratoire des données" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7 Analyse qualitative bivariée | Analyse exploratoire des données" />
+  
+  <meta name="twitter:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+<meta name="author" content="Astrid Jourdan, Karima El Ganaoui, Romain Dujol" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analyse-qualitative-univariée.html"/>
+<link rel="next" href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="dataExploration.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><div style="display:inline">
+      <a style="display:inline;vertical-align:baseline" href="https://www.eisti.fr" target="blank">
+        <img src="cytech-st_logo.jpg" height="30"/>
+      </a>
+      <span style="opacity:1;display:inline;vertical-align:40%"><em>Ingénieur 1ère année</em></span>
+    </div>
+    <div style="text-align:center">
+      <p><strong>Analyse exploratoire des données</strong></p>
+    </div>
+</li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#terminologie-générale"><i class="fa fa-check"></i><b>1.1</b> Terminologie générale</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#contextes"><i class="fa fa-check"></i><b>1.1.1</b> Contextes</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#échantillonages"><i class="fa fa-check"></i><b>1.1.2</b> Échantillonages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#typologie-des-variables"><i class="fa fa-check"></i><b>1.2</b> Typologie des variables</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#variables-qualitatives"><i class="fa fa-check"></i><b>1.2.1</b> Variables qualitatives</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#variables-qualitatives-1"><i class="fa fa-check"></i><b>1.2.2</b> Variables qualitatives</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#conversion-entre-les-différents-types-de-variables"><i class="fa fa-check"></i><b>1.3</b> Conversion entre les différents types de variables</a></li>
+</ul></li>
+<li class="part"><span><b>I Exploration de données quantitatives</b></span></li>
+<li class="chapter" data-level="2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html"><i class="fa fa-check"></i><b>2</b> Analyse quantitative univariée</a><ul>
+<li class="chapter" data-level="" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#représentation-graphique-histogramme"><i class="fa fa-check"></i>Représentation graphique : histogramme</a></li>
+<li class="chapter" data-level="2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-position"><i class="fa fa-check"></i><b>2.1</b> Indicateurs de position</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#moyenne"><i class="fa fa-check"></i><b>2.1.1</b> Moyenne</a></li>
+<li class="chapter" data-level="2.1.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#quantiles"><i class="fa fa-check"></i><b>2.1.2</b> Quantiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-dispersion"><i class="fa fa-check"></i><b>2.2</b> Indicateurs de dispersion</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#étendue"><i class="fa fa-check"></i><b>2.2.1</b> Étendue</a></li>
+<li class="chapter" data-level="2.2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#écart-inter-quartile"><i class="fa fa-check"></i><b>2.2.2</b> Écart inter-quartile</a></li>
+<li class="chapter" data-level="2.2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#variance.-écart-type"><i class="fa fa-check"></i><b>2.2.3</b> Variance. Écart-type</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#autres-indicateurs"><i class="fa fa-check"></i><b>2.3</b> Autres indicateurs</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-dasymétrie"><i class="fa fa-check"></i><b>2.3.1</b> Coefficient d’asymétrie</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-daplatissement-ou-kurtosis"><i class="fa fa-check"></i><b>2.3.2</b> Coefficient d’aplatissement (ou <em>kurtosis</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html"><i class="fa fa-check"></i><b>3</b> Analyse quantitative bivariée</a><ul>
+<li class="chapter" data-level="3.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance.-coefficient-de-corrélation"><i class="fa fa-check"></i><b>3.1</b> Covariance. Coefficient de corrélation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance"><i class="fa fa-check"></i><b>3.1.1</b> Covariance</a></li>
+<li class="chapter" data-level="3.1.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#coefficient-de-corrélation-linéaire"><i class="fa fa-check"></i><b>3.1.2</b> Coefficient de corrélation linéaire</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régression-linéaire"><i class="fa fa-check"></i><b>3.2</b> Régression linéaire</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#calcul-du-modèle"><i class="fa fa-check"></i><b>3.2.1</b> Calcul du modèle</a></li>
+<li class="chapter" data-level="3.2.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#analyse-du-modèle"><i class="fa fa-check"></i><b>3.2.2</b> Analyse du modèle</a></li>
+<li class="chapter" data-level="3.2.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#validation-du-modèle"><i class="fa fa-check"></i><b>3.2.3</b> Validation du modèle</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régressions-non-linéaires"><i class="fa fa-check"></i><b>3.3</b> Régressions non-linéaires</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><i class="fa fa-check"></i><b>4</b> Analyse quantitative multivariée : analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>4.1</b> Formulation mathématique</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#matrice-de-variance-covariance"><i class="fa fa-check"></i><b>4.1.1</b> Matrice de variance-covariance</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#composantes-principales"><i class="fa fa-check"></i><b>4.1.2</b> Composantes principales</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#premières-interprétations"><i class="fa fa-check"></i><b>4.1.3</b> Premières interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>4.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>4.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="4.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>4.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#limites-de-lanalyse-en-composantes-principales"><i class="fa fa-check"></i><b>4.3</b> Limites de l’analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-des-composantes-principales"><i class="fa fa-check"></i><b>4.3.1</b> Qualité des composantes principales</a></li>
+<li class="chapter" data-level="4.3.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable"><i class="fa fa-check"></i><b>4.3.2</b> Qualité de réprésentation d’une variable</a></li>
+<li class="chapter" data-level="4.3.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable-1"><i class="fa fa-check"></i><b>4.3.3</b> Qualité de réprésentation d’une variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html"><i class="fa fa-check"></i><b>5</b> Partitionnement de données</a><ul>
+<li class="chapter" data-level="5.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#analyse-de-la-problématique"><i class="fa fa-check"></i><b>5.1</b> Analyse de la problématique</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#distances"><i class="fa fa-check"></i><b>5.1.1</b> Distances</a></li>
+<li class="chapter" data-level="5.1.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#inertias"><i class="fa fa-check"></i><b>5.1.2</b> Inerties</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#algorithmes"><i class="fa fa-check"></i><b>5.2</b> Algorithmes</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#k-moyennes"><i class="fa fa-check"></i><b>5.2.1</b> <span class="math inline">\(k\)</span>-moyennes</a></li>
+<li class="chapter" data-level="5.2.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#classification-hiérarchique-ascendante"><i class="fa fa-check"></i><b>5.2.2</b> Classification hiérarchique ascendante</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#conclusion"><i class="fa fa-check"></i><b>5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="part"><span><b>II Exploration de données qualitatives</b></span></li>
+<li class="chapter" data-level="6" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html"><i class="fa fa-check"></i><b>6</b> Analyse qualitative univariée</a><ul>
+<li class="chapter" data-level="6.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#terminologie"><i class="fa fa-check"></i><b>6.1</b> Terminologie</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#effectifs.-fréquences"><i class="fa fa-check"></i><b>6.1.1</b> Effectifs. Fréquences</a></li>
+<li class="chapter" data-level="6.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>6.1.2</b> Représentations graphiques</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#indicateurs"><i class="fa fa-check"></i><b>6.2</b> Indicateurs</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#mode"><i class="fa fa-check"></i><b>6.2.1</b> Mode</a></li>
+<li class="chapter" data-level="6.2.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#moyenne-des-variables-dichotomiques-binaires"><i class="fa fa-check"></i><b>6.2.2</b> Moyenne des variables dichotomiques binaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html"><i class="fa fa-check"></i><b>7</b> Analyse qualitative bivariée</a><ul>
+<li class="chapter" data-level="7.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>7.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-contingences"><i class="fa fa-check"></i><b>7.1.1</b> Tableau des contingences</a></li>
+<li class="chapter" data-level="7.1.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-fréquences"><i class="fa fa-check"></i><b>7.1.2</b> Tableau des fréquences</a></li>
+<li class="chapter" data-level="7.1.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#profils-ligne.-profils-colonne"><i class="fa fa-check"></i><b>7.1.3</b> Profils ligne. Profils colonne</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tests-dindépendance"><i class="fa fa-check"></i><b>7.2</b> Tests d’indépendance</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#fréquences-conjointes-théoriques-en-cas-dindépendance"><i class="fa fa-check"></i><b>7.2.1</b> Fréquences conjointes théoriques en cas d’indépendance</a></li>
+<li class="chapter" data-level="7.2.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#test-du-chi2"><i class="fa fa-check"></i><b>7.2.2</b> Test du <span class="math inline">\(\chi^2\)</span></a></li>
+<li class="chapter" data-level="7.2.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#coefficient-de-cramer"><i class="fa fa-check"></i><b>7.2.3</b> Coefficient de Cramer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><i class="fa fa-check"></i><b>8</b> Analyse qualitative multivariée : analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="8.1" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#analyse-des-correspondances-multiples"><i class="fa fa-check"></i><b>8.1</b> Analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>8.1.1</b> Formulation mathématique</a></li>
+<li class="chapter" data-level="8.1.2" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#justification-et-interprétations"><i class="fa fa-check"></i><b>8.1.2</b> Justification et interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>8.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>8.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="8.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>8.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#limites-de-lanalyse-factorielle-des-correspondances"><i class="fa fa-check"></i><b>8.3</b> Limites de l’analyse factorielle des correspondances</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="règles-dassociation.html"><a href="règles-dassociation.html"><i class="fa fa-check"></i><b>9</b> Règles d’association</a><ul>
+<li class="chapter" data-level="9.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>9.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="règles-dassociation.html"><a href="règles-dassociation.html#support"><i class="fa fa-check"></i><b>9.1.1</b> Support</a></li>
+<li class="chapter" data-level="9.1.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#confiance"><i class="fa fa-check"></i><b>9.1.2</b> Confiance</a></li>
+<li class="chapter" data-level="9.1.3" data-path="règles-dassociation.html"><a href="règles-dassociation.html#amélioration-ou-lift"><i class="fa fa-check"></i><b>9.1.3</b> Amélioration (ou <em>lift</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#algorithme-de-construction-de-règles"><i class="fa fa-check"></i><b>9.2</b> Algorithme de construction de règles</a></li>
+</ul></li>
+<li class="part"><span><b>III Exploration de données mixtes</b></span></li>
+<li class="chapter" data-level="10" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html"><i class="fa fa-check"></i><b>10</b> Analyse mixte bivariée</a><ul>
+<li class="chapter" data-level="10.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>10.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#variances"><i class="fa fa-check"></i><b>10.1.1</b> Variances</a></li>
+<li class="chapter" data-level="10.1.2" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#rapport-de-corrélation"><i class="fa fa-check"></i><b>10.1.2</b> Rapport de corrélation</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li>
+   <div style="text-align:center">
+     <p><strong>A. Jourdan, K. El Ganaoui, R. Dujol</strong></p>
+     <p><a href="https://github.com/rstudio/bookdown" target="blank"><em>Published with bookdown</em></a></p>
+   </div>
+</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analyse exploratoire des données</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analyse-qualitative-bivariée" class="section level1">
+<h1><span class="header-section-number">7</span> Analyse qualitative bivariée</h1>
+<p>Dans ce chapitre, on considère :</p>
+<ul>
+<li>un corpus de données de <span class="math inline">\(N\)</span> individus ;</li>
+<li>deux variables qualitatives <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> sur ce corpus de données.</li>
+</ul>
+<p>Pour tout entier <span class="math inline">\(i\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(N\)</span>, on note respectivement <span class="math inline">\(x_i\)</span> et <span class="math inline">\(y_i\)</span> la valeur des variables <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> pour le <span class="math inline">\(i\)</span>-ème individu.</p>
+<div id="outils-danalyse" class="section level2">
+<h2><span class="header-section-number">7.1</span> Outils d’analyse</h2>
+<div id="tableau-des-contingences" class="section level3">
+<h3><span class="header-section-number">7.1.1</span> Tableau des contingences</h3>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-1" class="definition"><strong>Définition 7.1  </strong></span>Soit <span class="math inline">\(x\)</span> une modalité de <span class="math inline">\(X\)</span> et <span class="math inline">\(y\)</span> une modalité de <span class="math inline">\(Y\)</span>.</p>
+L’<strong>effectif conjoint de <span class="math inline">\((x,y)\)</span></strong> est le nombre d’invididus dont la valeur de <span class="math inline">\(X\)</span> est <span class="math inline">\(x\)</span> <strong>ET</strong> la valeur de <span class="math inline">\(Y\)</span> est <span class="math inline">\(y\)</span>, c’est-à-dire <span class="math display">\[\operatorname{card}\{i \in \{1, \ldots, N\},\: x_i = x \text{ et } y_i = y\}\]</span>
+</div>
+
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-2" class="definition"><strong>Définition 7.2  </strong></span>Le <strong>tableau des contingences de <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span></strong> est un tableau à double entrée avec :</p>
+<ul>
+<li>en ligne, les modalités de <span class="math inline">\(X\)</span> ;</li>
+<li>en colonne, les modalités de <span class="math inline">\(Y\)</span>.</li>
+</ul>
+<p>tel que chaque case contienne l’effectif conjoint de <span class="math inline">\((x,y)\)</span> où :</p>
+<ul>
+<li><span class="math inline">\(x\)</span> est la modalité dans la ligne correspondante ;</li>
+<li><span class="math inline">\(y\)</span> est la modalité dans la colonne correspondante.
+</div></li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer le tableau des contingences de deux variables qualitatives</strong></p>
+<p>On utilise la fonction <code>table</code> :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="analyse-qualitative-bivariée.html#cb1-1"></a><span class="kw">table</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale)</span>
+<span id="cb1-2"><a href="analyse-qualitative-bivariée.html#cb1-2"></a>   </span>
+<span id="cb1-3"><a href="analyse-qualitative-bivariée.html#cb1-3"></a>    Bleu Rouge Vert</span>
+<span id="cb1-4"><a href="analyse-qualitative-bivariée.html#cb1-4"></a>  <span class="dv">1</span>    <span class="dv">2</span>     <span class="dv">3</span>    <span class="dv">0</span></span>
+<span id="cb1-5"><a href="analyse-qualitative-bivariée.html#cb1-5"></a>  <span class="dv">2</span>    <span class="dv">2</span>     <span class="dv">3</span>    <span class="dv">3</span></span>
+<span id="cb1-6"><a href="analyse-qualitative-bivariée.html#cb1-6"></a>  <span class="dv">3</span>    <span class="dv">4</span>     <span class="dv">4</span>    <span class="dv">1</span></span>
+<span id="cb1-7"><a href="analyse-qualitative-bivariée.html#cb1-7"></a>  <span class="dv">4</span>    <span class="dv">3</span>     <span class="dv">3</span>    <span class="dv">2</span></span></code></pre></div>
+<p>L’option <code>useNA</code> spécifie comment traiter les valeurs manquantes <code>NA</code> :</p>
+<ul>
+<li><code>no</code> ne tient pas compte des valeurs manquantes dans le calcul ;</li>
+<li><code>ifany</code> tient compte des valeurs manquantes dans le calcul, <em>s’il y en a</em> ;</li>
+<li><code>always</code> tient compte des valeurs manquantes dans le calcul même s’il n’y en a pas.</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="analyse-qualitative-bivariée.html#cb2-1"></a><span class="kw">table</span>(data<span class="op">$</span>Nominale, data<span class="op">$</span>Dichotomique, <span class="dt">useNA =</span> <span class="st">&quot;no&quot;</span>)</span>
+<span id="cb2-2"><a href="analyse-qualitative-bivariée.html#cb2-2"></a>       </span>
+<span id="cb2-3"><a href="analyse-qualitative-bivariée.html#cb2-3"></a>        Non Oui</span>
+<span id="cb2-4"><a href="analyse-qualitative-bivariée.html#cb2-4"></a>  Bleu    <span class="dv">3</span>   <span class="dv">8</span></span>
+<span id="cb2-5"><a href="analyse-qualitative-bivariée.html#cb2-5"></a>  Rouge   <span class="dv">8</span>   <span class="dv">3</span></span>
+<span id="cb2-6"><a href="analyse-qualitative-bivariée.html#cb2-6"></a>  Vert    <span class="dv">2</span>   <span class="dv">4</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="analyse-qualitative-bivariée.html#cb3-1"></a><span class="kw">table</span>(data<span class="op">$</span>Nominale, data<span class="op">$</span>Dichotomique, <span class="dt">useNA =</span> <span class="st">&quot;ifany&quot;</span>)</span>
+<span id="cb3-2"><a href="analyse-qualitative-bivariée.html#cb3-2"></a>       </span>
+<span id="cb3-3"><a href="analyse-qualitative-bivariée.html#cb3-3"></a>        Non Oui <span class="op">&lt;</span><span class="ot">NA</span><span class="op">&gt;</span></span>
+<span id="cb3-4"><a href="analyse-qualitative-bivariée.html#cb3-4"></a><span class="st">  </span>Bleu    <span class="dv">3</span>   <span class="dv">8</span>    <span class="dv">0</span></span>
+<span id="cb3-5"><a href="analyse-qualitative-bivariée.html#cb3-5"></a>  Rouge   <span class="dv">8</span>   <span class="dv">3</span>    <span class="dv">2</span></span>
+<span id="cb3-6"><a href="analyse-qualitative-bivariée.html#cb3-6"></a>  Vert    <span class="dv">2</span>   <span class="dv">4</span>    <span class="dv">0</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="analyse-qualitative-bivariée.html#cb4-1"></a><span class="kw">table</span>(data<span class="op">$</span>Nominale, data<span class="op">$</span>Dichotomique, <span class="dt">useNA =</span> <span class="st">&quot;always&quot;</span>)</span>
+<span id="cb4-2"><a href="analyse-qualitative-bivariée.html#cb4-2"></a>       </span>
+<span id="cb4-3"><a href="analyse-qualitative-bivariée.html#cb4-3"></a>        Non Oui <span class="op">&lt;</span><span class="ot">NA</span><span class="op">&gt;</span></span>
+<span id="cb4-4"><a href="analyse-qualitative-bivariée.html#cb4-4"></a><span class="st">  </span>Bleu    <span class="dv">3</span>   <span class="dv">8</span>    <span class="dv">0</span></span>
+<span id="cb4-5"><a href="analyse-qualitative-bivariée.html#cb4-5"></a>  Rouge   <span class="dv">8</span>   <span class="dv">3</span>    <span class="dv">2</span></span>
+<span id="cb4-6"><a href="analyse-qualitative-bivariée.html#cb4-6"></a>  Vert    <span class="dv">2</span>   <span class="dv">4</span>    <span class="dv">0</span></span>
+<span id="cb4-7"><a href="analyse-qualitative-bivariée.html#cb4-7"></a>  <span class="op">&lt;</span><span class="ot">NA</span><span class="op">&gt;</span><span class="st">    </span><span class="dv">0</span>   <span class="dv">0</span>    <span class="dv">0</span></span></code></pre></div>
+</blockquote>
+
+<div class="definition">
+<span id="def:unnamed-chunk-3" class="definition"><strong>Définition 7.3  </strong></span>L’effectif d’une modalité de <span class="math inline">\(X\)</span> ou <span class="math inline">\(Y\)</span> est dit <strong>effectif marginal</strong>.
+</div>
+
+<blockquote>
+<p><strong>En R : Ajouter les effectifs marginaux au tableeau des contingences de deux variables qualitatives</strong></p>
+<p>On utilise la fonction <code>addmargins</code> :</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="analyse-qualitative-bivariée.html#cb5-1"></a><span class="kw">addmargins</span>(<span class="kw">table</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale))</span>
+<span id="cb5-2"><a href="analyse-qualitative-bivariée.html#cb5-2"></a>     </span>
+<span id="cb5-3"><a href="analyse-qualitative-bivariée.html#cb5-3"></a>      Bleu Rouge Vert Sum</span>
+<span id="cb5-4"><a href="analyse-qualitative-bivariée.html#cb5-4"></a>  <span class="dv">1</span>      <span class="dv">2</span>     <span class="dv">3</span>    <span class="dv">0</span>   <span class="dv">5</span></span>
+<span id="cb5-5"><a href="analyse-qualitative-bivariée.html#cb5-5"></a>  <span class="dv">2</span>      <span class="dv">2</span>     <span class="dv">3</span>    <span class="dv">3</span>   <span class="dv">8</span></span>
+<span id="cb5-6"><a href="analyse-qualitative-bivariée.html#cb5-6"></a>  <span class="dv">3</span>      <span class="dv">4</span>     <span class="dv">4</span>    <span class="dv">1</span>   <span class="dv">9</span></span>
+<span id="cb5-7"><a href="analyse-qualitative-bivariée.html#cb5-7"></a>  <span class="dv">4</span>      <span class="dv">3</span>     <span class="dv">3</span>    <span class="dv">2</span>   <span class="dv">8</span></span>
+<span id="cb5-8"><a href="analyse-qualitative-bivariée.html#cb5-8"></a>  Sum   <span class="dv">11</span>    <span class="dv">13</span>    <span class="dv">6</span>  <span class="dv">30</span></span></code></pre></div>
+</blockquote>
+</div>
+<div id="tableau-des-fréquences" class="section level3">
+<h3><span class="header-section-number">7.1.2</span> Tableau des fréquences</h3>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-4" class="definition"><strong>Définition 7.4  </strong></span>Soit <span class="math inline">\(x\)</span> une modalité de <span class="math inline">\(X\)</span> et <span class="math inline">\(y\)</span> une modalité de <span class="math inline">\(Y\)</span>.</p>
+La <strong>fréquence conjointe de <span class="math inline">\((x,y)\)</span></strong> est la proportion d’invididus dont la valeur de <span class="math inline">\(X\)</span> est <span class="math inline">\(x\)</span> <strong>ET</strong> la valeur de <span class="math inline">\(Y\)</span> est <span class="math inline">\(y\)</span>, c’est-à-dire <span class="math display">\[\dfrac{\operatorname{card}\{i \in \{1, \ldots, N\},\: x_i = x \text{ et } y_i = y\}}{N}\]</span>
+</div>
+
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-5" class="definition"><strong>Définition 7.5  </strong></span>Le <strong>tableau des fréquences de <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span></strong> est un tableau à double entrée avec :</p>
+<ul>
+<li>en ligne, les modalités de <span class="math inline">\(X\)</span> ;</li>
+<li>en colonne, les modalités de <span class="math inline">\(Y\)</span>.</li>
+</ul>
+<p>tel que chaque case contienne la fréquence conjointe de <span class="math inline">\((x,y)\)</span> où :</p>
+<ul>
+<li><span class="math inline">\(x\)</span> est la modalité dans la ligne correspondante ;</li>
+<li><span class="math inline">\(y\)</span> est la modalité dans la colonne correspondante.
+</div></li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer le tableau des fréquences de deux variables qualitatives</strong></p>
+<p>On applique la fonction <code>prop.table</code> au résultat de <code>table</code> :</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="analyse-qualitative-bivariée.html#cb6-1"></a><span class="kw">prop.table</span>(<span class="kw">table</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale))</span>
+<span id="cb6-2"><a href="analyse-qualitative-bivariée.html#cb6-2"></a>   </span>
+<span id="cb6-3"><a href="analyse-qualitative-bivariée.html#cb6-3"></a>          Bleu      Rouge       Vert</span>
+<span id="cb6-4"><a href="analyse-qualitative-bivariée.html#cb6-4"></a>  <span class="dv">1</span> <span class="fl">0.06666667</span> <span class="fl">0.10000000</span> <span class="fl">0.00000000</span></span>
+<span id="cb6-5"><a href="analyse-qualitative-bivariée.html#cb6-5"></a>  <span class="dv">2</span> <span class="fl">0.06666667</span> <span class="fl">0.10000000</span> <span class="fl">0.10000000</span></span>
+<span id="cb6-6"><a href="analyse-qualitative-bivariée.html#cb6-6"></a>  <span class="dv">3</span> <span class="fl">0.13333333</span> <span class="fl">0.13333333</span> <span class="fl">0.03333333</span></span>
+<span id="cb6-7"><a href="analyse-qualitative-bivariée.html#cb6-7"></a>  <span class="dv">4</span> <span class="fl">0.10000000</span> <span class="fl">0.10000000</span> <span class="fl">0.06666667</span></span></code></pre></div>
+</blockquote>
+
+<div class="definition">
+<span id="def:unnamed-chunk-6" class="definition"><strong>Définition 7.6  </strong></span>La fréquence d’une modalité de <span class="math inline">\(X\)</span> ou <span class="math inline">\(Y\)</span> est dite <strong>fréquence marginale</strong>.
+</div>
+
+<blockquote>
+<p><strong>En R : Ajouter les fréquences marginales au tableau des fréquences de deux variables qualitatives</strong></p>
+<p>On utilise la fonction <code>addmargins</code> :</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="analyse-qualitative-bivariée.html#cb7-1"></a><span class="kw">addmargins</span>(<span class="kw">prop.table</span>(<span class="kw">table</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale)))</span>
+<span id="cb7-2"><a href="analyse-qualitative-bivariée.html#cb7-2"></a>     </span>
+<span id="cb7-3"><a href="analyse-qualitative-bivariée.html#cb7-3"></a>            Bleu      Rouge       Vert        Sum</span>
+<span id="cb7-4"><a href="analyse-qualitative-bivariée.html#cb7-4"></a>  <span class="dv">1</span>   <span class="fl">0.06666667</span> <span class="fl">0.10000000</span> <span class="fl">0.00000000</span> <span class="fl">0.16666667</span></span>
+<span id="cb7-5"><a href="analyse-qualitative-bivariée.html#cb7-5"></a>  <span class="dv">2</span>   <span class="fl">0.06666667</span> <span class="fl">0.10000000</span> <span class="fl">0.10000000</span> <span class="fl">0.26666667</span></span>
+<span id="cb7-6"><a href="analyse-qualitative-bivariée.html#cb7-6"></a>  <span class="dv">3</span>   <span class="fl">0.13333333</span> <span class="fl">0.13333333</span> <span class="fl">0.03333333</span> <span class="fl">0.30000000</span></span>
+<span id="cb7-7"><a href="analyse-qualitative-bivariée.html#cb7-7"></a>  <span class="dv">4</span>   <span class="fl">0.10000000</span> <span class="fl">0.10000000</span> <span class="fl">0.06666667</span> <span class="fl">0.26666667</span></span>
+<span id="cb7-8"><a href="analyse-qualitative-bivariée.html#cb7-8"></a>  Sum <span class="fl">0.36666667</span> <span class="fl">0.43333333</span> <span class="fl">0.20000000</span> <span class="fl">1.00000000</span></span></code></pre></div>
+</blockquote>
+</div>
+<div id="profils-ligne.-profils-colonne" class="section level3">
+<h3><span class="header-section-number">7.1.3</span> Profils ligne. Profils colonne</h3>
+<div id="profils-ligne" class="section level4">
+<h4><span class="header-section-number">7.1.3.1</span> Profils ligne</h4>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-7" class="definition"><strong>Définition 7.7  </strong></span>Soit <span class="math inline">\(x\)</span> une modalité de <span class="math inline">\(X\)</span>.</p>
+Le <strong>profil ligne</strong> de <span class="math inline">\(x\)</span> est l’ensemble des fréquences des modalités de <span class="math inline">\(Y\)</span> dans le sous-ensemble des individus dont la valeur de <span class="math inline">\(X\)</span> est <span class="math inline">\(x\)</span>.
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-8" class="proposition"><strong>Proposition 7.1  </strong></span>La moyenne des profils ligne des modalités de <span class="math inline">\(X\)</span> pondérée par leurs effectifs respectifs est l’ensemble des fréquences de <span class="math inline">\(Y\)</span>.
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer les profils ligne de deux variables qualititatives</strong></p>
+<p>On utilise la fonction <code>sweep</code> :</p>
+<ul>
+<li><code>MARGIN</code> spécifie la dimension selon laquelle sont faits les calculs :
+<ul>
+<li><code>MARGIN = 1</code> indique que les calculs sont faits par ligne ;</li>
+<li><code>MARGIN = 2</code> indique que les calculs sont faits par colonne ;</li>
+</ul></li>
+<li><code>STATS</code> spécifie pour chaque ligne/colonne la valeur utilisée comme second membre de <code>FUN</code> ;</li>
+<li><code>FUN</code> spécifie la fonction à appliquer pour chaque valeur de la ligne/colonne ;</li>
+</ul>
+<p>ainsi que la fonction <code>rowSums</code> qui calcule la somme des éléments de chaque ligne :</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="analyse-qualitative-bivariée.html#cb8-1"></a>contingences &lt;-<span class="st"> </span><span class="kw">table</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale)</span>
+<span id="cb8-2"><a href="analyse-qualitative-bivariée.html#cb8-2"></a><span class="kw">sweep</span>(contingences, <span class="dt">MARGIN =</span> <span class="dv">1</span>, <span class="dt">STATS =</span> <span class="kw">rowSums</span>(contingences), <span class="dt">FUN =</span> <span class="st">&quot;/&quot;</span>)</span>
+<span id="cb8-3"><a href="analyse-qualitative-bivariée.html#cb8-3"></a>   </span>
+<span id="cb8-4"><a href="analyse-qualitative-bivariée.html#cb8-4"></a>         Bleu     Rouge      Vert</span>
+<span id="cb8-5"><a href="analyse-qualitative-bivariée.html#cb8-5"></a>  <span class="dv">1</span> <span class="fl">0.4000000</span> <span class="fl">0.6000000</span> <span class="fl">0.0000000</span></span>
+<span id="cb8-6"><a href="analyse-qualitative-bivariée.html#cb8-6"></a>  <span class="dv">2</span> <span class="fl">0.2500000</span> <span class="fl">0.3750000</span> <span class="fl">0.3750000</span></span>
+<span id="cb8-7"><a href="analyse-qualitative-bivariée.html#cb8-7"></a>  <span class="dv">3</span> <span class="fl">0.4444444</span> <span class="fl">0.4444444</span> <span class="fl">0.1111111</span></span>
+<span id="cb8-8"><a href="analyse-qualitative-bivariée.html#cb8-8"></a>  <span class="dv">4</span> <span class="fl">0.3750000</span> <span class="fl">0.3750000</span> <span class="fl">0.2500000</span></span></code></pre></div>
+</blockquote>
+<p>On réprésente les profils ligne à l’aide de diagramme en bâtons empilés pour chaque modalité de <span class="math inline">\(X\)</span>.</p>
+<blockquote>
+<p><strong>En R : Représenter les profils ligne de deux variables qualitatives</strong></p>
+<p>On utilise la fonction <code>barplot</code> :</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="analyse-qualitative-bivariée.html#cb9-1"></a>profils.ligne &lt;-<span class="st"> </span><span class="kw">sweep</span>(contingences, <span class="dt">MARGIN =</span> <span class="dv">1</span>,</span>
+<span id="cb9-2"><a href="analyse-qualitative-bivariée.html#cb9-2"></a>                       <span class="dt">STATS =</span> <span class="kw">rowSums</span>(contingences), <span class="dt">FUN =</span> <span class="st">&quot;/&quot;</span>)</span>
+<span id="cb9-3"><a href="analyse-qualitative-bivariée.html#cb9-3"></a><span class="co"># Ajout du profil ligne moyen</span></span>
+<span id="cb9-4"><a href="analyse-qualitative-bivariée.html#cb9-4"></a>profils.ligne &lt;-<span class="st"> </span><span class="kw">rbind</span>(profils.ligne, <span class="dt">Moyen =</span> <span class="kw">prop.table</span>(<span class="kw">table</span>(data<span class="op">$</span>Nominale)))</span>
+<span id="cb9-5"><a href="analyse-qualitative-bivariée.html#cb9-5"></a><span class="kw">barplot</span>(<span class="kw">t</span>(<span class="kw">as.matrix</span>(profils.ligne)),</span>
+<span id="cb9-6"><a href="analyse-qualitative-bivariée.html#cb9-6"></a>        <span class="dt">main =</span> <span class="st">&quot;Profils ligne (i.e. selon Nominale)&quot;</span>,</span>
+<span id="cb9-7"><a href="analyse-qualitative-bivariée.html#cb9-7"></a>        <span class="dt">xlab =</span> <span class="st">&quot;Modalité&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Fréquence&quot;</span>,</span>
+<span id="cb9-8"><a href="analyse-qualitative-bivariée.html#cb9-8"></a>        <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>, <span class="st">&quot;red&quot;</span>, <span class="st">&quot;green&quot;</span>), <span class="dt">legend.text =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualibi_rowprofilesplot-1.png" width="672" /></p>
+</blockquote>
+<p>Lorsque les profils ligne sont proches du profil ligne moyen, cela suggère qu’il y a peu de lien entre les deux variables.</p>
+</div>
+<div id="profils-colonne" class="section level4">
+<h4><span class="header-section-number">7.1.3.2</span> Profils colonne</h4>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-9" class="definition"><strong>Définition 7.8  </strong></span>Soit <span class="math inline">\(y\)</span> une modalité de <span class="math inline">\(Y\)</span>.</p>
+Le <strong>profil colonne</strong> de <span class="math inline">\(y\)</span> est l’ensemble des fréquences des modalités de <span class="math inline">\(X\)</span> dans le sous-ensemble des individus dont la valeur de <span class="math inline">\(Y\)</span> est <span class="math inline">\(y\)</span>.
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-10" class="proposition"><strong>Proposition 7.2  </strong></span>La moyenne des profils colonne des modalités de <span class="math inline">\(Y\)</span> pondérée par leurs effectifs respectifs est l’ensemble des fréquences de <span class="math inline">\(X\)</span>.
+</div>
+
+<p>```</p>
+<blockquote>
+<p><strong>En R : Calculer les profils colonne de deux variables qualititatives</strong></p>
+<p>On utilise la fonction <code>sweep</code> ainsi que la fonction <code>colSums</code> qui calcule la somme des éléments de chaque colonne :</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="analyse-qualitative-bivariée.html#cb10-1"></a>contingences &lt;-<span class="st"> </span><span class="kw">table</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale)</span>
+<span id="cb10-2"><a href="analyse-qualitative-bivariée.html#cb10-2"></a><span class="kw">sweep</span>(contingences, <span class="dt">MARGIN =</span> <span class="dv">2</span>, <span class="dt">STATS =</span> <span class="kw">colSums</span>(contingences), <span class="dt">FUN =</span> <span class="st">&quot;/&quot;</span>)</span>
+<span id="cb10-3"><a href="analyse-qualitative-bivariée.html#cb10-3"></a>   </span>
+<span id="cb10-4"><a href="analyse-qualitative-bivariée.html#cb10-4"></a>         Bleu     Rouge      Vert</span>
+<span id="cb10-5"><a href="analyse-qualitative-bivariée.html#cb10-5"></a>  <span class="dv">1</span> <span class="fl">0.1818182</span> <span class="fl">0.2307692</span> <span class="fl">0.0000000</span></span>
+<span id="cb10-6"><a href="analyse-qualitative-bivariée.html#cb10-6"></a>  <span class="dv">2</span> <span class="fl">0.1818182</span> <span class="fl">0.2307692</span> <span class="fl">0.5000000</span></span>
+<span id="cb10-7"><a href="analyse-qualitative-bivariée.html#cb10-7"></a>  <span class="dv">3</span> <span class="fl">0.3636364</span> <span class="fl">0.3076923</span> <span class="fl">0.1666667</span></span>
+<span id="cb10-8"><a href="analyse-qualitative-bivariée.html#cb10-8"></a>  <span class="dv">4</span> <span class="fl">0.2727273</span> <span class="fl">0.2307692</span> <span class="fl">0.3333333</span></span></code></pre></div>
+</blockquote>
+<p>On réprésente les profils colonnes à l’aide de diagramme en bâtons empilés pour chaque modalité de <span class="math inline">\(Y\)</span>.</p>
+<blockquote>
+<p><strong>En R : Représenter les profils ligne de deux variables qualitatives</strong></p>
+<p>On utilise la fonction <code>barplot</code> :</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="analyse-qualitative-bivariée.html#cb11-1"></a>profils.colonne &lt;-<span class="st"> </span><span class="kw">sweep</span>(contingences, <span class="dt">MARGIN =</span> <span class="dv">2</span>,</span>
+<span id="cb11-2"><a href="analyse-qualitative-bivariée.html#cb11-2"></a>                         <span class="dt">STATS =</span> <span class="kw">colSums</span>(contingences), <span class="dt">FUN =</span> <span class="st">&quot;/&quot;</span>)</span>
+<span id="cb11-3"><a href="analyse-qualitative-bivariée.html#cb11-3"></a><span class="co"># Ajout du profil colonne moyen</span></span>
+<span id="cb11-4"><a href="analyse-qualitative-bivariée.html#cb11-4"></a>profils.colonne &lt;-<span class="st"> </span><span class="kw">cbind</span>(profils.colonne, <span class="dt">Moyen =</span> <span class="kw">prop.table</span>(<span class="kw">table</span>(data<span class="op">$</span>Ordinale)))</span>
+<span id="cb11-5"><a href="analyse-qualitative-bivariée.html#cb11-5"></a><span class="kw">barplot</span>(<span class="kw">as.matrix</span>(profils.colonne),</span>
+<span id="cb11-6"><a href="analyse-qualitative-bivariée.html#cb11-6"></a>        <span class="dt">main =</span> <span class="st">&quot;Profils colonne (i.e. selon Ordinale)&quot;</span>,</span>
+<span id="cb11-7"><a href="analyse-qualitative-bivariée.html#cb11-7"></a>        <span class="dt">xlab =</span> <span class="st">&quot;Modalité&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Fréquence&quot;</span>,</span>
+<span id="cb11-8"><a href="analyse-qualitative-bivariée.html#cb11-8"></a>        <span class="dt">legend.text =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualibi_colprofilesplot-1.png" width="672" /></p>
+</blockquote>
+<p>Lorsque les profils colonne sont proches du profil colonne moyen, cela suggère qu’il y a peu de lien entre les deux variables.</p>
+</div>
+</div>
+</div>
+<div id="tests-dindépendance" class="section level2">
+<h2><span class="header-section-number">7.2</span> Tests d’indépendance</h2>
+<p>La comparaison entre les profils et leur profil moyen constitue un test visuel d’indépendance.</p>
+<p>Il s’agit de mettre en place des tests numériques en comparant les fréquences conjointes observées aux fréquences conjointes théoriques en cas d’indépendance</p>
+<div id="fréquences-conjointes-théoriques-en-cas-dindépendance" class="section level3">
+<h3><span class="header-section-number">7.2.1</span> Fréquences conjointes théoriques en cas d’indépendance</h3>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-11" class="theorem"><strong>Théorème 7.1  </strong></span>Les variables <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> sont totalement indépendantes si et seulement si :</p>
+<ul>
+<li>tout profil ligne est égal au profil ligue moyen ;</li>
+<li><strong>ET</strong> tout profil colonne est égal au profil colonne moyen.</li>
+</ul>
+</div>
+
+
+<div class="corollary">
+<span id="cor:unnamed-chunk-12" class="corollary"><strong>Corollaire 7.1  </strong></span>Les variables <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> sont totalement indépendantes si et seulement si, pour toute modalité <span class="math inline">\(x\)</span> de <span class="math inline">\(X\)</span> et toute modalité de <span class="math inline">\(Y\)</span>, la fréquence conjointe de <span class="math inline">\((x,y)\)</span> est égale au produit des fréquences marginales de <span class="math inline">\(x\)</span> et de <span class="math inline">\(y\)</span>.
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer le tableau des fréquences conjointes théoriques en cas d’indépendance</strong></p>
+<p>On effectue un produit matriciel (<code>%*%</code>) des fréquences marginales :</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="analyse-qualitative-bivariée.html#cb12-1"></a><span class="kw">prop.table</span>(<span class="kw">table</span>(data<span class="op">$</span>Ordinale)) <span class="op">%*%</span><span class="st"> </span><span class="kw">t</span>(<span class="kw">prop.table</span>(<span class="kw">table</span>(data<span class="op">$</span>Nominale))) </span>
+<span id="cb12-2"><a href="analyse-qualitative-bivariée.html#cb12-2"></a>   </span>
+<span id="cb12-3"><a href="analyse-qualitative-bivariée.html#cb12-3"></a>          Bleu      Rouge       Vert</span>
+<span id="cb12-4"><a href="analyse-qualitative-bivariée.html#cb12-4"></a>  <span class="dv">1</span> <span class="fl">0.06111111</span> <span class="fl">0.07222222</span> <span class="fl">0.03333333</span></span>
+<span id="cb12-5"><a href="analyse-qualitative-bivariée.html#cb12-5"></a>  <span class="dv">2</span> <span class="fl">0.09777778</span> <span class="fl">0.11555556</span> <span class="fl">0.05333333</span></span>
+<span id="cb12-6"><a href="analyse-qualitative-bivariée.html#cb12-6"></a>  <span class="dv">3</span> <span class="fl">0.11000000</span> <span class="fl">0.13000000</span> <span class="fl">0.06000000</span></span>
+<span id="cb12-7"><a href="analyse-qualitative-bivariée.html#cb12-7"></a>  <span class="dv">4</span> <span class="fl">0.09777778</span> <span class="fl">0.11555556</span> <span class="fl">0.05333333</span></span></code></pre></div>
+<p><code>t</code> est l’opérateur de transposition matricielle.</p>
+</blockquote>
+</div>
+<div id="test-du-chi2" class="section level3">
+<h3><span class="header-section-number">7.2.2</span> Test du <span class="math inline">\(\chi^2\)</span></h3>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-13" class="definition"><strong>Définition 7.9  </strong></span>On définit la <strong>distance du <span class="math inline">\(\chi^2\)</span></strong> entre <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> par
+<span class="math inline">\(\displaystyle\sum_{x,y} \dfrac{\left(n_{x,y} - n_{x,y}^0\right)^2}{n_{x,y}^0}\)</span> où, pour toute modalité <span class="math inline">\(x\)</span> de <span class="math inline">\(X\)</span> et toute modalité <span class="math inline">\(y\)</span> de <span class="math inline">\(Y\)</span> :</p>
+<ul>
+<li><span class="math inline">\(n_{x,y}\)</span> est l’effectif conjoint de <span class="math inline">\((x,y)\)</span> ;</li>
+<li><span class="math inline">\(n_{x,y}^0\)</span> est l’effectif conjoint de <span class="math inline">\((x,y)\)</span> en cas d’indépendance.</li>
+</ul>
+<em>(La somme est effectuée sur toutes les modalités possibles.)</em>
+</div>
+
+
+<div class="proposition">
+<p><span id="prp:chisq" class="proposition"><strong>Proposition 7.3  </strong></span>La distance du <span class="math inline">\(\chi^2\)</span> s’écrit également
+<span class="math inline">\(N \cdot \displaystyle\sum_{x,y} \dfrac{\left(f_{x,y} - f_{x,y}^0\right)^2}{f_{x,y}^0}\)</span> où, pour toute modalité <span class="math inline">\(x\)</span> de <span class="math inline">\(X\)</span> et toute modalité <span class="math inline">\(y\)</span> de <span class="math inline">\(Y\)</span> :</p>
+<ul>
+<li><span class="math inline">\(f_{x,y}\)</span> est la fréquence conjointe de <span class="math inline">\((x,y)\)</span> ;</li>
+<li><span class="math inline">\(f_{x,y}^0\)</span> est la fréquence conjointe de <span class="math inline">\((x,y)\)</span> en cas d’indépendance.</li>
+</ul>
+<em>(La somme est effectuée sur toutes les modalités possibles.)</em>
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer la distance du <span class="math inline">\(\chi^2\)</span> de deux variables qualitatives</strong></p>
+<p>On utilise l’expression avec les fréquences et on réutilise le calcul des fréquences théoriques en cas d’indépendance pour créer la fonction <code>dist.chisq</code> :</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="analyse-qualitative-bivariée.html#cb13-1"></a>dist.chisq &lt;-<span class="st"> </span><span class="cf">function</span>(x, y)</span>
+<span id="cb13-2"><a href="analyse-qualitative-bivariée.html#cb13-2"></a>  {</span>
+<span id="cb13-3"><a href="analyse-qualitative-bivariée.html#cb13-3"></a>    freqs &lt;-<span class="st"> </span><span class="kw">prop.table</span>(<span class="kw">table</span>(x, y))</span>
+<span id="cb13-4"><a href="analyse-qualitative-bivariée.html#cb13-4"></a>    freqs.nodep &lt;-<span class="st"> </span><span class="kw">prop.table</span>(<span class="kw">table</span>(x)) <span class="op">%*%</span><span class="st"> </span><span class="kw">t</span>(<span class="kw">prop.table</span>(<span class="kw">table</span>(y)))</span>
+<span id="cb13-5"><a href="analyse-qualitative-bivariée.html#cb13-5"></a>    <span class="kw">length</span>(x) <span class="op">*</span><span class="st"> </span><span class="kw">sum</span>((freqs <span class="op">-</span><span class="st"> </span>freqs.nodep)<span class="op">^</span><span class="dv">2</span> <span class="op">/</span><span class="st"> </span>freqs.nodep)</span>
+<span id="cb13-6"><a href="analyse-qualitative-bivariée.html#cb13-6"></a>  }</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="analyse-qualitative-bivariée.html#cb14-1"></a><span class="kw">dist.chisq</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale)</span>
+<span id="cb14-2"><a href="analyse-qualitative-bivariée.html#cb14-2"></a>[<span class="dv">1</span>] <span class="fl">3.591395</span></span></code></pre></div>
+</blockquote>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-14" class="definition"><strong>Définition 7.10  </strong></span>Le <strong>test d’indépendance du <span class="math inline">\(\chi^2\)</span></strong> est un test statistique qui consiste à comparer la distance du <span class="math inline">\(\chi^2\)</span> de <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> avec le seuil de la loi du <span class="math inline">\(\chi^2\)</span> à <span class="math inline">\((N_x - 1)(N_y - 1)\)</span> degrés de liberté avec un risque de <span class="math inline">\(5\%\)</span> où :</p>
+<ul>
+<li><span class="math inline">\(N_x\)</span> est le nombre de modalités de <span class="math inline">\(X\)</span> ;</li>
+<li><span class="math inline">\(N_y\)</span> est le nombre de modalités de <span class="math inline">\(Y\)</span>.</li>
+</ul>
+<p>Si la distance du <span class="math inline">\(\chi^2\)</span> dépasse le seuil correspondant, l’hypothèse d’indépendance est rejetée.</p>
+</div>
+
+<table>
+<caption><span id="tab:qualibi-distchisq-thresholds">Table 7.1: </span>Seuils de la loi du <span class="math inline">\(\chi^2\)</span> à <span class="math inline">\(k\)</span> degré de liberté avec un risque de <span class="math inline">\(5\%\)</span></caption>
+<thead>
+<tr class="header">
+<th align="right"><span class="math inline">\(k\)</span></th>
+<th align="right">Seuil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="right">3.84</td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="right">5.99</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">7.81</td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="right">9.49</td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="right">11.07</td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="right">12.59</td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="right">14.07</td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="right">15.51</td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="right">16.92</td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="right">18.31</td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="right">19.68</td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="right">21.03</td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="right">22.36</td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="right">23.68</td>
+</tr>
+<tr class="odd">
+<td align="right">15</td>
+<td align="right">25.00</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>En R : Appliquer le test du <span class="math inline">\(\chi^2\)</span> `a deux variables qualitatives</strong></p>
+<p>On réutilise la fonction <code>dist.chisq</code> définie précédemment ainsi que la fonction <code>qchisq</code> qui permet de calculer le seuil de la loi du <span class="math inline">\(\chi^2\)</span> :</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="analyse-qualitative-bivariée.html#cb15-1"></a>degres.liberte &lt;-<span class="st"> </span>(<span class="kw">nlevels</span>(data<span class="op">$</span>Ordinale) <span class="op">-</span><span class="st"> </span><span class="dv">1</span>) <span class="op">*</span><span class="st"> </span>(<span class="kw">nlevels</span>(data<span class="op">$</span>Nominale) <span class="op">-</span><span class="st"> </span><span class="dv">1</span>)</span>
+<span id="cb15-2"><a href="analyse-qualitative-bivariée.html#cb15-2"></a><span class="kw">dist.chisq</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale) <span class="op">&gt;</span><span class="st"> </span><span class="kw">qchisq</span>(<span class="fl">0.95</span>, degres.liberte)</span>
+<span id="cb15-3"><a href="analyse-qualitative-bivariée.html#cb15-3"></a>[<span class="dv">1</span>] <span class="ot">FALSE</span></span></code></pre></div>
+<p>Dans ce cas, l’hypothèse d’indépendance n’est pas rejetée.</p>
+</blockquote>
+</div>
+<div id="coefficient-de-cramer" class="section level3">
+<h3><span class="header-section-number">7.2.3</span> Coefficient de Cramer</h3>
+<p>L’expression de la distance du <span class="math inline">\(\chi^2\)</span> obtenue dans la proposition <a href="analyse-qualitative-bivariée.html#prp:chisq">7.3</a> indique que cette distance est <strong>directement proportionnelle au nombres d’individus <span class="math inline">\(N\)</span></strong>.</p>
+
+<div class="remark">
+<p> <span class="remark"><em>Remarque. </em></span> Soit <span class="math inline">\((X_1, Y_1)\)</span> et <span class="math inline">\((X_2, Y_2)\)</span> sont deux couples de variables qualitatives portant sur un corpus de données de <span class="math inline">\(N_1\)</span> et <span class="math inline">\(N_2\)</span> individus respectivement avec :</p>
+<ul>
+<li>le même nombre de modalités (donc le même seuil) ;</li>
+<li>les mêmes fréquences conjointes.</li>
+</ul>
+Alors les conditions de rejet de l’hypothèse d’indépendance sont différentes si <span class="math inline">\(N_1 \neq N_2\)</span>.
+</div>
+
+On présente une mesure indépendante du nombre d’individus :
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-16" class="definition"><strong>Définition 7.11  </strong></span>Le <strong>coefficient de Cramer de <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span></strong> est défini par <span class="math inline">\(\sqrt{\dfrac{\Delta}{N \cdot \min \{N_x - 1,\,N_y - 1\}}}\)</span> où :</p>
+<ul>
+<li><span class="math inline">\(\Delta\)</span> est la distance du <span class="math inline">\(\chi^2\)</span> de <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> ;</li>
+<li><span class="math inline">\(N_x\)</span> est le nombre de modalités de <span class="math inline">\(X\)</span> ;</li>
+<li><span class="math inline">\(N_y\)</span> est le nombre de modalités de <span class="math inline">\(Y\)</span>.</li>
+</ul>
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-17" class="proposition"><strong>Proposition 7.4  </strong></span>Le coefficient de Cramer de <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> est un réel de <span class="math inline">\([0,1]\)</span>.
+</div>
+
+<p>Le coefficient de Cramer permet de décrire la dépendance entre les variables <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> :</p>
+<ul>
+<li>une valeur nulle caractérise l’indépendance des variables <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> ;</li>
+<li>une valeur maximale caractérise une dépendance totale.</li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer le coefficient de Cramer de deux variables qualitatives</strong></p>
+<p>On utilise la fonction <code>dist.chisq</code> définie précédemment pour créer la fonction <code>cramer.phi</code> :</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="analyse-qualitative-bivariée.html#cb16-1"></a>cramer.phi &lt;-<span class="st"> </span><span class="cf">function</span>(x, y)</span>
+<span id="cb16-2"><a href="analyse-qualitative-bivariée.html#cb16-2"></a>  {</span>
+<span id="cb16-3"><a href="analyse-qualitative-bivariée.html#cb16-3"></a>    <span class="kw">sqrt</span>(<span class="kw">dist.chisq</span>(x, y) <span class="op">/</span><span class="st"> </span><span class="kw">length</span>(x) <span class="op">/</span><span class="st"> </span><span class="kw">min</span>(<span class="kw">nlevels</span>(x) <span class="op">-</span><span class="st"> </span><span class="dv">1</span>, <span class="kw">nlevels</span>(y) <span class="op">-</span><span class="st"> </span><span class="dv">1</span>))</span>
+<span id="cb16-4"><a href="analyse-qualitative-bivariée.html#cb16-4"></a>  }</span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="analyse-qualitative-bivariée.html#cb17-1"></a><span class="kw">cramer.phi</span>(data<span class="op">$</span>Ordinale, data<span class="op">$</span>Nominale)</span>
+<span id="cb17-2"><a href="analyse-qualitative-bivariée.html#cb17-2"></a>[<span class="dv">1</span>] <span class="fl">0.244656</span></span></code></pre></div>
+</blockquote>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analyse-qualitative-univariée.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

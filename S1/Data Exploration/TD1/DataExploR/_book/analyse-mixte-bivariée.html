@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>10 Analyse mixte bivariée | Analyse exploratoire des données</title>
+  <meta name="description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="10 Analyse mixte bivariée | Analyse exploratoire des données" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="10 Analyse mixte bivariée | Analyse exploratoire des données" />
+  
+  <meta name="twitter:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+<meta name="author" content="Astrid Jourdan, Karima El Ganaoui, Romain Dujol" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="règles-dassociation.html"/>
+<link rel="next" href="bibliographie.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="dataExploration.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><div style="display:inline">
+      <a style="display:inline;vertical-align:baseline" href="https://www.eisti.fr" target="blank">
+        <img src="cytech-st_logo.jpg" height="30"/>
+      </a>
+      <span style="opacity:1;display:inline;vertical-align:40%"><em>Ingénieur 1ère année</em></span>
+    </div>
+    <div style="text-align:center">
+      <p><strong>Analyse exploratoire des données</strong></p>
+    </div>
+</li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#terminologie-générale"><i class="fa fa-check"></i><b>1.1</b> Terminologie générale</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#contextes"><i class="fa fa-check"></i><b>1.1.1</b> Contextes</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#échantillonages"><i class="fa fa-check"></i><b>1.1.2</b> Échantillonages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#typologie-des-variables"><i class="fa fa-check"></i><b>1.2</b> Typologie des variables</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#variables-qualitatives"><i class="fa fa-check"></i><b>1.2.1</b> Variables qualitatives</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#variables-qualitatives-1"><i class="fa fa-check"></i><b>1.2.2</b> Variables qualitatives</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#conversion-entre-les-différents-types-de-variables"><i class="fa fa-check"></i><b>1.3</b> Conversion entre les différents types de variables</a></li>
+</ul></li>
+<li class="part"><span><b>I Exploration de données quantitatives</b></span></li>
+<li class="chapter" data-level="2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html"><i class="fa fa-check"></i><b>2</b> Analyse quantitative univariée</a><ul>
+<li class="chapter" data-level="" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#représentation-graphique-histogramme"><i class="fa fa-check"></i>Représentation graphique : histogramme</a></li>
+<li class="chapter" data-level="2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-position"><i class="fa fa-check"></i><b>2.1</b> Indicateurs de position</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#moyenne"><i class="fa fa-check"></i><b>2.1.1</b> Moyenne</a></li>
+<li class="chapter" data-level="2.1.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#quantiles"><i class="fa fa-check"></i><b>2.1.2</b> Quantiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-dispersion"><i class="fa fa-check"></i><b>2.2</b> Indicateurs de dispersion</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#étendue"><i class="fa fa-check"></i><b>2.2.1</b> Étendue</a></li>
+<li class="chapter" data-level="2.2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#écart-inter-quartile"><i class="fa fa-check"></i><b>2.2.2</b> Écart inter-quartile</a></li>
+<li class="chapter" data-level="2.2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#variance.-écart-type"><i class="fa fa-check"></i><b>2.2.3</b> Variance. Écart-type</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#autres-indicateurs"><i class="fa fa-check"></i><b>2.3</b> Autres indicateurs</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-dasymétrie"><i class="fa fa-check"></i><b>2.3.1</b> Coefficient d’asymétrie</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-daplatissement-ou-kurtosis"><i class="fa fa-check"></i><b>2.3.2</b> Coefficient d’aplatissement (ou <em>kurtosis</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html"><i class="fa fa-check"></i><b>3</b> Analyse quantitative bivariée</a><ul>
+<li class="chapter" data-level="3.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance.-coefficient-de-corrélation"><i class="fa fa-check"></i><b>3.1</b> Covariance. Coefficient de corrélation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance"><i class="fa fa-check"></i><b>3.1.1</b> Covariance</a></li>
+<li class="chapter" data-level="3.1.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#coefficient-de-corrélation-linéaire"><i class="fa fa-check"></i><b>3.1.2</b> Coefficient de corrélation linéaire</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régression-linéaire"><i class="fa fa-check"></i><b>3.2</b> Régression linéaire</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#calcul-du-modèle"><i class="fa fa-check"></i><b>3.2.1</b> Calcul du modèle</a></li>
+<li class="chapter" data-level="3.2.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#analyse-du-modèle"><i class="fa fa-check"></i><b>3.2.2</b> Analyse du modèle</a></li>
+<li class="chapter" data-level="3.2.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#validation-du-modèle"><i class="fa fa-check"></i><b>3.2.3</b> Validation du modèle</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régressions-non-linéaires"><i class="fa fa-check"></i><b>3.3</b> Régressions non-linéaires</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><i class="fa fa-check"></i><b>4</b> Analyse quantitative multivariée : analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>4.1</b> Formulation mathématique</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#matrice-de-variance-covariance"><i class="fa fa-check"></i><b>4.1.1</b> Matrice de variance-covariance</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#composantes-principales"><i class="fa fa-check"></i><b>4.1.2</b> Composantes principales</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#premières-interprétations"><i class="fa fa-check"></i><b>4.1.3</b> Premières interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>4.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>4.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="4.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>4.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#limites-de-lanalyse-en-composantes-principales"><i class="fa fa-check"></i><b>4.3</b> Limites de l’analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-des-composantes-principales"><i class="fa fa-check"></i><b>4.3.1</b> Qualité des composantes principales</a></li>
+<li class="chapter" data-level="4.3.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable"><i class="fa fa-check"></i><b>4.3.2</b> Qualité de réprésentation d’une variable</a></li>
+<li class="chapter" data-level="4.3.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable-1"><i class="fa fa-check"></i><b>4.3.3</b> Qualité de réprésentation d’une variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html"><i class="fa fa-check"></i><b>5</b> Partitionnement de données</a><ul>
+<li class="chapter" data-level="5.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#analyse-de-la-problématique"><i class="fa fa-check"></i><b>5.1</b> Analyse de la problématique</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#distances"><i class="fa fa-check"></i><b>5.1.1</b> Distances</a></li>
+<li class="chapter" data-level="5.1.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#inertias"><i class="fa fa-check"></i><b>5.1.2</b> Inerties</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#algorithmes"><i class="fa fa-check"></i><b>5.2</b> Algorithmes</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#k-moyennes"><i class="fa fa-check"></i><b>5.2.1</b> <span class="math inline">\(k\)</span>-moyennes</a></li>
+<li class="chapter" data-level="5.2.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#classification-hiérarchique-ascendante"><i class="fa fa-check"></i><b>5.2.2</b> Classification hiérarchique ascendante</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#conclusion"><i class="fa fa-check"></i><b>5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="part"><span><b>II Exploration de données qualitatives</b></span></li>
+<li class="chapter" data-level="6" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html"><i class="fa fa-check"></i><b>6</b> Analyse qualitative univariée</a><ul>
+<li class="chapter" data-level="6.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#terminologie"><i class="fa fa-check"></i><b>6.1</b> Terminologie</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#effectifs.-fréquences"><i class="fa fa-check"></i><b>6.1.1</b> Effectifs. Fréquences</a></li>
+<li class="chapter" data-level="6.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>6.1.2</b> Représentations graphiques</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#indicateurs"><i class="fa fa-check"></i><b>6.2</b> Indicateurs</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#mode"><i class="fa fa-check"></i><b>6.2.1</b> Mode</a></li>
+<li class="chapter" data-level="6.2.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#moyenne-des-variables-dichotomiques-binaires"><i class="fa fa-check"></i><b>6.2.2</b> Moyenne des variables dichotomiques binaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html"><i class="fa fa-check"></i><b>7</b> Analyse qualitative bivariée</a><ul>
+<li class="chapter" data-level="7.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>7.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-contingences"><i class="fa fa-check"></i><b>7.1.1</b> Tableau des contingences</a></li>
+<li class="chapter" data-level="7.1.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-fréquences"><i class="fa fa-check"></i><b>7.1.2</b> Tableau des fréquences</a></li>
+<li class="chapter" data-level="7.1.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#profils-ligne.-profils-colonne"><i class="fa fa-check"></i><b>7.1.3</b> Profils ligne. Profils colonne</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tests-dindépendance"><i class="fa fa-check"></i><b>7.2</b> Tests d’indépendance</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#fréquences-conjointes-théoriques-en-cas-dindépendance"><i class="fa fa-check"></i><b>7.2.1</b> Fréquences conjointes théoriques en cas d’indépendance</a></li>
+<li class="chapter" data-level="7.2.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#test-du-chi2"><i class="fa fa-check"></i><b>7.2.2</b> Test du <span class="math inline">\(\chi^2\)</span></a></li>
+<li class="chapter" data-level="7.2.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#coefficient-de-cramer"><i class="fa fa-check"></i><b>7.2.3</b> Coefficient de Cramer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><i class="fa fa-check"></i><b>8</b> Analyse qualitative multivariée : analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="8.1" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#analyse-des-correspondances-multiples"><i class="fa fa-check"></i><b>8.1</b> Analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>8.1.1</b> Formulation mathématique</a></li>
+<li class="chapter" data-level="8.1.2" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#justification-et-interprétations"><i class="fa fa-check"></i><b>8.1.2</b> Justification et interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>8.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>8.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="8.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>8.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#limites-de-lanalyse-factorielle-des-correspondances"><i class="fa fa-check"></i><b>8.3</b> Limites de l’analyse factorielle des correspondances</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="règles-dassociation.html"><a href="règles-dassociation.html"><i class="fa fa-check"></i><b>9</b> Règles d’association</a><ul>
+<li class="chapter" data-level="9.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>9.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="règles-dassociation.html"><a href="règles-dassociation.html#support"><i class="fa fa-check"></i><b>9.1.1</b> Support</a></li>
+<li class="chapter" data-level="9.1.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#confiance"><i class="fa fa-check"></i><b>9.1.2</b> Confiance</a></li>
+<li class="chapter" data-level="9.1.3" data-path="règles-dassociation.html"><a href="règles-dassociation.html#amélioration-ou-lift"><i class="fa fa-check"></i><b>9.1.3</b> Amélioration (ou <em>lift</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#algorithme-de-construction-de-règles"><i class="fa fa-check"></i><b>9.2</b> Algorithme de construction de règles</a></li>
+</ul></li>
+<li class="part"><span><b>III Exploration de données mixtes</b></span></li>
+<li class="chapter" data-level="10" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html"><i class="fa fa-check"></i><b>10</b> Analyse mixte bivariée</a><ul>
+<li class="chapter" data-level="10.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>10.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#variances"><i class="fa fa-check"></i><b>10.1.1</b> Variances</a></li>
+<li class="chapter" data-level="10.1.2" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#rapport-de-corrélation"><i class="fa fa-check"></i><b>10.1.2</b> Rapport de corrélation</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="bibliographie.html"><a href="bibliographie.html"><i class="fa fa-check"></i><b>11</b> Bibliographie</a></li>
+<li class="divider"></li>
+<li>
+   <div style="text-align:center">
+     <p><strong>A. Jourdan, K. El Ganaoui, R. Dujol</strong></p>
+     <p><a href="https://github.com/rstudio/bookdown" target="blank"><em>Published with bookdown</em></a></p>
+   </div>
+</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analyse exploratoire des données</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analyse-mixte-bivariée" class="section level1">
+<h1><span class="header-section-number">10</span> Analyse mixte bivariée</h1>
+<p>Dans ce chapitre, on considère :</p>
+<ul>
+<li>un corpus de données de <span class="math inline">\(N\)</span> individus ;</li>
+<li>une variable qualitative <span class="math inline">\(X\)</span> sur ce corpus de données ;</li>
+<li>une variable quantitative <span class="math inline">\(Y\)</span> sur ce corpus de données.</li>
+</ul>
+<p>Pour tout entier <span class="math inline">\(i\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(N\)</span>, on note respectivement <span class="math inline">\(x_i\)</span> et <span class="math inline">\(y_i\)</span> la valeur des variables <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> pour le <span class="math inline">\(i\)</span>-ème individu.</p>
+<div id="outils-danalyse" class="section level2">
+<h2><span class="header-section-number">10.1</span> Outils d’analyse</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-1" class="definition"><strong>Définition 10.1  </strong></span>Soit <span class="math inline">\(y\)</span> une modalité de <span class="math inline">\(Y\)</span>.<br />
+On définit :</p>
+<ul>
+<li>la <strong>sous-population associée à <span class="math inline">\(y\)</span></strong>, notée <span class="math inline">\(C_y\)</span>, comme l’ensemble des individus dont la valeur de <span class="math inline">\(Y\)</span> est <span class="math inline">\(y\)</span> : <span class="math inline">\(C_y = \{(x_i, y_i),\: y_i = y\}\)</span> ;</li>
+<li>la <strong>moyenne de la sous-population <span class="math inline">\(C_y\)</span></strong>, notée <span class="math inline">\(\bar{X_y}\)</span>, comme la moyenne des valeurs de <span class="math inline">\(X\)</span> pour les individus de <span class="math inline">\(C_y\)</span> : <span class="math inline">\(\bar{X_y} = \dfrac{1}{\operatorname{card} C_y} \displaystyle\sum_{(x, y) \in C_y} x\)</span> ;</li>
+<li>la <strong>variance de la sous-population <span class="math inline">\(C_y\)</span></strong>, notée <span class="math inline">\(s_y^2\)</span>, comme la variance des valeurs de <span class="math inline">\(X\)</span> pour les individus de <span class="math inline">\(C_y\)</span> : <span class="math inline">\(s_y^2 = \dfrac{1}{\operatorname{card} C_y} \displaystyle\sum_{(x, y) \in C_y} \left(x - \bar{X_y}\right)^2\)</span>.
+</div></li>
+</ul>
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-2" class="proposition"><strong>Proposition 10.1  </strong></span><span class="math inline">\(\bar{X} = \dfrac{1}{N} \displaystyle\sum_{y \in Y} (\operatorname{card} C_y) \cdot \bar{X_y}\)</span>
+</div>
+
+<div id="variances" class="section level3">
+<h3><span class="header-section-number">10.1.1</span> Variances</h3>
+<p>On reprend l’idée des inerties développées dans la section <a href="partitionnement-de-données.html#inertias">5.1.2</a>.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-3" class="definition"><strong>Définition 10.2  </strong></span>
+On définit :</p>
+<ul>
+<li>la <strong>variation intra</strong>, notée <span class="math inline">\(s_{X,\text{intra}}^2\)</span>, par <span class="math display">\[s_{X,\text{intra}}^2
+ = \dfrac{1}{N}\displaystyle\sum_{y \in Y} \left[\displaystyle\sum_{(x, y) \in C_y} \left(x - \bar{X_y}\right)^2\right]
+ = \dfrac{1}{N}\displaystyle\sum_{y \in Y} (\operatorname{card} C_y) \cdot s_y^2\]</span></li>
+<li>la <strong>variation inter-classes</strong>, notée <span class="math inline">\(s_{X,\text{inter}}^2\)</span>, par <span class="math inline">\(s_{X,\text{inter}}^2 = \dfrac{1}{N}\displaystyle\sum_{y \in Y} (\operatorname{card} C_k) \cdot \left(\bar{X_y} - \bar{X}\right)^2\)</span>.
+</div></li>
+</ul>
+
+<div class="remark">
+<p> <span class="remark"><em>Remarque. </em></span> Les expressions des variations inter et intra s’expliquent la manière suivante :</p>
+<ul>
+<li>la variation intra est obtenue en calculant la moyenne, pondérée par les effectifs, des variances des sous-populations ;</li>
+<li>la variation inter est obtenue en calculant la variance, pondérée par les effectifs, de l’ensemble des moyennes des sous-populations.
+</div></li>
+</ul>
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-5" class="proposition"><strong>Proposition 10.2  </strong></span><span class="math inline">\(s_X^2 = s_{X,\text{intra}}^2 + s_{X,\text{inter}}^2\)</span>
+</div>
+
+</div>
+<div id="rapport-de-corrélation" class="section level3">
+<h3><span class="header-section-number">10.1.2</span> Rapport de corrélation</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-6" class="definition"><strong>Définition 10.3  </strong></span>On définit le <strong>rapport de corrélation</strong> comme la valeur <span class="math inline">\(\dfrac{s_{X,\text{inter}}^2}{s_X^2}\)</span>.
+</div>
+
+
+<div class="remark">
+<p> <span class="remark"><em>Remarque. </em></span> Ce rapport de corrélation traduit le pourcentage de la variance de <span class="math inline">\(X\)</span> expliquée par <span class="math inline">\(Y\)</span> :</p>
+<ul>
+<li>si ce coefficient est nul, il n’y a aucun lien entre les deux variables ;</li>
+<li>si ce coefficient vaut un, alors <span class="math inline">\(X\)</span> est entièrement expliquée par <span class="math inline">\(Y\)</span>.
+</div></li>
+</ul>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="règles-dassociation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bibliographie.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

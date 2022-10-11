@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Analyse quantitative multivariée : analyse en composantes principales | Analyse exploratoire des données</title>
+  <meta name="description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Analyse quantitative multivariée : analyse en composantes principales | Analyse exploratoire des données" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Analyse quantitative multivariée : analyse en composantes principales | Analyse exploratoire des données" />
+  
+  <meta name="twitter:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+<meta name="author" content="Astrid Jourdan, Karima El Ganaoui, Romain Dujol" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analyse-quantitative-bivariée.html"/>
+<link rel="next" href="partitionnement-de-données.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="dataExploration.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><div style="display:inline">
+      <a style="display:inline;vertical-align:baseline" href="https://www.eisti.fr" target="blank">
+        <img src="cytech-st_logo.jpg" height="30"/>
+      </a>
+      <span style="opacity:1;display:inline;vertical-align:40%"><em>Ingénieur 1ère année</em></span>
+    </div>
+    <div style="text-align:center">
+      <p><strong>Analyse exploratoire des données</strong></p>
+    </div>
+</li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#terminologie-générale"><i class="fa fa-check"></i><b>1.1</b> Terminologie générale</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#contextes"><i class="fa fa-check"></i><b>1.1.1</b> Contextes</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#échantillonages"><i class="fa fa-check"></i><b>1.1.2</b> Échantillonages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#typologie-des-variables"><i class="fa fa-check"></i><b>1.2</b> Typologie des variables</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#variables-qualitatives"><i class="fa fa-check"></i><b>1.2.1</b> Variables qualitatives</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#variables-qualitatives-1"><i class="fa fa-check"></i><b>1.2.2</b> Variables qualitatives</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#conversion-entre-les-différents-types-de-variables"><i class="fa fa-check"></i><b>1.3</b> Conversion entre les différents types de variables</a></li>
+</ul></li>
+<li class="part"><span><b>I Exploration de données quantitatives</b></span></li>
+<li class="chapter" data-level="2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html"><i class="fa fa-check"></i><b>2</b> Analyse quantitative univariée</a><ul>
+<li class="chapter" data-level="" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#représentation-graphique-histogramme"><i class="fa fa-check"></i>Représentation graphique : histogramme</a></li>
+<li class="chapter" data-level="2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-position"><i class="fa fa-check"></i><b>2.1</b> Indicateurs de position</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#moyenne"><i class="fa fa-check"></i><b>2.1.1</b> Moyenne</a></li>
+<li class="chapter" data-level="2.1.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#quantiles"><i class="fa fa-check"></i><b>2.1.2</b> Quantiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-dispersion"><i class="fa fa-check"></i><b>2.2</b> Indicateurs de dispersion</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#étendue"><i class="fa fa-check"></i><b>2.2.1</b> Étendue</a></li>
+<li class="chapter" data-level="2.2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#écart-inter-quartile"><i class="fa fa-check"></i><b>2.2.2</b> Écart inter-quartile</a></li>
+<li class="chapter" data-level="2.2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#variance.-écart-type"><i class="fa fa-check"></i><b>2.2.3</b> Variance. Écart-type</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#autres-indicateurs"><i class="fa fa-check"></i><b>2.3</b> Autres indicateurs</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-dasymétrie"><i class="fa fa-check"></i><b>2.3.1</b> Coefficient d’asymétrie</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-daplatissement-ou-kurtosis"><i class="fa fa-check"></i><b>2.3.2</b> Coefficient d’aplatissement (ou <em>kurtosis</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html"><i class="fa fa-check"></i><b>3</b> Analyse quantitative bivariée</a><ul>
+<li class="chapter" data-level="3.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance.-coefficient-de-corrélation"><i class="fa fa-check"></i><b>3.1</b> Covariance. Coefficient de corrélation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance"><i class="fa fa-check"></i><b>3.1.1</b> Covariance</a></li>
+<li class="chapter" data-level="3.1.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#coefficient-de-corrélation-linéaire"><i class="fa fa-check"></i><b>3.1.2</b> Coefficient de corrélation linéaire</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régression-linéaire"><i class="fa fa-check"></i><b>3.2</b> Régression linéaire</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#calcul-du-modèle"><i class="fa fa-check"></i><b>3.2.1</b> Calcul du modèle</a></li>
+<li class="chapter" data-level="3.2.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#analyse-du-modèle"><i class="fa fa-check"></i><b>3.2.2</b> Analyse du modèle</a></li>
+<li class="chapter" data-level="3.2.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#validation-du-modèle"><i class="fa fa-check"></i><b>3.2.3</b> Validation du modèle</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régressions-non-linéaires"><i class="fa fa-check"></i><b>3.3</b> Régressions non-linéaires</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><i class="fa fa-check"></i><b>4</b> Analyse quantitative multivariée : analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>4.1</b> Formulation mathématique</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#matrice-de-variance-covariance"><i class="fa fa-check"></i><b>4.1.1</b> Matrice de variance-covariance</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#composantes-principales"><i class="fa fa-check"></i><b>4.1.2</b> Composantes principales</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#premières-interprétations"><i class="fa fa-check"></i><b>4.1.3</b> Premières interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>4.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>4.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="4.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>4.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#limites-de-lanalyse-en-composantes-principales"><i class="fa fa-check"></i><b>4.3</b> Limites de l’analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-des-composantes-principales"><i class="fa fa-check"></i><b>4.3.1</b> Qualité des composantes principales</a></li>
+<li class="chapter" data-level="4.3.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable"><i class="fa fa-check"></i><b>4.3.2</b> Qualité de réprésentation d’une variable</a></li>
+<li class="chapter" data-level="4.3.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable-1"><i class="fa fa-check"></i><b>4.3.3</b> Qualité de réprésentation d’une variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html"><i class="fa fa-check"></i><b>5</b> Partitionnement de données</a><ul>
+<li class="chapter" data-level="5.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#analyse-de-la-problématique"><i class="fa fa-check"></i><b>5.1</b> Analyse de la problématique</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#distances"><i class="fa fa-check"></i><b>5.1.1</b> Distances</a></li>
+<li class="chapter" data-level="5.1.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#inertias"><i class="fa fa-check"></i><b>5.1.2</b> Inerties</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#algorithmes"><i class="fa fa-check"></i><b>5.2</b> Algorithmes</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#k-moyennes"><i class="fa fa-check"></i><b>5.2.1</b> <span class="math inline">\(k\)</span>-moyennes</a></li>
+<li class="chapter" data-level="5.2.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#classification-hiérarchique-ascendante"><i class="fa fa-check"></i><b>5.2.2</b> Classification hiérarchique ascendante</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#conclusion"><i class="fa fa-check"></i><b>5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="part"><span><b>II Exploration de données qualitatives</b></span></li>
+<li class="chapter" data-level="6" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html"><i class="fa fa-check"></i><b>6</b> Analyse qualitative univariée</a><ul>
+<li class="chapter" data-level="6.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#terminologie"><i class="fa fa-check"></i><b>6.1</b> Terminologie</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#effectifs.-fréquences"><i class="fa fa-check"></i><b>6.1.1</b> Effectifs. Fréquences</a></li>
+<li class="chapter" data-level="6.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>6.1.2</b> Représentations graphiques</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#indicateurs"><i class="fa fa-check"></i><b>6.2</b> Indicateurs</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#mode"><i class="fa fa-check"></i><b>6.2.1</b> Mode</a></li>
+<li class="chapter" data-level="6.2.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#moyenne-des-variables-dichotomiques-binaires"><i class="fa fa-check"></i><b>6.2.2</b> Moyenne des variables dichotomiques binaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html"><i class="fa fa-check"></i><b>7</b> Analyse qualitative bivariée</a><ul>
+<li class="chapter" data-level="7.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>7.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-contingences"><i class="fa fa-check"></i><b>7.1.1</b> Tableau des contingences</a></li>
+<li class="chapter" data-level="7.1.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-fréquences"><i class="fa fa-check"></i><b>7.1.2</b> Tableau des fréquences</a></li>
+<li class="chapter" data-level="7.1.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#profils-ligne.-profils-colonne"><i class="fa fa-check"></i><b>7.1.3</b> Profils ligne. Profils colonne</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tests-dindépendance"><i class="fa fa-check"></i><b>7.2</b> Tests d’indépendance</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#fréquences-conjointes-théoriques-en-cas-dindépendance"><i class="fa fa-check"></i><b>7.2.1</b> Fréquences conjointes théoriques en cas d’indépendance</a></li>
+<li class="chapter" data-level="7.2.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#test-du-chi2"><i class="fa fa-check"></i><b>7.2.2</b> Test du <span class="math inline">\(\chi^2\)</span></a></li>
+<li class="chapter" data-level="7.2.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#coefficient-de-cramer"><i class="fa fa-check"></i><b>7.2.3</b> Coefficient de Cramer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><i class="fa fa-check"></i><b>8</b> Analyse qualitative multivariée : analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="8.1" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#analyse-des-correspondances-multiples"><i class="fa fa-check"></i><b>8.1</b> Analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>8.1.1</b> Formulation mathématique</a></li>
+<li class="chapter" data-level="8.1.2" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#justification-et-interprétations"><i class="fa fa-check"></i><b>8.1.2</b> Justification et interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>8.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>8.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="8.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>8.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#limites-de-lanalyse-factorielle-des-correspondances"><i class="fa fa-check"></i><b>8.3</b> Limites de l’analyse factorielle des correspondances</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="règles-dassociation.html"><a href="règles-dassociation.html"><i class="fa fa-check"></i><b>9</b> Règles d’association</a><ul>
+<li class="chapter" data-level="9.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>9.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="règles-dassociation.html"><a href="règles-dassociation.html#support"><i class="fa fa-check"></i><b>9.1.1</b> Support</a></li>
+<li class="chapter" data-level="9.1.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#confiance"><i class="fa fa-check"></i><b>9.1.2</b> Confiance</a></li>
+<li class="chapter" data-level="9.1.3" data-path="règles-dassociation.html"><a href="règles-dassociation.html#amélioration-ou-lift"><i class="fa fa-check"></i><b>9.1.3</b> Amélioration (ou <em>lift</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#algorithme-de-construction-de-règles"><i class="fa fa-check"></i><b>9.2</b> Algorithme de construction de règles</a></li>
+</ul></li>
+<li class="part"><span><b>III Exploration de données mixtes</b></span></li>
+<li class="chapter" data-level="10" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html"><i class="fa fa-check"></i><b>10</b> Analyse mixte bivariée</a><ul>
+<li class="chapter" data-level="10.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>10.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#variances"><i class="fa fa-check"></i><b>10.1.1</b> Variances</a></li>
+<li class="chapter" data-level="10.1.2" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#rapport-de-corrélation"><i class="fa fa-check"></i><b>10.1.2</b> Rapport de corrélation</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li>
+   <div style="text-align:center">
+     <p><strong>A. Jourdan, K. El Ganaoui, R. Dujol</strong></p>
+     <p><a href="https://github.com/rstudio/bookdown" target="blank"><em>Published with bookdown</em></a></p>
+   </div>
+</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analyse exploratoire des données</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analyse-quantitative-multivariée-analyse-en-composantes-principales" class="section level1">
+<h1><span class="header-section-number">4</span> Analyse quantitative multivariée : analyse en composantes principales</h1>
+<p>Dans ce chapitre, on considère :</p>
+<ul>
+<li>un corpus de données de <span class="math inline">\(N\)</span> individus ;</li>
+<li><span class="math inline">\(p\)</span> variables quantitatives <span class="math inline">\(X_1, \ldots, X_p\)</span>.</li>
+</ul>
+<p>Pour tout entier <span class="math inline">\(i\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(N\)</span> et tout entier <span class="math inline">\(j\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(p\)</span>, on note <span class="math inline">\(x_{i,j}\)</span> la valeur de la variable <span class="math inline">\(X_j\)</span> pour le <span class="math inline">\(i\)</span>-ème individu.</p>
+<p>On note également <span class="math inline">\(X\)</span> la matrice à <span class="math inline">\(N\)</span> lignes et <span class="math inline">\(p\)</span> colonnes <span class="math inline">\(X = \left(x_{i,j}\right)_{1 \leq i \leq N, 1 \leq j \leq p}\)</span>, de sorte que <span class="math inline">\(X_j\)</span> soit sa <span class="math inline">\(j\)</span>-ème colonne pour tout entier <span class="math inline">\(j\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(p\)</span>.</p>
+<p>L’analyse en composantes principales (ACP ou PCA en anglais pour <em>Principal Component Analysis</em>) est une méthode de <strong>réduction des dimensions</strong>. Il s’agit de décrire de manière la plus précise possible l’ensemble des variables quantitatives <span class="math inline">\(X_1, \ldots, X_p\)</span> par un faible nombre de combinaisons des celles-ci, appelées <strong>composantes principales</strong>. Lorsque l’on a besoin d’une représentation graphique efficace, on cherchera ainsi à isoler deux (ou trois) composantes principales.</p>
+<p>Dans tous les exemples, on utilise le corpus de données des iris de Gaspésie <span class="citation">(Anderson 1935)</span> fourni avec le logiciel R.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-1"></a><span class="kw">str</span>(iris)</span>
+<span id="cb1-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-2"></a><span class="st">&#39;data.frame&#39;</span><span class="op">:</span>	<span class="dv">150</span> obs. of  <span class="dv">5</span> variables<span class="op">:</span></span>
+<span id="cb1-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-3"></a><span class="st"> </span><span class="er">$</span><span class="st"> </span>Sepal.Length<span class="op">:</span><span class="st"> </span>num  <span class="fl">5.1</span> <span class="fl">4.9</span> <span class="fl">4.7</span> <span class="fl">4.6</span> <span class="dv">5</span> <span class="fl">5.4</span> <span class="fl">4.6</span> <span class="dv">5</span> <span class="fl">4.4</span> <span class="fl">4.9</span> ...</span>
+<span id="cb1-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-4"></a> <span class="op">$</span><span class="st"> </span>Sepal.Width <span class="op">:</span><span class="st"> </span>num  <span class="fl">3.5</span> <span class="dv">3</span> <span class="fl">3.2</span> <span class="fl">3.1</span> <span class="fl">3.6</span> <span class="fl">3.9</span> <span class="fl">3.4</span> <span class="fl">3.4</span> <span class="fl">2.9</span> <span class="fl">3.1</span> ...</span>
+<span id="cb1-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-5"></a> <span class="op">$</span><span class="st"> </span>Petal.Length<span class="op">:</span><span class="st"> </span>num  <span class="fl">1.4</span> <span class="fl">1.4</span> <span class="fl">1.3</span> <span class="fl">1.5</span> <span class="fl">1.4</span> <span class="fl">1.7</span> <span class="fl">1.4</span> <span class="fl">1.5</span> <span class="fl">1.4</span> <span class="fl">1.5</span> ...</span>
+<span id="cb1-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-6"></a> <span class="op">$</span><span class="st"> </span>Petal.Width <span class="op">:</span><span class="st"> </span>num  <span class="fl">0.2</span> <span class="fl">0.2</span> <span class="fl">0.2</span> <span class="fl">0.2</span> <span class="fl">0.2</span> <span class="fl">0.4</span> <span class="fl">0.3</span> <span class="fl">0.2</span> <span class="fl">0.2</span> <span class="fl">0.1</span> ...</span>
+<span id="cb1-7"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb1-7"></a> <span class="op">$</span><span class="st"> </span>Species     <span class="op">:</span><span class="st"> </span>Factor w<span class="op">/</span><span class="st"> </span><span class="dv">3</span> levels <span class="st">&quot;setosa&quot;</span>,<span class="st">&quot;versicolor&quot;</span>,..<span class="op">:</span><span class="st"> </span><span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> <span class="dv">1</span> ...</span></code></pre></div>
+<p>La dernière variable est qualitative, donc elle ne sera pas utilisée pour l’analyse :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb2-1"></a>data &lt;-<span class="st"> </span>iris[<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>]</span></code></pre></div>
+<div id="formulation-mathématique" class="section level2">
+<h2><span class="header-section-number">4.1</span> Formulation mathématique</h2>
+<div id="matrice-de-variance-covariance" class="section level3">
+<h3><span class="header-section-number">4.1.1</span> Matrice de variance-covariance</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-1" class="definition"><strong>Définition 4.1  </strong></span>La <strong>matrice de variance-covariance</strong> des variables quantitatives <span class="math inline">\(X_1, \ldots, X_p\)</span> est la matrice <span class="math inline">\(V\)</span> carrée d’ordre <span class="math inline">\(p\)</span> définie par <span class="math inline">\(V = \left(c_{X_j,X_{j&#39;}}\right)_{1 \leq j \leq p, 1 \leq j&#39; \leq p}\)</span>
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-2" class="proposition"><strong>Proposition 4.1  </strong></span>On note <span class="math inline">\(\bar{X}\)</span> la matrice à <span class="math inline">\(N\)</span> lignes et <span class="math inline">\(p\)</span> colonnes définie par <span class="math inline">\(\bar{X} = \left(\bar{X_{j}}\right)_{1 \leq i \leq N, 1 \leq j \leq p}\)</span>.<br />
+Alors <span class="math inline">\(V = \dfrac{1}{N}\bar{X}^\top \bar{X}\)</span>.
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer la matrice de variance-covariance de variables quantitatives</strong></p>
+<p>La fonction <code>cov</code> peut prendre en paramètres un vecteur représentant une seule variable ou une matrice réprésentant plusieurs variables. On adapte alors la fonction <code>cov.p</code> pour prendre en compte le cas des matrices : en effet, la fonction <code>length</code> ne convient plus.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb3-1"></a>cov.p &lt;-<span class="st"> </span><span class="cf">function</span>(x, <span class="dt">y =</span> <span class="ot">NULL</span>, <span class="dt">use =</span> <span class="st">&quot;everything&quot;</span>)</span>
+<span id="cb3-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb3-2"></a>  {</span>
+<span id="cb3-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb3-3"></a>    <span class="kw">cov</span>(x, y, <span class="dt">use =</span> use) <span class="op">*</span><span class="st"> </span>(<span class="kw">dim</span>(x)[<span class="dv">1</span>] <span class="op">-</span><span class="st"> </span><span class="dv">1</span>) <span class="op">/</span><span class="st"> </span><span class="kw">dim</span>(x)[<span class="dv">1</span>]</span>
+<span id="cb3-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb3-4"></a>  }</span></code></pre></div>
+<p>La fonction <code>dim</code> renvoie le vecteur des dimensions d’une matrice.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb4-1"></a><span class="kw">cov.p</span>(data)</span>
+<span id="cb4-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb4-2"></a>             Sepal.Length Sepal.Width Petal.Length Petal.Width</span>
+<span id="cb4-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb4-3"></a>Sepal.Length   <span class="fl">0.68112222</span> <span class="fl">-0.04215111</span>    <span class="fl">1.2658200</span>   <span class="fl">0.5128289</span></span>
+<span id="cb4-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb4-4"></a>Sepal.Width   <span class="fl">-0.04215111</span>  <span class="fl">0.18871289</span>   <span class="fl">-0.3274587</span>  <span class="fl">-0.1208284</span></span>
+<span id="cb4-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb4-5"></a>Petal.Length   <span class="fl">1.26582000</span> <span class="fl">-0.32745867</span>    <span class="fl">3.0955027</span>   <span class="fl">1.2869720</span></span>
+<span id="cb4-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb4-6"></a>Petal.Width    <span class="fl">0.51282889</span> <span class="fl">-0.12082844</span>    <span class="fl">1.2869720</span>   <span class="fl">0.5771329</span></span></code></pre></div>
+</blockquote>
+<p><br/>
+Lorsque les différentes variables représentent des données d’ordres de grandeur très divers, les variables dont l’ordre de grandeur est élevée seront prépondérantes dans l’analyse.
+On changerait donc artificiellement les résultats de l’ACP en changeant simplement l’unité (au sens physique du terme) d’une variable.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-3" class="definition"><strong>Définition 4.2  </strong></span>On note <span class="math inline">\(X^*\)</span> la matrice à <span class="math inline">\(N\)</span> lignes et <span class="math inline">\(p\)</span> colonnes dont les colonnes sont les variables centrées réduites <span class="math inline">\(X_1^*, X_2^*, \ldots, X_p^*\)</span> des colonnes de <span class="math inline">\(X\)</span>.<br/>
+Une analyse en composantes principales est dite <strong>normée</strong> si et seulement si elle est effectuée sur les <strong>données normalisées </strong> <span class="math inline">\(X^*\)</span> (au lieu des <strong>données brutes</strong> <span class="math inline">\(X\)</span>).
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> De manière générale, il est préférable d’effectuer une ACP normée.
+</div>
+
+<br/>
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-5" class="proposition"><strong>Proposition 4.2  </strong></span>La matrice de variance-covariance de <span class="math inline">\(X^*\)</span> est égale à la matrice de corrélation de <span class="math inline">\(X\)</span>, c’est-à-dire <span class="math inline">\(R = \left(r_{X_j,X_{j&#39;}}\right)_{1 \leq j \leq p, 1 \leq j&#39; \leq p}\)</span>.
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer la matrice de variance-covariance de variables quantitatives normalisées, i.e. la matrice des corrélations</strong></p>
+<p>La fonction <code>cor</code> peut prendre en paramètres un vecteur représentant une seule variable ou une matrice réprésentant plusieurs variables.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb5-1"></a><span class="kw">cor</span>(data)</span>
+<span id="cb5-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb5-2"></a>             Sepal.Length Sepal.Width Petal.Length Petal.Width</span>
+<span id="cb5-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb5-3"></a>Sepal.Length    <span class="fl">1.0000000</span>  <span class="fl">-0.1175698</span>    <span class="fl">0.8717538</span>   <span class="fl">0.8179411</span></span>
+<span id="cb5-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb5-4"></a>Sepal.Width    <span class="fl">-0.1175698</span>   <span class="fl">1.0000000</span>   <span class="fl">-0.4284401</span>  <span class="fl">-0.3661259</span></span>
+<span id="cb5-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb5-5"></a>Petal.Length    <span class="fl">0.8717538</span>  <span class="fl">-0.4284401</span>    <span class="fl">1.0000000</span>   <span class="fl">0.9628654</span></span>
+<span id="cb5-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb5-6"></a>Petal.Width     <span class="fl">0.8179411</span>  <span class="fl">-0.3661259</span>    <span class="fl">0.9628654</span>   <span class="fl">1.0000000</span></span></code></pre></div>
+</blockquote>
+</div>
+<div id="composantes-principales" class="section level3">
+<h3><span class="header-section-number">4.1.2</span> Composantes principales</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-6" class="definition"><strong>Définition 4.3  </strong></span>Une <strong>composante principale</strong> est une combinaison linéaire des variables centrées <span class="math inline">\(X_1 - \bar{X_1}, \ldots, X_p - \bar{X_p}\)</span>.<br />
+Tout couple de composantes principales distinctes <span class="math inline">\((C, C&#39;)\)</span> est décorrélé : <span class="math inline">\(c_{C,C&#39;} = 0\)</span>.
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> La décorrélation entre les composantes principales assure que l’information capturée par chaque composante principale n’est jamais capturée, même partiellement, par une autre composante principale.
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-8" class="proposition"><strong>Proposition 4.3  </strong></span>Une famille de composantes principales est une famille orthogonale de variables centrées.
+</div>
+
+
+<div class="proof">
+ <span class="proof"><em>Démonstration. </em></span> Toute composante principale est une combinaison linéaire de variables centrées. Par linéarité de la moyenne, une composante principale est donc également centrée.<br />
+Soit <span class="math inline">\(C\)</span> et <span class="math inline">\(C&#39;\)</span> deux composantes principales. Alors <span class="math inline">\(0 = c_{C,C&#39;} = \dfrac{1}{N}C^\top C&#39;\)</span> : donc <span class="math inline">\(C^\top C&#39; = 0\)</span> et <span class="math inline">\(C\)</span> et <span class="math inline">\(C&#39;\)</span> sont orthogonales.
+</div>
+
+
+<div class="corollary">
+<p><span id="cor:unnamed-chunk-10" class="corollary"><strong>Corollaire 4.1  </strong></span>Une famille de composantes principales contient au plus <span class="math inline">\(p\)</span> éléments. De plus :</p>
+<ul>
+<li>la matrice de variance-covariance d’une base de composantes principales est diagonale ;</li>
+<li>toute base de composantes principales est une base de diagonalisation de la matrice de variance-covariance initiale.</li>
+</ul>
+</div>
+
+On convient de choisir des composantes principales de norme un.
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-11" class="theorem"><strong>Théorème 4.1  </strong></span>Il existe toujours une base orthonormale de composantes principales.</p>
+Elle est issue de la matrice de passage de la diagonalisation de la matrice de variance-covariance.
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Démonstration. </em></span> La matrice de variance-covariance est par construction symétrique, donc elle admet une base orthonormale de diagonalisation.</p>
+La matrice de passage traduit alors la conversion entre la base initiale (ici la base canonique) et la base de diagonalisation.
+</div>
+
+<p><br/></p>
+<p><strong>Une ACP constitue donc en une diagonalisation de la matrice <span class="math inline">\(V\)</span> (ou de la matrice <span class="math inline">\(R\)</span> dans le cas d’une ACP normée) :</strong></p>
+<ul>
+<li>la matrice diagonale étant la matrice de variance-covariance des composantes principales, <em>les valeurs propres sont donc les variances des composantes principales</em> ;</li>
+<li><em>la matrice de passage fournit l’expression des composantes principales en fonction des variables centrées (ou centrées réduites dans le cas d’une ACP normée)</em>.</li>
+</ul>
+<blockquote>
+<p><strong>En R : Effectuer une analyse en composantes principales normée de variables quantitatives</strong></p>
+<p>Nous allons réaliser une ACP normée, donc sur la matrice de corrélations. La fonction <code>eigen</code> calcule la décomposition en valeurs propres d’une matrice et le champ <code>values</code> donne le vecteur des valeurs propres.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb6-1"></a><span class="kw">eigen</span>(<span class="kw">cor</span>(data))<span class="op">$</span>values</span>
+<span id="cb6-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb6-2"></a>[<span class="dv">1</span>] <span class="fl">2.91849782</span> <span class="fl">0.91403047</span> <span class="fl">0.14675688</span> <span class="fl">0.02071484</span></span></code></pre></div>
+</blockquote>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Les composantes principales sont en réalité calculées à partir d’une décomposition plus générale que la décomposition en valeurs propres : la <strong>décomposition en valeurs singulières</strong> (ou SVD, <em>Singular Value Decomposition</em> en anglais). Le détail des calculs ne fait pas partie de ce cours.
+</div>
+
+</div>
+<div id="premières-interprétations" class="section level3">
+<h3><span class="header-section-number">4.1.3</span> Premières interprétations</h3>
+<p>La quantité totale d’information du corpus de données est donnée par la somme des variances des variables (normalisées ou non en fonction de l’ACP considérée).<br />
+Comme les variances sont les coefficients diagonaux de la matrice de variance-covariance, la quantité totale d’information est donnée par la trace de cette matrice.</p>
+<p>La trace étant invariante par changement de base, <em>la quantité totale d’information est donc conservée</em>.</p>
+<blockquote>
+<p><strong>En R : Vérifier la conservation de la quantité totale d’information lors d’une ACP normée</strong></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb7-1"></a><span class="kw">sum</span>(<span class="kw">diag</span>(<span class="kw">cor</span>(data)))</span>
+<span id="cb7-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb7-2"></a>[<span class="dv">1</span>] <span class="dv">4</span></span>
+<span id="cb7-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb7-3"></a><span class="kw">sum</span>(<span class="kw">eigen</span>(<span class="kw">cor</span>(data))<span class="op">$</span>values)</span>
+<span id="cb7-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb7-4"></a>[<span class="dv">1</span>] <span class="dv">4</span></span></code></pre></div>
+</blockquote>
+<p>Il s’agit alors de <strong>choisir les composantes principales contenant le plus d’information</strong>, donc celles associées aux valeurs propres les plus élevées. Un indicateur important est alors la proportion d’information expliquée par les composantes principales choisies.</p>
+<blockquote>
+<p><strong>En R : Calculer les pourcentages d’information expliqués par les premières composantes principales dans le cas d’une ACP normée</strong></p>
+<p>On ramène la somme du vecteur à un en divisant par la somme des valeurs propres, puis on utilise la fonction <code>cumsum</code> qui calcule le vecteur des sommes cumulées d’un vecteur donné.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb8-1"></a>lambdas &lt;-<span class="st"> </span><span class="kw">eigen</span>(<span class="kw">cor</span>(data))<span class="op">$</span>values</span>
+<span id="cb8-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb8-2"></a>lambdas <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(lambdas)</span>
+<span id="cb8-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb8-3"></a>[<span class="dv">1</span>] <span class="fl">0.729624454</span> <span class="fl">0.228507618</span> <span class="fl">0.036689219</span> <span class="fl">0.005178709</span></span>
+<span id="cb8-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb8-4"></a><span class="kw">cumsum</span>(lambdas <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(lambdas))</span>
+<span id="cb8-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb8-5"></a>[<span class="dv">1</span>] <span class="fl">0.7296245</span> <span class="fl">0.9581321</span> <span class="fl">0.9948213</span> <span class="fl">1.0000000</span></span></code></pre></div>
+<p>Donc :</p>
+<ul>
+<li>la première composante principale <span class="math inline">\(C_1\)</span> explique 72.96% de l’information fournie par les données ;</li>
+<li>la deuxième composante principale <span class="math inline">\(C_2\)</span> explique 22.85% de l’information fournie par les données ;</li>
+</ul>
+<p>soit 95.81% à elles deux.</p>
+</blockquote>
+</div>
+</div>
+<div id="représentations-graphiques" class="section level2">
+<h2><span class="header-section-number">4.2</span> Représentations graphiques</h2>
+<p>Cette première analyse peut être avantageusement complétée par des réprésentations graphiques efficaces.</p>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Ces représentations utilisent uniquement les deux premières composantes prinicipales.
+</div>
+
+<blockquote>
+<p><strong>En R : Installer, charger et utiliser la bibliothèque <code>FactoMineR</code></strong></p>
+<p><em>Cette bibliothèque sera utilisée dans tout le reste du chapitre.</em>
+Cette bibiliothèque n’étant pas installée par défault, il faut donc l’installer :</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb9-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;FactoMineR&quot;</span>)</span></code></pre></div>
+<p>Elle doit être chargée avant toute utilisaton :</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb10-1"></a><span class="kw">library</span>(FactoMineR)</span></code></pre></div>
+<p>On utilisera principalement la fonction <code>PCA</code> :</p>
+<ul>
+<li><code>scale.unit</code> spécifie si l’ACP est normée (cas par défaut) ou non ;</li>
+<li><code>ncp</code> spécifie le nombre maximal de composantes principales (5 par défaut) ;</li>
+<li><code>graph</code> spécfie si les graphiques doivent être générés (cas par défaut) ou non ;</li>
+<li><code>ind.sup</code> spécifie les individus n’étant pas pris en compte dans l’analyse : ils seront toutefois affichés dans la représentation dans l’espace des individus ;</li>
+<li><code>quanti.sup</code> spécifie les variables quantitatives n’étant pas pris en compte dans l’analyse : elles seront toutefois affichés dans la représentation dans l’espace des variables ;</li>
+<li><code>quali.sup</code> spécifie les variables qualitatives dignes d’intêret : elles seront toutefois affichés dans la représentation dans l’espace des individus par un individu moyen pour chaque modalité ;</li>
+<li><code>graph</code> spécfie si les graphiques doivent être générés (cas par défaut) ou non ;</li>
+<li><code>axes</code> désigne les composantes principales utilisées comme axes de réprésentation graphiques (par défaut, ce sont les deux premières).</li>
+</ul>
+<p>Un appel simple effectue l’analyse, génère les représentations graphiques et décrit les champs du résultat.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb11-1"></a><span class="kw">PCA</span>(data, <span class="dt">ncp =</span> <span class="dv">4</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantmulti_pca-1.png" width="672" /><img src="DataExploration_files/figure-html/quantmulti_pca-2.png" width="672" /></p>
+<pre><code>**Results for the Principal Component Analysis (PCA)**
+The analysis was performed on 150 individuals, described by 4 variables
+*The results are available in the following objects:
+
+   name               description                          
+1  &quot;$eig&quot;             &quot;eigenvalues&quot;                        
+2  &quot;$var&quot;             &quot;results for the variables&quot;          
+3  &quot;$var$coord&quot;       &quot;coord. for the variables&quot;           
+4  &quot;$var$cor&quot;         &quot;correlations variables - dimensions&quot;
+5  &quot;$var$cos2&quot;        &quot;cos2 for the variables&quot;             
+6  &quot;$var$contrib&quot;     &quot;contributions of the variables&quot;     
+7  &quot;$ind&quot;             &quot;results for the individuals&quot;        
+8  &quot;$ind$coord&quot;       &quot;coord. for the individuals&quot;         
+9  &quot;$ind$cos2&quot;        &quot;cos2 for the individuals&quot;           
+10 &quot;$ind$contrib&quot;     &quot;contributions of the individuals&quot;   
+11 &quot;$call&quot;            &quot;summary statistics&quot;                 
+12 &quot;$call$centre&quot;     &quot;mean of the variables&quot;              
+13 &quot;$call$ecart.type&quot; &quot;standard error of the variables&quot;    
+14 &quot;$call$row.w&quot;      &quot;weights for the individuals&quot;        
+15 &quot;$call$col.w&quot;      &quot;weights for the variables&quot;          </code></pre>
+<p>Les principaux champs seront présentés en détail au fur et à mesure.</p>
+</blockquote>
+<blockquote>
+<p><strong>En R : récupérer les premiers résultats de l’ACP avec <code>PCA</code></strong></p>
+<p>Le champ <code>eig</code> du résultat de l’appel de <code>PCA</code> donne, pour chaque composante principale (triée par variance décroissante), trois types d’informations :</p>
+<ul>
+<li>en première colonne, sa variance (i.e. la valeur propre) ;</li>
+<li>en deuxième colonne, le pourcentage de la variance totale ;</li>
+<li>en troisième colonne, le pourcentage cumulé de la variance : ainsi, les trois premières composantes principales cumulent 99.48213% de la variance totale.</li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-1"></a>pca &lt;-<span class="st"> </span><span class="kw">PCA</span>(data, <span class="dt">ncp =</span> <span class="dv">4</span>, <span class="dt">graph =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb13-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-2"></a>pca<span class="op">$</span>eig</span>
+<span id="cb13-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-3"></a>       eigenvalue percentage of variance cumulative percentage of variance</span>
+<span id="cb13-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-4"></a>comp <span class="dv">1</span> <span class="fl">2.91849782</span>             <span class="fl">72.9624454</span>                          <span class="fl">72.96245</span></span>
+<span id="cb13-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-5"></a>comp <span class="dv">2</span> <span class="fl">0.91403047</span>             <span class="fl">22.8507618</span>                          <span class="fl">95.81321</span></span>
+<span id="cb13-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-6"></a>comp <span class="dv">3</span> <span class="fl">0.14675688</span>              <span class="fl">3.6689219</span>                          <span class="fl">99.48213</span></span>
+<span id="cb13-7"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb13-7"></a>comp <span class="dv">4</span> <span class="fl">0.02071484</span>              <span class="fl">0.5178709</span>                         <span class="fl">100.00000</span></span></code></pre></div>
+</blockquote>
+<div id="dans-lespace-des-variables" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> dans l’espace des variables</h3>
+<p>On souhaite représenter les variables initiales pour observer leurs potentielles corrélations en les plaçant dans le repère induit par les deux premières composantes principales.</p>
+<blockquote>
+<p><strong>En R : Calculer et représenter les projections des variables initiales sur le plan des deux premières composantes principales</strong></p>
+<p>On applique la fonction <code>plot</code> sur le résultat de la fonction <code>PCA</code> :</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb14-1"></a><span class="kw">plot</span>(pca, <span class="dt">choix =</span> <span class="st">&quot;var&quot;</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantmulti_pcavar-1.png" width="672" /></p>
+<p>Les coordonées des vecteurs sont disponibles dans le sous-champ <code>coord</code> du champ <code>var</code> du résultat de la fonction <code>PCA</code> :</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb15-1"></a>pca<span class="op">$</span>var<span class="op">$</span>coord</span>
+<span id="cb15-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb15-2"></a>                  Dim<span class="fl">.1</span>      Dim<span class="fl">.2</span>       Dim<span class="fl">.3</span>       Dim<span class="fl">.4</span></span>
+<span id="cb15-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb15-3"></a>Sepal.Length  <span class="fl">0.8901688</span> <span class="fl">0.36082989</span> <span class="fl">-0.27565767</span> <span class="fl">-0.03760602</span></span>
+<span id="cb15-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb15-4"></a>Sepal.Width  <span class="fl">-0.4601427</span> <span class="fl">0.88271627</span>  <span class="fl">0.09361987</span>  <span class="fl">0.01777631</span></span>
+<span id="cb15-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb15-5"></a>Petal.Length  <span class="fl">0.9915552</span> <span class="fl">0.02341519</span>  <span class="fl">0.05444699</span>  <span class="fl">0.11534978</span></span>
+<span id="cb15-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb15-6"></a>Petal.Width   <span class="fl">0.9649790</span> <span class="fl">0.06399985</span>  <span class="fl">0.24298265</span> <span class="fl">-0.07535950</span></span></code></pre></div>
+</blockquote>
+<p>Cette représentation graphique permet d’abord d’étudier la proportion d’information expliquée par les deux premières composantes principales pour chaque variable initiale.
+Le vecteur représentant chaque variable est de norme un dans l’espace de toutes les composantes principales. Donc :</p>
+<ul>
+<li>un vecteur projeté de norme proche de un signifie que les contributions selon les autres composantes principales sont faibles et que ces dernières expliquent peu la variable associée ;</li>
+<li>un vecteur projeté de norme proche de zéro signifie que les contributions selon les deux premières composantes principales sont faibles et que ces dernières expliquent peu la variable associée.</li>
+</ul>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Une norme du vecteur projeté supérieure à <span class="math inline">\(\sqrt{0,\!5} \simeq 0,\!707\)</span> assure que celui-ci sera majoritaire dans la décomposition du vecteur initial,
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer et interpréter la norme des vecteurs projetés</strong></p>
+<p>On utilise la fonction <code>rowSums</code> qui effectue la somme partielle d’une matrice selon ses lignes :</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb16-1"></a>projections &lt;-<span class="st"> </span>pca<span class="op">$</span>var<span class="op">$</span>coord[,<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>]</span>
+<span id="cb16-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb16-2"></a><span class="kw">sqrt</span>(<span class="kw">rowSums</span>(projections <span class="op">*</span><span class="st"> </span>projections))</span>
+<span id="cb16-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb16-3"></a>Sepal.Length  Sepal.Width Petal.Length  Petal.Width </span>
+<span id="cb16-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb16-4"></a>   <span class="fl">0.9605200</span>    <span class="fl">0.9954493</span>    <span class="fl">0.9918316</span>    <span class="fl">0.9670989</span> </span></code></pre></div>
+<p>Les normes des quatre vecteurs très proches de un (ce qui confirme l’impression visuelle), donc les quatre variables sont très bien expliquées par les deux composantes principales.</p>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> On confirme ainsi la proportion élevée de la quantité d’information totale (95,81%) expliquée par les deux composantes principales <span class="math inline">\(C_1\)</span> et <span class="math inline">\(C_2\)</span>.
+</div>
+</blockquote>
+<p><br/>
+Cette représentation permet ensuite, <em>pour les variables dont les normes des vecteurs projetés sont suffisamment élevées</em>, d’étudier leurs corrélations (linéaires) respectives :</p>
+<ul>
+<li>des vecteurs orthogonaux traduisent une décorrélation linéaire presque complète ;</li>
+<li>des vecteurs colinéaires dans le même sens traduisent des vecteurs presque complètement corrélées avec un sens de progression commun (quand l’une des variables augmente, l’autre aussi) ;</li>
+<li>des vecteurs colinéaires dans des sens différents traduisent des vecteurs presque complètement corrélées avec un sens de progression antagoniste (quand l’une des variables augmente, l’autre diminue et vice-versa).</li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer et interpréter les produits scalaires des vecteurs projetés entre eux</strong></p>
+<p>On utilise le produit matriciel <code>%*%</code> et la fonction <code>t</code> qui transpose une matrice pour obtenir la matrice des produits scalaires respectifs :</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb17-1"></a>projections <span class="op">%*%</span><span class="st"> </span><span class="kw">t</span>(projections)</span>
+<span id="cb17-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb17-2"></a>             Sepal.Length Sepal.Width Petal.Length Petal.Width</span>
+<span id="cb17-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb17-3"></a>Sepal.Length   <span class="fl">0.92259864</span> <span class="fl">-0.09109425</span>    <span class="fl">0.8911004</span>   <span class="fl">0.8820872</span></span>
+<span id="cb17-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb17-4"></a>Sepal.Width   <span class="fl">-0.09109425</span>  <span class="fl">0.99091932</span>   <span class="fl">-0.4355879</span>  <span class="fl">-0.3875343</span></span>
+<span id="cb17-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb17-5"></a>Petal.Length   <span class="fl">0.89110035</span> <span class="fl">-0.43558792</span>    <span class="fl">0.9837300</span>   <span class="fl">0.9583285</span></span>
+<span id="cb17-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb17-6"></a>Petal.Width    <span class="fl">0.88208719</span> <span class="fl">-0.38753432</span>    <span class="fl">0.9583285</span>   <span class="fl">0.9352804</span></span></code></pre></div>
+<p>Comme toutes les projections ont une norme suffisamment élevée, l’analyse sera pertinente.
+L’impression visuelle est confirmée dans les points suivants notamment :</p>
+<ul>
+<li>le produit scalaire entre les projections de <code>Sepal.Length</code> et <code>Sepal.Length</code> est faible (<code>-0.0910943</code>), donc ces deux variables sont peu corrélées ;</li>
+<li>le produit scalaire entre les projections de <code>Petal.Length</code> et <code>Petal.Width</code> est très proche de un (<code>0.9583285</code>), donc ces deux variables sont très corrélées et évoluent dans le même sens ;</li>
+<li>le produit scalaire entre les projections de <code>Sepal.Length</code> et <code>Petal.Length</code> est élevé (<code>0.8911004</code>), donc ces deux variables sont corrélées (mais moins que précédemment) et évoluent dans le même sens.</li>
+</ul>
+</blockquote>
+<p><br/>
+Cette réprésentation peut permettre (sans certitude) enfin, en lien avec la représentation des individus, d’interpréter les composantes principales et d’identifier des zones.<br />
+En effet, la coordonnée d’un vecteur projeté est égale au coefficient de corrélation entre la variable associée et la composante principale liée à l’axe choisi dans le cas d’une ACP normée (dans le cas d’une ACP non normée, cela reste proportionnel).</p>
+<blockquote>
+<p><strong>En R : Identifier des zones, interpréter les composantes principales</strong></p>
+<p>Les corrélations entre les variables et les composantes principales sont disponibles dans le sous-champ <code>cor</code> du champ <code>var</code> du résultat de la fonction <code>PCA</code>.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb18-1"></a>pca<span class="op">$</span>var<span class="op">$</span>cor</span>
+<span id="cb18-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb18-2"></a>                  Dim<span class="fl">.1</span>      Dim<span class="fl">.2</span>       Dim<span class="fl">.3</span>       Dim<span class="fl">.4</span></span>
+<span id="cb18-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb18-3"></a>Sepal.Length  <span class="fl">0.8901688</span> <span class="fl">0.36082989</span> <span class="fl">-0.27565767</span> <span class="fl">-0.03760602</span></span>
+<span id="cb18-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb18-4"></a>Sepal.Width  <span class="fl">-0.4601427</span> <span class="fl">0.88271627</span>  <span class="fl">0.09361987</span>  <span class="fl">0.01777631</span></span>
+<span id="cb18-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb18-5"></a>Petal.Length  <span class="fl">0.9915552</span> <span class="fl">0.02341519</span>  <span class="fl">0.05444699</span>  <span class="fl">0.11534978</span></span>
+<span id="cb18-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb18-6"></a>Petal.Width   <span class="fl">0.9649790</span> <span class="fl">0.06399985</span>  <span class="fl">0.24298265</span> <span class="fl">-0.07535950</span></span></code></pre></div>
+<p>On remarque que les valeurs sont identiques aux coordonnées calculées auparavant.</p>
+<p>Les coefficients de corrélation <span class="math inline">\((\texttt{Petal.Length}, C_1)\)</span> et <span class="math inline">\((\texttt{Petal.Width}, C_1)\)</span> sont très proches de un (ce qui confirme l’impression visuelle). Donc <span class="math inline">\(C_1\)</span> est presque complètement correlé avec ces deux variables.<br />
+<span class="math inline">\(C_1\)</span> peut s’interpréter comme l’axe des dimensions du pétale :</p>
+<ul>
+<li>le demi-espace gauche correspond à des pétales de dimension faible (au-dessous de la moyenne) ;</li>
+<li>le demi-espace droit correspond à des pétales de dimension élevée (au-dessus de la moyenne).</li>
+</ul>
+<p>L’interprétation de <span class="math inline">\(C_2\)</span> comme l’axe des dimensions du sépale est moins évidente. On peut toutefois identifier des zones :</p>
+<ul>
+<li>le quart supérieur gauche correspond à des sépales de largeur élévée (au-dessus de la moyenne) ;</li>
+<li>le quart supérieur droit correspond à des sépales de longueur élévée (au-dessus de la moyenne) ;</li>
+<li>le quart inférieur gauche correspond à des sépales de longueur faible (au-dessous de la moyenne) ;</li>
+<li>le quart inférieur droit correspond à des sépales de largeur élévée (au-dessous de la moyenne).</li>
+</ul>
+</blockquote>
+</div>
+<div id="dans-lespace-des-individus" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> dans l’espace des individus</h3>
+<p>On souhaite représenter les individus dans le repère induit par les deux premières composantes principales dont l’origine sera obtenue par la moyenne des individus.</p>
+<blockquote>
+<p><strong>En R : Calculer et représenter les projections des individus sur le plan des deux premières composantes initiales</strong></p>
+<p>On applique la fonction <code>plot</code> sur le résultat de la fonction <code>PCA</code> :</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb19-1"></a><span class="kw">plot</span>(pca, <span class="dt">choix =</span> <span class="st">&quot;ind&quot;</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantmulti_pcaind-1.png" width="672" /></p>
+<p>Les coordonées des vecteurs sont disponibles dans le sous-champ <code>coord</code> du champ <code>ind</code> du résultat de la fonction <code>PCA</code> :</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-1"></a>pca<span class="op">$</span>ind<span class="op">$</span>coord</span>
+<span id="cb20-2"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-2"></a>          Dim<span class="fl">.1</span>        Dim<span class="fl">.2</span>        Dim<span class="fl">.3</span>        Dim<span class="fl">.4</span></span>
+<span id="cb20-3"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-3"></a><span class="dv">1</span>   <span class="fl">-2.26470281</span>  <span class="fl">0.480026597</span> <span class="fl">-0.127706022</span> <span class="fl">-0.024168204</span></span>
+<span id="cb20-4"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-4"></a><span class="dv">2</span>   <span class="fl">-2.08096115</span> <span class="fl">-0.674133557</span> <span class="fl">-0.234608854</span> <span class="fl">-0.103006775</span></span>
+<span id="cb20-5"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-5"></a><span class="dv">3</span>   <span class="fl">-2.36422905</span> <span class="fl">-0.341908024</span>  <span class="fl">0.044201485</span> <span class="fl">-0.028377053</span></span>
+<span id="cb20-6"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-6"></a><span class="dv">4</span>   <span class="fl">-2.29938422</span> <span class="fl">-0.597394508</span>  <span class="fl">0.091290106</span>  <span class="fl">0.065955560</span></span>
+<span id="cb20-7"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-7"></a><span class="dv">5</span>   <span class="fl">-2.38984217</span>  <span class="fl">0.646835383</span>  <span class="fl">0.015738196</span>  <span class="fl">0.035922813</span></span>
+<span id="cb20-8"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-8"></a><span class="dv">6</span>   <span class="fl">-2.07563095</span>  <span class="fl">1.489177523</span>  <span class="fl">0.026968294</span> <span class="fl">-0.006608180</span></span>
+<span id="cb20-9"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-9"></a><span class="dv">7</span>   <span class="fl">-2.44402884</span>  <span class="fl">0.047644198</span>  <span class="fl">0.335470401</span>  <span class="fl">0.036775557</span></span>
+<span id="cb20-10"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-10"></a><span class="dv">8</span>   <span class="fl">-2.23284716</span>  <span class="fl">0.223148073</span> <span class="fl">-0.088695498</span>  <span class="fl">0.024612096</span></span>
+<span id="cb20-11"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-11"></a><span class="dv">9</span>   <span class="fl">-2.33464048</span> <span class="fl">-1.115327675</span>  <span class="fl">0.145076864</span>  <span class="fl">0.026859221</span></span>
+<span id="cb20-12"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-12"></a><span class="dv">10</span>  <span class="fl">-2.18432817</span> <span class="fl">-0.469013561</span> <span class="fl">-0.253765567</span>  <span class="fl">0.039899288</span></span>
+<span id="cb20-13"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-13"></a><span class="dv">11</span>  <span class="fl">-2.16631010</span>  <span class="fl">1.043690653</span> <span class="fl">-0.268681102</span> <span class="fl">-0.016731367</span></span>
+<span id="cb20-14"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-14"></a><span class="dv">12</span>  <span class="fl">-2.32613087</span>  <span class="fl">0.133078335</span>  <span class="fl">0.093759244</span>  <span class="fl">0.133483413</span></span>
+<span id="cb20-15"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-15"></a><span class="dv">13</span>  <span class="fl">-2.21845090</span> <span class="fl">-0.728676165</span> <span class="fl">-0.230911237</span> <span class="fl">-0.002425038</span></span>
+<span id="cb20-16"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-16"></a><span class="dv">14</span>  <span class="fl">-2.63310070</span> <span class="fl">-0.961506729</span>  <span class="fl">0.180796084</span>  <span class="fl">0.019215534</span></span>
+<span id="cb20-17"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-17"></a><span class="dv">15</span>  <span class="fl">-2.19874060</span>  <span class="fl">1.860057113</span> <span class="fl">-0.472900998</span> <span class="fl">-0.194731769</span></span>
+<span id="cb20-18"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-18"></a><span class="dv">16</span>  <span class="fl">-2.26221453</span>  <span class="fl">2.686284485</span>  <span class="fl">0.030526609</span> <span class="fl">-0.050533737</span></span>
+<span id="cb20-19"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-19"></a><span class="dv">17</span>  <span class="fl">-2.20758770</span>  <span class="fl">1.483609363</span> <span class="fl">-0.005344094</span> <span class="fl">-0.188817432</span></span>
+<span id="cb20-20"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-20"></a><span class="dv">18</span>  <span class="fl">-2.19034951</span>  <span class="fl">0.488838316</span> <span class="fl">-0.044215316</span> <span class="fl">-0.093090438</span></span>
+<span id="cb20-21"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-21"></a><span class="dv">19</span>  <span class="fl">-1.89857200</span>  <span class="fl">1.405018794</span> <span class="fl">-0.374343275</span> <span class="fl">-0.061095967</span></span>
+<span id="cb20-22"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-22"></a><span class="dv">20</span>  <span class="fl">-2.34336905</span>  <span class="fl">1.127849382</span>  <span class="fl">0.132630467</span>  <span class="fl">0.037756420</span></span>
+<span id="cb20-23"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-23"></a><span class="dv">21</span>  <span class="fl">-1.91432300</span>  <span class="fl">0.408855708</span> <span class="fl">-0.421292594</span> <span class="fl">-0.010921286</span></span>
+<span id="cb20-24"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-24"></a><span class="dv">22</span>  <span class="fl">-2.20701284</span>  <span class="fl">0.924121427</span>  <span class="fl">0.159865277</span> <span class="fl">-0.059597330</span></span>
+<span id="cb20-25"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-25"></a><span class="dv">23</span>  <span class="fl">-2.77434470</span>  <span class="fl">0.458343668</span>  <span class="fl">0.332179098</span> <span class="fl">-0.019648430</span></span>
+<span id="cb20-26"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-26"></a><span class="dv">24</span>  <span class="fl">-1.81866953</span>  <span class="fl">0.085558526</span>  <span class="fl">0.034488596</span> <span class="fl">-0.151140999</span></span>
+<span id="cb20-27"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-27"></a><span class="dv">25</span>  <span class="fl">-2.22716331</span>  <span class="fl">0.137254455</span>  <span class="fl">0.117993536</span>  <span class="fl">0.270140352</span></span>
+<span id="cb20-28"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-28"></a><span class="dv">26</span>  <span class="fl">-1.95184633</span> <span class="fl">-0.625618588</span> <span class="fl">-0.305640982</span> <span class="fl">-0.043561651</span></span>
+<span id="cb20-29"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-29"></a><span class="dv">27</span>  <span class="fl">-2.05115137</span>  <span class="fl">0.242163553</span>  <span class="fl">0.086364011</span> <span class="fl">-0.067680060</span></span>
+<span id="cb20-30"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-30"></a><span class="dv">28</span>  <span class="fl">-2.16857717</span>  <span class="fl">0.527149525</span> <span class="fl">-0.206816248</span> <span class="fl">-0.010275393</span></span>
+<span id="cb20-31"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-31"></a><span class="dv">29</span>  <span class="fl">-2.13956345</span>  <span class="fl">0.313217810</span> <span class="fl">-0.271150240</span> <span class="fl">-0.084259221</span></span>
+<span id="cb20-32"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-32"></a><span class="dv">30</span>  <span class="fl">-2.26526149</span> <span class="fl">-0.337731904</span>  <span class="fl">0.068435776</span>  <span class="fl">0.108279885</span></span>
+<span id="cb20-33"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-33"></a><span class="dv">31</span>  <span class="fl">-2.14012214</span> <span class="fl">-0.504540690</span> <span class="fl">-0.075008442</span>  <span class="fl">0.048188868</span></span>
+<span id="cb20-34"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-34"></a><span class="dv">32</span>  <span class="fl">-1.83159477</span>  <span class="fl">0.423695068</span> <span class="fl">-0.270467377</span> <span class="fl">-0.239870381</span></span>
+<span id="cb20-35"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-35"></a><span class="dv">33</span>  <span class="fl">-2.61494794</span>  <span class="fl">1.793575856</span>  <span class="fl">0.047228419</span>  <span class="fl">0.229235932</span></span>
+<span id="cb20-36"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-36"></a><span class="dv">34</span>  <span class="fl">-2.44617739</span>  <span class="fl">2.150727877</span> <span class="fl">-0.082668045</span>  <span class="fl">0.048214393</span></span>
+<span id="cb20-37"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-37"></a><span class="dv">35</span>  <span class="fl">-2.10997488</span> <span class="fl">-0.460201841</span> <span class="fl">-0.170274861</span> <span class="fl">-0.029022947</span></span>
+<span id="cb20-38"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-38"></a><span class="dv">36</span>  <span class="fl">-2.20780890</span> <span class="fl">-0.206107398</span> <span class="fl">-0.225441580</span> <span class="fl">-0.168907873</span></span>
+<span id="cb20-39"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-39"></a><span class="dv">37</span>  <span class="fl">-2.04514621</span>  <span class="fl">0.661558111</span> <span class="fl">-0.484537410</span> <span class="fl">-0.196358525</span></span>
+<span id="cb20-40"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-40"></a><span class="dv">38</span>  <span class="fl">-2.52733191</span>  <span class="fl">0.592292774</span>  <span class="fl">0.019435812</span>  <span class="fl">0.136504550</span></span>
+<span id="cb20-41"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-41"></a><span class="dv">39</span>  <span class="fl">-2.42963258</span> <span class="fl">-0.904180040</span>  <span class="fl">0.193254662</span>  <span class="fl">0.009738423</span></span>
+<span id="cb20-42"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-42"></a><span class="dv">40</span>  <span class="fl">-2.16971071</span>  <span class="fl">0.268878961</span> <span class="fl">-0.175883821</span> <span class="fl">-0.007047406</span></span>
+<span id="cb20-43"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-43"></a><span class="dv">41</span>  <span class="fl">-2.28647514</span>  <span class="fl">0.441715388</span>  <span class="fl">0.034894909</span> <span class="fl">-0.106983249</span></span>
+<span id="cb20-44"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-44"></a><span class="dv">42</span>  <span class="fl">-1.85812246</span> <span class="fl">-2.337415158</span> <span class="fl">-0.204234223</span> <span class="fl">-0.289863919</span></span>
+<span id="cb20-45"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-45"></a><span class="dv">43</span>  <span class="fl">-2.55363840</span> <span class="fl">-0.479100690</span>  <span class="fl">0.305766453</span>  <span class="fl">0.066601453</span></span>
+<span id="cb20-46"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-46"></a><span class="dv">44</span>  <span class="fl">-1.96444768</span>  <span class="fl">0.472326668</span>  <span class="fl">0.309601318</span> <span class="fl">-0.177093014</span></span>
+<span id="cb20-47"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-47"></a><span class="dv">45</span>  <span class="fl">-2.13705901</span>  <span class="fl">1.142229262</span>  <span class="fl">0.248433561</span>  <span class="fl">0.151043437</span></span>
+<span id="cb20-48"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-48"></a><span class="dv">46</span>  <span class="fl">-2.06974430</span> <span class="fl">-0.711052725</span> <span class="fl">-0.063929826</span> <span class="fl">-0.140269507</span></span>
+<span id="cb20-49"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-49"></a><span class="dv">47</span>  <span class="fl">-2.38473317</span>  <span class="fl">1.120429702</span>  <span class="fl">0.057217858</span>  <span class="fl">0.152230967</span></span>
+<span id="cb20-50"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-50"></a><span class="dv">48</span>  <span class="fl">-2.39437631</span> <span class="fl">-0.386246873</span>  <span class="fl">0.139467905</span>  <span class="fl">0.048834762</span></span>
+<span id="cb20-51"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-51"></a><span class="dv">49</span>  <span class="fl">-2.22944655</span>  <span class="fl">0.997959764</span> <span class="fl">-0.181492780</span>  <span class="fl">0.014928135</span></span>
+<span id="cb20-52"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-52"></a><span class="dv">50</span>  <span class="fl">-2.20383344</span>  <span class="fl">0.009216358</span> <span class="fl">-0.153029490</span> <span class="fl">-0.049371732</span></span>
+<span id="cb20-53"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-53"></a><span class="dv">51</span>   <span class="fl">1.10178118</span>  <span class="fl">0.862972418</span> <span class="fl">-0.684586163</span> <span class="fl">-0.034833776</span></span>
+<span id="cb20-54"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-54"></a><span class="dv">52</span>   <span class="fl">0.73133743</span>  <span class="fl">0.594614726</span> <span class="fl">-0.094121716</span> <span class="fl">-0.004903623</span></span>
+<span id="cb20-55"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-55"></a><span class="dv">53</span>   <span class="fl">1.24097932</span>  <span class="fl">0.616297654</span> <span class="fl">-0.554006835</span> <span class="fl">-0.009423397</span></span>
+<span id="cb20-56"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-56"></a><span class="dv">54</span>   <span class="fl">0.40748306</span> <span class="fl">-1.754403989</span> <span class="fl">-0.023101768</span> <span class="fl">-0.065768835</span></span>
+<span id="cb20-57"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-57"></a><span class="dv">55</span>   <span class="fl">1.07547470</span> <span class="fl">-0.208421046</span> <span class="fl">-0.398255523</span> <span class="fl">-0.104736873</span></span>
+<span id="cb20-58"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-58"></a><span class="dv">56</span>   <span class="fl">0.38868734</span> <span class="fl">-0.593283636</span>  <span class="fl">0.124191550</span>  <span class="fl">0.240831300</span></span>
+<span id="cb20-59"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-59"></a><span class="dv">57</span>   <span class="fl">0.74652974</span>  <span class="fl">0.773019312</span>  <span class="fl">0.148969403</span>  <span class="fl">0.077369785</span></span>
+<span id="cb20-60"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-60"></a><span class="dv">58</span>  <span class="fl">-0.48732274</span> <span class="fl">-1.852429087</span>  <span class="fl">0.249265266</span>  <span class="fl">0.040520205</span></span>
+<span id="cb20-61"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-61"></a><span class="dv">59</span>   <span class="fl">0.92790164</span>  <span class="fl">0.032226078</span> <span class="fl">-0.596169361</span>  <span class="fl">0.029879609</span></span>
+<span id="cb20-62"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-62"></a><span class="dv">60</span>   <span class="fl">0.01142619</span> <span class="fl">-1.034018275</span>  <span class="fl">0.538899390</span>  <span class="fl">0.028461184</span></span>
+<span id="cb20-63"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-63"></a><span class="dv">61</span>  <span class="fl">-0.11019628</span> <span class="fl">-2.654072819</span> <span class="fl">-0.046790444</span> <span class="fl">-0.013760731</span></span>
+<span id="cb20-64"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-64"></a><span class="dv">62</span>   <span class="fl">0.44069345</span> <span class="fl">-0.063295188</span>  <span class="fl">0.205073815</span> <span class="fl">-0.040126082</span></span>
+<span id="cb20-65"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-65"></a><span class="dv">63</span>   <span class="fl">0.56210831</span> <span class="fl">-1.764724381</span> <span class="fl">-0.765771394</span> <span class="fl">-0.045731157</span></span>
+<span id="cb20-66"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-66"></a><span class="dv">64</span>   <span class="fl">0.71956189</span> <span class="fl">-0.186224606</span> <span class="fl">-0.068658945</span>  <span class="fl">0.164807198</span></span>
+<span id="cb20-67"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-67"></a><span class="dv">65</span>  <span class="fl">-0.03335470</span> <span class="fl">-0.439003210</span>  <span class="fl">0.194932893</span> <span class="fl">-0.109048499</span></span>
+<span id="cb20-68"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-68"></a><span class="dv">66</span>   <span class="fl">0.87540719</span>  <span class="fl">0.509063957</span> <span class="fl">-0.503511382</span> <span class="fl">-0.104943723</span></span>
+<span id="cb20-69"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-69"></a><span class="dv">67</span>   <span class="fl">0.35025167</span> <span class="fl">-0.196311735</span>  <span class="fl">0.490873075</span>  <span class="fl">0.191509364</span></span>
+<span id="cb20-70"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-70"></a><span class="dv">68</span>   <span class="fl">0.15881005</span> <span class="fl">-0.792095742</span> <span class="fl">-0.302037174</span>  <span class="fl">0.205297735</span></span>
+<span id="cb20-71"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-71"></a><span class="dv">69</span>   <span class="fl">1.22509363</span> <span class="fl">-1.622243803</span> <span class="fl">-0.482304024</span> <span class="fl">-0.225899769</span></span>
+<span id="cb20-72"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-72"></a><span class="dv">70</span>   <span class="fl">0.16491790</span> <span class="fl">-1.302609230</span> <span class="fl">-0.172837808</span>  <span class="fl">0.051726849</span></span>
+<span id="cb20-73"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-73"></a><span class="dv">71</span>   <span class="fl">0.73768265</span>  <span class="fl">0.396571562</span>  <span class="fl">0.616526306</span>  <span class="fl">0.083284123</span></span>
+<span id="cb20-74"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-74"></a><span class="dv">72</span>   <span class="fl">0.47628719</span> <span class="fl">-0.417320281</span> <span class="fl">-0.264952227</span> <span class="fl">-0.113568273</span></span>
+<span id="cb20-75"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-75"></a><span class="dv">73</span>   <span class="fl">1.23417810</span> <span class="fl">-0.933325729</span> <span class="fl">-0.368412272</span>  <span class="fl">0.009944526</span></span>
+<span id="cb20-76"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-76"></a><span class="dv">74</span>   <span class="fl">0.63285820</span> <span class="fl">-0.416387721</span> <span class="fl">-0.291896252</span>  <span class="fl">0.274220152</span></span>
+<span id="cb20-77"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-77"></a><span class="dv">75</span>   <span class="fl">0.70266118</span> <span class="fl">-0.063411820</span> <span class="fl">-0.446027008</span> <span class="fl">-0.043458325</span></span>
+<span id="cb20-78"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-78"></a><span class="dv">76</span>   <span class="fl">0.87427365</span>  <span class="fl">0.250793393</span> <span class="fl">-0.472578954</span> <span class="fl">-0.101715736</span></span>
+<span id="cb20-79"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-79"></a><span class="dv">77</span>   <span class="fl">1.25650912</span> <span class="fl">-0.077256020</span> <span class="fl">-0.727155002</span> <span class="fl">-0.039688518</span></span>
+<span id="cb20-80"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-80"></a><span class="dv">78</span>   <span class="fl">1.35840512</span>  <span class="fl">0.331311682</span> <span class="fl">-0.260826577</span> <span class="fl">-0.066828064</span></span>
+<span id="cb20-81"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-81"></a><span class="dv">79</span>   <span class="fl">0.66480037</span> <span class="fl">-0.225927855</span>  <span class="fl">0.085863889</span>  <span class="fl">0.036439840</span></span>
+<span id="cb20-82"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-82"></a><span class="dv">80</span>  <span class="fl">-0.04025861</span> <span class="fl">-1.058718547</span> <span class="fl">-0.319573330</span> <span class="fl">-0.064788156</span></span>
+<span id="cb20-83"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-83"></a><span class="dv">81</span>   <span class="fl">0.13079518</span> <span class="fl">-1.562271834</span> <span class="fl">-0.149983478</span>  <span class="fl">0.009402523</span></span>
+<span id="cb20-84"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-84"></a><span class="dv">82</span>   <span class="fl">0.02345269</span> <span class="fl">-1.572475594</span> <span class="fl">-0.241552281</span>  <span class="fl">0.032772444</span></span>
+<span id="cb20-85"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-85"></a><span class="dv">83</span>   <span class="fl">0.24153827</span> <span class="fl">-0.777256383</span> <span class="fl">-0.151211957</span> <span class="fl">-0.023651360</span></span>
+<span id="cb20-86"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-86"></a><span class="dv">84</span>   <span class="fl">1.06109461</span> <span class="fl">-0.633843245</span>  <span class="fl">0.105311387</span>  <span class="fl">0.183968453</span></span>
+<span id="cb20-87"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-87"></a><span class="dv">85</span>   <span class="fl">0.22397877</span> <span class="fl">-0.287773512</span>  <span class="fl">0.665249720</span>  <span class="fl">0.254828368</span></span>
+<span id="cb20-88"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-88"></a><span class="dv">86</span>   <span class="fl">0.42913912</span>  <span class="fl">0.845582241</span>  <span class="fl">0.450634071</span>  <span class="fl">0.109675181</span></span>
+<span id="cb20-89"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-89"></a><span class="dv">87</span>   <span class="fl">1.04872805</span>  <span class="fl">0.522051797</span> <span class="fl">-0.395786384</span> <span class="fl">-0.037209019</span></span>
+<span id="cb20-90"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-90"></a><span class="dv">88</span>   <span class="fl">1.04453138</span> <span class="fl">-1.382988719</span> <span class="fl">-0.688295960</span> <span class="fl">-0.136835600</span></span>
+<span id="cb20-91"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-91"></a><span class="dv">89</span>   <span class="fl">0.06958832</span> <span class="fl">-0.219503335</span>  <span class="fl">0.291579274</span>  <span class="fl">0.147144581</span></span>
+<span id="cb20-92"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-92"></a><span class="dv">90</span>   <span class="fl">0.28347724</span> <span class="fl">-1.329324639</span>  <span class="fl">0.089410023</span> <span class="fl">-0.008905805</span></span>
+<span id="cb20-93"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-93"></a><span class="dv">91</span>   <span class="fl">0.27907778</span> <span class="fl">-1.120028524</span>  <span class="fl">0.094487601</span>  <span class="fl">0.270657196</span></span>
+<span id="cb20-94"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-94"></a><span class="dv">92</span>   <span class="fl">0.62456979</span>  <span class="fl">0.024923029</span> <span class="fl">-0.020481147</span>  <span class="fl">0.147686401</span></span>
+<span id="cb20-95"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-95"></a><span class="dv">93</span>   <span class="fl">0.33653037</span> <span class="fl">-0.988404018</span> <span class="fl">-0.199389755</span> <span class="fl">-0.006530562</span></span>
+<span id="cb20-96"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-96"></a><span class="dv">94</span>  <span class="fl">-0.36218338</span> <span class="fl">-2.019237873</span>  <span class="fl">0.105821048</span> <span class="fl">-0.019570812</span></span>
+<span id="cb20-97"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-97"></a><span class="dv">95</span>   <span class="fl">0.28858624</span> <span class="fl">-0.855730320</span>  <span class="fl">0.130889685</span>  <span class="fl">0.107402349</span></span>
+<span id="cb20-98"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-98"></a><span class="dv">96</span>   <span class="fl">0.09136066</span> <span class="fl">-0.181192126</span>  <span class="fl">0.128978343</span>  <span class="fl">0.229959626</span></span>
+<span id="cb20-99"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-99"></a><span class="dv">97</span>   <span class="fl">0.22771687</span> <span class="fl">-0.384920081</span>  <span class="fl">0.156213154</span>  <span class="fl">0.132605877</span></span>
+<span id="cb20-100"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-100"></a><span class="dv">98</span>   <span class="fl">0.57638829</span> <span class="fl">-0.154873597</span> <span class="fl">-0.271650362</span>  <span class="fl">0.019860679</span></span>
+<span id="cb20-101"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-101"></a><span class="dv">99</span>  <span class="fl">-0.44766702</span> <span class="fl">-1.543792034</span>  <span class="fl">0.190400930</span> <span class="fl">-0.199946457</span></span>
+<span id="cb20-102"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-102"></a><span class="dv">100</span>  <span class="fl">0.25673059</span> <span class="fl">-0.598851796</span>  <span class="fl">0.091879161</span>  <span class="fl">0.058622049</span></span>
+<span id="cb20-103"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-103"></a><span class="dv">101</span>  <span class="fl">1.84456887</span>  <span class="fl">0.870421312</span>  <span class="fl">1.005401018</span>  <span class="fl">0.049249743</span></span>
+<span id="cb20-104"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-104"></a><span class="dv">102</span>  <span class="fl">1.15788161</span> <span class="fl">-0.698869862</span>  <span class="fl">0.530160149</span>  <span class="fl">0.040520754</span></span>
+<span id="cb20-105"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-105"></a><span class="dv">103</span>  <span class="fl">2.20526679</span>  <span class="fl">0.562010477</span> <span class="fl">-0.202914170</span> <span class="fl">-0.059184194</span></span>
+<span id="cb20-106"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-106"></a><span class="dv">104</span>  <span class="fl">1.44015066</span> <span class="fl">-0.046987588</span>  <span class="fl">0.163630107</span>  <span class="fl">0.235770073</span></span>
+<span id="cb20-107"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-107"></a><span class="dv">105</span>  <span class="fl">1.86781222</span>  <span class="fl">0.295044824</span>  <span class="fl">0.395628375</span>  <span class="fl">0.016298272</span></span>
+<span id="cb20-108"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-108"></a><span class="dv">106</span>  <span class="fl">2.75187334</span>  <span class="fl">0.800409201</span> <span class="fl">-0.582309103</span>  <span class="fl">0.101384486</span></span>
+<span id="cb20-109"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-109"></a><span class="dv">107</span>  <span class="fl">0.36701769</span> <span class="fl">-1.561502891</span>  <span class="fl">0.986893267</span>  <span class="fl">0.133123834</span></span>
+<span id="cb20-110"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-110"></a><span class="dv">108</span>  <span class="fl">2.30243944</span>  <span class="fl">0.420065580</span> <span class="fl">-0.651706439</span>  <span class="fl">0.238041242</span></span>
+<span id="cb20-111"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-111"></a><span class="dv">109</span>  <span class="fl">2.00668647</span> <span class="fl">-0.711438654</span> <span class="fl">-0.393990571</span>  <span class="fl">0.086510630</span></span>
+<span id="cb20-112"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-112"></a><span class="dv">110</span>  <span class="fl">2.25977735</span>  <span class="fl">1.921010376</span>  <span class="fl">0.397551897</span> <span class="fl">-0.104838918</span></span>
+<span id="cb20-113"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-113"></a><span class="dv">111</span>  <span class="fl">1.36417549</span>  <span class="fl">0.692756454</span>  <span class="fl">0.284612074</span> <span class="fl">-0.107860420</span></span>
+<span id="cb20-114"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-114"></a><span class="dv">112</span>  <span class="fl">1.60267867</span> <span class="fl">-0.421700450</span>  <span class="fl">0.023186408</span> <span class="fl">-0.058331633</span></span>
+<span id="cb20-115"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-115"></a><span class="dv">113</span>  <span class="fl">1.88390070</span>  <span class="fl">0.419249651</span>  <span class="fl">0.026338410</span> <span class="fl">-0.146414939</span></span>
+<span id="cb20-116"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-116"></a><span class="dv">114</span>  <span class="fl">1.26011510</span> <span class="fl">-1.162260421</span>  <span class="fl">0.580249290</span> <span class="fl">-0.099157321</span></span>
+<span id="cb20-117"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-117"></a><span class="dv">115</span>  <span class="fl">1.46764520</span> <span class="fl">-0.442271587</span>  <span class="fl">1.003869574</span> <span class="fl">-0.275658903</span></span>
+<span id="cb20-118"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-118"></a><span class="dv">116</span>  <span class="fl">1.59007732</span>  <span class="fl">0.676244806</span>  <span class="fl">0.638428708</span> <span class="fl">-0.191862996</span></span>
+<span id="cb20-119"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-119"></a><span class="dv">117</span>  <span class="fl">1.47143146</span>  <span class="fl">0.255621824</span>  <span class="fl">0.037431260</span>  <span class="fl">0.155330271</span></span>
+<span id="cb20-120"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-120"></a><span class="dv">118</span>  <span class="fl">2.42632899</span>  <span class="fl">2.556661251</span> <span class="fl">-0.127881459</span>  <span class="fl">0.273807183</span></span>
+<span id="cb20-121"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-121"></a><span class="dv">119</span>  <span class="fl">3.31069558</span>  <span class="fl">0.017780949</span> <span class="fl">-0.703305304</span> <span class="fl">-0.045188606</span></span>
+<span id="cb20-122"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-122"></a><span class="dv">120</span>  <span class="fl">1.26376667</span> <span class="fl">-1.706745380</span> <span class="fl">-0.267536893</span>  <span class="fl">0.065180800</span></span>
+<span id="cb20-123"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-123"></a><span class="dv">121</span>  <span class="fl">2.03771630</span>  <span class="fl">0.910467410</span>  <span class="fl">0.234799484</span> <span class="fl">-0.167951254</span></span>
+<span id="cb20-124"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-124"></a><span class="dv">122</span>  <span class="fl">0.97798073</span> <span class="fl">-0.571764325</span>  <span class="fl">0.828127201</span> <span class="fl">-0.027755587</span></span>
+<span id="cb20-125"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-125"></a><span class="dv">123</span>  <span class="fl">2.89765149</span>  <span class="fl">0.413641060</span> <span class="fl">-0.857421825</span>  <span class="fl">0.127336502</span></span>
+<span id="cb20-126"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-126"></a><span class="dv">124</span>  <span class="fl">1.33323218</span> <span class="fl">-0.481811219</span> <span class="fl">-0.005428364</span> <span class="fl">-0.139959148</span></span>
+<span id="cb20-127"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-127"></a><span class="dv">125</span>  <span class="fl">1.70073390</span>  <span class="fl">1.013921867</span>  <span class="fl">0.298450613</span>  <span class="fl">0.061643734</span></span>
+<span id="cb20-128"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-128"></a><span class="dv">126</span>  <span class="fl">1.95432671</span>  <span class="fl">1.007777596</span> <span class="fl">-0.419984722</span>  <span class="fl">0.218338351</span></span>
+<span id="cb20-129"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-129"></a><span class="dv">127</span>  <span class="fl">1.17510363</span> <span class="fl">-0.316394472</span>  <span class="fl">0.129937757</span> <span class="fl">-0.125420444</span></span>
+<span id="cb20-130"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-130"></a><span class="dv">128</span>  <span class="fl">1.02095055</span>  <span class="fl">0.064346029</span>  <span class="fl">0.337715967</span>  <span class="fl">0.008654401</span></span>
+<span id="cb20-131"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-131"></a><span class="dv">129</span>  <span class="fl">1.78834992</span> <span class="fl">-0.187361215</span>  <span class="fl">0.270658006</span> <span class="fl">-0.031087648</span></span>
+<span id="cb20-132"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-132"></a><span class="dv">130</span>  <span class="fl">1.86364755</span>  <span class="fl">0.562290726</span> <span class="fl">-0.715634119</span>  <span class="fl">0.208215164</span></span>
+<span id="cb20-133"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-133"></a><span class="dv">131</span>  <span class="fl">2.43595373</span>  <span class="fl">0.259284433</span> <span class="fl">-0.727816146</span>  <span class="fl">0.017923365</span></span>
+<span id="cb20-134"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-134"></a><span class="dv">132</span>  <span class="fl">2.30492772</span>  <span class="fl">2.626323468</span> <span class="fl">-0.493473808</span>  <span class="fl">0.211675709</span></span>
+<span id="cb20-135"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-135"></a><span class="dv">133</span>  <span class="fl">1.86270322</span> <span class="fl">-0.178549495</span>  <span class="fl">0.354148712</span> <span class="fl">-0.100009882</span></span>
+<span id="cb20-136"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-136"></a><span class="dv">134</span>  <span class="fl">1.11414774</span> <span class="fl">-0.292922623</span> <span class="fl">-0.183488392</span>  <span class="fl">0.186343697</span></span>
+<span id="cb20-137"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-137"></a><span class="dv">135</span>  <span class="fl">1.20247330</span> <span class="fl">-0.811315271</span> <span class="fl">-0.164723757</span>  <span class="fl">0.489483470</span></span>
+<span id="cb20-138"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-138"></a><span class="dv">136</span>  <span class="fl">2.79877045</span>  <span class="fl">0.856803329</span> <span class="fl">-0.542906499</span> <span class="fl">-0.295881050</span></span>
+<span id="cb20-139"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-139"></a><span class="dv">137</span>  <span class="fl">1.57625591</span>  <span class="fl">1.068581107</span>  <span class="fl">0.945853819</span> <span class="fl">-0.035605759</span></span>
+<span id="cb20-140"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-140"></a><span class="dv">138</span>  <span class="fl">1.34629210</span>  <span class="fl">0.422430611</span>  <span class="fl">0.180875478</span>  <span class="fl">0.215421288</span></span>
+<span id="cb20-141"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-141"></a><span class="dv">139</span>  <span class="fl">0.92482492</span>  <span class="fl">0.017223100</span>  <span class="fl">0.416826193</span> <span class="fl">-0.005238409</span></span>
+<span id="cb20-142"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-142"></a><span class="dv">140</span>  <span class="fl">1.85204505</span>  <span class="fl">0.676128174</span> <span class="fl">-0.012672115</span> <span class="fl">-0.195195239</span></span>
+<span id="cb20-143"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-143"></a><span class="dv">141</span>  <span class="fl">2.01481043</span>  <span class="fl">0.613885637</span>  <span class="fl">0.428332842</span> <span class="fl">-0.247538313</span></span>
+<span id="cb20-144"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-144"></a><span class="dv">142</span>  <span class="fl">1.90178409</span>  <span class="fl">0.689575494</span>  <span class="fl">0.130075005</span> <span class="fl">-0.469696647</span></span>
+<span id="cb20-145"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-145"></a><span class="dv">143</span>  <span class="fl">1.15788161</span> <span class="fl">-0.698869862</span>  <span class="fl">0.530160149</span>  <span class="fl">0.040520754</span></span>
+<span id="cb20-146"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-146"></a><span class="dv">144</span>  <span class="fl">2.04055823</span>  <span class="fl">0.867520601</span>  <span class="fl">0.338144000</span> <span class="fl">-0.045187126</span></span>
+<span id="cb20-147"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-147"></a><span class="dv">145</span>  <span class="fl">1.99814710</span>  <span class="fl">1.049168747</span>  <span class="fl">0.632413436</span> <span class="fl">-0.214045204</span></span>
+<span id="cb20-148"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-148"></a><span class="dv">146</span>  <span class="fl">1.87050329</span>  <span class="fl">0.386966082</span>  <span class="fl">0.256273852</span> <span class="fl">-0.389256845</span></span>
+<span id="cb20-149"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-149"></a><span class="dv">147</span>  <span class="fl">1.56458048</span> <span class="fl">-0.896686809</span> <span class="fl">-0.026371352</span> <span class="fl">-0.220192100</span></span>
+<span id="cb20-150"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-150"></a><span class="dv">148</span>  <span class="fl">1.52117050</span>  <span class="fl">0.269069144</span>  <span class="fl">0.180178380</span> <span class="fl">-0.119171137</span></span>
+<span id="cb20-151"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-151"></a><span class="dv">149</span>  <span class="fl">1.37278779</span>  <span class="fl">1.011254419</span>  <span class="fl">0.933395241</span> <span class="fl">-0.026128648</span></span>
+<span id="cb20-152"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb20-152"></a><span class="dv">150</span>  <span class="fl">0.96065603</span> <span class="fl">-0.024331668</span>  <span class="fl">0.528248807</span>  <span class="fl">0.163078032</span></span></code></pre></div>
+</blockquote>
+<p>On peut alors utiliser, lorsqu’elle a été possible, l’interprétation des axes et/ou l’identification des zones faite précédemment pour caractériser des individus, identifier les caractéristiques d’invididus atypiques et effectuer, si c’est pertinent, une première classification sommaire.</p>
+<blockquote>
+<p><strong>En R : Étudier les individus atypiques</strong></p>
+<p>En observant la réprésentation des individus, ceux-ci semblent regroupés en deux sous-ensembles, à l’exception de l’invididu n°42. Effectuons une ACP normée sans cet individu en utilisant le paramètre <code>ind.sup</code> :</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb21-1"></a><span class="kw">PCA</span>(data, <span class="dt">ncp =</span> <span class="dv">4</span>, <span class="dt">ind.sup =</span> <span class="dv">42</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantmulti_pcawithoutlier-1.png" width="672" /><img src="DataExploration_files/figure-html/quantmulti_pcawithoutlier-2.png" width="672" /></p>
+<pre><code>**Results for the Principal Component Analysis (PCA)**
+The analysis was performed on 150 individuals, described by 4 variables
+*The results are available in the following objects:
+
+   name               description                                
+1  &quot;$eig&quot;             &quot;eigenvalues&quot;                              
+2  &quot;$var&quot;             &quot;results for the variables&quot;                
+3  &quot;$var$coord&quot;       &quot;coord. for the variables&quot;                 
+4  &quot;$var$cor&quot;         &quot;correlations variables - dimensions&quot;      
+5  &quot;$var$cos2&quot;        &quot;cos2 for the variables&quot;                   
+6  &quot;$var$contrib&quot;     &quot;contributions of the variables&quot;           
+7  &quot;$ind&quot;             &quot;results for the individuals&quot;              
+8  &quot;$ind$coord&quot;       &quot;coord. for the individuals&quot;               
+9  &quot;$ind$cos2&quot;        &quot;cos2 for the individuals&quot;                 
+10 &quot;$ind$contrib&quot;     &quot;contributions of the individuals&quot;         
+11 &quot;$ind.sup&quot;         &quot;results for the supplementary individuals&quot;
+12 &quot;$ind.sup$coord&quot;   &quot;coord. for the supplementary individuals&quot; 
+13 &quot;$ind.sup$cos2&quot;    &quot;cos2 for the supplementary individuals&quot;   
+14 &quot;$call&quot;            &quot;summary statistics&quot;                       
+15 &quot;$call$centre&quot;     &quot;mean of the variables&quot;                    
+16 &quot;$call$ecart.type&quot; &quot;standard error of the variables&quot;          
+17 &quot;$call$row.w&quot;      &quot;weights for the individuals&quot;              
+18 &quot;$call$col.w&quot;      &quot;weights for the variables&quot;                </code></pre>
+<p>Les résultats sont très proches de l’analyse précédente, donc cet individu semble peu influent.</p>
+</blockquote>
+<blockquote>
+<p><strong>En R : Étudier le lien avec des variables qualitatives</strong></p>
+<p>Les données initiales comportent une variable qualitative <code>Species</code>, on souhaite l’intégrer dans la répresentation graphique des invididus. On relance l’analyse sur les données complètes (c’est-à-dire <code>iris</code>) et en utilisant le paramètre <code>quali.sup</code> :</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb23-1"></a>pca &lt;-<span class="st"> </span><span class="kw">PCA</span>(iris, <span class="dt">ncp =</span> <span class="dv">4</span>, <span class="dt">quali.sup =</span> <span class="dv">5</span>, <span class="dt">graph =</span> <span class="ot">FALSE</span>)</span></code></pre></div>
+<p>On peut alors obtenir deux types de représentations :</p>
+<ul>
+<li>on utilise le paramètre <code>habillage</code> qui colore les individus selon la modalité de la variable qualitative :</li>
+</ul>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb24-1"></a><span class="kw">plot</span>(pca, <span class="dt">choix =</span> <span class="st">&quot;ind&quot;</span>, <span class="dt">habillage =</span> <span class="dv">5</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantmulti_pcaindhabillage-1.png" width="672" /></p>
+<ul>
+<li>on représente l’individu moyen par modalité :</li>
+</ul>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#cb25-1"></a><span class="kw">plot</span>(pca, <span class="dt">choix =</span> <span class="st">&quot;ind&quot;</span>, <span class="dt">col.ind =</span> <span class="st">&quot;gray&quot;</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantmulti_pcawithqualitativeplot-1.png" width="672" /></p>
+</blockquote>
+</div>
+</div>
+<div id="limites-de-lanalyse-en-composantes-principales" class="section level2">
+<h2><span class="header-section-number">4.3</span> Limites de l’analyse en composantes principales</h2>
+<div id="qualité-des-composantes-principales" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Qualité des composantes principales</h3>
+<p>Si les deux premières composantes principales n’expliquent pas une partie suffisante de l’information totale fournie par les données, l’analyse graphique devient non pertinente.<br />
+Il faut augmenter le nombre de composantes principales nécessaires pour atteindre ces conditions et se concentrer sur une analyse des données numériques.</p>
+</div>
+<div id="qualité-de-réprésentation-dune-variable" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> Qualité de réprésentation d’une variable</h3>
+<p>Si une variable a des coordonnées peu élevées dans l’espace des deux premières composantes principales, alors elle y est peu expliquée : donc l’analyse du comportement de cette variable est moins pertinente.<br />
+Il faut alors analyser cette variable selon les autres composantes principales.</p>
+</div>
+<div id="qualité-de-réprésentation-dune-variable-1" class="section level3">
+<h3><span class="header-section-number">4.3.3</span> Qualité de réprésentation d’une variable</h3>
+<p>Si un individu est représenté par un point proche de l’origine du repère, alors il est proche de la moyenne <strong>pour les deux premières composantes principales</strong>, et donc très peu expliqué par les deux premières composantes principales.<br />
+Il faut alors analyser cet individu selon les autres composantes principales.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analyse-quantitative-bivariée.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="partitionnement-de-données.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

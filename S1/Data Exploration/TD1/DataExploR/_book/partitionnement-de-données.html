@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Partitionnement de données | Analyse exploratoire des données</title>
+  <meta name="description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Partitionnement de données | Analyse exploratoire des données" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Partitionnement de données | Analyse exploratoire des données" />
+  
+  <meta name="twitter:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+<meta name="author" content="Astrid Jourdan, Karima El Ganaoui, Romain Dujol" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"/>
+<link rel="next" href="analyse-qualitative-univariée.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="dataExploration.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><div style="display:inline">
+      <a style="display:inline;vertical-align:baseline" href="https://www.eisti.fr" target="blank">
+        <img src="cytech-st_logo.jpg" height="30"/>
+      </a>
+      <span style="opacity:1;display:inline;vertical-align:40%"><em>Ingénieur 1ère année</em></span>
+    </div>
+    <div style="text-align:center">
+      <p><strong>Analyse exploratoire des données</strong></p>
+    </div>
+</li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#terminologie-générale"><i class="fa fa-check"></i><b>1.1</b> Terminologie générale</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#contextes"><i class="fa fa-check"></i><b>1.1.1</b> Contextes</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#échantillonages"><i class="fa fa-check"></i><b>1.1.2</b> Échantillonages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#typologie-des-variables"><i class="fa fa-check"></i><b>1.2</b> Typologie des variables</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#variables-qualitatives"><i class="fa fa-check"></i><b>1.2.1</b> Variables qualitatives</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#variables-qualitatives-1"><i class="fa fa-check"></i><b>1.2.2</b> Variables qualitatives</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#conversion-entre-les-différents-types-de-variables"><i class="fa fa-check"></i><b>1.3</b> Conversion entre les différents types de variables</a></li>
+</ul></li>
+<li class="part"><span><b>I Exploration de données quantitatives</b></span></li>
+<li class="chapter" data-level="2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html"><i class="fa fa-check"></i><b>2</b> Analyse quantitative univariée</a><ul>
+<li class="chapter" data-level="" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#représentation-graphique-histogramme"><i class="fa fa-check"></i>Représentation graphique : histogramme</a></li>
+<li class="chapter" data-level="2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-position"><i class="fa fa-check"></i><b>2.1</b> Indicateurs de position</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#moyenne"><i class="fa fa-check"></i><b>2.1.1</b> Moyenne</a></li>
+<li class="chapter" data-level="2.1.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#quantiles"><i class="fa fa-check"></i><b>2.1.2</b> Quantiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-dispersion"><i class="fa fa-check"></i><b>2.2</b> Indicateurs de dispersion</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#étendue"><i class="fa fa-check"></i><b>2.2.1</b> Étendue</a></li>
+<li class="chapter" data-level="2.2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#écart-inter-quartile"><i class="fa fa-check"></i><b>2.2.2</b> Écart inter-quartile</a></li>
+<li class="chapter" data-level="2.2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#variance.-écart-type"><i class="fa fa-check"></i><b>2.2.3</b> Variance. Écart-type</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#autres-indicateurs"><i class="fa fa-check"></i><b>2.3</b> Autres indicateurs</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-dasymétrie"><i class="fa fa-check"></i><b>2.3.1</b> Coefficient d’asymétrie</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-daplatissement-ou-kurtosis"><i class="fa fa-check"></i><b>2.3.2</b> Coefficient d’aplatissement (ou <em>kurtosis</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html"><i class="fa fa-check"></i><b>3</b> Analyse quantitative bivariée</a><ul>
+<li class="chapter" data-level="3.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance.-coefficient-de-corrélation"><i class="fa fa-check"></i><b>3.1</b> Covariance. Coefficient de corrélation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance"><i class="fa fa-check"></i><b>3.1.1</b> Covariance</a></li>
+<li class="chapter" data-level="3.1.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#coefficient-de-corrélation-linéaire"><i class="fa fa-check"></i><b>3.1.2</b> Coefficient de corrélation linéaire</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régression-linéaire"><i class="fa fa-check"></i><b>3.2</b> Régression linéaire</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#calcul-du-modèle"><i class="fa fa-check"></i><b>3.2.1</b> Calcul du modèle</a></li>
+<li class="chapter" data-level="3.2.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#analyse-du-modèle"><i class="fa fa-check"></i><b>3.2.2</b> Analyse du modèle</a></li>
+<li class="chapter" data-level="3.2.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#validation-du-modèle"><i class="fa fa-check"></i><b>3.2.3</b> Validation du modèle</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régressions-non-linéaires"><i class="fa fa-check"></i><b>3.3</b> Régressions non-linéaires</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><i class="fa fa-check"></i><b>4</b> Analyse quantitative multivariée : analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>4.1</b> Formulation mathématique</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#matrice-de-variance-covariance"><i class="fa fa-check"></i><b>4.1.1</b> Matrice de variance-covariance</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#composantes-principales"><i class="fa fa-check"></i><b>4.1.2</b> Composantes principales</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#premières-interprétations"><i class="fa fa-check"></i><b>4.1.3</b> Premières interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>4.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>4.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="4.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>4.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#limites-de-lanalyse-en-composantes-principales"><i class="fa fa-check"></i><b>4.3</b> Limites de l’analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-des-composantes-principales"><i class="fa fa-check"></i><b>4.3.1</b> Qualité des composantes principales</a></li>
+<li class="chapter" data-level="4.3.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable"><i class="fa fa-check"></i><b>4.3.2</b> Qualité de réprésentation d’une variable</a></li>
+<li class="chapter" data-level="4.3.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable-1"><i class="fa fa-check"></i><b>4.3.3</b> Qualité de réprésentation d’une variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html"><i class="fa fa-check"></i><b>5</b> Partitionnement de données</a><ul>
+<li class="chapter" data-level="5.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#analyse-de-la-problématique"><i class="fa fa-check"></i><b>5.1</b> Analyse de la problématique</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#distances"><i class="fa fa-check"></i><b>5.1.1</b> Distances</a></li>
+<li class="chapter" data-level="5.1.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#inertias"><i class="fa fa-check"></i><b>5.1.2</b> Inerties</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#algorithmes"><i class="fa fa-check"></i><b>5.2</b> Algorithmes</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#k-moyennes"><i class="fa fa-check"></i><b>5.2.1</b> <span class="math inline">\(k\)</span>-moyennes</a></li>
+<li class="chapter" data-level="5.2.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#classification-hiérarchique-ascendante"><i class="fa fa-check"></i><b>5.2.2</b> Classification hiérarchique ascendante</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#conclusion"><i class="fa fa-check"></i><b>5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="part"><span><b>II Exploration de données qualitatives</b></span></li>
+<li class="chapter" data-level="6" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html"><i class="fa fa-check"></i><b>6</b> Analyse qualitative univariée</a><ul>
+<li class="chapter" data-level="6.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#terminologie"><i class="fa fa-check"></i><b>6.1</b> Terminologie</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#effectifs.-fréquences"><i class="fa fa-check"></i><b>6.1.1</b> Effectifs. Fréquences</a></li>
+<li class="chapter" data-level="6.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>6.1.2</b> Représentations graphiques</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#indicateurs"><i class="fa fa-check"></i><b>6.2</b> Indicateurs</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#mode"><i class="fa fa-check"></i><b>6.2.1</b> Mode</a></li>
+<li class="chapter" data-level="6.2.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#moyenne-des-variables-dichotomiques-binaires"><i class="fa fa-check"></i><b>6.2.2</b> Moyenne des variables dichotomiques binaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html"><i class="fa fa-check"></i><b>7</b> Analyse qualitative bivariée</a><ul>
+<li class="chapter" data-level="7.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>7.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-contingences"><i class="fa fa-check"></i><b>7.1.1</b> Tableau des contingences</a></li>
+<li class="chapter" data-level="7.1.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-fréquences"><i class="fa fa-check"></i><b>7.1.2</b> Tableau des fréquences</a></li>
+<li class="chapter" data-level="7.1.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#profils-ligne.-profils-colonne"><i class="fa fa-check"></i><b>7.1.3</b> Profils ligne. Profils colonne</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tests-dindépendance"><i class="fa fa-check"></i><b>7.2</b> Tests d’indépendance</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#fréquences-conjointes-théoriques-en-cas-dindépendance"><i class="fa fa-check"></i><b>7.2.1</b> Fréquences conjointes théoriques en cas d’indépendance</a></li>
+<li class="chapter" data-level="7.2.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#test-du-chi2"><i class="fa fa-check"></i><b>7.2.2</b> Test du <span class="math inline">\(\chi^2\)</span></a></li>
+<li class="chapter" data-level="7.2.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#coefficient-de-cramer"><i class="fa fa-check"></i><b>7.2.3</b> Coefficient de Cramer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><i class="fa fa-check"></i><b>8</b> Analyse qualitative multivariée : analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="8.1" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#analyse-des-correspondances-multiples"><i class="fa fa-check"></i><b>8.1</b> Analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>8.1.1</b> Formulation mathématique</a></li>
+<li class="chapter" data-level="8.1.2" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#justification-et-interprétations"><i class="fa fa-check"></i><b>8.1.2</b> Justification et interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>8.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>8.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="8.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>8.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#limites-de-lanalyse-factorielle-des-correspondances"><i class="fa fa-check"></i><b>8.3</b> Limites de l’analyse factorielle des correspondances</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="règles-dassociation.html"><a href="règles-dassociation.html"><i class="fa fa-check"></i><b>9</b> Règles d’association</a><ul>
+<li class="chapter" data-level="9.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>9.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="règles-dassociation.html"><a href="règles-dassociation.html#support"><i class="fa fa-check"></i><b>9.1.1</b> Support</a></li>
+<li class="chapter" data-level="9.1.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#confiance"><i class="fa fa-check"></i><b>9.1.2</b> Confiance</a></li>
+<li class="chapter" data-level="9.1.3" data-path="règles-dassociation.html"><a href="règles-dassociation.html#amélioration-ou-lift"><i class="fa fa-check"></i><b>9.1.3</b> Amélioration (ou <em>lift</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#algorithme-de-construction-de-règles"><i class="fa fa-check"></i><b>9.2</b> Algorithme de construction de règles</a></li>
+</ul></li>
+<li class="part"><span><b>III Exploration de données mixtes</b></span></li>
+<li class="chapter" data-level="10" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html"><i class="fa fa-check"></i><b>10</b> Analyse mixte bivariée</a><ul>
+<li class="chapter" data-level="10.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>10.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#variances"><i class="fa fa-check"></i><b>10.1.1</b> Variances</a></li>
+<li class="chapter" data-level="10.1.2" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#rapport-de-corrélation"><i class="fa fa-check"></i><b>10.1.2</b> Rapport de corrélation</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li>
+   <div style="text-align:center">
+     <p><strong>A. Jourdan, K. El Ganaoui, R. Dujol</strong></p>
+     <p><a href="https://github.com/rstudio/bookdown" target="blank"><em>Published with bookdown</em></a></p>
+   </div>
+</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analyse exploratoire des données</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="partitionnement-de-données" class="section level1">
+<h1><span class="header-section-number">5</span> Partitionnement de données</h1>
+<p>Dans ce chapitre, on considère :</p>
+<ul>
+<li>un corpus de données de <span class="math inline">\(N\)</span> individus ;</li>
+<li><span class="math inline">\(p\)</span> variables quantitatives <span class="math inline">\(X_1, \ldots, X_p\)</span>.</li>
+</ul>
+<p>Pour tout entier <span class="math inline">\(i\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(N\)</span> et tout entier <span class="math inline">\(j\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(p\)</span>, on note <span class="math inline">\(x_{i,j}\)</span> la valeur de la variable <span class="math inline">\(X_j\)</span> pour le <span class="math inline">\(i\)</span>-ème individu <span class="math inline">\(x_i\)</span>.</p>
+<p>On note également <span class="math inline">\(X\)</span> la matrice à <span class="math inline">\(N\)</span> lignes et <span class="math inline">\(p\)</span> colonnes <span class="math inline">\(X = \left(x_{i,j}\right)_{1 \leq i \leq N, 1 \leq j \leq p}\)</span>, de sorte que :</p>
+<ul>
+<li><span class="math inline">\(X_j\)</span> soit sa <span class="math inline">\(j\)</span>-ème colonne pour tout entier <span class="math inline">\(j\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(p\)</span> ;</li>
+<li><span class="math inline">\(x_i\)</span> soit sa <span class="math inline">\(i\)</span>-ème ligne pour tout entier <span class="math inline">\(j\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(N\)</span>.</li>
+</ul>
+<p>Dans tous les exemples, on utilise le corpus de données des iris de Gaspésie <span class="citation">(Anderson 1935)</span> fourni avec le logiciel R et déjà utilisé dans le chapitre précédent.
+La dernière variable est qualitative, donc elle ne sera pas utilisée pour l’analyse :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="partitionnement-de-données.html#cb1-1"></a>data &lt;-<span class="st"> </span>iris[<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>]</span></code></pre></div>
+<div id="analyse-de-la-problématique" class="section level2">
+<h2><span class="header-section-number">5.1</span> Analyse de la problématique</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-1" class="definition"><strong>Définition 5.1  </strong></span>Le <strong>partitionnement de données</strong> cherche à distinguer des groupes homogèmes, appelés <strong>classes</strong> au sein d’un corps de données :</p>
+<ul>
+<li>en regroupant les observations ayant des caractéristiques similiaires au sein d’une même classe ;</li>
+<li>en construisant des classes aussi dissemblables que possibles.</li>
+</ul>
+</div>
+
+<p>Ces classes peuvent alors apporter des informations pertinentes, notamment si elles sont représentés graphiquement (après une analyse en composantes principales, par exemple).<br />
+Elles peuvent être utilisées pour découper une étude en plusieurs parties, chaque classe pouvant alors traitée spécifiquement.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-2" class="theorem"><strong>Théorème 5.1  </strong></span>Soit <span class="math inline">\(N\)</span> un entier naturel et <span class="math inline">\(E\)</span> un ensemble fini de cardinal <span class="math inline">\(N\)</span>.<br />
+Alors <span class="math inline">\(E\)</span> admet <span class="math inline">\(B_N = \dfrac{1}{e} \displaystyle\sum_{n = 1}^{+\infty} \dfrac{n^N}{n!}\)</span> partitions distinctes.
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-3" class="proposition"><strong>Proposition 5.1  </strong></span><span class="math inline">\(e^N = \operatorname{o}_{N \to +\infty}(B_N)\)</span>
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Donc le nombre de partitions distinctes croît hyperexponentiellement en fonction du nombre d’éléments :
+</div>
+
+<table>
+<caption>
+<span id="tab:quantclassif-bell">Table 5.1: </span>Valeurs de <span class="math inline">\(B_N\)</span> pour quelques valeurs de <span class="math inline">\(N\)</span> (Source : <a href="https://oeis.org/A000110/list">OEIS</a>)
+</caption>
+<thead>
+<tr>
+<th style="text-align:right;">
+<span class="math inline">\(N\)</span>
+</th>
+<th style="text-align:right;">
+<span class="math inline">\(B_N\)</span>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+52
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+115 975
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+1 382 958 545
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+51 724 158 235 372
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:right;">
+4 638 590 332 229 999 353
+</td>
+</tr>
+</tbody>
+</table>
+<p>Cette croissance extrêmement rapide impose la nécessite d’algorithmes performants.
+```</p>
+<div id="distances" class="section level3">
+<h3><span class="header-section-number">5.1.1</span> Distances</h3>
+<div id="distances-entre-individus" class="section level4">
+<h4><span class="header-section-number">5.1.1.1</span> Distances entre individus</h4>
+<p>On souhaite regrouper les observations ayant des caractéristiques similiaires au sein d’une même classe. Une méthode naturelle consiste à quantifier la distance entre deux individus.</p>
+<p>La distance au sens mathématique du terme convient parfaitement comme, par exemple, les distances issues des normes usuelles :</p>
+<ul>
+<li>la distance euclidienne usuelle <span class="math inline">\(d_2\)</span> issue de la norme euclidienne <span class="math inline">\(\|\cdot\|_2\)</span> ;</li>
+<li>la distance dite <em>de Manhattan</em> <span class="math inline">\(d_1\)</span> issue de la norme <span class="math inline">\(\|\cdot\|_1\)</span> ;</li>
+<li>la distance <span class="math inline">\(d_\infty\)</span> issue de la norme <span class="math inline">\(\|\cdot\|_\infty\)</span>.</li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer une distance usuelle entre deux vecteurs</strong></p>
+<p>On utilise la fonction <code>norm</code> dont le second paramètre <code>type</code> spécifie le type de norme à calculer :</p>
+<ul>
+<li><code>type = "1"</code> indique la norme <span class="math inline">\(\|\cdot\|_1\)</span> ;</li>
+<li><code>type = "2"</code> indique la norme <span class="math inline">\(\|\cdot\|_2\)</span> ;</li>
+<li><code>type = "I"</code> indique la norme <span class="math inline">\(\|\cdot\|_\infty\)</span>.</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="partitionnement-de-données.html#cb2-1"></a>x &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(<span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>))</span>
+<span id="cb2-2"><a href="partitionnement-de-données.html#cb2-2"></a>y &lt;-<span class="st"> </span><span class="kw">as.matrix</span>(<span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">0</span>))</span>
+<span id="cb2-3"><a href="partitionnement-de-données.html#cb2-3"></a><span class="kw">norm</span>(x <span class="op">-</span><span class="st"> </span>y, <span class="st">&quot;1&quot;</span>)</span>
+<span id="cb2-4"><a href="partitionnement-de-données.html#cb2-4"></a>[<span class="dv">1</span>] <span class="dv">2</span></span>
+<span id="cb2-5"><a href="partitionnement-de-données.html#cb2-5"></a><span class="kw">norm</span>(x <span class="op">-</span><span class="st"> </span>y, <span class="st">&quot;2&quot;</span>)</span>
+<span id="cb2-6"><a href="partitionnement-de-données.html#cb2-6"></a>[<span class="dv">1</span>] <span class="fl">1.414214</span></span>
+<span id="cb2-7"><a href="partitionnement-de-données.html#cb2-7"></a><span class="kw">norm</span>(x <span class="op">-</span><span class="st"> </span>y, <span class="st">&quot;I&quot;</span>)</span>
+<span id="cb2-8"><a href="partitionnement-de-données.html#cb2-8"></a>[<span class="dv">1</span>] <span class="dv">1</span></span></code></pre></div>
+</blockquote>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-5" class="theorem"><strong>Théorème 5.2  </strong></span>Soit <span class="math inline">\(x\)</span> et <span class="math inline">\(y\)</span> deux vecteurs de <span class="math inline">\(\mathbb{R}^p\)</span> et <span class="math inline">\(\Sigma\)</span> une matrice symétrique définie positive.</p>
+Alors <span class="math inline">\(\begin{array}[t]{ccl}  \mathbb{R}^p \times \mathbb{R}^p &amp; \to &amp; \mathbb{R} \\  (x, y) &amp; \mapsto &amp; \sqrt{(x - y)^\top \Sigma^{-1} (x - y)}  \end{array}\)</span> est une distance sur <span class="math inline">\(\mathbb{R}^p\)</span> appelée <strong>distance de MAHALANOBIS</strong>.
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> On utilise classiquement pour <span class="math inline">\(\Sigma\)</span> la matrice de variance-covariance des données initiales à des fins de normalisation.
+</div>
+
+<blockquote>
+<p><strong>En R : Calculer une distance de MAHALANOBIS entre deux vecteurs</strong></p>
+<p>On utilise la fonction <code>mahalanobis</code> :</p>
+<ul>
+<li><code>cov</code> spécifie la matrice <span class="math inline">\(\Sigma\)</span> ou <span class="math inline">\(\Sigma^{-1}\)</span> (voir <code>inverted</code>) ;</li>
+<li><code>inverted</code> spécifie la nature du paramètre <code>cov</code> :
+<ul>
+<li><code>inverted = FALSE</code> indique que <code>cov</code> contient <span class="math inline">\(\Sigma\)</span> (cas par défaut) ;</li>
+<li><code>inverted = TRUE</code> indique que <code>cov</code> contient <span class="math inline">\(\Sigma^{-1}\)</span>.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="partitionnement-de-données.html#cb3-1"></a><span class="kw">mahalanobis</span>(<span class="kw">as.numeric</span>(data[<span class="dv">1</span>,]), <span class="kw">as.numeric</span>(data[<span class="dv">2</span>,]), <span class="kw">cov.p</span>(data))</span>
+<span id="cb3-2"><a href="partitionnement-de-données.html#cb3-2"></a>[<span class="dv">1</span>] <span class="fl">1.846867</span></span></code></pre></div>
+</blockquote>
+</div>
+<div id="distances-entre-classes" class="section level4">
+<h4><span class="header-section-number">5.1.1.2</span> Distances entre classes</h4>
+<p>On souhaite construire des classes aussi dissemblables que possibles. Une méthode consiste à quantifier la distance entre deux individus.</p>
+<p>On présente quatre fonctions, <em>qui ne sont pas des distances au sens mathématique</em> :</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-7" class="definition"><strong>Définition 5.2  </strong></span>Soit <span class="math inline">\(d\)</span> une distance (au sens mathématique du terme) sur <span class="math inline">\(\mathbb{R}^p\)</span>. On définit :</p>
+<ul>
+<li>la <strong>distance minimale</strong>
+<span class="math inline">\(\begin{array}[t]{ccl}  d_{\text{min}} &amp; \mathcal{P}(\mathbb{R}^p) \times \mathcal{P}(\mathbb{R}^p) &amp; \to &amp; \mathbb{R} \\  &amp; (A, B) &amp; \mapsto &amp; \min\limits_{a \in A, b \in B} d(a, b)  \end{array}\)</span> ;</li>
+<li>la <strong>distance maximale</strong>
+<span class="math inline">\(\begin{array}[t]{ccl}  d_{\text{min}} &amp; \mathcal{P}(\mathbb{R}^p) \times \mathcal{P}(\mathbb{R}^p) &amp; \to &amp; \mathbb{R} \\  &amp; (A, B) &amp; \mapsto &amp; \max\limits_{a \in A, b \in B} d(a, b)  \end{array}\)</span> ;</li>
+<li>la <strong>distance moyenne</strong>
+<span class="math inline">\(\begin{array}[t]{ccl}  d_{\text{moy}} &amp; \mathcal{P}(\mathbb{R}^p) \times \mathcal{P}(\mathbb{R}^p) &amp; \to &amp; \mathbb{R} \\  &amp; (A, B) &amp; \mapsto &amp; \dfrac{1}{(\operatorname{card} A) \cdot (\operatorname{card} B)} \displaystyle\sum\limits_{a \in A, b \in B} d(a, b)  \end{array}\)</span> ;</li>
+<li>la <strong>distance de WARD</strong>
+<span class="math inline">\(\begin{array}[t]{ccl}  d_{\text{Ward}} &amp; \mathcal{P}(\mathbb{R}^p) \times \mathcal{P}(\mathbb{R}^p) &amp; \to &amp; \mathbb{R} \\  &amp; (A, B) &amp; \mapsto &amp; \dfrac{(\operatorname{card} A) \cdot (\operatorname{card} B)}{(\operatorname{card} A) + (\operatorname{card} B)} d(\bar{a}, \bar{b})  \end{array}\)</span>
+où <span class="math inline">\(\bar{a}\)</span> et <span class="math inline">\(\bar{b}\)</span> désignent respectivement les centres de gravité de <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span>.
+</div></li>
+</ul>
+<p>Les comportements de ces “distances” sont très différents.</p>
+<ul>
+<li>La distance minimale détecte les formes allongées voire sinueuses. En effet, elle est sensible à l’<em>effet de chaîne</em> : deux points éloignés pourront être considérés comme appartement à la même classe car ils sont reliés par une séquence de points proches les uns des autres.</li>
+<li>La distance maximale est <em>très sensible aux observations atypiques</em>.</li>
+<li>La distance moyenne est <em>peu sensible aux observations atypiques</em> et tend à <em>produire des classes de même variance</em>.</li>
+<li>La distance de WARD est la plus utilisée et tend à <em>produire des classes sphériques de même effectif</em>.</li>
+</ul>
+</div>
+</div>
+<div id="inertias" class="section level3">
+<h3><span class="header-section-number">5.1.2</span> Inerties</h3>
+<p>On souhaite pouvoir mesurer la qualité d’un partitionnement.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-8" class="definition"><strong>Définition 5.3  </strong></span>Soit <span class="math inline">\(d\)</span> une distance (au sens math'ematique du terme) sur <span class="math inline">\(\mathbb{R}^p\)</span>.<br />
+Soit <span class="math inline">\(\ell\)</span> un entier naturel non nul et <span class="math inline">\(\mathcal{P} = (C_k)_{1 \leq k \leq \ell}\)</span> une partition de l’ensemble <span class="math inline">\(\{x_1,\ldots,x_N\}\)</span>.</p>
+<p>On définit le <strong>centre de gravité</strong>, noté <span class="math inline">\(\bar{x}\)</span>, par <span class="math inline">\(\bar{x} = \dfrac{1}{N}\displaystyle\sum_{i = 1}^N x_i\)</span>.<br />
+Pour tout entier <span class="math inline">\(k\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(\ell\)</span>, on définit le <strong>centre de gravité de <span class="math inline">\(C_k\)</span></strong>, noté <span class="math inline">\(\bar{c_k}\)</span>, par <span class="math inline">\(\bar{c_k} = \dfrac{1}{\operatorname{card} C_k} \displaystyle\sum_{x \in C_k} x\)</span>.</p>
+<p>On définit :</p>
+<ul>
+<li>l’<strong>inertie totale de <span class="math inline">\(\{x_1,\ldots,x_N\}\)</span></strong>, notée <span class="math inline">\(I_{\text{tot}}\)</span>, par <span class="math inline">\(I_{\text{tot}} = \dfrac{1}{N}\displaystyle\sum_{i = 1}^N d(x_i, \bar{x})^2\)</span> ;</li>
+<li>l’<strong>inertie intra-classes de <span class="math inline">\(\mathcal{P}\)</span></strong>, notée <span class="math inline">\(I_{\text{intra}}(\mathcal{P})\)</span>, par <span class="math inline">\(I_{\text{intra}}(\mathcal{P}) = \dfrac{1}{N}\displaystyle\sum_{k = 1}^\ell \left(\displaystyle\sum_{x \in C_k} d(x, \bar{c_k})^2\right)\)</span> ;</li>
+<li>l’<strong>inertie inter-classes de <span class="math inline">\(\mathcal{P}\)</span></strong>, notée <span class="math inline">\(I_{\text{inter}}(\mathcal{P})\)</span>, par <span class="math inline">\(I_{\text{inter}}(\mathcal{P}) = \dfrac{1}{N}\displaystyle\sum_{k = 1}^\ell (\operatorname{card} C_k) \cdot d(\bar{c_k}, \bar{x})^2\)</span>.
+</div></li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer l’inertie de variables quantitatives</strong></p>
+<p>On construit la fonction <code>inertia</code> qui calcule <span class="math inline">\(I_{\text{tot}}\)</span>.
+On utilise la fonction <code>apply</code> qui applique une fonction numérique à chaque ligne ou colonne et qui renvoie le vecteur des résultats.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="partitionnement-de-données.html#cb4-1"></a>inertia &lt;-<span class="st"> </span><span class="cf">function</span>(x, <span class="dt">norm.type =</span> <span class="st">&quot;1&quot;</span>)</span>
+<span id="cb4-2"><a href="partitionnement-de-données.html#cb4-2"></a> {</span>
+<span id="cb4-3"><a href="partitionnement-de-données.html#cb4-3"></a>   center &lt;-<span class="st"> </span><span class="kw">colMeans</span>(x)</span>
+<span id="cb4-4"><a href="partitionnement-de-données.html#cb4-4"></a>   <span class="kw">mean</span>(<span class="kw">apply</span>(x, <span class="dv">1</span>, <span class="cf">function</span>(row) <span class="kw">norm</span>(<span class="kw">as.matrix</span>(row <span class="op">-</span><span class="st"> </span>center), <span class="dt">type =</span> norm.type)<span class="op">^</span><span class="dv">2</span>))</span>
+<span id="cb4-5"><a href="partitionnement-de-données.html#cb4-5"></a> }</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="partitionnement-de-données.html#cb5-1"></a>I.total &lt;-<span class="st"> </span><span class="kw">inertia</span>(data, <span class="st">&quot;2&quot;</span>) ; I.total</span>
+<span id="cb5-2"><a href="partitionnement-de-données.html#cb5-2"></a>[<span class="dv">1</span>] <span class="fl">4.542471</span></span></code></pre></div>
+</blockquote>
+<blockquote>
+<p><strong>En R : Calculer les inerties intra-classes et inter-classes</strong></p>
+<p>On prend comme exemple le partitionnement induit par la variable qualitative <code>Species</code> dont les trois modalités sont <code>setosa</code>, <code>versicolor</code> et <code>virginica</code>.
+On utilise :</p>
+<ul>
+<li>la fonction <code>subset</code> qui extrait un sous-ensemble des données vérifiant certaines conditions ;</li>
+<li>la fonction <code>weighted.mean</code> qui calcule une moyenne pondérée dont on spécifie les poids.</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="partitionnement-de-données.html#cb6-1"></a>data_<span class="dv">1</span> &lt;-<span class="st"> </span><span class="kw">subset</span>(iris, Species <span class="op">==</span><span class="st"> &#39;setosa&#39;</span>    )[,<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>] ; count<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">dim</span>(data_<span class="dv">1</span>)[<span class="dv">1</span>]</span>
+<span id="cb6-2"><a href="partitionnement-de-données.html#cb6-2"></a>data_<span class="dv">2</span> &lt;-<span class="st"> </span><span class="kw">subset</span>(iris, Species <span class="op">==</span><span class="st"> &#39;versicolor&#39;</span>)[,<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>] ; count<span class="fl">.2</span> &lt;-<span class="st"> </span><span class="kw">dim</span>(data_<span class="dv">2</span>)[<span class="dv">1</span>]</span>
+<span id="cb6-3"><a href="partitionnement-de-données.html#cb6-3"></a>data_<span class="dv">3</span> &lt;-<span class="st"> </span><span class="kw">subset</span>(iris, Species <span class="op">==</span><span class="st"> &#39;virginica&#39;</span> )[,<span class="dv">1</span><span class="op">:</span><span class="dv">4</span>] ; count<span class="fl">.3</span> &lt;-<span class="st"> </span><span class="kw">dim</span>(data_<span class="dv">3</span>)[<span class="dv">1</span>]</span>
+<span id="cb6-4"><a href="partitionnement-de-données.html#cb6-4"></a>I.intra &lt;-<span class="st"> </span><span class="kw">weighted.mean</span>(<span class="kw">c</span>(<span class="kw">inertia</span>(data_<span class="dv">1</span>, <span class="st">&quot;2&quot;</span>), <span class="kw">inertia</span>(data_<span class="dv">2</span>, <span class="st">&quot;2&quot;</span>), <span class="kw">inertia</span>(data_<span class="dv">3</span>, <span class="st">&quot;2&quot;</span>)),</span>
+<span id="cb6-5"><a href="partitionnement-de-données.html#cb6-5"></a>                         <span class="kw">c</span>(count<span class="fl">.1</span>, count<span class="fl">.2</span>, count<span class="fl">.3</span>)) ; I.intra</span>
+<span id="cb6-6"><a href="partitionnement-de-données.html#cb6-6"></a>[<span class="dv">1</span>] <span class="fl">0.595316</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="partitionnement-de-données.html#cb7-1"></a>center.total &lt;-<span class="st"> </span><span class="kw">colMeans</span>(data)</span>
+<span id="cb7-2"><a href="partitionnement-de-données.html#cb7-2"></a>center<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">colMeans</span>(data_<span class="dv">1</span>) ; count<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">dim</span>(data_<span class="dv">1</span>)[<span class="dv">1</span>]</span>
+<span id="cb7-3"><a href="partitionnement-de-données.html#cb7-3"></a>center<span class="fl">.2</span> &lt;-<span class="st"> </span><span class="kw">colMeans</span>(data_<span class="dv">2</span>) ; count<span class="fl">.2</span> &lt;-<span class="st"> </span><span class="kw">dim</span>(data_<span class="dv">2</span>)[<span class="dv">1</span>]</span>
+<span id="cb7-4"><a href="partitionnement-de-données.html#cb7-4"></a>center<span class="fl">.3</span> &lt;-<span class="st"> </span><span class="kw">colMeans</span>(data_<span class="dv">3</span>) ; count<span class="fl">.3</span> &lt;-<span class="st"> </span><span class="kw">dim</span>(data_<span class="dv">3</span>)[<span class="dv">1</span>]</span>
+<span id="cb7-5"><a href="partitionnement-de-données.html#cb7-5"></a>I.inter &lt;-<span class="st"> </span><span class="kw">weighted.mean</span>(<span class="kw">c</span>(<span class="kw">norm</span>(<span class="kw">as.matrix</span>(center<span class="fl">.1</span> <span class="op">-</span><span class="st"> </span>center.total), <span class="st">&quot;2&quot;</span>)<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb7-6"><a href="partitionnement-de-données.html#cb7-6"></a>                           <span class="kw">norm</span>(<span class="kw">as.matrix</span>(center<span class="fl">.2</span> <span class="op">-</span><span class="st"> </span>center.total), <span class="st">&quot;2&quot;</span>)<span class="op">^</span><span class="dv">2</span>,</span>
+<span id="cb7-7"><a href="partitionnement-de-données.html#cb7-7"></a>                           <span class="kw">norm</span>(<span class="kw">as.matrix</span>(center<span class="fl">.3</span> <span class="op">-</span><span class="st"> </span>center.total), <span class="st">&quot;2&quot;</span>)<span class="op">^</span><span class="dv">2</span>),</span>
+<span id="cb7-8"><a href="partitionnement-de-données.html#cb7-8"></a>                         <span class="kw">c</span>(count<span class="fl">.1</span>, count<span class="fl">.2</span>, count<span class="fl">.3</span>)) ; I.inter</span>
+<span id="cb7-9"><a href="partitionnement-de-données.html#cb7-9"></a>[<span class="dv">1</span>] <span class="fl">3.947155</span></span></code></pre></div>
+</blockquote>
+
+<div class="remark">
+<p> <span class="remark"><em>Remarque. </em></span> Les expressions des inerties inter-classes et intra-classes s’expliquent la manière suivante :</p>
+<ul>
+<li>l’inertie intra-classes est obtenue en calculant la moyenne, pondérée par les effectifs, des inerties de chacune des classes ;</li>
+<li>l’inertie inter-classes est obtenue en calculant l’inertie, pondérée par les effectifs, de l’ensemble des centres de gravités de chacune des classes.
+</div></li>
+</ul>
+<p>Donc :</p>
+<ul>
+<li>pour regrouper les observations ayant des caractéristiques similiaires au sein d’une même classe, l’inertie de chaque classe doit être aussi faible que possible : donc <strong>l’inertie intra-classes doit être aussi faible que possible</strong> ;</li>
+<li>pour construire des classes aussi dissemblables que possibles, leurs centres de gravité doivent être aussi éloignés que possibles : donc <strong>l’inertie inter-classes doit être aussi élevée que possible</strong>.</li>
+</ul>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-10" class="theorem"><strong>Théorème 5.3  </strong></span>Soit une distance <strong>euclidienne</strong> sur <span class="math inline">\(\mathbb{R}^p\)</span>.
+Alors, pour tout partitionnement <span class="math inline">\(\mathcal{P}\)</span> de l’ensemble <span class="math inline">\(\{x_1,\ldots,x_N\}\)</span>, <span class="math inline">\(I_{\text{tot}} = I_{\text{intra}}(\mathcal{P}) + I_{\text{inter}}(\mathcal{P})\)</span>.
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> <em>La relation n’est pas valable pour une distance non-euclidienne (comme <span class="math inline">\(\|\cdot\|_1\)</span> ou <span class="math inline">\(\|\cdot\|_\infty\)</span>).</em>
+Donc minimiser l’inertie intra-classes revient à maximiser l’inertie inter-classes.
+<strong>Cette relation indique qu’il suffit d’agir sur l’une des deux inerties.</strong>
+</div>
+
+<blockquote>
+<p><strong>En R : Vérifier la relation entre les inerties dans le cas de la distance euclidenne usuelle</strong></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="partitionnement-de-données.html#cb8-1"></a>I.total</span>
+<span id="cb8-2"><a href="partitionnement-de-données.html#cb8-2"></a>[<span class="dv">1</span>] <span class="fl">4.542471</span></span>
+<span id="cb8-3"><a href="partitionnement-de-données.html#cb8-3"></a>I.intra <span class="op">+</span><span class="st"> </span>I.inter</span>
+<span id="cb8-4"><a href="partitionnement-de-données.html#cb8-4"></a>[<span class="dv">1</span>] <span class="fl">4.542471</span></span></code></pre></div>
+</blockquote>
+<p>Une mesure souvent utilisée est le coefficient <span class="math inline">\(R^2 = \dfrac{I_{\text{inter}}(\mathcal{P})}{I_{\text{tot}}}\)</span>, c’est-à-dire le <em>pourcentage d’inertie expliquée par les classes</em>. Elle peut servir notamment à :</p>
+<ul>
+<li>comparer deux partitionnements ayant le même nombre de classes ;</li>
+<li>sélectionner le nombre de classes : ainsi si on représente ce coefficient en fonction du nombre de classes, on choisit le nombre de classes provoquant le dernier saut important.</li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer le pourcentage d’inertie expliquée par les classes</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="partitionnement-de-données.html#cb9-1"></a>I.inter <span class="op">/</span><span class="st"> </span>I.total</span>
+<span id="cb9-2"><a href="partitionnement-de-données.html#cb9-2"></a>[<span class="dv">1</span>] <span class="fl">0.8689444</span></span></code></pre></div>
+</blockquote>
+</div>
+</div>
+<div id="algorithmes" class="section level2">
+<h2><span class="header-section-number">5.2</span> Algorithmes</h2>
+<div id="k-moyennes" class="section level3">
+<h3><span class="header-section-number">5.2.1</span> <span class="math inline">\(k\)</span>-moyennes</h3>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-12" class="definition"><strong>Définition 5.4  </strong></span>On se donne une distance (au sens mathématique du terme) <span class="math inline">\(d\)</span> sur <span class="math inline">\(\mathbb{R}^p\)</span> et <span class="math inline">\(\ell\)</span> un entier naturel non nul.</p>
+<p>Alors l’<strong>algorithme des <span class="math inline">\(k\)</span>-moyennes</strong> (ou <em><span class="math inline">\(k\)</span>-means</em> en anglais) est défini comme suit :</p>
+<ol style="list-style-type: decimal">
+<li>On choisit <span class="math inline">\(\ell\)</span> individus, notés <span class="math inline">\(c_1, \ldots, c_\ell\)</span>.</li>
+<li>Pour tout entier <span class="math inline">\(k\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(\ell\)</span>, on construit la classe <span class="math inline">\(C_k = \left\{x_i,\: d(x_i, c_k) = \min\limits_{1 \leq k&#39; \leq \ell} d(x_i, c_{k&#39;})\right\}\)</span> des individus tels que le point le plus proche parmi <span class="math inline">\(c_1, \ldots, c_\ell\)</span> est <span class="math inline">\(c_k\)</span>.</li>
+<li>Pour tout entier <span class="math inline">\(k\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(\ell\)</span>, on remplace <span class="math inline">\(c_k\)</span> par le centre de gravité de <span class="math inline">\(C_k\)</span>.</li>
+<li>Si toutes les classes restent inchangées par rapport à l’itération précédente, alors l’algorithme s’arrête. Sinon, on revient à l’étape 2.
+</div></li>
+</ol>
+<p>Par définition, cet algorithme dépend de :</p>
+<ul>
+<li>la distance <span class="math inline">\(d\)</span> utilisée : ainsi dans le cas de la distance euclidienne, l’algorithme tend à produire des classes sphériques ;</li>
+<li>du nombre <span class="math inline">\(\ell\)</span> de classes choisies : on peut tester plusieurs valeurs de <span class="math inline">\(\ell\)</span> en s’aidant par exemple d’une analyse en composantes principales ;</li>
+<li>des centres <span class="math inline">\(c_1, \ldots, c_\ell\)</span> choisis initialement : on peut alors répéter plusieurs fois l’algorithme avec des choix aléatoires afin de lisser les résultats obtenus.</li>
+</ul>
+<blockquote>
+<p><strong>En R : Appliquer l’algorithme des <span class="math inline">\(k\)</span>-moyennes avec la distance euclidienne sur des variables quantitatives</strong></p>
+<p>On utilise la fonction <code>kmeans</code> :</p>
+<ul>
+<li><code>centers</code> spécifie les centres utilisées pour initialiser l’algorithme :
+<ul>
+<li>par un entier pour indiquer le nombre de classes et choisit les centres initiaux de manières aléatoire ;</li>
+<li>par une matrice à <span class="math inline">\(N\)</span> lignes et <span class="math inline">\(\ell\)</span> colonnes pour indiquer <em>par ligne</em> les <span class="math inline">\(\ell\)</span> centres initiaux ;</li>
+</ul></li>
+<li><code>iter.max</code> spécifie le nombre maximal d’itérations de l’algorithme (10 par défaut) ;</li>
+<li><code>nstart</code> spécifie le nombre de répétitions de l’algorithme à des fins de lissage des résultats (1 par défaut) : <em>les répétitions ne sont appliquées que si <code>centers</code> est un entier</em>.</li>
+</ul>
+<p>Elle renvoie un objet avec les champs suivants :</p>
+<ul>
+<li><code>cluster</code> contient le numéro de classe (de <span class="math inline">\(1\)</span> à <span class="math inline">\(\ell\)</span>) pour chacun des individus ;</li>
+<li><code>centers</code> contient la matrice <em>par ligne</em> des centres de gravité des classes finales ;</li>
+<li><code>totss</code> est égal à <span class="math inline">\(N \cdot I_{\text{tot}}\)</span> ;</li>
+<li><code>tot.withinss</code> est égal à <span class="math inline">\(N \cdot I_{\text{intra}}(\mathcal{P})\)</span> ;</li>
+<li><code>betweenss</code> est égal à <span class="math inline">\(N \cdot I_{\text{inter}}(\mathcal{P})\)</span> ;</li>
+<li><code>size</code> contient le nombre d’éléménts pour chaque classe ;</li>
+<li><code>iter</code> est égal au nombre d’itérations effectuée par l’application de l’algorithme.</li>
+</ul>
+<p>Donc le pourcentage d’inertie expliquée par les classes est égal au rapport entre les champs <code>betweenss</code> et <code>totss</code> :</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="partitionnement-de-données.html#cb10-1"></a>km &lt;-<span class="st"> </span><span class="kw">kmeans</span>(data, <span class="dt">centers =</span> <span class="dv">2</span>)</span>
+<span id="cb10-2"><a href="partitionnement-de-données.html#cb10-2"></a>km<span class="op">$</span>betweenss <span class="op">/</span><span class="st"> </span>km<span class="op">$</span>totss</span>
+<span id="cb10-3"><a href="partitionnement-de-données.html#cb10-3"></a>[<span class="dv">1</span>] <span class="fl">0.7764096</span></span></code></pre></div>
+</blockquote>
+<blockquote>
+<p><strong>En R : Utiliser les résultats de la fonction <code>kmeans</code> pour représenter graphiquement les classes obtenues</strong></p>
+<p>On utilise le champ <code>cluster</code> comme paramètre de couleur :</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="partitionnement-de-données.html#cb11-1"></a><span class="kw">plot</span>(iris, <span class="dt">col =</span> km<span class="op">$</span>cluster)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantclassif_kmeanscluster-1.png" width="672" /></p>
+<p>On peut combiner les résultats avec une analyse en composantes principales en représentant les classes dans le plan défini par les deux premières composantes principales :</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="partitionnement-de-données.html#cb12-1"></a><span class="kw">plot</span>(pca<span class="op">$</span>ind<span class="op">$</span>coord[,<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>], <span class="dt">col =</span> km<span class="op">$</span>cluster)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantclassif_pcaplot-1.png" width="672" /></p>
+</blockquote>
+<p>Cet algorithme présente les intérêts suivants :</p>
+<ul>
+<li>un individu atypique est en général détecté car il tend à produire une classe dont il est le seul élément ;</li>
+<li>la complexité de l’algorithme est polynômiale.</li>
+</ul>
+</div>
+<div id="classification-hiérarchique-ascendante" class="section level3">
+<h3><span class="header-section-number">5.2.2</span> Classification hiérarchique ascendante</h3>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-13" class="definition"><strong>Définition 5.5  </strong></span>On se donne une “distance” entre classes <span class="math inline">\(d\)</span>.</p>
+<p>Alors la <strong>classification hiérarchique ascendante</strong> est définie comme suit :</p>
+<ol style="list-style-type: decimal">
+<li>Initialement, chaque individu est une classe dont il est le seul élément.</li>
+<li>On considère les deux classes dont la distance est la plus faible (au sens de <span class="math inline">\(d\)</span>) et on les fusionne en une seule classe.</li>
+<li>On réitère l’étape 2 jusqu’à n’obtenir qu’une seule classe.
+</div></li>
+</ol>
+<p>Par définition, cet algorithme dépend de la “distance” utilisée qui agit, comme vu précédemment, sur la forme des classes obtenues.<br />
+Contrairement à l’algorithme des <span class="math inline">\(k\)</span>-moyennes :</p>
+<ul>
+<li>le nombre de classes n’est pas fixé à l’avance ;</li>
+<li>l’initialisation est constante, donc il n’y a pas de dépendance du résultat à l’initialisation.</li>
+</ul>
+<p>Toutefois :</p>
+<ul>
+<li>l’algorithme est de type “glouton” : donc le résultat obtenu est un optimum local et l’optimalité globable n’est pas assurée ;</li>
+<li>l’algorithme est de complexité exponentielle.</li>
+</ul>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> La distance de WARD est souvent utilisée car elle permet de fusionner les deux classes faisant le moins baisser l’inertie inter-classes.
+</div>
+
+<blockquote>
+<p><strong>En R : Appliquer une classification hiérarchique ascendante de variables quantitatives</strong></p>
+<p>On utilise la fonction <code>hclust</code> (pour <em>Hierarchical CLUSTering</em>) dont le second paramètre <code>method</code> spécifie la “distance” entre classes utilisée.<br />
+Cette fonction s’applique sur le résultat de la fonction <code>dist</code> qui calcule les distances respectives entre tous les individus dont le second paramètre <code>method</code> spécifie la distance utilisée comme :</p>
+<ul>
+<li><code>"manhattan"</code> pour la distance de Manhattan <span class="math inline">\(d_1\)</span> ;</li>
+<li><code>"euclidean"</code> pour la distance euclidienne usuelle <span class="math inline">\(d_2\)</span> (valeur par défaut) ;</li>
+<li><code>"maximum"</code> pour la distance <span class="math inline">\(d_\infty\)</span>.</li>
+</ul>
+<p>Par exemple, on calcule ici une classification hiérarchique ascendante avec :</p>
+<ul>
+<li>la distance euclidienne usuelle <span class="math inline">\(d_2\)</span> entre les individus ;</li>
+<li>la “distance” WARD entre les classes.</li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="partitionnement-de-données.html#cb13-1"></a>hc &lt;-<span class="st"> </span><span class="kw">hclust</span>(<span class="kw">dist</span>(data), <span class="dt">method =</span> <span class="st">&quot;ward.D2&quot;</span>)</span></code></pre></div>
+</blockquote>
+<p>L’algorithme fournit donc une arborescence des fusions. Il convient alors d’étudier la qualité du partitionnement après chaque fusion en étudiant deux représentations graphiques ;</p>
+<ul>
+<li>l’évolution de la qualité du partitionnement en fonction du nombre d’itérations ;</li>
+<li>la visualisation hiérarchique de cette évolution dans un <strong>dendrogramme</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>En R : Étudier l’évolution de la qualité du partitionnement à partir d’une classification</strong></p>
+<p>La fonction <code>hclust</code> renvoie un objet avec les champs suivants :</p>
+<ul>
+<li><code>merge</code> décrit les fusions effectuées à chaque itération de l’algorithme ;</li>
+<li><code>height</code> contient les valeurs successives de dissimilarité à chaque itération de l’algorithme.</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="partitionnement-de-données.html#cb14-1"></a><span class="kw">plot</span>(hc<span class="op">$</span>height, <span class="dt">xlab =</span> <span class="st">&quot;Itération&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Qualité du partitionnement&quot;</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantclassif_hclustheight-1.png" width="672" /></p>
+<p>On cherche alors un saut important entre deux fusions successives, sans considérer l’écart entre les deux dernières itérations (car cela mène à une seule classe, cas sans intérêt). Dans ce cas, le saut le plus important se situe après la fusion en deux classes.</p>
+<p>On peut visualiser le dendrogramme qui confirme l’observation précédente :</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="partitionnement-de-données.html#cb15-1"></a><span class="kw">plot</span>(hc, <span class="dt">main =</span> <span class="st">&quot;Dendrogramme&quot;</span>, <span class="dt">xlab =</span> <span class="st">&quot;Individu&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Qualité du partitionnement&quot;</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/quantclassif_hclustdendrogram-1.png" width="672" /></p>
+</blockquote>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2><span class="header-section-number">5.3</span> Conclusion</h2>
+<p>De manière générale, on peut distinguer deux types de méthodes :</p>
+<ul>
+<li>les méthodes non hiérarchiques (comme celle des <span class="math inline">\(k\)</span>-moyennes) :
+<ul>
+<li>elles nécessitent une connaissance <em>a priori</em> du nombre de classes ;</li>
+<li>leur résultat peut être sensible à l’initialisation ;</li>
+<li>elles convergent rapidement ;</li>
+</ul></li>
+<li>les méthodes hiérachiques (comme la classification hiérarchique ascendante) :
+<ul>
+<li>elles ne nécessitent pas une connaissance <em>a priori</em> du nombre de classes ;</li>
+<li>leur résultat est en général peu sensible à l’initialisation ;</li>
+<li>l’algorithme de type “glouton” fournit un optimum local ;</li>
+<li>elles convergent lentement.</li>
+</ul></li>
+</ul>
+<p>Un bon compromis peut consister en une approche hybride :</p>
+<ol style="list-style-type: decimal">
+<li>utiliser une méthode hiérarchique pour estimer le nombre de classes nécessaires ;</li>
+<li>utiliser cette estimation pour initialiser une méthode non hiérarchique.</li>
+</ol>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> On peut envisager un partitionnement “flou” (<em>fuzzy clustering</em>) dans lequel le partionnement n’est pas strict, c’est-à-dire dans lequel des recouvrements sont possibles.
+</div>
+
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="analyse-qualitative-univariée.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

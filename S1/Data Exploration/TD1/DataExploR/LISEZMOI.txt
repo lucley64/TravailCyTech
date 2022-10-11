@@ -1,0 +1,1 @@
+Dans un navigateur, ouvrir le fichier "index.html" du répertoire "_book".

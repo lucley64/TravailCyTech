@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9 Règles d’association | Analyse exploratoire des données</title>
+  <meta name="description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9 Règles d’association | Analyse exploratoire des données" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9 Règles d’association | Analyse exploratoire des données" />
+  
+  <meta name="twitter:description" content="Notes de cours de Data Exploration de première année ingénieur à CYTech" />
+  
+
+<meta name="author" content="Astrid Jourdan, Karima El Ganaoui, Romain Dujol" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"/>
+<link rel="next" href="analyse-mixte-bivariée.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="dataExploration.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><div style="display:inline">
+      <a style="display:inline;vertical-align:baseline" href="https://www.eisti.fr" target="blank">
+        <img src="cytech-st_logo.jpg" height="30"/>
+      </a>
+      <span style="opacity:1;display:inline;vertical-align:40%"><em>Ingénieur 1ère année</em></span>
+    </div>
+    <div style="text-align:center">
+      <p><strong>Analyse exploratoire des données</strong></p>
+    </div>
+</li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#terminologie-générale"><i class="fa fa-check"></i><b>1.1</b> Terminologie générale</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#contextes"><i class="fa fa-check"></i><b>1.1.1</b> Contextes</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#échantillonages"><i class="fa fa-check"></i><b>1.1.2</b> Échantillonages</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#typologie-des-variables"><i class="fa fa-check"></i><b>1.2</b> Typologie des variables</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#variables-qualitatives"><i class="fa fa-check"></i><b>1.2.1</b> Variables qualitatives</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#variables-qualitatives-1"><i class="fa fa-check"></i><b>1.2.2</b> Variables qualitatives</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#conversion-entre-les-différents-types-de-variables"><i class="fa fa-check"></i><b>1.3</b> Conversion entre les différents types de variables</a></li>
+</ul></li>
+<li class="part"><span><b>I Exploration de données quantitatives</b></span></li>
+<li class="chapter" data-level="2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html"><i class="fa fa-check"></i><b>2</b> Analyse quantitative univariée</a><ul>
+<li class="chapter" data-level="" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#représentation-graphique-histogramme"><i class="fa fa-check"></i>Représentation graphique : histogramme</a></li>
+<li class="chapter" data-level="2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-position"><i class="fa fa-check"></i><b>2.1</b> Indicateurs de position</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#moyenne"><i class="fa fa-check"></i><b>2.1.1</b> Moyenne</a></li>
+<li class="chapter" data-level="2.1.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#quantiles"><i class="fa fa-check"></i><b>2.1.2</b> Quantiles</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#indicateurs-de-dispersion"><i class="fa fa-check"></i><b>2.2</b> Indicateurs de dispersion</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#étendue"><i class="fa fa-check"></i><b>2.2.1</b> Étendue</a></li>
+<li class="chapter" data-level="2.2.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#écart-inter-quartile"><i class="fa fa-check"></i><b>2.2.2</b> Écart inter-quartile</a></li>
+<li class="chapter" data-level="2.2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#variance.-écart-type"><i class="fa fa-check"></i><b>2.2.3</b> Variance. Écart-type</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#autres-indicateurs"><i class="fa fa-check"></i><b>2.3</b> Autres indicateurs</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-dasymétrie"><i class="fa fa-check"></i><b>2.3.1</b> Coefficient d’asymétrie</a></li>
+<li class="chapter" data-level="2.3.2" data-path="analyse-quantitative-univariée.html"><a href="analyse-quantitative-univariée.html#coefficient-daplatissement-ou-kurtosis"><i class="fa fa-check"></i><b>2.3.2</b> Coefficient d’aplatissement (ou <em>kurtosis</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html"><i class="fa fa-check"></i><b>3</b> Analyse quantitative bivariée</a><ul>
+<li class="chapter" data-level="3.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance.-coefficient-de-corrélation"><i class="fa fa-check"></i><b>3.1</b> Covariance. Coefficient de corrélation</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#covariance"><i class="fa fa-check"></i><b>3.1.1</b> Covariance</a></li>
+<li class="chapter" data-level="3.1.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#coefficient-de-corrélation-linéaire"><i class="fa fa-check"></i><b>3.1.2</b> Coefficient de corrélation linéaire</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régression-linéaire"><i class="fa fa-check"></i><b>3.2</b> Régression linéaire</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#calcul-du-modèle"><i class="fa fa-check"></i><b>3.2.1</b> Calcul du modèle</a></li>
+<li class="chapter" data-level="3.2.2" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#analyse-du-modèle"><i class="fa fa-check"></i><b>3.2.2</b> Analyse du modèle</a></li>
+<li class="chapter" data-level="3.2.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#validation-du-modèle"><i class="fa fa-check"></i><b>3.2.3</b> Validation du modèle</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="analyse-quantitative-bivariée.html"><a href="analyse-quantitative-bivariée.html#régressions-non-linéaires"><i class="fa fa-check"></i><b>3.3</b> Régressions non-linéaires</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><i class="fa fa-check"></i><b>4</b> Analyse quantitative multivariée : analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>4.1</b> Formulation mathématique</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#matrice-de-variance-covariance"><i class="fa fa-check"></i><b>4.1.1</b> Matrice de variance-covariance</a></li>
+<li class="chapter" data-level="4.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#composantes-principales"><i class="fa fa-check"></i><b>4.1.2</b> Composantes principales</a></li>
+<li class="chapter" data-level="4.1.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#premières-interprétations"><i class="fa fa-check"></i><b>4.1.3</b> Premières interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>4.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>4.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="4.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>4.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#limites-de-lanalyse-en-composantes-principales"><i class="fa fa-check"></i><b>4.3</b> Limites de l’analyse en composantes principales</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-des-composantes-principales"><i class="fa fa-check"></i><b>4.3.1</b> Qualité des composantes principales</a></li>
+<li class="chapter" data-level="4.3.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable"><i class="fa fa-check"></i><b>4.3.2</b> Qualité de réprésentation d’une variable</a></li>
+<li class="chapter" data-level="4.3.3" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#qualité-de-réprésentation-dune-variable-1"><i class="fa fa-check"></i><b>4.3.3</b> Qualité de réprésentation d’une variable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html"><i class="fa fa-check"></i><b>5</b> Partitionnement de données</a><ul>
+<li class="chapter" data-level="5.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#analyse-de-la-problématique"><i class="fa fa-check"></i><b>5.1</b> Analyse de la problématique</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#distances"><i class="fa fa-check"></i><b>5.1.1</b> Distances</a></li>
+<li class="chapter" data-level="5.1.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#inertias"><i class="fa fa-check"></i><b>5.1.2</b> Inerties</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#algorithmes"><i class="fa fa-check"></i><b>5.2</b> Algorithmes</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#k-moyennes"><i class="fa fa-check"></i><b>5.2.1</b> <span class="math inline">\(k\)</span>-moyennes</a></li>
+<li class="chapter" data-level="5.2.2" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#classification-hiérarchique-ascendante"><i class="fa fa-check"></i><b>5.2.2</b> Classification hiérarchique ascendante</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="partitionnement-de-données.html"><a href="partitionnement-de-données.html#conclusion"><i class="fa fa-check"></i><b>5.3</b> Conclusion</a></li>
+</ul></li>
+<li class="part"><span><b>II Exploration de données qualitatives</b></span></li>
+<li class="chapter" data-level="6" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html"><i class="fa fa-check"></i><b>6</b> Analyse qualitative univariée</a><ul>
+<li class="chapter" data-level="6.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#terminologie"><i class="fa fa-check"></i><b>6.1</b> Terminologie</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#effectifs.-fréquences"><i class="fa fa-check"></i><b>6.1.1</b> Effectifs. Fréquences</a></li>
+<li class="chapter" data-level="6.1.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>6.1.2</b> Représentations graphiques</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#indicateurs"><i class="fa fa-check"></i><b>6.2</b> Indicateurs</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#mode"><i class="fa fa-check"></i><b>6.2.1</b> Mode</a></li>
+<li class="chapter" data-level="6.2.2" data-path="analyse-qualitative-univariée.html"><a href="analyse-qualitative-univariée.html#moyenne-des-variables-dichotomiques-binaires"><i class="fa fa-check"></i><b>6.2.2</b> Moyenne des variables dichotomiques binaires</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html"><i class="fa fa-check"></i><b>7</b> Analyse qualitative bivariée</a><ul>
+<li class="chapter" data-level="7.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>7.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-contingences"><i class="fa fa-check"></i><b>7.1.1</b> Tableau des contingences</a></li>
+<li class="chapter" data-level="7.1.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tableau-des-fréquences"><i class="fa fa-check"></i><b>7.1.2</b> Tableau des fréquences</a></li>
+<li class="chapter" data-level="7.1.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#profils-ligne.-profils-colonne"><i class="fa fa-check"></i><b>7.1.3</b> Profils ligne. Profils colonne</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#tests-dindépendance"><i class="fa fa-check"></i><b>7.2</b> Tests d’indépendance</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#fréquences-conjointes-théoriques-en-cas-dindépendance"><i class="fa fa-check"></i><b>7.2.1</b> Fréquences conjointes théoriques en cas d’indépendance</a></li>
+<li class="chapter" data-level="7.2.2" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#test-du-chi2"><i class="fa fa-check"></i><b>7.2.2</b> Test du <span class="math inline">\(\chi^2\)</span></a></li>
+<li class="chapter" data-level="7.2.3" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#coefficient-de-cramer"><i class="fa fa-check"></i><b>7.2.3</b> Coefficient de Cramer</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><i class="fa fa-check"></i><b>8</b> Analyse qualitative multivariée : analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#motivation"><i class="fa fa-check"></i>Motivation</a></li>
+<li class="chapter" data-level="8.1" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#analyse-des-correspondances-multiples"><i class="fa fa-check"></i><b>8.1</b> Analyse des correspondances multiples</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#formulation-mathématique"><i class="fa fa-check"></i><b>8.1.1</b> Formulation mathématique</a></li>
+<li class="chapter" data-level="8.1.2" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#justification-et-interprétations"><i class="fa fa-check"></i><b>8.1.2</b> Justification et interprétations</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#représentations-graphiques"><i class="fa fa-check"></i><b>8.2</b> Représentations graphiques</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-variables"><i class="fa fa-check"></i><b>8.2.1</b> dans l’espace des variables</a></li>
+<li class="chapter" data-level="8.2.2" data-path="analyse-quantitative-multivariée-analyse-en-composantes-principales.html"><a href="analyse-quantitative-multivariée-analyse-en-composantes-principales.html#dans-lespace-des-individus"><i class="fa fa-check"></i><b>8.2.2</b> dans l’espace des individus</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html"><a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html#limites-de-lanalyse-factorielle-des-correspondances"><i class="fa fa-check"></i><b>8.3</b> Limites de l’analyse factorielle des correspondances</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="règles-dassociation.html"><a href="règles-dassociation.html"><i class="fa fa-check"></i><b>9</b> Règles d’association</a><ul>
+<li class="chapter" data-level="9.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>9.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="règles-dassociation.html"><a href="règles-dassociation.html#support"><i class="fa fa-check"></i><b>9.1.1</b> Support</a></li>
+<li class="chapter" data-level="9.1.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#confiance"><i class="fa fa-check"></i><b>9.1.2</b> Confiance</a></li>
+<li class="chapter" data-level="9.1.3" data-path="règles-dassociation.html"><a href="règles-dassociation.html#amélioration-ou-lift"><i class="fa fa-check"></i><b>9.1.3</b> Amélioration (ou <em>lift</em>)</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="règles-dassociation.html"><a href="règles-dassociation.html#algorithme-de-construction-de-règles"><i class="fa fa-check"></i><b>9.2</b> Algorithme de construction de règles</a></li>
+</ul></li>
+<li class="part"><span><b>III Exploration de données mixtes</b></span></li>
+<li class="chapter" data-level="10" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html"><i class="fa fa-check"></i><b>10</b> Analyse mixte bivariée</a><ul>
+<li class="chapter" data-level="10.1" data-path="analyse-qualitative-bivariée.html"><a href="analyse-qualitative-bivariée.html#outils-danalyse"><i class="fa fa-check"></i><b>10.1</b> Outils d’analyse</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#variances"><i class="fa fa-check"></i><b>10.1.1</b> Variances</a></li>
+<li class="chapter" data-level="10.1.2" data-path="analyse-mixte-bivariée.html"><a href="analyse-mixte-bivariée.html#rapport-de-corrélation"><i class="fa fa-check"></i><b>10.1.2</b> Rapport de corrélation</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li>
+   <div style="text-align:center">
+     <p><strong>A. Jourdan, K. El Ganaoui, R. Dujol</strong></p>
+     <p><a href="https://github.com/rstudio/bookdown" target="blank"><em>Published with bookdown</em></a></p>
+   </div>
+</li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Analyse exploratoire des données</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="règles-dassociation" class="section level1">
+<h1><span class="header-section-number">9</span> Règles d’association</h1>
+<p>Dans ce chapitre, on considère :</p>
+<ul>
+<li>un ensemble d’<strong>items</strong> <span class="math inline">\(\mathcal{I}\)</span> ;</li>
+<li>un ensemble de <strong>transactions</strong> <span class="math inline">\(\mathcal{T}\)</span> de parties de <span class="math inline">\(\mathcal{I}\)</span>.</li>
+</ul>
+
+<div class="definition">
+<span id="def:unnamed-chunk-1" class="definition"><strong>Définition 9.1  </strong></span>Une <strong>règle d’association</strong> <span class="math inline">\(X \to Y\)</span> est la donnée de deux parties de <span class="math inline">\(\mathcal{I}\)</span> : la prémisse <span class="math inline">\(X\)</span> et la conséquence <span class="math inline">\(Y\)</span>.
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-2" class="example"><strong>Exemple 9.1  </strong></span>On souhaite étudier les associations entre les produits achétés dans un magasin d’alimentation à partir de l’analyse des tickets de caisse.</p>
+<p>L’ensemble des items est alors l’ensemble des produits possibles, par exemple
+<span class="math inline">\(\mathcal{I} = \{\text{Farine}, \text{Sucre}, \text{Lait}, \text{Oeufs}, \text{Chocolat}, \text{Thé}\}\)</span>.</p>
+L’ensemble des transactions est alors l’ensemble des tickets de caisse, par exemple
+<span class="math inline">\(\mathcal{T} = \begin{aligned}[t]  \{  &amp;\{\text{Farine}, \text{Sucre}, \text{Lait}, \text{Oeufs}\},  \{\text{Farine}, \text{Sucre}, \text{Oeufs}, \text{Chocolat}\}, \\  &amp;\{\text{Sucre}, \text{Oeufs}, \text{Chocolat}\},  \{\text{Oeufs}, \text{Chocolat}, \text{Thé}\}  \}.  \end{aligned}\)</span>
+</div>
+
+<p><br/></p>
+<blockquote>
+<p><strong>En R : Installer, charger et utiliser la bibliothèque <code>arules</code></strong></p>
+<p><em>Cette bibliothèque sera utilisée dans tout le chapitre.</em>
+Cette bibiliothèque n’étant pas installée par défault, il faut donc l’installer :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="règles-dassociation.html#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;arules&quot;</span>)</span></code></pre></div>
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Vous devez redémarrer RStudio pour que les pages d’aide soient disponibles.
+</div>
+<p>Elle doit être chargée avant toute utilisaton :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="règles-dassociation.html#cb2-1"></a><span class="kw">library</span>(arules)</span></code></pre></div>
+</blockquote>
+<blockquote>
+<p><strong>En R : Acquérir des transactions</strong></p>
+<p>On utilise la fonction <code>read.transactions</code> :</p>
+<ul>
+<li><code>format</code> spécifie le format du fichier :
+<ul>
+<li><code>format = "basket"</code> indique que chaque ligne du fichier contient la liste des items d’une transaction ;</li>
+<li><code>format = "single"</code> indique que chaque ligne du fichier contient un item et l’identifiant de la transaction qui le contient ;</li>
+</ul></li>
+<li><code>header</code> spécifie si la première ligne du fichier contient la description des variables (aussi appêlé <em>en-tête</em>) ;</li>
+<li><code>sep</code> spécifie le séparateur utilisé entre deux valeurs ;</li>
+<li><code>rm.duplicates</code> spécifie le comportement en cas de doublons dans une transaction :
+<ul>
+<li><code>rm.duplicates = FALSE</code> indique que l’on laisse les doublons (cas par défaut) ;</li>
+<li><code>rm.duplicates = TRUE</code> indique que l’on supprime les doublons ;</li>
+</ul></li>
+<li><code>skip</code> spécifie le nombre de lignes à ne pas considérer avant de démarrer l’acquisition (<code>0</code> par défaut).</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="règles-dassociation.html#cb3-1"></a>transactions &lt;-<span class="st"> </span><span class="kw">read.transactions</span>(<span class="st">&quot;supermarket.csv&quot;</span>, <span class="dt">format =</span> <span class="st">&quot;basket&quot;</span>,</span>
+<span id="cb3-2"><a href="règles-dassociation.html#cb3-2"></a>                                  <span class="dt">header =</span> <span class="ot">FALSE</span>, <span class="dt">sep =</span> <span class="st">&quot;;&quot;</span>) ; transactions</span>
+<span id="cb3-3"><a href="règles-dassociation.html#cb3-3"></a>transactions <span class="cf">in</span> sparse format with</span>
+<span id="cb3-4"><a href="règles-dassociation.html#cb3-4"></a> <span class="dv">4</span> <span class="kw">transactions</span> (rows) and</span>
+<span id="cb3-5"><a href="règles-dassociation.html#cb3-5"></a> <span class="dv">6</span> <span class="kw">items</span> (columns)</span></code></pre></div>
+<p>La fonction <code>inspect</code> permet de décrire les transactions :</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="règles-dassociation.html#cb4-1"></a><span class="kw">inspect</span>(transactions)</span>
+<span id="cb4-2"><a href="règles-dassociation.html#cb4-2"></a>    items                        </span>
+<span id="cb4-3"><a href="règles-dassociation.html#cb4-3"></a>[<span class="dv">1</span>] {Farine,Lait,Oeufs,Sucre}    </span>
+<span id="cb4-4"><a href="règles-dassociation.html#cb4-4"></a>[<span class="dv">2</span>] {Chocolat,Farine,Oeufs,Sucre}</span>
+<span id="cb4-5"><a href="règles-dassociation.html#cb4-5"></a>[<span class="dv">3</span>] {Chocolat,Oeufs,Sucre}       </span>
+<span id="cb4-6"><a href="règles-dassociation.html#cb4-6"></a>[<span class="dv">4</span>] {Chocolat,Oeufs,Thé}         </span></code></pre></div>
+</blockquote>
+<div id="outils-danalyse" class="section level2">
+<h2><span class="header-section-number">9.1</span> Outils d’analyse</h2>
+
+<div class="definition">
+<span id="def:unnamed-chunk-4" class="definition"><strong>Définition 9.2  </strong></span>Soit <span class="math inline">\(X\)</span> une partie de <span class="math inline">\(\mathcal{I}\)</span>. La <strong>fréquence de <span class="math inline">\(X\)</span> dans <span class="math inline">\(\mathcal{T}\)</span></strong>, notée <span class="math inline">\(f_X\)</span> est égale au nombre de transactions de <span class="math inline">\(\mathcal{T}\)</span> qui contiennent tous les éléments de <span class="math inline">\(X\)</span>, i.e.
+<span class="math inline">\(f_X = \dfrac{\operatorname{card} \{T \in \mathcal{T},\: X \subset T\}}{\operatorname{card} \mathcal{T}}\)</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-5" class="example"><strong>Exemple 9.2  </strong></span>En reprenant l’exemple précédent, on a :</p>
+<ul>
+<li><span class="math inline">\(f_{\{\text{Farine}\}} = 1/2\)</span> ;</li>
+<li><span class="math inline">\(f_{\{\text{Sucre} \}} = 3/4\)</span>.
+</div></li>
+</ul>
+<blockquote>
+<p><strong>En R : Calculer la fréquence de chaque item</strong></p>
+<p>On utilise la fonction <code>itemFrequency</code> :</p>
+</blockquote>
+<blockquote>
+<ul>
+<li><code>type</code> spécifie le calcul effectué ;
+<ul>
+<li><code>type = "relative"</code> indique que l’on calcule les fréquences (cas par défaut) ;</li>
+<li><code>type = "absolute"</code> indique que l’on calcule les fréquences.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="règles-dassociation.html#cb5-1"></a><span class="kw">itemFrequency</span>(transactions)</span>
+<span id="cb5-2"><a href="règles-dassociation.html#cb5-2"></a>Chocolat   Farine     Lait    Oeufs    Sucre      Thé </span>
+<span id="cb5-3"><a href="règles-dassociation.html#cb5-3"></a>    <span class="fl">0.75</span>     <span class="fl">0.50</span>     <span class="fl">0.25</span>     <span class="fl">1.00</span>     <span class="fl">0.75</span>     <span class="fl">0.25</span> </span>
+<span id="cb5-4"><a href="règles-dassociation.html#cb5-4"></a><span class="kw">itemFrequency</span>(transactions, <span class="dt">type =</span> <span class="st">&quot;relative&quot;</span>)</span>
+<span id="cb5-5"><a href="règles-dassociation.html#cb5-5"></a>Chocolat   Farine     Lait    Oeufs    Sucre      Thé </span>
+<span id="cb5-6"><a href="règles-dassociation.html#cb5-6"></a>    <span class="fl">0.75</span>     <span class="fl">0.50</span>     <span class="fl">0.25</span>     <span class="fl">1.00</span>     <span class="fl">0.75</span>     <span class="fl">0.25</span> </span>
+<span id="cb5-7"><a href="règles-dassociation.html#cb5-7"></a><span class="kw">itemFrequency</span>(transactions, <span class="dt">type =</span> <span class="st">&quot;absolute&quot;</span>)</span>
+<span id="cb5-8"><a href="règles-dassociation.html#cb5-8"></a>Chocolat   Farine     Lait    Oeufs    Sucre      Thé </span>
+<span id="cb5-9"><a href="règles-dassociation.html#cb5-9"></a>       <span class="dv">3</span>        <span class="dv">2</span>        <span class="dv">1</span>        <span class="dv">4</span>        <span class="dv">3</span>        <span class="dv">1</span> </span></code></pre></div>
+</blockquote>
+<blockquote>
+<p><strong>En R : Représenter graphiquement la fréquence de chaque item</strong></p>
+<p>On utilise la fonction <code>itemFrequencyPlot</code></p>
+<ul>
+<li><code>type</code> spécifie le calcul effectué ;
+<ul>
+<li><code>type = "relative"</code> indique que l’on calcule les fréquences (cas par défaut) ;</li>
+<li><code>type = "absolute"</code> indique que l’on calcule le nombre d’occurrences ;</li>
+</ul></li>
+<li><code>support</code> spécifie la valeur minimale de la fréquence (ou du nombre d’occurrences) pour laquelle on affiche les items ;</li>
+<li><code>topN</code> spécifie le nombre d’items de plus grande fréquence (ou plus grand nombre d’occurrences) à afficher</li>
+<li><code>horiz</code> spécifie si les barres sont tracées horizontalement (ce qui n’est pas le cas par défaut)</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="règles-dassociation.html#cb6-1"></a><span class="kw">itemFrequencyPlot</span>(transactions)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualiassoc_itemfrequencyplot-1.png" width="672" /></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="règles-dassociation.html#cb7-1"></a><span class="kw">itemFrequencyPlot</span>(transactions, <span class="dt">type =</span> <span class="st">&quot;absolute&quot;</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualiassoc_itemfrequencyplot-2.png" width="672" /></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="règles-dassociation.html#cb8-1"></a><span class="kw">itemFrequencyPlot</span>(transactions, <span class="dt">support =</span> <span class="fl">0.6</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualiassoc_itemfrequencyplot-3.png" width="672" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="règles-dassociation.html#cb9-1"></a><span class="kw">itemFrequencyPlot</span>(transactions, <span class="dt">topN =</span> <span class="dv">4</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualiassoc_itemfrequencyplot-4.png" width="672" /></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="règles-dassociation.html#cb10-1"></a><span class="kw">itemFrequencyPlot</span>(transactions, <span class="dt">support =</span> <span class="fl">0.6</span>, <span class="dt">topN =</span> <span class="dv">4</span>)</span></code></pre></div>
+<p><img src="DataExploration_files/figure-html/qualiassoc_itemfrequencyplot-5.png" width="672" /></p>
+</blockquote>
+<div id="support" class="section level3">
+<h3><span class="header-section-number">9.1.1</span> Support</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-6" class="definition"><strong>Définition 9.3  </strong></span>On définit le <strong>support de <span class="math inline">\(X \to Y\)</span></strong>, noté <span class="math inline">\(\operatorname{supp}(X \to Y)\)</span>, par <span class="math inline">\(\operatorname{supp}(X \to Y) = f_{X \cup Y}\)</span>.
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Le support d’une règle est donc le pourcentage de transactions dans lequelles la règle est applicable.
+</div>
+
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-8" class="proposition"><strong>Proposition 9.1  </strong></span><span class="math inline">\(\operatorname{supp}(X \to Y) = \operatorname{supp}(Y \to X)\)</span>
+</div>
+
+
+<div class="example">
+<span id="exm:unnamed-chunk-9" class="example"><strong>Exemple 9.3  </strong></span>En reprenant l’exemple précédent, on a :
+<span class="math display">\[\operatorname{supp}(\text{Farine} \to \text{Sucre}) = \operatorname{supp}(\text{Sucre} \to \text{Farine}) = f_{\{\text{Farine}, \text{Sucre}\}} = 1/2\]</span>
+</div>
+
+</div>
+<div id="confiance" class="section level3">
+<h3><span class="header-section-number">9.1.2</span> Confiance</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-10" class="definition"><strong>Définition 9.4  </strong></span>On définit la <strong>confiance de <span class="math inline">\(X \to Y\)</span></strong>, noté <span class="math inline">\(\operatorname{conf}(X \to Y)\)</span>, par <span class="math inline">\(\operatorname{conf}(X \to Y) = \dfrac{f_{X \cup Y}}{f_X}\)</span>.
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> La confiance d’une règle <span class="math inline">\(X \to Y\)</span> est donc le pourcentage de transactions contenant <span class="math inline">\(X\)</span> et <span class="math inline">\(Y\)</span> parmi celles qui contiennent <span class="math inline">\(X\)</span>.<br />
+La confiance de <span class="math inline">\(X \to Y\)</span> traduit donc la probabilité d’avoir <span class="math inline">\(Y\)</span> dans une transaction, sachant qu’elle contient déjà <span class="math inline">\(X\)</span>.
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-12" class="example"><strong>Exemple 9.4  </strong></span>En reprenant l’exemple précédent, on a :</p>
+<ul>
+<li><span class="math inline">\(\operatorname{conf}(\text{Farine} \to \text{Sucre} ) = 1\)</span> ;</li>
+<li><span class="math inline">\(\operatorname{conf}(\text{Sucre} \to \text{Farine}) = 2/3\)</span>.
+</div></li>
+</ul>
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-13" class="proposition"><strong>Proposition 9.2  </strong></span><span class="math inline">\(\operatorname{conf}(X \to Y) \in [0,1]\)</span>
+</div>
+
+</div>
+<div id="amélioration-ou-lift" class="section level3">
+<h3><span class="header-section-number">9.1.3</span> Amélioration (ou <em>lift</em>)</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-14" class="definition"><strong>Définition 9.5  </strong></span>On définit l’<strong>amélioration (ou <em>lift</em>) de <span class="math inline">\(X \to Y\)</span></strong>, noté <span class="math inline">\(\operatorname{lift}(X \to Y)\)</span>, par <span class="math inline">\(\operatorname{lift}(X \to Y) = \dfrac{\operatorname{conf}(X \to Y)}{f_Y}\)</span>.
+</div>
+
+
+<div class="remark">
+<p> <span class="remark"><em>Remarque. </em></span> Le lift de <span class="math inline">\(X \to Y\)</span> est donc le rapport entre :</p>
+<ul>
+<li>la confiance de <span class="math inline">\(X \to Y\)</span>, i.e. le pourcentage de transactions contenant <span class="math inline">\(Y\)</span> parmi celles contenant <span class="math inline">\(X\)</span> ;</li>
+<li>la fréquence de <span class="math inline">\(Y\)</span>, i.e. le pourcentage de transactions contenant <span class="math inline">\(Y\)</span>.</li>
+</ul>
+Un lift supérieur à un signifie donc que le fait que <em>connaître <span class="math inline">\(X\)</span> augmente la prédication de <span class="math inline">\(Y\)</span></em>.
+</div>
+
+
+<div class="proposition">
+<p><span id="prp:unnamed-chunk-16" class="proposition"><strong>Proposition 9.3  </strong></span></p>
+<ul>
+<li><span class="math inline">\(\operatorname{lift}(X \to Y) = \dfrac{f_{X \cup Y}}{f_X \cdot f_Y}\)</span></li>
+<li><span class="math inline">\(\operatorname{lift}(X \to Y) = \operatorname{lift}(Y \to X)\)</span>
+</div></li>
+</ul>
+
+<div class="example">
+<span id="exm:unnamed-chunk-17" class="example"><strong>Exemple 9.5  </strong></span>En reprenant l’exemple précédent, on a :
+<span class="math display">\[\operatorname{lift}(\text{Farine} \to \text{Sucre}) = \operatorname{lift}(\text{Sucre} \to \text{Farine}) = 2\]</span>
+</div>
+
+</div>
+</div>
+<div id="algorithme-de-construction-de-règles" class="section level2">
+<h2><span class="header-section-number">9.2</span> Algorithme de construction de règles</h2>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-18" class="definition"><strong>Définition 9.6  </strong></span>Soit <span class="math inline">\(s_{\text{min}}\)</span> et <span class="math inline">\(c_{\text{min}}\)</span> deux réels de <span class="math inline">\([0,1]\)</span>.</p>
+<p>On définit :</p>
+<ul>
+<li>pour tout entier <span class="math inline">\(k\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(\operatorname{card}(\mathcal{I})\)</span>, l’<em>ensemble des sous-ensembles d’items fréquents de cardinal <span class="math inline">\(k\)</span></em> <span class="math inline">\(F_k = \{X \subset \mathcal{T},\: \operatorname{card} X = k  \text{ et } \operatorname{supp}(X) \geq s_{\text{min}}\}\)</span> ;</li>
+<li>l’<em>ensemble des sous-ensembles d’items fréquents</em> <span class="math inline">\(F = \displaystyle\bigcup_{k = 1}^{\operatorname{card}(\mathcal{I})} F_k\)</span>.</li>
+</ul>
+<p>L’algorithme <em>Apriori</em> <span class="citation">(Agrawal et Srikant 1994)</span> est défini comme suit :</p>
+<ol style="list-style-type: decimal">
+<li>Calculer <span class="math inline">\(F_k\)</span> pour tout entier <span class="math inline">\(k\)</span> entre <span class="math inline">\(1\)</span> et <span class="math inline">\(\operatorname{card}(\mathcal{I})\)</span> et en déduire <span class="math inline">\(F\)</span>.</li>
+<li>Calculer <span class="math inline">\(\mathcal{R} = \{X \to Y,\: (X, Y) \in F^2  \text{ et } \operatorname{conf}(X \to Y) \geq c_{\text{min}}\}\)</span>.
+</div></li>
+</ol>
+
+<div class="remark">
+<p> <span class="remark"><em>Remarque. </em></span> </p>
+<ul>
+<li><span class="math inline">\(F_k\)</span> est l’ensemble des sous-ensembles de <span class="math inline">\(k\)</span> items dont le support est au moins égal à <span class="math inline">\(s_{\text{min}}\)</span>.</li>
+<li><span class="math inline">\(\mathcal{R}\)</span> est l’ensemble des règles dont :
+<ul>
+<li>la prémisse et la conséquence sont dans <span class="math inline">\(F\)</span> ;</li>
+<li>la confiance est au moins égale à <span class="math inline">\(c_{\text{min}}\)</span>.
+</div></li>
+</ul></li>
+</ul>
+
+<div class="proposition">
+<span id="prp:unnamed-chunk-20" class="proposition"><strong>Proposition 9.4  </strong></span><span class="math inline">\((F_k)_{1 \leq k \leq \operatorname{card}(\mathcal{I})}\)</span> est une séquence décroissante.
+</div>
+
+
+<div class="proof">
+ <span class="proof"><em>Démonstration. </em></span> L’opérateur <span class="math inline">\(\operatorname{supp}\)</span> est décroissant au sens de l’inclusion, d’où le résultat.
+</div>
+
+
+<div class="corollary">
+<span id="cor:unnamed-chunk-22" class="corollary"><strong>Corollaire 9.1  </strong></span>Pour tout entier <span class="math inline">\(1\)</span> et <span class="math inline">\(\operatorname{card}(\mathcal{I}) - 1\)</span>,
+<span class="math inline">\(F_k = \{X \subset F_{k-1},\: \operatorname{card} X = k  \text{ et } \operatorname{supp}(X) \geq s_{\text{min}}\}\)</span>.
+</div>
+
+
+<div class="remark">
+ <span class="remark"><em>Remarque. </em></span> Donc chaque sous-ensemble d’items fréquents peut être calculé à partir du précédent.
+</div>
+
+<blockquote>
+<p><strong>En R : Appliquer l’algorithme <em>Apriori</em> </strong></p>
+<p>On utilise la fonction <code>apriori</code> dont le second paramètre <code>parameter</code> spécifie la liste des paramètres nommés :</p>
+<ul>
+<li><code>support</code> indique la valeur minimale du support <span class="math inline">\(s_{\text{min}}\)</span> (<code>0.1</code> par défaut) ;</li>
+<li><code>confidence</code> indique la valeur minimale de la confiance <span class="math inline">\(c_{\text{min}}\)</span> (<code>0.8</code> par défaut) ;</li>
+<li><code>minlen</code> indique la valeur minimale du nombre d’items par sous-ensemble fréquent (<code>1</code> par défaut) ;</li>
+<li><code>maxlen</code> indique la valeur maximale du nombre d’items par sous-ensemble fréquent (<code>10</code> par défaut).</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="règles-dassociation.html#cb11-1"></a>rules &lt;-<span class="st"> </span><span class="kw">apriori</span>(transactions, <span class="dt">parameter =</span> <span class="kw">list</span>(<span class="dt">support =</span> <span class="fl">0.5</span>, <span class="dt">confidence =</span> <span class="fl">0.8</span>))</span>
+<span id="cb11-2"><a href="règles-dassociation.html#cb11-2"></a>Apriori</span>
+<span id="cb11-3"><a href="règles-dassociation.html#cb11-3"></a></span>
+<span id="cb11-4"><a href="règles-dassociation.html#cb11-4"></a>Parameter specification<span class="op">:</span></span>
+<span id="cb11-5"><a href="règles-dassociation.html#cb11-5"></a><span class="st"> </span>confidence minval smax arem  aval originalSupport maxtime support minlen</span>
+<span id="cb11-6"><a href="règles-dassociation.html#cb11-6"></a>        <span class="fl">0.8</span>    <span class="fl">0.1</span>    <span class="dv">1</span> none <span class="ot">FALSE</span>            <span class="ot">TRUE</span>       <span class="dv">5</span>     <span class="fl">0.5</span>      <span class="dv">1</span></span>
+<span id="cb11-7"><a href="règles-dassociation.html#cb11-7"></a> maxlen target  ext</span>
+<span id="cb11-8"><a href="règles-dassociation.html#cb11-8"></a>     <span class="dv">10</span>  rules <span class="ot">TRUE</span></span>
+<span id="cb11-9"><a href="règles-dassociation.html#cb11-9"></a></span>
+<span id="cb11-10"><a href="règles-dassociation.html#cb11-10"></a>Algorithmic control<span class="op">:</span></span>
+<span id="cb11-11"><a href="règles-dassociation.html#cb11-11"></a><span class="st"> </span>filter tree heap memopt load sort verbose</span>
+<span id="cb11-12"><a href="règles-dassociation.html#cb11-12"></a>    <span class="fl">0.1</span> <span class="ot">TRUE</span> <span class="ot">TRUE</span>  <span class="ot">FALSE</span> <span class="ot">TRUE</span>    <span class="dv">2</span>    <span class="ot">TRUE</span></span>
+<span id="cb11-13"><a href="règles-dassociation.html#cb11-13"></a></span>
+<span id="cb11-14"><a href="règles-dassociation.html#cb11-14"></a>Absolute minimum support count<span class="op">:</span><span class="st"> </span><span class="dv">2</span> </span>
+<span id="cb11-15"><a href="règles-dassociation.html#cb11-15"></a></span>
+<span id="cb11-16"><a href="règles-dassociation.html#cb11-16"></a>set item appearances ...[<span class="dv">0</span> <span class="kw">item</span>(s)] done [<span class="fl">0.00</span>s].</span>
+<span id="cb11-17"><a href="règles-dassociation.html#cb11-17"></a>set transactions ...[<span class="dv">6</span> <span class="kw">item</span>(s), <span class="dv">4</span> <span class="kw">transaction</span>(s)] done [<span class="fl">0.00</span>s].</span>
+<span id="cb11-18"><a href="règles-dassociation.html#cb11-18"></a>sorting and recoding items ... [<span class="dv">4</span> <span class="kw">item</span>(s)] done [<span class="fl">0.00</span>s].</span>
+<span id="cb11-19"><a href="règles-dassociation.html#cb11-19"></a>creating transaction tree ... done [<span class="fl">0.00</span>s].</span>
+<span id="cb11-20"><a href="règles-dassociation.html#cb11-20"></a>checking subsets of size <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> done [<span class="fl">0.00</span>s].</span>
+<span id="cb11-21"><a href="règles-dassociation.html#cb11-21"></a>writing ... [<span class="dv">8</span> <span class="kw">rule</span>(s)] done [<span class="fl">0.00</span>s].</span>
+<span id="cb11-22"><a href="règles-dassociation.html#cb11-22"></a>creating S4 object  ... done [<span class="fl">0.00</span>s].</span></code></pre></div>
+<p>On utilise la fonction <code>subset</code> pour ne garder que les règles dont le <em>lift</em> est strictement supérieur à un :</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="règles-dassociation.html#cb12-1"></a>rules &lt;-<span class="st"> </span><span class="kw">subset</span>(rules, lift <span class="op">&gt;</span><span class="st"> </span><span class="dv">1</span>)</span></code></pre></div>
+<p>On utilise la fonction <code>inspect</code> pour afficher les règles :</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="règles-dassociation.html#cb13-1"></a><span class="kw">inspect</span>(rules)</span>
+<span id="cb13-2"><a href="règles-dassociation.html#cb13-2"></a>    lhs               rhs     support confidence coverage lift     count</span>
+<span id="cb13-3"><a href="règles-dassociation.html#cb13-3"></a>[<span class="dv">1</span>] {Farine}       =<span class="er">&gt;</span><span class="st"> </span>{Sucre} <span class="fl">0.5</span>     <span class="dv">1</span>          <span class="fl">0.5</span>      <span class="fl">1.333333</span> <span class="dv">2</span>    </span>
+<span id="cb13-4"><a href="règles-dassociation.html#cb13-4"></a>[<span class="dv">2</span>] {Farine,Oeufs} =<span class="er">&gt;</span><span class="st"> </span>{Sucre} <span class="fl">0.5</span>     <span class="dv">1</span>          <span class="fl">0.5</span>      <span class="fl">1.333333</span> <span class="dv">2</span>    </span></code></pre></div>
+</blockquote>
+
+</div>
+</div>
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analyse-qualitative-multivariée-analyse-des-correspondances-multiples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="analyse-mixte-bivariée.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
