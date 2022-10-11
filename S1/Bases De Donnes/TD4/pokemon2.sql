@@ -52,14 +52,14 @@ SELECT * FROM Joueur WHERE pseudonyme NOT LIKE "%a%";
 
 SELECT * FROM Pokemon ORDER BY pointCombat DESC;
 
-SELECT date
+SELECT horaire
 FROM Apparition
     JOIN Pokemon ON Apparition.idPokemon = Pokemon.idPokemon
 WHERE nom = "Tygnon";
 
 SELECT AVG(duree) FROM Apparition;
 
-SELECT count(*) FROM `Apparition` where month(date) = 10 AND year(date) = 2022;
+SELECT count(*) FROM `Apparition` where month(horaire) = 10 AND year(horaire) = 2022;
 
 SELECT *
 FROM `Pokemon`
@@ -74,5 +74,5 @@ UPDATE `Joueur` SET niveau = niveau + 2 WHERE pseudonyme = "Shadow";
 SELECT distinct Pokemon.*
 FROM `Pokemon`
     JOIN `Apparition` ON Pokemon.idPokemon = Apparition.idPokemon
-WHERE MONTH(date) = 9;
+WHERE MONTH(horaire) = 9;
 
