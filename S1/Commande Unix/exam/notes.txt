@@ -1,0 +1,5 @@
+5896    Java        14  15
+4589    BD          20  1
+7415    Algorithme  17  3
+4568    Pascal      8   20
+4567    Web         15  7
