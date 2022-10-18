@@ -1,0 +1,19 @@
+****************** TUTO installation Rcommander et son plug-in FactoMineR sur Ubuntu/Debian ******************
+
+Auteur : Charly Ratier E.I.S.T.I Pau
+
+1 - Exécutez dans un terminal : # sudo apt-get install r-cran-rcmdr
+
+2 - Entrez votre mot de passe tapez Y lorsqu'on vous le demande et validez avec entrée
+
+3 - Lancez R et exécutez : >library('Rcmdr')
+
+4 - Dans la fenêtre qui s'ouvre cliquez sur Yes/Oui, une nouvelle fenêtre s'ouvre, cliquez sur OK et enfin choisissez un serveur de téléchargement (France - Lyon 1 par exemple) puis tapez Y lorsqu'on vous le demande et validez avec entrée (Cette dernière opération est un peu longue)
+
+5 - Quittez tout et relancez R puis exécutez : >install.packages("RcmdrPlugin.FactoMineR") 
+
+6 - Choisissez à nouveau un serveur de téléchargement
+
+7 - Lancez Rcommander avec : >library('Rcmdr')
+
+8 - Allez dans Tools puis Load Rcmdr plug-in(s) puis sélectionnez FactoMineR et cliquez sur OK. Cette opération est à répéter à chaque ouverture de Rcommander (>library('Rcmdr'))
