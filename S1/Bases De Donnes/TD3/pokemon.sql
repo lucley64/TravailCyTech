@@ -49,7 +49,7 @@ CREATE TABLE
 
 ALTER TABLE `Apparition` RENAME COLUMN date TO horaire;
 
-ALTER TABLE `Apparition` ALTER horaire SET DEFAULT (SYSDATE());
+ALTER TABLE `Apparition` ALTER horaire SET DEFAULT (CURRENT_DATE);
 
 ALTER TABLE `Joueur` ALTER niveau SET DEFAULT (0);
 
@@ -77,4 +77,18 @@ ADD
         AND longitude <= 90
     );
 
-ALTER TABLE `Joueur` MODIFY COLUMN pseudonyme CHAR(255);
+SHOW INDEX FROM `Joueur`;
+
+ALTER TABLE `Joueur` DROP INDEX pseudonyme;
+
+describe `Pokemon`;
+
+describe `Joueur`;
+
+describe `Apparition`;
+
+describe `Emplacement`;
+
+DESCRIBE `Equipe`;
+
+select * from information_schema.`CHECK_CONSTRAINTS`;

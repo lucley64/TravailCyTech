@@ -59,7 +59,11 @@ WHERE nom = "Tygnon";
 
 SELECT AVG(duree) FROM Apparition;
 
-SELECT count(*) FROM `Apparition` where month(horaire) = 10 AND year(horaire) = 2022;
+SELECT count(*)
+FROM `Apparition`
+where
+    month(horaire) = 10
+    AND year(horaire) = 2022;
 
 SELECT *
 FROM `Pokemon`
@@ -75,4 +79,3 @@ SELECT distinct Pokemon.*
 FROM `Pokemon`
     JOIN `Apparition` ON Pokemon.idPokemon = Apparition.idPokemon
 WHERE MONTH(horaire) = 9;
-
