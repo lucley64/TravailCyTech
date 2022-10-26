@@ -1,5 +1,5 @@
 (piles)
-1.
+//1.
 precond: on suppose que la pile p est cree et initialisee
 postcond: fonction qui retourne une copie de p
 Fonction copierPile(p: pile): pile
@@ -41,7 +41,7 @@ Debut
     FinTantQue
 Fin
 
-2.
+//2.
 precond: on suppose que la pile p est cree et initialisee
 postcond: fonction qui retourne la taille de p
 Fonction taille(E p: pile): entier
@@ -57,7 +57,7 @@ Debut
     retourner(size)
 Fin
 
-3. 
+//3. 
 precond: on suppose que la pile p est cree et initialisee
 postcond: procedure qui insere un element e à la position pos dans la pile p
 Procedure inserer(E/S p: pile, e: type delement de la pile, pos: entier)
@@ -84,7 +84,7 @@ Debut
     inverserPile(p)
 Fin
 
-4. 
+//4. 
 precond: on suppose que la pile p est cree et initialisee
 postcond: procedure qui retire l element de la pile p a la position pos
 Procedure supprimer(E/S p: pile, pos: entier)
@@ -110,7 +110,7 @@ Debut
     FinTantQue
 Fin
 
-5. 
+//5. 
 precond: on suppose que la pile p est cree et initialisee
 postcond: fonction indique la presence de l element e dans la pile p
 Fonction trouver(p: pile, e: type delement de la pile): booleen

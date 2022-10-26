@@ -1,11 +1,11 @@
-1. 
+//1. 
 Enregistrement Etudiant
     nom : chaine de caractères
     prénom : chaine de caractères
     moyenne : réel
 FinEnregistrement
 
-2. 
+//2. 
 precondition : fonction taille déjà existante
 postcondition : chaque étudiant à un nom, prénom et une moyenne
 Algorithme calcul de moyennes

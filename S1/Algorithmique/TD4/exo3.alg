@@ -1,4 +1,4 @@
-5.
+//5.
 
 Preconditions: A est créé est initialisé
 Postconditions: A sous forme triangulaire
@@ -12,7 +12,7 @@ Debut
     FinPour
 Fin
 
-6.
+//6.
 
 Preconditions: A est créé est initialisé
 Postconditions: A sous forme triangulaire

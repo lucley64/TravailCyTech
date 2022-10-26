@@ -1,4 +1,4 @@
-7.
+//7.
 
 Preconditions: A est initialisé et créé
 Postconditions: zéros au-dessus du pivot choisi

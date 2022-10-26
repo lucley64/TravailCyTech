@@ -1,4 +1,4 @@
-1.
+//1.
 precondition : finction initZero qui initialise toutes les variables dun tableau à zéro
 postcondition : un vecteur resultat du produit du vecteur par la matrice
 Algorithme produit matrice x vecteur
@@ -53,7 +53,7 @@ Début
     écrire(resultat[taille(resultat)], ")")
 Fin
 
-2. #TODO 
+//2. #TODO 
 precondition : finction initZeroZero qui initialise toutes les variables dun tableau multidim à zéro et affecterLongeur qui affecte la longeur a un tableau
 postcondition : un vecteur resultat du produit du vecteur par la matrice
 Algorithme produit matrice x vecteur

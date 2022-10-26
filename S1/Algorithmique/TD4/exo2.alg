@@ -1,4 +1,4 @@
-4. 
+//4. 
 
 Preconditions: A est créé est initialisé et A[i][i] ≠ 0
 Postconditions: met des zéros au-dessous du pivot choisi

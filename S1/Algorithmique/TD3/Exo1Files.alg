@@ -1,4 +1,4 @@
-1.
+//1.
 
 precond: on suppose que la file f est cree et initialisee
 postcond: procedure qui inverse les elements de f
@@ -22,7 +22,7 @@ enfiler(f, temp)
 FinTantQue
 Fin
 
-2.
+//2.
 precond: on suppose que la file f est cree et initialisee
 postcond: fonction que retourne le nombre d elements de la file f
 Fonction taille(f: file): entier
@@ -38,4 +38,4 @@ Debut
     retourner(retour)
 Fin
 
-3.
+//3.

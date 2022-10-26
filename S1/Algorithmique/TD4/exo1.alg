@@ -1,4 +1,4 @@
-1.
+//1.
 
 Preconditions: A est crée est initialisé
 Postconditions: retourne la matrice après l'operation Li ← kLi
@@ -12,7 +12,7 @@ Debut
     FinPour
 Fin
 
-2.
+//2.
 
 Preconditions: A est créé est initialisé et taille(A[i]) = taille(A[j])
 Postconditions: retourne la matrice après l'operation Li ←→ Lj
@@ -29,7 +29,7 @@ Debut
     FinPour
 Fin
 
-3.
+//3.
 
 Preconditions: A est créé est initialisé taille(A[i]) = taille(A[j])
 Postconditions: retourne la matrice après l'operation Li ← Li + kLj
