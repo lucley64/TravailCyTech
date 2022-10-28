@@ -1,10 +1,10 @@
--- Active: 1664894854045@@127.0.0.1@3306@Pokemon2
+-- Active: 1666962743154@@127.0.0.1@3306
 
-DROP DATABASE IF EXISTS Pokemon;
+DROP DATABASE IF EXISTS Pokemon2;
 
-CREATE DATABASE Pokemon;
+CREATE DATABASE Pokemon2;
 
-USE Pokemon;
+USE Pokemon2;
 
 CREATE TABLE
     Equipe(
@@ -256,39 +256,21 @@ SELECT *
 FROM `Pokemon`
 WHERE pointCombat > (
         SELECT
-            MAX(pointCombat)
-        FROM `Pokemon` id
-        FROM `Equipe`
+            MAX(`pointCombat`)
+        FROM pokemon
+            NATURAL JOIN joueur
+            JOIN equipe ON equipe.id = `idEquipe`
         WHERE
             couleur = "Jaune"
     )
-)
-)
-AND id NOT IN (
-    SELECT id
-    FROM `Pokemon`
-    WHERE id
-    WHERE idJoueur IN (
-            SELECT idJoueur
-            FROM `Joueur`
-            WHERE idEquipe IN (
-                    SELECT
-                        Joueur IN (
-                            SELECT
-                                idJoueur
-                            FROM
-                                `Joueur`
-                            WHERE
-                                idEquipe IN (
-                                    SELECT
-                                        id
-                                    FROM
-                                        `Equipe`
-                                    WHERE
-                                        couleur = "Jaune"
-                                )
-                        )
-                );
+    AND id NOT IN(
+        SELECT pokemon.id
+        FROM pokemon
+            NATURAL JOIN joueur
+            JOIN equipe ON equipe.id = `idEquipe`
+        WHERE
+            couleur = "Jaune"
+    );
 
 --13.
 
@@ -356,6 +338,52 @@ FROM `Pokemon`
     JOIN `Apparition` ON id = idPokemon
 GROUP BY nom, espece
 HAVING
-    `Nombre d'apparitions` >= 2
+    `Nombre d'apparitions` >= 2;
 
 --21.
+
+SELECT
+    nom,
+    espece,
+    duree,
+    COUNT(*) as `Nombre d'apparitions`
+FROM `Pokemon`
+    JOIN `Apparition` ON id = idPokemon
+GROUP BY nom, espece
+HAVING
+    `Nombre d'apparitions` >= 2
+    AND duree > 5;
+
+--22
+
+SELECT
+    nom,
+    espece,
+    SUM(duree) AS `durée totale d'apparition`
+FROM pokemon
+    LEFT JOIN apparition ON id = `idPokemon`
+WHERE `pointCombat` >= 1000
+GROUP BY nom, espece
+HAVING
+    `durée totale d'apparition` >= 10;
+
+--23
+
+SELECT AVG(duree) AS `temps moyen d'apparition des pokémons appartenant aux joueurs de l'équipe ayant contrôlé le plus d'arènes`
+FROM pokemon
+    JOIN apparition ON pokemon.id = apparition.`idPokemon`
+    NATURAL JOIN joueur
+WHERE joueur.`idEquipe` = (
+        SELECT equipe.id
+        FROM equipe
+            JOIN defense ON equipe.id = defense.`idEquipe`
+        GROUP BY equipe.id
+        HAVING COUNT(*) = (
+                SELECT COUNT(*) as c
+                FROM equipe
+                    JOIN defense ON equipe.id = defense.`idEquipe`
+                GROUP BY equipe.id
+                ORDER BY c
+                LIMIT 1
+            )
+    )

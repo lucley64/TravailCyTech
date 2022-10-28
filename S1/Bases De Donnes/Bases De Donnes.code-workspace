@@ -4,5 +4,21 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"sqltools.connections": [
+			{
+				"name": "TpDb",
+				"server": "localhost",
+				"driver": "MySQL",
+				"port": 33060,
+				"username": "user",
+				"askForPassword": false,
+				"password": "password",
+				"connectionTimeout": 15,
+				"mysqlOptions": {
+					"authProtocol": "xprotocol"
+				}
+			}
+		]
+	}
 }
