@@ -19,21 +19,67 @@
  */
 int main(int argc, char const *argv[])
 {
-    int int_jour;
-    int int_mois;
-    int int_annee;
+    int int_jour;    // Déclaration du jour
+    int int_mois;    // Déclaration du mois
+    int int_annee;   // Déclaration de l'année
     int int_retour;  // Déclaration de la variable chargée de récupérer le retour des fonction
     char char_verif; // Déclaration du caractère de vérification de la saisie
 
+    // On demande la saisie du jour puis on le lit
     printf("Saisir le jour : ");
     int_retour = scanf("%d", &int_jour);
 
+    // On vérifie que scanf a bien lu quelquechose
+    if (int_retour == 0)
+    {
+        printf("Erreur lors de la saisie.\n");
+        exit(-1);
+    }
+    // On vérifie que l'utilisateur n'a rien saisi après la saisie
+    int_retour = scanf("%c", &char_verif);
+    if (char_verif != '\n')
+    {
+        printf("Erreur lors de la saisie.\n");
+        exit(-1);
+    }
+
+    // On demande la saisie du mois puis on le lit
     printf("Saisir le mois : ");
     int_retour = scanf("%d", &int_mois);
 
+    // On vérifie que scanf a bien lu quelquechose
+    if (int_retour == 0)
+    {
+        printf("Erreur lors de la saisie.\n");
+        exit(-1);
+    }
+    // On vérifie que l'utilisateur n'a rien saisi après la saisie
+    int_retour = scanf("%c", &char_verif);
+    if (char_verif != '\n')
+    {
+        printf("Erreur lors de la saisie.\n");
+        exit(-1);
+    }
+
+    // On demande la saisie de l'année puis on le lit
     printf("Saisir l'année : ");
     int_retour = scanf("%d", &int_annee);
 
+    // On vérifie que scanf a bien lu quelquechose
+    if (int_retour == 0)
+    {
+        printf("Erreur lors de la saisie.\n");
+        exit(-1);
+    }
+    // On vérifie que l'utilisateur n'a rien saisi après la saisie
+    int_retour = scanf("%c", &char_verif);
+    if (char_verif != '\n')
+    {
+        printf("Erreur lors de la saisie.\n");
+        exit(-1);
+    }
+
+    // On étudie le mois pour déterminer combien de jours il possede
     switch (int_mois)
     {
     case 1:
@@ -42,6 +88,7 @@ int main(int argc, char const *argv[])
     case 7:
     case 8:
     case 10:
+        // Cas où le mois à 31 jours
         if (int_jour == 31)
         {
             int_jour = 1;
@@ -57,6 +104,7 @@ int main(int argc, char const *argv[])
     case 6:
     case 9:
     case 11:
+        // Cas où le mois à 30 jours
         if (int_jour == 30)
         {
             int_jour = 1;
@@ -66,35 +114,27 @@ int main(int argc, char const *argv[])
         {
             int_jour++;
         }
-
+        break;
     case 2:
-        if (int_annee % 4 == 0)
+        // Cas du Févrié où il faut déterminer si c'est une année bissextile
+        if (int_jour == 29 && (int_annee % 4 == 0 && (int_annee % 100 != 0 || int_annee % 400 == 0)))
         {
-            if (int_jour == 29)
-            {
-                int_mois++;
-                int_jour = 1;
-            }
-            else
-            {
-                int_jour++;
-            }
+            int_mois++;
+            int_jour = 1;
+        }
+        else if (int_jour == 28)
+        {
+            int_mois++;
+            int_jour = 1;
         }
         else
         {
-            if (int_jour == 28)
-            {
-                int_mois++;
-                int_jour = 1;
-            }
-            else
-            {
-                int_jour++;
-            }
+            int_jour++;
         }
 
         break;
     case 12:
+        // Cas de descembre où il faut changer l'année en plus
         if (int_jour == 31)
         {
             int_annee++;
@@ -111,6 +151,7 @@ int main(int argc, char const *argv[])
         break;
     }
 
+    // On affiche le résultat
     printf("Dans un jour, on sera le %d/%d/%d\n", int_jour, int_mois, int_annee);
 
     return (0);
