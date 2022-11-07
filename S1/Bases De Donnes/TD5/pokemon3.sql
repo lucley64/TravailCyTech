@@ -1,4 +1,4 @@
--- Active: 1666962743154@@127.0.0.1@3306
+-- Active: 1664894854045@@127.0.0.1@3306@Pokemon2
 
 DROP DATABASE IF EXISTS Pokemon2;
 
@@ -20,7 +20,7 @@ CREATE TABLE
         sexe CHAR(1),
         niveau SMALLINT DEFAULT 0 NOT NULL,
         idEquipe INT,
-        FOREIGN KEY fk_equipe(idEquipe) REFERENCES Equipe(id) ON DELETE CASCADE
+        FOREIGN KEY fk_Equipe(idEquipe) REFERENCES Equipe(id) ON DELETE CASCADE
     );
 
 CREATE TABLE
@@ -30,7 +30,7 @@ CREATE TABLE
         espece VARCHAR(20),
         pointCombat INT,
         idJoueur INT,
-        FOREIGN KEY fk_joueur(idJoueur) REFERENCES Joueur(idJoueur) ON DELETE CASCADE
+        FOREIGN KEY fk_Joueur(idJoueur) REFERENCES Joueur(idJoueur) ON DELETE CASCADE
     );
 
 CREATE TABLE
@@ -53,7 +53,7 @@ CREATE TABLE
         horaire DATE,
         duree INT,
         CONSTRAINT pk_Apparition PRIMARY KEY (idPokemon, idEmplacement),
-        FOREIGN KEY fk_pokemon(idPokemon) REFERENCES Pokemon(id) ON DELETE CASCADE,
+        FOREIGN KEY fk_Pokemon(idPokemon) REFERENCES Pokemon(id) ON DELETE CASCADE,
         FOREIGN KEY fk_emplacement(idEmplacement) REFERENCES Emplacement(idEmplacement)
     );
 
@@ -75,7 +75,7 @@ CREATE TABLE
             idArene,
             dateControle
         ),
-        FOREIGN KEY fk_equipe2(idEquipe) REFERENCES Equipe(id),
+        FOREIGN KEY fk_Equipe2(idEquipe) REFERENCES Equipe(id),
         FOREIGN KEY fk_arene(idArene) REFERENCES Arene(id)
     );
 
@@ -257,17 +257,17 @@ FROM `Pokemon`
 WHERE pointCombat > (
         SELECT
             MAX(`pointCombat`)
-        FROM pokemon
-            NATURAL JOIN joueur
-            JOIN equipe ON equipe.id = `idEquipe`
+        FROM Pokemon
+            NATURAL JOIN Joueur
+            JOIN Equipe ON Equipe.id = `idEquipe`
         WHERE
             couleur = "Jaune"
     )
     AND id NOT IN(
-        SELECT pokemon.id
-        FROM pokemon
-            NATURAL JOIN joueur
-            JOIN equipe ON equipe.id = `idEquipe`
+        SELECT Pokemon.id
+        FROM Pokemon
+            NATURAL JOIN Joueur
+            JOIN Equipe ON Equipe.id = `idEquipe`
         WHERE
             couleur = "Jaune"
     );
@@ -333,12 +333,12 @@ GROUP BY nom;
 SELECT
     nom,
     espece,
-    COUNT(*) as `Nombre d'apparitions`
+    COUNT(*) as `Nombre d'Apparitions`
 FROM `Pokemon`
     JOIN `Apparition` ON id = idPokemon
 GROUP BY nom, espece
 HAVING
-    `Nombre d'apparitions` >= 2;
+    `Nombre d'Apparitions` >= 2;
 
 --21.
 
@@ -346,12 +346,12 @@ SELECT
     nom,
     espece,
     duree,
-    COUNT(*) as `Nombre d'apparitions`
+    COUNT(*) as `Nombre d'Apparitions`
 FROM `Pokemon`
     JOIN `Apparition` ON id = idPokemon
 GROUP BY nom, espece
 HAVING
-    `Nombre d'apparitions` >= 2
+    `Nombre d'Apparitions` >= 2
     AND duree > 5;
 
 --22
@@ -359,30 +359,30 @@ HAVING
 SELECT
     nom,
     espece,
-    SUM(duree) AS `durée totale d'apparition`
-FROM pokemon
-    LEFT JOIN apparition ON id = `idPokemon`
+    SUM(duree) AS `durée totale d'Apparition`
+FROM Pokemon
+    LEFT JOIN Apparition ON id = `idPokemon`
 WHERE `pointCombat` >= 1000
 GROUP BY nom, espece
 HAVING
-    `durée totale d'apparition` >= 10;
+    `durée totale d'Apparition` >= 10;
 
 --23
 
-SELECT AVG(duree) AS `temps moyen d'apparition des pokémons appartenant aux joueurs de l'équipe ayant contrôlé le plus d'arènes`
-FROM pokemon
-    JOIN apparition ON pokemon.id = apparition.`idPokemon`
-    NATURAL JOIN joueur
-WHERE joueur.`idEquipe` = (
-        SELECT equipe.id
-        FROM equipe
-            JOIN defense ON equipe.id = defense.`idEquipe`
-        GROUP BY equipe.id
+SELECT AVG(duree) AS `temps moyen d'Apparition des pokémons appartenant aux Joueurs de l'équipe ayant contrôlé le plus d'arènes`
+FROM Pokemon
+    JOIN Apparition ON Pokemon.id = Apparition.`idPokemon`
+    NATURAL JOIN Joueur
+WHERE Joueur.`idEquipe` = (
+        SELECT Equipe.id
+        FROM Equipe
+            JOIN Defense ON Equipe.id = Defense.`idEquipe`
+        GROUP BY Equipe.id
         HAVING COUNT(*) = (
                 SELECT COUNT(*) as c
-                FROM equipe
-                    JOIN defense ON equipe.id = defense.`idEquipe`
-                GROUP BY equipe.id
+                FROM Equipe
+                    JOIN Defense ON Equipe.id = Defense.`idEquipe`
+                GROUP BY Equipe.id
                 ORDER BY c
                 LIMIT 1
             )
