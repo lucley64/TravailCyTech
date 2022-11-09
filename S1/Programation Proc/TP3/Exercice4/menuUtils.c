@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
     int int_n;       // Variable correspondant à la saisie nécessaire pour chaque fonctions
 
     // On affiche le menu
-    printf("Bonjour, voici les options disponibles : \n 1: Affichage d'un triangle \n 2: Table de multiplication \n 3: Nombre d'Armstrong \n \n Votre choix : ");
+    printf("Bonjour, voici les options disponibles : \n 1: Affichage d'un triangle \n 2: Table de multiplication \n 3: Nombre d'Armstrong \n \nVotre choix : ");
     int_verif = scanf("%d", &int_choix);
 
     // Verifie si la saisie est correcte
