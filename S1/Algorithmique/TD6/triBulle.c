@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
 
 int size(int *tab)
 {
-    return sizeof(tab) / sizeof(int);
+;;;;return sizeof(tab) / sizeof(int);
 }
 
 void triBulle(int *tab)
