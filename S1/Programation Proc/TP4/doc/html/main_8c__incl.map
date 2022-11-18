@@ -1,0 +1,8 @@
+<map id="main.c" name="main.c">
+<area shape="rect" id="node1" title="Aproximation de pi et racine de 2." alt="" coords="89,5,156,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,72,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="189,155,259,181"/>
+<area shape="rect" id="node4" href="$pi_8h.html" title="Fonction pour l&#39;aproximation de pi." alt="" coords="55,80,102,107"/>
+<area shape="rect" id="node6" href="$racine2_8h.html" title="Fonctions pour l&#39;aproximation de la racine de 2." alt="" coords="127,80,209,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="97,155,165,181"/>
+</map>

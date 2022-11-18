@@ -1,0 +1,109 @@
+\hypertarget{pi_8h}{}\doxysection{Référence du fichier pi.\+h}
+\label{pi_8h}\index{pi.h@{pi.h}}
+
+
+Fonction pour l\textquotesingle{}aproximation de pi.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Graphe des dépendances par inclusion de pi.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{pi_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{pi_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pi_8h_ae53e1031bd0abb355143f0de4d168388}\label{pi_8h_ae53e1031bd0abb355143f0de4d168388}} 
+void \mbox{\hyperlink{pi_8h_ae53e1031bd0abb355143f0de4d168388}{pi\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Affiche un menu qui propose les différents fonctions . \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{pi_8h_a148c99ed6c93004e825a422f3d28e701}{aire\+Disque\+Par\+Quadrillage}} (int int\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Effectue une approximation de pi en calculant le nombre de point n satisfesant la condition \+: sqrt(x²+y²) ≤ r dans un cercle de rayon r . \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{pi_8h_a83e274baf392edfb72d64eed80aee16c}{madhava}} (int int\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Effectue une approximation de pi via la serie de Madhava . \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{pi_8h_a2660f717736d3c44193eb1c1ae450a12}{wallis}} (int int\+\_\+n)
+\begin{DoxyCompactList}\small\item\em Effectue une approximation de pi via la serie de John Walli . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonction pour l\textquotesingle{}aproximation de pi. 
+
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+15/11/2022 \textbackslash{} @copyright Copyright (c) 2022 \textbackslash{} 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{pi_8h_a148c99ed6c93004e825a422f3d28e701}\label{pi_8h_a148c99ed6c93004e825a422f3d28e701}} 
+\index{pi.h@{pi.h}!aireDisqueParQuadrillage@{aireDisqueParQuadrillage}}
+\index{aireDisqueParQuadrillage@{aireDisqueParQuadrillage}!pi.h@{pi.h}}
+\doxysubsubsection{\texorpdfstring{aireDisqueParQuadrillage()}{aireDisqueParQuadrillage()}}
+{\footnotesize\ttfamily float aire\+Disque\+Par\+Quadrillage (\begin{DoxyParamCaption}\item[{int}]{int\+\_\+n }\end{DoxyParamCaption})}
+
+
+
+Effectue une approximation de pi en calculant le nombre de point n satisfesant la condition \+: sqrt(x²+y²) ≤ r dans un cercle de rayon r . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & Le nombre de points à tirer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+float la valeur de pi 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pi_8h_a83e274baf392edfb72d64eed80aee16c}\label{pi_8h_a83e274baf392edfb72d64eed80aee16c}} 
+\index{pi.h@{pi.h}!madhava@{madhava}}
+\index{madhava@{madhava}!pi.h@{pi.h}}
+\doxysubsubsection{\texorpdfstring{madhava()}{madhava()}}
+{\footnotesize\ttfamily float madhava (\begin{DoxyParamCaption}\item[{int}]{int\+\_\+n }\end{DoxyParamCaption})}
+
+
+
+Effectue une approximation de pi via la serie de Madhava . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int\+\_\+n} & Précision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+float pi 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pi_8h_a2660f717736d3c44193eb1c1ae450a12}\label{pi_8h_a2660f717736d3c44193eb1c1ae450a12}} 
+\index{pi.h@{pi.h}!wallis@{wallis}}
+\index{wallis@{wallis}!pi.h@{pi.h}}
+\doxysubsubsection{\texorpdfstring{wallis()}{wallis()}}
+{\footnotesize\ttfamily float wallis (\begin{DoxyParamCaption}\item[{int}]{int\+\_\+n }\end{DoxyParamCaption})}
+
+
+
+Effectue une approximation de pi via la serie de John Walli . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em int\+\_\+n} & Précision \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+float pi 
+\end{DoxyReturn}
