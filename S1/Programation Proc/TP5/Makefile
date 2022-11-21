@@ -21,7 +21,7 @@ $(PROG) : $(OBJ)
 $(bindir)%.o : $(srcdir)%.c
 	$(CC) -c $^ -o $@
 
-.PHONY : clean save restore doc
+.PHONY : clean save restore doc init
 
 clean : 
 	$(RM) $(OBJ) $(PROG)
@@ -42,3 +42,6 @@ Doxyfile :
 	sed -i "s/\(OUTPUT_LANGUAGE *=\).*/\1 \"French\"/g" ./Doxyfile
 	sed -i "s/\(INPUT *=\).*/\1 \"$(subst /,\/,$(srcdir))\"/g" ./Doxyfile
 	sed -i "s/\(RECURSIVE *=\).*/\1 YES/g" ./Doxyfile
+
+init : 
+	mkdir backup/ src/ bin/ doc/
