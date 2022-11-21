@@ -45,3 +45,5 @@ Doxyfile :
 
 init : 
 	mkdir backup/ src/ bin/ doc/
+
+#TODO give
