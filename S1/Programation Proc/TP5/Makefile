@@ -1,6 +1,7 @@
 CC = gcc -Wall
 RM = rm -f
 LNK = -lm
+CP = cp -r
 
 srcdir = ./src/
 bindir = ./bin/
@@ -20,7 +21,10 @@ $(PROG) : $(OBJ)
 $(bindir)%.o : $(srcdir)%.c
 	$(CC) -c $^ -o $@
 
-.PHONY : clean
+.PHONY : clean save
 
 clean : 
 	$(RM) $(OBJ) $(PROG)
+
+save : 
+	$(CP) $(srcdir)* $(savdir)
