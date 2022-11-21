@@ -1,7 +1,7 @@
 CC = gcc -Wall
 RM = rm -f
 LNK = -lm
-CP = cp -r
+CP = cp -r -f
 
 srcdir = ./src/
 bindir = ./bin/
@@ -21,10 +21,24 @@ $(PROG) : $(OBJ)
 $(bindir)%.o : $(srcdir)%.c
 	$(CC) -c $^ -o $@
 
-.PHONY : clean save
+.PHONY : clean save restore doc
 
 clean : 
 	$(RM) $(OBJ) $(PROG)
 
 save : 
 	$(CP) $(srcdir)* $(savdir)
+
+restore : 
+	$(CP) $(savdir)* $(srcdir)
+
+doc : Doxyfile
+	doxygen Doxyfile
+
+Doxyfile :
+	doxygen -g
+	sed -i "s/\(PROJECT_NAME *=\).*/\1 \""$$(basename "$$(pwd)")"\"/g" ./Doxyfile
+	sed -i "s/\(OUTPUT_DIRECTORY *=\).*/\1 \"$(subst /,\/,$(docdir))\"/g" ./Doxyfile
+	sed -i "s/\(OUTPUT_LANGUAGE *=\).*/\1 \"French\"/g" ./Doxyfile
+	sed -i "s/\(INPUT *=\).*/\1 \"$(subst /,\/,$(srcdir))\"/g" ./Doxyfile
+	sed -i "s/\(RECURSIVE *=\).*/\1 YES/g" ./Doxyfile
