@@ -20,3 +20,6 @@ Nécessite(quantité, #idPâtisserie, #idIngrédient)
 
 Ingrédient(id, nom)
            ——
+
+Possede(quantite, #idBoulangerie, #idIngrédient)
+                  —————————————————————————————
