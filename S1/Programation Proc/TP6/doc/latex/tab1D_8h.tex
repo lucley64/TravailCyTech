@@ -1,0 +1,182 @@
+\hypertarget{tab1D_8h}{}\doxysection{Référence du fichier src/tab1D.h}
+\label{tab1D_8h}\index{src/tab1D.h@{src/tab1D.h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{tab1D_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{tab1D_8h_a8e3cb9009b46b64393c55392ab1f685c}\label{tab1D_8h_a8e3cb9009b46b64393c55392ab1f685c}} 
+\#define {\bfseries T\+A\+I\+L\+L\+E\+\_\+\+T\+AB}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tab1D_8h_a22bd398850d104770b1e3979b1e99cb2}{invertion}} (int tab\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em inverse les éléments d’un tableau d\textquotesingle{}entiers \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tab1D_8h_a4375c2838c93fb77c62f4f59dd031b2c}{additionner\+Tab}} (int tab1\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]}, int tab2\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]}, int tab\+Resultat\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em somme les éléments de deux tableaux dans un troisième \textbackslash{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tab1D_8h_a434f9b7957225f9fdb0fe00d11edaf0b}{traversabilite}} (int tab1\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]}, int max)
+\begin{DoxyCompactList}\small\item\em détermine si un tableau est traversable \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tab1D_8h_a2d3aeeb798fe65f374a529601ea7371c}{afficher\+Tab}} (int tab\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em affiche les valeurs d\textquotesingle{}un tableau \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tab1D_8h_a49fa60201e6f7ba8ea6ea06c4c861b85}{remplir\+Alea}} (int tab\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em remplit un tableau de manière aléatoire \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tab1D_8h_ac838a1ca0a9d162be38fff81e04570d0}{remplir}} (int tab\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em Demande de remplir un tableau . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tab1D_8h_acea9a58379ad5b60bea91482d4b1d390}{remplir\+Str}} (char str\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em Demande d\textquotesingle{}écrire une phase . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tab1D_8h_a6fdfb1242ae04c4453f4481ce6286910}{verif\+Palindrome}} (char str\mbox{[}T\+A\+I\+L\+L\+E\+\_\+\+T\+AB\mbox{]})
+\begin{DoxyCompactList}\small\item\em Vérifie si la chaine est un palindrome . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29/11/2022 \textbackslash{} @copyright Copyright (c) 2022 \textbackslash{} 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{tab1D_8h_a4375c2838c93fb77c62f4f59dd031b2c}\label{tab1D_8h_a4375c2838c93fb77c62f4f59dd031b2c}} 
+\index{tab1D.h@{tab1D.h}!additionnerTab@{additionnerTab}}
+\index{additionnerTab@{additionnerTab}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{additionnerTab()}{additionnerTab()}}
+{\footnotesize\ttfamily void additionner\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab1\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]},  }\item[{int}]{tab2\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]},  }\item[{int}]{tab\+Resultat\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+somme les éléments de deux tableaux dans un troisième \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab1} & tableau 1 \\
+\hline
+{\em tab2} & tableau 2 \\
+\hline
+{\em tab\+Resultat} & résultat \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tab1D_8h_a2d3aeeb798fe65f374a529601ea7371c}\label{tab1D_8h_a2d3aeeb798fe65f374a529601ea7371c}} 
+\index{tab1D.h@{tab1D.h}!afficherTab@{afficherTab}}
+\index{afficherTab@{afficherTab}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{afficherTab()}{afficherTab()}}
+{\footnotesize\ttfamily void afficher\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+affiche les valeurs d\textquotesingle{}un tableau \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & le tableau en question \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tab1D_8h_a22bd398850d104770b1e3979b1e99cb2}\label{tab1D_8h_a22bd398850d104770b1e3979b1e99cb2}} 
+\index{tab1D.h@{tab1D.h}!invertion@{invertion}}
+\index{invertion@{invertion}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{invertion()}{invertion()}}
+{\footnotesize\ttfamily void invertion (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+inverse les éléments d’un tableau d\textquotesingle{}entiers \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & le tableau en question (Entrée/\+Sortie) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tab1D_8h_ac838a1ca0a9d162be38fff81e04570d0}\label{tab1D_8h_ac838a1ca0a9d162be38fff81e04570d0}} 
+\index{tab1D.h@{tab1D.h}!remplir@{remplir}}
+\index{remplir@{remplir}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{remplir()}{remplir()}}
+{\footnotesize\ttfamily void remplir (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Demande de remplir un tableau . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & le tableau en question \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tab1D_8h_a49fa60201e6f7ba8ea6ea06c4c861b85}\label{tab1D_8h_a49fa60201e6f7ba8ea6ea06c4c861b85}} 
+\index{tab1D.h@{tab1D.h}!remplirAlea@{remplirAlea}}
+\index{remplirAlea@{remplirAlea}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{remplirAlea()}{remplirAlea()}}
+{\footnotesize\ttfamily void remplir\+Alea (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+remplit un tableau de manière aléatoire \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & le tableau en question \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tab1D_8h_acea9a58379ad5b60bea91482d4b1d390}\label{tab1D_8h_acea9a58379ad5b60bea91482d4b1d390}} 
+\index{tab1D.h@{tab1D.h}!remplirStr@{remplirStr}}
+\index{remplirStr@{remplirStr}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{remplirStr()}{remplirStr()}}
+{\footnotesize\ttfamily void remplir\+Str (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Demande d\textquotesingle{}écrire une phase . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & La chaine de char \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tab1D_8h_a434f9b7957225f9fdb0fe00d11edaf0b}\label{tab1D_8h_a434f9b7957225f9fdb0fe00d11edaf0b}} 
+\index{tab1D.h@{tab1D.h}!traversabilite@{traversabilite}}
+\index{traversabilite@{traversabilite}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{traversabilite()}{traversabilite()}}
+{\footnotesize\ttfamily int traversabilite (\begin{DoxyParamCaption}\item[{int}]{tab1\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]},  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+détermine si un tableau est traversable \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab1} & le tableau en question \\
+\hline
+{\em max} & le nombre max de tour de boucle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 1 si oui 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tab1D_8h_a6fdfb1242ae04c4453f4481ce6286910}\label{tab1D_8h_a6fdfb1242ae04c4453f4481ce6286910}} 
+\index{tab1D.h@{tab1D.h}!verifPalindrome@{verifPalindrome}}
+\index{verifPalindrome@{verifPalindrome}!tab1D.h@{tab1D.h}}
+\doxysubsubsection{\texorpdfstring{verifPalindrome()}{verifPalindrome()}}
+{\footnotesize\ttfamily int verif\+Palindrome (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}\+T\+A\+I\+L\+L\+E\+\_\+\+T\+A\+B\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Vérifie si la chaine est un palindrome . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em str} & La chaine en question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 1 si oui 0 sinon 
+\end{DoxyReturn}

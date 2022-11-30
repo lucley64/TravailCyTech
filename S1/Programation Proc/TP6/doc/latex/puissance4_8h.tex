@@ -1,0 +1,132 @@
+\hypertarget{puissance4_8h}{}\doxysection{Référence du fichier src/puissance4.h}
+\label{puissance4_8h}\index{src/puissance4.h@{src/puissance4.h}}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{puissance4_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}\label{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}} 
+\#define \mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}~5
+\begin{DoxyCompactList}\small\item\em nombre de lignes et de colones \textbackslash{} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{puissance4_8h_a05c56cb9093bd30ab684ab87436c59b2}\label{puissance4_8h_a05c56cb9093bd30ab684ab87436c59b2}} 
+\#define \mbox{\hyperlink{puissance4_8h_a05c56cb9093bd30ab684ab87436c59b2}{L\+O\+N\+G\+U\+E\+U\+R\+\_\+\+G\+A\+G\+NE}}~4
+\begin{DoxyCompactList}\small\item\em nombre de pions à alligner \textbackslash{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{puissance4_8h_a7287498160873fd63bbf8986c9dfafd0}{init}} (int ttint\+\_\+plateau\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]}\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em initialise la grille \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{puissance4_8h_af797f54947393eaf9132108c29f88598}{affichage}} (int ttint\+\_\+plateau\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]}\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}état du jeu \textbackslash{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{puissance4_8h_aa1900d15b2efea32f4ebb5fbd0ffa13b}{jouer}} (int ttint\+\_\+plateau\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]}\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]}, int int\+\_\+joueur, int int\+\_\+x)
+\begin{DoxyCompactList}\small\item\em jouer dans une colonne spécifique \textbackslash{} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{puissance4_8h_a654abe31baef621d592dadd83fecbcf1}{a\+Gagne}} (int ttint\+\_\+plateau\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]}\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em indique si un joueur a gagné \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{puissance4_8h_a29b5b6ee5e229fa003dd1a7f9cdbd340}{tour\+De\+Jeu}} (int ttint\+\_\+plateau\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]}\mbox{[}\mbox{\hyperlink{puissance4_8h_a21005f9f4e2ce7597c5eb4351816d7e2}{O\+F\+F\+S\+ET}}\mbox{]})
+\begin{DoxyCompactList}\small\item\em fait jouer les joueurs chacun leur tour, jusqu’à la fin de la partie \textbackslash{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+29/11/2022 \textbackslash{} @copyright Copyright (c) 2022 \textbackslash{} 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{puissance4_8h_af797f54947393eaf9132108c29f88598}\label{puissance4_8h_af797f54947393eaf9132108c29f88598}} 
+\index{puissance4.h@{puissance4.h}!affichage@{affichage}}
+\index{affichage@{affichage}!puissance4.h@{puissance4.h}}
+\doxysubsubsection{\texorpdfstring{affichage()}{affichage()}}
+{\footnotesize\ttfamily void affichage (\begin{DoxyParamCaption}\item[{int}]{ttint\+\_\+plateau\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]}\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+affiche l\textquotesingle{}état du jeu \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ttint\+\_\+plateau} & la grille du jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{puissance4_8h_a654abe31baef621d592dadd83fecbcf1}\label{puissance4_8h_a654abe31baef621d592dadd83fecbcf1}} 
+\index{puissance4.h@{puissance4.h}!aGagne@{aGagne}}
+\index{aGagne@{aGagne}!puissance4.h@{puissance4.h}}
+\doxysubsubsection{\texorpdfstring{aGagne()}{aGagne()}}
+{\footnotesize\ttfamily int a\+Gagne (\begin{DoxyParamCaption}\item[{int}]{ttint\+\_\+plateau\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]}\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+indique si un joueur a gagné \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ttint\+\_\+plateau} & la grille du jeu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int soit le numéro du joueur gagnant, soit 0 si c’est match nul, soit -\/1 si la partie n’est pas terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{puissance4_8h_a7287498160873fd63bbf8986c9dfafd0}\label{puissance4_8h_a7287498160873fd63bbf8986c9dfafd0}} 
+\index{puissance4.h@{puissance4.h}!init@{init}}
+\index{init@{init}!puissance4.h@{puissance4.h}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void init (\begin{DoxyParamCaption}\item[{int}]{ttint\+\_\+plateau\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]}\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+initialise la grille \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ttint\+\_\+plateau} & la grille en question \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{puissance4_8h_aa1900d15b2efea32f4ebb5fbd0ffa13b}\label{puissance4_8h_aa1900d15b2efea32f4ebb5fbd0ffa13b}} 
+\index{puissance4.h@{puissance4.h}!jouer@{jouer}}
+\index{jouer@{jouer}!puissance4.h@{puissance4.h}}
+\doxysubsubsection{\texorpdfstring{jouer()}{jouer()}}
+{\footnotesize\ttfamily int jouer (\begin{DoxyParamCaption}\item[{int}]{ttint\+\_\+plateau\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]}\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]},  }\item[{int}]{int\+\_\+joueur,  }\item[{int}]{int\+\_\+x }\end{DoxyParamCaption})}
+
+
+
+jouer dans une colonne spécifique \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ttint\+\_\+plateau} & la grille du jeu \\
+\hline
+{\em int\+\_\+joueur} & le joueur \\
+\hline
+{\em int\+\_\+x} & la colone \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{puissance4_8h_a29b5b6ee5e229fa003dd1a7f9cdbd340}\label{puissance4_8h_a29b5b6ee5e229fa003dd1a7f9cdbd340}} 
+\index{puissance4.h@{puissance4.h}!tourDeJeu@{tourDeJeu}}
+\index{tourDeJeu@{tourDeJeu}!puissance4.h@{puissance4.h}}
+\doxysubsubsection{\texorpdfstring{tourDeJeu()}{tourDeJeu()}}
+{\footnotesize\ttfamily void tour\+De\+Jeu (\begin{DoxyParamCaption}\item[{int}]{ttint\+\_\+plateau\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]}\mbox{[}\+O\+F\+F\+S\+E\+T\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+fait jouer les joueurs chacun leur tour, jusqu’à la fin de la partie \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em ttint\+\_\+plateau} & la grille du jeu \\
+\hline
+\end{DoxyParams}
