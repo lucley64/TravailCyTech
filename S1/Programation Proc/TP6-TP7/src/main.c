@@ -15,25 +15,37 @@
 #include "puissance4.h"
 #include "tab1D.h"
 #include "pointeurs.h"
+#include "tableauDynamique.h"
 
 #define TAILLE_TAB_TEST 20
 
 int main(int argc, char const *argv[])
 {
-    int tint_tab1[TAILLE_TAB_TEST];            // Le premier tableau 1D
-    int tint_tab2[TAILLE_TAB_TEST];            // Le deuxieme tableau 1D
-    int tint_tab3[TAILLE_TAB_TEST];            // Le troisième tableau 1D
-    char tchar_tabChar[TAILLE_TAB_TEST];       // La chaine de caractères pour la palindrome
-    int int_choix;                             // Choix de la méthode à utiliser
-    char char_choix;                           // Choix de modification du premier tableau
-    int int_verif;                             // Verification de la saisie
-    char char_verif;                           // Varification de la saisie
+    // Déclaration des variables correspondants aux menus
+    int int_choix;   // Choix de la méthode à utiliser
+    char char_choix; // Choix de modification du premier tableau
+    int int_verif;   // Verification de la saisie
+    char char_verif; // Varification de la saisie
+
+    // Déclaration des variables correspondants aux méthodes du tableau 1D
+    int tint_tab1[TAILLE_TAB_TEST];      // Le premier tableau 1D
+    int tint_tab2[TAILLE_TAB_TEST];      // Le deuxieme tableau 1D
+    int tint_tab3[TAILLE_TAB_TEST];      // Le troisième tableau 1D
+    char tchar_tabChar[TAILLE_TAB_TEST]; // La chaine de caractères pour la palindrome
+
+    // Déclaration de la grille du puissance 4
     int tint_grillePuissance4[OFFSET][OFFSET]; // La grille du puissance 4
 
-    printf("Choisir entre : \n%s%s%s",
+    // Déclaration des variables correspondants aux tableau dynamiques
+    int *tint_tabDynamique;
+    int int_tailleTab;
+
+    srand(time(NULL));
+    printf("Choisir entre : \n%s%s%s%s",
            " 1- Méthodes du tableau 1D\n",
            " 2- Puissance 4\n",
-           " 3- Pointeurs\n");
+           " 3- Pointeurs\n",
+           " 4- Tableau dynamiques\n");
     int_verif = scanf("%d", &int_choix);
     scanf("%c", &char_verif);
     if (int_verif == 0 || char_verif != '\n')
@@ -46,7 +58,6 @@ int main(int argc, char const *argv[])
     {
     case 1:
         // Remplissage des tableau
-        srand(time(NULL));
         remplirAlea(tint_tab1);
         remplirAlea(tint_tab2);
 
@@ -131,7 +142,7 @@ int main(int argc, char const *argv[])
         printf("Choisir entre les différentes possibilités : \n%s%s%s%s",
                " 1- Exercice inutile\n",
                " 2- Pointeur de pointeur\n",
-               " 3- Pointeur sur tableau\n", 
+               " 3- Pointeur sur tableau\n",
                " 4- Un peut moins facile\n");
 
         int_verif = scanf("%d", &int_choix);
@@ -159,12 +170,76 @@ int main(int argc, char const *argv[])
         case 4:
             unPeutMoinsFacile();
             break;
-            
+
         default:
             fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
             exit(EXIT_FAILURE);
             break;
         }
+        break;
+    case 4: // Tableau dynaiques
+        printf("Saisir la taille du tableau : ");
+        int_verif = scanf("%d", &int_tailleTab);
+
+        scanf("%c", &char_verif);
+        if (int_verif == 0 || char_verif != '\n')
+        {
+            fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
+            exit(EXIT_FAILURE);
+        }
+
+        tint_tabDynamique = malloc(int_tailleTab);
+
+        printf("Changer les valeurs du tableau manuellement ? [N/y] \n");
+        int_verif = scanf("%c", &char_choix);
+        if (int_verif != 0 && (char_choix == 'y' || char_choix == 'Y'))
+        {
+            remplissageTabDyna(tint_tabDynamique, int_tailleTab);
+        }
+        else
+        {
+            remplissageTabDynaAlea(tint_tabDynamique, int_tailleTab);
+        }
+
+        afficherTabDyna(tint_tabDynamique, int_tailleTab);
+
+        printf("Choisir entre les différentes possibilités : \n%s%s%s",
+               " 1- Tri par insertion\n",
+               " 2- Tri fusion\n",
+               " 3- Tri par dénombrement\n");
+
+        int_verif = scanf("%d", &int_choix);
+        scanf("%c", &char_verif);
+        if (int_verif == 0 || char_verif != '\n')
+        {
+            fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
+            free(tint_tabDynamique);
+            exit(EXIT_FAILURE);
+        }
+        switch (int_choix)
+        {
+        case 1:
+            triInsertion(tint_tabDynamique, int_tailleTab);
+            break;
+
+        case 2:
+            triFusion(tint_tabDynamique, int_tailleTab);
+            break;
+
+        case 3:
+            triDenombrement(tint_tabDynamique, int_tailleTab);
+            break;
+
+        default:
+            fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
+            free(tint_tabDynamique);
+            exit(EXIT_FAILURE);
+            break;
+        }
+
+        afficherTabDyna(tint_tabDynamique, int_tailleTab);
+        free(tint_tabDynamique);
+
         break;
     default:
         fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
