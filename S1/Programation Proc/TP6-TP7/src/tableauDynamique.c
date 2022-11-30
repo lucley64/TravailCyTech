@@ -97,13 +97,21 @@ int *copierSousTableau(int *src, int debut, int fin)
 void fusion(int *tab1, int taille1, int *tab2, int taille2, int *tabRes)
 {
     int int_tailleTabRes;
+    int* pint_valTab1;
+    int* pint_valTab2;
 
     int_tailleTabRes = taille1 + taille2;
-
+    pint_valTab1 = tab1;
+    pint_valTab2 = tab2;
     tabRes = malloc(int_tailleTabRes);
+
 
     for (int int_i = 0; int_i < int_tailleTabRes; int_i++)
     {
+        if (*pint_valTab1 < pint_valTab2)
+        {
+            /* code */
+        }
         
     }
     
