@@ -1,3 +1,3 @@
-1. 2FN uniquement car la spécialité dépent de l'année
+1. 2FN uniquement car l'année dépent de la spécialité
 
 2. sortir la spécialité et la mettre dans une autre entité
