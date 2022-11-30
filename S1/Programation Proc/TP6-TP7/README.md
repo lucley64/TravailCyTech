@@ -1,4 +1,4 @@
-# TP -   Compilation séparée
+# TP 6 - 7 -   Tableau et pointeurs
 
 Utiliser le principe de la compilation separée
 

@@ -14,6 +14,7 @@
 #include <time.h>
 #include "puissance4.h"
 #include "tab1D.h"
+#include "pointeurs.h"
 
 #define TAILLE_TAB_TEST 20
 
@@ -29,9 +30,10 @@ int main(int argc, char const *argv[])
     char char_verif;                           // Varification de la saisie
     int tint_grillePuissance4[OFFSET][OFFSET]; // La grille du puissance 4
 
-    printf("Choisir entre : \n%s%s",
+    printf("Choisir entre : \n%s%s%s",
            " 1- Méthodes du tableau 1D\n",
-           " 2- Puissance 4\n");
+           " 2- Puissance 4\n",
+           " 3- Pointeurs\n");
     int_verif = scanf("%d", &int_choix);
     scanf("%c", &char_verif);
     if (int_verif == 0 || char_verif != '\n')
@@ -70,7 +72,7 @@ int main(int argc, char const *argv[])
 
         switch (int_choix)
         {
-        case 1:
+        case 1: // Tableaux
             invertion(tint_tab1);
             afficherTab(tint_tab1);
             break;
@@ -116,13 +118,53 @@ int main(int argc, char const *argv[])
             break;
         }
         break;
-    case 2:
+    case 2: // Puissance 4
         // On initialise le jeu
         init(tint_grillePuissance4);
 
         // On démarre le jeu
         tourDeJeu(tint_grillePuissance4);
 
+        break;
+
+    case 3: // Pointeurs
+        printf("Choisir entre les différentes possibilités : \n%s%s%s%s",
+               " 1- Exercice inutile\n",
+               " 2- Pointeur de pointeur\n",
+               " 3- Pointeur sur tableau\n", 
+               " 4- Un peut moins facile\n");
+
+        int_verif = scanf("%d", &int_choix);
+        scanf("%c", &char_verif);
+        if (int_verif == 0 || char_verif != '\n')
+        {
+            fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
+            exit(EXIT_FAILURE);
+        }
+
+        switch (int_choix)
+        {
+        case 1:
+            exerciceInutile();
+            break;
+
+        case 2:
+            pointeurDePointeur();
+            break;
+
+        case 3:
+            pointeurSurTableau();
+            break;
+
+        case 4:
+            unPeutMoinsFacile();
+            break;
+            
+        default:
+            fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
+            exit(EXIT_FAILURE);
+            break;
+        }
         break;
     default:
         fprintf(stderr, "Erreur veuillez saisir un entier correspondant aux choix.\n");
