@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['longueur_5fgagne_34',['LONGUEUR_GAGNE',['../puissance4_8h.html#a05c56cb9093bd30ab684ab87436c59b2',1,'puissance4.h']]]
+  ['debug_74',['DEBUG',['../debug_8h.html#a614c336056da6e8a7e6a06ed991b9feb',1,'debug.h']]]
 ];

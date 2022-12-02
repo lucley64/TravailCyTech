@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tourdejeu_31',['tourDeJeu',['../puissance4_8h.html#a29b5b6ee5e229fa003dd1a7f9cdbd340',1,'puissance4.c']]],
-  ['traversabilite_32',['traversabilite',['../tab1D_8h.html#a434f9b7957225f9fdb0fe00d11edaf0b',1,'tab1D.c']]]
+  ['histogramme_55',['histogramme',['../tableauDynamique_8c.html#a0c24af33b06a3f4627c81e0f3765dbb0',1,'histogramme(int *tab, int taille, int *histo, int tailleH, int min):&#160;tableauDynamique.c'],['../tableauDynamique_8h.html#a0c24af33b06a3f4627c81e0f3765dbb0',1,'histogramme(int *tab, int taille, int *histo, int tailleH, int min):&#160;tableauDynamique.c']]]
 ];

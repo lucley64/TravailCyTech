@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['offset_9',['OFFSET',['../puissance4_8h.html#a21005f9f4e2ce7597c5eb4351816d7e2',1,'puissance4.h']]]
+  ['histogramme_10',['histogramme',['../tableauDynamique_8c.html#a0c24af33b06a3f4627c81e0f3765dbb0',1,'histogramme(int *tab, int taille, int *histo, int tailleH, int min):&#160;tableauDynamique.c'],['../tableauDynamique_8h.html#a0c24af33b06a3f4627c81e0f3765dbb0',1,'histogramme(int *tab, int taille, int *histo, int tailleH, int min):&#160;tableauDynamique.c']]]
 ];

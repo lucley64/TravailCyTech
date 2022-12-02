@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['remplir_28',['remplir',['../tab1D_8h.html#ac838a1ca0a9d162be38fff81e04570d0',1,'tab1D.c']]],
-  ['rempliralea_29',['remplirAlea',['../tab1D_8h.html#a49fa60201e6f7ba8ea6ea06c4c861b85',1,'tab1D.c']]],
-  ['remplirstr_30',['remplirStr',['../tab1D_8h.html#acea9a58379ad5b60bea91482d4b1d390',1,'tab1D.c']]]
+  ['fusion_54',['fusion',['../tableauDynamique_8c.html#a388df73c8bb76f6bdc5dd9a04ad53dac',1,'fusion(const int *tab1, int taille1, const int *tab2, int taille2, int *tabRes):&#160;tableauDynamique.c'],['../tableauDynamique_8h.html#a388df73c8bb76f6bdc5dd9a04ad53dac',1,'fusion(const int *tab1, int taille1, const int *tab2, int taille2, int *tabRes):&#160;tableauDynamique.c']]]
 ];

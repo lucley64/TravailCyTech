@@ -1,8 +1,8 @@
 {
     "makefile.launchConfigurations": [
         {
-            "cwd": "/home/cytech/Travail/S1/Programation Proc/TP6-TP7/bin",
-            "binaryPath": "/home/cytech/Travail/S1/Programation Proc/TP6-TP7/bin/a.out",
+            "cwd": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/bin",
+            "binaryPath": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/bin/a.out",
             "binaryArgs": []
         }
     ],

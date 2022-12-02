@@ -1,1 +1,27 @@
-[]
+[
+    {
+        "command": "gcc -Wall -c src/tableauDynamique.c -o bin/tableauDynamique.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/src/tableauDynamique.c"
+    },
+    {
+        "command": "gcc -Wall -c src/puissance4.c -o bin/puissance4.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/src/puissance4.c"
+    },
+    {
+        "command": "gcc -Wall -c src/pointeurs.c -o bin/pointeurs.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/src/pointeurs.c"
+    },
+    {
+        "command": "gcc -Wall -c src/main.c -o bin/main.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/src/main.c"
+    },
+    {
+        "command": "gcc -Wall -c src/tab1D.c -o bin/tab1D.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP6-TP7/src/tab1D.c"
+    }
+]

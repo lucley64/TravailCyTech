@@ -174,7 +174,6 @@ int aGagne(int ttint_plateau[OFFSET][OFFSET])
     {
         for (int int_j = 0; int_j < (OFFSET % (LONGUEUR_GAGNE - 1)); int_j++)
         {
-            // DEBUG("Case : %i, %i = %i", int_i, int_j, ttint_plateau[int_i][int_j]);
             if (ttint_plateau[int_i][int_j] != -1)
             {
                 bool_diag1Gagnant = 1;

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['longueur_5fgagne_7',['LONGUEUR_GAGNE',['../puissance4_8h.html#a05c56cb9093bd30ab684ab87436c59b2',1,'puissance4.h']]]
+  ['exerciceinutile_8',['exerciceInutile',['../pointeurs_8c.html#a2e69e2510c72446a61442dc93d6db555',1,'exerciceInutile():&#160;pointeurs.c'],['../pointeurs_8h.html#a2e69e2510c72446a61442dc93d6db555',1,'exerciceInutile():&#160;pointeurs.c']]]
 ];

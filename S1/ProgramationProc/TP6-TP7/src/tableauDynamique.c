@@ -15,9 +15,9 @@
 #include <stdlib.h>
 #include "debug.h"
 
-void afficherTabDyna(int *tab, int taille)
+void afficherTabDyna(const int *tab, int taille)
 {
-    int *pint_i;
+    const int *pint_i;
 
     pint_i = tab;
 
@@ -81,41 +81,60 @@ int *copierSousTableau(int *src, int debut, int fin)
     // On calcule la taille du tableau
     int_tailledest = fin - debut;
 
-    // On créé le tableau
-    tint_dest = malloc(int_tailledest);
-
-    // On copie les variables de deb à fin dans dest
-    for (int int_i = debut; int_i <= fin; int_i++)
+    if (int_tailledest > 0)
     {
-        tint_dest[int_i] = src[int_i];
-    }
+        // On créé le tableau
+        tint_dest = malloc(int_tailledest * sizeof(int));
 
-    // On retourne dest
-    return (tint_dest);
+        // On copie les variables de deb à fin dans dest
+        for (int int_i = debut; int_i < fin; int_i++)
+        {
+            tint_dest[int_i - debut] = src[int_i];
+        }
+
+        // On retourne dest
+        return (tint_dest);
+    }
+    else
+    {
+        return (src);
+    }
 }
 
-void fusion(int *tab1, int taille1, int *tab2, int taille2, int *tabRes)
+void fusion(const int *tab1, int taille1, const int *tab2, int taille2, int *tabRes)
 {
-    int int_tailleTabRes; // Taille du tableau destination
-    int *pint_valTab1;    // Pointeur sur le tableau 1
-    int *pint_valTab2;    // Pointeur sur le tableau 2
+    int int_tailleTabRes;    // Taille du tableau destination
+    const int *pint_valTab1; // Pointeur sur le tableau 1
+    const int *pint_valTab2; // Pointeur sur le tableau 2
 
     int_tailleTabRes = taille1 + taille2;
     pint_valTab1 = tab1;
     pint_valTab2 = tab2;
-    tabRes = malloc(int_tailleTabRes);
 
     for (int int_i = 0; int_i < int_tailleTabRes; int_i++)
     {
-        if (*pint_valTab1 < *pint_valTab2)
+        if (pint_valTab1 > &tab1[taille1 - 1] && pint_valTab2 <= &tab2[taille2 - 1])
+        {
+            tabRes[int_i] = *pint_valTab2;
+            pint_valTab2++;
+        }
+        else if (pint_valTab2 > &tab2[taille2 - 1] && pint_valTab1 <= &tab1[taille1 - 1])
         {
             tabRes[int_i] = *pint_valTab1;
             pint_valTab1++;
         }
-        else
+        else if (pint_valTab1 <= &tab1[taille1 - 1] && pint_valTab2 <= &tab2[taille2 - 1])
         {
-            tabRes[int_i] = *pint_valTab2;
-            pint_valTab2++;
+            if (*pint_valTab1 < *pint_valTab2)
+            {
+                tabRes[int_i] = *pint_valTab1;
+                pint_valTab1++;
+            }
+            else
+            {
+                tabRes[int_i] = *pint_valTab2;
+                pint_valTab2++;
+            }
         }
     }
 }
@@ -125,16 +144,20 @@ void triFusion(int *tab, int taille)
     afficherTabDyna(tab, taille);
     int *tint_soutab1;
     int *tint_soutab2;
+    int int_tailleSousTab1;
+    int int_tailleSousTab2;
     if (taille >= 2)
     {
-        tint_soutab1 = copierSousTableau(tab, 0, (taille / 2) - 1);
-        afficherTabDyna(tint_soutab1, (taille/2)-1);
-        triFusion(tint_soutab1, (taille / 2) - 1);
-        tint_soutab2 = copierSousTableau(tab, taille / 2, taille - 1);
-        afficherTabDyna(tint_soutab2, (taille - 1) - taille / 2);
-        triFusion(tint_soutab2, (taille - 1) - taille / 2);
-        free(tab);
-        fusion(tint_soutab1, (taille / 2) - 1, tint_soutab2, (taille - 1) - taille / 2, tab);
+        int_tailleSousTab1 = taille / 2;
+        int_tailleSousTab2 = taille - taille / 2;
+        tint_soutab1 = copierSousTableau(tab, 0, int_tailleSousTab1);
+        afficherTabDyna(tint_soutab1, int_tailleSousTab1);
+        triFusion(tint_soutab1, int_tailleSousTab1);
+        tint_soutab2 = copierSousTableau(tab, taille / 2, taille);
+        afficherTabDyna(tint_soutab2, int_tailleSousTab2);
+        triFusion(tint_soutab2, int_tailleSousTab2);
+        fusion(tint_soutab1, int_tailleSousTab1, tint_soutab2, int_tailleSousTab2, tab);
+        afficherTabDyna(tab, taille);
         free(tint_soutab1);
         free(tint_soutab2);
     }

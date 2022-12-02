@@ -1,0 +1,243 @@
+\hypertarget{tableauDynamique_8c}{}\doxysection{Référence du fichier src/tableau\+Dynamique.c}
+\label{tableauDynamique_8c}\index{src/tableauDynamique.c@{src/tableauDynamique.c}}
+{\ttfamily \#include \char`\"{}tableau\+Dynamique.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}debug.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de tableau\+Dynamique.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tableauDynamique_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tableauDynamique_8c_aef4f5e0ecd0dec7b6efc3fbcce46d5a3}{afficher\+Tab\+Dyna}} (const int $\ast$tab, int taille)
+\begin{DoxyCompactList}\small\item\em R\+E\+M\+P\+L\+I\+S\+S\+A\+GE DE T\+A\+B\+L\+E\+AU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_a00c74d973ff8843b4bd1398c7cc7536b}{remplissage\+Tab\+Dyna\+Alea}} (int $\ast$tab, int taille)
+\begin{DoxyCompactList}\small\item\em Remplit un tableau dynamique aléatoirement . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_a9b7af160d70e1cc169f09da740dec534}{remplissage\+Tab\+Dyna}} (int $\ast$tab, int taille)
+\begin{DoxyCompactList}\small\item\em Remplit un tableau dynamique . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_a74daa3ab4cce841a36059276a4cccba7}{tri\+Insertion}} (int $\ast$tab, int taille)
+\begin{DoxyCompactList}\small\item\em T\+RI P\+AR I\+N\+S\+E\+R\+T\+I\+ON. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{tableauDynamique_8c_a63e3ddb773c1ef099a0ba0ae0fd41d65}{copier\+Sous\+Tableau}} (int $\ast$src, int debut, int fin)
+\begin{DoxyCompactList}\small\item\em T\+RI F\+U\+S\+I\+ON. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_a388df73c8bb76f6bdc5dd9a04ad53dac}{fusion}} (const int $\ast$tab1, int taille1, const int $\ast$tab2, int taille2, int $\ast$tab\+Res)
+\begin{DoxyCompactList}\small\item\em fusionner deux tableaux triés de façon croissante tab1 et tab2 dans un tableau résultat tab\+Res qui sera lui aussi trié de façon croissante \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_a98a53e58482fd7dd766e389277ab180e}{tri\+Fusion}} (int $\ast$tab, int taille)
+\begin{DoxyCompactList}\small\item\em trie un tableau de façon croissante \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_ade5c0f0be922dae61b2d2f10d3170cec}{min\+Max\+Tableau}} (int $\ast$tab, int taille, int $\ast$min, int $\ast$max)
+\begin{DoxyCompactList}\small\item\em T\+RI DÉ\+N\+O\+M\+B\+R\+E\+M\+E\+NT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_a0c24af33b06a3f4627c81e0f3765dbb0}{histogramme}} (int $\ast$tab, int taille, int $\ast$histo, int tailleH, int min)
+\begin{DoxyCompactList}\small\item\em détermine la fréquence d’apparition de chaque élément du tableau tab \textbackslash{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tableauDynamique_8c_ae341dd92e76af3f57ab1ffad7c8a5eaa}{tri\+Denombrement}} (int $\ast$tab, int taille)
+\begin{DoxyCompactList}\small\item\em Effectue le tri par dénombrement . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+30/11/2022 \textbackslash{} @copyright Copyright (c) 2022 \textbackslash{} 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{tableauDynamique_8c_aef4f5e0ecd0dec7b6efc3fbcce46d5a3}\label{tableauDynamique_8c_aef4f5e0ecd0dec7b6efc3fbcce46d5a3}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!afficherTabDyna@{afficherTabDyna}}
+\index{afficherTabDyna@{afficherTabDyna}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{afficherTabDyna()}{afficherTabDyna()}}
+{\footnotesize\ttfamily void afficher\+Tab\+Dyna (\begin{DoxyParamCaption}\item[{const int $\ast$}]{tab,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+R\+E\+M\+P\+L\+I\+S\+S\+A\+GE DE T\+A\+B\+L\+E\+AU. 
+
+Affiche un tableau dynamique \textbackslash{} 
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée) Le tebleau \\
+\hline
+{\em taille} & La taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_a63e3ddb773c1ef099a0ba0ae0fd41d65}\label{tableauDynamique_8c_a63e3ddb773c1ef099a0ba0ae0fd41d65}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!copierSousTableau@{copierSousTableau}}
+\index{copierSousTableau@{copierSousTableau}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{copierSousTableau()}{copierSousTableau()}}
+{\footnotesize\ttfamily int$\ast$ copier\+Sous\+Tableau (\begin{DoxyParamCaption}\item[{int $\ast$}]{src,  }\item[{int}]{debut,  }\item[{int}]{fin }\end{DoxyParamCaption})}
+
+
+
+T\+RI F\+U\+S\+I\+ON. 
+
+copie dans un tableau dest les valeurs du tableau src allant de l’indice debut à l’indice fin \textbackslash{} 
+\begin{DoxyParams}{Paramètres}
+{\em src} & (Entrée) le tableau source \\
+\hline
+{\em debut} & (Entrée) L\textquotesingle{}indice de début \\
+\hline
+{\em fin} & (Entrée) L\textquotesingle{}indice de fin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int$\ast$ le tableau destination 
+\end{DoxyReturn}
+\mbox{\Hypertarget{tableauDynamique_8c_a388df73c8bb76f6bdc5dd9a04ad53dac}\label{tableauDynamique_8c_a388df73c8bb76f6bdc5dd9a04ad53dac}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!fusion@{fusion}}
+\index{fusion@{fusion}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{fusion()}{fusion()}}
+{\footnotesize\ttfamily void fusion (\begin{DoxyParamCaption}\item[{const int $\ast$}]{tab1,  }\item[{int}]{taille1,  }\item[{const int $\ast$}]{tab2,  }\item[{int}]{taille2,  }\item[{int $\ast$}]{tab\+Res }\end{DoxyParamCaption})}
+
+
+
+fusionner deux tableaux triés de façon croissante tab1 et tab2 dans un tableau résultat tab\+Res qui sera lui aussi trié de façon croissante \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab1} & (Entrée) Le premier tableau \\
+\hline
+{\em taille1} & (Entrée) la taille du premier tableau \\
+\hline
+{\em tab2} & (Entrée) le deuxième tableau \\
+\hline
+{\em taille2} & (Entrée) la taille du deuxième tableau \\
+\hline
+{\em tab\+Res} & (Sortie) le résultat de leur fustion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_a0c24af33b06a3f4627c81e0f3765dbb0}\label{tableauDynamique_8c_a0c24af33b06a3f4627c81e0f3765dbb0}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!histogramme@{histogramme}}
+\index{histogramme@{histogramme}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{histogramme()}{histogramme()}}
+{\footnotesize\ttfamily void histogramme (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille,  }\item[{int $\ast$}]{histo,  }\item[{int}]{tailleH,  }\item[{int}]{min }\end{DoxyParamCaption})}
+
+
+
+détermine la fréquence d’apparition de chaque élément du tableau tab \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée) le tableau \\
+\hline
+{\em taille} & (Entrée) La taille du tableau \\
+\hline
+{\em histo} & \\
+\hline
+{\em tailleH} & \\
+\hline
+{\em min} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_ade5c0f0be922dae61b2d2f10d3170cec}\label{tableauDynamique_8c_ade5c0f0be922dae61b2d2f10d3170cec}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!minMaxTableau@{minMaxTableau}}
+\index{minMaxTableau@{minMaxTableau}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{minMaxTableau()}{minMaxTableau()}}
+{\footnotesize\ttfamily void min\+Max\+Tableau (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille,  }\item[{int $\ast$}]{min,  }\item[{int $\ast$}]{max }\end{DoxyParamCaption})}
+
+
+
+T\+RI DÉ\+N\+O\+M\+B\+R\+E\+M\+E\+NT. 
+
+recherche les valeurs minimum et maximum du tableau tab \textbackslash{} 
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée) le tableau concérné par la recherche \\
+\hline
+{\em taille} & (Entrée) La taille du tableau \\
+\hline
+{\em min} & (Sortie) Le minimum trouvé \\
+\hline
+{\em max} & (Sortie) Le maximum trouvé \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_a9b7af160d70e1cc169f09da740dec534}\label{tableauDynamique_8c_a9b7af160d70e1cc169f09da740dec534}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!remplissageTabDyna@{remplissageTabDyna}}
+\index{remplissageTabDyna@{remplissageTabDyna}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{remplissageTabDyna()}{remplissageTabDyna()}}
+{\footnotesize\ttfamily void remplissage\+Tab\+Dyna (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Remplit un tableau dynamique . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée/\+Sortie) Le tebleau \\
+\hline
+{\em taille} & La taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_a00c74d973ff8843b4bd1398c7cc7536b}\label{tableauDynamique_8c_a00c74d973ff8843b4bd1398c7cc7536b}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!remplissageTabDynaAlea@{remplissageTabDynaAlea}}
+\index{remplissageTabDynaAlea@{remplissageTabDynaAlea}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{remplissageTabDynaAlea()}{remplissageTabDynaAlea()}}
+{\footnotesize\ttfamily void remplissage\+Tab\+Dyna\+Alea (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Remplit un tableau dynamique aléatoirement . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée/\+Sortie) Le tebleau \\
+\hline
+{\em taille} & La taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_ae341dd92e76af3f57ab1ffad7c8a5eaa}\label{tableauDynamique_8c_ae341dd92e76af3f57ab1ffad7c8a5eaa}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!triDenombrement@{triDenombrement}}
+\index{triDenombrement@{triDenombrement}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{triDenombrement()}{triDenombrement()}}
+{\footnotesize\ttfamily void tri\+Denombrement (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+Effectue le tri par dénombrement . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée/\+Sortie) le tableau \\
+\hline
+{\em taille} & (Entrée) la taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_a98a53e58482fd7dd766e389277ab180e}\label{tableauDynamique_8c_a98a53e58482fd7dd766e389277ab180e}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!triFusion@{triFusion}}
+\index{triFusion@{triFusion}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{triFusion()}{triFusion()}}
+{\footnotesize\ttfamily void tri\+Fusion (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+trie un tableau de façon croissante \textbackslash{} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée/\+Sortie) Le tableau à trier \\
+\hline
+{\em taille} & (Entrée) La taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tableauDynamique_8c_a74daa3ab4cce841a36059276a4cccba7}\label{tableauDynamique_8c_a74daa3ab4cce841a36059276a4cccba7}} 
+\index{tableauDynamique.c@{tableauDynamique.c}!triInsertion@{triInsertion}}
+\index{triInsertion@{triInsertion}!tableauDynamique.c@{tableauDynamique.c}}
+\doxysubsubsection{\texorpdfstring{triInsertion()}{triInsertion()}}
+{\footnotesize\ttfamily void tri\+Insertion (\begin{DoxyParamCaption}\item[{int $\ast$}]{tab,  }\item[{int}]{taille }\end{DoxyParamCaption})}
+
+
+
+T\+RI P\+AR I\+N\+S\+E\+R\+T\+I\+ON. 
+
+trie un tableau d’entier en utilisant la méthode du tri insertion \textbackslash{} 
+\begin{DoxyParams}{Paramètres}
+{\em tab} & (Entrée / Sortie) Le tableau à trier \\
+\hline
+{\em taille} & (Entrée) La taille du tableau \\
+\hline
+\end{DoxyParams}

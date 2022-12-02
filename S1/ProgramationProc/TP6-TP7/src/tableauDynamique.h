@@ -17,10 +17,10 @@
 /**
  \brief Affiche un tableau dynamique
  \
- \param tab (Entrée/Sortie) Le tebleau
+ \param tab (Entrée) Le tebleau
  \param taille La taille du tableau
  */
-void afficherTabDyna(int *tab, int taille);
+void afficherTabDyna(const int *tab, int taille);
 
 /**
  \brief Remplit un tableau dynamique aléatoirement
@@ -69,7 +69,7 @@ int *copierSousTableau(int *src, int debut, int fin);
  \param taille2 (Entrée) la taille du deuxième tableau
  \param tabRes (Sortie) le résultat de leur fustion
  */
-void fusion(int *tab1, int taille1, int *tab2, int taille2, int *tabRes);
+void fusion(const int *tab1, int taille1, const int *tab2, int taille2, int *tabRes);
 
 /**
  \brief trie un tableau de façon croissante

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jouer_27',['jouer',['../puissance4_8h.html#aa1900d15b2efea32f4ebb5fbd0ffa13b',1,'puissance4.c']]]
+  ['exerciceinutile_53',['exerciceInutile',['../pointeurs_8c.html#a2e69e2510c72446a61442dc93d6db555',1,'exerciceInutile():&#160;pointeurs.c'],['../pointeurs_8h.html#a2e69e2510c72446a61442dc93d6db555',1,'exerciceInutile():&#160;pointeurs.c']]]
 ];

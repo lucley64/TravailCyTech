@@ -40,7 +40,7 @@ int main(int argc, char const *argv[])
     int *tint_tabDynamique;
     int int_tailleTab;
 
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     printf("Choisir entre : \n%s%s%s%s",
            " 1- Méthodes du tableau 1D\n",
            " 2- Puissance 4\n",
@@ -188,7 +188,7 @@ int main(int argc, char const *argv[])
             exit(EXIT_FAILURE);
         }
 
-        tint_tabDynamique = malloc(int_tailleTab);
+        tint_tabDynamique = malloc(int_tailleTab * sizeof(int));
 
         printf("Changer les valeurs du tableau manuellement ? [N/y] \n");
         int_verif = scanf("%c", &char_choix);

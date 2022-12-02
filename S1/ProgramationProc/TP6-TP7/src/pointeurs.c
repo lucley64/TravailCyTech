@@ -86,17 +86,11 @@ void pointeurSurTableau()
 
 void unPeutMoinsFacile()
 {
-    int tint_tab[10];
-    tint_tab[0] = 42;
-    tint_tab[1] = 69;
-    tint_tab[2] = 24;
-    tint_tab[4] = 99;
-    tint_tab[6] = 15;
-    tint_tab[9] = 22;
+    int tint_tab[10] = {42, 69, 24, 0, 99, 0, 15, 0, 0, 22};
 
-    for (int *int_i = tint_tab; int_i <= &tint_tab[9]; int_i++)
+    for (const int *int_i = tint_tab; int_i <= tint_tab + 9; int_i++)
     {
-        if (!*int_i)
+        if (*int_i != 0)
         {
             printf("Indice : %li\n", int_i - tint_tab);
         }
