@@ -96,28 +96,50 @@ int *copierSousTableau(int *src, int debut, int fin)
 
 void fusion(int *tab1, int taille1, int *tab2, int taille2, int *tabRes)
 {
-    int int_tailleTabRes;
-    int* pint_valTab1;
-    int* pint_valTab2;
+    int int_tailleTabRes; // Taille du tableau destination
+    int *pint_valTab1;    // Pointeur sur le tableau 1
+    int *pint_valTab2;    // Pointeur sur le tableau 2
 
     int_tailleTabRes = taille1 + taille2;
     pint_valTab1 = tab1;
     pint_valTab2 = tab2;
     tabRes = malloc(int_tailleTabRes);
 
-
     for (int int_i = 0; int_i < int_tailleTabRes; int_i++)
     {
-        if (*pint_valTab1 < pint_valTab2)
+        if (*pint_valTab1 < *pint_valTab2)
         {
-            /* code */
+            tabRes[int_i] = *pint_valTab1;
+            pint_valTab1++;
         }
-        
+        else
+        {
+            tabRes[int_i] = *pint_valTab2;
+            pint_valTab2++;
+        }
     }
-    
 }
 
-void triFusion(int *tab, int taille) {}
+void triFusion(int *tab, int taille)
+{
+    afficherTabDyna(tab, taille);
+    int *tint_soutab1;
+    int *tint_soutab2;
+    if (taille >= 2)
+    {
+        tint_soutab1 = copierSousTableau(tab, 0, (taille / 2) - 1);
+        afficherTabDyna(tint_soutab1, (taille/2)-1);
+        triFusion(tint_soutab1, (taille / 2) - 1);
+        tint_soutab2 = copierSousTableau(tab, taille / 2, taille - 1);
+        afficherTabDyna(tint_soutab2, (taille - 1) - taille / 2);
+        triFusion(tint_soutab2, (taille - 1) - taille / 2);
+        free(tab);
+        fusion(tint_soutab1, (taille / 2) - 1, tint_soutab2, (taille - 1) - taille / 2, tab);
+        free(tint_soutab1);
+        free(tint_soutab2);
+    }
+}
+
 void minMaxTableau(int *tab, int taille, int *min, int *max) {}
 void histogramme(int *tab, int taille, int *histo, int tailleH, int min) {}
 void triDenombrement(int *tab, int taille) {}
