@@ -163,6 +163,23 @@ void triFusion(int *tab, int taille)
     }
 }
 
-void minMaxTableau(int *tab, int taille, int *min, int *max) {}
+void minMaxTableau(const int *tab, const int taille, const int *min, const int *max)
+{
+    min = tab;
+    max = tab;
+
+    for (const int *pint_i = tab; pint_i < tab + taille; pint_i++)
+    {
+        if (*pint_i < *min)
+        {
+            min = pint_i;
+        }
+        if (*pint_i > *max)
+        {
+            max = pint_i;
+        }
+    }
+}
+
 void histogramme(int *tab, int taille, int *histo, int tailleH, int min) {}
 void triDenombrement(int *tab, int taille) {}

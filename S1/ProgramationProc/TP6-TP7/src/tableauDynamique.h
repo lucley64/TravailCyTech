@@ -89,10 +89,10 @@ void triFusion(int *tab, int taille);
  \param min (Sortie) Le minimum trouvé
  \param max (Sortie) Le maximum trouvé
  */
-void minMaxTableau(int *tab, int taille, int *min, int *max);
+void minMaxTableau(const int *tab, const int taille, const int *min, const int *max);
 
 /**
- \brief détermine la fréquence d’apparition de chaque élément du tableau tab
+ \brief détermine la fréquence d'apparition de chaque élément du tableau tab
  \
  \param tab (Entrée) le tableau
  \param taille (Entrée) La taille du tableau
