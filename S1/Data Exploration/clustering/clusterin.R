@@ -14,3 +14,12 @@ print(cl) # affiche les résultats
 plot(x, col = cl$cluster) # affiche les points avec une couleur différente par classe
 # indexée par le numéro de la classe
 points(cl$centers, col = 1:2, pch = 8, cex = 2) # ajoute les centres des classes
+
+
+cluster = read.table("./Test_Clusters_Distincts.txt")
+View(cluster)
+cluster = as.matrix(cluster)
+clusters = scale(cluster)
+km = kmeans(cluster, 3, nstart = 5)
+plot(cluster, col = km$cluster)
+plot(clusters, col = km$cluster)
