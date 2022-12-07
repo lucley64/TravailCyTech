@@ -1,0 +1,10 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/cytech/Travail/S1/ProgramationProc/TP8-TP9/bin",
+            "binaryPath": "/home/cytech/Travail/S1/ProgramationProc/TP8-TP9/bin/a.out",
+            "binaryArgs": []
+        }
+    ],
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json"
+}
