@@ -21,6 +21,8 @@
  */
 void printHelp();
 
+void getArgs(char **str_methode, char **str_decal, char **str_cle, char **str_message, int argc, const char **argv);
+
 /**
  \brief Main corresondant au tp8 et 9
  \
@@ -33,7 +35,7 @@ int main(int argc, char const *argv[])
     char *str_methode = NULL; // Le nom de la méthode à utiliser
     char *str_decal = NULL;   // Nombre de décalage pour la méthode cesar
     char *str_cle = NULL;     // La clé à utiliser pour la méthode vigene
-    char *str_message = NULL;       // Le message à encoder
+    char *str_message = NULL; // Le message à encoder
 
     // Vérifi si l'utilisateur à besoin d'aide
     if (argc < 2 || !strcmp(argv[1], "--help"))
@@ -43,24 +45,11 @@ int main(int argc, char const *argv[])
     else
     {
         // Récupère les différents arguments
-        for (int int_i = 0; int_i < argc - 1; int_i++)
+        getArgs(&str_methode, &str_decal, &str_cle, &str_message, argc, argv);
+
+        if (str_message == NULL)
         {
-            if (argv[int_i] != NULL && !strcmp(argv[int_i], "-c") && argv[int_i + 1] != NULL)
-            {
-                str_methode = strdup(argv[int_i + 1]);
-            }
-            else if (argv[int_i] != NULL && !strcmp(argv[int_i], "-d") && argv[int_i + 1] != NULL)
-            {
-                str_decal = strdup(argv[int_i + 1]);
-            }
-            else if (argv[int_i] != NULL && !strcmp(argv[int_i], "-k") && argv[int_i + 1] != NULL)
-            {
-                str_cle = strdup(argv[int_i + 1]);
-            }
-            else if (argv[int_i] != NULL && !strcmp(argv[int_i], "-m") && argv[int_i + 1] != NULL)
-            {
-                str_message = strdup(argv[int_i + 1]);
-            }
+            str_message = askMessage();
         }
 
         // Évalu les arguments saisits et détérmine la fonction à executer
@@ -117,4 +106,27 @@ void printHelp()
            "-d <decalage> : valeur du décalage, uniquement pour le chiffrement de César",
            "-k <cle> : mot clé, uniquement pour le chiffrement de Vigenère",
            "-m <message> : message à chiffrer");
+}
+
+void getArgs(char **str_methode, char **str_decal, char **str_cle, char **str_message, int argc, const char **argv)
+{
+    for (int int_i = 0; int_i < argc - 1; int_i++)
+    {
+        if (argv[int_i] != NULL && !strcmp(argv[int_i], "-c") && argv[int_i + 1] != NULL)
+        {
+            *str_methode = strdup(argv[int_i + 1]);
+        }
+        else if (argv[int_i] != NULL && !strcmp(argv[int_i], "-d") && argv[int_i + 1] != NULL)
+        {
+            *str_decal = strdup(argv[int_i + 1]);
+        }
+        else if (argv[int_i] != NULL && !strcmp(argv[int_i], "-k") && argv[int_i + 1] != NULL)
+        {
+            *str_cle = strdup(argv[int_i + 1]);
+        }
+        else if (argv[int_i] != NULL && !strcmp(argv[int_i], "-m") && argv[int_i + 1] != NULL)
+        {
+            *str_message = strdup(argv[int_i + 1]);
+        }
+    }
 }

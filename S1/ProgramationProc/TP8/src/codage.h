@@ -34,4 +34,11 @@ void vigene(const char* cle, char *message);
  */
 void scytale(const char *message);
 
+/**
+ \brief Demande à l'utilisateur le message
+ \
+ \return char* Le message saisit
+ */
+char *askMessage();
+
 #endif // !CODAGE_H

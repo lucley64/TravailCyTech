@@ -1,0 +1,10 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/bin",
+            "binaryPath": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/bin/a.out",
+            "binaryArgs": []
+        }
+    ],
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json"
+}

@@ -24,13 +24,6 @@
 int askDecal();
 
 /**
- \brief Demande à l'utilisateur le message
- \
- \return char* Le message saisit
- */
-char *askMessage();
-
-/**
  \brief Demande à l'utilisateur la clé
  \
  \return char* La clé saisie
@@ -52,7 +45,7 @@ char decalChar(char chr, int decal);
  \param cle La clé en chaine de char
  \return int* La clé en int
  */
-void DeterminerCle(const char *cle, int* tint_cle, size_t *len);
+void determinerCle(const char *cle, int *tint_cle, size_t *len);
 
 void cesar(const char *decal, char *message)
 {
@@ -66,12 +59,6 @@ void cesar(const char *decal, char *message)
     else
     {
         int_decal = atoi(decal);
-    }
-
-    // Détermine le message
-    if (message == NULL)
-    {
-        message = askMessage();
     }
 
     // Éffectue le décalage
@@ -134,7 +121,7 @@ char *askCle()
     char *str_cle = NULL;
     size_t int_size = 0;
 
-    printf("Aucun message detécté, Veuillez entrer le message : \n");
+    printf("Aucune clé detécté, Veuillez entrer la clé : \n");
     getline(&str_cle, &int_size, stdin);
 
     for (int int_i = 0; int_i < int_size; int_i++)
@@ -165,13 +152,11 @@ char decalChar(char chr, int decal)
     return chr;
 }
 
-void DeterminerCle(const char *cle, int* tint_cle, size_t *len)
+void determinerCle(const char *cle, int *tint_cle, size_t *len)
 {
-    tint_cle = malloc(strlen(cle) * sizeof(int));
-
     *len = 0;
 
-    for (size_t int_i = 0; int_i < strlen(cle); int_i ++)
+    for (size_t int_i = 0; int_i < strlen(cle); int_i++)
     {
         if ((cle[int_i] >= 'A' && cle[int_i] <= 'Z') || (cle[int_i] >= 'a' && cle[int_i] <= 'z'))
         {
@@ -193,18 +178,18 @@ void vigene(const char *cle, char *message)
     int *tint_cle = NULL;
     size_t int_cleSize;
 
-    if (cle == NULL){
-
+    if (cle == NULL)
+    {
+        cle = askCle();
     }
 
-    DeterminerCle(cle, tint_cle, &int_cleSize);
+    tint_cle = malloc(strlen(cle) * sizeof(int));
+    determinerCle(cle, tint_cle, &int_cleSize);
 
-    if (message == NULL){
-        message = askMessage();
-    }
-
-    for (size_t int_i = 0; int_i < strlen(message); int_i++){
-        message[int_i] = decalChar(message[int_i], tint_cle[int_i % int_cleSize]);
+    for (size_t int_i = 0; int_i < strlen(message); int_i++)
+    {
+        if (int_cleSize > 0)
+            message[int_i] = decalChar(message[int_i], tint_cle[int_i % int_cleSize]);
     }
 
     free(tint_cle);

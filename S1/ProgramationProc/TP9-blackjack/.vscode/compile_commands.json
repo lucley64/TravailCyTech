@@ -1,0 +1,7 @@
+[
+    {
+        "command": "gcc -Wall -c src/main.c -o bin/main.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/main.c"
+    }
+]
