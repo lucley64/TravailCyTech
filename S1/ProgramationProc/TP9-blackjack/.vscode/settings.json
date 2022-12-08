@@ -6,5 +6,9 @@
             "binaryArgs": []
         }
     ],
-    "sonarlint.pathToCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json"
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
+    "files.associations": {
+        "*.rmd": "markdown",
+        "listecarte.h": "c"
+    }
 }

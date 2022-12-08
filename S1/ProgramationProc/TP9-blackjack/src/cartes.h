@@ -9,28 +9,17 @@
  \
  */
 
-#pragma once
+#ifndef CARTES_H
+#define CARTES_H
 
-#include "listeCarte.h"
-
-/// @brief Enum représantant les valeurs de cartes
-typedef enum
-{
-    AS = 1,
-    DEUX = 2,
-    TROIS = 3,
-    QUATRE = 4,
-    CINQ = 5,
-    SIX = 6,
-    SEPT = 7,
-    HUIT = 8,
-    NEUF = 9,
-    DIX = 10,
-    VALET = 10,
-    DAME = 10,
-    ROI = 10
-} Carte;
+#include "typesCartes.h"
 
 /// @brief Initialise la pioche des cartes
 /// @return La pioche
 ListCarte *initCartes();
+
+/// @brief Mélange la pioche
+/// @param ListCarte* pioche
+void melangerCartes(ListCarte *listCarte);
+
+#endif // CARTES_H

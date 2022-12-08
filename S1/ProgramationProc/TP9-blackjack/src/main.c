@@ -9,6 +9,8 @@
  \
  */
 
+#include "cartes.h"
+
 /**
  \brief Programme principal
  \
@@ -18,6 +20,13 @@
  */
 int main(int argc, char const *argv[])
 {
-    
+    ListCarte *cartes;
+
+
+    cartes = initCartes();
+
+    melangerCartes(cartes);
+
+
     return (0);
 }
