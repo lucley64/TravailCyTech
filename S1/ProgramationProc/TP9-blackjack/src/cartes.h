@@ -11,6 +11,9 @@
 
 #pragma once
 
+#include "listeCarte.h"
+
+/// @brief Enum représantant les valeurs de cartes
 typedef enum
 {
     AS = 1,
@@ -26,5 +29,8 @@ typedef enum
     VALET = 10,
     DAME = 10,
     ROI = 10
-} cartes;
+} Carte;
 
+/// @brief Initialise la pioche des cartes
+/// @return La pioche
+ListCarte *initCartes();
