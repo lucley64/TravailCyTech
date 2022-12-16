@@ -14,19 +14,10 @@ ListCarte *initCartes()
     cartes = (ListCarte *)malloc(sizeof(ListCarte));
     creerListe(cartes);
 
-    ajouterApres(cartes, createCarte(AS, PIQUE));
-    ajouterApres(cartes, createCarte(DEUX, PIQUE));
-    ajouterApres(cartes, createCarte(TROIS, PIQUE));
-    ajouterApres(cartes, createCarte(QUATRE, PIQUE));
-    ajouterApres(cartes, createCarte(CINQ, PIQUE));
-    ajouterApres(cartes, createCarte(SIX, PIQUE));
-    ajouterApres(cartes, createCarte(SEPT, PIQUE));
-    ajouterApres(cartes, createCarte(HUIT, PIQUE));
-    ajouterApres(cartes, createCarte(NEUF, PIQUE));
-    ajouterApres(cartes, createCarte(DIX, PIQUE));
-    ajouterApres(cartes, createCarte(VALET, PIQUE));
-    ajouterApres(cartes, createCarte(DAME, PIQUE));
-    ajouterApres(cartes, createCarte(ROI, PIQUE));
+    initParCouleur(cartes, PIQUE);
+    initParCouleur(cartes, CARREAU);
+    initParCouleur(cartes, TREFLE);
+    initParCouleur(cartes, COEUR);
 
     return cartes;
 }
@@ -62,4 +53,21 @@ sCarte createCarte(Carte carte, CarteColor color)
     newCarte.carte = carte;
 
     return newCarte;
+}
+
+void initParCouleur(ListCarte *listCarte, CarteColor color)
+{
+    ajouterApres(listCarte, createCarte(AS, color));
+    ajouterApres(listCarte, createCarte(DEUX, color));
+    ajouterApres(listCarte, createCarte(TROIS, color));
+    ajouterApres(listCarte, createCarte(QUATRE, color));
+    ajouterApres(listCarte, createCarte(CINQ, color));
+    ajouterApres(listCarte, createCarte(SIX, color));
+    ajouterApres(listCarte, createCarte(SEPT, color));
+    ajouterApres(listCarte, createCarte(HUIT, color));
+    ajouterApres(listCarte, createCarte(NEUF, color));
+    ajouterApres(listCarte, createCarte(DIX, color));
+    ajouterApres(listCarte, createCarte(VALET, color));
+    ajouterApres(listCarte, createCarte(DAME, color));
+    ajouterApres(listCarte, createCarte(ROI, color));
 }

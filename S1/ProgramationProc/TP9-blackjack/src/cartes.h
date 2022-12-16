@@ -28,4 +28,9 @@ void melangerCartes(ListCarte *listCarte);
 /// @param color la couleur de la carte
 /// @return 
 sCarte createCarte(Carte carte, CarteColor color);
+
+/// @brief Initialise la list pour une couleur donné
+/// @param listCarte La liste de cartes
+/// @param color la couleur de la carte
+void initParCouleur(ListCarte *listCarte, CarteColor color);
 #endif // CARTES_H
