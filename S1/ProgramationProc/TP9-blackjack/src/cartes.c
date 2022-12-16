@@ -12,7 +12,7 @@ ListCarte *initCartes()
     ListCarte *cartes;
 
     cartes = (ListCarte *)malloc(sizeof(ListCarte));
-    creerListe(cartes);
+    creerListeCarte(cartes);
 
     initParCouleur(cartes, PIQUE);
     initParCouleur(cartes, CARREAU);
@@ -30,7 +30,7 @@ void melangerCartes(ListCarte *listCarte)
     int arrIndice2;
     sCarte temp;
 
-    listToArray(listCarte, &cartes, &size);
+    listCarteToArray(listCarte, &cartes, &size);
 
     for (size_t i = 0; i < size; i++)
     {
@@ -42,7 +42,7 @@ void melangerCartes(ListCarte *listCarte)
         cartes[arrIndice2] = temp;
     }
 
-    arrayToList(listCarte, &cartes, size);
+    arrayToListCarte(listCarte, &cartes, size);
 }
 
 sCarte createCarte(Carte carte, CarteColor color)
@@ -57,17 +57,17 @@ sCarte createCarte(Carte carte, CarteColor color)
 
 void initParCouleur(ListCarte *listCarte, CarteColor color)
 {
-    ajouterApres(listCarte, createCarte(AS, color));
-    ajouterApres(listCarte, createCarte(DEUX, color));
-    ajouterApres(listCarte, createCarte(TROIS, color));
-    ajouterApres(listCarte, createCarte(QUATRE, color));
-    ajouterApres(listCarte, createCarte(CINQ, color));
-    ajouterApres(listCarte, createCarte(SIX, color));
-    ajouterApres(listCarte, createCarte(SEPT, color));
-    ajouterApres(listCarte, createCarte(HUIT, color));
-    ajouterApres(listCarte, createCarte(NEUF, color));
-    ajouterApres(listCarte, createCarte(DIX, color));
-    ajouterApres(listCarte, createCarte(VALET, color));
-    ajouterApres(listCarte, createCarte(DAME, color));
-    ajouterApres(listCarte, createCarte(ROI, color));
+    ajouterApresCarte(listCarte, createCarte(AS, color));
+    ajouterApresCarte(listCarte, createCarte(DEUX, color));
+    ajouterApresCarte(listCarte, createCarte(TROIS, color));
+    ajouterApresCarte(listCarte, createCarte(QUATRE, color));
+    ajouterApresCarte(listCarte, createCarte(CINQ, color));
+    ajouterApresCarte(listCarte, createCarte(SIX, color));
+    ajouterApresCarte(listCarte, createCarte(SEPT, color));
+    ajouterApresCarte(listCarte, createCarte(HUIT, color));
+    ajouterApresCarte(listCarte, createCarte(NEUF, color));
+    ajouterApresCarte(listCarte, createCarte(DIX, color));
+    ajouterApresCarte(listCarte, createCarte(VALET, color));
+    ajouterApresCarte(listCarte, createCarte(DAME, color));
+    ajouterApresCarte(listCarte, createCarte(ROI, color));
 }
