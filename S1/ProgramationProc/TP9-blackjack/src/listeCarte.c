@@ -17,20 +17,20 @@ void ajouterAvant(ListCarte *list, sCarte item)
     ItemCarte *itemCarte = malloc(sizeof(ItemCarte));
 
     itemCarte->value = item;
-    // if (list->first->value == 0)
-    // {
-    //     free(list->first);
-    //     list->first = itemCarte;
-    //     list->last = itemCarte;
-    //     itemCarte->next = list->last;
-    //     itemCarte->prev = list->first;
-    // }
-    // else
-    // {
+    if (list->first->value.carte == 0)
+    {
+        free(list->first);
+        list->first = itemCarte;
+        list->last = itemCarte;
+        itemCarte->next = list->last;
+        itemCarte->prev = list->first;
+    }
+    else
+    {
         itemCarte->next = list->first;
         itemCarte->next->prev = itemCarte;
         list->first = itemCarte;
-    // }
+    }
 }
 
 void ajouterApres(ListCarte *list, sCarte item)
@@ -38,20 +38,20 @@ void ajouterApres(ListCarte *list, sCarte item)
     ItemCarte *itemCarte = malloc(sizeof(ItemCarte));
 
     itemCarte->value = item;
-    // if (list->last->value == 0)
-    // {
-    //     free(list->last);
-    //     list->last = itemCarte;
-    //     list->first = itemCarte;
-    //     itemCarte->prev = list->first;
-    //     itemCarte->next = list->last;
-    // }
-    // else
-    // {
+    if (list->last->value.carte == 0)
+    {
+        free(list->last);
+        list->last = itemCarte;
+        list->first = itemCarte;
+        itemCarte->prev = list->first;
+        itemCarte->next = list->last;
+    }
+    else
+    {
         itemCarte->prev = list->last;
         list->last->next = itemCarte;
         list->last = itemCarte;
-    // }
+    }
 }
 
 sCarte enleverAvant(ListCarte *list)

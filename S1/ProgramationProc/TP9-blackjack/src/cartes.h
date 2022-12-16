@@ -22,4 +22,10 @@ ListCarte *initCartes();
 /// @param ListCarte* pioche
 void melangerCartes(ListCarte *listCarte);
 
+
+/// @brief créé une carte
+/// @param carte la figure de la carte
+/// @param color la couleur de la carte
+/// @return 
+sCarte createCarte(Carte carte, CarteColor color);
 #endif // CARTES_H

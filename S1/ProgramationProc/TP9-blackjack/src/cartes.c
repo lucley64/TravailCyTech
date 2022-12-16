@@ -14,30 +14,30 @@ ListCarte *initCartes()
     cartes = (ListCarte *)malloc(sizeof(ListCarte));
     creerListe(cartes);
 
-    ajouterApres(cartes, AS);
-    ajouterApres(cartes, DEUX);
-    ajouterApres(cartes, TROIS);
-    ajouterApres(cartes, QUATRE);
-    ajouterApres(cartes, CINQ);
-    ajouterApres(cartes, SIX);
-    ajouterApres(cartes, SEPT);
-    ajouterApres(cartes, HUIT);
-    ajouterApres(cartes, NEUF);
-    ajouterApres(cartes, DIX);
-    ajouterApres(cartes, VALET);
-    ajouterApres(cartes, DAME);
-    ajouterApres(cartes, ROI);
+    ajouterApres(cartes, createCarte(AS, PIQUE));
+    ajouterApres(cartes, createCarte(DEUX, PIQUE));
+    ajouterApres(cartes, createCarte(TROIS, PIQUE));
+    ajouterApres(cartes, createCarte(QUATRE, PIQUE));
+    ajouterApres(cartes, createCarte(CINQ, PIQUE));
+    ajouterApres(cartes, createCarte(SIX, PIQUE));
+    ajouterApres(cartes, createCarte(SEPT, PIQUE));
+    ajouterApres(cartes, createCarte(HUIT, PIQUE));
+    ajouterApres(cartes, createCarte(NEUF, PIQUE));
+    ajouterApres(cartes, createCarte(DIX, PIQUE));
+    ajouterApres(cartes, createCarte(VALET, PIQUE));
+    ajouterApres(cartes, createCarte(DAME, PIQUE));
+    ajouterApres(cartes, createCarte(ROI, PIQUE));
 
     return cartes;
 }
 
 void melangerCartes(ListCarte *listCarte)
 {
-    Carte *cartes;
+    sCarte *cartes;
     int size;
     int arrIndice1;
     int arrIndice2;
-    Carte temp;
+    sCarte temp;
 
     listToArray(listCarte, &cartes, &size);
 
@@ -52,4 +52,14 @@ void melangerCartes(ListCarte *listCarte)
     }
 
     arrayToList(listCarte, &cartes, size);
+}
+
+sCarte createCarte(Carte carte, CarteColor color)
+{
+    sCarte newCarte;
+
+    newCarte.carte_color = color;
+    newCarte.carte = carte;
+
+    return newCarte;
 }
