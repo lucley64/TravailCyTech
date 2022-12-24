@@ -1,3 +1,9 @@
+/// @file cartes.c
+/// @author Luc Leydert
+/// @brief Fichier correspondant au corp de fonction de la gestion des cartes
+/// @version 0.1
+/// @date 08/12/2022
+
 #include "cartes.h"
 
 #include "listeCarte.h"
