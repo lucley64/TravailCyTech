@@ -7,52 +7,61 @@
 
 ListCarte *initCartes()
 {
+    // Initialise l'aléatoire pour le mélange des cartes
     srand((u_int)time(NULL));
 
-    ListCarte *cartes;
+    ListCarte *listCartes_cartes; // Représente la nouvelle liste cartes
 
-    cartes = (ListCarte *)malloc(sizeof(ListCarte));
-    creerListeCarte(cartes);
+    // Alloue de la memoire à la nouvelle liste
+    listCartes_cartes = (ListCarte *)malloc(sizeof(ListCarte));
 
-    initParCouleur(cartes, PIQUE);
-    initParCouleur(cartes, CARREAU);
-    initParCouleur(cartes, TREFLE);
-    initParCouleur(cartes, COEUR);
+    // Créé la nouvelle liste cartes
+    creerListeCarte(listCartes_cartes);
 
-    return cartes;
+    // Ajoute les cartes couleur par couleur
+    initParCouleur(listCartes_cartes, PIQUE);
+    initParCouleur(listCartes_cartes, CARREAU);
+    initParCouleur(listCartes_cartes, TREFLE);
+    initParCouleur(listCartes_cartes, COEUR);
+
+    return (listCartes_cartes);
 }
 
 void melangerCartes(ListCarte *listCarte)
 {
-    sCarte *cartes;
-    int size;
-    int arrIndice1;
-    int arrIndice2;
-    sCarte temp;
+    sCarte *tabsCare_cartes; // Tableau de cartes pour faciliter le mélange
+    int int_size; // Taille du tableau de cartes
+    int int_arrIndice1; // Indice de la première carte à échanger
+    int int_arrIndice2; // Indice de la deuxième carte à échanger
+    sCarte sCarte_temp; // Variable temporaire pour l'échange des cartes
 
-    listCarteToArray(listCarte, &cartes, &size);
+    // Converti la liste de cartes en tableau 
+    listCarteToArray(listCarte, &tabsCare_cartes, &int_size);
 
-    for (size_t i = 0; i < size; i++)
+    // On parcours le tableau et on échange deux carte aléatoire
+    for (size_t i = 0; i < int_size; i++)
     {
-        arrIndice1 = rand() % size;
-        arrIndice2 = rand() % size;
+        int_arrIndice1 = rand() % int_size;
+        int_arrIndice2 = rand() % int_size;
 
-        temp = cartes[arrIndice1];
-        cartes[arrIndice1] = cartes[arrIndice2];
-        cartes[arrIndice2] = temp;
+        sCarte_temp = tabsCare_cartes[int_arrIndice1];
+        tabsCare_cartes[int_arrIndice1] = tabsCare_cartes[int_arrIndice2];
+        tabsCare_cartes[int_arrIndice2] = sCarte_temp;
     }
 
-    arrayToListCarte(listCarte, &cartes, size);
+    // Reconverti le tableau en liste
+    arrayToListCarte(listCarte, &tabsCare_cartes, int_size);
 }
 
 sCarte createCarte(Carte carte, CarteColor color)
 {
-    sCarte newCarte;
+    sCarte sCarte_newCarte; // La nouvelle carte crée
 
-    newCarte.carte_color = color;
-    newCarte.carte = carte;
+    // Affecte les atributs à cette nouvelle carte
+    sCarte_newCarte.carte_color = color;
+    sCarte_newCarte.carte = carte;
 
-    return newCarte;
+    return (sCarte_newCarte);
 }
 
 void initParCouleur(ListCarte *listCarte, CarteColor color)
