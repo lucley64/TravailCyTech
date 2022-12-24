@@ -13,7 +13,7 @@
 ListCarte *initCartes();
 
 /// @brief Mélange la pioche
-/// @param ListCarte* pioche
+/// @param ListCarte pioche
 void melangerCartes(ListCarte *listCarte);
 
 /// @brief créé une carte
