@@ -61,10 +61,19 @@ void listCarteToArray(ListCarte *, sCarte **, int *);
 /// @param  int La taille du tableau
 void arrayToListCarte(ListCarte *, sCarte **, int);
 
+/// @brief Retourne la valeur totale des cartes de la liste
+/// @param cartes Pointeur sur la liste de cartes
+/// @return valeur totale des cartes de la liste
 int getValeurTotale(const ListCarte *cartes);
 
+/// @brief Retourne La figure de la carte
+/// @param carte Pointeur sur la carte
+/// @return Une chaine de char Pour la fichure
 char* getValeurCarte(const sCarte *carte);
 
+/// @brief Retourne la couleur de la carte
+/// @param carte Pointeur sur la carte
+/// @return Une chaine de char Pour la couleur
 char* getCouleurCarte(const sCarte *carte);
 
 
