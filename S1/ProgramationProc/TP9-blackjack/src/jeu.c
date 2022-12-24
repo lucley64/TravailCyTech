@@ -1,3 +1,13 @@
+/**
+ \file jeu.c
+ \author Luc Leydert
+ \brief 
+ \version 0.1
+ \date 24/12/2022
+ \
+ \copyright Copyright (c) 2022
+ \
+ */
 #include "jeu.h"
 
 #include <string.h>
@@ -5,19 +15,41 @@
 
 #include "interface.h"
 
+/// @brief Distribue les cartes au joueurs
+/// @param jeu Pointeur sur la partie
 void distribuerCartes(Jeu *jeu);
+/// @brief Donne une carte de la pioche au joueur
+/// @param joueur Pointeur sur un joueur
+/// @param cartes Pointeur sur la liste de cartes (pioche)
 void donnerCarte(Joueur *joueur, ListCarte *cartes);
+/// @brief Créé un joueur en lui demandant son nom
+/// @return Le nouveau joueur
 Joueur creeJoueur();
+/// @brief Fait miser les joueurs
+/// @param jeu Pointeur sur la partie
+/// @return La mise totale
 int miser(Jeu *jeu);
+/// @brief Reinitialise le jeu
+/// @param jeu pointeur sur le jeu
 void reinitialiserJeu(Jeu *jeu);
+/// @brief Disrtibu le score au joueurs
+/// @param jeu pointeur su la partie
 void distribuerScore(Jeu *jeu);
+/// @brief Fait se dérouler un la partie
+/// @param jeu Pointeur sur le jeu
 void deroulerPartie(Jeu *jeu);
+/// @brief Vide la main d'un joueur
+/// @param joueur Pointeur sur un joueur
+/// @param cartes Pointeur sur la liste de cartes
 void viderMain(Joueur *joueur, ListCarte *cartes);
+/// @brief Donne les cartes a un joueur tant que celui-ci le veuille
+/// @param joueur Pointeur sur un joueur
+/// @param cartes Pointeur sur la liste de cartes
 void donnerCartes(Joueur *joueur, ListCarte *cartes);
 
 void initialiserJeu(Jeu *jeu, int nbJoueur)
 {
-    Joueur joueur;
+    Joueur joueur; // Un joueur
 
     jeu->cartes = *initCartes();
     melangerCartes(&jeu->cartes);
@@ -32,7 +64,7 @@ void initialiserJeu(Jeu *jeu, int nbJoueur)
 
 void gameLoop(Jeu *jeu)
 {
-    int continu;
+    int continu; // 1 si on continu de joueur 0 sinon
 
     continu = 1;
     while (continu)
@@ -51,29 +83,29 @@ void gameLoop(Jeu *jeu)
 
 void distribuerCartes(Jeu *jeu)
 {
-    ItemJoueur *joueur;
+    ItemJoueur *ite_joueur; // Iterateur de joueur
 
-    joueur = jeu->listJoueur.first;
-    while (joueur != jeu->listJoueur.last)
+    ite_joueur = jeu->listJoueur.first;
+    while (ite_joueur != jeu->listJoueur.last)
     {
-        if (joueur->value.etat != CROUPIER)
+        if (ite_joueur->value.etat != CROUPIER)
         {
-            donnerCarte(&joueur->value, &jeu->cartes);
-            donnerCarte(&joueur->value, &jeu->cartes);
-            joueur->value.etat = DESSOUS;
+            donnerCarte(&ite_joueur->value, &jeu->cartes);
+            donnerCarte(&ite_joueur->value, &jeu->cartes);
+            ite_joueur->value.etat = DESSOUS;
         }
         else
         {
-            donnerCarte(&joueur->value, &jeu->cartes);
+            donnerCarte(&ite_joueur->value, &jeu->cartes);
         }
 
-        joueur = joueur->next;
+        ite_joueur = ite_joueur->next;
     }
 }
 
 void donnerCarte(Joueur *joueur, ListCarte *cartes)
 {
-    sCarte carte;
+    sCarte carte; // La carte à donner
 
     carte = enleverAvantCarte(cartes);
 
@@ -82,134 +114,134 @@ void donnerCarte(Joueur *joueur, ListCarte *cartes)
 
 Joueur creeJoueur()
 {
-    Joueur joueur;
+    Joueur joueur; // Le nouveau joueur
 
     joueur.name = demanderNom();
     creerListeCarte(&joueur.hand);
     joueur.score = 0;
 
-    return joueur;
+    return (joueur);
 }
 
 int miser(Jeu *jeu)
 {
-    int miseTotale;
-    int mise;
-    ItemJoueur *joueur;
+    int int_miseTotale; // La mise totale
+    int int_mise; // La mise d'un joueur
+    ItemJoueur *ite_joueur; // Iterateur de joueur
 
-    joueur = jeu->listJoueur.first;
-    miseTotale = 0;
-    while (joueur != jeu->listJoueur.last && joueur->value.etat != CROUPIER)
+    ite_joueur = jeu->listJoueur.first;
+    int_miseTotale = 0;
+    while (ite_joueur != jeu->listJoueur.last && ite_joueur->value.etat != CROUPIER)
     {
-        mise = demanderMise(joueur->value.name);
+        int_mise = demanderMise(ite_joueur->value.name);
 
-        miseTotale += mise;
-        joueur->value.mise = mise;
+        int_miseTotale += int_mise;
+        ite_joueur->value.mise = int_mise;
 
-        joueur = joueur->next;
+        ite_joueur = ite_joueur->next;
     }
 
-    return miseTotale;
+    return (int_miseTotale);
 }
 
 void reinitialiserJeu(Jeu *jeu)
 {
-    ItemJoueur *joueur;
+    ItemJoueur *ite_joueur; // Iterateur de joueur
 
-    joueur = jeu->listJoueur.first;
+    ite_joueur = jeu->listJoueur.first;
 
-    while (joueur != jeu->listJoueur.last)
+    while (ite_joueur != jeu->listJoueur.last)
     {
 
-        joueur->value.mise = 0;
+        ite_joueur->value.mise = 0;
 
-        viderMain(&joueur->value, &jeu->cartes);
+        viderMain(&ite_joueur->value, &jeu->cartes);
 
-        joueur = joueur->next;
+        ite_joueur = ite_joueur->next;
     }
     melangerCartes(&jeu->cartes);
 }
 
 void distribuerScore(Jeu *jeu)
 {
-    ItemJoueur *joueur;
-    const ItemJoueur *croupier;
-    EtatJoueur etatCroupier;
-    int int_valeurJoueur;
-    int int_valeurCroupier;
+    ItemJoueur *ite_joueur; // Iterateur de joueur
+    const ItemJoueur *ite_croupier; // pointeur sur un item joueur représantant le croupier
+    EtatJoueur etatCroupier; // État du croupier
+    int int_valeurJoueur; // Valeur des cartes d'un joueur
+    int int_valeurCroupier; // Valeur des cartes du croupier
 
-    croupier = jeu->listJoueur.last - 1;
-    etatCroupier = getEtatCroupier(&croupier->value);
+    ite_croupier = jeu->listJoueur.last - 1;
+    etatCroupier = getEtatCroupier(&ite_croupier->value);
     if (etatCroupier == DESSOUS)
     {
-        int_valeurCroupier = getValeurTotale(&croupier->value.hand);
+        int_valeurCroupier = getValeurTotale(&ite_croupier->value.hand);
     }
     else
     {
         int_valeurCroupier = 0;
     }
 
-    joueur = jeu->listJoueur.first;
+    ite_joueur = jeu->listJoueur.first;
 
-    while (joueur != jeu->listJoueur.last - 1)
+    while (ite_joueur != jeu->listJoueur.last - 1)
     {
-        int_valeurJoueur = getValeurTotale(&joueur->value.hand);
-        if (joueur->value.etat < etatCroupier || (etatCroupier == DESSOUS && int_valeurJoueur < int_valeurCroupier))
+        int_valeurJoueur = getValeurTotale(&ite_joueur->value.hand);
+        if (ite_joueur->value.etat < etatCroupier || (etatCroupier == DESSOUS && int_valeurJoueur < int_valeurCroupier))
         {
-            if (joueur->value.etat == DEPASSE)
+            if (ite_joueur->value.etat == DEPASSE)
             {
-                annoncerEtatJeu(joueur->value.name, SAUTE);
+                annoncerEtatJeu(ite_joueur->value.name, SAUTE);
             }
             else
             {
-                annoncerEtatJeu(joueur->value.name, BATU);
+                annoncerEtatJeu(ite_joueur->value.name, BATU);
             }
-            joueur->value.score -= joueur->value.mise;
+            ite_joueur->value.score -= ite_joueur->value.mise;
         }
-        else if (joueur->value.etat > etatCroupier || (etatCroupier == DESSOUS && int_valeurJoueur > int_valeurCroupier))
+        else if (ite_joueur->value.etat > etatCroupier || (etatCroupier == DESSOUS && int_valeurJoueur > int_valeurCroupier))
         {
-            if (joueur->value.etat == BLACKJACK)
+            if (ite_joueur->value.etat == BLACKJACK)
             {
-                annoncerEtatJeu(joueur->value.name, ETAT_BLACKJACK);
-                joueur->value.score += joueur->value.mise * 2;
+                annoncerEtatJeu(ite_joueur->value.name, ETAT_BLACKJACK);
+                ite_joueur->value.score += ite_joueur->value.mise * 2;
             }
             else
             {
-                annoncerEtatJeu(joueur->value.name, REMPORTE);
-                joueur->value.score += joueur->value.mise;
+                annoncerEtatJeu(ite_joueur->value.name, REMPORTE);
+                ite_joueur->value.score += ite_joueur->value.mise;
             }
         }
         else
         {
-            annoncerEtatJeu(joueur->value.name, EGALITE);
+            annoncerEtatJeu(ite_joueur->value.name, EGALITE);
         }
-        annoncerScore(&joueur->value);
+        annoncerScore(&ite_joueur->value);
 
-        joueur = joueur->next;
+        ite_joueur = ite_joueur->next;
     }
 }
 
 void deroulerPartie(Jeu *jeu)
 {
-    ItemJoueur *joueur;
+    ItemJoueur *ite_joueur; // Iterateur de joueur
 
-    joueur = jeu->listJoueur.first;
+    ite_joueur = jeu->listJoueur.first;
 
     annoncerCartesToutLeMonde(&jeu->listJoueur);
 
-    while (joueur != jeu->listJoueur.last)
+    while (ite_joueur != jeu->listJoueur.last)
     {
-        annoncerTour(joueur->value.name);
+        annoncerTour(ite_joueur->value.name);
 
-        donnerCartes(&joueur->value, &jeu->cartes);
+        donnerCartes(&ite_joueur->value, &jeu->cartes);
 
-        joueur = joueur->next;
+        ite_joueur = ite_joueur->next;
     }
 }
 
 void viderMain(Joueur *joueur, ListCarte *cartes)
 {
-    sCarte carte;
+    sCarte carte; // La carte enlevé de la main
 
     while (listCarteSize(&joueur->hand) > 0)
     {
@@ -223,8 +255,8 @@ void viderMain(Joueur *joueur, ListCarte *cartes)
 
 void donnerCartes(Joueur *joueur, ListCarte *cartes)
 {
-    sCarte carte;
-    int int_continuer;
+    sCarte carte; // La carte à donner
+    int int_continuer; // 1 Si le croupier continue de poicher 0 sinon
 
     int_continuer = 1;
 

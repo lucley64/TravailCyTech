@@ -78,7 +78,7 @@ int listJoueurSize(const listJoueur *joueurs)
         item = item->next;
     }
 
-    return size;
+    return (size);
 }
 
 void listJoueurToArray(listJoueur *joueurs, Joueur **tabJoueur, int *taille)
@@ -164,25 +164,25 @@ char *getEtatJoueur(const Joueur *joueur)
     switch (joueur->etat)
     {
     case BLACKJACK:
-        return "Blackjack";
+        return ("Blackjack");
         break;
     case VINGT_ET_UN:
-        return "21";
+        return ("21");
         break;
     case DEPASSE:
-        return "Depassé";
+        return ("Depassé");
         break;
     case DESSOUS:
-        return "Dessous";
+        return ("Dessous");
         break;
     case CROUPIER:
-        return "Crouper";
+        return ("Crouper");
         break;
     default:
         break;
     }
 
-    return NULL;
+    return (NULL);
 }
 
 EtatJoueur getEtatCroupier(const Joueur *croupier)
@@ -218,24 +218,24 @@ EtatJoueur getEtatCroupier(const Joueur *croupier)
         }
         if (as != NULL && buche != NULL)
         {
-            return BLACKJACK;
+            return (BLACKJACK);
         }
         else
         {
-            return DESSOUS;
+            return (DESSOUS);
         }
     }
     else if (getValeurTotale(&croupier->hand) > 21)
     {
-        return DEPASSE;
+        return (DEPASSE);
     }
     else if (getValeurTotale(&croupier->hand) < 21)
     {
-        return DESSOUS;
+        return (DESSOUS);
     }
     else if (getValeurTotale(&croupier->hand) == 21)
     {
-        return VINGT_ET_UN;
+        return (VINGT_ET_UN);
     }
-    return DESSOUS;
+    return (DESSOUS);
 }

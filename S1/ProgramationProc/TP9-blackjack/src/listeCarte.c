@@ -63,7 +63,7 @@ sCarte enleverAvantCarte(ListCarte *list)
 
     free(itemCarte);
 
-    return item;
+    return (item);
 }
 
 sCarte enleverApresCarte(ListCarte *list)
@@ -75,7 +75,7 @@ sCarte enleverApresCarte(ListCarte *list)
 
     free(itemCarte);
 
-    return item;
+    return (item);
 }
 
 int listCarteSize(const ListCarte *list)
@@ -88,7 +88,7 @@ int listCarteSize(const ListCarte *list)
         size++;
         itemCarte = itemCarte->next;
     }
-    return size;
+    return (size);
 }
 
 void listCarteToArray(ListCarte *list, sCarte **tabCarte, int *size)
@@ -139,7 +139,7 @@ int getValeurTotale(const ListCarte *cartes)
         carte = carte->next;
     }
 
-    return valeur;
+    return (valeur);
 }
 
 char *getValeurCarte(const sCarte *carte)
@@ -148,49 +148,49 @@ char *getValeurCarte(const sCarte *carte)
     switch (carte->carte)
     {
     case AS:
-        return "AS";
+        return ("AS");
         break;
     case DEUX:
-        return "DEUX";
+        return ("DEUX");
         break;
     case TROIS:
-        return "TROIS";
+        return ("TROIS");
         break;
     case QUATRE:
-        return "QUATRE";
+        return ("QUATRE");
         break;
     case CINQ:
-        return "CINQ";
+        return ("CINQ");
         break;
     case SIX:
-        return "SIX";
+        return ("SIX");
         break;
     case SEPT:
-        return "SEPT";
+        return ("SEPT");
         break;
     case HUIT:
-        return "HUIT";
+        return ("HUIT");
         break;
     case NEUF:
-        return "NEUF";
+        return ("NEUF");
         break;
     case DIX:
-        return "DIX";
+        return ("DIX");
         break;
     case VALET:
-        return "VALET";
+        return ("VALET");
         break;
     case DAME:
-        return "DAME";
+        return ("DAME");
         break;
     case ROI:
-        return "ROI";
+        return ("ROI");
         break;
     default:
         break;
     }
 
-    return NULL;
+    return (NULL);
 }
 
 char *getCouleurCarte(const sCarte *carte)
@@ -198,19 +198,19 @@ char *getCouleurCarte(const sCarte *carte)
     switch (carte->carte_color)
     {
     case PIQUE:
-        return "PIQUE";
+        return ("PIQUE");
         break;
     case COEUR:
-        return "COEUR";
+        return ("COEUR");
         break;
     case TREFLE:
-        return "TREFLE";
+        return ("TREFLE");
         break;
     case CARREAU:
-        return "CARREAU";
+        return ("CARREAU");
         break;
     default:
         break;
     }
-    return NULL;
+    return (NULL);
 }
