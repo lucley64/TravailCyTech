@@ -1,92 +1,117 @@
+/**
+    @file listeCarte.c
+    @author Luc Leydert
+    @brief 
+    @version 0.1
+    @date 24/12/2022
+    
+    @copyright Copyright (c) 2022
+    
+ */
 #include "listeCarte.h"
 
 #include <stdlib.h>
 
 void creerListeCarte(ListCarte *list)
 {
-    ItemCarte *itemCarte = malloc(sizeof(ItemCarte));
+    ItemCarte *ite_itemCarte; // Premier item de la liste
 
-    list->first = itemCarte;
-    list->last = itemCarte + 1;
+    ite_itemCarte = malloc(sizeof(ItemCarte));
+
+    list->first = ite_itemCarte;
+    list->last = ite_itemCarte + 1;
     list->first->next = list->last;
 }
 
 void ajouterAvantCarte(ListCarte *list, sCarte item)
 {
-    ItemCarte *itemCarte = malloc(sizeof(ItemCarte));
+    ItemCarte *ite_itemCarte; // Un nouvel item de la liste
 
-    itemCarte->value = item;
+    ite_itemCarte = malloc(sizeof(ItemCarte));
+
+    ite_itemCarte->value = item;
     if (list->first->value.carte == 0)
     {
         free(list->first);
-        list->first = itemCarte;
-        list->last = itemCarte + 1;
-        itemCarte->next = list->last;
-        itemCarte->prev = list->first;
+        list->first = ite_itemCarte;
+        list->last = ite_itemCarte + 1;
+        ite_itemCarte->next = list->last;
+        ite_itemCarte->prev = list->first;
     }
     else
     {
-        itemCarte->next = list->first;
-        itemCarte->next->prev = itemCarte;
-        list->first = itemCarte;
+        ite_itemCarte->next = list->first;
+        ite_itemCarte->next->prev = ite_itemCarte;
+        list->first = ite_itemCarte;
     }
 }
 
 void ajouterApresCarte(ListCarte *list, sCarte item)
 {
-    ItemCarte *itemCarte = malloc(sizeof(ItemCarte));
+    ItemCarte *ite_itemCarte; // un nouvel item de la list
 
-    itemCarte->value = item;
+    ite_itemCarte = malloc(sizeof(ItemCarte));
+
+    ite_itemCarte->value = item;
     if (list->first->value.carte == 0)
     {
         free(list->first);
-        list->last = itemCarte + 1;
-        list->first = itemCarte;
-        itemCarte->prev = list->first;
-        itemCarte->next = list->last;
+        list->last = ite_itemCarte + 1;
+        list->first = ite_itemCarte;
+        ite_itemCarte->prev = list->first;
+        ite_itemCarte->next = list->last;
     }
     else
     {
-        itemCarte->prev = list->last - 1;
-        (list->last - 1)->next = itemCarte;
-        list->last = itemCarte + 1;
-        itemCarte->next = list->last;
+        ite_itemCarte->prev = list->last - 1;
+        (list->last - 1)->next = ite_itemCarte;
+        list->last = ite_itemCarte + 1;
+        ite_itemCarte->next = list->last;
     }
 }
 
 sCarte enleverAvantCarte(ListCarte *list)
 {
-    ItemCarte *itemCarte = list->first;
-    list->first = itemCarte->next;
+    ItemCarte *ite_itemCarte; // L'item à retirer
+    sCarte carte_item; // La carte retirée
 
-    sCarte item = itemCarte->value;
+    ite_itemCarte = list->first;
 
-    free(itemCarte);
+    list->first = ite_itemCarte->next;
 
-    return (item);
+    carte_item = ite_itemCarte->value;
+
+    free(ite_itemCarte);
+
+    return (carte_item);
 }
 
 sCarte enleverApresCarte(ListCarte *list)
 {
-    ItemCarte *itemCarte = list->last - 1;
-    list->last = itemCarte->prev + 1;
+    ItemCarte *ite_itemCarte; // L'item à retirer
+    sCarte carte_item; // La carte retirée
 
-    sCarte item = itemCarte->value;
+    ite_itemCarte = list->last - 1;
 
-    free(itemCarte);
+    list->last = ite_itemCarte->prev + 1;
 
-    return (item);
+    carte_item = ite_itemCarte->value;
+
+    free(ite_itemCarte);
+
+    return (carte_item);
 }
 
 int listCarteSize(const ListCarte *list)
 {
-    ItemCarte *itemCarte = list->first;
+    ItemCarte *ite_itemCarte; // Iterateur sur les cartes
+    ite_itemCarte = list->first;
     int size = 0;
 
-    while (itemCarte != list->last)
+    while (ite_itemCarte != list->last)
     {
         size++;
-        itemCarte = itemCarte->next;
+        ite_itemCarte = ite_itemCarte->next;
     }
     return (size);
 }
@@ -119,27 +144,27 @@ void arrayToListCarte(ListCarte *list, sCarte **tabCarte, int size)
 
 int getValeurTotale(const ListCarte *cartes)
 {
-    int valeur;
-    ItemCarte *carte;
+    int int_valeur; // La valeur totale
+    ItemCarte *ite_carte; // Iterateur sur les cartes
 
-    carte = cartes->first;
-    valeur = 0;
+    ite_carte = cartes->first;
+    int_valeur = 0;
 
-    while (carte != cartes->last)
+    while (ite_carte != cartes->last)
     {
-        if (carte->value.carte == VALET || carte->value.carte == DAME || carte->value.carte == ROI)
+        if (ite_carte->value.carte == VALET || ite_carte->value.carte == DAME || ite_carte->value.carte == ROI)
         {
-            valeur += 10;
+            int_valeur += 10;
         }
         else
         {
-            valeur += carte->value.carte;
+            int_valeur += ite_carte->value.carte;
         }
 
-        carte = carte->next;
+        ite_carte = ite_carte->next;
     }
 
-    return (valeur);
+    return (int_valeur);
 }
 
 char *getValeurCarte(const sCarte *carte)

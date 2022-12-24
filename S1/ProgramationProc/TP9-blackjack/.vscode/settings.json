@@ -9,6 +9,7 @@
     "sonarlint.pathToCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
     "files.associations": {
         "*.rmd": "markdown",
-        "listecarte.h": "c"
+        "listecarte.h": "c",
+        "cstdlib": "c"
     }
 }
