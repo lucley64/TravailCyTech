@@ -1,3 +1,13 @@
+/**
+ \file interface.c
+ \author Luc Leydert
+ \brief Représente toutes les interactions du joueur sur le programme
+ \version 0.1
+ \date 24/12/2022
+ \
+ \@copyright Copyright (c) 2022
+ \
+ */
 #include "interface.h"
 
 #include <errno.h>
@@ -6,11 +16,11 @@
 
 char *demanderNom()
 {
-    char *str_nom;
-    size_t size_size;
+    char *str_nom; // Nom du joueur
+    size_t size_size; // Longeur du nom
 
     size_size = 0;
-
+    
     printf("Veuillez saisir votre nom : \n");
     getline(&str_nom, &size_size, stdin);
 
@@ -23,14 +33,14 @@ char *demanderNom()
         }
     }
 
-    return str_nom;
+    return (str_nom);
 }
 
 int demanderMise(const char *nom)
 {
-    char *str_mise;
+    char *str_mise; // Mise du joueur en chaine de char
     size_t size_size;
-    long int int_mise;
+    long int int_mise; // Mise du joueur en int
 
     size_size = 0;
 
@@ -53,13 +63,13 @@ int demanderMise(const char *nom)
         exit(EXIT_FAILURE);
     }
 
-    return (int)int_mise;
+    return (int)(int_mise);
 }
 
 int demanderContinuer()
 {
-    char char_choix;
-    int int_verif;
+    char char_choix; // Choix du joueur
+    int int_verif; // Verif du scanf
     printf("Continuer de jouer ? [O/n]\n");
 
     int_verif = scanf("%c", &char_choix);
@@ -84,9 +94,9 @@ int demanderContinuer()
 
 int continuer()
 {
-    char char_choix;
-    int int_verif;
-    int int_choix;
+    char char_choix; // Choix en char
+    int int_verif; // Verif du scanf
+    int int_choix; // Choix en int
     printf("Carte ? [O/n]\n");
 
     int_verif = scanf("%c", &char_choix);
@@ -105,12 +115,12 @@ int continuer()
         scanf("%c", &char_choix);
     }
 
-    return int_choix;
+    return (int_choix);
 }
 
 void annoncerCartes(const ListCarte *cartes)
 {
-    ItemCarte *carte;
+    ItemCarte *carte; // Iterateur de cartes
 
     printf("Voici vos cartes \n");
 
@@ -163,7 +173,7 @@ void annoncerScore(const Joueur *joueur)
 
 void annoncerCartesToutLeMonde(const listJoueur *joueurs)
 {
-    ItemJoueur *joueur;
+    ItemJoueur *joueur; // Iterator joueur
 
     joueur = joueurs->first;
 
