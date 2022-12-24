@@ -1,5 +1,5 @@
 CC = gcc -Wall
-RM = rm -f
+RM = rm -rf
 LNK = -lm
 CP = cp -r -f
 
@@ -24,7 +24,7 @@ $(bindir)%.o : $(srcdir)%.c
 .PHONY : clean save restore doc init
 
 clean : 
-	$(RM) $(OBJ) $(PROG)
+	$(RM) $(OBJ) $(PROG) $(docdir)*
 
 save : 
 	$(CP) $(srcdir)* $(savdir)

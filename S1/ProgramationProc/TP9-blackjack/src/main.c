@@ -9,7 +9,7 @@
  \
  */
 
-#include "cartes.h"
+#include "jeu.h"
 
 /**
  \brief Programme principal
@@ -20,12 +20,11 @@
  */
 int main(int argc, char const *argv[])
 {
-    ListCarte *cartes;
+    Jeu jeu;
 
+    initialiserJeu(&jeu, 2);
 
-    cartes = initCartes();
-
-    melangerCartes(cartes);
+    gameLoop(&jeu);
 
 
     return (0);

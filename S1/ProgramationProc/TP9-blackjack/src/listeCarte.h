@@ -14,52 +14,59 @@
 
 #include "typesCartes.h"
 
-
 /**
  \brief Créé et initialise une liste de Carte
  \
  */
-void creerListe(ListCarte *);
+void creerListeCarte(ListCarte *);
 
 /**
  \brief Ajoute un élément au début de la liste
  \
  */
-void ajouterAvant(ListCarte *, sCarte);
+void ajouterAvantCarte(ListCarte *, sCarte);
 
 /**
  \brief Ajoute un élément en fin de liste
  \
  */
-void ajouterApres(ListCarte *, sCarte);
+void ajouterApresCarte(ListCarte *, sCarte);
 
 /**
  \brief Retire le premier élément
  \
  */
-sCarte enleverAvant(ListCarte *);
+sCarte enleverAvantCarte(ListCarte *);
 
 /**
  \brief Retire le dernier élément
  \
  */
-sCarte enleverApres(ListCarte *);
+sCarte enleverApresCarte(ListCarte *);
 
 /// @brief Renvoie la taille de la liste
 /// @param  ListCarte* La liste
 /// @return La taille de la liste
-int listSize(const ListCarte *);
+int listCarteSize(const ListCarte *);
 
 /// @brief Converti la liste en tableau
 /// @param  ListCarte* La liste
 /// @param sCarte** Le tableau des cartes
 /// @param int La taille du tableau
-void listToArray(ListCarte *, sCarte **, int *);
+void listCarteToArray(ListCarte *, sCarte **, int *);
 
 /// @brief Converti un tableau de cartes en liste
 /// @param  ListCarte* La liste
 /// @param  sCarte** Le tableau des cartes
 /// @param  int La taille du tableau
-void arrayToList(ListCarte *, sCarte **, int);
+void arrayToListCarte(ListCarte *, sCarte **, int);
+
+int getValeurTotale(const ListCarte *cartes);
+
+char* getValeurCarte(const sCarte *carte);
+
+char* getCouleurCarte(const sCarte *carte);
+
+
 
 #endif // LISTE_CARTE_H

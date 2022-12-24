@@ -9,19 +9,23 @@
  \
  */
 
+#pragma once
+
 #include "listeCarte.h"
 
 /// @brief Les différents états du joueur
 typedef enum
 {
-    /** Le joueur a fait blackjack*/
-    BLACKJACK,
-    /** Le joueur a fait 21*/
-    VINGT_ET_UN,
     /** Le joueur a dépassé 21*/
     DEPASSE,
     /** Le joueur est en dessous de 21*/
     DESSOUS,
+    /** Le joueur a fait 21*/
+    VINGT_ET_UN,
+    /** Le joueur a fait blackjack*/
+    BLACKJACK,
+    /** Le joueur represente le croupier*/
+    CROUPIER,
 } EtatJoueur;
 
 /// @brief Structure représantant un joueur
@@ -31,6 +35,8 @@ typedef struct
     char *name;
     /** La mise du joueur*/
     int mise;
+    /** Le score du joueur*/
+    int score;
     /** La main du joueur*/
     ListCarte hand;
     /** L'état de jeu du joueur*/
@@ -39,13 +45,13 @@ typedef struct
 
 typedef struct itemJoueur
 {
-    itemJoueur *prev;
+    struct itemJoueur *prev;
     Joueur value;
-    itemJoueur *next;
-} itemJoueur;
+    struct itemJoueur *next;
+} ItemJoueur;
 
 typedef struct
 {
-    itemJoueur *first;
-    itemJoueur *last;
+    ItemJoueur *first;
+    ItemJoueur *last;
 } listJoueur;

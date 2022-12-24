@@ -52,3 +52,10 @@ void listJoueurToArray(listJoueur *joueurs, Joueur **tabJoueur, int *taille);
 /// @param  Joueur** Le tableau des joueurs
 /// @param  int La taille du tableau
 void arrayToListJoueur(listJoueur *joueurs, Joueur **tabJoueur, int taille);
+
+
+void changerEtatJoueur(Joueur* joueur);
+
+char* getEtatJoueur(const Joueur* joueur);
+
+EtatJoueur getEtatCroupier(const Joueur* croupier);
