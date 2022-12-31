@@ -186,7 +186,7 @@ void distribuerScore(Jeu *jeu)
     while (ite_joueur != jeu->listJoueur.last - 1)
     {
         int_valeurJoueur = getValeurTotale(&ite_joueur->value.hand);
-        if (ite_joueur->value.etat < etatCroupier || (etatCroupier == DESSOUS && int_valeurJoueur < int_valeurCroupier))
+        if (ite_joueur->value.etat < etatCroupier || (etatCroupier == DESSOUS && ite_joueur->value.etat == DESSOUS && int_valeurJoueur < int_valeurCroupier))
         {
             if (ite_joueur->value.etat == DEPASSE)
             {
@@ -198,7 +198,7 @@ void distribuerScore(Jeu *jeu)
             }
             ite_joueur->value.score -= ite_joueur->value.mise;
         }
-        else if (ite_joueur->value.etat > etatCroupier || (etatCroupier == DESSOUS && int_valeurJoueur > int_valeurCroupier))
+        else if (ite_joueur->value.etat > etatCroupier || (etatCroupier == DESSOUS && ite_joueur->value.etat == DESSOUS && int_valeurJoueur > int_valeurCroupier))
         {
             if (ite_joueur->value.etat == BLACKJACK)
             {

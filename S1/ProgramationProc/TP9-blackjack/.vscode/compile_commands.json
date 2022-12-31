@@ -1,32 +1,32 @@
 [
     {
         "command": "gcc -Wall -c src/interface.c -o bin/interface.o",
-        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
-        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/interface.c"
+        "directory": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack/src/interface.c"
     },
     {
         "command": "gcc -Wall -c src/cartes.c -o bin/cartes.o",
-        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
-        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/cartes.c"
+        "directory": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack/src/cartes.c"
     },
     {
         "command": "gcc -Wall -c src/listJoueur.c -o bin/listJoueur.o",
-        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
-        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/listJoueur.c"
+        "directory": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack/src/listJoueur.c"
     },
     {
         "command": "gcc -Wall -c src/jeu.c -o bin/jeu.o",
-        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
-        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/jeu.c"
+        "directory": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack/src/jeu.c"
     },
     {
         "command": "gcc -Wall -c src/main.c -o bin/main.o",
-        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
-        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/main.c"
+        "directory": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack/src/main.c"
     },
     {
         "command": "gcc -Wall -c src/listeCarte.c -o bin/listeCarte.o",
-        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack",
-        "file": "/home/cytech/Travail/S1/ProgramationProc/TP9-blackjack/src/listeCarte.c"
+        "directory": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack",
+        "file": "/home/lucley64/TravailCyTech/S1/ProgramationProc/TP9-blackjack/src/listeCarte.c"
     }
 ]
