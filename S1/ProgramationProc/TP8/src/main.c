@@ -21,6 +21,13 @@
  */
 void printHelp();
 
+/// @brief Récupère les different arguments
+/// @param str_methode La méthode à utiliser
+/// @param str_decal Nombre de décalage pour cesar
+/// @param str_cle Clé pour vigene
+/// @param str_message Le message a encoder
+/// @param argc Compte des arguments
+/// @param argv Tableau des arguments
 void getArgs(char **str_methode, char **str_decal, char **str_cle, char **str_message, int argc, const char **argv);
 
 /**
