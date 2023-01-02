@@ -15,6 +15,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
+#include <assert.h>
 
 /**
  \brief Demande à l'utilisateur le décalage
@@ -194,7 +196,50 @@ void vigene(const char *cle, char *message)
 
     free(tint_cle);
 }
-void scytale(const char *message)
+void scytale(char **message)
 {
-    // TODO
+    assert(*message != NULL && strlen(*message) > 0);
+    size_t size_lenMessage;
+    char **ttchar_tabMessage;
+    size_t size_offset;
+
+    size_lenMessage = strlen(*message);
+
+    while (round(sqrt((double)size_lenMessage)) != sqrt((double)size_lenMessage))
+    {
+        size_lenMessage += 1;
+    }
+
+    size_offset = (size_t)sqrt((double)size_lenMessage);
+
+    ttchar_tabMessage = (char **)malloc(size_offset * sizeof(char *));
+    for (size_t i = 0; i < size_offset; i++)
+    {
+        ttchar_tabMessage[i] = (char *)malloc(size_offset * sizeof(char));
+    }
+
+    for (size_t i = 0; i < size_offset; i++)
+    {
+        for (size_t j = 0; j < size_offset; j++)
+        {
+            if (i * size_offset + j < strlen(*message))
+            {
+                ttchar_tabMessage[i][j] = (*message)[i * size_offset + j];
+            }
+            else{
+                ttchar_tabMessage[i][j] = ' ';
+            }
+        }
+    }
+
+    free(*message);
+    *message = (char *)malloc(sizeof(char) * size_lenMessage);
+
+    for (size_t i = 0; i < size_offset; i++)
+    {
+        for (size_t j = 0; j < size_offset; j++)
+        {
+            (*message)[i * size_offset + j] = ttchar_tabMessage[j][i];
+        }
+    }
 }

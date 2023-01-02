@@ -3,5 +3,10 @@
         "command": "gcc -Wall -c src/codage.c -o bin/codage.o",
         "directory": "/home/cytech/Travail/S1/ProgramationProc/TP8",
         "file": "/home/cytech/Travail/S1/ProgramationProc/TP8/src/codage.c"
+    },
+    {
+        "command": "gcc -Wall -c src/main.c -o bin/main.o",
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP8",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP8/src/main.c"
     }
 ]

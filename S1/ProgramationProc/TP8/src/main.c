@@ -67,7 +67,7 @@ int main(int argc, char const *argv[])
         }
         else if (!strcmp(str_methode, "scytale"))
         {
-            scytale(str_message);
+            scytale(&str_message);
         }
         else
         {

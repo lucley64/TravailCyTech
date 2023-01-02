@@ -32,7 +32,7 @@ void vigene(const char* cle, char *message);
  \
  \param message Le message à encoder
  */
-void scytale(const char *message);
+void scytale(char **message);
 
 /**
  \brief Demande à l'utilisateur le message
