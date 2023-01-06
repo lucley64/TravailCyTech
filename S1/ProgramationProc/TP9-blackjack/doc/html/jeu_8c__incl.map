@@ -1,0 +1,13 @@
+<map id="src/jeu.c" name="src/jeu.c">
+<area shape="rect" id="node1" title=" " alt="" coords="137,5,213,32"/>
+<area shape="rect" id="node2" href="$jeu_8h.html" title="Fichier concernan la gestion du jeu." alt="" coords="10,80,65,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="89,80,159,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="184,80,267,107"/>
+<area shape="rect" id="node10" href="$interface_8h.html" title="Gestion de l&#39;interface et l&#39;interaction avec le(s) joueur(s)" alt="" coords="291,80,383,107"/>
+<area shape="rect" id="node3" href="$listJoueur_8h_source.html" title=" " alt="" coords="114,155,209,181"/>
+<area shape="rect" id="node7" href="$cartes_8h.html" title="Fichier correspondant à l&#39;entête la getion des cartes." alt="" coords="5,229,80,256"/>
+<area shape="rect" id="node4" href="$typesJoueur_8h_source.html" title=" " alt="" coords="106,229,217,256"/>
+<area shape="rect" id="node5" href="$listeCarte_8h_source.html" title=" " alt="" coords="113,304,210,331"/>
+<area shape="rect" id="node6" href="$typesCartes_8h.html" title="Fichier corespondant à tout les types utilisés." alt="" coords="47,379,159,405"/>
+<area shape="rect" id="node11" title=" " alt="" coords="302,155,373,181"/>
+</map>

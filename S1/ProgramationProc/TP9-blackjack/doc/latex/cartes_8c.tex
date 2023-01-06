@@ -1,0 +1,112 @@
+\hypertarget{cartes_8c}{}\doxysection{Référence du fichier src/cartes.c}
+\label{cartes_8c}\index{src/cartes.c@{src/cartes.c}}
+
+
+Fichier correspondant au corp de fonction de la gestion des cartes.  
+
+
+{\ttfamily \#include \char`\"{}cartes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}liste\+Carte.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stdlib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}time.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de cartes.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cartes_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$ \mbox{\hyperlink{cartes_8c_acec3f04f53139d59f4ee84ba40be90b9}{init\+Cartes}} ()
+\begin{DoxyCompactList}\small\item\em Initialise la pioche des cartes en lui alouan de la memoire. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cartes_8c_a57d91c763d5b3fb738cded14c6c5468d}{melanger\+Cartes}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list\+Carte)
+\begin{DoxyCompactList}\small\item\em Mélange la pioche. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsCarte}{s\+Carte}} \mbox{\hyperlink{cartes_8c_a07345dec2ab9f25fdb3b9dea691ac2f2}{create\+Carte}} (\mbox{\hyperlink{typesCartes_8h_a06cdfdb10e75516b85d36331b1206742}{Carte}} carte, \mbox{\hyperlink{typesCartes_8h_a5ae560324cb531bfdbd1083b7cd7fece}{Carte\+Color}} color)
+\begin{DoxyCompactList}\small\item\em créé une carte \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cartes_8c_a0fdef53744a269648e1ec6bcfc767c3e}{init\+Par\+Couleur}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list\+Carte, \mbox{\hyperlink{typesCartes_8h_a5ae560324cb531bfdbd1083b7cd7fece}{Carte\+Color}} color)
+\begin{DoxyCompactList}\small\item\em Initialise la list pour une couleur donné \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier correspondant au corp de fonction de la gestion des cartes. 
+
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+08/12/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{cartes_8c_a07345dec2ab9f25fdb3b9dea691ac2f2}\label{cartes_8c_a07345dec2ab9f25fdb3b9dea691ac2f2}} 
+\index{cartes.c@{cartes.c}!createCarte@{createCarte}}
+\index{createCarte@{createCarte}!cartes.c@{cartes.c}}
+\doxysubsubsection{\texorpdfstring{createCarte()}{createCarte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsCarte}{s\+Carte}} create\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typesCartes_8h_a06cdfdb10e75516b85d36331b1206742}{Carte}}}]{carte,  }\item[{\mbox{\hyperlink{typesCartes_8h_a5ae560324cb531bfdbd1083b7cd7fece}{Carte\+Color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+créé une carte 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & la figure de la carte \\
+\hline
+{\em color} & la couleur de la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La nouvelle carte créé 
+\end{DoxyReturn}
+\mbox{\Hypertarget{cartes_8c_acec3f04f53139d59f4ee84ba40be90b9}\label{cartes_8c_acec3f04f53139d59f4ee84ba40be90b9}} 
+\index{cartes.c@{cartes.c}!initCartes@{initCartes}}
+\index{initCartes@{initCartes}!cartes.c@{cartes.c}}
+\doxysubsubsection{\texorpdfstring{initCartes()}{initCartes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structListCarte}{List\+Carte}}$\ast$ init\+Cartes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialise la pioche des cartes en lui alouan de la memoire. 
+
+\begin{DoxyReturn}{Renvoie}
+Une liste de cartes représantant une pioche des cartes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{cartes_8c_a0fdef53744a269648e1ec6bcfc767c3e}\label{cartes_8c_a0fdef53744a269648e1ec6bcfc767c3e}} 
+\index{cartes.c@{cartes.c}!initParCouleur@{initParCouleur}}
+\index{initParCouleur@{initParCouleur}!cartes.c@{cartes.c}}
+\doxysubsubsection{\texorpdfstring{initParCouleur()}{initParCouleur()}}
+{\footnotesize\ttfamily void init\+Par\+Couleur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{list\+Carte,  }\item[{\mbox{\hyperlink{typesCartes_8h_a5ae560324cb531bfdbd1083b7cd7fece}{Carte\+Color}}}]{color }\end{DoxyParamCaption})}
+
+
+
+Initialise la list pour une couleur donné 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em list\+Carte} & La liste de cartes \\
+\hline
+{\em color} & la couleur de la carte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{cartes_8c_a57d91c763d5b3fb738cded14c6c5468d}\label{cartes_8c_a57d91c763d5b3fb738cded14c6c5468d}} 
+\index{cartes.c@{cartes.c}!melangerCartes@{melangerCartes}}
+\index{melangerCartes@{melangerCartes}!cartes.c@{cartes.c}}
+\doxysubsubsection{\texorpdfstring{melangerCartes()}{melangerCartes()}}
+{\footnotesize\ttfamily void melanger\+Cartes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{list\+Carte }\end{DoxyParamCaption})}
+
+
+
+Mélange la pioche. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{structListCarte}{List\+Carte}}} & pioche \\
+\hline
+\end{DoxyParams}

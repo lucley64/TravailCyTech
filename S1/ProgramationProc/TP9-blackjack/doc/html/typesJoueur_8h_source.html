@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack:  Fichier source de src/typesJoueur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">typesJoueur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;listeCarte.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    DEPASSE,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    DESSOUS,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    VINGT_ET_UN,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    BLACKJACK,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CROUPIER,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} EtatJoueur;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structJoueur.html">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structJoueur.html#a35bbb7b7b17c11cad56be1dd08fc6a61">   35</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="structJoueur.html#a35bbb7b7b17c11cad56be1dd08fc6a61">name</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structJoueur.html#a77dfcb6701f2b6a62c55526c96c45783">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structJoueur.html#a77dfcb6701f2b6a62c55526c96c45783">mise</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structJoueur.html#a680896b9ff71c2762ae653ef6aa7c8ce">   39</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structJoueur.html#a680896b9ff71c2762ae653ef6aa7c8ce">score</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structJoueur.html#a7bd354818de1b2e5a8387be930e18c70">   41</a></span>&#160;    <a class="code" href="structListCarte.html">ListCarte</a> <a class="code" href="structJoueur.html#a7bd354818de1b2e5a8387be930e18c70">hand</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structJoueur.html#a60020ec8f1056253e40e81ed1d6cbfa7">   43</a></span>&#160;    EtatJoueur <a class="code" href="structJoueur.html#a60020ec8f1056253e40e81ed1d6cbfa7">etat</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <a class="code" href="structJoueur.html">Joueur</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structitemJoueur.html">   46</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structitemJoueur.html">itemJoueur</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">struct </span><a class="code" href="structitemJoueur.html">itemJoueur</a> *prev;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="structJoueur.html">Joueur</a> value;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">struct </span><a class="code" href="structitemJoueur.html">itemJoueur</a> *next;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <a class="code" href="structitemJoueur.html">ItemJoueur</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structlistJoueur.html">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="structitemJoueur.html">ItemJoueur</a> *first;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="structitemJoueur.html">ItemJoueur</a> *last;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <a class="code" href="structlistJoueur.html">listJoueur</a>;</div>
+<div class="ttc" id="astructJoueur_html"><div class="ttname"><a href="structJoueur.html">Joueur</a></div><div class="ttdoc">Structure représantant un joueur.</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:33</div></div>
+<div class="ttc" id="astructJoueur_html_a35bbb7b7b17c11cad56be1dd08fc6a61"><div class="ttname"><a href="structJoueur.html#a35bbb7b7b17c11cad56be1dd08fc6a61">Joueur::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:35</div></div>
+<div class="ttc" id="astructJoueur_html_a60020ec8f1056253e40e81ed1d6cbfa7"><div class="ttname"><a href="structJoueur.html#a60020ec8f1056253e40e81ed1d6cbfa7">Joueur::etat</a></div><div class="ttdeci">EtatJoueur etat</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:43</div></div>
+<div class="ttc" id="astructJoueur_html_a680896b9ff71c2762ae653ef6aa7c8ce"><div class="ttname"><a href="structJoueur.html#a680896b9ff71c2762ae653ef6aa7c8ce">Joueur::score</a></div><div class="ttdeci">int score</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:39</div></div>
+<div class="ttc" id="astructJoueur_html_a77dfcb6701f2b6a62c55526c96c45783"><div class="ttname"><a href="structJoueur.html#a77dfcb6701f2b6a62c55526c96c45783">Joueur::mise</a></div><div class="ttdeci">int mise</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:37</div></div>
+<div class="ttc" id="astructJoueur_html_a7bd354818de1b2e5a8387be930e18c70"><div class="ttname"><a href="structJoueur.html#a7bd354818de1b2e5a8387be930e18c70">Joueur::hand</a></div><div class="ttdeci">ListCarte hand</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:41</div></div>
+<div class="ttc" id="astructListCarte_html"><div class="ttname"><a href="structListCarte.html">ListCarte</a></div><div class="ttdoc">La liste en elle-même .</div><div class="ttdef"><b>Definition:</b> typesCartes.h:88</div></div>
+<div class="ttc" id="astructitemJoueur_html"><div class="ttname"><a href="structitemJoueur.html">itemJoueur</a></div><div class="ttdef"><b>Definition:</b> typesJoueur.h:47</div></div>
+<div class="ttc" id="astructlistJoueur_html"><div class="ttname"><a href="structlistJoueur.html">listJoueur</a></div><div class="ttdef"><b>Definition:</b> typesJoueur.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

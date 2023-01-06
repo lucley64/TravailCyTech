@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack:  Fichier source de src/typesCartes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">typesCartes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="typesCartes_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef TYPES_CARTES_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define TYPES_CARTES_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a0b84664ffa026b1a5f43c051cd6fe69f">   19</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a0b84664ffa026b1a5f43c051cd6fe69f">AS</a> = 1, </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742afa98f875c543680be40a482aa523e8f5">   21</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742afa98f875c543680be40a482aa523e8f5">DEUX</a> = 2, </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742af4a3bc43057599ac388b5a887335cdb5">   23</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742af4a3bc43057599ac388b5a887335cdb5">TROIS</a> = 3, </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a97125267358e895064da940f571daec7">   25</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a97125267358e895064da940f571daec7">QUATRE</a> = 4,</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742ae2996d8da47978a309deebde23aec4ab">   27</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742ae2996d8da47978a309deebde23aec4ab">CINQ</a> = 5,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742aadffddd32c3e7497e32cd7e430c9c106">   29</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742aadffddd32c3e7497e32cd7e430c9c106">SIX</a> = 6, </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a9a9953fcb482418f2a1fe258c4f46a70">   31</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a9a9953fcb482418f2a1fe258c4f46a70">SEPT</a> = 7, </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a29ed9d7f614ba184a86644f1c9a03291">   33</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a29ed9d7f614ba184a86644f1c9a03291">HUIT</a> = 8, </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a79e4607adbe51052bdfebc8c55cc85c8">   35</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a79e4607adbe51052bdfebc8c55cc85c8">NEUF</a> = 9, </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a1507d51307dbb0fbb3b438e591dc99e4">   37</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a1507d51307dbb0fbb3b438e591dc99e4">DIX</a> = 10, </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a63afc18876b4864ae749c6343dae3ba0">   39</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a63afc18876b4864ae749c6343dae3ba0">VALET</a> = 11,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a436250abd7e6692a3ab0983590128093">   41</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a436250abd7e6692a3ab0983590128093">DAME</a> = 12, </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a630b67ff829a4c185e65091797e9a03c">   43</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a630b67ff829a4c185e65091797e9a03c">ROI</a> = 13 , </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742">Carte</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">   47</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fecea835c1d28b93fd71585c0bd8c629ea98a">   50</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fecea835c1d28b93fd71585c0bd8c629ea98a">PIQUE</a>, </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceafe25ae4ef5c689f46e1c4c972243d4db">   52</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceafe25ae4ef5c689f46e1c4c972243d4db">COEUR</a>, </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceaa8e960c091829457b4833077289e00a0">   54</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceaa8e960c091829457b4833077289e00a0">CARREAU</a>, </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceaff50f65df1ad73caec3e886c499657ba">   56</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceaff50f65df1ad73caec3e886c499657ba">TREFLE</a> , </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">CarteColor</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structsCarte.html">   60</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structsCarte.html#a0b109b5c38f7234b061dbfe7c560fcef">   63</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742">Carte</a> <a class="code" href="structsCarte.html#a0b109b5c38f7234b061dbfe7c560fcef">carte</a>; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structsCarte.html#ae75b1c79a5f38badfae1faf86b3bcf06">   65</a></span>&#160;    <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">CarteColor</a> <a class="code" href="structsCarte.html#ae75b1c79a5f38badfae1faf86b3bcf06">carte_color</a>; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <a class="code" href="structsCarte.html">sCarte</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structitemCarte.html">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structitemCarte.html">itemCarte</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structitemCarte.html#abdec3b8c9cf19ec02f254f29a86a980b">   76</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structitemCarte.html">itemCarte</a> *<a class="code" href="structitemCarte.html#abdec3b8c9cf19ec02f254f29a86a980b">prev</a>; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structitemCarte.html#ab7c1b2e7cb5a055ab7894eeb9bfe8599">   78</a></span>&#160;    <a class="code" href="structsCarte.html">sCarte</a> <a class="code" href="structitemCarte.html#ab7c1b2e7cb5a055ab7894eeb9bfe8599">value</a>;           </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structitemCarte.html#a1812b95e40a3254730aaa97ced1f29a6">   80</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structitemCarte.html">itemCarte</a> *<a class="code" href="structitemCarte.html#a1812b95e40a3254730aaa97ced1f29a6">next</a>; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="typesCartes_8h.html#a83a14acb3cc2d89ab753bdc1b90e4331">   81</a></span>&#160;} <a class="code" href="typesCartes_8h.html#a83a14acb3cc2d89ab753bdc1b90e4331">ItemCarte</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structListCarte.html">   87</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structListCarte.html#aab648bae181d6d767112f19bb9ebf7f6">   90</a></span>&#160;    <a class="code" href="structitemCarte.html">ItemCarte</a> *<a class="code" href="structListCarte.html#aab648bae181d6d767112f19bb9ebf7f6">first</a>; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structListCarte.html#aa36af45176d0a9d26981ef57e496a3e4">   92</a></span>&#160;    <a class="code" href="structitemCarte.html">ItemCarte</a> *<a class="code" href="structListCarte.html#aa36af45176d0a9d26981ef57e496a3e4">last</a>;  </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <a class="code" href="structListCarte.html">ListCarte</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// TYPES_CARTES_H</span></div>
+<div class="ttc" id="astructListCarte_html"><div class="ttname"><a href="structListCarte.html">ListCarte</a></div><div class="ttdoc">La liste en elle-même .</div><div class="ttdef"><b>Definition:</b> typesCartes.h:88</div></div>
+<div class="ttc" id="astructListCarte_html_aa36af45176d0a9d26981ef57e496a3e4"><div class="ttname"><a href="structListCarte.html#aa36af45176d0a9d26981ef57e496a3e4">ListCarte::last</a></div><div class="ttdeci">ItemCarte * last</div><div class="ttdef"><b>Definition:</b> typesCartes.h:92</div></div>
+<div class="ttc" id="astructListCarte_html_aab648bae181d6d767112f19bb9ebf7f6"><div class="ttname"><a href="structListCarte.html#aab648bae181d6d767112f19bb9ebf7f6">ListCarte::first</a></div><div class="ttdeci">ItemCarte * first</div><div class="ttdef"><b>Definition:</b> typesCartes.h:90</div></div>
+<div class="ttc" id="astructitemCarte_html"><div class="ttname"><a href="structitemCarte.html">itemCarte</a></div><div class="ttdoc">Un item de la liste .</div><div class="ttdef"><b>Definition:</b> typesCartes.h:74</div></div>
+<div class="ttc" id="astructitemCarte_html_a1812b95e40a3254730aaa97ced1f29a6"><div class="ttname"><a href="structitemCarte.html#a1812b95e40a3254730aaa97ced1f29a6">itemCarte::next</a></div><div class="ttdeci">struct itemCarte * next</div><div class="ttdef"><b>Definition:</b> typesCartes.h:80</div></div>
+<div class="ttc" id="astructitemCarte_html_ab7c1b2e7cb5a055ab7894eeb9bfe8599"><div class="ttname"><a href="structitemCarte.html#ab7c1b2e7cb5a055ab7894eeb9bfe8599">itemCarte::value</a></div><div class="ttdeci">sCarte value</div><div class="ttdef"><b>Definition:</b> typesCartes.h:78</div></div>
+<div class="ttc" id="astructitemCarte_html_abdec3b8c9cf19ec02f254f29a86a980b"><div class="ttname"><a href="structitemCarte.html#abdec3b8c9cf19ec02f254f29a86a980b">itemCarte::prev</a></div><div class="ttdeci">struct itemCarte * prev</div><div class="ttdef"><b>Definition:</b> typesCartes.h:76</div></div>
+<div class="ttc" id="astructsCarte_html"><div class="ttname"><a href="structsCarte.html">sCarte</a></div><div class="ttdoc">Structure représantant une carte.</div><div class="ttdef"><b>Definition:</b> typesCartes.h:61</div></div>
+<div class="ttc" id="astructsCarte_html_a0b109b5c38f7234b061dbfe7c560fcef"><div class="ttname"><a href="structsCarte.html#a0b109b5c38f7234b061dbfe7c560fcef">sCarte::carte</a></div><div class="ttdeci">Carte carte</div><div class="ttdef"><b>Definition:</b> typesCartes.h:63</div></div>
+<div class="ttc" id="astructsCarte_html_ae75b1c79a5f38badfae1faf86b3bcf06"><div class="ttname"><a href="structsCarte.html#ae75b1c79a5f38badfae1faf86b3bcf06">sCarte::carte_color</a></div><div class="ttdeci">CarteColor carte_color</div><div class="ttdef"><b>Definition:</b> typesCartes.h:65</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742">Carte</a></div><div class="ttdeci">Carte</div><div class="ttdoc">Enum représantant les valeurs de cartes.</div><div class="ttdef"><b>Definition:</b> typesCartes.h:17</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a0b84664ffa026b1a5f43c051cd6fe69f"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a0b84664ffa026b1a5f43c051cd6fe69f">AS</a></div><div class="ttdeci">@ AS</div><div class="ttdef"><b>Definition:</b> typesCartes.h:19</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a1507d51307dbb0fbb3b438e591dc99e4"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a1507d51307dbb0fbb3b438e591dc99e4">DIX</a></div><div class="ttdeci">@ DIX</div><div class="ttdef"><b>Definition:</b> typesCartes.h:37</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a29ed9d7f614ba184a86644f1c9a03291"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a29ed9d7f614ba184a86644f1c9a03291">HUIT</a></div><div class="ttdeci">@ HUIT</div><div class="ttdef"><b>Definition:</b> typesCartes.h:33</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a436250abd7e6692a3ab0983590128093"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a436250abd7e6692a3ab0983590128093">DAME</a></div><div class="ttdeci">@ DAME</div><div class="ttdef"><b>Definition:</b> typesCartes.h:41</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a630b67ff829a4c185e65091797e9a03c"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a630b67ff829a4c185e65091797e9a03c">ROI</a></div><div class="ttdeci">@ ROI</div><div class="ttdef"><b>Definition:</b> typesCartes.h:43</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a63afc18876b4864ae749c6343dae3ba0"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a63afc18876b4864ae749c6343dae3ba0">VALET</a></div><div class="ttdeci">@ VALET</div><div class="ttdef"><b>Definition:</b> typesCartes.h:39</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a79e4607adbe51052bdfebc8c55cc85c8"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a79e4607adbe51052bdfebc8c55cc85c8">NEUF</a></div><div class="ttdeci">@ NEUF</div><div class="ttdef"><b>Definition:</b> typesCartes.h:35</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a97125267358e895064da940f571daec7"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a97125267358e895064da940f571daec7">QUATRE</a></div><div class="ttdeci">@ QUATRE</div><div class="ttdef"><b>Definition:</b> typesCartes.h:25</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742a9a9953fcb482418f2a1fe258c4f46a70"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742a9a9953fcb482418f2a1fe258c4f46a70">SEPT</a></div><div class="ttdeci">@ SEPT</div><div class="ttdef"><b>Definition:</b> typesCartes.h:31</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742aadffddd32c3e7497e32cd7e430c9c106"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742aadffddd32c3e7497e32cd7e430c9c106">SIX</a></div><div class="ttdeci">@ SIX</div><div class="ttdef"><b>Definition:</b> typesCartes.h:29</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742ae2996d8da47978a309deebde23aec4ab"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742ae2996d8da47978a309deebde23aec4ab">CINQ</a></div><div class="ttdeci">@ CINQ</div><div class="ttdef"><b>Definition:</b> typesCartes.h:27</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742af4a3bc43057599ac388b5a887335cdb5"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742af4a3bc43057599ac388b5a887335cdb5">TROIS</a></div><div class="ttdeci">@ TROIS</div><div class="ttdef"><b>Definition:</b> typesCartes.h:23</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742afa98f875c543680be40a482aa523e8f5"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742afa98f875c543680be40a482aa523e8f5">DEUX</a></div><div class="ttdeci">@ DEUX</div><div class="ttdef"><b>Definition:</b> typesCartes.h:21</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a5ae560324cb531bfdbd1083b7cd7fece"><div class="ttname"><a href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">CarteColor</a></div><div class="ttdeci">CarteColor</div><div class="ttdoc">Représente la couleur de la carte.</div><div class="ttdef"><b>Definition:</b> typesCartes.h:48</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a5ae560324cb531bfdbd1083b7cd7fecea835c1d28b93fd71585c0bd8c629ea98a"><div class="ttname"><a href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fecea835c1d28b93fd71585c0bd8c629ea98a">PIQUE</a></div><div class="ttdeci">@ PIQUE</div><div class="ttdef"><b>Definition:</b> typesCartes.h:50</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a5ae560324cb531bfdbd1083b7cd7feceaa8e960c091829457b4833077289e00a0"><div class="ttname"><a href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceaa8e960c091829457b4833077289e00a0">CARREAU</a></div><div class="ttdeci">@ CARREAU</div><div class="ttdef"><b>Definition:</b> typesCartes.h:54</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a5ae560324cb531bfdbd1083b7cd7feceafe25ae4ef5c689f46e1c4c972243d4db"><div class="ttname"><a href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceafe25ae4ef5c689f46e1c4c972243d4db">COEUR</a></div><div class="ttdeci">@ COEUR</div><div class="ttdef"><b>Definition:</b> typesCartes.h:52</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a5ae560324cb531bfdbd1083b7cd7feceaff50f65df1ad73caec3e886c499657ba"><div class="ttname"><a href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7feceaff50f65df1ad73caec3e886c499657ba">TREFLE</a></div><div class="ttdeci">@ TREFLE</div><div class="ttdef"><b>Definition:</b> typesCartes.h:56</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a83a14acb3cc2d89ab753bdc1b90e4331"><div class="ttname"><a href="typesCartes_8h.html#a83a14acb3cc2d89ab753bdc1b90e4331">ItemCarte</a></div><div class="ttdeci">struct itemCarte ItemCarte</div><div class="ttdoc">Un item de la liste .</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,89 @@
+\hypertarget{jeu_8h}{}\doxysection{Référence du fichier src/jeu.h}
+\label{jeu_8h}\index{src/jeu.h@{src/jeu.h}}
+
+
+Fichier concernan la gestion du jeu.  
+
+
+{\ttfamily \#include \char`\"{}list\+Joueur.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cartes.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de jeu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{jeu_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{jeu_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structJeu}{Jeu}}
+\begin{DoxyCompactList}\small\item\em Structure contenant tout le jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{jeu_8h_a65e80087b8d13c582ef4bfcd294792a0}{initialiser\+Jeu}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu, int nb\+Joueurs)
+\begin{DoxyCompactList}\small\item\em Initialise la partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8h_a8c0e0d808a8cb144712b38b750ae5d24}{game\+Loop}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Boucle de jeu principale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fichier concernan la gestion du jeu. 
+
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+16/12/2022 \textbackslash{} 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 \textbackslash{} 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{jeu_8h_a8c0e0d808a8cb144712b38b750ae5d24}\label{jeu_8h_a8c0e0d808a8cb144712b38b750ae5d24}} 
+\index{jeu.h@{jeu.h}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!jeu.h@{jeu.h}}
+\doxysubsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily void game\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Boucle de jeu principale. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur le jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8h_a65e80087b8d13c582ef4bfcd294792a0}\label{jeu_8h_a65e80087b8d13c582ef4bfcd294792a0}} 
+\index{jeu.h@{jeu.h}!initialiserJeu@{initialiserJeu}}
+\index{initialiserJeu@{initialiserJeu}!jeu.h@{jeu.h}}
+\doxysubsubsection{\texorpdfstring{initialiserJeu()}{initialiserJeu()}}
+{\footnotesize\ttfamily void initialiser\+Jeu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu,  }\item[{int}]{nb\+Joueurs }\end{DoxyParamCaption})}
+
+
+
+Initialise la partie. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur le jeu \\
+\hline
+{\em nb\+Joueurs} & Le nombre de joueurs \\
+\hline
+\end{DoxyParams}

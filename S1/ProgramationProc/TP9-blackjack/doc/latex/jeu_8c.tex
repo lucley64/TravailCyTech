@@ -1,0 +1,231 @@
+\hypertarget{jeu_8c}{}\doxysection{Référence du fichier src/jeu.c}
+\label{jeu_8c}\index{src/jeu.c@{src/jeu.c}}
+{\ttfamily \#include \char`\"{}jeu.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}interface.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de jeu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jeu_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{jeu_8c_a0391429e9490c3c0fb031263d4b27625}{distribuer\+Cartes}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Distribue les cartes au joueurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_ad330b36e05fa46195af4c52f15b824a7}{donner\+Carte}} (\mbox{\hyperlink{structJoueur}{Joueur}} $\ast$joueur, \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$cartes)
+\begin{DoxyCompactList}\small\item\em Donne une carte de la pioche au joueur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structJoueur}{Joueur}} \mbox{\hyperlink{jeu_8c_a8f6aba605fb10e48c74ab1fb23722056}{cree\+Joueur}} ()
+\begin{DoxyCompactList}\small\item\em Créé un joueur en lui demandant son nom. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{jeu_8c_a10d54797196076ae3af34d4c0b792366}{miser}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Fait miser les joueurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a631180dd13105972a69ed04e23a7f194}{reinitialiser\+Jeu}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Reinitialise le jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a24242f919745d6f8e026041548c121f3}{distribuer\+Score}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Disrtibu le score au joueurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_ae26111fa39fd80ce9cd8d61776211423}{derouler\+Partie}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Fait se dérouler un la partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a2406c97b76e77ef3f16ffd5a623cdc7d}{vider\+Main}} (\mbox{\hyperlink{structJoueur}{Joueur}} $\ast$joueur, \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$cartes)
+\begin{DoxyCompactList}\small\item\em Vide la main d\textquotesingle{}un joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a6ba2083e83ea1fc0f678ec6dec9ebb34}{donner\+Cartes}} (\mbox{\hyperlink{structJoueur}{Joueur}} $\ast$joueur, \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$cartes)
+\begin{DoxyCompactList}\small\item\em Donne les cartes a un joueur tant que celui-\/ci le veuille. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a38ba69b9efd892c000cf1af1ac72a8ac}{initialiser\+Jeu}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu, int nb\+Joueur)
+\begin{DoxyCompactList}\small\item\em Initialise la partie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{jeu_8c_a8c0e0d808a8cb144712b38b750ae5d24}{game\+Loop}} (\mbox{\hyperlink{structJeu}{Jeu}} $\ast$jeu)
+\begin{DoxyCompactList}\small\item\em Boucle de jeu principale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24/12/2022 \textbackslash{} 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 \textbackslash{} 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{jeu_8c_a8f6aba605fb10e48c74ab1fb23722056}\label{jeu_8c_a8f6aba605fb10e48c74ab1fb23722056}} 
+\index{jeu.c@{jeu.c}!creeJoueur@{creeJoueur}}
+\index{creeJoueur@{creeJoueur}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{creeJoueur()}{creeJoueur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structJoueur}{Joueur}} cree\+Joueur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Créé un joueur en lui demandant son nom. 
+
+\begin{DoxyReturn}{Renvoie}
+Le nouveau joueur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jeu_8c_ae26111fa39fd80ce9cd8d61776211423}\label{jeu_8c_ae26111fa39fd80ce9cd8d61776211423}} 
+\index{jeu.c@{jeu.c}!deroulerPartie@{deroulerPartie}}
+\index{deroulerPartie@{deroulerPartie}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{deroulerPartie()}{deroulerPartie()}}
+{\footnotesize\ttfamily void derouler\+Partie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Fait se dérouler un la partie. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur le jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a0391429e9490c3c0fb031263d4b27625}\label{jeu_8c_a0391429e9490c3c0fb031263d4b27625}} 
+\index{jeu.c@{jeu.c}!distribuerCartes@{distribuerCartes}}
+\index{distribuerCartes@{distribuerCartes}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{distribuerCartes()}{distribuerCartes()}}
+{\footnotesize\ttfamily void distribuer\+Cartes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Distribue les cartes au joueurs. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur la partie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a24242f919745d6f8e026041548c121f3}\label{jeu_8c_a24242f919745d6f8e026041548c121f3}} 
+\index{jeu.c@{jeu.c}!distribuerScore@{distribuerScore}}
+\index{distribuerScore@{distribuerScore}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{distribuerScore()}{distribuerScore()}}
+{\footnotesize\ttfamily void distribuer\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Disrtibu le score au joueurs. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & pointeur su la partie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_ad330b36e05fa46195af4c52f15b824a7}\label{jeu_8c_ad330b36e05fa46195af4c52f15b824a7}} 
+\index{jeu.c@{jeu.c}!donnerCarte@{donnerCarte}}
+\index{donnerCarte@{donnerCarte}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{donnerCarte()}{donnerCarte()}}
+{\footnotesize\ttfamily void donner\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJoueur}{Joueur}} $\ast$}]{joueur,  }\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{cartes }\end{DoxyParamCaption})}
+
+
+
+Donne une carte de la pioche au joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & Pointeur sur un joueur \\
+\hline
+{\em cartes} & Pointeur sur la liste de cartes (pioche) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a6ba2083e83ea1fc0f678ec6dec9ebb34}\label{jeu_8c_a6ba2083e83ea1fc0f678ec6dec9ebb34}} 
+\index{jeu.c@{jeu.c}!donnerCartes@{donnerCartes}}
+\index{donnerCartes@{donnerCartes}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{donnerCartes()}{donnerCartes()}}
+{\footnotesize\ttfamily void donner\+Cartes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJoueur}{Joueur}} $\ast$}]{joueur,  }\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{cartes }\end{DoxyParamCaption})}
+
+
+
+Donne les cartes a un joueur tant que celui-\/ci le veuille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & Pointeur sur un joueur \\
+\hline
+{\em cartes} & Pointeur sur la liste de cartes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a8c0e0d808a8cb144712b38b750ae5d24}\label{jeu_8c_a8c0e0d808a8cb144712b38b750ae5d24}} 
+\index{jeu.c@{jeu.c}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily void game\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Boucle de jeu principale. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur le jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a38ba69b9efd892c000cf1af1ac72a8ac}\label{jeu_8c_a38ba69b9efd892c000cf1af1ac72a8ac}} 
+\index{jeu.c@{jeu.c}!initialiserJeu@{initialiserJeu}}
+\index{initialiserJeu@{initialiserJeu}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{initialiserJeu()}{initialiserJeu()}}
+{\footnotesize\ttfamily void initialiser\+Jeu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu,  }\item[{int}]{nb\+Joueurs }\end{DoxyParamCaption})}
+
+
+
+Initialise la partie. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur le jeu \\
+\hline
+{\em nb\+Joueurs} & Le nombre de joueurs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a10d54797196076ae3af34d4c0b792366}\label{jeu_8c_a10d54797196076ae3af34d4c0b792366}} 
+\index{jeu.c@{jeu.c}!miser@{miser}}
+\index{miser@{miser}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{miser()}{miser()}}
+{\footnotesize\ttfamily int miser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Fait miser les joueurs. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & Pointeur sur la partie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La mise totale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jeu_8c_a631180dd13105972a69ed04e23a7f194}\label{jeu_8c_a631180dd13105972a69ed04e23a7f194}} 
+\index{jeu.c@{jeu.c}!reinitialiserJeu@{reinitialiserJeu}}
+\index{reinitialiserJeu@{reinitialiserJeu}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{reinitialiserJeu()}{reinitialiserJeu()}}
+{\footnotesize\ttfamily void reinitialiser\+Jeu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJeu}{Jeu}} $\ast$}]{jeu }\end{DoxyParamCaption})}
+
+
+
+Reinitialise le jeu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em jeu} & pointeur sur le jeu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{jeu_8c_a2406c97b76e77ef3f16ffd5a623cdc7d}\label{jeu_8c_a2406c97b76e77ef3f16ffd5a623cdc7d}} 
+\index{jeu.c@{jeu.c}!viderMain@{viderMain}}
+\index{viderMain@{viderMain}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{viderMain()}{viderMain()}}
+{\footnotesize\ttfamily void vider\+Main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structJoueur}{Joueur}} $\ast$}]{joueur,  }\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{cartes }\end{DoxyParamCaption})}
+
+
+
+Vide la main d\textquotesingle{}un joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & Pointeur sur un joueur \\
+\hline
+{\em cartes} & Pointeur sur la liste de cartes \\
+\hline
+\end{DoxyParams}

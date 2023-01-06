@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack:  Fichier source de src/cartes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cartes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cartes_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="typesCartes_8h.html">typesCartes.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="structListCarte.html">ListCarte</a> *<a class="code" href="cartes_8h.html#acec3f04f53139d59f4ee84ba40be90b9">initCartes</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cartes_8h.html#a57d91c763d5b3fb738cded14c6c5468d">melangerCartes</a>(<a class="code" href="structListCarte.html">ListCarte</a> *listCarte);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="structsCarte.html">sCarte</a> <a class="code" href="cartes_8h.html#a07345dec2ab9f25fdb3b9dea691ac2f2">createCarte</a>(<a class="code" href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742">Carte</a> carte, <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">CarteColor</a> color);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="cartes_8h.html#a0fdef53744a269648e1ec6bcfc767c3e">initParCouleur</a>(<a class="code" href="structListCarte.html">ListCarte</a> *listCarte, <a class="code" href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">CarteColor</a> color);</div>
+<div class="ttc" id="acartes_8h_html_a07345dec2ab9f25fdb3b9dea691ac2f2"><div class="ttname"><a href="cartes_8h.html#a07345dec2ab9f25fdb3b9dea691ac2f2">createCarte</a></div><div class="ttdeci">sCarte createCarte(Carte carte, CarteColor color)</div><div class="ttdoc">créé une carte</div><div class="ttdef"><b>Definition:</b> cartes.c:62</div></div>
+<div class="ttc" id="acartes_8h_html_a0fdef53744a269648e1ec6bcfc767c3e"><div class="ttname"><a href="cartes_8h.html#a0fdef53744a269648e1ec6bcfc767c3e">initParCouleur</a></div><div class="ttdeci">void initParCouleur(ListCarte *listCarte, CarteColor color)</div><div class="ttdoc">Initialise la list pour une couleur donné</div><div class="ttdef"><b>Definition:</b> cartes.c:73</div></div>
+<div class="ttc" id="acartes_8h_html_a57d91c763d5b3fb738cded14c6c5468d"><div class="ttname"><a href="cartes_8h.html#a57d91c763d5b3fb738cded14c6c5468d">melangerCartes</a></div><div class="ttdeci">void melangerCartes(ListCarte *listCarte)</div><div class="ttdoc">Mélange la pioche.</div><div class="ttdef"><b>Definition:</b> cartes.c:36</div></div>
+<div class="ttc" id="acartes_8h_html_acec3f04f53139d59f4ee84ba40be90b9"><div class="ttname"><a href="cartes_8h.html#acec3f04f53139d59f4ee84ba40be90b9">initCartes</a></div><div class="ttdeci">ListCarte * initCartes()</div><div class="ttdoc">Initialise la pioche des cartes en lui alouan de la memoire.</div><div class="ttdef"><b>Definition:</b> cartes.c:14</div></div>
+<div class="ttc" id="astructListCarte_html"><div class="ttname"><a href="structListCarte.html">ListCarte</a></div><div class="ttdoc">La liste en elle-même .</div><div class="ttdef"><b>Definition:</b> typesCartes.h:88</div></div>
+<div class="ttc" id="astructsCarte_html"><div class="ttname"><a href="structsCarte.html">sCarte</a></div><div class="ttdoc">Structure représantant une carte.</div><div class="ttdef"><b>Definition:</b> typesCartes.h:61</div></div>
+<div class="ttc" id="atypesCartes_8h_html"><div class="ttname"><a href="typesCartes_8h.html">typesCartes.h</a></div><div class="ttdoc">Fichier corespondant à tout les types utilisés.</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a06cdfdb10e75516b85d36331b1206742"><div class="ttname"><a href="typesCartes_8h.html#a06cdfdb10e75516b85d36331b1206742">Carte</a></div><div class="ttdeci">Carte</div><div class="ttdoc">Enum représantant les valeurs de cartes.</div><div class="ttdef"><b>Definition:</b> typesCartes.h:17</div></div>
+<div class="ttc" id="atypesCartes_8h_html_a5ae560324cb531bfdbd1083b7cd7fece"><div class="ttname"><a href="typesCartes_8h.html#a5ae560324cb531bfdbd1083b7cd7fece">CarteColor</a></div><div class="ttdeci">CarteColor</div><div class="ttdoc">Représente la couleur de la carte.</div><div class="ttdef"><b>Definition:</b> typesCartes.h:48</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<map id="src/typesCartes.h" name="src/typesCartes.h">
+<area shape="rect" id="node1" title="Fichier corespondant à tout les types utilisés." alt="" coords="71,5,205,32"/>
+<area shape="rect" id="node2" href="$cartes_8h.html" title="Fichier correspondant à l&#39;entête la getion des cartes." alt="" coords="20,80,117,107"/>
+<area shape="rect" id="node7" href="$listeCarte_8h_source.html" title=" " alt="" coords="147,80,267,107"/>
+<area shape="rect" id="node3" href="$cartes_8c.html" title="Fichier correspondant au corp de fonction de la gestion des cartes." alt="" coords="21,155,117,181"/>
+<area shape="rect" id="node4" href="$jeu_8h.html" title="Fichier concernan la gestion du jeu." alt="" coords="74,304,151,331"/>
+<area shape="rect" id="node5" href="$jeu_8c.html" title=" " alt="" coords="128,379,204,405"/>
+<area shape="rect" id="node6" href="$main_8c.html" title="Fichier principal pour le blackjack." alt="" coords="15,379,104,405"/>
+<area shape="rect" id="node8" href="$interface_8h.html" title="Gestion de l&#39;interface et l&#39;interaction avec le(s) joueur(s)" alt="" coords="202,304,317,331"/>
+<area shape="rect" id="node10" href="$listeCarte_8c.html" title=" " alt="" coords="349,155,468,181"/>
+<area shape="rect" id="node11" href="$typesJoueur_8h_source.html" title=" " alt="" coords="141,155,274,181"/>
+<area shape="rect" id="node9" href="$interface_8c.html" title="Représente toutes les interactions du joueur sur le programme." alt="" coords="229,379,343,405"/>
+<area shape="rect" id="node12" href="$listJoueur_8h_source.html" title=" " alt="" coords="149,229,266,256"/>
+</map>

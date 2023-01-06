@@ -1,0 +1,5 @@
+<map id="ListCarte" name="ListCarte">
+<area shape="rect" id="node1" title="La liste en elle&#45;même ." alt="" coords="9,201,89,228"/>
+<area shape="rect" id="node2" href="$structitemCarte.html" title="Un item de la liste ." alt="" coords="5,96,92,123"/>
+<area shape="rect" id="node3" href="$structsCarte.html" title="Structure représantant une carte." alt="" coords="17,5,81,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="src/interface.c" name="src/interface.c">
+<area shape="rect" id="node1" title="Représente toutes les interactions du joueur sur le programme." alt="" coords="196,5,311,32"/>
+<area shape="rect" id="node2" href="$interface_8h.html" title="Gestion de l&#39;interface et l&#39;interaction avec le(s) joueur(s)" alt="" coords="58,80,150,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="174,80,242,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="267,80,333,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="357,80,432,107"/>
+<area shape="rect" id="node3" href="$listeCarte_8h_source.html" title=" " alt="" coords="13,304,110,331"/>
+<area shape="rect" id="node5" href="$listJoueur_8h_source.html" title=" " alt="" coords="57,155,151,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="175,155,246,181"/>
+<area shape="rect" id="node4" href="$typesCartes_8h.html" title="Fichier corespondant à tout les types utilisés." alt="" coords="5,379,117,405"/>
+<area shape="rect" id="node6" href="$typesJoueur_8h_source.html" title=" " alt="" coords="53,229,163,256"/>
+</map>

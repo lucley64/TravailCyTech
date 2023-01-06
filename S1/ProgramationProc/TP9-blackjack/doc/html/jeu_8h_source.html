@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack:  Fichier source de src/jeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">jeu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="jeu_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;listJoueur.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cartes_8h.html">cartes.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structJeu.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structJeu.html#a94a99adfb0e9ceb63636a8eaaae7c0ad">   20</a></span>&#160;    <a class="code" href="structlistJoueur.html">listJoueur</a> <a class="code" href="structJeu.html#a94a99adfb0e9ceb63636a8eaaae7c0ad">listJoueur</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structJeu.html#a1e85b1763282d607b081ed3c49fe06e2">   22</a></span>&#160;    <a class="code" href="structListCarte.html">ListCarte</a> <a class="code" href="structJeu.html#a1e85b1763282d607b081ed3c49fe06e2">cartes</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <a class="code" href="structJeu.html">Jeu</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="jeu_8h.html#a65e80087b8d13c582ef4bfcd294792a0">initialiserJeu</a>(<a class="code" href="structJeu.html">Jeu</a>* jeu, <span class="keywordtype">int</span> nbJoueurs);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="jeu_8h.html#a8c0e0d808a8cb144712b38b750ae5d24">gameLoop</a>(<a class="code" href="structJeu.html">Jeu</a>* jeu);</div>
+<div class="ttc" id="acartes_8h_html"><div class="ttname"><a href="cartes_8h.html">cartes.h</a></div><div class="ttdoc">Fichier correspondant à l'entête la getion des cartes.</div></div>
+<div class="ttc" id="ajeu_8h_html_a65e80087b8d13c582ef4bfcd294792a0"><div class="ttname"><a href="jeu_8h.html#a65e80087b8d13c582ef4bfcd294792a0">initialiserJeu</a></div><div class="ttdeci">void initialiserJeu(Jeu *jeu, int nbJoueurs)</div><div class="ttdoc">Initialise la partie.</div><div class="ttdef"><b>Definition:</b> jeu.c:50</div></div>
+<div class="ttc" id="ajeu_8h_html_a8c0e0d808a8cb144712b38b750ae5d24"><div class="ttname"><a href="jeu_8h.html#a8c0e0d808a8cb144712b38b750ae5d24">gameLoop</a></div><div class="ttdeci">void gameLoop(Jeu *jeu)</div><div class="ttdoc">Boucle de jeu principale.</div><div class="ttdef"><b>Definition:</b> jeu.c:65</div></div>
+<div class="ttc" id="astructJeu_html"><div class="ttname"><a href="structJeu.html">Jeu</a></div><div class="ttdoc">Structure contenant tout le jeu.</div><div class="ttdef"><b>Definition:</b> jeu.h:18</div></div>
+<div class="ttc" id="astructJeu_html_a1e85b1763282d607b081ed3c49fe06e2"><div class="ttname"><a href="structJeu.html#a1e85b1763282d607b081ed3c49fe06e2">Jeu::cartes</a></div><div class="ttdeci">ListCarte cartes</div><div class="ttdoc">La liste des cartes.</div><div class="ttdef"><b>Definition:</b> jeu.h:22</div></div>
+<div class="ttc" id="astructJeu_html_a94a99adfb0e9ceb63636a8eaaae7c0ad"><div class="ttname"><a href="structJeu.html#a94a99adfb0e9ceb63636a8eaaae7c0ad">Jeu::listJoueur</a></div><div class="ttdeci">listJoueur listJoueur</div><div class="ttdoc">La liste des joueurs.</div><div class="ttdef"><b>Definition:</b> jeu.h:20</div></div>
+<div class="ttc" id="astructListCarte_html"><div class="ttname"><a href="structListCarte.html">ListCarte</a></div><div class="ttdoc">La liste en elle-même .</div><div class="ttdef"><b>Definition:</b> typesCartes.h:88</div></div>
+<div class="ttc" id="astructlistJoueur_html"><div class="ttname"><a href="structlistJoueur.html">listJoueur</a></div><div class="ttdef"><b>Definition:</b> typesJoueur.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

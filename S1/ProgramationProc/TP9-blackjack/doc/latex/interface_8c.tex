@@ -1,0 +1,216 @@
+\hypertarget{interface_8c}{}\doxysection{Référence du fichier src/interface.c}
+\label{interface_8c}\index{src/interface.c@{src/interface.c}}
+
+
+Représente toutes les interactions du joueur sur le programme.  
+
+
+{\ttfamily \#include \char`\"{}interface.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+Graphe des dépendances par inclusion de interface.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interface_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{interface_8c_af13a0cfb239c2c73ab277c79d3368231}{demander\+Nom}} ()
+\begin{DoxyCompactList}\small\item\em Demande le nom au joueur avec la fonction getline. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_8c_a07d367df77d064a9d463e1f2fabe88c3}{demander\+Mise}} (const char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em Demande au joueur sa mise. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_8c_a95d6a148c679cb5173a9251482a8554c}{demander\+Continuer}} ()
+\begin{DoxyCompactList}\small\item\em Demande aux joueurs s\textquotesingle{}ils veullent continuer de jouer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_8c_a9c4bc5e1a7aa6f834928b5d9eaeecc73}{continuer}} ()
+\begin{DoxyCompactList}\small\item\em Demande au joueur s\textquotesingle{}il veu une autre carte. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8c_a0d074a7d05321b34f37804da8645de96}{annoncer\+Cartes}} (const \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$cartes)
+\begin{DoxyCompactList}\small\item\em Affiche les cartes d\textquotesingle{}une liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8c_ad027c51eefb319bd140430cae871ac12}{annoncer\+Tour}} (const char $\ast$nom)
+\begin{DoxyCompactList}\small\item\em Annonce au joueur que c\textquotesingle{}est son tour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8c_a4da98495001fce3667315f199fcd76fb}{annoncer\+Etat}} (const \mbox{\hyperlink{structJoueur}{Joueur}} $\ast$joueur)
+\begin{DoxyCompactList}\small\item\em Affiche l\textquotesingle{}état du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8c_a40582e263661882dec54d6016a1c31a8}{annoncer\+Score}} (const \mbox{\hyperlink{structJoueur}{Joueur}} $\ast$joueur)
+\begin{DoxyCompactList}\small\item\em Affiche le score d\textquotesingle{}un joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8c_ae8cd19d02cc0e06f5506c2a31f11369b}{annoncer\+Cartes\+Tout\+Le\+Monde}} (const \mbox{\hyperlink{structlistJoueur}{list\+Joueur}} $\ast$joueurs)
+\begin{DoxyCompactList}\small\item\em Affiche les cartes d\textquotesingle{}une liste de joueurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8c_a29d6d7a025d3fedbd1036654af739ea7}{annoncer\+Etat\+Jeu}} (const char $\ast$nom\+Joueur, \mbox{\hyperlink{interface_8h_a8be009140b92a93d94564a14963f77e3}{Etat\+De\+Jeu}} etat)
+\begin{DoxyCompactList}\small\item\em Affiche létat d\textquotesingle{}un joueur par rapport au croupier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Représente toutes les interactions du joueur sur le programme. 
+
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24/12/2022 \textbackslash{} 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 \textbackslash{} 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{interface_8c_a0d074a7d05321b34f37804da8645de96}\label{interface_8c_a0d074a7d05321b34f37804da8645de96}} 
+\index{interface.c@{interface.c}!annoncerCartes@{annoncerCartes}}
+\index{annoncerCartes@{annoncerCartes}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{annoncerCartes()}{annoncerCartes()}}
+{\footnotesize\ttfamily void annoncer\+Cartes (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{cartes }\end{DoxyParamCaption})}
+
+
+
+Affiche les cartes d\textquotesingle{}une liste. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em cartes} & La liste de cartes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8c_ae8cd19d02cc0e06f5506c2a31f11369b}\label{interface_8c_ae8cd19d02cc0e06f5506c2a31f11369b}} 
+\index{interface.c@{interface.c}!annoncerCartesToutLeMonde@{annoncerCartesToutLeMonde}}
+\index{annoncerCartesToutLeMonde@{annoncerCartesToutLeMonde}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{annoncerCartesToutLeMonde()}{annoncerCartesToutLeMonde()}}
+{\footnotesize\ttfamily void annoncer\+Cartes\+Tout\+Le\+Monde (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structlistJoueur}{list\+Joueur}} $\ast$}]{joueurs }\end{DoxyParamCaption})}
+
+
+
+Affiche les cartes d\textquotesingle{}une liste de joueurs. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueurs} & La liste de joueurs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8c_a4da98495001fce3667315f199fcd76fb}\label{interface_8c_a4da98495001fce3667315f199fcd76fb}} 
+\index{interface.c@{interface.c}!annoncerEtat@{annoncerEtat}}
+\index{annoncerEtat@{annoncerEtat}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{annoncerEtat()}{annoncerEtat()}}
+{\footnotesize\ttfamily void annoncer\+Etat (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structJoueur}{Joueur}} $\ast$}]{joueur }\end{DoxyParamCaption})}
+
+
+
+Affiche l\textquotesingle{}état du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & Pointeur sur le joueur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8c_a29d6d7a025d3fedbd1036654af739ea7}\label{interface_8c_a29d6d7a025d3fedbd1036654af739ea7}} 
+\index{interface.c@{interface.c}!annoncerEtatJeu@{annoncerEtatJeu}}
+\index{annoncerEtatJeu@{annoncerEtatJeu}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{annoncerEtatJeu()}{annoncerEtatJeu()}}
+{\footnotesize\ttfamily void annoncer\+Etat\+Jeu (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nom\+Joueur,  }\item[{\mbox{\hyperlink{interface_8h_a8be009140b92a93d94564a14963f77e3}{Etat\+De\+Jeu}}}]{etat }\end{DoxyParamCaption})}
+
+
+
+Affiche létat d\textquotesingle{}un joueur par rapport au croupier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom\+Joueur} & Le nom du joueur \\
+\hline
+{\em etat} & Un énum représantant cet état. ~\newline
+ SAUTE si Le joueur à sauté (fait plus de 21) ~\newline
+ EGALITE si Le joueur à fait égalité avec le croupier ~\newline
+ REMPORTE si Le joueur remporte sa mise ~\newline
+ ETAT\+\_\+\+BLACKJACK si Le joueur à fait blackjack (le croupier non) ~\newline
+ BATU si Le joueur à été batu par le croupier \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8c_a40582e263661882dec54d6016a1c31a8}\label{interface_8c_a40582e263661882dec54d6016a1c31a8}} 
+\index{interface.c@{interface.c}!annoncerScore@{annoncerScore}}
+\index{annoncerScore@{annoncerScore}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{annoncerScore()}{annoncerScore()}}
+{\footnotesize\ttfamily void annoncer\+Score (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structJoueur}{Joueur}} $\ast$}]{joueur }\end{DoxyParamCaption})}
+
+
+
+Affiche le score d\textquotesingle{}un joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em joueur} & Pointeur sur le joueur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8c_ad027c51eefb319bd140430cae871ac12}\label{interface_8c_ad027c51eefb319bd140430cae871ac12}} 
+\index{interface.c@{interface.c}!annoncerTour@{annoncerTour}}
+\index{annoncerTour@{annoncerTour}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{annoncerTour()}{annoncerTour()}}
+{\footnotesize\ttfamily void annoncer\+Tour (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+Annonce au joueur que c\textquotesingle{}est son tour. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & Le nom du joueur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8c_a9c4bc5e1a7aa6f834928b5d9eaeecc73}\label{interface_8c_a9c4bc5e1a7aa6f834928b5d9eaeecc73}} 
+\index{interface.c@{interface.c}!continuer@{continuer}}
+\index{continuer@{continuer}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{continuer()}{continuer()}}
+{\footnotesize\ttfamily int continuer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Demande au joueur s\textquotesingle{}il veu une autre carte. 
+
+\begin{DoxyReturn}{Renvoie}
+1 si oui, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8c_a95d6a148c679cb5173a9251482a8554c}\label{interface_8c_a95d6a148c679cb5173a9251482a8554c}} 
+\index{interface.c@{interface.c}!demanderContinuer@{demanderContinuer}}
+\index{demanderContinuer@{demanderContinuer}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{demanderContinuer()}{demanderContinuer()}}
+{\footnotesize\ttfamily int demander\+Continuer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Demande aux joueurs s\textquotesingle{}ils veullent continuer de jouer. 
+
+\begin{DoxyReturn}{Renvoie}
+1 si oui, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8c_a07d367df77d064a9d463e1f2fabe88c3}\label{interface_8c_a07d367df77d064a9d463e1f2fabe88c3}} 
+\index{interface.c@{interface.c}!demanderMise@{demanderMise}}
+\index{demanderMise@{demanderMise}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{demanderMise()}{demanderMise()}}
+{\footnotesize\ttfamily int demander\+Mise (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nom }\end{DoxyParamCaption})}
+
+
+
+Demande au joueur sa mise. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nom} & Le nom du joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La mise du joueur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8c_af13a0cfb239c2c73ab277c79d3368231}\label{interface_8c_af13a0cfb239c2c73ab277c79d3368231}} 
+\index{interface.c@{interface.c}!demanderNom@{demanderNom}}
+\index{demanderNom@{demanderNom}!interface.c@{interface.c}}
+\doxysubsubsection{\texorpdfstring{demanderNom()}{demanderNom()}}
+{\footnotesize\ttfamily char$\ast$ demander\+Nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Demande le nom au joueur avec la fonction getline. 
+
+\begin{DoxyReturn}{Renvoie}
+Le nom du joueur 
+\end{DoxyReturn}

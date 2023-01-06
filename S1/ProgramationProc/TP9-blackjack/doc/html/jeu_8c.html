@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack: Référence du fichier src/jeu.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier jeu.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="jeu_8h_source.html">jeu.h</a>&quot;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="interface_8h_source.html">interface.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de jeu.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="jeu_8c__incl.png" border="0" usemap="#asrc_2jeu_8c" alt=""/></div>
+<map name="asrc_2jeu_8c" id="asrc_2jeu_8c">
+<area shape="rect" title=" " alt="" coords="137,5,213,32"/>
+<area shape="rect" href="jeu_8h.html" title="Fichier concernan la gestion du jeu." alt="" coords="10,80,65,107"/>
+<area shape="rect" title=" " alt="" coords="89,80,159,107"/>
+<area shape="rect" title=" " alt="" coords="184,80,267,107"/>
+<area shape="rect" href="interface_8h.html" title="Gestion de l&#39;interface et l&#39;interaction avec le(s) joueur(s)" alt="" coords="291,80,383,107"/>
+<area shape="rect" href="listJoueur_8h_source.html" title=" " alt="" coords="114,155,209,181"/>
+<area shape="rect" href="cartes_8h.html" title="Fichier correspondant à l&#39;entête la getion des cartes." alt="" coords="5,229,80,256"/>
+<area shape="rect" href="typesJoueur_8h_source.html" title=" " alt="" coords="106,229,217,256"/>
+<area shape="rect" href="listeCarte_8h_source.html" title=" " alt="" coords="113,304,210,331"/>
+<area shape="rect" href="typesCartes_8h.html" title="Fichier corespondant à tout les types utilisés." alt="" coords="47,379,159,405"/>
+<area shape="rect" title=" " alt="" coords="302,155,373,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a0391429e9490c3c0fb031263d4b27625"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a0391429e9490c3c0fb031263d4b27625">distribuerCartes</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu)</td></tr>
+<tr class="memdesc:a0391429e9490c3c0fb031263d4b27625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribue les cartes au joueurs.  <a href="jeu_8c.html#a0391429e9490c3c0fb031263d4b27625">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0391429e9490c3c0fb031263d4b27625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad330b36e05fa46195af4c52f15b824a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#ad330b36e05fa46195af4c52f15b824a7">donnerCarte</a> (<a class="el" href="structJoueur.html">Joueur</a> *joueur, <a class="el" href="structListCarte.html">ListCarte</a> *cartes)</td></tr>
+<tr class="memdesc:ad330b36e05fa46195af4c52f15b824a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne une carte de la pioche au joueur.  <a href="jeu_8c.html#ad330b36e05fa46195af4c52f15b824a7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad330b36e05fa46195af4c52f15b824a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6aba605fb10e48c74ab1fb23722056"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structJoueur.html">Joueur</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a8f6aba605fb10e48c74ab1fb23722056">creeJoueur</a> ()</td></tr>
+<tr class="memdesc:a8f6aba605fb10e48c74ab1fb23722056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Créé un joueur en lui demandant son nom.  <a href="jeu_8c.html#a8f6aba605fb10e48c74ab1fb23722056">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8f6aba605fb10e48c74ab1fb23722056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d54797196076ae3af34d4c0b792366"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a10d54797196076ae3af34d4c0b792366">miser</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu)</td></tr>
+<tr class="memdesc:a10d54797196076ae3af34d4c0b792366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait miser les joueurs.  <a href="jeu_8c.html#a10d54797196076ae3af34d4c0b792366">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a10d54797196076ae3af34d4c0b792366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631180dd13105972a69ed04e23a7f194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a631180dd13105972a69ed04e23a7f194">reinitialiserJeu</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu)</td></tr>
+<tr class="memdesc:a631180dd13105972a69ed04e23a7f194"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinitialise le jeu.  <a href="jeu_8c.html#a631180dd13105972a69ed04e23a7f194">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a631180dd13105972a69ed04e23a7f194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24242f919745d6f8e026041548c121f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a24242f919745d6f8e026041548c121f3">distribuerScore</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu)</td></tr>
+<tr class="memdesc:a24242f919745d6f8e026041548c121f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disrtibu le score au joueurs.  <a href="jeu_8c.html#a24242f919745d6f8e026041548c121f3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a24242f919745d6f8e026041548c121f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26111fa39fd80ce9cd8d61776211423"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#ae26111fa39fd80ce9cd8d61776211423">deroulerPartie</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu)</td></tr>
+<tr class="memdesc:ae26111fa39fd80ce9cd8d61776211423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fait se dérouler un la partie.  <a href="jeu_8c.html#ae26111fa39fd80ce9cd8d61776211423">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae26111fa39fd80ce9cd8d61776211423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2406c97b76e77ef3f16ffd5a623cdc7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a2406c97b76e77ef3f16ffd5a623cdc7d">viderMain</a> (<a class="el" href="structJoueur.html">Joueur</a> *joueur, <a class="el" href="structListCarte.html">ListCarte</a> *cartes)</td></tr>
+<tr class="memdesc:a2406c97b76e77ef3f16ffd5a623cdc7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vide la main d'un joueur.  <a href="jeu_8c.html#a2406c97b76e77ef3f16ffd5a623cdc7d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2406c97b76e77ef3f16ffd5a623cdc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba2083e83ea1fc0f678ec6dec9ebb34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a6ba2083e83ea1fc0f678ec6dec9ebb34">donnerCartes</a> (<a class="el" href="structJoueur.html">Joueur</a> *joueur, <a class="el" href="structListCarte.html">ListCarte</a> *cartes)</td></tr>
+<tr class="memdesc:a6ba2083e83ea1fc0f678ec6dec9ebb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Donne les cartes a un joueur tant que celui-ci le veuille.  <a href="jeu_8c.html#a6ba2083e83ea1fc0f678ec6dec9ebb34">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6ba2083e83ea1fc0f678ec6dec9ebb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ba69b9efd892c000cf1af1ac72a8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a38ba69b9efd892c000cf1af1ac72a8ac">initialiserJeu</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu, int nbJoueur)</td></tr>
+<tr class="memdesc:a38ba69b9efd892c000cf1af1ac72a8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise la partie.  <a href="jeu_8c.html#a38ba69b9efd892c000cf1af1ac72a8ac">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a38ba69b9efd892c000cf1af1ac72a8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c0e0d808a8cb144712b38b750ae5d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a8c0e0d808a8cb144712b38b750ae5d24">gameLoop</a> (<a class="el" href="structJeu.html">Jeu</a> *jeu)</td></tr>
+<tr class="memdesc:a8c0e0d808a8cb144712b38b750ae5d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boucle de jeu principale.  <a href="jeu_8c.html#a8c0e0d808a8cb144712b38b750ae5d24">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8c0e0d808a8cb144712b38b750ae5d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><dl class="section author"><dt>Auteur</dt><dd>Luc Leydert </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>24/12/2022 \ </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 \ </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a8f6aba605fb10e48c74ab1fb23722056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f6aba605fb10e48c74ab1fb23722056">&#9670;&nbsp;</a></span>creeJoueur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structJoueur.html">Joueur</a> creeJoueur </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Créé un joueur en lui demandant son nom. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nouveau joueur </dd></dl>
+
+</div>
+</div>
+<a id="ae26111fa39fd80ce9cd8d61776211423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae26111fa39fd80ce9cd8d61776211423">&#9670;&nbsp;</a></span>deroulerPartie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void deroulerPartie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait se dérouler un la partie. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>Pointeur sur le jeu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0391429e9490c3c0fb031263d4b27625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0391429e9490c3c0fb031263d4b27625">&#9670;&nbsp;</a></span>distribuerCartes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void distribuerCartes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Distribue les cartes au joueurs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>Pointeur sur la partie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a24242f919745d6f8e026041548c121f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24242f919745d6f8e026041548c121f3">&#9670;&nbsp;</a></span>distribuerScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void distribuerScore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disrtibu le score au joueurs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>pointeur su la partie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad330b36e05fa46195af4c52f15b824a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad330b36e05fa46195af4c52f15b824a7">&#9670;&nbsp;</a></span>donnerCarte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void donnerCarte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJoueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structListCarte.html">ListCarte</a> *&#160;</td>
+          <td class="paramname"><em>cartes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Donne une carte de la pioche au joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>Pointeur sur un joueur </td></tr>
+    <tr><td class="paramname">cartes</td><td>Pointeur sur la liste de cartes (pioche) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ba2083e83ea1fc0f678ec6dec9ebb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba2083e83ea1fc0f678ec6dec9ebb34">&#9670;&nbsp;</a></span>donnerCartes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void donnerCartes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJoueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structListCarte.html">ListCarte</a> *&#160;</td>
+          <td class="paramname"><em>cartes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Donne les cartes a un joueur tant que celui-ci le veuille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>Pointeur sur un joueur </td></tr>
+    <tr><td class="paramname">cartes</td><td>Pointeur sur la liste de cartes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c0e0d808a8cb144712b38b750ae5d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0e0d808a8cb144712b38b750ae5d24">&#9670;&nbsp;</a></span>gameLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gameLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boucle de jeu principale. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>Pointeur sur le jeu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a38ba69b9efd892c000cf1af1ac72a8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ba69b9efd892c000cf1af1ac72a8ac">&#9670;&nbsp;</a></span>initialiserJeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initialiserJeu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbJoueurs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise la partie. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>Pointeur sur le jeu </td></tr>
+    <tr><td class="paramname">nbJoueurs</td><td>Le nombre de joueurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10d54797196076ae3af34d4c0b792366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10d54797196076ae3af34d4c0b792366">&#9670;&nbsp;</a></span>miser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int miser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fait miser les joueurs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>Pointeur sur la partie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La mise totale </dd></dl>
+
+</div>
+</div>
+<a id="a631180dd13105972a69ed04e23a7f194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a631180dd13105972a69ed04e23a7f194">&#9670;&nbsp;</a></span>reinitialiserJeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reinitialiserJeu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJeu.html">Jeu</a> *&#160;</td>
+          <td class="paramname"><em>jeu</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reinitialise le jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jeu</td><td>pointeur sur le jeu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2406c97b76e77ef3f16ffd5a623cdc7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2406c97b76e77ef3f16ffd5a623cdc7d">&#9670;&nbsp;</a></span>viderMain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void viderMain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structJoueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>joueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structListCarte.html">ListCarte</a> *&#160;</td>
+          <td class="paramname"><em>cartes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vide la main d'un joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>Pointeur sur un joueur </td></tr>
+    <tr><td class="paramname">cartes</td><td>Pointeur sur la liste de cartes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="Jeu" name="Jeu">
+<area shape="rect" id="node1" title="Structure contenant tout le jeu." alt="" coords="27,576,70,603"/>
+<area shape="rect" id="node2" href="$structListCarte.html" title="La liste en elle&#45;même ." alt="" coords="9,201,89,228"/>
+<area shape="rect" id="node7" href="$structJoueur.html" title="Structure représantant un joueur." alt="" coords="88,291,151,317"/>
+<area shape="rect" id="node3" href="$structitemCarte.html" title="Un item de la liste ." alt="" coords="5,96,92,123"/>
+<area shape="rect" id="node4" href="$structsCarte.html" title="Structure représantant une carte." alt="" coords="17,5,81,32"/>
+<area shape="rect" id="node5" href="$structlistJoueur.html" title=" " alt="" coords="83,487,166,513"/>
+<area shape="rect" id="node6" href="$structitemJoueur.html" title=" " alt="" coords="97,381,190,408"/>
+</map>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack:  Fichier source de src/interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;listeCarte.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;listJoueur.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">   19</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a069cde49fdb465c39169f4affef4d9a0">   22</a></span>&#160;    <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a069cde49fdb465c39169f4affef4d9a0">SAUTE</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a5ce063289dc687d6c5ea8cddc448f583">   24</a></span>&#160;    <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a5ce063289dc687d6c5ea8cddc448f583">EGALITE</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a0aceea6b40bef9e748654eb3042932c0">   26</a></span>&#160;    <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a0aceea6b40bef9e748654eb3042932c0">REMPORTE</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3af44461cb1755c9a664ad4f1fa5ffd0b2">   28</a></span>&#160;    <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3af44461cb1755c9a664ad4f1fa5ffd0b2">ETAT_BLACKJACK</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3ad1176401d39aa4a84e2381c8eb563607">   30</a></span>&#160;    <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3ad1176401d39aa4a84e2381c8eb563607">BATU</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">char</span> *<a class="code" href="interface_8h.html#af13a0cfb239c2c73ab277c79d3368231">demanderNom</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a07d367df77d064a9d463e1f2fabe88c3">demanderMise</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *nom);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a95d6a148c679cb5173a9251482a8554c">demanderContinuer</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">int</span> <a class="code" href="interface_8h.html#a9c4bc5e1a7aa6f834928b5d9eaeecc73">continuer</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a0d074a7d05321b34f37804da8645de96">annoncerCartes</a>(<span class="keyword">const</span> <a class="code" href="structListCarte.html">ListCarte</a> *cartes);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ad027c51eefb319bd140430cae871ac12">annoncerTour</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *nom);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a4da98495001fce3667315f199fcd76fb">annoncerEtat</a>(<span class="keyword">const</span> <a class="code" href="structJoueur.html">Joueur</a> *joueur);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a40582e263661882dec54d6016a1c31a8">annoncerScore</a>(<span class="keyword">const</span> <a class="code" href="structJoueur.html">Joueur</a> *joueur);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#ae8cd19d02cc0e06f5506c2a31f11369b">annoncerCartesToutLeMonde</a>(<span class="keyword">const</span> <a class="code" href="structlistJoueur.html">listJoueur</a> *joueurs);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keywordtype">void</span> <a class="code" href="interface_8h.html#a29d6d7a025d3fedbd1036654af739ea7">annoncerEtatJeu</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *nomJoueur, <a class="code" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a> etat);</div>
+<div class="ttc" id="ainterface_8h_html_a07d367df77d064a9d463e1f2fabe88c3"><div class="ttname"><a href="interface_8h.html#a07d367df77d064a9d463e1f2fabe88c3">demanderMise</a></div><div class="ttdeci">int demanderMise(const char *nom)</div><div class="ttdoc">Demande au joueur sa mise.</div><div class="ttdef"><b>Definition:</b> interface.c:39</div></div>
+<div class="ttc" id="ainterface_8h_html_a0d074a7d05321b34f37804da8645de96"><div class="ttname"><a href="interface_8h.html#a0d074a7d05321b34f37804da8645de96">annoncerCartes</a></div><div class="ttdeci">void annoncerCartes(const ListCarte *cartes)</div><div class="ttdoc">Affiche les cartes d'une liste.</div><div class="ttdef"><b>Definition:</b> interface.c:121</div></div>
+<div class="ttc" id="ainterface_8h_html_a29d6d7a025d3fedbd1036654af739ea7"><div class="ttname"><a href="interface_8h.html#a29d6d7a025d3fedbd1036654af739ea7">annoncerEtatJeu</a></div><div class="ttdeci">void annoncerEtatJeu(const char *nomJoueur, EtatDeJeu etat)</div><div class="ttdoc">Affiche létat d'un joueur par rapport au croupier.</div><div class="ttdef"><b>Definition:</b> interface.c:191</div></div>
+<div class="ttc" id="ainterface_8h_html_a40582e263661882dec54d6016a1c31a8"><div class="ttname"><a href="interface_8h.html#a40582e263661882dec54d6016a1c31a8">annoncerScore</a></div><div class="ttdeci">void annoncerScore(const Joueur *joueur)</div><div class="ttdoc">Affiche le score d'un joueur.</div><div class="ttdef"><b>Definition:</b> interface.c:168</div></div>
+<div class="ttc" id="ainterface_8h_html_a4da98495001fce3667315f199fcd76fb"><div class="ttname"><a href="interface_8h.html#a4da98495001fce3667315f199fcd76fb">annoncerEtat</a></div><div class="ttdeci">void annoncerEtat(const Joueur *joueur)</div><div class="ttdoc">Affiche l'état du joueur.</div><div class="ttdef"><b>Definition:</b> interface.c:146</div></div>
+<div class="ttc" id="ainterface_8h_html_a8be009140b92a93d94564a14963f77e3"><div class="ttname"><a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a></div><div class="ttdeci">EtatDeJeu</div><div class="ttdoc">Represente l'état du joueur par rapport au croupier.</div><div class="ttdef"><b>Definition:</b> interface.h:20</div></div>
+<div class="ttc" id="ainterface_8h_html_a8be009140b92a93d94564a14963f77e3a069cde49fdb465c39169f4affef4d9a0"><div class="ttname"><a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a069cde49fdb465c39169f4affef4d9a0">SAUTE</a></div><div class="ttdeci">@ SAUTE</div><div class="ttdoc">Le joueur à sauté (fait plus de 21)</div><div class="ttdef"><b>Definition:</b> interface.h:22</div></div>
+<div class="ttc" id="ainterface_8h_html_a8be009140b92a93d94564a14963f77e3a0aceea6b40bef9e748654eb3042932c0"><div class="ttname"><a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a0aceea6b40bef9e748654eb3042932c0">REMPORTE</a></div><div class="ttdeci">@ REMPORTE</div><div class="ttdoc">Le joueur remporte sa mise.</div><div class="ttdef"><b>Definition:</b> interface.h:26</div></div>
+<div class="ttc" id="ainterface_8h_html_a8be009140b92a93d94564a14963f77e3a5ce063289dc687d6c5ea8cddc448f583"><div class="ttname"><a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a5ce063289dc687d6c5ea8cddc448f583">EGALITE</a></div><div class="ttdeci">@ EGALITE</div><div class="ttdoc">Le joueur à fait égalité avec le croupier.</div><div class="ttdef"><b>Definition:</b> interface.h:24</div></div>
+<div class="ttc" id="ainterface_8h_html_a8be009140b92a93d94564a14963f77e3ad1176401d39aa4a84e2381c8eb563607"><div class="ttname"><a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3ad1176401d39aa4a84e2381c8eb563607">BATU</a></div><div class="ttdeci">@ BATU</div><div class="ttdoc">Le joueur à été batu par le croupier.</div><div class="ttdef"><b>Definition:</b> interface.h:30</div></div>
+<div class="ttc" id="ainterface_8h_html_a8be009140b92a93d94564a14963f77e3af44461cb1755c9a664ad4f1fa5ffd0b2"><div class="ttname"><a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3af44461cb1755c9a664ad4f1fa5ffd0b2">ETAT_BLACKJACK</a></div><div class="ttdeci">@ ETAT_BLACKJACK</div><div class="ttdoc">Le joueur à fait blackjack (le croupier non)</div><div class="ttdef"><b>Definition:</b> interface.h:28</div></div>
+<div class="ttc" id="ainterface_8h_html_a95d6a148c679cb5173a9251482a8554c"><div class="ttname"><a href="interface_8h.html#a95d6a148c679cb5173a9251482a8554c">demanderContinuer</a></div><div class="ttdeci">int demanderContinuer()</div><div class="ttdoc">Demande aux joueurs s'ils veullent continuer de jouer.</div><div class="ttdef"><b>Definition:</b> interface.c:69</div></div>
+<div class="ttc" id="ainterface_8h_html_a9c4bc5e1a7aa6f834928b5d9eaeecc73"><div class="ttname"><a href="interface_8h.html#a9c4bc5e1a7aa6f834928b5d9eaeecc73">continuer</a></div><div class="ttdeci">int continuer()</div><div class="ttdoc">Demande au joueur s'il veu une autre carte.</div><div class="ttdef"><b>Definition:</b> interface.c:95</div></div>
+<div class="ttc" id="ainterface_8h_html_ad027c51eefb319bd140430cae871ac12"><div class="ttname"><a href="interface_8h.html#ad027c51eefb319bd140430cae871ac12">annoncerTour</a></div><div class="ttdeci">void annoncerTour(const char *nom)</div><div class="ttdoc">Annonce au joueur que c'est son tour.</div><div class="ttdef"><b>Definition:</b> interface.c:140</div></div>
+<div class="ttc" id="ainterface_8h_html_ae8cd19d02cc0e06f5506c2a31f11369b"><div class="ttname"><a href="interface_8h.html#ae8cd19d02cc0e06f5506c2a31f11369b">annoncerCartesToutLeMonde</a></div><div class="ttdeci">void annoncerCartesToutLeMonde(const listJoueur *joueurs)</div><div class="ttdoc">Affiche les cartes d'une liste de joueurs.</div><div class="ttdef"><b>Definition:</b> interface.c:174</div></div>
+<div class="ttc" id="ainterface_8h_html_af13a0cfb239c2c73ab277c79d3368231"><div class="ttname"><a href="interface_8h.html#af13a0cfb239c2c73ab277c79d3368231">demanderNom</a></div><div class="ttdeci">char * demanderNom()</div><div class="ttdoc">Demande le nom au joueur avec la fonction getline.</div><div class="ttdef"><b>Definition:</b> interface.c:17</div></div>
+<div class="ttc" id="astructJoueur_html"><div class="ttname"><a href="structJoueur.html">Joueur</a></div><div class="ttdoc">Structure représantant un joueur.</div><div class="ttdef"><b>Definition:</b> typesJoueur.h:33</div></div>
+<div class="ttc" id="astructListCarte_html"><div class="ttname"><a href="structListCarte.html">ListCarte</a></div><div class="ttdoc">La liste en elle-même .</div><div class="ttdef"><b>Definition:</b> typesCartes.h:88</div></div>
+<div class="ttc" id="astructlistJoueur_html"><div class="ttname"><a href="structlistJoueur.html">listJoueur</a></div><div class="ttdef"><b>Definition:</b> typesJoueur.h:54</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,170 @@
+\hypertarget{listeCarte_8c}{}\doxysection{Référence du fichier src/liste\+Carte.c}
+\label{listeCarte_8c}\index{src/listeCarte.c@{src/listeCarte.c}}
+{\ttfamily \#include \char`\"{}liste\+Carte.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Graphe des dépendances par inclusion de liste\+Carte.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{listeCarte_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{listeCarte_8c_a9497e62782e6d0f9d4714b59b9bc5d50}\label{listeCarte_8c_a9497e62782e6d0f9d4714b59b9bc5d50}} 
+void \mbox{\hyperlink{listeCarte_8c_a9497e62782e6d0f9d4714b59b9bc5d50}{creer\+Liste\+Carte}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Créé et initialise une liste de Carte . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listeCarte_8c_a7a0b98c80aec42aa3770bb1ed73370b3}\label{listeCarte_8c_a7a0b98c80aec42aa3770bb1ed73370b3}} 
+void \mbox{\hyperlink{listeCarte_8c_a7a0b98c80aec42aa3770bb1ed73370b3}{ajouter\+Avant\+Carte}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list, \mbox{\hyperlink{structsCarte}{s\+Carte}} item)
+\begin{DoxyCompactList}\small\item\em Ajoute un élément au début de la liste . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listeCarte_8c_ae21f89d74fec195407536003ebb67220}\label{listeCarte_8c_ae21f89d74fec195407536003ebb67220}} 
+void \mbox{\hyperlink{listeCarte_8c_ae21f89d74fec195407536003ebb67220}{ajouter\+Apres\+Carte}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list, \mbox{\hyperlink{structsCarte}{s\+Carte}} item)
+\begin{DoxyCompactList}\small\item\em Ajoute un élément en fin de liste . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listeCarte_8c_a0bda1c3d7d9e88be7bccba5b26ab9992}\label{listeCarte_8c_a0bda1c3d7d9e88be7bccba5b26ab9992}} 
+\mbox{\hyperlink{structsCarte}{s\+Carte}} \mbox{\hyperlink{listeCarte_8c_a0bda1c3d7d9e88be7bccba5b26ab9992}{enlever\+Avant\+Carte}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Retire le premier élément . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{listeCarte_8c_a2fdc92e4593a193839f9317428a5f643}\label{listeCarte_8c_a2fdc92e4593a193839f9317428a5f643}} 
+\mbox{\hyperlink{structsCarte}{s\+Carte}} \mbox{\hyperlink{listeCarte_8c_a2fdc92e4593a193839f9317428a5f643}{enlever\+Apres\+Carte}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Retire le dernier élément . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{listeCarte_8c_a6357f715f62790fe2b361218acde1506}{list\+Carte\+Size}} (const \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Renvoie la taille de la liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{listeCarte_8c_aeb9e25f694f74e30c209f40b0a8d46b1}{list\+Carte\+To\+Array}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list, \mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$$\ast$tab\+Carte, int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Converti la liste en tableau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{listeCarte_8c_ad81dfa5b088d8447491e8613f1c2e67a}{array\+To\+List\+Carte}} (\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$list, \mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$$\ast$tab\+Carte, int size)
+\begin{DoxyCompactList}\small\item\em Converti un tableau de cartes en liste. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{listeCarte_8c_a600312b12056fb535ae88dfb2229b0e2}{get\+Valeur\+Totale}} (const \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$cartes)
+\begin{DoxyCompactList}\small\item\em Retourne la valeur totale des cartes de la liste. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{listeCarte_8c_a6af9d8f9df92c59b19b4520097f9feb1}{get\+Valeur\+Carte}} (const \mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Retourne La figure de la carte. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{listeCarte_8c_a95c02cd04c3bbeb5b7ebb251f94c6e95}{get\+Couleur\+Carte}} (const \mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$carte)
+\begin{DoxyCompactList}\small\item\em Retourne la couleur de la carte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Luc Leydert 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+24/12/2022
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{listeCarte_8c_ad81dfa5b088d8447491e8613f1c2e67a}\label{listeCarte_8c_ad81dfa5b088d8447491e8613f1c2e67a}} 
+\index{listeCarte.c@{listeCarte.c}!arrayToListCarte@{arrayToListCarte}}
+\index{arrayToListCarte@{arrayToListCarte}!listeCarte.c@{listeCarte.c}}
+\doxysubsubsection{\texorpdfstring{arrayToListCarte()}{arrayToListCarte()}}
+{\footnotesize\ttfamily void array\+To\+List\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$$\ast$}]{tab\+Carte,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Converti un tableau de cartes en liste. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em List\+Carte$\ast$} & La liste \\
+\hline
+{\em s\+Carte$\ast$$\ast$} & Le tableau des cartes \\
+\hline
+{\em int} & La taille du tableau \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{listeCarte_8c_a95c02cd04c3bbeb5b7ebb251f94c6e95}\label{listeCarte_8c_a95c02cd04c3bbeb5b7ebb251f94c6e95}} 
+\index{listeCarte.c@{listeCarte.c}!getCouleurCarte@{getCouleurCarte}}
+\index{getCouleurCarte@{getCouleurCarte}!listeCarte.c@{listeCarte.c}}
+\doxysubsubsection{\texorpdfstring{getCouleurCarte()}{getCouleurCarte()}}
+{\footnotesize\ttfamily char$\ast$ get\+Couleur\+Carte (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Retourne la couleur de la carte. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & Pointeur sur la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Une chaine de char Pour la couleur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listeCarte_8c_a6af9d8f9df92c59b19b4520097f9feb1}\label{listeCarte_8c_a6af9d8f9df92c59b19b4520097f9feb1}} 
+\index{listeCarte.c@{listeCarte.c}!getValeurCarte@{getValeurCarte}}
+\index{getValeurCarte@{getValeurCarte}!listeCarte.c@{listeCarte.c}}
+\doxysubsubsection{\texorpdfstring{getValeurCarte()}{getValeurCarte()}}
+{\footnotesize\ttfamily char$\ast$ get\+Valeur\+Carte (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$}]{carte }\end{DoxyParamCaption})}
+
+
+
+Retourne La figure de la carte. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em carte} & Pointeur sur la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Une chaine de char Pour la fichure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listeCarte_8c_a600312b12056fb535ae88dfb2229b0e2}\label{listeCarte_8c_a600312b12056fb535ae88dfb2229b0e2}} 
+\index{listeCarte.c@{listeCarte.c}!getValeurTotale@{getValeurTotale}}
+\index{getValeurTotale@{getValeurTotale}!listeCarte.c@{listeCarte.c}}
+\doxysubsubsection{\texorpdfstring{getValeurTotale()}{getValeurTotale()}}
+{\footnotesize\ttfamily int get\+Valeur\+Totale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{cartes }\end{DoxyParamCaption})}
+
+
+
+Retourne la valeur totale des cartes de la liste. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em cartes} & Pointeur sur la liste de cartes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+valeur totale des cartes de la liste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listeCarte_8c_a6357f715f62790fe2b361218acde1506}\label{listeCarte_8c_a6357f715f62790fe2b361218acde1506}} 
+\index{listeCarte.c@{listeCarte.c}!listCarteSize@{listCarteSize}}
+\index{listCarteSize@{listCarteSize}!listeCarte.c@{listeCarte.c}}
+\doxysubsubsection{\texorpdfstring{listCarteSize()}{listCarteSize()}}
+{\footnotesize\ttfamily int list\+Carte\+Size (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+Renvoie la taille de la liste. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em List\+Carte$\ast$} & La liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La taille de la liste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{listeCarte_8c_aeb9e25f694f74e30c209f40b0a8d46b1}\label{listeCarte_8c_aeb9e25f694f74e30c209f40b0a8d46b1}} 
+\index{listeCarte.c@{listeCarte.c}!listCarteToArray@{listCarteToArray}}
+\index{listCarteToArray@{listCarteToArray}!listeCarte.c@{listeCarte.c}}
+\doxysubsubsection{\texorpdfstring{listCarteToArray()}{listCarteToArray()}}
+{\footnotesize\ttfamily void list\+Carte\+To\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structListCarte}{List\+Carte}} $\ast$}]{list,  }\item[{\mbox{\hyperlink{structsCarte}{s\+Carte}} $\ast$$\ast$}]{tab\+Carte,  }\item[{int $\ast$}]{size }\end{DoxyParamCaption})}
+
+
+
+Converti la liste en tableau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em List\+Carte$\ast$} & La liste \\
+\hline
+{\em s\+Carte$\ast$$\ast$} & Le tableau des cartes \\
+\hline
+{\em int} & La taille du tableau \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,4 @@
+<map id="itemCarte" name="itemCarte">
+<area shape="rect" id="node1" title="Un item de la liste ." alt="" coords="5,96,92,123"/>
+<area shape="rect" id="node2" href="$structsCarte.html" title="Structure représantant une carte." alt="" coords="17,5,81,32"/>
+</map>

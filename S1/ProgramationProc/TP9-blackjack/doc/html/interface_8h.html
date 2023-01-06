@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TP9-blackjack: Référence du fichier src/interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP9-blackjack
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Gestion de l'interface et l'interaction avec le(s) joueur(s)  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;listeCarte.h&quot;</code><br />
+<code>#include &quot;listJoueur.h&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de interface.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_8h__incl.png" border="0" usemap="#asrc_2interface_8h" alt=""/></div>
+<map name="asrc_2interface_8h" id="asrc_2interface_8h">
+<area shape="rect" title="Gestion de l&#39;interface et l&#39;interaction avec le(s) joueur(s)" alt="" coords="47,5,161,32"/>
+<area shape="rect" href="listeCarte_8h_source.html" title=" " alt="" coords="13,229,110,256"/>
+<area shape="rect" href="listJoueur_8h_source.html" title=" " alt="" coords="57,80,151,107"/>
+<area shape="rect" title=" " alt="" coords="175,80,246,107"/>
+<area shape="rect" href="typesCartes_8h.html" title="Fichier corespondant à tout les types utilisés." alt="" coords="5,304,117,331"/>
+<area shape="rect" href="typesJoueur_8h_source.html" title=" " alt="" coords="53,155,163,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_8h__dep__incl.png" border="0" usemap="#asrc_2interface_8hdep" alt=""/></div>
+<map name="asrc_2interface_8hdep" id="asrc_2interface_8hdep">
+<area shape="rect" title="Gestion de l&#39;interface et l&#39;interaction avec le(s) joueur(s)" alt="" coords="65,5,180,32"/>
+<area shape="rect" href="interface_8c.html" title="Représente toutes les interactions du joueur sur le programme." alt="" coords="5,80,120,107"/>
+<area shape="rect" href="jeu_8c.html" title=" " alt="" coords="145,80,221,107"/>
+</map>
+</div>
+</div>
+<p><a href="interface_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:a8be009140b92a93d94564a14963f77e3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a> { <br />
+&#160;&#160;<a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a069cde49fdb465c39169f4affef4d9a0">SAUTE</a>
+, <a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a5ce063289dc687d6c5ea8cddc448f583">EGALITE</a>
+, <a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3a0aceea6b40bef9e748654eb3042932c0">REMPORTE</a>
+, <a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3af44461cb1755c9a664ad4f1fa5ffd0b2">ETAT_BLACKJACK</a>
+, <br />
+&#160;&#160;<a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3ad1176401d39aa4a84e2381c8eb563607">BATU</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a8be009140b92a93d94564a14963f77e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represente l'état du joueur par rapport au croupier.  <a href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8be009140b92a93d94564a14963f77e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:af13a0cfb239c2c73ab277c79d3368231"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#af13a0cfb239c2c73ab277c79d3368231">demanderNom</a> ()</td></tr>
+<tr class="memdesc:af13a0cfb239c2c73ab277c79d3368231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande le nom au joueur avec la fonction getline.  <a href="interface_8h.html#af13a0cfb239c2c73ab277c79d3368231">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af13a0cfb239c2c73ab277c79d3368231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d367df77d064a9d463e1f2fabe88c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a07d367df77d064a9d463e1f2fabe88c3">demanderMise</a> (const char *nom)</td></tr>
+<tr class="memdesc:a07d367df77d064a9d463e1f2fabe88c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande au joueur sa mise.  <a href="interface_8h.html#a07d367df77d064a9d463e1f2fabe88c3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a07d367df77d064a9d463e1f2fabe88c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d6a148c679cb5173a9251482a8554c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a95d6a148c679cb5173a9251482a8554c">demanderContinuer</a> ()</td></tr>
+<tr class="memdesc:a95d6a148c679cb5173a9251482a8554c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande aux joueurs s'ils veullent continuer de jouer.  <a href="interface_8h.html#a95d6a148c679cb5173a9251482a8554c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a95d6a148c679cb5173a9251482a8554c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4bc5e1a7aa6f834928b5d9eaeecc73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a9c4bc5e1a7aa6f834928b5d9eaeecc73">continuer</a> ()</td></tr>
+<tr class="memdesc:a9c4bc5e1a7aa6f834928b5d9eaeecc73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demande au joueur s'il veu une autre carte.  <a href="interface_8h.html#a9c4bc5e1a7aa6f834928b5d9eaeecc73">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9c4bc5e1a7aa6f834928b5d9eaeecc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d074a7d05321b34f37804da8645de96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a0d074a7d05321b34f37804da8645de96">annoncerCartes</a> (const <a class="el" href="structListCarte.html">ListCarte</a> *cartes)</td></tr>
+<tr class="memdesc:a0d074a7d05321b34f37804da8645de96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les cartes d'une liste.  <a href="interface_8h.html#a0d074a7d05321b34f37804da8645de96">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0d074a7d05321b34f37804da8645de96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad027c51eefb319bd140430cae871ac12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ad027c51eefb319bd140430cae871ac12">annoncerTour</a> (const char *nom)</td></tr>
+<tr class="memdesc:ad027c51eefb319bd140430cae871ac12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annonce au joueur que c'est son tour.  <a href="interface_8h.html#ad027c51eefb319bd140430cae871ac12">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad027c51eefb319bd140430cae871ac12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4da98495001fce3667315f199fcd76fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a4da98495001fce3667315f199fcd76fb">annoncerEtat</a> (const <a class="el" href="structJoueur.html">Joueur</a> *joueur)</td></tr>
+<tr class="memdesc:a4da98495001fce3667315f199fcd76fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche l'état du joueur.  <a href="interface_8h.html#a4da98495001fce3667315f199fcd76fb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4da98495001fce3667315f199fcd76fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40582e263661882dec54d6016a1c31a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a40582e263661882dec54d6016a1c31a8">annoncerScore</a> (const <a class="el" href="structJoueur.html">Joueur</a> *joueur)</td></tr>
+<tr class="memdesc:a40582e263661882dec54d6016a1c31a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche le score d'un joueur.  <a href="interface_8h.html#a40582e263661882dec54d6016a1c31a8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a40582e263661882dec54d6016a1c31a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8cd19d02cc0e06f5506c2a31f11369b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#ae8cd19d02cc0e06f5506c2a31f11369b">annoncerCartesToutLeMonde</a> (const <a class="el" href="structlistJoueur.html">listJoueur</a> *joueurs)</td></tr>
+<tr class="memdesc:ae8cd19d02cc0e06f5506c2a31f11369b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche les cartes d'une liste de joueurs.  <a href="interface_8h.html#ae8cd19d02cc0e06f5506c2a31f11369b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ae8cd19d02cc0e06f5506c2a31f11369b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d6d7a025d3fedbd1036654af739ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_8h.html#a29d6d7a025d3fedbd1036654af739ea7">annoncerEtatJeu</a> (const char *nomJoueur, <a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a> etat)</td></tr>
+<tr class="memdesc:a29d6d7a025d3fedbd1036654af739ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche létat d'un joueur par rapport au croupier.  <a href="interface_8h.html#a29d6d7a025d3fedbd1036654af739ea7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a29d6d7a025d3fedbd1036654af739ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Gestion de l'interface et l'interaction avec le(s) joueur(s) </p>
+<dl class="section author"><dt>Auteur</dt><dd>Luc Leydert </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>16/12/2022 \ </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 \ </dd></dl>
+</div><h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="a8be009140b92a93d94564a14963f77e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8be009140b92a93d94564a14963f77e3">&#9670;&nbsp;</a></span>EtatDeJeu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represente l'état du joueur par rapport au croupier. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a8be009140b92a93d94564a14963f77e3a069cde49fdb465c39169f4affef4d9a0"></a>SAUTE&#160;</td><td class="fielddoc"><p>Le joueur à sauté (fait plus de 21) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8be009140b92a93d94564a14963f77e3a5ce063289dc687d6c5ea8cddc448f583"></a>EGALITE&#160;</td><td class="fielddoc"><p>Le joueur à fait égalité avec le croupier. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8be009140b92a93d94564a14963f77e3a0aceea6b40bef9e748654eb3042932c0"></a>REMPORTE&#160;</td><td class="fielddoc"><p>Le joueur remporte sa mise. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8be009140b92a93d94564a14963f77e3af44461cb1755c9a664ad4f1fa5ffd0b2"></a>ETAT_BLACKJACK&#160;</td><td class="fielddoc"><p>Le joueur à fait blackjack (le croupier non) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8be009140b92a93d94564a14963f77e3ad1176401d39aa4a84e2381c8eb563607"></a>BATU&#160;</td><td class="fielddoc"><p>Le joueur à été batu par le croupier. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a0d074a7d05321b34f37804da8645de96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d074a7d05321b34f37804da8645de96">&#9670;&nbsp;</a></span>annoncerCartes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void annoncerCartes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structListCarte.html">ListCarte</a> *&#160;</td>
+          <td class="paramname"><em>cartes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les cartes d'une liste. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cartes</td><td>La liste de cartes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae8cd19d02cc0e06f5506c2a31f11369b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8cd19d02cc0e06f5506c2a31f11369b">&#9670;&nbsp;</a></span>annoncerCartesToutLeMonde()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void annoncerCartesToutLeMonde </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structlistJoueur.html">listJoueur</a> *&#160;</td>
+          <td class="paramname"><em>joueurs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche les cartes d'une liste de joueurs. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueurs</td><td>La liste de joueurs </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4da98495001fce3667315f199fcd76fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4da98495001fce3667315f199fcd76fb">&#9670;&nbsp;</a></span>annoncerEtat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void annoncerEtat </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structJoueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>joueur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche l'état du joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>Pointeur sur le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29d6d7a025d3fedbd1036654af739ea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29d6d7a025d3fedbd1036654af739ea7">&#9670;&nbsp;</a></span>annoncerEtatJeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void annoncerEtatJeu </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nomJoueur</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_8h.html#a8be009140b92a93d94564a14963f77e3">EtatDeJeu</a>&#160;</td>
+          <td class="paramname"><em>etat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche létat d'un joueur par rapport au croupier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nomJoueur</td><td>Le nom du joueur </td></tr>
+    <tr><td class="paramname">etat</td><td>Un énum représantant cet état. <br  />
+ SAUTE si Le joueur à sauté (fait plus de 21) <br  />
+ EGALITE si Le joueur à fait égalité avec le croupier <br  />
+ REMPORTE si Le joueur remporte sa mise <br  />
+ ETAT_BLACKJACK si Le joueur à fait blackjack (le croupier non) <br  />
+ BATU si Le joueur à été batu par le croupier </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a40582e263661882dec54d6016a1c31a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40582e263661882dec54d6016a1c31a8">&#9670;&nbsp;</a></span>annoncerScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void annoncerScore </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structJoueur.html">Joueur</a> *&#160;</td>
+          <td class="paramname"><em>joueur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche le score d'un joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>Pointeur sur le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad027c51eefb319bd140430cae871ac12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad027c51eefb319bd140430cae871ac12">&#9670;&nbsp;</a></span>annoncerTour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void annoncerTour </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Annonce au joueur que c'est son tour. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nom</td><td>Le nom du joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9c4bc5e1a7aa6f834928b5d9eaeecc73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4bc5e1a7aa6f834928b5d9eaeecc73">&#9670;&nbsp;</a></span>continuer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int continuer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Demande au joueur s'il veu une autre carte. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si oui, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a95d6a148c679cb5173a9251482a8554c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95d6a148c679cb5173a9251482a8554c">&#9670;&nbsp;</a></span>demanderContinuer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int demanderContinuer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Demande aux joueurs s'ils veullent continuer de jouer. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si oui, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a07d367df77d064a9d463e1f2fabe88c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d367df77d064a9d463e1f2fabe88c3">&#9670;&nbsp;</a></span>demanderMise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int demanderMise </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>nom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Demande au joueur sa mise. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nom</td><td>Le nom du joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La mise du joueur </dd></dl>
+
+</div>
+</div>
+<a id="af13a0cfb239c2c73ab277c79d3368231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13a0cfb239c2c73ab277c79d3368231">&#9670;&nbsp;</a></span>demanderNom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* demanderNom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Demande le nom au joueur avec la fonction getline. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nom du joueur </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
