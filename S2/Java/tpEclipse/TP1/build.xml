@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="java" name="Create Runnable Jar for Project TP1">
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
+	<!--ANT 1.7 is required                                        -->
+	<!--define folder properties-->
+	<property name="dir.buildfile" value="." />
+	<property name="dir.workspace" value="${dir.buildfile}" />
+	<property name="dir.jarfile" value="${dir.workspace}" />
+	<property name="project.sources.dir" value="src"/>
+	<property name="project.bin.dir" value="bin"/>
+	<property name="project.lib.dir" value="lib"/>
+	<path id="project.classpath">
+		<fileset dir="${project.lib.dir}">
+			<include name="*.jar"/>
+		</fileset>
+		<pathelement location="${project.bin.dir}"/>
+	</path>
+	<target name="jar">
+		<jar destfile="${basedir}/TP1.jar" filesetmanifest="mergewithoutmain">
+			<manifest>
+				<attribute name="Main-Class" value="HelloWorld" />
+				<attribute name="Class-Path" value="." />
+			</manifest>
+			<fileset dir="${project.bin.dir}" />
+		</jar>
+	</target>
+	<target name="delete">
+		<delete>
+			<fileset dir="${basedir}/bin" includes="**/*.class">
+			</fileset>
+		</delete>
+	</target>
+	<target name="mkdir">
+		<mkdir dir="${basedir}/bin" />
+		<mkdir dir="${basedir}/lib"/>
+	</target>
+	<target name="javac">
+		<javac srcdir="${project.sources.dir}" destdir="${project.bin.dir}" debug="yes" optimize="off" deprecation="on">
+			<classpath refid="project.classpath"></classpath>
+		</javac>
+	</target>
+	<target name="echo">
+		<echo message="compilation en cours"></echo>
+	</target>
+	<target name="java">
+		<java classname="HelloWorld" fork="true">
+			<classpath refid="project.classpath"></classpath>
+		</java>
+	</target>
+</project>
