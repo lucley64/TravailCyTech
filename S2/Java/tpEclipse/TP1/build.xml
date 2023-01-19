@@ -16,9 +16,10 @@
 		<pathelement location="${project.bin.dir}"/>
 	</path>
 	<target name="jar">
+		<antcall target="javac"></antcall>
 		<jar destfile="${basedir}/TP1.jar" filesetmanifest="mergewithoutmain">
 			<manifest>
-				<attribute name="Main-Class" value="HelloWorld" />
+				<attribute name="Main-Class" value="com.example.tp.App" />
 				<attribute name="Class-Path" value="." />
 			</manifest>
 			<fileset dir="${project.bin.dir}" />
@@ -35,16 +36,18 @@
 		<mkdir dir="${basedir}/lib"/>
 	</target>
 	<target name="javac">
+		<antcall target="echo"></antcall>
 		<javac srcdir="${project.sources.dir}" destdir="${project.bin.dir}" debug="yes" optimize="off" deprecation="on">
-			<classpath refid="project.classpath"></classpath>
+			<classpath refid="project.classpath"/>
 		</javac>
 	</target>
 	<target name="echo">
 		<echo message="compilation en cours"></echo>
 	</target>
 	<target name="java">
-		<java classname="HelloWorld" fork="true">
-			<classpath refid="project.classpath"></classpath>
+		<antcall target="jar"></antcall>
+		<java jar="${basedir}/TP1.jar" fork="yes">
+			<classpath refid="project.classpath"/>
 		</java>
 	</target>
 </project>
