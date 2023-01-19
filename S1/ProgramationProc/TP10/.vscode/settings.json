@@ -5,6 +5,11 @@
             "cwd": "/home/zelie/Prog/TravailCyTech/S1/ProgramationProc/TP10/bin",
             "binaryPath": "/home/zelie/Prog/TravailCyTech/S1/ProgramationProc/TP10/bin/a.out",
             "binaryArgs": []
+        },
+        {
+            "cwd": "/home/cytech/Travail/S1/ProgramationProc/TP10/bin",
+            "binaryPath": "/home/cytech/Travail/S1/ProgramationProc/TP10/bin/a.out",
+            "binaryArgs": []
         }
     ]
 }

@@ -1,7 +1,7 @@
 [
     {
         "command": "gcc -Wall -c src/main.c -o bin/main.o",
-        "directory": "/home/zelie/Prog/TravailCyTech/S1/ProgramationProc/TP10",
-        "file": "/home/zelie/Prog/TravailCyTech/S1/ProgramationProc/TP10/src/main.c"
+        "directory": "/home/cytech/Travail/S1/ProgramationProc/TP10",
+        "file": "/home/cytech/Travail/S1/ProgramationProc/TP10/src/main.c"
     }
 ]

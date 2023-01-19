@@ -22,10 +22,11 @@ Restaurant parseRestaurant(char *restaurant);
 Adresse parseAdresse(char *adresse);
 void getRestoFromFile(const char *fileName, Restaurant **restos, size_t *size);
 int getMethod();
-void restoPau(const Restaurant *restaurants, size_t size, const char *path);
+void restoPau(Restaurant *restaurants, size_t size, const char *path);
 void restoPaCher(const Restaurant *restaurants, size_t size, const char *path);
 void restruct(const Restaurant *restaurants, size_t size, const char *path);
 char *restorantToCSV(const Restaurant *restaurant);
+void freeResto(Restaurant **resto, size_t size);
 
 int main(int argc, char *argv[])
 {
@@ -54,7 +55,7 @@ int main(int argc, char *argv[])
         default:
             break;
         }
-        free(restos);
+        // free(restos);
     }
     else
     {
@@ -82,8 +83,8 @@ Restaurant parseRestaurant(char *restaurant)
     char *ptr;
 
     ptr = strtok_r(restaurant, ";", &restaurant);
-    resto.str_nom = (char *)malloc(strlen(ptr) * sizeof(char));
-    memcpy(resto.str_nom, ptr, strlen(ptr) * sizeof(char));
+    resto.str_nom = malloc(strlen(ptr));
+    memcpy(resto.str_nom, ptr, strlen(ptr));
     ptr = strtok_r(restaurant, ";", &restaurant);
     resto.adresse = parseAdresse(ptr);
     ptr = strtok_r(restaurant, ";", &restaurant);
@@ -102,29 +103,29 @@ Adresse parseAdresse(char *adresse)
     if (!(ptr[0] - '0' < 0 || ptr[0] - '0' > 9))
     {
         ptr = strtok_r(adresse, " ", &adresse);
-        adr.numero = (char *)malloc(strlen(ptr) * sizeof(char));
-        memcpy(adr.numero, ptr, strlen(ptr) * sizeof(char));
+        adr.numero = malloc(strlen(ptr));
+        memcpy(adr.numero, ptr, strlen(ptr));
     }
     else if (!strcmp(ptr, "Adresse"))
     {
-        adr.nom = (char *)malloc(strlen(ptr) * sizeof(char));
-        memcpy(adr.nom, ptr, strlen(ptr) * sizeof(char));
+        adr.nom = malloc(strlen(ptr));
+        memcpy(adr.nom, ptr, strlen(ptr));
         return adr;
     }
     else
     {
-        adr.numero = (char *)malloc(1 * sizeof(char));
+        adr.numero = malloc(1);
         adr.numero = "";
     }
     ptr = strtok_r(adresse, ",", &adresse);
-    adr.nom = (char *)malloc(strlen(ptr) * sizeof(char));
-    memcpy(adr.nom, ptr, strlen(ptr) * sizeof(char));
+    adr.nom = malloc(strlen(ptr));
+    memcpy(adr.nom, ptr, strlen(ptr));
     ptr = strtok_r(adresse, " ", &adresse);
-    adr.codePostal = (char *)malloc(strlen(ptr) * sizeof(char));
-    memcpy(adr.codePostal, ptr, strlen(ptr) * sizeof(char));
+    adr.codePostal = malloc(strlen(ptr));
+    memcpy(adr.codePostal, ptr, strlen(ptr));
     ptr = strtok_r(adresse, " ", &adresse);
-    adr.ville = (char *)malloc(strlen(ptr) * sizeof(char));
-    memcpy(adr.ville, ptr, strlen(ptr) * sizeof(char));
+    adr.ville = malloc(strlen(ptr));
+    memcpy(adr.ville, ptr, strlen(ptr));
 
     return adr;
 }
@@ -150,7 +151,7 @@ void getRestoFromFile(const char *fileName, Restaurant **restos, size_t *size)
         if (nbLines > 0)
         {
             *size = nbLines;
-            *restos = (Restaurant *)malloc(nbLines * sizeof(Restaurant));
+            *restos = malloc(nbLines * sizeof(Restaurant));
             i = 0;
             while (getline(&buf, &lsize, file) != -1 && i < nbLines)
             {
@@ -188,17 +189,19 @@ int getMethod()
     return method;
 }
 
-void restoPau(const Restaurant *restaurant, size_t size, const char *path)
+void restoPau(Restaurant *restaurant, size_t size, const char *path)
 {
     char *filename;
     FILE *file;
     char *csv;
 
-    filename = (char *)malloc((strlen(path) + strlen("/resto-pau.csv") * sizeof(char)));
+    filename = malloc(strlen(path) + strlen("/resto-pau.csv"));
 
     sprintf(filename, "%s/resto-pau.csv", path);
 
     file = fopen(filename, "w+");
+
+    free(filename);
 
     if (file == NULL)
     {
@@ -211,13 +214,14 @@ void restoPau(const Restaurant *restaurant, size_t size, const char *path)
         {
             if (!strcmp(restaurant[i].adresse.ville, "Pau"))
             {
-                csv = restorantToCSV(&restaurant[i]);
+                csv = restorantToCSV(&(restaurant[i]));
                 fprintf(file, "%s\n", csv);
                 free(csv);
             }
         }
         fclose(file);
     }
+    freeResto(&restaurant, size);
 }
 
 void restoPaCher(const Restaurant *restaurant, size_t size, const char *path)
@@ -236,23 +240,23 @@ char *restorantToCSV(const Restaurant *restaurant)
     char *note;
     size_t len;
 
-    len = (size_t)((ceil(log10(restaurant->int_prix)) + 1) * sizeof(char));
+    len = (size_t)((ceil(log10(restaurant->int_prix)) + 1));
 
-    prix = (char *)malloc(len);
+    prix = malloc(len);
     sprintf(prix, "%d", restaurant->int_prix);
 
-    len = 3 * sizeof(char);
-    note = (char *)malloc(len);
-    gcvt(restaurant->dbl_note, 2, note);
+    len = 3;
+    note = malloc(len);
+    sprintf(note, "%f", restaurant->dbl_note);
 
-    ret = (char *)malloc(sizeof(char) * (strlen(restaurant->str_nom) +
-                                         strlen(restaurant->adresse.codePostal) +
-                                         strlen(restaurant->adresse.nom) +
-                                         strlen(restaurant->adresse.numero) +
-                                         strlen(restaurant->adresse.ville) +
-                                         strlen(prix) +
-                                         strlen(note) +
-                                         strlen("; ,  ;;")));
+    ret = malloc(sizeof(char) * (strlen(restaurant->str_nom) +
+                                 strlen(restaurant->adresse.codePostal) +
+                                 strlen(restaurant->adresse.nom) +
+                                 strlen(restaurant->adresse.numero) +
+                                 strlen(restaurant->adresse.ville) +
+                                 strlen(prix) +
+                                 strlen(note) +
+                                 strlen("; ,  ;;")));
 
     sprintf(ret, "%s;%s %s, %s %s;%s;%s",
             restaurant->str_nom,
@@ -267,4 +271,20 @@ char *restorantToCSV(const Restaurant *restaurant)
     free(note);
 
     return ret;
+}
+
+void freeResto(Restaurant **rest, size_t sizeo)
+{
+    Restaurant *restaurant;
+    for (size_t i = 1; i < sizeo; i++)
+    {
+        restaurant = &(*rest)[i];
+        free(restaurant->adresse.codePostal);
+        free(restaurant->adresse.nom);
+        if (restaurant->adresse.numero != NULL)
+            free(restaurant->adresse.numero);
+        free(restaurant->adresse.ville);
+        free(restaurant->str_nom);
+    }
+    free(*rest);
 }
