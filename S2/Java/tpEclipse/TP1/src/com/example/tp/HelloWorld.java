@@ -1,9 +1,8 @@
-
+package com.example.tp;
+import java.lang.System.Logger.Level;
 public class HelloWorld {
-
 	public static void main(String[] args) {
-		System.out.println("Hello, World!");
-
+		var logger = System.getLogger("mainLogger");
+		logger.log(Level.INFO, "Hello, World!");
 	}
-
 }

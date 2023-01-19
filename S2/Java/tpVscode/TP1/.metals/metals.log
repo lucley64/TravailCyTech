@@ -235,3 +235,13 @@ WARNING: Unmatched cancel notification for request id 14
 2023.01.19 10:34:21 INFO  time: compiled tp1 in 0.18s
 Jan 19, 2023 10:44:34 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.01.19 10:51:03 INFO  compiling tp1 (1 java source)
+2023.01.19 10:51:03 INFO  time: compiled tp1 in 0.21s
+2023.01.19 10:51:09 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP1/src/main/java/com/example/tp/App.java
+2023.01.19 10:51:10 INFO  compiling tp1 (1 java source)
+2023.01.19 10:51:10 INFO  time: compiled tp1 in 0.18s
+2023.01.19 10:51:10 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP1/src/main/java/com/example/tp/App.java
+2023.01.19 10:51:11 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP1/src/main/java/com/example/tp/App.java
+2023.01.19 10:51:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP1/src/main/java/com/example/tp/App.java
+2023.01.19 10:51:14 INFO  compiling tp1 (1 java source)
+2023.01.19 10:51:14 INFO  time: compiled tp1 in 0.21s
