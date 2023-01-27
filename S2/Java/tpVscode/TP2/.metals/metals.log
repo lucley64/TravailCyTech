@@ -6904,3 +6904,5 @@ WARNING: Unmatched cancel notification for request id 8397
 2023.01.27 09:43:45 INFO  time: compiled tp2 in 0.15s
 Jan 27, 2023 9:43:52 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+Jan 27, 2023 9:43:58 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
