@@ -1,0 +1,48 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+-sourcepath
+'/home/cytech/Travail/S2/Java/tpVscode/TP2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'tp2 1.0 API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' '/home/cytech/Travail/S2/Java/tpVscode/TP2/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'tp2 1.0 API'
+com.example
+/home/cytech/Travail/S2/Java/tpVscode/TP2/src/main/java = 1674719639893
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/jquery-ui.overrides.css = 1674720610521
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/member-search-index.zip = 1674720610501
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/index.html = 1674720610513
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/type-search-index.zip = 1674720610501
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/element-list = 1674720610469
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/member-search-index.js = 1674720610501
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/allclasses-index.html = 1674720610505
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/allpackages-index.html = 1674720610505
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/deprecated-list.html = 1674720610509
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/constant-values.html = 1674720610477
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/overview-tree.html = 1674720610489
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/package-search-index.zip = 1674720610497
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/script.js = 1674720610517
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/allclasses.html = 1674720610513
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/search.js = 1674720610517
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/help-doc.html = 1674720610517
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/stylesheet.css = 1674720610517
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/type-search-index.js = 1674720610497
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/package-search-index.js = 1674720610493
+/home/cytech/Travail/S2/Java/tpVscode/TP2/target/site/apidocs/index-all.html = 1674720610501

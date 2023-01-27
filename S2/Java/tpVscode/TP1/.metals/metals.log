@@ -245,3 +245,70 @@ INFO: Unsupported notification method: $/setTrace
 2023.01.19 10:51:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP1/src/main/java/com/example/tp/App.java
 2023.01.19 10:51:14 INFO  compiling tp1 (1 java source)
 2023.01.19 10:51:14 INFO  time: compiled tp1 in 0.21s
+2023.01.19 11:18:39 INFO  shutting down Metals
+2023.01.19 11:18:39 INFO  Shut down connection with build server.
+2023.01.26 08:11:23 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP1/.metals/lsp.trace.json or /home/cytech/.cache/metals/lsp.trace.json
+2023.01.26 08:11:24 INFO  logging to file /home/cytech/Travail/S2/Java/tpVscode/TP1/.metals/metals.log
+2023.01.26 08:11:24 INFO  Started: Metals version 0.11.10 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP1' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.26 08:11:27 INFO  time: initialize in 2.79s
+2023.01.26 08:11:29 INFO  Attempting to connect to the build server...
+2023.01.26 08:11:29 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json
+2023.01.26 08:11:30 INFO  skipping build import with status 'Dismissed'
+2023.01.26 08:11:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP1/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json
+2023.01.26 08:11:30 INFO  time: Connected to build server in 0.97s
+2023.01.26 08:11:30 INFO  Connected to Build server: Bloop v1.5.6
+2023.01.26 08:11:32 INFO  time: code lens generation in 2.3s
+2023.01.26 08:11:34 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.01.26 08:11:34 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.01.26 08:11:34 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.01.26 08:11:34 INFO  time: indexed workspace in 3.56s
+2023.01.26 08:11:36 INFO  compiling tp1 (1 java source)
+2023.01.26 08:11:37 INFO  time: compiled tp1 in 1.3s
+2023.01.26 08:47:47 INFO  compiling tp1 (1 java source)
+2023.01.26 08:47:47 INFO  time: compiled tp1 in 66ms
+2023.01.26 08:47:49 INFO  compiling tp1 (1 java source)
+2023.01.26 08:47:49 INFO  time: compiled tp1 in 14ms
+2023.01.26 08:48:01 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:01 INFO  time: compiled tp1 in 16ms
+2023.01.26 08:48:08 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:08 INFO  time: compiled tp1 in 29ms
+2023.01.26 08:48:11 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:11 INFO  time: compiled tp1 in 0.13s
+2023.01.26 08:48:18 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:18 INFO  time: compiled tp1 in 0.13s
+2023.01.26 08:48:32 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:32 INFO  time: compiled tp1 in 0.1s
+2023.01.26 08:48:46 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:46 INFO  time: compiled tp1 in 0.12s
+2023.01.26 08:48:55 INFO  compiling tp1 (1 java source)
+2023.01.26 08:48:55 INFO  time: compiled tp1 in 0.12s
+2023.01.26 08:56:55 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP1/.metals/lsp.trace.json or /home/cytech/.cache/metals/lsp.trace.json
+2023.01.26 08:56:55 INFO  logging to file /home/cytech/Travail/S2/Java/tpVscode/TP1/.metals/metals.log
+2023.01.26 08:56:55 INFO  Started: Metals version 0.11.10 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP1' for client Visual Studio Code 1.74.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.01.26 08:56:59 INFO  time: initialize in 4.35s
+2023.01.26 08:57:01 INFO  Attempting to connect to the build server...
+2023.01.26 08:57:01 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json
+2023.01.26 08:57:01 INFO  skipping build import with status 'Dismissed'
+2023.01.26 08:57:02 INFO  time: code lens generation in 1.2s
+2023.01.26 08:57:05 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP1/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json
+2023.01.26 08:57:05 INFO  time: Connected to build server in 3.97s
+2023.01.26 08:57:05 INFO  Connected to Build server: Bloop v1.5.6
+2023.01.26 08:57:05 INFO  time: Imported build in 0.12s
+2023.01.26 08:57:06 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.01.26 08:57:06 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.01.26 08:57:06 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.01.26 08:57:06 INFO  time: indexed workspace in 1.47s
+2023.01.26 08:58:41 INFO  shutting down Metals
+2023.01.26 08:58:41 INFO  Shut down connection with build server.
