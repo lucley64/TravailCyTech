@@ -1,0 +1,811 @@
+2023.02.02 09:04:14 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/lsp.trace.json or /home/cytech/.cache/metals/lsp.trace.json[0m
+2023.02.02 09:04:15 INFO  logging to file /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/metals.log[0m
+2023.02.02 09:04:15 INFO  Started: Metals version 0.11.10 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP3' for client Visual Studio Code 1.74.3.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.02.02 09:04:17 INFO  time: initialize in 1.98s[0m
+2023.02.02 09:04:19 WARN  Build server is not auto-connectable.[0m
+2023.02.02 09:04:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+2023.02.02 09:04:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+Feb 02, 2023 9:04:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+Feb 02, 2023 9:04:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.02.02 09:04:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java:1: error: reached end of file while parsing
+package 
+       ^
+1 error[0m
+2023.02.02 09:04:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+2023.02.02 09:04:30 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+2023.02.02 09:04:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java:3: error: reached end of file while parsing
+class 
+     ^
+1 error[0m
+2023.02.02 09:04:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+2023.02.02 09:04:32 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java:3: error: reached end of file while parsing
+class App
+         ^
+1 error[0m
+2023.02.02 09:04:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+2023.02.02 09:04:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+Feb 02, 2023 9:05:04 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 02, 2023 9:05:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 02, 2023 9:05:11 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 02, 2023 9:05:15 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 02, 2023 9:05:46 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.02.02 09:05:46 INFO  shutting down Metals[0m
+2023.02.02 09:05:46 ERROR Unexpected error initializing serverorg.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.02 09:05:55 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/lsp.trace.json or /home/cytech/.cache/metals/lsp.trace.json[0m
+2023.02.02 09:05:56 INFO  logging to file /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/metals.log[0m
+2023.02.02 09:05:56 INFO  Started: Metals version 0.11.10 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP3' for client Visual Studio Code 1.74.3.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.02.02 09:06:00 INFO  time: initialize in 3.76s[0m
+2023.02.02 09:06:04 WARN  Build server is not auto-connectable.[0m
+2023.02.02 09:06:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/App.java[0m
+2023.02.02 09:06:06 INFO  time: code lens generation in 2.35s[0m
+2023.02.02 09:06:06 INFO  time: code lens generation in 1.81s[0m
+2023.02.02 09:06:11 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -Dmaven.multiModuleProjectDirectory=/home/cytech/Travail/S2/Java/tpVscode/TP3 -Dmaven.home=/tmp/metals8884666955668221812 -cp /tmp/metals8884666955668221812/maven-wrapper.jar org.apache.maven.wrapper.MavenWrapperMain generate-sources ch.epfl.scala:bloop-maven-plugin:2.0.0:bloopInstall -DdownloadSources=true'[0m
+2023.02.02 09:06:13 INFO  [INFO] Scanning for projects...[0m
+2023.02.02 09:06:13 INFO  [WARNING] [0m
+2023.02.02 09:06:13 INFO  [WARNING] Some problems were encountered while building the effective model for com.example.tp:tp3:jar:1.0[0m
+2023.02.02 09:06:13 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 16, column 21[0m
+2023.02.02 09:06:13 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 42, column 21[0m
+2023.02.02 09:06:13 INFO  [WARNING] [0m
+2023.02.02 09:06:13 INFO  [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.[0m
+2023.02.02 09:06:13 INFO  [WARNING] [0m
+2023.02.02 09:06:13 INFO  [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.[0m
+2023.02.02 09:06:13 INFO  [WARNING] [0m
+2023.02.02 09:06:13 INFO  [INFO] [0m
+2023.02.02 09:06:13 INFO  [INFO] -------------------------< com.example.tp:tp3 >-------------------------[0m
+2023.02.02 09:06:13 INFO  [INFO] Building tp3 1.0[0m
+2023.02.02 09:06:13 INFO  [INFO] --------------------------------[ jar ]---------------------------------[0m
+2023.02.02 09:06:13 INFO  [INFO] [0m
+2023.02.02 09:06:13 INFO  [INFO] --- bloop-maven-plugin:2.0.0:bloopInstall (default-cli) @ tp3 ---[0m
+2023.02.02 09:06:13 INFO  [INFO] Using empty launcher: no run setup for tp3.[0m
+2023.02.02 09:06:13 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.02.02 09:06:13 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.02.02 09:06:13 INFO  [INFO] Generated .bloop/tp3.json[0m
+2023.02.02 09:06:14 INFO  [INFO] Generated .bloop/tp3-test.json[0m
+2023.02.02 09:06:14 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.02.02 09:06:14 INFO  [INFO] BUILD SUCCESS[0m
+2023.02.02 09:06:14 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.02.02 09:06:14 INFO  [INFO] Total time:  1.032 s[0m
+2023.02.02 09:06:14 INFO  [INFO] Finished at: 2023-02-02T09:06:14+01:00[0m
+2023.02.02 09:06:14 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.02.02 09:06:14 INFO  time: ran 'mvn bloopInstall' in 3.4s[0m
+2023.02.02 09:06:14 INFO  Attempting to connect to the build server...[0m
+2023.02.02 09:06:14 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json[0m
+2023.02.02 09:06:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json[0m
+2023.02.02 09:06:14 INFO  time: Connected to build server in 0.27s[0m
+2023.02.02 09:06:15 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.02.02 09:06:16 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:06:16 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:06:16 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:06:16 INFO  time: indexed workspace in 1.18s[0m
+2023.02.02 09:06:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:06:16 INFO  time: compiled tp3 in 0.18s[0m
+Feb 02, 2023 9:07:59 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.02.02 09:08:10 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -Dmaven.multiModuleProjectDirectory=/home/cytech/Travail/S2/Java/tpVscode/TP3 -Dmaven.home=/tmp/metals3568758008749652061 -cp /tmp/metals3568758008749652061/maven-wrapper.jar org.apache.maven.wrapper.MavenWrapperMain generate-sources ch.epfl.scala:bloop-maven-plugin:2.0.0:bloopInstall -DdownloadSources=true'[0m
+2023.02.02 09:08:11 INFO  [INFO] Scanning for projects...[0m
+2023.02.02 09:08:11 INFO  [WARNING] [0m
+2023.02.02 09:08:11 INFO  [WARNING] Some problems were encountered while building the effective model for com.example.tp:tp3:jar:1.0[0m
+2023.02.02 09:08:11 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 16, column 21[0m
+2023.02.02 09:08:11 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 42, column 21[0m
+2023.02.02 09:08:11 INFO  [WARNING] [0m
+2023.02.02 09:08:11 INFO  [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.[0m
+2023.02.02 09:08:11 INFO  [WARNING] [0m
+2023.02.02 09:08:11 INFO  [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.[0m
+2023.02.02 09:08:11 INFO  [WARNING] [0m
+2023.02.02 09:08:11 INFO  [INFO] [0m
+2023.02.02 09:08:11 INFO  [INFO] -------------------------< com.example.tp:tp3 >-------------------------[0m
+2023.02.02 09:08:11 INFO  [INFO] Building tp3 1.0[0m
+2023.02.02 09:08:11 INFO  [INFO] --------------------------------[ jar ]---------------------------------[0m
+2023.02.02 09:08:11 INFO  [INFO] [0m
+2023.02.02 09:08:11 INFO  [INFO] --- bloop-maven-plugin:2.0.0:bloopInstall (default-cli) @ tp3 ---[0m
+2023.02.02 09:08:11 INFO  [INFO] Using empty launcher: no run setup for tp3.[0m
+2023.02.02 09:08:11 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.02.02 09:08:11 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.02.02 09:08:11 INFO  [INFO] Generated .bloop/tp3.json[0m
+2023.02.02 09:08:11 INFO  [INFO] Generated .bloop/tp3-test.json[0m
+2023.02.02 09:08:11 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.02.02 09:08:11 INFO  [INFO] BUILD SUCCESS[0m
+2023.02.02 09:08:11 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.02.02 09:08:11 INFO  [INFO] Total time:  0.915 s[0m
+2023.02.02 09:08:11 INFO  [INFO] Finished at: 2023-02-02T09:08:12+01:00[0m
+2023.02.02 09:08:11 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.02.02 09:08:12 INFO  time: ran 'mvn bloopInstall' in 1.81s[0m
+2023.02.02 09:08:12 INFO  Disconnecting from Bloop session...[0m
+2023.02.02 09:08:12 INFO  Shut down connection with build server.[0m
+2023.02.02 09:08:12 INFO  Attempting to connect to the build server...[0m
+2023.02.02 09:08:12 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json[0m
+2023.02.02 09:08:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json[0m
+2023.02.02 09:08:12 INFO  time: Connected to build server in 74ms[0m
+2023.02.02 09:08:12 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.02.02 09:08:13 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:08:13 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:08:13 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:08:13 INFO  time: indexed workspace in 1.13s[0m
+2023.02.02 09:08:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:08:40 INFO  time: compiled tp3 in 48ms[0m
+2023.02.02 09:08:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:08:41 INFO  time: compiled tp3 in 88ms[0m
+2023.02.02 09:08:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:08:43 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:08:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:08:45 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:08:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:08:50 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.02 09:08:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:08:51 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:09:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:09:10 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:09:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:09:19 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.02 09:09:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:09:45 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:09:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:09:53 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:09:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:09:56 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:10:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:10:02 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:10:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:10:05 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.02 09:10:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:10:49 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:10:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:10:52 INFO  time: compiled tp3 in 18ms[0m
+2023.02.02 09:10:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:10:55 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:10:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:10:57 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:12:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:12:21 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:12:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:12:32 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:12:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:12:40 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:12:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:12:43 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:12:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:12:47 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:13:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:13:07 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:13:09 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:13:09 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:14:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:01 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:14:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:17 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.02 09:14:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:30 INFO  time: compiled tp3 in 30ms[0m
+2023.02.02 09:14:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:32 INFO  time: compiled tp3 in 11ms[0m
+2023.02.02 09:14:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:35 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:14:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:38 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:14:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:39 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:14:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:43 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:14:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:46 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:14:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:47 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:14:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:49 INFO  time: compiled tp3 in 19ms[0m
+2023.02.02 09:14:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:14:53 INFO  time: compiled tp3 in 17ms[0m
+2023.02.02 09:15:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:03 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:15:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:07 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:15:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:27 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:15:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:29 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.02 09:15:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:36 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:15:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:37 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:15:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:39 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.02 09:15:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:42 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:15:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:43 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:15:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:44 INFO  time: compiled tp3 in 25ms[0m
+2023.02.02 09:15:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:48 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:15:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:15:53 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:18:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:18:42 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.02 09:18:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:18:46 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:18:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:18:52 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:18:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:18:53 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:19:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:19:47 INFO  time: compiled tp3 in 22ms[0m
+2023.02.02 09:20:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:20:27 INFO  time: compiled tp3 in 19ms[0m
+2023.02.02 09:20:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:20:32 INFO  time: compiled tp3 in 27ms[0m
+2023.02.02 09:20:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:20:36 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:20:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:20:40 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:20:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:20:47 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:20:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:20:49 INFO  time: compiled tp3 in 0.12s[0m
+Feb 02, 2023 9:20:50 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 804
+2023.02.02 09:21:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:21:32 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:21:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:21:35 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:21:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:21:43 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:21:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:21:47 INFO  time: compiled tp3 in 25ms[0m
+2023.02.02 09:21:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:21:50 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:21:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:21:58 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:22:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:22:01 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.02 09:22:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:22:05 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.02 09:22:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:22:20 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.02 09:22:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:22:26 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.02 09:22:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:22:32 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.02 09:22:41 INFO  shutting down Metals[0m
+2023.02.02 09:22:41 INFO  Shut down connection with build server.[0m
+2023.02.02 09:22:54 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/lsp.trace.json or /home/cytech/.cache/metals/lsp.trace.json[0m
+2023.02.02 09:22:55 INFO  logging to file /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/metals.log[0m
+2023.02.02 09:22:55 INFO  Started: Metals version 0.11.10 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP3' for client Visual Studio Code 1.74.3.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.10.5/scribe-slf4j_2.13-3.10.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.02.02 09:22:58 INFO  time: initialize in 2.67s[0m
+2023.02.02 09:23:01 INFO  Attempting to connect to the build server...[0m
+2023.02.02 09:23:01 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json[0m
+2023.02.02 09:23:01 INFO  skipping build import with status 'Installed'[0m
+Feb 02, 2023 9:23:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Feb 02, 2023 9:23:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+Feb 02, 2023 9:23:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+2023.02.02 09:23:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP3/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json[0m
+2023.02.02 09:23:01 INFO  time: Connected to build server in 0.76s[0m
+2023.02.02 09:23:01 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.02.02 09:23:04 INFO  time: code lens generation in 2.59s[0m
+2023.02.02 09:23:07 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:23:07 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:23:07 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.02.02 09:23:07 INFO  time: indexed workspace in 5.41s[0m
+2023.02.02 09:24:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:24:53 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:24:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:24:55 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:25:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:11 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:25:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:13 INFO  time: compiled tp3 in 0.1s[0m
+2023.02.02 09:25:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:15 INFO  time: compiled tp3 in 22ms[0m
+2023.02.02 09:25:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:16 INFO  time: compiled tp3 in 17ms[0m
+2023.02.02 09:25:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:24 INFO  time: compiled tp3 in 14ms[0m
+2023.02.02 09:25:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:27 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:25:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:29 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:25:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:31 INFO  time: compiled tp3 in 23ms[0m
+2023.02.02 09:25:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:25:32 INFO  time: compiled tp3 in 0.12s[0m
+Feb 02, 2023 9:27:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 140
+2023.02.02 09:27:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:08 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.02 09:27:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:10 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:27:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:30 INFO  time: compiled tp3 in 14ms[0m
+2023.02.02 09:27:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:32 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:27:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:37 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:27:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:42 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:27:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:45 INFO  time: compiled tp3 in 19ms[0m
+2023.02.02 09:27:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:46 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:27:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:27:51 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:28:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:03 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:28:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:12 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:28:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:28 INFO  time: compiled tp3 in 14ms[0m
+2023.02.02 09:28:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:32 INFO  time: compiled tp3 in 20ms[0m
+2023.02.02 09:28:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:33 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:28:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:36 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:28:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:39 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:28:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:41 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:28:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:47 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:28:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:49 INFO  time: compiled tp3 in 21ms[0m
+2023.02.02 09:28:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:51 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:28:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:55 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.02 09:28:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:28:58 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:29:09 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:09 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:29:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:12 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:29:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:20 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:29:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:22 INFO  time: compiled tp3 in 30ms[0m
+2023.02.02 09:29:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:23 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:29:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:26 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:29:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:28 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:29:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:33 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:29:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:34 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:29:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:36 INFO  time: compiled tp3 in 14ms[0m
+2023.02.02 09:29:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:42 INFO  time: compiled tp3 in 19ms[0m
+2023.02.02 09:29:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:49 INFO  time: compiled tp3 in 19ms[0m
+2023.02.02 09:29:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:51 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:29:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:29:53 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:29:59 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Feb 02, 2023 9:29:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:54)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:49)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$3(MetalsLanguageServer.scala:1809)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.02.02 09:29:59 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:60)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.02 09:29:59 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.02 09:30:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:00 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:30:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:06 INFO  time: compiled tp3 in 18ms[0m
+Feb 02, 2023 9:30:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 777
+2023.02.02 09:30:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:10 INFO  time: compiled tp3 in 20ms[0m
+2023.02.02 09:30:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:13 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:30:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:17 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.02 09:30:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:26 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.02 09:30:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:28 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:30:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:33 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:30:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:35 INFO  time: compiled tp3 in 19ms[0m
+2023.02.02 09:30:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:44 INFO  time: compiled tp3 in 14ms[0m
+2023.02.02 09:30:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:50 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:30:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:51 INFO  time: compiled tp3 in 12ms[0m
+2023.02.02 09:30:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:53 INFO  time: compiled tp3 in 12ms[0m
+2023.02.02 09:30:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:56 INFO  time: compiled tp3 in 24ms[0m
+2023.02.02 09:30:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:30:58 INFO  time: compiled tp3 in 14ms[0m
+2023.02.02 09:31:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:00 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:31:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:02 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.02 09:31:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:15 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.02 09:31:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:16 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:31:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:17 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.02 09:31:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:21 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:31:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:24 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:31:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:27 INFO  time: compiled tp3 in 16ms[0m
+2023.02.02 09:31:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:29 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.02 09:31:29 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Feb 02, 2023 9:31:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:54)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:49)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$3(MetalsLanguageServer.scala:1809)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.02.02 09:31:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:31 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.02 09:31:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:32 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:31:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:39 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:31:41 INFO  compiling tp3 (1 java source)[0m
+Feb 02, 2023 9:31:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1150
+2023.02.02 09:31:41 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:31:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:44 INFO  time: compiled tp3 in 13ms[0m
+2023.02.02 09:31:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:49 INFO  time: compiled tp3 in 15ms[0m
+2023.02.02 09:31:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:51 INFO  time: compiled tp3 in 23ms[0m
+2023.02.02 09:31:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:31:55 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:32:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:32:17 INFO  time: compiled tp3 in 0.59s[0m
+2023.02.02 09:32:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:32:22 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:32:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:32:33 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:32:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:32:34 INFO  time: compiled tp3 in 94ms[0m
+2023.02.02 09:32:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:32:55 INFO  time: compiled tp3 in 0.1s[0m
+2023.02.02 09:32:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:32:58 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:33:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:01 INFO  time: compiled tp3 in 0.1s[0m
+2023.02.02 09:33:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:03 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:33:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:07 INFO  time: compiled tp3 in 11ms[0m
+2023.02.02 09:33:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:10 INFO  time: compiled tp3 in 21ms[0m
+2023.02.02 09:33:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:14 INFO  time: compiled tp3 in 12ms[0m
+2023.02.02 09:33:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:15 INFO  time: compiled tp3 in 9ms[0m
+2023.02.02 09:33:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:25 INFO  time: compiled tp3 in 10ms[0m
+2023.02.02 09:33:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:27 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.02 09:33:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:30 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:33:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:33 INFO  time: compiled tp3 in 0.12s[0m
+2023.02.02 09:33:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:39 INFO  time: compiled tp3 in 10ms[0m
+2023.02.02 09:33:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:44 INFO  time: compiled tp3 in 0.1s[0m
+2023.02.02 09:33:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:47 INFO  time: compiled tp3 in 0.1s[0m
+2023.02.02 09:33:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:49 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.02 09:33:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:51 INFO  time: compiled tp3 in 92ms[0m
+2023.02.02 09:33:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:56 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.02 09:33:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:33:58 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:34:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:34:02 INFO  time: compiled tp3 in 12ms[0m
+2023.02.02 09:34:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:34:19 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.02 09:34:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:34:36 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.02 09:34:43 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Escape
+	at org.eclipse.jdt.internal.core.util.PublicScanner.scanEscapeCharacter(PublicScanner.java:2906)
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1586)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Feb 02, 2023 9:34:43 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Escape
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Escape
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Escape
+	at org.eclipse.jdt.internal.core.util.PublicScanner.scanEscapeCharacter(PublicScanner.java:2906)
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1586)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:54)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:49)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$3(MetalsLanguageServer.scala:1809)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.02.02 09:34:43 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Escape
+	at org.eclipse.jdt.internal.core.util.PublicScanner.scanEscapeCharacter(PublicScanner.java:2906)
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1586)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:60)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.02 09:34:43 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP3/src/main/java/com/example/tp/Point.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Escape
+	at org.eclipse.jdt.internal.core.util.PublicScanner.scanEscapeCharacter(PublicScanner.java:2906)
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1586)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.02 09:34:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:34:44 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.02 09:35:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.02 09:35:14 INFO  time: compiled tp3 in 0.15s[0m
+Feb 02, 2023 9:36:33 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
