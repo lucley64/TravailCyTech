@@ -1,4 +1,4 @@
-package com.example.tp;
+package com.example.tp.math;
 
 import java.lang.System.Logger.Level;
 import java.util.Arrays;

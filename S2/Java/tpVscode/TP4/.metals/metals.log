@@ -992,3 +992,2002 @@ Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_
 2023.02.09 11:26:28 INFO  time: compiled tp3 in 0.2s[0m
 2023.02.09 11:26:31 INFO  compiling tp3 (1 java source)[0m
 2023.02.09 11:26:31 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:27:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:27:35 INFO  time: compiled tp3 in 45ms[0m
+2023.02.09 11:27:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:27:37 INFO  time: compiled tp3 in 37ms[0m
+2023.02.09 11:27:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:27:39 INFO  time: compiled tp3 in 25ms[0m
+Feb 09, 2023 11:27:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.02.09 11:27:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:6:1: stale bloop error: class, interface, or enum expected
+> package com.example.tp;
+> [0m
+2023.02.09 11:27:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:27:40 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:27:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:27:42 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:27:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:27:44 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:28:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:15 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 11:28:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:22 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:28:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:23 INFO  time: compiled tp3 in 38ms[0m
+2023.02.09 11:28:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:25 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:28:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:27 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:28:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:29 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:28:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:33 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:28:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:52 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:28:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:28:55 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:29:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:03 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:29:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:05 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:29:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:08 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:29:09 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:09 INFO  time: compiled tp3 in 0.13s[0m
+2023.02.09 11:29:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:14 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:29:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:16 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:29:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:20 INFO  time: compiled tp3 in 41ms[0m
+2023.02.09 11:29:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:23 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:29:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:26 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 11:29:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:39 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:29:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:44 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 11:29:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:46 INFO  time: compiled tp3 in 43ms[0m
+2023.02.09 11:29:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:51 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:29:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:56 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:29:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:29:58 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:30:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:30:29 INFO  time: compiled tp3 in 67ms[0m
+2023.02.09 11:30:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:30:48 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:30:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:30:55 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:31:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:02 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:31:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:05 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:31:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:08 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:31:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:10 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:31:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:12 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:31:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:14 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:31:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:24 INFO  time: compiled tp3 in 33ms[0m
+2023.02.09 11:31:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:26 INFO  time: compiled tp3 in 51ms[0m
+2023.02.09 11:31:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:37 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:31:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:41 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:31:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:45 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:31:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:50 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:31:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:51 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:31:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:31:56 INFO  time: compiled tp3 in 0.32s[0m
+2023.02.09 11:32:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:05 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:32:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:14 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:32:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:16 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:32:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:18 INFO  time: compiled tp3 in 31ms[0m
+2023.02.09 11:32:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:19 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:32:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:27 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:32:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:29 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:32:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:29 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:32:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:32 INFO  time: compiled tp3 in 46ms[0m
+2023.02.09 11:32:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:37 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:32:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:38 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 11:32:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:40 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:32:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:42 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:32:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:44 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:32:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:47 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:32:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:49 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:32:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:57 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:32:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:32:59 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:33:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:21 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:33:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:23 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:33:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:26 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:33:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:31 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:33:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:36 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:33:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:37 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:33:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:40 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:33:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:45 INFO  time: compiled tp3 in 0.31s[0m
+2023.02.09 11:33:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:46 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:33:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:53 INFO  time: compiled tp3 in 0.47s[0m
+2023.02.09 11:33:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:33:59 INFO  time: compiled tp3 in 0.58s[0m
+2023.02.09 11:34:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:05 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 11:34:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:06 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:34:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:14 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:34:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:20 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:34:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:25 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:34:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:27 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:34:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:29 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:34:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:31 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:34:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:35 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 11:34:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:37 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:34:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:43 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:34:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:34:58 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:35:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:06 INFO  time: compiled tp3 in 0.34s[0m
+2023.02.09 11:35:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:33 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:35:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:36 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:35:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:42 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:35:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:44 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:35:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:47 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:35:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:48 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:35:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:52 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:35:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:35:54 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:36:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:08 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:36:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:10 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 11:36:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:17 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:36:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:25 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:36:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:29 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:36:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:32 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:36:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:34 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:36:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:36 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:36:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:38 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:36:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:41 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:36:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:47 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:36:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:49 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:36:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:55 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:36:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:36:59 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:37:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:07 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:37:09 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:09 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:37:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:13 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:37:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:16 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:37:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:22 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:37:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:24 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:37:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:25 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:37:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:31 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 11:37:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:32 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:37:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:45 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:37:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:37:58 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:38:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:17 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:38:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:21 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:38:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:30 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:38:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:32 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 11:38:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:39 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:38:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:40 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:38:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:44 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:38:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:47 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:38:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:49 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:38:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:52 INFO  time: compiled tp3 in 32ms[0m
+2023.02.09 11:38:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:56 INFO  time: compiled tp3 in 37ms[0m
+2023.02.09 11:38:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:38:58 INFO  time: compiled tp3 in 35ms[0m
+2023.02.09 11:39:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:05 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:39:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:08 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:39:09 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:09 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 11:39:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:10 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 11:39:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:20 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:39:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:21 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:39:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:23 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:39:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:36 INFO  time: compiled tp3 in 37ms[0m
+2023.02.09 11:39:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:48 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:39:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:56 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 11:39:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:57 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:39:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:39:59 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:40:01 INFO  compiling tp3 (1 java source)[0m
+Feb 09, 2023 11:40:01 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:01 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:42:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:01 INFO  time: compiled tp3 in 22ms[0m
+Feb 09, 2023 11:40:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:42:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:03 INFO  compiling tp3 (1 java source)[0m
+Feb 09, 2023 11:40:03 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:03 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:41:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:03 INFO  time: compiled tp3 in 22ms[0m
+Feb 09, 2023 11:40:05 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:05 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:41:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:05 INFO  compiling tp3 (1 java source)[0m
+Feb 09, 2023 11:40:05 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:05 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:40:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:05 INFO  time: compiled tp3 in 22ms[0m
+Feb 09, 2023 11:40:06 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:40:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Feb 09, 2023 11:40:07 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:40:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:08 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:40:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:10 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:40:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:16 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 11:40:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:19 INFO  time: compiled tp3 in 29ms[0m
+2023.02.09 11:40:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:23 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:40:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:25 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:40:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:26 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:40:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:28 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:40:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:38 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:40:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:39 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:40:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:42 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:40:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:47 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:40:48 INFO  compiling tp3 (1 java source)[0m
+Feb 09, 2023 11:40:48 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:40:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:48 INFO  time: compiled tp3 in 28ms[0m
+Feb 09, 2023 11:40:49 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:49 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:40:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:50 INFO  compiling tp3 (1 java source)[0m
+Feb 09, 2023 11:40:50 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:50 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:41:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:50 INFO  time: compiled tp3 in 18ms[0m
+Feb 09, 2023 11:40:50 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.02.09 11:40:50 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:41:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.02.09 11:40:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:51 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:40:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:40:53 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:41:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:05 INFO  time: compiled tp3 in 31ms[0m
+2023.02.09 11:41:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:06 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:41:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:18 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 11:41:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:43 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:41:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:46 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:41:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:57 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:41:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:41:59 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:42:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:05 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:42:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:10 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:42:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:39 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:42:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:45 INFO  time: compiled tp3 in 13ms[0m
+2023.02.09 11:42:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:54 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:42:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:56 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:42:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:42:57 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:43:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:00 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 11:43:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:06 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:43:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:15 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 11:43:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:32 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:43:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:35 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:43:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:48 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 11:43:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:53 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:43:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:55 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:43:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:43:57 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:44:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:02 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:44:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:14 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 11:44:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:17 INFO  time: compiled tp3 in 41ms[0m
+2023.02.09 11:44:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:18 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:44:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:23 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:44:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:29 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 11:44:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:31 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 11:44:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:34 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:44:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:38 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:44:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:44:39 INFO  time: compiled tp3 in 0.38s[0m
+2023.02.09 11:45:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:03 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:45:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:10 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:45:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:36 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:45:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:39 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:45:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:41 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:45:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:47 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:45:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:50 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:45:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:53 INFO  time: compiled tp3 in 31ms[0m
+2023.02.09 11:45:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:45:57 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:46:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:02 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:46:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:11 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:46:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:15 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:46:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:23 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:46:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:25 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:46:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:28 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 11:46:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:33 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:46:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:36 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 11:46:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:41 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:46:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:44 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:46:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:46:48 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:47:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:05 INFO  time: compiled tp3 in 0.3s[0m
+2023.02.09 11:47:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:11 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:47:12 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java[0m
+2023.02.09 11:47:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java[0m
+2023.02.09 11:47:14 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java[0m
+2023.02.09 11:47:15 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java[0m
+2023.02.09 11:47:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:16 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:47:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:20 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 11:47:31 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.09 11:47:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:32 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:47:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:35 INFO  time: compiled tp3 in 0.35s[0m
+2023.02.09 11:47:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:37 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 11:47:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:37 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:47:37 INFO  time: compiled tp3 in 0.14s[0m
+2023.02.09 11:47:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:39 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:47:39 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:47:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:44 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:47:44 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:47:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:47 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:47:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:47:59 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:48:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:04 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:48:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:06 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:48:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:11 INFO  time: compiled tp3 in 59ms[0m
+2023.02.09 11:48:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:12 INFO  time: compiled tp3 in 46ms[0m
+2023.02.09 11:48:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:16 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:48:16 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:48:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:54 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:48:54 INFO  time: compiled tp3 in 0.36s[0m
+2023.02.09 11:48:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:48:59 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:49:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:00 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:49:00 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:49:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:07 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:49:07 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:49:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:13 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:49:13 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:49:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:15 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:49:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:18 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:49:18 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:49:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:31 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:49:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:41 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:49:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:45 INFO  time: compiled tp3 in 0.18s[0m
+Feb 09, 2023 11:49:47 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7407
+2023.02.09 11:49:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:49 INFO  time: compiled tp3 in 29ms[0m
+2023.02.09 11:49:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:52 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:49:52 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:49:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:49:59 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:49:59 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:50:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:04 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 11:50:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:05 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:50:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:11 INFO  time: compiled tp3 in 33ms[0m
+2023.02.09 11:50:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:13 INFO  time: compiled tp3 in 20ms[0m
+Feb 09, 2023 11:50:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7479
+2023.02.09 11:50:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:14 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:50:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:16 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:50:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:19 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:50:19 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:50:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:21 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:50:21 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:50:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:26 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:50:26 INFO  time: compiled tp3 in 0.35s[0m
+2023.02.09 11:50:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:28 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:50:28 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:50:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:50:41 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:50:41 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:51:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:11 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 11:51:11 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:51:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:18 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:51:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:25 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:51:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:41 INFO  time: compiled tp3 in 0.43s[0m
+2023.02.09 11:51:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:42 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:51:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:46 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:51:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:48 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:51:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:50 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:51:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:51:53 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:52:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:03 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:52:09 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:09 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:52:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:11 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:52:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:16 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:52:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:19 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:52:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:23 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:52:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:25 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:52:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:31 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:52:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:32 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 11:52:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:35 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 11:52:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:37 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:52:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:40 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:52:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:42 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:52:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:52:58 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:53:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:01 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:53:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:04 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:53:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:08 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 11:53:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:10 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:53:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:13 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:53:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:35 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 11:53:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:41 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:53:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:43 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:53:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:53:47 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:54:01 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLanguageServer.didChange(MetalsLanguageServer.scala:1275)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.09 11:54:01 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.java:33:13: stale bloop error: illegal start of expression
+            if (a != 0){
+            ^[0m
+Feb 09, 2023 11:54:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:54)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:49)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$foldingRange$3(MetalsLanguageServer.scala:1809)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.02.09 11:54:01 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:60)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.09 11:54:01 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Polynome.javaorg.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1793)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1791)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.02.09 11:54:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:03 INFO  time: compiled tp3 in 32ms[0m
+2023.02.09 11:54:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:06 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 11:54:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:07 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:54:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:16 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 11:54:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:18 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:54:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:35 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 11:54:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:40 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 11:54:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:52 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:54:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:54:55 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:55:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:14 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:55:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:24 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 11:55:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:28 INFO  time: compiled tp3 in 32ms[0m
+2023.02.09 11:55:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:29 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:55:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:33 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:55:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:36 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 11:55:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:37 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 11:55:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:49 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 11:55:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:55:52 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:56:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:04 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:56:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:15 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 11:56:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:17 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 11:56:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:27 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:56:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:29 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 11:56:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:32 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:56:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:37 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 11:56:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:39 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 11:56:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:44 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 11:56:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:47 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:56:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:50 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:56:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:56:57 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 11:57:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:57:11 INFO  time: compiled tp3 in 0.64s[0m
+2023.02.09 11:57:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:57:20 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 11:57:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:57:29 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 11:57:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:57:31 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 11:57:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:57:36 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:58:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:58:52 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 11:58:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:58:54 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:59:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:59:16 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:59:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:59:20 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:59:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:59:24 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 11:59:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:59:38 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 11:59:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:59:44 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 11:59:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 11:59:47 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:00:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:17 INFO  time: compiled tp3 in 31ms[0m
+2023.02.09 12:00:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:20 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:00:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:22 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:00:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:25 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:00:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:29 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:00:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:33 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:00:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:34 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:00:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:39 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:00:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:48 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:00:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:53 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:00:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:00:55 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:01:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:01 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:01:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:05 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:01:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:15 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:01:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:18 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:01:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:20 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:01:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:28 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:01:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:30 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:01:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:01:49 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:01:49 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:02:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:02:04 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:02:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:02:07 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:02:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:02:10 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:02:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:02:15 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:03:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:14 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:03:19 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:19 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:03:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:22 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:03:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:24 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:03:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:27 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:03:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:31 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:03:33 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:03:33 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:04:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:00 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:04:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:02 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:04:05 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:05 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:04:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:07 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 12:04:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:17 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:04:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:32 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:04:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:39 INFO  time: compiled tp3 in 42ms[0m
+2023.02.09 12:04:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:40 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 12:04:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:43 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:04:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:48 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:04:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:54 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:04:56 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:56 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:04:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:57 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:04:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:04:59 INFO  time: compiled tp3 in 0.48s[0m
+2023.02.09 12:05:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:04 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:05:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:16 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:05:24 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:24 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:05:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:26 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:05:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:29 INFO  time: compiled tp3 in 30ms[0m
+2023.02.09 12:05:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:30 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:05:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:34 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:05:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:36 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:05:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:38 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:05:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:47 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:05:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:48 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:05:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:50 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:05:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:53 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:05:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:57 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:05:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:05:59 INFO  time: compiled tp3 in 14ms[0m
+2023.02.09 12:06:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:06:01 INFO  time: compiled tp3 in 0.31s[0m
+2023.02.09 12:06:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:06:03 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:06:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:06:04 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:06:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:06:59 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:07:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:02 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 12:07:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:03 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:07:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:08 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:07:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:11 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:07:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:14 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:07:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:16 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:07:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:25 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:07:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:30 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:07:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:31 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:07:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:38 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:07:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:39 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:07:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:44 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:07:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:47 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:07:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:53 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:07:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:07:55 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:08:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:01 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:08:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:03 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:08:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:31 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:08:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:41 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:08:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:43 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:08:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:45 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:08:52 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:52 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:08:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:08:59 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:09:01 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:01 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:09:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:02 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:09:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:06 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:09:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:11 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:09:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:14 INFO  time: compiled tp3 in 30ms[0m
+2023.02.09 12:09:17 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:17 INFO  time: compiled tp3 in 33ms[0m
+2023.02.09 12:09:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:20 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:09:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:55 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:09:58 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:09:58 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:10:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:10:02 INFO  time: compiled tp3 in 29ms[0m
+2023.02.09 12:10:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:10:04 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:12:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:12:14 INFO  time: compiled tp3 in 0.89s[0m
+2023.02.09 12:12:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:12:30 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:13:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:22 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:13:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:23 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:13:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:27 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:13:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:29 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:13:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:31 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:13:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:32 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:13:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:34 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:13:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:37 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:13:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:43 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:13:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:50 INFO  time: compiled tp3 in 34ms[0m
+2023.02.09 12:13:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:54 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:13:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:13:59 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:14:23 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:14:23 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:14:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:14:27 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:14:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:14:30 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 12:14:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:14:38 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:14:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:14:50 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:15:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:15:32 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:15:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:15:35 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:15:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:15:39 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:15:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:15:41 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:16:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:12 INFO  time: compiled tp3 in 20ms[0m
+Feb 09, 2023 12:16:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10204
+2023.02.09 12:16:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:14 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:16:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:16 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:16:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:20 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:16:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:22 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:16:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:25 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:16:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:35 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:16:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:39 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:16:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:44 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:16:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:16:54 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:17:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:17:02 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:17:04 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:17:04 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:17:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:17:47 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:17:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:17:55 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:18:07 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:18:07 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:18:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:18:11 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:18:35 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:18:35 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:19:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:19:16 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:19:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:19:18 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:19:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:19:21 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:19:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:19:22 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:20:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:20:37 INFO  time: compiled tp3 in 39ms[0m
+2023.02.09 12:20:38 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:20:38 INFO  time: compiled tp3 in 14ms[0m
+2023.02.09 12:20:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:20:40 INFO  time: compiled tp3 in 18ms[0m
+Feb 09, 2023 12:20:41 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.02.09 12:20:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/Monome.java:6:1: stale bloop error: class, interface, or enum expected
+> package com.example.tp;
+> [0m
+2023.02.09 12:20:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:20:42 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 12:20:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:20:43 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:21:11 INFO  compiling tp3 (4 java sources)[0m
+2023.02.09 12:21:11 INFO  time: compiled tp3 in 0.36s[0m
+2023.02.09 12:21:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:21:12 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:21:12 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:21:12 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 12:21:31 INFO  compiling tp3 (4 java sources)[0m
+2023.02.09 12:21:31 INFO  time: compiled tp3 in 0.33s[0m
+2023.02.09 12:21:31 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:21:32 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 12:21:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:21:41 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 12:21:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:21:42 INFO  time: compiled tp3 in 0.45s[0m
+2023.02.09 12:22:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:08 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:22:08 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:09 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:09 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:10 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:10 INFO  time: compiled tp3 in 36ms[0m
+2023.02.09 12:22:11 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:11 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:11 INFO  time: compiled tp3 in 15ms[0m
+2023.02.09 12:22:12 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:12 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:14 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Monome.java[0m
+2023.02.09 12:22:15 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:15 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:22:20 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:20 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:22:25 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:25 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:22:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:29 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:22:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:30 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:22:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:39 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:22:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:46 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:22:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:22:53 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:23:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:23:32 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:23:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:23:39 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:23:39 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:23:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:58 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:58 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:59 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:23:59 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:24:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:24:00 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:24:00 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:24:00 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:24:10 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:10 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:24:10 INFO  time: compiled tp3 in 0.29s[0m
+Feb 09, 2023 12:24:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10767
+2023.02.09 12:24:13 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:13 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:24:17 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:17 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:24:18 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:18 INFO  time: compiled tp3 in 42ms[0m
+2023.02.09 12:24:19 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:19 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:24:21 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:21 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:24:23 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:23 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:24:23 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:24:24 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:24 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:24:24 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 12:24:27 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:27 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:24:37 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:37 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 12:24:40 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:40 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:24:41 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:41 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:24:42 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:42 INFO  time: compiled tp3 in 14ms[0m
+2023.02.09 12:24:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:48 INFO  time: compiled tp3 in 41ms[0m
+2023.02.09 12:24:50 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:24:50 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:24:50 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:25:03 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:03 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:25:03 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:25:16 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:16 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:25:16 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:25:28 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:28 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:25:30 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:30 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:25:30 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:25:41 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:41 INFO  time: compiled tp3 in 29ms[0m
+2023.02.09 12:25:43 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:43 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:25:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:48 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:25:48 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:25:52 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:52 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:25:54 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:54 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:25:54 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:25:58 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:25:58 INFO  time: compiled tp3 in 57ms[0m
+2023.02.09 12:26:01 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:01 INFO  time: compiled tp3 in 58ms[0m
+2023.02.09 12:26:05 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:05 INFO  time: compiled tp3 in 22ms[0m
+Feb 09, 2023 12:26:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11071
+2023.02.09 12:26:18 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:18 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:26:19 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:19 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:26:25 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:25 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:26:27 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:27 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:26:28 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:28 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:26:39 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:39 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:26:40 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:40 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:26:43 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:43 INFO  time: compiled tp3 in 31ms[0m
+2023.02.09 12:26:47 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:47 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:26:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:48 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:26:54 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:54 INFO  time: compiled tp3 in 18ms[0m
+Feb 09, 2023 12:26:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11180
+2023.02.09 12:26:59 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:26:59 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:27:05 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:05 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:27:07 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:07 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:27:11 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:11 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:27:16 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:16 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:27:21 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:21 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:27:23 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:23 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:27:24 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:24 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:27:27 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:27 INFO  time: compiled tp3 in 59ms[0m
+2023.02.09 12:27:31 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:31 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:27:34 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:34 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:27:40 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:40 INFO  time: compiled tp3 in 32ms[0m
+2023.02.09 12:27:43 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:43 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:27:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:27:48 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:27:48 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:28:08 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:28:27 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:28:28 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:29:07 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:29:58 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:29:58 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:29:58 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:29:58 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:29:59 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:30:02 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:30:03 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:03 INFO  time: compiled tp3 in 0.11s[0m
+2023.02.09 12:30:04 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:30:05 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:05 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:30:05 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:30:05 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:30:10 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:30:11 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:11 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:30:11 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:30:11 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:30:37 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:37 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:30:37 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 12:30:38 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:38 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:30:41 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:41 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:30:46 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:46 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:30:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:48 INFO  time: compiled tp3 in 32ms[0m
+2023.02.09 12:30:50 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:50 INFO  time: compiled tp3 in 41ms[0m
+2023.02.09 12:30:53 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:53 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:30:56 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:56 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:30:58 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:30:58 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:31:00 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:00 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:31:04 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:04 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:31:05 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:05 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:31:05 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 12:31:08 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:08 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:31:08 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:31:42 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:42 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:31:42 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:31:43 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:31:49 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:31:50 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:31:51 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:51 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:31:52 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:31:53 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:31:53 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:31:53 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:32:03 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:03 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:32:07 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:07 INFO  time: compiled tp3 in 50ms[0m
+2023.02.09 12:32:08 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:08 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:32:13 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:13 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:32:15 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:15 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:32:17 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:17 INFO  time: compiled tp3 in 15ms[0m
+2023.02.09 12:32:19 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:19 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:32:19 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:32:21 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:21 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:32:21 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:32:27 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:27 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:32:27 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 12:32:29 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:29 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:32:29 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:32:29 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:34 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:34 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:35 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:35 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:32:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:40 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:40 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:32:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:41 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:42 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:42 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:32:43 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:44 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:44 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:45 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:45 INFO  time: compiled tp3 in 81ms[0m
+2023.02.09 12:32:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:47 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:47 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:32:47 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:32:47 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:52 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:52 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:32:54 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:32:54 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:32:54 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 12:32:55 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:33:22 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:33:22 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:33:22 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:34:17 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:17 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:34:24 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:24 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:34:24 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:34:29 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:29 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:34:29 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:34:32 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:32 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:34:35 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:35 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:34:37 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:37 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:34:37 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:34:41 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:41 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:34:41 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:34:44 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:34:44 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:34:44 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:35:01 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:19 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:23 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:25 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:35:25 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:35:25 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:35:26 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:28 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:28 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:28 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:30 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:30 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:35:30 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:35:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:32 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:34 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:35:34 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:35:34 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:35:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:36 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:35:36 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:35:36 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:35:43 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:46 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:35:46 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:35:47 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:48 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:35:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:35:48 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:35:48 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:35:49 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:05 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:06 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:06 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:36:06 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:36:06 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:07 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:07 INFO  time: compiled tp3 in 13ms[0m
+2023.02.09 12:36:07 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:08 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:09 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:09 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:36:09 INFO  time: compiled tp3 in 0.16s[0m
+2023.02.09 12:36:09 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:16 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:17 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:17 INFO  time: compiled tp3 in 40ms[0m
+2023.02.09 12:36:17 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:17 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:19 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:19 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:36:19 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:25 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:25 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:36:26 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:26 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:26 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:28 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:29 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:29 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:36:29 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:30 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:31 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:31 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:36:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:32 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:32 INFO  time: compiled tp3 in 37ms[0m
+2023.02.09 12:36:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:34 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:37 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:37 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:36:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:39 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:39 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:36:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:40 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:40 INFO  time: compiled tp3 in 17ms[0m
+2023.02.09 12:36:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:45 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:46 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:46 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:36:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:48 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:48 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:50 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:51 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:52 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:52 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:36:52 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:36:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:55 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:56 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:56 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:36:57 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:36:57 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:36:57 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:36:58 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:14 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:15 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:15 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:37:15 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:37:15 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:16 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:16 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:17 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:17 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:37:17 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:37:18 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:21 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:22 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:22 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:37:22 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:37:23 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:25 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:25 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:26 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:27 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:27 INFO  time: compiled tp3 in 14ms[0m
+2023.02.09 12:37:27 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:29 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:29 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:30 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:30 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:37:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:32 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:33 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:33 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:37:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:36 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:37 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:37 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:37:37 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:37:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:37:55 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:37:55 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:37:55 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 12:37:56 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:38:16 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:16 INFO  time: compiled tp3 in 25ms[0m
+2023.02.09 12:38:18 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:18 INFO  time: compiled tp3 in 35ms[0m
+2023.02.09 12:38:20 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:20 INFO  time: compiled tp3 in 16ms[0m
+2023.02.09 12:38:22 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:22 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:38:22 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:38:30 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:30 INFO  time: compiled tp3 in 30ms[0m
+2023.02.09 12:38:32 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:32 INFO  time: compiled tp3 in 28ms[0m
+2023.02.09 12:38:35 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:35 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:38:35 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:38:38 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:38 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:38:38 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:38:42 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:42 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:38:42 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:38:44 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:38:44 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:38:44 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:38:48 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:38:59 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:02 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:03 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:04 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:04 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:04 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:39:04 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:05 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:05 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:05 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:05 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:39:06 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:07 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:08 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:08 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:08 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:39:08 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:09 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:10 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:10 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:10 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:39:11 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:17 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:18 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:18 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:18 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:39:19 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:19 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:19 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:39:20 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:20 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:20 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:22 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:23 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:23 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:23 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:23 INFO  time: compiled tp3 in 0.3s[0m
+2023.02.09 12:39:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:32 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:33 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:33 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:33 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:39:34 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:35 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:35 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:35 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:35 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:39:36 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:44 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:45 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:45 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:45 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:39:45 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:51 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:51 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:51 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:39:52 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:39:52 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:39:52 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:39:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:05 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:06 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:06 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:40:06 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:40:06 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:07 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:07 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:40:07 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:40:08 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:12 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:14 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:14 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:15 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:15 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:40:15 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:40:16 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:28 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:31 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:32 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:32 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:32 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:40:32 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 12:40:33 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:36 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:37 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:37 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:40:37 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:40:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:39 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:39 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.02.09 12:40:39 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:40:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:45 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:47 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:48 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:48 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:40:48 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:49 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:50 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:51 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:51 INFO  time: compiled tp3 in 18ms[0m
+2023.02.09 12:40:51 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:54 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:55 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:40:55 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:40:55 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:40:56 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:00 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:01 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:41:01 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:41:01 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:04 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:05 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:41:05 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:41:06 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:07 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:08 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:10 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:10 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:11 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:41:11 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 12:41:11 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:13 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:14 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:15 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:15 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:16 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:41:16 INFO  time: compiled tp3 in 22ms[0m
+2023.02.09 12:41:16 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:17 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:18 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:18 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:19 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:41:19 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:41:19 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:20 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:41:21 INFO  compiling tp3 (2 java sources)[0m
+2023.02.09 12:41:21 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:41:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:41:26 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 12:41:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:41:27 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:41:28 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:41:28 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:41:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:41:42 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:41:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:41:42 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:41:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:41:53 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:42:10 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:42:10 INFO  time: compiled tp3 in 0.49s[0m
+2023.02.09 12:42:22 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:42:22 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 12:42:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:42:39 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:42:57 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:42:57 INFO  time: compiled tp3 in 0.3s[0m
+2023.02.09 12:44:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:44:41 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:44:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:44:45 INFO  time: compiled tp3 in 0.33s[0m
+2023.02.09 12:44:48 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:44:48 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:44:51 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:44:51 INFO  time: compiled tp3 in 0.28s[0m
+2023.02.09 12:44:54 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:44:54 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:45:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:45:36 INFO  time: compiled tp3 in 0.31s[0m
+2023.02.09 12:45:41 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:45:41 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 12:45:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:45:43 INFO  time: compiled tp3 in 0.26s[0m
+2023.02.09 12:45:45 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:45:45 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:45:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:45:50 INFO  time: compiled tp3 in 0.21s[0m
+2023.02.09 12:46:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:46:13 INFO  time: compiled tp3 in 0.3s[0m
+2023.02.09 12:46:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:46:29 INFO  time: compiled tp3 in 0.19s[0m
+2023.02.09 12:47:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:47:46 INFO  time: compiled tp3 in 23ms[0m
+2023.02.09 12:49:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:49:37 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:49:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:49:40 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:49:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:49:46 INFO  time: compiled tp3 in 26ms[0m
+2023.02.09 12:49:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:49:47 INFO  time: compiled tp3 in 15ms[0m
+2023.02.09 12:49:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:49:49 INFO  time: compiled tp3 in 48ms[0m
+2023.02.09 12:49:55 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:49:55 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:50:00 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:50:00 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:50:16 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:50:16 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 12:50:30 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:50:30 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:50:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:50:32 INFO  time: compiled tp3 in 0.32s[0m
+2023.02.09 12:50:43 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:50:43 INFO  time: compiled tp3 in 0.27s[0m
+2023.02.09 12:51:13 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:13 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:51:14 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:14 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:51:18 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:18 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:51:26 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:26 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:51:27 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:27 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:51:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:29 INFO  time: compiled tp3 in 37ms[0m
+2023.02.09 12:51:36 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:36 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:51:37 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:37 INFO  time: compiled tp3 in 0.15s[0m
+2023.02.09 12:51:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:39 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:51:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:44 INFO  time: compiled tp3 in 0.2s[0m
+2023.02.09 12:51:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:51:46 INFO  time: compiled tp3 in 0.17s[0m
+2023.02.09 12:52:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:52:49 INFO  time: compiled tp3 in 0.24s[0m
+2023.02.09 12:58:29 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:29 INFO  time: compiled tp3 in 0.29s[0m
+2023.02.09 12:58:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:34 INFO  time: compiled tp3 in 24ms[0m
+2023.02.09 12:58:39 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:39 INFO  time: compiled tp3 in 0.23s[0m
+2023.02.09 12:58:40 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:40 INFO  time: compiled tp3 in 0.25s[0m
+2023.02.09 12:58:47 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:47 INFO  time: compiled tp3 in 0.35s[0m
+2023.02.09 12:58:49 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:49 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 12:58:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:58:53 INFO  time: compiled tp3 in 15ms[0m
+2023.02.09 12:59:02 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:02 INFO  time: compiled tp3 in 31ms[0m
+2023.02.09 12:59:03 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:03 INFO  time: compiled tp3 in 0.18s[0m
+2023.02.09 12:59:21 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:21 INFO  time: compiled tp3 in 29ms[0m
+Feb 09, 2023 12:59:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 13709
+2023.02.09 12:59:32 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:32 INFO  time: compiled tp3 in 0.47s[0m
+2023.02.09 12:59:34 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:34 INFO  time: compiled tp3 in 21ms[0m
+2023.02.09 12:59:34 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:41 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:42 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:42 INFO  time: compiled tp3 in 30ms[0m
+2023.02.09 12:59:42 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:43 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:43 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:44 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:44 INFO  time: compiled tp3 in 19ms[0m
+2023.02.09 12:59:45 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:46 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:46 INFO  time: compiled tp3 in 27ms[0m
+2023.02.09 12:59:47 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:48 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:49 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:50 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:50 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:59:50 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:51 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:52 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:53 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 12:59:53 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 12:59:53 INFO  time: compiled tp3 in 20ms[0m
+2023.02.09 12:59:54 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 13:00:05 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP4/src/main/java/com/example/tp/math/polynome/Polynome.java[0m
+2023.02.09 13:00:06 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 13:00:06 INFO  time: compiled tp3 in 0.22s[0m
+2023.02.09 13:00:08 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 13:00:08 INFO  time: compiled tp3 in 0.32s[0m
+2023.02.09 13:00:59 INFO  compiling tp3 (1 java source)[0m
+2023.02.09 13:00:59 INFO  time: compiled tp3 in 0.17s[0m
