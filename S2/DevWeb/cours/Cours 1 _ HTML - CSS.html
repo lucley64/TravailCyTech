@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://isin-dev.recherche.pau.eisti.fr/courshtml/#slide1 -->
+<html lang="fr" class=" transition"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+		<meta name="author" lang="fr" content="Peio Loubière">
+		<meta name="publisher" content="EISTI">
+		<meta name="copyright" content="EISTI">
+		<meta name="date-creation-yyyymmdd" content="20120206">
+		<meta name="reply-to" content="plo@eisti.eu">
+		<meta name="description" content="Cours n°1 : HTML + CSS">
+		<meta name="keywords" content="EISTI,HTML,XHTML,CSS,CPI,AREL,cours">
+		<meta name="robots" content="index,follow">
+    <title>Cours 1 : HTML - CSS</title>
+
+    <script type="text/javascript" src="./Cours 1 _ HTML - CSS_files/monscript.js"></script>
+
+    <!-- Linking styles -->
+    <link rel="stylesheet" href="./Cours 1 _ HTML - CSS_files/style.css" type="text/css" media="all">
+</head>
+<body>
+
+    <nav id="helpers"><!-- Defining the floating helpers of the page -->
+      <button title="Previous" id="nav-prev" class="nav-prev">&lt;-</button> 
+      <button title="Jump to slide" id="slide-no">1</button> 
+      <button title="Next" id="nav-next" class="nav-next">-&gt;</button>
+      <menu>
+        <button type="checkbox" data-command="notes" title="View Notes">Notes</button>
+        <button type="checkbox" data-command="help" title="View Help">Help</button>
+        <button type="checkbox" data-command="back" title="Back to tutorial">Back</button>
+      </menu>
+    </nav>
+
+    <div class="presentation"><!-- Defining the main presentation -->
+      <div id="presentation-counter">1</div>
+
+      <div class="slides" style="display: block;"><!-- Defining slides -->
+
+        <div class="slide current" id="slide1"><!-- Defining single slide -->
+					<a name="debut"></a>
+          <section class="middle">
+            <div class="titre">HTML - CSS</div>
+            <p><img id="logotitre" class="ombre centered" src="./Cours 1 _ HTML - CSS_files/logonb.gif" alt="EISTI"></p>
+            <p>Appuyer <span id="left-init-key" class="key">→</span> pour continuer.</p>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide future" id="slide2">
+          <header>Commandes pour les slides</header>
+          <section>
+            <ul>
+              <li><span class="key">←</span> et <span class="key">→</span> pour avancer / reculer.</li>
+              <li><span class="key">espace</span> pour avancer.</li>
+              <li><span class="key">Ctrl/Command</span> et <span class="key">+</span> or <span class="key">-</span> pour zoomer plus ou moins.</li>
+<!--              <li><span class="key">S</span> to view page source.</li>
+              <li><span class="key">T</span> to change the theme.</li>
+              <li><span class="key">H</span> to toggle syntax highlight.</li>-->
+              <li><span class="key">N</span> pour afficher / cacher les notes.</li>
+              <li><span class="key">H</span> pour afficher l'aide.</li> 
+            </ul>
+          </section>
+          <aside class="note">
+            <section>
+              Notes for second slide
+            </section>
+          </aside> 
+        <span class="counter"></span></div>
+
+        <div class="slide far-future" id="slide3">
+          <section class="middle">
+								 <gras class="titre"> Introduction </gras>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide4">
+          <header>Qu'est-ce que le web?</header>
+          <section>
+              <div class="onglet">
+                Internet
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Réseau de réseaux</li>
+								<li>Utilise le protocole TCP/IP, par le port 80</li>
+								<li>Arpanet : années 70</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide5">
+          <header>Schéma</header>
+          <section class="middle">
+						<hgroup class="ombre">
+                <img class="centered" src="./Cours 1 _ HTML - CSS_files/SchemaWeb.gif" alt="Schema web">
+						<hgroup>
+          </hgroup></hgroup></section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide6">
+          <header>Le protocole HTTP</header>
+          <section>
+              <div class="onglet">
+                Présentation
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Hyper Text Transfert Protocol - <gras>Tim Berners Lee</gras></li>
+								<li>Adapté au multimédia</li>
+								<li>Léger, rapide, coût d'exploitation très bas</li>
+								<li>Dérive du protocole FTP</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide7">
+          <header>Le protocole HTTP</header>
+          <section>
+              <div class="onglet">
+                Requêtes 
+              </div>
+							<ul class="contenu contour ombre">
+								<li><span class="courier">GET</span> : demande quelque chose</li>
+								<li><span class="courier">POST</span> : envoi de paramêtres</li>
+								<li><span class="courier">HEAD</span> : demande les informations du document</li>
+								<li><span class="courier">PUT, DELETE, ...</span> : utilisés par des outils spécifiques</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide8">
+          <header>Des clients, des serveurs</header>
+          <section>
+              <div class="onglet">
+                2 acteurs
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Le <span class="courier">client</span> : il effectue des requêtes vers le serveur (ex: Firefox)</li>
+								<li>Le <span class="courier">serveur</span> : il exécute les requêtes et renvoie le résultat au client (ex: Apache)</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide9">
+          <header>Des clients, des serveurs</header>
+          <section>
+              <div class="onglet">
+                Rôle du client
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Traduit les ordres en requêtes selon un protocole d'échange avec le serveur</li>
+								<li>Dialogue avec le serveur</li>
+								<li>Met en forme la réponse et la présente à l'utilisateur</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide10">
+          <header>Des clients, des serveurs</header>
+          <section>
+              <div class="onglet">
+                Rôle du serveur
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Transforme l'url en fichier ou en script</li>
+								<li>Vérification d'identité</li>
+								<ul><li>L'utilisateur est-il bien celui qu'il prétend être ?</li></ul>
+								<li>Vérification d'accès</li>
+								<ul><li>L'utilisateur a-t-il le droit de voir la ressource ?</li></ul>
+								<li>Envoi de la réponse au client</li>
+								<li>Suivi de fichier logs</li>
+								<li>Traitements évolués (interprètes PhP, perl, accès aux BDD, etc.)</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide11">
+          <header>Des clients, des serveurs</header>
+          <section>
+              <div class="onglet" style="width: 13em;">
+                Exemples de serveurs
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Apache</li>
+								<li>Jigsaw</li>
+								<li>MacHTTP</li>
+								<li>Microsoft Server</li>
+								<li>Netscape server</li>
+								<li>...</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide12">
+          <header>Fonctionnalités des serveurs</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+                Services rendus
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Envoi une page en ajoutant les en-têtes appropriés</li>
+								<li>Exécute un script et envoie le résultat sous forme de page (formulaires, PhP)</li>
+								<li>Exécute un script et envoie le résultat tel quel (fonctionnement AJAX)</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide13">
+          <header>Fonctionnalités des serveurs</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+                Possibilités
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Vérifie la machine d'origine (ou dernier proxy)</li>
+								<li>Vérifie l'accès (login/password)</li>
+								<li>Construit une page à la volée avec des ordres spécifiques</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide14">
+          <header>Fonctionnalités des serveurs</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+								Possibilités
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Reconnaître les entêtes de requêtes et servir des pages différentes suivant le client ou ses préférences</li>
+								<ul><li>Avoir des pages différentes selon le <itq>browser</itq>, la langue</li></ul>
+								<li>Encrypter les données et sécuriser les transactions</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide15">
+          <header>Historique</header>
+          <section>
+							<ul class="contour ombre">
+								<li>1844 : 1ere transmission de données : le morse</li> 
+								<li>1849 : Invention du téléphone</li> 
+								<li>1971 : Projet <gras class="courier">ARPANET</gras>, protocole TCP/IP</li> 
+								<li>1990 : Conçu par <gras>Tim Berners-Lee</gras> au <gras class="courier">CERN</gras></li>                                      
+								<li>1993 : HTML rendu populaire</li>   
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="timeline-slide"> 
+          <header> Historique des Technologies</header>                                                                                                                            
+					<section>
+							<ul class="contour ombre">
+								<li>1994 : HTML 2</li> 
+								<li>1996 : CSS 1 + JavaScript</li> 
+								<li>1997 : HTML 4</li>                                      
+								<li>1998 : CSS 2</li>   
+								<li>2000 : XHTML 1 défini par le W3C</li>  
+								<li>2002 : Tableless Web Design</li>
+								<li>2005 : AJAX</li>
+								<li>2009 : HTML 5, CSS 3</li>
+							</ul>
+          </section>                                                                                                                                                                   
+        <span class="counter"></span></div>   
+
+        <div class="slide distant-slide" id="slide17">
+          <section class="middle">
+								 <gras class="titre"> HTML </gras>
+          </section>
+        <span class="counter"></span></div>
+        
+        <div class="slide distant-slide" id="slide18">
+          <header>HTML</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+								Présentation
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Langage de structuration de document basé sur une <gras class="courier">DTD</gras> (Document Type Definition)</li>
+								<li>Défini par des balises interprétées par un navigateur</li>
+								<li>Permet de décrire des pages et d’en contrôler l’apparence</li>
+								<li>Résultat pouvant varier suivant la configuration du poste du client</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide19">
+          <header>HTML 4.01</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+								Présentation
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Internationalisation (meilleure gestion des langues)</li>
+								<li>Accessibilité (meilleur support d'agents non graphiques)</li>
+								<li>Nouveau modèle de tableaux (meilleur contrôle de la structure et du formatage)</li>
+								<li>Documents composés (incorporation d'objets média et d'applications génériques)</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide20">
+          <header>HTML 4.01</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+								Présentation
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Feuilles de style (séparation structure/présentation)</li>
+								<li>Scripting (pages Web dynamiques/interactifs)</li>
+								<li>Impression (collections de documents)</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide21">
+          <header>Exemple</header>
+          <section>
+						<div class="exemple ombre">
+							<pre>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+&lt;html&gt;
+	&lt;head&gt;
+	&lt;!-- un commentaire --&gt;
+	  &lt;title&gt;Exemple de page web&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Exemple de page web&lt;/h1&gt;
+		&lt;hr&gt;
+		&lt;div&gt;
+       Un peu de contenu...
+		&lt;/div&gt;   
+		&lt;hr&gt;
+		&lt;address&gt;
+		 	 &lt;a href="mailto:peio.loubiere@eisti.fr"&gt;
+                                     Loubière Peio&lt;/a&gt;
+		&lt;/address&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+							</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide22">
+          <header>Exemple</header>
+          <section>
+            <div class="exemple">
+							<iframe src="./Cours 1 _ HTML - CSS_files/exemple1.html" style="width: 100%;"></iframe>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+				
+        <div class="slide distant-slide" id="slide23">
+          <header>Éléments et Attibuts</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+							Principe de balisage
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Défini par : étiquette de début, contenu, étiquette de </li>
+							<ul><li><code><gras class="courier">&lt;etiquette&gt;</gras> contenu <gras class="courier">&lt;/etiquette&gt;</gras></code></li></ul>
+							<li>Contenu vide : pas d'étiquette de fin</li>
+							<ul><li><code><gras class="courier">&lt;br/&gt;</gras> ou  <gras class="courier">&lt;img .... /&gt;</gras></code></li></ul>
+							<li>Attention !! étiquettes optionnelles, insensibles à la casse -&gt; <gras>de la rigueur!</gras></li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+				
+        <div class="slide distant-slide" id="slide24">
+          <header>Éléments et Attibuts</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+							Attributs
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Propriétés associées aux étiquettes</li>
+							<li>Définis par un nom et une valeur</li>
+							<ul><li><code>&lt;img <gras class="courier">id="logo"</gras> <gras class="courier">src="logo.gif"</gras> <gras class="courier">alt="Cliquez ici"</gras>/&gt;</code></li></ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide25">
+          <header>Syntaxe</header>
+          <section class="up">
+              <div class="onglet" style="width: 14em;">
+								Ce qu'impose la norme : 
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Balises en <gras>minuscule</gras></li>
+								<li>Attributs entre simples ou doubles quotes</li>
+								<li>Tout attribut attribut doit avoir une valeur</li>
+								<li>Toute balise doit être fermée</li>
+								<li>Les imbrications doivent être respectées</li>
+								<li>Exemples :</li>
+									<ul>
+										<li class="courier">&lt;input type="checkbox" checked="checked" /&gt;</li>
+										<li class="courier">&lt;p class="gras"&gt; du contenu.... &lt;/p&gt;</li>
+										<li class="courier">&lt;p&gt;&lt;ul&gt; &lt;li&gt;item1&lt;/li&gt; &lt;li&gt;item2&lt;/li&gt; &lt;/ul&gt;&lt;/p&gt;</li>										
+									</ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide26">
+          <section class="middle">
+								 <gras class="titre"> XHTML1.0 </gras>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide27">
+          <header>XHTML1.0</header>
+          <section>
+              <div class="onglet">
+								Présentation
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Extensible, dérive du XML</li>
+								<li>Portable, compatible HTML et XML</li>
+								<li>Conserve les principes de HTML4.0</li>
+								<li>Normé par le W3C</li>
+								<ul><li><a class="courier" href="http://validator.w3.org/">http://validator.w3.org</a></li></ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide28">
+          <header>XHTML1.0</header>
+          <section>
+              <div class="onglet" style="width: 12em;">
+								Conformité
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Respect de la norme</li>
+								<li>L'élément racine html doit contenir un attribut normatif <span class="courier">xmlns</span></li>
+								<li>Balise <gras>DOCTYPE</gras> obligatoire, faisant référence à un fichier normatif du W3C</li>
+									<ul>
+										<li class="courier petit">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" <br>
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</li>
+										<li class="courier petit">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" <br> 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</li>
+									</ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide29">
+          <header>XHTML1.0</header>
+          <section>
+              <div class="onglet">
+								Conformité
+              </div>
+							<ul class="contenu contour ombre">
+								<li><gras class="courier">Strict</gras> : exclut des éléments et attributs de "mise en forme".<br> Ils sont décrits dans les feuilles de style CSS</li>
+								<li><gras class="courier">Transitional</gras> : étend en acceptant certaines balises de mise en forme</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+
+        <div class="slide distant-slide" id="slide30">
+          <header>Exemple</header>
+          <section>
+						<div class="exemple ombre">
+							<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" <br>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"&gt;
+ &lt;head&gt;
+  &lt;!-- un commentaire --&gt;
+  &lt;title&gt;Ma 1ere page XHTML&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;Tout sur tout sur &lt;a href="http://arelv3.eisti.fr"&gt; AREL&lt;/a&gt;!&lt;/p&gt;   
+ &lt;/body&gt;
+&lt;/html&gt;
+							</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide31">
+          <header>Exemple</header>
+          <section>
+            <div class="exemple">
+							<iframe src="./Cours 1 _ HTML - CSS_files/exemple2.html" style="width: 100%;"></iframe>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide32">
+          <header>Les balises META</header>
+          <section>
+              <div class="onglet">
+								Pourquoi ?
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Guider les moteurs de recherche</li>
+								<li>"Influencer" les navigateurs</li>
+								<li>"Commander" les robots</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide33">
+          <header>Les balises META</header>
+          <section>
+              <div class="onglet">
+								Comment ?
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Situées entre les balises <gras class="courier">head</gras></li>
+								<li class="courier">&lt;meta [<gras>attribut1</gras>="<itq>valeur1</itq>"]  [<gras>attribut2</gras>="<itq>valeur2</itq>"]... /&gt;</li>
+								<li>Différentes informations : </li>
+								<ul><li>sur vous, vos pages</li>
+									<li>pour les revisions, les rafraîchissements de pages</li>
+									<li>et bien d'autres!</li></ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide34">
+          <header>Les balises META</header>
+          <section>
+              <div class="onglet">
+								Auteur
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Permet de vous référencer sur un moteur de recherche</li>
+								<li class="courier">&lt;meta name="author" lang="fr" content="Peio Loubière" /&gt;</li>
+								<li><gras class="courier">name</gras> : nom de la balise META</li>
+								<li><gras class="courier">lang</gras> : langue utilisée</li>
+								<li><gras class="courier">content</gras> : auteur de la page</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide35">
+          <header>Les balises META</header>
+          <section>
+              <div class="onglet">
+								Mots clés
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Précise les mots clés du site</li>
+								<li>&lt;meta name="keywords" content="liste de mots clés" /&gt;</li>
+								<ul><li class="courier">&lt;meta name="keywords"  content="EISTI,HTML,XHTML,CSS,CPI,AREL,cours" /&gt;</li></ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide36">
+          <header>Les balises META</header>
+          <section style="margin-top: 85px">
+              <div class="onglet">
+								Robots
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Demande aux robots de réindexer la page tous les <itq>n</itq> jours</li>
+								<ul><li class="courier">&lt;meta name="revisit-after" content="n" /&gt;</li></ul>
+								<li>Orienter les robots</li>
+								<ul><li class="courier">&lt;meta name="robots" content="combinaison souhaitée" /&gt;</li></ul>
+								<li>La combinaison se détermine selon les valeurs suivantes :</li>
+								<ul>
+									<li><gras class="courier">all</gras> : indexe toutes les pages du site</li>
+									<li><gras class="courier">none</gras> : n'indexe aucune page</li>
+									<li><gras class="courier">(no)index</gras> : (n')indexe (pas) la page en cours</li>
+									<li><gras class="courier">(no)follow</gras> : (n')indexe (pas) les liens</li>
+								</ul>
+								<li class="courier">&lt;meta name="robots" content="index,nofollow" /&gt;</li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide37">
+          <header>Les balises META</header>
+          <section>
+              <div class="onglet" style="width: 15em;">
+								Instructions au navigateur
+              </div>
+							<ul class="contenu contour ombre">
+								<li>Permet de définir le jeu de caractères d'affichage</li>
+								<ul><li class="courier">&lt;meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /&gt;</li></ul>
+								<li>Demande au navigateur de rafraîchir la page toutes les <itq>n</itq> secondes</li>
+								<ul><li class="courier">&lt;meta http-equiv="refresh" content="n" /&gt;</li></ul>
+								<li>Demande au navigateur de ne pas utiliser le cache</li>
+								<ul><li class="courier">&lt;meta http-equiv="pragma" content="no-cache" /&gt;</li></ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide38">
+          <section class="middle">
+								 <gras class="titre"> Élements (basiques) du langage </gras>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide39">
+          <header></header>
+          <section>
+              <div class="onglet">
+								Commentez!
+              </div>
+							<ul class="contenu contour ombre">
+								<li><gras>&lt;!-- une ligne ou un bloc de commentaires --&gt;</gras></li>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide40">
+          <header>Quelques balises...</header>
+          <section>
+              <div class="onglet">
+								Les liens
+              </div>
+							<ul class="contenu contour ombre">
+								<li>2 types de liens, 1 unique balise : <gras class="courier">&lt;a href="..."&gt;...&lt;/a&gt;</gras></li>
+								<ul>
+									<li>liens internes (ancres)</li>
+									<li>liens externes</li>
+								</ul>
+							</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide41">
+          <header>Exemple<a name="exemple-liens"> </a></header>
+          <section>
+						<div class="exemple ombre">
+							<pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" <br>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"&gt;
+ &lt;head&gt;
+  &lt;!-- un commentaire --&gt;
+  &lt;title&gt;Ma 2e page XHTML&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;a name="debut"&gt;&lt;/a&gt;
+  Du contenu...
+  &lt;a href="#debut"&gt;[Retour au début]&lt;/a&gt;
+  &lt;p&gt;Tout sur tout sur &lt;a href="http://arel.eisti.fr"&gt; AREL&lt;/a&gt;!&lt;/p&gt;   
+ &lt;/body&gt;
+&lt;/html&gt;
+							</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide42">
+          <header>Exemple</header>
+          <section>
+            <div class="exemple">
+							<iframe src="./Cours 1 _ HTML - CSS_files/exemple3.html" style="width: 100%;height: 50%"></iframe>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+				
+        <div class="slide distant-slide" id="slide43">
+          <header>Quelques balises...</header>
+          <section>
+            <div class="onglet">
+							Balises diverses
+            </div>
+							<ul class="contenu contour ombre">
+								<li>Paragraphe : elle contient du texte</li>
+								<ul><li><span class="courier">&lt;p&gt; du texte &lt;/p&gt;</span></li></ul>
+								<li>Image</li>
+								<ul><li><span class="courier">&lt;img src="url de l'image" alt="titre" /&gt;</span></li></ul>
+							</ul>
+          </section>
+					<aside class="note">
+            <section>
+							Du texte doit forcément être contenu dans une balise p ou div (ce sera expliqué plus loin)
+            </section>
+          </aside>  
+       <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide44">
+          <header>Quelques balises...</header>
+          <section>
+            <div class="onglet">
+							Balises de listes
+            </div>
+						<ul class="contenu contour ombre">
+							<li><gras class="courier">ul</gras> : liste non ordonnée</li>
+							<li><gras class="courier">ol</gras> : liste ordonnée</li>
+							<li><gras class="courier">li</gras> : item de liste</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide45">
+          <header>Quelques balises...</header>
+          <section style="margin-top: 105px">
+            <div class="onglet" style="width: 11em;">
+							Balises de tableau
+            </div>
+						<ul class="contenu contour ombre">
+							<li><gras style="color:red">Attention!</gras> : un tableau ne doit pas servir à organiser des éléments dans la page</li>
+							<li>Défini par la balise <gras class="courier">table</gras> puis : </li>
+							<li><gras class="courier">caption</gras> : titre du tableau</li>
+							<li><gras class="courier">thead, tfoot</gras> : lignes d'en-tête et pied de tableau</li>
+							<li><gras class="courier">tbody</gras> : corps du tableau</li>
+							<li><gras class="courier">tr</gras> : balise de ligne dans le corps du tableau</li>
+							<li><gras class="courier">th</gras> : balise de colonne dans l'en-tête du tableau</li>
+							<li><gras class="courier">td</gras> : balise de colonne dans le corps du tableau</li>
+						</ul>
+          </section>
+          <aside class="note">
+            <section>
+							<h1><gras style="color:red">Attention!</gras> : un tableau ne doit pas servir à organiser des éléments dans la page</h1>
+            </section>
+          </aside> 
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide46">
+          <header>Exemple de tableau </header>
+          <section>
+						<div class="exemple ombre">
+							<pre>&lt;table border="1"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;&lt;th&gt;Ingrédient&lt;/th&gt;&lt;th&gt;Quantit&lt;/th&gt;&lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+  &lt;tr&gt;&lt;td&gt;farine&lt;/td&gt;&lt;td&gt;250&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;oeuf&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;sel&lt;/td&gt;&lt;td&gt;1 pincée&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;sucre vanillé&lt;/td&gt;&lt;td&gt;1 sachet&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;lait&lt;/td&gt;&lt;td&gt;1/2 litre&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;cognac&lt;/td&gt;&lt;td&gt;2 bouchons&lt;/td&gt;&lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+							</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide47">
+          <header>Exemple de liste </header>
+          <section style="margin-top: 105px">
+						<div class="exemple ombre">
+							<pre>&lt;ol&gt;
+ &lt;li&gt;Pâte&lt;/li&gt;
+ &lt;ul&gt;
+  &lt;li&gt;Verser la farine, le sel et le sucre&lt;/li&gt;
+  &lt;li&gt;Casser les oeufs&lt;/li&gt;
+  &lt;li&gt;Melanger et délayez en versant le lait au fur et à mesure&lt;/li&gt;
+  &lt;li&gt;Ajoutez le cognac&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;li&gt;Repos&lt;/li&gt;
+ &lt;ul&gt;
+  &lt;li&gt;Laisser reposer la pâte environ 2h&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;li&gt;Cuisson (à feu doux)&lt;/li&gt;
+ &lt;ol&gt;
+  &lt;li&gt;Beurrer la crépière&lt;/li&gt;
+  &lt;li&gt;Verser une louche, laisser cuire jusqu'à ce que la pâte <br>se décolle facilement avec une spatule&lt;/li&gt;
+  &lt;li&gt;Retourner et laisser cuire 1 minute&lt;/li&gt;
+  &lt;li&gt;Mettre la crèpe dans un plat, sucrer&lt;/li&gt;
+  &lt;li&gt;Tant que pâte, goto 1&lt;/li&gt;
+ &lt;/ol&gt;
+&lt;/ol&gt;
+							</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide48">
+          <header>Exemple</header>
+          <section>
+            <div class="exemple">
+							<iframe src="./Cours 1 _ HTML - CSS_files/exemple4.html" style="width: 100%;height: 50%"></iframe>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+				
+				
+        <div class="slide distant-slide" id="slide49">
+          <section class="middle">
+						<gras class="titre"> CSS2 </gras>
+          </section>
+        <span class="counter"></span></div>
+				
+        <div class="slide distant-slide" id="slide50">
+          <header>CSS</header>
+          <section style="margin-top: 90px;">
+            <div class="onglet">
+							Présentation
+            </div>
+						<ul class="contenu contour ombre">
+							<li>CSS : Cascade Style Sheet</li>
+							<li>Fichier externe d'extension <gras class="courier">.css</gras></li>
+							<li>Contient les informations de mise en forme de la page</li>
+							<li>Lien avec la page web par la balise <gras class="courier">link</gras></li>
+								<ul><li><span class="courier">&lt;link rel="stylesheet" type="text/css" href="url fichier css" /&gt;</span></li></ul>
+							<li>CSS alternatives (choix dans menu d'affichage ou par lien)</li>
+								<ul><li><span class="courier">&lt;link rel="alternate stylesheet" type="text/css" href="url autre fichier css" /&gt;</span></li></ul>
+							<li>Cliquer <a href="http://www.csszengarden.com/tr/francais/">ici</a> pour voir des exemples de possibilités de CSS</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide51">
+          <header>CSS</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+							Quelques propriétés
+            </div>
+						<ul class="contenu contour ombre">
+							<li><code>width, height</code> : hauteur, largeur de bloc (%, px, em)</li>
+							<li><code>font-size, font-style, font-family, font-weight</code> : modifications de la police</li>
+							<li><code>color</code> : couleur de la police</li>
+							<li><code>text-align, text-indent, text-decoration</code> : modification d'une zone de texte</li>
+							<li><code>border, border-top, border-left, ...</code> : bordure de bloc</li>
+							<li>et bien d'autres! (voir document sur <a href="http://arel.eisti.fr/">AREL</a> ou <a href="http://www.w3schools.com/css/">w3schools</a>)</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide52">
+          <header>Exemple de fichier CSS</header>
+          <section style="margin-top: 85px">
+						<div class="exemple ombre" style="padding-bottom: 0em">
+							<pre>/*  un commentaire  */
+pre {
+color: red;                                
+font-size: 8px;
+}
+<span class="key" onclick="javascript:document.getElementById(&quot;test-css1&quot;).style.color=&quot;red&quot;;document.getElementById(&quot;test-css1&quot;).style.fontSize=&quot;14px&quot;;">Tester</span>
+/*  un autre commentaire  */
+.pbleu {
+color: blue;
+}
+<span class="key" onclick="javascript:document.getElementById(&quot;test-css1&quot;).style.color=&quot;blue&quot;;">Tester</span>
+							</pre>
+						</div>
+						<div class="exemple ombre">
+							<pre id="test-css1">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" <br>"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"&gt;
+ &lt;head&gt;
+  &lt;title&gt;Ma nieme page XHTML&lt;/title&gt;
+  &lt;link rel="stylesheet" type="text/css" href="css/monstyle.css" /&gt;
+ &lt;/head&gt;
+  ...				</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide53">
+          <header>Balises</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+							Utilisation de balise
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Nécessité d'utiliser les bonnes balises</li>
+							<li>Caractérisation par 2 attributs</li>
+							<ul>
+								<li><codegras>id</codegras> : caractérise une balise de manière unique</li>
+								<li><codegras>class</codegras> : caractérise un ensemble de balises</li>
+							</ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide54">
+          <header>id et class</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+							Différences
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Attribut <codegras>id</codegras></li>
+							<ul>
+								<li>permet de remplacer une ancre</li>
+								<li>formalisme CSS : <codegras>#<itq>nomId</itq></codegras></li>
+							</ul>
+							<li>Attribut <codegras>class</codegras></li>
+							<ul>
+								<li>formalisme CSS : <codegras>.<itq>nomClass</itq></codegras></li>
+								<li>permet de cumuler des mises en forme :<br>
+									<codegras>&lt;p class="pbleu gras"&gt;</codegras></li>
+							</ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide55">
+          <header>Imbrication</header>
+          <section style="margin-top: 105px">
+						<div class="exemple ombre">
+							<pre>/*  cette classe ne s'applique que dans une balise span contenue dans une balise p  */
+p span{
+color: red;
+font-size: 22px;
+}
+							</pre>
+							<ul>
+								<li>Attention à <gras>l'ordre</gras> des balises</li>
+								<li>L'imbrication de balises div afin d'appliquer différentes classes est inutile, préférer la surcharge de classe</li>
+								<li>Une balise imbriquée dans une balise parente <gras>hérite</gras> de la mise en forme de cette dernière, à l'exception des marges, bordures et quelques autres</li>
+							</ul>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide56">
+          <header>Balises div et span</header>
+          <section>
+            <div class="onglet">
+							Présentation
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Balises "muettes" de mise en forme</li>
+							<li>Permet de disposer les éléments dans la page</li>
+							<li>Utilisation obligatoire de ces balises -&gt; <gras>PAS DE TABLEAU</gras></li>
+							<li>Différenciation balises <gras>ligne</gras> et <gras>bloc</gras></li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide57">
+          <header>Balises bloc et ligne</header>
+          <section>
+            <div class="onglet">
+							Deux groupes
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Bloc</li>
+							<ul>
+								<li>&lt;p&gt;,&lt;ul&gt;,&lt;li&gt;,&lt;div&gt;,&lt;h1&gt;,...</li>
+								<li>Positionnement : les uns <gras>au dessus</gras> des autres</li>
+							</ul>
+							<li>Ligne</li>
+							<ul>
+								<li>&lt;a&gt;,&lt;span&gt;,&lt;img&gt;,&lt;em&gt;,...</li>
+								<li>Positionnement : les uns <gras>à côté</gras> des autres</li>
+							</ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide58">
+          <header>Balises bloc et ligne</header>
+          <section>
+            <div class="onglet">
+							Notions
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Boite invisible configurable, autour du contenu</li>
+							<li>Ligne : prochaine boite se trace "à côté"</li>
+							<li>Bloc : prochaine boite se trace "en dessous"</li>
+							<li>Posiibilité de modifier le comportement</li>
+							<ul>
+								<li><code><span id="test-display" style="display: none;">Un intrus ! </span>display: (<a class="test" onclick="javascript:testDisplay(&quot;inline&quot;);">inline</a>|<a class="test" onclick="javascript:testDisplay(&quot;block&quot;);">block</a>|<a class="test" onclick="javascript:testDisplay(&quot;none&quot;);">none</a>)</code> ;</li>
+								<li><code>visibility: (<a class="test" onclick="javascript:testVisib(&quot;visible&quot;);">visible</a>|<a class="test" onclick="javascript:testVisib(&quot;hidden&quot;);">hidden</a>)<span id="test-visib" style="visibility: hidden;">Un autre intrus</span>;</code></li>
+							</ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide59">
+          <header>Configuration</header>
+          <section>
+            <div class="onglet">
+							Dimensions
+            </div>
+						<ul class="contenu contour ombre">
+							<li><code>height, width</code> : dimensions de la boite</li>
+							<li><code>border</code> : bordure de la boite</li>
+							<li><code>overflow</code> : dépassement du contenu de la boite</li>
+							<ul>
+							<li><code>visible</code> : par défaut, la boite s'élargit</li>
+							<li><code>hidden</code> : masque le dépassement</li>
+							<li><code>scroll</code> : crée des barres de défilement</li>
+							<li><code>auto</code> : crée des barres de défilement si nécessaire</li>
+							</ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide60">
+          <header>Configuration</header>
+          <section class="up">
+            <div class="onglet">
+							Marges
+            </div>
+						<ul class="contenu contour ombre">
+							<li>2 types de marges</li>
+							<ul>
+								<li><code>padding</code> : marges intérieures, entre le contenu et le bord de la balise</li>
+								<li><code>margin</code> : marges extérieures, entre deux bords de balises</li>
+							</ul>								
+						</ul>
+						<div>
+						<div class="exemple ombre">
+							<pre>.bloc{
+ width: 100px;
+ height: 100px;
+ background-color: yellow;
+ margin-left: 15px;
+ margin-top: 200px;
+}
+							</pre>
+						</div>
+          </div></section>
+        <span class="counter"></span></div>
+<!--
+        <div class="slide" id="slide61">
+          <header>Illustration</header>
+          <section style="margin-top: 105px">
+						<div class="exemple ombre">
+						<hgroup class="ombre">
+                <img class="centered" src="imgs/marges.gif" alt="Schema marges" />
+						<hgroup>
+						</div>
+          </section>
+        </div>
+-->
+
+        <div class="slide distant-slide" id="slide62">
+          <header>Configuration</header>
+          <section>
+            <div class="onglet" style="width: 22em;">
+							Positionnement fixe, relatif ou absolu
+            </div>
+						<ul class="contenu contour ombre">
+							<li><gras>fixe</gras> : position identique même si l'on bouge les ascenceurs latéraux</li>
+							<li><gras>relatif</gras> : position dépendante du père ou de sa position dans le flux d'affichage</li>
+							<li><gras>absolu</gras> : bloc "positionné" à partir du coin haut-gauche de la fenêtre du navigateur</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide63">
+          <header>Configuration</header>
+          <section>
+            <div class="onglet" style="width: 22em;">
+							Positionnement fixe, relatif ou absolu
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Permet de positionner les blocs les uns par rapports aux autres</li>
+							<li>Dangereux : pas ou peu d'adaptation aux résolutions</li>
+							<li>Seul moyen de superposer les éléments (propriété <code>z-index</code>)</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide64">
+          <header>Configuration</header>
+          <section>
+            <div class="onglet" style="width: 14em;">
+							Positionnement flottant
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Propriété <code>float</code>, utilisée pour aligner des blocs les uns à côté des autres</li>
+							<li>Sort du flux courant, pas de calcul de hauteur</li>
+							<li id="test-float">2 types de flottaison : <code><a class="test" onclick="javascript:testFloat(&quot;left&quot;);">left</a>, <a class="test" onclick="javascript:testFloat(&quot;right&quot;);">right</a></code></li>
+							<li>fin de flottaison : <code><a class="test" onclick="javascript:testFloat(&quot;none&quot;);">none</a></code></li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide65">
+          <header>Pseudos formats</header>
+          <section>
+            <div class="onglet">
+							Présentation
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Définis en CSS</li>
+							<li>Affectent la mise en forme sous conditions</li>
+							<li>Permettent d'ajouter de l'interactivité</li>
+							<li>S'utilisent sur une propriété ou une balise</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide66">
+          <header>Pseudos formats</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+							Quelques exemples
+            </div>
+						<ul class="contenu contour ombre">
+							<li><code><a class="test">:hover</a></code> : lorsque la souris survole la balise</li>
+							<li><code><a class="test">:active</a></code> : lorsque l'on clique sur un lien</li>
+							<li><a class="test" href="http://arel.eisti.fr/"><code>:visited</code></a> : lorsqu'un lien a été visité</li>
+							<li><code><a id="test-before" class="test" onclick="javascript:document.getElementById(&quot;test-before&quot;).className=&quot;test avant&quot;">:before</a> / <a id="test-after" class="test" onclick="javascript:document.getElementById(&quot;test-after&quot;).className=&quot;test apres&quot;">:after</a></code> : affecte la mise en forme avant / après une balise</li>
+							<ul><li>Attribut <code>content</code> : affecte un contenu avant / après la balise</li></ul>
+							<li>Et bien d'autres!</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide67">
+          <header>Pseudos formats</header>
+          <section>
+            <div class="onglet" style="width: 28em;">
+							Un exemple : numérotation automatique de titres
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Fonctionnalités de comptage fournies par CSS</li>
+							<ul>
+								<li><code>counter-reset: cpt val</code> : initialise le compteur <itq>cpt</itq> à <itq>val</itq> (par défaut 0)</li>
+								<li><code>counter-increment: cpt val</code> : incrémente le compteur <itq>cpt</itq> de <itq>val</itq> (par défaut 1)</li>
+								<li><code>counter(cpt, style)</code> : récupère la valeur du compteur <itq>cpt</itq> avec le style <itq>style</itq> (par défaut numérique, autres : roman, latin)</li>
+								<li><code>content: val</code> : affiche la valeur <itq>val</itq></li>
+							</ul>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide68">
+          <header>Pseudos formats</header>
+          <section>
+						<div class="exemple ombre">
+							<pre>h1:before {
+    content: "Chapitre " counter(chapitre) ".";
+    counter-increment: chapitre; /* Ajoute 1 au chapitre */
+    counter-reset: section;      /* Remet la section à zéro */
+}
+
+h2:before {
+    content: counter(chapitre) " - " counter(section) ".";
+    counter-increment: section;
+}
+							</pre>
+						</div>
+          </section>
+        <span class="counter"></span></div>
+<!--
+        <div class="slide" id="slide69">
+          <header>Pseudos formats</header>
+          <section>
+            <div class="onglet" style="width: 12em;">
+
+            </div>
+						<ul class="contenu contour ombre">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+          </section>
+        </div>
+-->
+        <div class="slide distant-slide" id="slide69">
+          <header>Derniers conseils</header>
+          <section>
+            <div class="onglet">
+							Attention
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Éviter trop d'imbrications de <code>div</code></li>
+							<li>Ne pas utiliser les <code>table</code> pour la mise en page</li>
+							<li>Utilisez les balises adéquates</li>
+							<li>Utilisez les listes pour les menus</li>
+							<li>Validateur CSS : <a class="courier" href="http://jigsaw.w3.org/css-validator">http://jigsaw.w3.org/css-validator/</a></li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+        <div class="slide distant-slide" id="slide70">
+          <header>Derniers conseils</header>
+          <section>
+            <div class="onglet" style="width: 18em;">
+							Mises en garde de compatibilité
+            </div>
+						<ul class="contenu contour ombre">
+							<li>Respecter la norme ne suffit pas</li>
+							<li>Valeurs par défaut, comportements différents selon les navigateurs</li>
+							<li>Préférez les tailles de bloc en pixels qu'en pourcentage</li>
+							<li>Certaines balises, propriétés CSS non prises en compte</li>
+							<li><gras>Solution</gras> : tester, tester, tester</li>
+						</ul>
+          </section>
+        <span class="counter"></span></div>
+
+      </div>
+
+      <div id="hidden-note" class="invisible" style="display: none;"></div> <!-- hidden note -->
+
+      <aside id="help" class="sidebar invisible" style="display: hidden;"><!-- Defining sidebar help -->
+        <table>
+          <caption>Help</caption>
+            <tbody><tr>
+              <th>Move forward/back</th>
+              <td>←&nbsp;→</td>
+            </tr>
+            <tr>
+              <th>Move forward</th>
+              <td>spacebar</td>
+            </tr>
+            <tr>
+              <th>Hidden Notes</th>
+              <td>N</td>
+            </tr>
+            <tr>
+              <th>Help</th>
+              <td>H</td>
+            </tr>
+        </tbody></table>
+      </aside>
+
+    </div>
+
+    <script type="text/javascript" src="./Cours 1 _ HTML - CSS_files/script.js"></script>
+
+
+</body></html>
