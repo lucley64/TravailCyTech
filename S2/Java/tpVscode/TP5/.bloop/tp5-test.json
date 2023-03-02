@@ -1,0 +1,109 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "tp5-test",
+        "directory": "/home/cytech/Travail/S2/Java/tpVscode/TP5",
+        "workspaceDir": "/home/cytech/Travail/S2/Java/tpVscode/TP5",
+        "sources": [
+            
+        ],
+        "dependencies": [
+            "tp5"
+        ],
+        "classpath": [
+            "/home/cytech/Travail/S2/Java/tpVscode/TP5/target/test-classes",
+            "/home/cytech/Travail/S2/Java/tpVscode/TP5/target/classes"
+        ],
+        "out": "/home/cytech/Travail/S2/Java/tpVscode/TP5/target",
+        "classesDir": "/home/cytech/Travail/S2/Java/tpVscode/TP5/target/test-classes",
+        "resources": [
+            "/home/cytech/Travail/S2/Java/tpVscode/TP5/src/test/resources"
+        ],
+        "java": {
+            "options": [
+                "-g",
+                "-target",
+                "11",
+                "-source",
+                "11",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    {
+                        "args": [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework": {
+                            "names": [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/usr/lib/jvm/java-11-openjdk-amd64",
+                "options": [
+                    
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
