@@ -27,15 +27,19 @@ public class App {
         Carre ca2 = new Carre(50, 50, 50);
         Cercle ce1 = new Cercle(0, 0, 22);
         Cercle ce2 = new Cercle(-12, 3, 2);
+        Cercle ce3 = new Cercle(-12, 3, 26);
         PileFormes pileFormes = new PileFormesBetter(3);
+        logger.log(Level.INFO, pileFormes);
         logger.log(Level.INFO, pileFormes.vide());
         pileFormes.empiler(ce2);
         logger.log(Level.INFO, pileFormes);
-        pileFormes.empiler(ce1);
         pileFormes.empiler(ca1);
         pileFormes.empiler(ca2);
+        pileFormes.empiler(ce1);
+        pileFormes.empiler(ce3);
         logger.log(Level.INFO, pileFormes);
-        logger.log(Level.INFO, pileFormes.sommet());
+        pileFormes.trier();
+        logger.log(Level.INFO, pileFormes);
         pileFormes.depiler();
         logger.log(Level.INFO, pileFormes);
     }

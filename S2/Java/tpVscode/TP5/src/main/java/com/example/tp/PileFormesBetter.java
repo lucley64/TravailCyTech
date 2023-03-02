@@ -38,7 +38,7 @@ public class PileFormesBetter implements PileFormes {
 
     @Override
     public Forme sommet() {
-        if (sommet == 0)
+        if (vide())
             throw new IndexOutOfBoundsException();
         return formes[sommet - 1];
     }
@@ -57,4 +57,32 @@ public class PileFormesBetter implements PileFormes {
         return "[ " + s + " ]";
     }
 
+    @Override
+    public void trier() {
+        var pfb = new PileFormesBetter(sommet);
+        while (!vide()) {
+            var s = sommet();
+            depiler();
+            pfb.ajouterComp(s);
+        }
+        while (!pfb.vide()){
+            empiler(pfb.sommet());
+            pfb.depiler();
+        }
+    }
+    
+    private void ajouterComp(Forme f){
+        if(!vide()) {
+            var s2 = sommet();
+            if (s2.getSurface() < f.getSurface()) {
+                empiler(f);
+            } else {
+                depiler();
+                ajouterComp(f);
+                empiler(s2);
+            }
+        } else {
+            empiler(f);
+        }
+    }
 }

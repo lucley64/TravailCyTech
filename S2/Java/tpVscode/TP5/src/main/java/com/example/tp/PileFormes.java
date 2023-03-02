@@ -5,4 +5,5 @@ public interface PileFormes{
     public void depiler();
     public Forme sommet();
     public boolean vide();
+    public void trier();
 }
