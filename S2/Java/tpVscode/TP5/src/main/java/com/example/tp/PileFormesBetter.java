@@ -40,7 +40,7 @@ public class PileFormesBetter implements PileFormes {
     public Forme sommet() {
         if (sommet == 0)
             throw new IndexOutOfBoundsException();
-        return formes[sommet];
+        return formes[sommet - 1];
     }
 
     @Override

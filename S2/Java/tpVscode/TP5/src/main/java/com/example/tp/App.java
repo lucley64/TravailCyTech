@@ -35,6 +35,7 @@ public class App {
         pileFormes.empiler(ca1);
         pileFormes.empiler(ca2);
         logger.log(Level.INFO, pileFormes);
+        logger.log(Level.INFO, pileFormes.sommet());
         pileFormes.depiler();
         logger.log(Level.INFO, pileFormes);
     }

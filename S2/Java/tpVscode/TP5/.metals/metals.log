@@ -7689,3 +7689,13 @@ Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_
 2023.03.02 10:18:56 INFO  time: compiled tp5 in 0.18s[0m
 Mar 02, 2023 10:19:26 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.03.02 10:20:40 INFO  compiling tp5 (1 java source)[0m
+2023.03.02 10:20:40 INFO  time: compiled tp5 in 0.13s[0m
+2023.03.02 10:20:44 INFO  compiling tp5 (1 java source)[0m
+2023.03.02 10:20:44 INFO  time: compiled tp5 in 0.18s[0m
+2023.03.02 10:20:57 INFO  compiling tp5 (1 java source)[0m
+2023.03.02 10:20:57 INFO  time: compiled tp5 in 0.15s[0m
+2023.03.02 10:22:10 INFO  compiling tp5 (1 java source)[0m
+2023.03.02 10:22:10 INFO  time: compiled tp5 in 0.17s[0m
+2023.03.02 10:22:18 INFO  compiling tp5 (1 java source)[0m
+2023.03.02 10:22:18 INFO  time: compiled tp5 in 0.2s[0m
