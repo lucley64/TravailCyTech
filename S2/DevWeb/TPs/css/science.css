@@ -39,11 +39,12 @@ div#contenu {
     border: solid 1px #52d8fa;
 }
 
-div#tab-buttons {
+div#tab-buttons,
+div#downMenu {
     display: flex;
 }
 
-button {
+button.menu {
     background-color: #a5a5a5;
     color: white;
     padding: 12px 20px;
@@ -52,6 +53,66 @@ button {
     width: 100%;
 }
 
-button:hover {
+button.menu:hover {
     background-color: #6b6b6b;
+}
+
+input.counter {
+    text-align: center;
+    -webkit-appearance: textfield !important;
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+    height: 100%;
+    width: 39%;
+    border: none;
+    font-size: 1.5em;
+
+}
+
+div.counter {
+    border: 2px #dcd3d3 solid;
+    width: 40vw;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+button.counter {
+    cursor: pointer;
+    height: 100%;
+    width: 29%;
+    border: none;
+    font-size: 1.5em;
+    color: #5f5fce;
+    background-color: #a5a5a500;
+
+}
+
+button.counter:hover {
+    background-color: #00000028;
+}
+
+button.counter:disabled {
+    color: #5f5fce00;
+}
+
+button.counter:hover:disabled {
+    cursor: default;
+    background-color: #a5a5a500;
+}
+
+div#zoomLens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+}
+
+div#zoomImage {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 201;
 }
