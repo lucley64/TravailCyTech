@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="laposte" version="4">
+  <OBJECT>
+    <ID name="laposte" mc="Standard.Package" uid="11e83e6a-8694-4b27-acf7-7e889474721f"/>
+    <PID name="laPoste" mc="Standard.Project" uid="bc18d11a-2641-4aa5-addd-13bfd5dac5ac"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[laposte]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Courrier" mc="Standard.Class" uid="ea5b4f1c-f0ea-45c3-877c-d9825722e7a4"/>
+        <COMPID name="Lettre" mc="Standard.Class" uid="c28e3bee-94a5-443d-a4a1-8c0ea2301127"/>
+        <COMPID name="Colis" mc="Standard.Class" uid="a14fe61c-e4eb-4b31-aa09-c1cf9ab9e13b"/>
+        <COMPID name="Magazine" mc="Standard.Class" uid="3de84c05-6183-4213-b2fa-0cb28dba30ce"/>
+        <COMPID name="BoiteAuxLettres" mc="Standard.Class" uid="c889f7e3-8f98-4e4d-af38-94495aa2c0f6"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="laposte Class diagram" mc="Standard.ClassDiagram" uid="edc95c6d-5432-4b6a-9e36-77d4a4ed045e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

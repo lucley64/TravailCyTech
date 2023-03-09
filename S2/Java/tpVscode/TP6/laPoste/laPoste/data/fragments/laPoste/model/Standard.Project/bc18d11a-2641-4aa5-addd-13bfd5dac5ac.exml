@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="laPoste" version="4">
+  <OBJECT>
+    <ID name="laPoste" mc="Standard.Project" uid="bc18d11a-2641-4aa5-addd-13bfd5dac5ac"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[laPoste]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="laposte" mc="Standard.Package" uid="11e83e6a-8694-4b27-acf7-7e889474721f"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="laPoste" mc="Infrastructure.DiagramSet" uid="58a0bc65-b36a-42dd-a070-c252b9f002df"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

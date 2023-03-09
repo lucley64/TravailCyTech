@@ -1,0 +1,2668 @@
+2023.03.09 09:51:53 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP6' for client Visual Studio Code 1.76.0.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.09 09:51:54 INFO  time: initialize in 0.75s[0m
+2023.03.09 09:51:56 WARN  Build server is not auto-connectable.[0m
+2023.03.09 09:51:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+Mar 09, 2023 9:52:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.03.09 09:52:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+2023.03.09 09:52:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+2023.03.09 09:52:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java:10: error: not a statement
+        logger.log
+              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java:10: error: ';' expected
+        logger.log
+                  ^
+2 errors[0m
+2023.03.09 09:52:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+2023.03.09 09:52:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java:10: error: ';' expected
+        logger.log()
+                    ^
+1 error[0m
+2023.03.09 09:52:21 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+2023.03.09 09:52:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java:10: error: ';' expected
+        logger.log(Leve)
+                        ^
+1 error[0m
+2023.03.09 09:52:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+2023.03.09 09:52:38 INFO  Shutting down server[0m
+2023.03.09 09:52:38 INFO  shutting down Metals[0m
+2023.03.09 09:52:38 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 09:52:38 INFO  Exiting server[0m
+2023.03.09 09:53:04 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP6' for client Visual Studio Code 1.76.0.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.09 09:53:05 INFO  time: initialize in 0.98s[0m
+2023.03.09 09:53:08 WARN  Build server is not auto-connectable.[0m
+2023.03.09 09:53:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+Mar 09, 2023 9:53:09 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.03.09 09:53:10 INFO  Shutting down server[0m
+2023.03.09 09:53:10 INFO  shutting down Metals[0m
+2023.03.09 09:53:10 INFO  Exiting server[0m
+2023.03.09 09:53:10 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequest failed with message: Canceled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 09:53:24 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP6' for client Visual Studio Code 1.76.0.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.09 09:53:26 INFO  time: initialize in 2.16s[0m
+2023.03.09 09:53:31 WARN  Build server is not auto-connectable.[0m
+2023.03.09 09:53:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/App.java[0m
+2023.03.09 09:53:33 INFO  time: code lens generation in 2.57s[0m
+2023.03.09 09:53:37 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -Dmaven.multiModuleProjectDirectory=/home/cytech/Travail/S2/Java/tpVscode/TP6 -Dmaven.home=/tmp/metals11969394442892445998 -cp /tmp/metals11969394442892445998/maven-wrapper.jar org.apache.maven.wrapper.MavenWrapperMain generate-sources ch.epfl.scala:bloop-maven-plugin:2.0.0:bloopInstall -DdownloadSources=true'[0m
+2023.03.09 09:53:39 INFO  [INFO] Scanning for projects...[0m
+2023.03.09 09:53:39 INFO  [WARNING] [0m
+2023.03.09 09:53:39 INFO  [WARNING] Some problems were encountered while building the effective model for com.example.tp:tp6:jar:1.0[0m
+2023.03.09 09:53:39 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 16, column 21[0m
+2023.03.09 09:53:39 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 42, column 21[0m
+2023.03.09 09:53:39 INFO  [WARNING] [0m
+2023.03.09 09:53:39 INFO  [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.[0m
+2023.03.09 09:53:39 INFO  [WARNING] [0m
+2023.03.09 09:53:39 INFO  [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.[0m
+2023.03.09 09:53:39 INFO  [WARNING] [0m
+2023.03.09 09:53:39 INFO  [INFO] [0m
+2023.03.09 09:53:39 INFO  [INFO] -------------------------< com.example.tp:tp6 >-------------------------[0m
+2023.03.09 09:53:39 INFO  [INFO] Building tp6 1.0[0m
+2023.03.09 09:53:39 INFO  [INFO] --------------------------------[ jar ]---------------------------------[0m
+2023.03.09 09:53:39 INFO  [INFO] [0m
+2023.03.09 09:53:39 INFO  [INFO] --- bloop-maven-plugin:2.0.0:bloopInstall (default-cli) @ tp6 ---[0m
+2023.03.09 09:53:41 INFO  [INFO] Using empty launcher: no run setup for tp6.[0m
+2023.03.09 09:53:41 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.03.09 09:53:41 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.03.09 09:53:41 INFO  [INFO] Generated .bloop/tp6.json[0m
+2023.03.09 09:53:41 INFO  [INFO] Generated .bloop/tp6-test.json[0m
+2023.03.09 09:53:41 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.03.09 09:53:41 INFO  [INFO] BUILD SUCCESS[0m
+2023.03.09 09:53:41 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.03.09 09:53:41 INFO  [INFO] Total time:  2.098 s[0m
+2023.03.09 09:53:41 INFO  [INFO] Finished at: 2023-03-09T09:53:41+01:00[0m
+2023.03.09 09:53:41 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.03.09 09:53:41 INFO  time: ran 'mvn bloopInstall' in 4.24s[0m
+2023.03.09 09:53:41 INFO  Attempting to connect to the build server...[0m
+2023.03.09 09:53:41 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json[0m
+2023.03.09 09:53:44 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP6/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json[0m
+2023.03.09 09:53:44 INFO  time: Connected to build server in 4.27s[0m
+2023.03.09 09:53:44 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.03.09 09:53:45 INFO  time: Imported build in 0.14s[0m
+2023.03.09 09:53:47 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.09 09:53:47 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.09 09:53:47 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.09 09:53:47 INFO  time: indexed workspace in 1.54s[0m
+2023.03.09 09:53:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:53:49 INFO  time: compiled tp6 in 1.3s[0m
+2023.03.09 09:54:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:54:15 INFO  time: compiled tp6 in 0.32s[0m
+2023.03.09 09:54:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:54:16 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 09:54:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:54:45 INFO  time: compiled tp6 in 99ms[0m
+2023.03.09 09:54:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:54:47 INFO  time: compiled tp6 in 71ms[0m
+2023.03.09 09:54:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:54:54 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 09:54:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:54:56 INFO  time: compiled tp6 in 39ms[0m
+2023.03.09 09:54:58 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 9:54:58 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point1) <-> [5 (Point1)) None
+2023.03.09 09:54:58 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java:3:20: stale bloop error: reached end of file while parsing
+public class Point1
+                   ^[0m
+2023.03.09 09:54:58 INFO  time: compiled tp6 in 88ms[0m
+Mar 09, 2023 9:54:58 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 09:54:58 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java:3:20: stale bloop error: reached end of file while parsing
+public class Point1
+                   ^[0m
+2023.03.09 09:54:59 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 9:54:59 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point1D) <-> [5 (Point1D)) None
+2023.03.09 09:54:59 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point1D
+                    ^[0m
+2023.03.09 09:54:59 INFO  time: compiled tp6 in 31ms[0m
+Mar 09, 2023 9:55:00 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point1D) <-> [5 (Point1D)) None
+2023.03.09 09:55:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point1D
+                    ^[0m
+Mar 09, 2023 9:55:00 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point1D) <-> [5 (Point1D)) None
+2023.03.09 09:55:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point1D
+                    ^[0m
+2023.03.09 09:55:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:55:01 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 09:55:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:55:03 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 09:55:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:55:45 INFO  time: compiled tp6 in 59ms[0m
+2023.03.09 09:55:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:55:48 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 09:55:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:55:52 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 09:55:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:55:54 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 09:56:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:05 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 09:56:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:12 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 09:56:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:15 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 09:56:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:25 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 09:56:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:32 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 09:56:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:38 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 09:56:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:56:52 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 09:57:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:57:00 INFO  time: compiled tp6 in 0.34s[0m
+2023.03.09 09:57:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:57:29 INFO  time: compiled tp6 in 45ms[0m
+2023.03.09 09:57:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:57:31 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 09:57:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:57:34 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 09:57:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:57:42 INFO  time: compiled tp6 in 0.34s[0m
+2023.03.09 09:58:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:30 INFO  time: compiled tp6 in 61ms[0m
+2023.03.09 09:58:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:31 INFO  time: compiled tp6 in 41ms[0m
+2023.03.09 09:58:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:34 INFO  time: compiled tp6 in 33ms[0m
+2023.03.09 09:58:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:37 INFO  time: compiled tp6 in 33ms[0m
+2023.03.09 09:58:40 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 9:58:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+2023.03.09 09:58:40 INFO  time: compiled tp6 in 38ms[0m
+Mar 09, 2023 9:58:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:41 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:41 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:42 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:43 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:43 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:44 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:43 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+Mar 09, 2023 9:58:44 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 09:58:44 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point2D.java:3:21: stale bloop error: reached end of file while parsing
+public class Point2D
+                    ^[0m
+2023.03.09 09:58:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:45 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 09:58:55 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:55 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 09:58:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:58:57 INFO  time: compiled tp6 in 37ms[0m
+2023.03.09 09:59:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:01 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 09:59:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:03 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 09:59:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:12 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 09:59:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:15 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 09:59:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:27 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 09:59:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:34 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 09:59:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:43 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 09:59:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:49 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 09:59:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 09:59:56 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 10:00:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:19 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:00:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:45 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:00:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:50 INFO  time: compiled tp6 in 0.32s[0m
+2023.03.09 10:00:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:52 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:00:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:53 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:00:55 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:55 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:00:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:00:59 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:01:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:05 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:01:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:10 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:01:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:13 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:01:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:22 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:01:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:35 INFO  time: compiled tp6 in 39ms[0m
+2023.03.09 10:01:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:38 INFO  time: compiled tp6 in 43ms[0m
+2023.03.09 10:01:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:40 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:01:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:01:44 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:04:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:39 INFO  time: compiled tp6 in 0.3s[0m
+2023.03.09 10:04:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:42 INFO  time: compiled tp6 in 38ms[0m
+2023.03.09 10:04:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:44 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 10:04:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:46 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 10:04:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:48 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 10:04:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:50 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:04:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:52 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 10:04:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:54 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 10:04:55 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:55 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:04:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:04:59 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 10:05:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:00 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 10:05:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:02 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 10:05:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:07 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:05:21 WARN  Using indexes to guess the definition of Point2D[0m
+2023.03.09 10:05:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:24 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:05:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:33 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:05:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:38 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 10:05:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:41 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:05:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:05:44 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:06:06 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:06:06 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 10:06:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:06:09 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 10:07:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:07:28 INFO  time: compiled tp6 in 53ms[0m
+2023.03.09 10:07:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:07:29 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 10:07:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:07:35 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:07:37 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 10:07:37 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point) <-> [5 (Point)) None
+2023.03.09 10:07:37 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+2023.03.09 10:07:37 INFO  time: compiled tp6 in 27ms[0m
+Mar 09, 2023 10:07:37 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:37 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+Mar 09, 2023 10:07:38 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:37 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+Mar 09, 2023 10:07:39 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:39 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+Mar 09, 2023 10:07:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:39 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+Mar 09, 2023 10:07:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+Mar 09, 2023 10:07:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+Mar 09, 2023 10:07:41 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:19: stale bloop error: reached end of file while parsing
+public class Point
+                  ^[0m
+2023.03.09 10:07:42 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 10:07:42 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Poi) <-> [5 (Poi)) None
+2023.03.09 10:07:42 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:33: stale bloop error: reached end of file while parsing
+public class Point3D extends Poi
+                                ^[0m
+2023.03.09 10:07:42 INFO  time: compiled tp6 in 42ms[0m
+Mar 09, 2023 10:07:43 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:43 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:33: stale bloop error: reached end of file while parsing
+public class Point3D extends Poi
+                                ^[0m
+Mar 09, 2023 10:07:44 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:43 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:33: stale bloop error: reached end of file while parsing
+public class Point3D extends Poi
+                                ^[0m
+Mar 09, 2023 10:07:44 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 10:07:44 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:33: stale bloop error: reached end of file while parsing
+public class Point3D extends Poi
+                                ^[0m
+2023.03.09 10:07:45 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 10:07:45 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 10:07:45 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:37: stale bloop error: reached end of file while parsing
+public class Point3D extends Point2D
+                                    ^[0m
+2023.03.09 10:07:45 INFO  time: compiled tp6 in 25ms[0m
+Mar 09, 2023 10:07:45 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 10:07:44 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:37: stale bloop error: reached end of file while parsing
+public class Point3D extends Point2D
+                                    ^[0m
+Mar 09, 2023 10:07:46 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Point2D) <-> [5 (Point2D)) None
+2023.03.09 10:07:46 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point3D.java:3:37: stale bloop error: reached end of file while parsing
+public class Point3D extends Point2D
+                                    ^[0m
+2023.03.09 10:07:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:07:47 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 10:08:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:08:27 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 10:08:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:08:30 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:08:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:08:33 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:08:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:08:34 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 10:08:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:08:42 INFO  time: compiled tp6 in 0.35s[0m
+2023.03.09 10:08:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:08:48 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 10:09:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:09:07 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:09:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:09:11 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 10:10:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:30 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 10:10:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:31 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:10:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:35 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:10:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:41 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 10:10:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:43 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:10:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:47 INFO  time: compiled tp6 in 56ms[0m
+2023.03.09 10:10:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:51 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 10:10:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:56 INFO  time: compiled tp6 in 4ms[0m
+2023.03.09 10:10:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:10:59 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 10:11:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:11:00 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 10:11:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:11:02 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 10:11:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:11:03 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 10:11:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:11:04 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 10:11:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:11:08 INFO  time: compiled tp6 in 0.2s[0m
+Mar 09, 2023 10:11:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/java.base/java.util/LinkedList.class?%3Dtp6%2F%5C%2Fusr%5C%2Flib%5C%2Fjvm%5C%2Fjava-11-openjdk-amd64%5C%2Flib%5C%2Fjrt-fs.jar%60java.base%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F11%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Cjava.util%28LinkedList.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 15 more
+
+Mar 09, 2023 10:11:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/java.base/java.util/LinkedList.class?%3Dtp6%2F%5C%2Fusr%5C%2Flib%5C%2Fjvm%5C%2Fjava-11-openjdk-amd64%5C%2Flib%5C%2Fjrt-fs.jar%60java.base%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F11%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Cjava.util%28LinkedList.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 15 more
+
+Mar 09, 2023 10:11:45 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/java.base/java.util/LinkedList.class?%3Dtp6%2F%5C%2Fusr%5C%2Flib%5C%2Fjvm%5C%2Fjava-11-openjdk-amd64%5C%2Flib%5C%2Fjrt-fs.jar%60java.base%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F11%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Cjava.util%28LinkedList.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 15 more
+
+2023.03.09 10:12:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:12 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:12:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:14 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:12:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:29 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 10:12:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:31 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 10:12:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:33 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:12:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:38 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:12:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:42 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:12:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:44 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 10:12:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:46 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:12:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:49 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 10:12:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:51 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:12:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:54 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 10:12:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:56 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:12:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:57 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:12:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:12:59 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:13:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:09 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:13:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:12 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 10:13:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:14 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:13:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:16 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 10:13:18 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:18 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:13:21 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:21 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 10:13:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:25 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 10:13:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:28 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:13:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:13:35 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:14:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:32 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:14:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:38 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:14:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:43 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 10:14:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:48 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 10:14:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:49 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 10:14:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:50 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 10:14:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:53 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 10:14:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:54 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 10:14:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:14:56 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 10:15:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:15:00 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 10:15:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:15:05 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:15:05 INFO  compiling tp6 (4 java sources)[0m
+2023.03.09 10:15:05 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 10:15:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:15:26 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 10:16:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:39 INFO  time: compiled tp6 in 61ms[0m
+2023.03.09 10:16:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:44 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:16:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:47 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 10:16:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:48 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:16:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:49 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 10:16:50 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 10:16:50 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java:47:37: stale bloop error: ')' expected
+        var sj = new StringJoiner(""
+                                    ^[0m
+2023.03.09 10:16:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:51 INFO  time: compiled tp6 in 48ms[0m
+2023.03.09 10:16:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:52 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 10:16:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:53 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:16:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:16:56 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 10:17:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:04 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:17:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:11 INFO  time: compiled tp6 in 45ms[0m
+2023.03.09 10:17:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:13 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:17:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:16 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 10:17:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:19 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:17:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:27 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 10:17:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:30 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:17:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:35 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 10:17:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:37 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:17:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:47 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 10:17:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:51 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:17:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:53 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 10:17:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:57 INFO  time: compiled tp6 in 47ms[0m
+2023.03.09 10:17:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:17:58 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 10:18:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:01 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 10:18:01 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:18:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:05 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:18:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:09 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:18:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:25 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:18:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:28 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:18:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:31 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:18:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:35 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:18:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:36 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:18:36 INFO  compiling tp6 (4 java sources)[0m
+2023.03.09 10:18:36 INFO  time: compiled tp6 in 0.33s[0m
+2023.03.09 10:18:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:53 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:18:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:18:58 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:19:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:00 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 10:19:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:02 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 10:19:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:03 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:19:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:04 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 10:19:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:09 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 10:19:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:11 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 10:19:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:13 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:19:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:15 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 10:19:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:16 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:19:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:19 INFO  time: compiled tp6 in 38ms[0m
+2023.03.09 10:19:21 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:21 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 10:19:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:23 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 10:19:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:25 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 10:19:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:26 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:19:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:30 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 10:19:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:37 INFO  time: compiled tp6 in 33ms[0m
+2023.03.09 10:19:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:39 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 10:19:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:40 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:19:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:46 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:19:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:48 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:19:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:19:54 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:20:02 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:02 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 10:20:08 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:08 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:20:13 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:13 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:20:21 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:21 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 10:20:22 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:22 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 10:20:27 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:27 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:20:31 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:31 INFO  time: compiled tp6 in 40ms[0m
+2023.03.09 10:20:32 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:32 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 10:20:34 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:34 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:20:47 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 10:20:47 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:20:47 INFO  compiling tp6 (4 java sources)[0m
+2023.03.09 10:20:47 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:21:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:21:01 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 10:21:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:21:12 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:21:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:21:29 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:21:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:21:36 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:21:37 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java[0m
+2023.03.09 10:21:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/points/Point1D.java[0m
+2023.03.09 10:21:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:21:39 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:22:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:22:10 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:22:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:22:42 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:26:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:26:48 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 10:26:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:26:52 INFO  time: compiled tp6 in 0.21s[0m
+Mar 09, 2023 10:26:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3844
+2023.03.09 10:26:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:26:59 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:48:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:39 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:48:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:42 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 10:48:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:44 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 10:48:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:46 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 10:48:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:51 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 10:48:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:54 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 10:48:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:48:56 INFO  time: compiled tp6 in 77ms[0m
+2023.03.09 10:49:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:10 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 10:49:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:16 INFO  time: compiled tp6 in 44ms[0m
+2023.03.09 10:49:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:20 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 10:49:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:23 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 10:49:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:39 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 10:49:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:43 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 10:49:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:51 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:49:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:49:53 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 10:58:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:58:59 INFO  time: compiled tp6 in 0.11s[0m
+2023.03.09 10:59:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:01 INFO  time: compiled tp6 in 44ms[0m
+2023.03.09 10:59:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:10 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 10:59:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:15 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 10:59:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:23 INFO  time: compiled tp6 in 52ms[0m
+2023.03.09 10:59:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:25 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 10:59:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:32 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 10:59:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:36 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 10:59:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:38 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 10:59:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:42 INFO  time: compiled tp6 in 0.43s[0m
+2023.03.09 10:59:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:43 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 10:59:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 10:59:47 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 11:00:02 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 11:00:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 11:00:02 INFO  time: compiled tp6 in 28ms[0m
+Mar 09, 2023 11:00:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:03 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:04 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:04 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:04 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:04 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:05 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:04 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:05 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:05 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:06 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:05 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:06 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:06 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:07 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:07 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:07 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:08 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:07 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:08 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:07 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:09 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:09 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:09 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:09 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:09 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:09 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 11:00:10 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 11:00:10 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:8:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 11:00:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:00:33 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 11:00:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:00:43 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 11:00:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:00:46 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 11:00:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:00:48 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 11:00:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:00:50 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 11:00:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:00:57 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 11:01:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:01:01 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 11:14:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:14:13 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 11:14:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:14:15 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 11:14:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:14:25 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 11:14:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:14:27 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 11:14:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:14:34 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 11:15:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:12 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 11:15:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:15 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 11:15:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:17 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 11:15:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:19 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 11:15:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:20 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 11:15:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:22 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 11:15:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:30 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 11:15:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:33 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 11:15:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:42 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 11:15:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:47 INFO  time: compiled tp6 in 56ms[0m
+2023.03.09 11:15:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:15:48 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 11:16:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:16:22 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 11:16:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:16:32 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 11:16:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:16:36 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 11:16:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:16:37 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 11:16:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:16:40 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 11:16:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:16:43 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 11:17:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:17:17 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 11:17:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:17:25 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 11:17:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:17:33 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 11:17:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 11:17:35 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:07:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:07:28 INFO  time: compiled tp6 in 0.21s[0m
+Mar 09, 2023 12:07:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5384
+2023.03.09 12:07:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:07:44 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 12:07:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:07:56 INFO  time: compiled tp6 in 45ms[0m
+2023.03.09 12:07:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:07:59 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:08:06 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:06 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:08:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:09 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:08:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:14 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:08:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:15 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:08:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:17 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:08:18 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:18 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:08:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:20 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:08:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:22 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:08:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:25 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:08:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:08:26 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:09:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:09:04 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:09:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:09:15 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:09:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:09:16 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:11:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:11:09 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:11:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:11:43 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:11:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:11:45 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 12:11:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:11:47 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:11:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:11:50 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:11:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:11:53 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 12:11:58 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:11:58 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:11:58 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:42:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:11:58 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:11:58 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:11:59 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:11:58 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:11:58 INFO  time: compiled tp6 in 19ms[0m
+Mar 09, 2023 12:12:00 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:00 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:01 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:01 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:02 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:01 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:12:02 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:12:02 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:12:02 INFO  time: compiled tp6 in 36ms[0m
+Mar 09, 2023 12:12:03 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:03 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:04 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:03 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:04 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:04 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:05 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:04 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:06 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:06 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:06 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:07 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:07 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:12:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:12:08 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:12:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:12:15 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 12:12:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:12:16 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:12:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:12:25 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 12:12:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:12:31 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:12:41 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:12:41 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:46:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:12:41 INFO  time: compiled tp6 in 19ms[0m
+Mar 09, 2023 12:12:41 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:46:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:12:42 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:12:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java:46:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:12:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:12:43 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:13:18 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:18 INFO  time: compiled tp6 in 43ms[0m
+2023.03.09 12:13:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:19 INFO  time: compiled tp6 in 66ms[0m
+2023.03.09 12:13:27 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:13:27 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Lettre) <-> [5 (Lettre)) None
+2023.03.09 12:13:27 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:3:20: stale bloop error: reached end of file while parsing
+public class Lettre
+                   ^[0m
+2023.03.09 12:13:27 INFO  time: compiled tp6 in 34ms[0m
+Mar 09, 2023 12:13:27 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Lettre) <-> [5 (Lettre)) None
+2023.03.09 12:13:27 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:3:20: stale bloop error: reached end of file while parsing
+public class Lettre
+                   ^[0m
+Mar 09, 2023 12:13:27 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Lettre) <-> [5 (Lettre)) None
+2023.03.09 12:13:27 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:3:20: stale bloop error: reached end of file while parsing
+public class Lettre
+                   ^[0m
+2023.03.09 12:13:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:28 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:13:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:31 INFO  time: compiled tp6 in 37ms[0m
+2023.03.09 12:13:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:34 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:13:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:35 INFO  time: compiled tp6 in 0.12s[0m
+2023.03.09 12:13:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:39 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:13:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:13:49 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:13:56 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:13:56 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:56 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:13:56 INFO  time: compiled tp6 in 21ms[0m
+Mar 09, 2023 12:13:57 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:57 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:13:57 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:57 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:13:57 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:57 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:13:58 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:58 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:13:59 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:13:59 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:59 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:13:59 INFO  time: compiled tp6 in 33ms[0m
+Mar 09, 2023 12:13:59 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:13:58 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:14:00 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:14:00 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:14:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:14:00 INFO  time: compiled tp6 in 18ms[0m
+Mar 09, 2023 12:14:00 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:14:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 09, 2023 12:14:00 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.09 12:14:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java:13:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.09 12:14:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:01 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:14:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:04 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:14:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:10 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:14:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:12 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 12:14:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:17 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:14:21 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:21 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:14:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:22 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:14:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:30 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 12:14:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:31 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:14:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:34 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:14:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:39 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:14:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:14:44 INFO  time: compiled tp6 in 41ms[0m
+2023.03.09 12:14:54 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 12:14:54 INFO  time: compiled tp6 in 0.28s[0m
+2023.03.09 12:15:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:23 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:15:24 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+Mar 09, 2023 12:15:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6778
+2023.03.09 12:15:25 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+2023.03.09 12:15:26 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+2023.03.09 12:15:27 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+2023.03.09 12:15:27 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+2023.03.09 12:15:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:28 INFO  time: compiled tp6 in 0.3s[0m
+2023.03.09 12:15:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:30 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:15:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:50 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:15:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:56 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:15:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:58 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:15:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:15:59 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 12:16:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:00 INFO  time: compiled tp6 in 0.29s[0m
+2023.03.09 12:16:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:04 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:16:10 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 12:16:10 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 12:16:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:16 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 12:16:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:20 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:16:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:23 INFO  time: compiled tp6 in 17ms[0m
+2023.03.09 12:16:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:26 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:16:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:31 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:16:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:35 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 12:16:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:41 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 12:16:41 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:16:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:44 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 12:16:44 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:16:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:46 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 12:16:46 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:16:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:48 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 12:16:48 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:16:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:50 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 12:16:50 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:16:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:16:57 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:17:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:00 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 12:17:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:07 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:17:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:09 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:17:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:10 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:17:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:11 INFO  time: compiled tp6 in 17ms[0m
+2023.03.09 12:17:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:13 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:17:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:20 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:17:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:33 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 12:17:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:17:37 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 12:18:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:01 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:18:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:07 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:18:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:14 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:18:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:16 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:18:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:28 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 12:18:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:37 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:18:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:56 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:18:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:18:59 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:19:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:19:01 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:19:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:19:04 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:19:06 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:19:06 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:19:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:19:08 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:19:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:19:11 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:19:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:19:13 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:20:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:11 INFO  time: compiled tp6 in 44ms[0m
+2023.03.09 12:20:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:13 INFO  time: compiled tp6 in 39ms[0m
+2023.03.09 12:20:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:20 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:20:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:27 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:20:28 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:20:28 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:28 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+2023.03.09 12:20:28 INFO  time: compiled tp6 in 19ms[0m
+Mar 09, 2023 12:20:29 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:29 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+Mar 09, 2023 12:20:29 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:29 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+Mar 09, 2023 12:20:29 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:29 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+Mar 09, 2023 12:20:30 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:30 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+Mar 09, 2023 12:20:31 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:30 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+Mar 09, 2023 12:20:31 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:31 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+Mar 09, 2023 12:20:31 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:20:31 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:3:28: stale bloop error: reached end of file while parsing
+public class Colis extends 
+                           ^[0m
+2023.03.09 12:20:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:32 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:20:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:51 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:20:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:20:53 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:21:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:21:03 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:21:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:21:05 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:21:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:21:24 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:21:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:21:31 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:21:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:21:53 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:22:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:22:03 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:23:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:23:13 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:23:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:23:15 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:23:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:23:16 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:23:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:23:29 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:23:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:23:33 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:23:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:23:35 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:24:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:24:04 INFO  time: compiled tp6 in 38ms[0m
+2023.03.09 12:24:15 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:24:15 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:24:15 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:31: stale bloop error: reached end of file while parsing
+public class Magazine extends 
+                              ^[0m
+2023.03.09 12:24:15 INFO  time: compiled tp6 in 30ms[0m
+Mar 09, 2023 12:24:15 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:24:15 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:31: stale bloop error: reached end of file while parsing
+public class Magazine extends 
+                              ^[0m
+Mar 09, 2023 12:24:16 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:24:15 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:31: stale bloop error: reached end of file while parsing
+public class Magazine extends 
+                              ^[0m
+Mar 09, 2023 12:24:16 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:24:15 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:31: stale bloop error: reached end of file while parsing
+public class Magazine extends 
+                              ^[0m
+Mar 09, 2023 12:24:16 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.09 12:24:16 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:31: stale bloop error: reached end of file while parsing
+public class Magazine extends 
+                              ^[0m
+2023.03.09 12:24:17 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:24:17 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Courrier) <-> [5 (Courrier)) None
+2023.03.09 12:24:17 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:39: stale bloop error: reached end of file while parsing
+public class Magazine extends Courrier
+                                      ^[0m
+2023.03.09 12:24:17 INFO  time: compiled tp6 in 47ms[0m
+Mar 09, 2023 12:24:17 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Courrier) <-> [5 (Courrier)) None
+2023.03.09 12:24:17 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:39: stale bloop error: reached end of file while parsing
+public class Magazine extends Courrier
+                                      ^[0m
+Mar 09, 2023 12:24:18 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Courrier) <-> [5 (Courrier)) None
+2023.03.09 12:24:17 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Magazine.java:3:39: stale bloop error: reached end of file while parsing
+public class Magazine extends Courrier
+                                      ^[0m
+2023.03.09 12:24:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:24:19 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 12:24:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:24:23 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:24:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:24:25 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:24:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:24:29 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:26:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:26:24 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:26:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:26:29 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:26:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:26:30 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:26:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:26:33 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:26:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:26:36 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:27:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:13 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:27:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:17 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:27:17 INFO  compiling tp6 (4 java sources)[0m
+2023.03.09 12:27:17 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:27:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:22 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:27:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:35 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:27:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:39 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:27:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:42 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:27:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:45 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:27:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:51 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:27:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:27:56 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 12:28:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:00 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:28:06 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:28:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8938
+2023.03.09 12:28:06 INFO  time: compiled tp6 in 0.73s[0m
+2023.03.09 12:28:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:10 INFO  time: compiled tp6 in 0.28s[0m
+2023.03.09 12:28:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:13 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:28:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:19 INFO  time: compiled tp6 in 0.29s[0m
+2023.03.09 12:28:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:28 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:28:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:29 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:28:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:34 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:28:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:36 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:28:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:43 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:28:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:47 INFO  time: compiled tp6 in 0.32s[0m
+Mar 09, 2023 12:28:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9154
+2023.03.09 12:28:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:28:58 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:29:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:00 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:29:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:03 INFO  time: compiled tp6 in 17ms[0m
+2023.03.09 12:29:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:14 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:29:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:16 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:29:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:17 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 12:29:21 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:21 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:29:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:29:31 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:30:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:30:23 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:30:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:30:34 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 12:30:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:30:42 INFO  time: compiled tp6 in 0.31s[0m
+2023.03.09 12:30:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:30:51 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:30:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:30:56 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:31:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:00 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 12:31:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:01 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:31:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:04 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:31:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:35 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:31:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:40 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 12:31:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:48 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 12:31:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:49 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:31:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:31:52 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:33:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:07 INFO  time: compiled tp6 in 55ms[0m
+2023.03.09 12:33:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:11 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:33:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:14 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:33:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:17 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:33:17 INFO  compiling tp6 (4 java sources)[0m
+2023.03.09 12:33:17 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:33:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:44 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:33:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:47 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:33:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:50 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:33:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:33:58 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:34:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:34:00 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:34:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:34:04 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:34:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:34:43 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:34:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:34:53 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:34:58 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 09, 2023 12:34:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.03.09 12:34:58 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:62)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 12:34:58 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 12:34:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:34:59 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:35:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:00 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:35:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:03 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:35:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:07 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:35:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:08 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:35:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:14 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:35:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:17 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 12:35:18 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:18 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:35:18 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+2023.03.09 12:35:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:19 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:35:19 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java[0m
+2023.03.09 12:35:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:20 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:35:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:23 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:35:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:25 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:35:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:28 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 12:35:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:30 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:35:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:35 INFO  time: compiled tp6 in 0.27s[0m
+2023.03.09 12:35:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:38 INFO  time: compiled tp6 in 0.29s[0m
+2023.03.09 12:35:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:40 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:35:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:46 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:35:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:50 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:35:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:51 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:35:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:54 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:35:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:56 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:35:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:35:58 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:36:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:00 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:36:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:01 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:36:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:05 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 12:36:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:07 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:36:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:12 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:36:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:31 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:36:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:35 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:36:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:39 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:36:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:42 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:36:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:44 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:36:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:46 INFO  time: compiled tp6 in 40ms[0m
+2023.03.09 12:36:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:48 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:36:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:36:53 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:37:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:00 INFO  time: compiled tp6 in 37ms[0m
+2023.03.09 12:37:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:01 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:37:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:03 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:37:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:05 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:37:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:08 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:37:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:12 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:37:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:27 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:37:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:36 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:37:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:37:37 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:38:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:23 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:38:23 INFO  compiling tp6 (4 java sources)[0m
+2023.03.09 12:38:23 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:38:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:26 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:38:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:33 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:38:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:35 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 12:38:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:37 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:38:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:42 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:38:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:43 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:38:44 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Courrier.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 09, 2023 12:38:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.03.09 12:38:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:38:45 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:39:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:00 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:39:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:05 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:39:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:15 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:39:18 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:18 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 12:39:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:19 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:39:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:26 INFO  time: compiled tp6 in 0.27s[0m
+Mar 09, 2023 12:39:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11295
+2023.03.09 12:39:29 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 09, 2023 12:39:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.03.09 12:39:29 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:62)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 12:39:29 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Lettre.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 12:39:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:31 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:39:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:32 INFO  time: compiled tp6 in 0.25s[0m
+2023.03.09 12:39:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:34 INFO  time: compiled tp6 in 0.47s[0m
+2023.03.09 12:39:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:38 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:39:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:39:59 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 12:40:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:02 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 12:40:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:05 INFO  time: compiled tp6 in 27ms[0m
+2023.03.09 12:40:06 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:06 INFO  time: compiled tp6 in 16ms[0m
+2023.03.09 12:40:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:08 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 12:40:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:12 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 12:40:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:13 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:40:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:26 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:40:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:28 INFO  time: compiled tp6 in 47ms[0m
+2023.03.09 12:40:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:34 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:40:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:36 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:40:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:38 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:40:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:41 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:40:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:44 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:40:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:50 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:40:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:51 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:40:55 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:55 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:40:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:40:56 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:41:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:41:32 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:41:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:41:34 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:41:36 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:41:36 INFO  time: compiled tp6 in 16ms[0m
+2023.03.09 12:41:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:41:40 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:41:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:41:53 INFO  time: compiled tp6 in 0.3s[0m
+2023.03.09 12:41:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:41:57 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:42:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:00 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:42:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:03 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:42:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:05 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:42:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:20 INFO  time: compiled tp6 in 0.14s[0m
+Mar 09, 2023 12:42:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12030
+2023.03.09 12:42:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:25 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:42:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:26 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:42:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:49 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:42:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:52 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:42:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:54 INFO  time: compiled tp6 in 34ms[0m
+2023.03.09 12:42:55 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.09 12:42:55 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/Colis.java:37:35: stale bloop error: illegal start of expression
+        return super.toString() + ;
+                                  ^[0m
+Mar 09, 2023 12:42:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Char_In_String
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1564)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.03.09 12:42:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:42:56 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:43:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:01 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:43:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:04 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:43:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:05 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:43:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:10 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 12:43:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:13 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:43:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:15 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:43:27 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:27 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:43:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:43:57 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:44:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:44:07 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:44:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:44:51 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:45:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:45:23 INFO  time: compiled tp6 in 37ms[0m
+2023.03.09 12:45:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:45:24 INFO  time: compiled tp6 in 44ms[0m
+2023.03.09 12:45:29 INFO  compiling tp6 (1 java source)[0m
+Mar 09, 2023 12:45:29 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (BoiteAuxLettres) <-> [5 (BoiteAuxLettres)) None
+2023.03.09 12:45:29 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java:3:29: stale bloop error: reached end of file while parsing
+public class BoiteAuxLettres
+                            ^[0m
+2023.03.09 12:45:29 INFO  time: compiled tp6 in 29ms[0m
+Mar 09, 2023 12:45:29 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (BoiteAuxLettres) <-> [5 (BoiteAuxLettres)) None
+2023.03.09 12:45:29 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java:3:29: stale bloop error: reached end of file while parsing
+public class BoiteAuxLettres
+                            ^[0m
+Mar 09, 2023 12:45:30 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (BoiteAuxLettres) <-> [5 (BoiteAuxLettres)) None
+2023.03.09 12:45:29 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java:3:29: stale bloop error: reached end of file while parsing
+public class BoiteAuxLettres
+                            ^[0m
+2023.03.09 12:45:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:45:30 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:46:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:00 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:46:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:05 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:46:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:10 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:46:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:16 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:46:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:23 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 12:46:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:38 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:46:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:41 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:46:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:46 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:46:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:56 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:46:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:46:58 INFO  time: compiled tp6 in 14ms[0m
+2023.03.09 12:47:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:03 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:47:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:09 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:47:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:11 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:47:16 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:16 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:47:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:29 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:47:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:30 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:47:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:32 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 12:47:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:52 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:47:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:47:53 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 12:48:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:48:01 INFO  time: compiled tp6 in 0.23s[0m
+2023.03.09 12:48:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:48:07 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 12:48:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:48:09 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:49:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:49:31 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:49:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:49:34 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:50:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:03 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:50:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:07 INFO  time: compiled tp6 in 57ms[0m
+2023.03.09 12:50:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:08 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:50:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:12 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:50:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:19 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:50:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:22 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:50:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:25 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:50:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:28 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:50:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:35 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 12:50:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:41 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 12:50:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:45 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:50:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:49 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:50:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:52 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:50:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:50:57 INFO  time: compiled tp6 in 0.12s[0m
+2023.03.09 12:51:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:01 INFO  time: compiled tp6 in 33ms[0m
+2023.03.09 12:51:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:02 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:51:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:03 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 12:51:06 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:06 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:51:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:09 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:51:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:15 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:51:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:19 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:51:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:24 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:51:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:28 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:51:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:31 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:51:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:40 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:51:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:47 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:51:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:51:57 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:52:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:01 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:52:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:05 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:52:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:09 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:52:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:10 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:52:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:17 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:52:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:28 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:52:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:32 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:52:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:35 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:52:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:37 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:52:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:42 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:52:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:44 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:52:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:47 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:52:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:51 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:52:52 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:52 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:52:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:53 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 12:52:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:54 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:52:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:52:59 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:54:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:03 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:54:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:15 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:54:19 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:19 INFO  time: compiled tp6 in 30ms[0m
+2023.03.09 12:54:21 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:21 INFO  time: compiled tp6 in 17ms[0m
+2023.03.09 12:54:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:22 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:54:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:24 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:54:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:25 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:54:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:54:59 INFO  time: compiled tp6 in 53ms[0m
+2023.03.09 12:55:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:07 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 12:55:17 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:17 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:55:22 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:22 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:55:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:26 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:55:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:35 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:55:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:37 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 12:55:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:39 INFO  time: compiled tp6 in 15ms[0m
+2023.03.09 12:55:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:41 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:55:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:43 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:55:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:50 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:55:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:55:58 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:56:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:02 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:56:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:05 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 12:56:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:08 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:56:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:13 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 12:56:18 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:18 INFO  time: compiled tp6 in 35ms[0m
+2023.03.09 12:56:20 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:20 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:56:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:24 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:56:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:28 INFO  time: compiled tp6 in 34ms[0m
+Mar 09, 2023 12:56:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14816
+2023.03.09 12:56:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:31 INFO  time: compiled tp6 in 32ms[0m
+2023.03.09 12:56:35 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:35 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:56:41 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:41 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:56:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:44 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:56:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:47 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 12:56:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:51 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:56:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:56:56 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:57:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:02 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:57:08 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:08 INFO  time: compiled tp6 in 0.45s[0m
+2023.03.09 12:57:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:34 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:57:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:39 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:57:44 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:44 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:57:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:46 INFO  time: compiled tp6 in 28ms[0m
+2023.03.09 12:57:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:50 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:57:59 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:57:59 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:58:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:02 INFO  time: compiled tp6 in 25ms[0m
+2023.03.09 12:58:04 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:04 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:58:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:05 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:58:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:07 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:58:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:11 INFO  time: compiled tp6 in 31ms[0m
+2023.03.09 12:58:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:13 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:58:14 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:14 INFO  time: compiled tp6 in 0.12s[0m
+2023.03.09 12:58:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:26 INFO  time: compiled tp6 in 0.19s[0m
+2023.03.09 12:58:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:28 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:58:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:42 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 12:58:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:48 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 12:58:50 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:50 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:58:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:53 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 12:58:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:54 INFO  time: compiled tp6 in 17ms[0m
+2023.03.09 12:58:55 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:55 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:58:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:58:58 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 12:59:01 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:01 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 12:59:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:02 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 12:59:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:05 INFO  time: compiled tp6 in 23ms[0m
+2023.03.09 12:59:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:09 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:59:11 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:11 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:59:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:13 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:59:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:28 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 12:59:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:31 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 12:59:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:32 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 12:59:33 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:33 INFO  time: compiled tp6 in 12ms[0m
+2023.03.09 12:59:37 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:37 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:59:38 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:38 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 12:59:40 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:40 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 12:59:46 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:46 INFO  time: compiled tp6 in 21ms[0m
+2023.03.09 12:59:48 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:48 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 12:59:56 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 12:59:56 INFO  time: compiled tp6 in 0.22s[0m
+2023.03.09 13:00:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:00 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:00:03 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:03 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 13:00:05 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:05 INFO  time: compiled tp6 in 19ms[0m
+2023.03.09 13:00:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:07 INFO  time: compiled tp6 in 0.29s[0m
+2023.03.09 13:00:09 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:09 INFO  time: compiled tp6 in 20ms[0m
+2023.03.09 13:00:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:12 INFO  time: compiled tp6 in 18ms[0m
+2023.03.09 13:00:15 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:15 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 13:00:23 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:23 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 13:00:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:25 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:00:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:26 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:00:31 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:31 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 13:00:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:43 INFO  time: compiled tp6 in 39ms[0m
+2023.03.09 13:00:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:45 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 13:00:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:49 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 13:00:49 INFO  time: compiled tp6 in 0.26s[0m
+2023.03.09 13:00:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:00:53 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 13:00:53 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 13:01:00 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:00 INFO  time: compiled tp6 in 0.16s[0m
+2023.03.09 13:01:02 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:02 INFO  time: compiled tp6 in 0.21s[0m
+2023.03.09 13:01:02 INFO  compiling tp6 (9 java sources)[0m
+2023.03.09 13:01:02 INFO  time: compiled tp6 in 0.32s[0m
+2023.03.09 13:01:10 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:10 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.09 13:01:10 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:01:20 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 13:01:20 INFO  time: compiled tp6 in 0.31s[0m
+2023.03.09 13:01:25 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:25 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 13:01:30 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:30 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 13:01:32 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:32 INFO  time: compiled tp6 in 24ms[0m
+2023.03.09 13:01:34 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:34 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:01:42 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:42 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 13:01:43 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java[0m
+2023.03.09 13:01:43 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:43 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:01:44 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java[0m
+2023.03.09 13:01:44 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java[0m
+2023.03.09 13:01:45 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:45 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:01:46 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java[0m
+2023.03.09 13:01:47 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP6/src/main/java/com/example/tp/poste/BoiteAuxLettres.java[0m
+2023.03.09 13:01:47 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:01:47 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 13:02:06 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:06 INFO  time: compiled tp6 in 38ms[0m
+2023.03.09 13:02:07 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:07 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 13:02:12 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:12 INFO  time: compiled tp6 in 0.2s[0m
+2023.03.09 13:02:13 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:13 INFO  time: compiled tp6 in 0.17s[0m
+2023.03.09 13:02:24 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:24 INFO  time: compiled tp6 in 0.15s[0m
+2023.03.09 13:02:26 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:26 INFO  time: compiled tp6 in 22ms[0m
+2023.03.09 13:02:28 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:28 INFO  time: compiled tp6 in 0.13s[0m
+2023.03.09 13:02:29 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:29 INFO  time: compiled tp6 in 0.18s[0m
+2023.03.09 13:02:39 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:39 INFO  time: compiled tp6 in 0.14s[0m
+2023.03.09 13:02:49 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:49 INFO  time: compiled tp6 in 42ms[0m
+2023.03.09 13:02:51 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:51 INFO  time: compiled tp6 in 33ms[0m
+2023.03.09 13:02:53 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:53 INFO  time: compiled tp6 in 33ms[0m
+2023.03.09 13:02:54 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:54 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 13:02:57 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:57 INFO  time: compiled tp6 in 36ms[0m
+2023.03.09 13:02:58 INFO  compiling tp6 (1 java source)[0m
+2023.03.09 13:02:58 INFO  time: compiled tp6 in 29ms[0m
+2023.03.09 13:03:06 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 13:03:06 INFO  time: compiled tp6 in 26ms[0m
+2023.03.09 13:03:09 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 13:03:09 INFO  time: compiled tp6 in 0.24s[0m
+2023.03.09 13:03:14 INFO  compiling tp6 (2 java sources)[0m
+2023.03.09 13:03:14 INFO  time: compiled tp6 in 0.23s[0m
+Mar 09, 2023 1:04:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
