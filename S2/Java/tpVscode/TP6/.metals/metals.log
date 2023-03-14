@@ -2666,3 +2666,36 @@ WARNING: Unmatched cancel notification for request id 14816
 2023.03.09 13:03:14 INFO  time: compiled tp6 in 0.23s[0m
 Mar 09, 2023 1:04:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.03.10 09:36:11 INFO  Shutting down server[0m
+2023.03.10 09:36:11 INFO  shutting down Metals[0m
+2023.03.10 09:36:11 INFO  Shut down connection with build server.[0m
+2023.03.10 09:36:11 INFO  Exiting server[0m
+2023.03.13 10:18:57 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP6' for client Visual Studio Code 1.76.1.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.13 10:18:58 INFO  time: initialize in 1.51s
+2023.03.13 10:19:03 INFO  Attempting to connect to the build server...
+Mar 13, 2023 10:19:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.03.13 10:19:03 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json
+Mar 13, 2023 10:19:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+2023.03.13 10:19:03 INFO  skipping build import with status 'Installed'
+2023.03.13 10:19:05 INFO  time: code lens generation in 1.62s
+2023.03.13 10:19:05 INFO  time: code lens generation in 2.07s
+2023.03.13 10:19:07 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP6/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json
+2023.03.13 10:19:07 INFO  time: Connected to build server in 5.03s
+2023.03.13 10:19:07 INFO  Connected to Build server: Bloop v1.5.6
+2023.03.13 10:19:08 INFO  time: Imported build in 0.13s
+2023.03.13 10:19:09 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.03.13 10:19:09 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.03.13 10:19:09 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.
+2023.03.13 10:19:09 INFO  time: indexed workspace in 1.34s
+2023.03.13 10:40:39 INFO  Shutting down server
+2023.03.13 10:40:39 INFO  shutting down Metals
+2023.03.13 10:40:39 INFO  Shut down connection with build server.
+2023.03.13 10:40:39 INFO  Exiting server
