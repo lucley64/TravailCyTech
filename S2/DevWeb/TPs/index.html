@@ -25,11 +25,9 @@
                 height="12px" width="12px"></button>
         <div id="navCont" hidden>
             <h2>Navigation</h2>
-            <ul>
-                <li><a id="lien-accueil" href="./accueil.html" onclick="changeUrl(event, this)">Accueil</a></li>
-                <li><a id="lien-science" href="./science.html" onclick="changeUrl(event, this)">La science</a></li>
-                <li><a id="lien-contact" href="./contact.html" onclick="changeUrl(event, this)">Contact</a></li>
-            </ul>
+            <button id="lien-accueil" class="nav" onclick="changeUrl(event, './accueil.html')">Accueil</button>
+            <button class="nav" onclick="changeUrl(event, './science.html')">La science</button>
+            <button class="nav" onclick="changeUrl(event, './contact.html')">Contact</button>
         </div>
     </div>
     <main>

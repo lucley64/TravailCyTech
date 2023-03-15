@@ -50,7 +50,6 @@ div#downMenu {
 
 button.menu {
     background-color: hsl(32, 100%, 82%);
-    color: white;
     padding: 12px 20px;
     border: solid 1px black;
     cursor: pointer;

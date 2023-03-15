@@ -10,15 +10,20 @@ function resizeIFrameToFitContent(iFrame: HTMLIFrameElement) {
     }
 }
 
-function changeUrl(ev: MouseEvent, item: HTMLAnchorElement) {
+function changeUrl(ev: MouseEvent, link: string) {
     ev.preventDefault();
     const iFrame: HTMLIFrameElement = document.querySelector("#main-frame") as HTMLIFrameElement;
-    iFrame.src = item.href;
+    iFrame.src = link;
+    const btns: NodeListOf<HTMLButtonElement> = document.querySelectorAll("button.nav");
+    btns.forEach(btn => {
+        btn.className = "nav";
+    });
+    (ev.target as HTMLButtonElement).className += " active";
 
 }
 
 window.onload = () => {
-    (document.querySelector("a#lien-accueil") as HTMLAnchorElement).click();
+    (document.querySelector("#lien-accueil") as HTMLAnchorElement).click();
     if (window.innerWidth >= 750)
         (document.querySelector("button#navBtn") as HTMLButtonElement).click();
 }

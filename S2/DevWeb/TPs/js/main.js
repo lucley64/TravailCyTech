@@ -9,13 +9,18 @@ function resizeIFrameToFitContent(iFrame) {
         }
     }
 }
-function changeUrl(ev, item) {
+function changeUrl(ev, link) {
     ev.preventDefault();
     var iFrame = document.querySelector("#main-frame");
-    iFrame.src = item.href;
+    iFrame.src = link;
+    var btns = document.querySelectorAll("button.nav");
+    btns.forEach(function (btn) {
+        btn.className = "nav";
+    });
+    ev.target.className += " active";
 }
 window.onload = function () {
-    document.querySelector("a#lien-accueil").click();
+    document.querySelector("#lien-accueil").click();
     if (window.innerWidth >= 750)
         document.querySelector("button#navBtn").click();
 };
