@@ -38,6 +38,8 @@ body>#menu {
     grid-area: sidebar;
     display: inline-flex;
     background-color: hsla(192, 94%, 65%, 0.178);
+    justify-content: center;
+    transition: 0.5s;
 }
 
 body>main {
