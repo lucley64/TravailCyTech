@@ -49,16 +49,19 @@ div#downMenu {
 }
 
 button.menu {
-    background-color: #a5a5a5;
+    background-color: hsl(32, 100%, 82%);
     color: white;
     padding: 12px 20px;
     border: solid 1px black;
     cursor: pointer;
     width: 100%;
+    /* border-radius: 5px;
+    margin: 2px; */
 }
 
-button.menu:hover {
-    background-color: #6b6b6b;
+button.menu:hover,
+button.menu.active {
+    background-color: hsl(32, 100%, 50%);
 }
 
 button.panier {

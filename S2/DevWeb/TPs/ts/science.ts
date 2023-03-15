@@ -2,9 +2,15 @@ var lens: HTMLDivElement;
 var result: HTMLDivElement;
 var image: HTMLImageElement;
 
-function openTab(tab: string) {
+function openTab(elem: HTMLButtonElement) {
+    const tab = elem.innerHTML;
     const tabs: NodeListOf<HTMLDivElement> = document.querySelectorAll("div.tab");
     tabs.forEach(tab => tab.hidden = true);
+    const btns: NodeListOf<HTMLButtonElement> = document.querySelectorAll("div#tab-buttons>button.menu");
+    btns.forEach(btn => {
+        btn.className = "menu";
+    });
+    elem.className += " active";
     const openTab: HTMLDivElement = document.getElementById(tab) as HTMLDivElement;
     openTab.hidden = false;
 }
@@ -91,5 +97,6 @@ window.onload = () => {
     const imgs: NodeListOf<HTMLImageElement> = document.querySelectorAll(".image");
     imgs.forEach(image => {
         image.addEventListener("mousemove", moveLens);
-    })
+    });
+    (document.querySelector("div#tab-buttons>button.menu") as HTMLButtonElement).click();
 }
