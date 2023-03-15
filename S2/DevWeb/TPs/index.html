@@ -14,19 +14,23 @@
 
 <body>
     <div id="logo">
-        <img src="./img/1200px-Aperture_Science_Logo.svg.png"
-         alt="Aperture science logo" height="100px" width="100px" />
+        <a href="."><img src="./img/1200px-Aperture_Science_Logo.svg.png" alt="Aperture science logo" height="100px"
+                width="100px" /></a>
     </div>
     <header>
         <h1>Magasin de la science Aperture</h1>
     </header>
     <div id="menu">
-        <h2>Navigation</h2>
-        <ul>
-            <li><a id="lien-accueil" href="./accueil.html" onclick="changeUrl(event, this)">Accueil</a></li>
-            <li><a id="lien-science" href="./science.html" onclick="changeUrl(event, this)">La science</a></li>
-            <li><a id="lien-contact" href="./contact.html" onclick="changeUrl(event, this)">Contact</a></li>
-        </ul>
+        <button id="navBtn" onclick="toggleNav(this.nextElementSibling)"><img src="./img/56763.png" alt="nav"
+                height="12px" width="12px"></button>
+        <div id="navCont" hidden>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a id="lien-accueil" href="./accueil.html" onclick="changeUrl(event, this)">Accueil</a></li>
+                <li><a id="lien-science" href="./science.html" onclick="changeUrl(event, this)">La science</a></li>
+                <li><a id="lien-contact" href="./contact.html" onclick="changeUrl(event, this)">Contact</a></li>
+            </ul>
+        </div>
     </div>
     <main>
         <iframe onload="resizeIFrameToFitContent(this)" id="main-frame" title="Contenu"></iframe>
@@ -37,4 +41,5 @@
         <p>CY tech</p>
     </footer>
 </body>
+
 </html>

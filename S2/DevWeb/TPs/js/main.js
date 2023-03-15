@@ -1,6 +1,13 @@
 function resizeIFrameToFitContent(iFrame) {
-    if (iFrame.contentWindow)
-        iFrame.height = iFrame.contentWindow.document.body.scrollHeight + 50 + "px";
+    if (iFrame.contentWindow) {
+        var size = iFrame.contentWindow.document.body.scrollHeight + 50;
+        if (size > window.innerHeight) {
+            iFrame.height = size + "px";
+        }
+        else {
+            iFrame.height = window.innerHeight + "px";
+        }
+    }
 }
 function changeUrl(ev, item) {
     ev.preventDefault();
@@ -8,5 +15,14 @@ function changeUrl(ev, item) {
     iFrame.src = item.href;
 }
 window.onload = function () {
-    document.querySelector("#lien-accueil").click();
+    document.querySelector("a#lien-accueil").click();
+    if (window.innerWidth >= 750)
+        document.querySelector("button#navBtn").click();
 };
+window.onchange = function () {
+    if (window.innerWidth >= 750)
+        document.querySelector("button#navBtn").click();
+};
+function toggleNav(elem) {
+    elem.hidden = !elem.hidden;
+}
