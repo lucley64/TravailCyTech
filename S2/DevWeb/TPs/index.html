@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Magasin de la science Aperture</title>
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -22,20 +23,13 @@
     <div id="menu">
         <h2>Navigation</h2>
         <ul>
-            <li><a id="lien-accueil" href="./accueil">Accueil</a></li>
-            <li><a id="lien-science" href="./science">La science</a></li>
-            <li><a id="lien-contact" href="./contact">Contact</a></li>
+            <li><a id="lien-accueil" href="./accueil.html" onclick="changeUrl(event, this)">Accueil</a></li>
+            <li><a id="lien-science" href="./science.html" onclick="changeUrl(event, this)">La science</a></li>
+            <li><a id="lien-contact" href="./contact.html" onclick="changeUrl(event, this)">Contact</a></li>
         </ul>
     </div>
     <main>
-        <iframe onload="resizeIFrameToFitContent(this)" id="main-frame" <?php
-                                $url = $_GET["url"];
-                                if ($url == null) {
-                                    $url = "accueil";
-                                }
-                                echo "src=\"$url.php\"";
-                                phpinfo();
-                                ?> title="Contenu"></iframe>
+        <iframe onload="resizeIFrameToFitContent(this)" id="main-frame" title="Contenu"></iframe>
     </main>
     <footer>
         <p>Copyright Aperture Science</p>
@@ -43,5 +37,4 @@
         <p>CY tech</p>
     </footer>
 </body>
-<script src="./js/main.js"></script>
 </html>

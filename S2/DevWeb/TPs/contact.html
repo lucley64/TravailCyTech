@@ -9,29 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/contactStyle.css" />
     <title>Accueil</title>
+    <script src="./js/contact.js"></script>
 </head>
 
 <body>
     <h1>Nous contacter</h1>
     <form action="" method="post" id="formContact">
         <label for="nomContact">Nom</label>
-        <input type="text" name="nomContact" id="nomContact" required/>
+        <input type="text" name="nomContact" id="nomContact" required />
         <label for="prenomContact">Prénom</label>
-        <input type="text" name="prenomContact" id="prenomContact" required/>
+        <input type="text" name="prenomContact" id="prenomContact" required />
         <label for="mailContact">Email</label>
-        <input type="email" name="mailContact" id="mailContact" required/>
+        <input type="email" name="mailContact" id="mailContact" required />
         <label for="genreContact">Genre</label>
         <div id="genreContactDiv">
-            <input type="radio" name="genreContact" id="homme" required/>
+            <input type="radio" name="genreContact" id="homme" required />
             <label for="homme">Homme</label>
-            <input type="radio" name="genreContact" id="femme" required/>
+            <input type="radio" name="genreContact" id="femme" required />
             <label for="femme">Femme</label>
-            <input type="radio" name="genreContact" id="autre" required/>
+            <input type="radio" name="genreContact" id="autre" required />
             <label for="autre">Autre</label>
         </div>
         <input type="hidden" name="genreContact" id="genreContact">
         <label for="dateNaiss">Date de Naissance</label>
-        <input type="date" name="dateNaiss" id="dateNaiss" tyle="resize: none;" required/>
+        <input type="date" name="dateNaiss" id="dateNaiss" tyle="resize: none;" required />
         <label for="fonctionContact">Fonction</label>
         <select name="fonctionContact" id="fonctionContact">
             <option value="enseignant">Enseignant</option>
@@ -39,22 +40,12 @@
             <option value="autre">Autre</option>
         </select>
         <label for="sujetContact">Sujet</label>
-        <input type="text" name="sujetContact" id="sujetContact" required/>
+        <input type="text" name="sujetContact" id="sujetContact" required />
         <label for="contenuContact">Contenu</label>
-        <textarea name="contenuContact" id="contenuContact" spellcheck="true" style="resize: none; height: 250px;" required></textarea>
+        <textarea name="contenuContact" id="contenuContact" spellcheck="true" style="resize: none; height: 250px;"
+            required></textarea>
         <button id="submitBtn">Envoyer</button>
     </form>
-    <div id=ErrorContainer>
-        <?php
-        foreach ($_POST as $key => $value) {
-            if ($_POST[$key] == "") {
-                echo "<p name=$key>Ce champ est requis</p>";
-                break;
-            }
-        }
-        ?>
-    </div>
 </body>
-<script src="./js/contact.js"></script>
 
 </html>
