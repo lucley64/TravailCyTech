@@ -1,9 +1,15 @@
 var lens;
 var result;
 var image;
-function openTab(tab) {
+function openTab(elem) {
+    var tab = elem.innerHTML;
     var tabs = document.querySelectorAll("div.tab");
     tabs.forEach(function (tab) { return tab.hidden = true; });
+    var btns = document.querySelectorAll("div#tab-buttons>button.menu");
+    btns.forEach(function (btn) {
+        btn.className = "menu";
+    });
+    elem.className += " active";
     var openTab = document.getElementById(tab);
     openTab.hidden = false;
 }
@@ -85,4 +91,5 @@ window.onload = function () {
     imgs.forEach(function (image) {
         image.addEventListener("mousemove", moveLens);
     });
+    document.querySelector("div#tab-buttons>button.menu").click();
 };

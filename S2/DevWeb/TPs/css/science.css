@@ -1,3 +1,7 @@
+* {
+    font-family: sans-serif;
+}
+
 body {
     display: block;
 }
@@ -45,16 +49,27 @@ div#downMenu {
 }
 
 button.menu {
-    background-color: #a5a5a5;
-    color: white;
+    background-color: hsl(32, 100%, 82%);
     padding: 12px 20px;
     border: solid 1px black;
     cursor: pointer;
     width: 100%;
+    /* border-radius: 5px;
+    margin: 2px; */
 }
 
-button.menu:hover {
-    background-color: #6b6b6b;
+button.menu:hover,
+button.menu.active {
+    background-color: hsl(32, 100%, 50%);
+}
+
+button.panier {
+    width: 100%;
+    height: 10%;border: none;
+    font-size: 1.5em;
+    color: #5f5fce;
+    background-color: #a5a5a500;
+    cursor: pointer;
 }
 
 input.counter {
@@ -89,7 +104,8 @@ button.counter {
 
 }
 
-button.counter:hover {
+button.counter:hover,
+button.panier:hover {
     background-color: #00000028;
 }
 
