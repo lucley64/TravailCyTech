@@ -40,6 +40,7 @@ body>#menu {
     background-color: hsla(192, 94%, 65%, 0.178);
     justify-content: center;
     transition: 0.5s;
+    border-radius: 50px;
 }
 
 body>main {

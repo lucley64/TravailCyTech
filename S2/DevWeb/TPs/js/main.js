@@ -16,8 +16,10 @@ function changeUrl(ev, link) {
     var btns = document.querySelectorAll("button.nav");
     btns.forEach(function (btn) {
         btn.className = "nav";
+        btn.disabled = false;
     });
     ev.target.className += " active";
+    ev.target.disabled = true;
 }
 window.onload = function () {
     document.querySelector("#lien-accueil").click();

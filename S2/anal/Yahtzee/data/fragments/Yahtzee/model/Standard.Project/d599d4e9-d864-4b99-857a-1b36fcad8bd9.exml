@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Yahtzee" version="4">
+  <OBJECT>
+    <ID name="Yahtzee" mc="Standard.Project" uid="d599d4e9-d864-4b99-857a-1b36fcad8bd9"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Yahtzee]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="yahtzee" mc="Standard.Package" uid="41e480ae-0984-45aa-9b29-ac7fbb4e216d"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Yahtzee" mc="Infrastructure.DiagramSet" uid="e21a2561-b0e7-4a62-a4d2-0f1af630f0f5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

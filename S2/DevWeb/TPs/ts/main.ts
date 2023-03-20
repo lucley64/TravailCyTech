@@ -17,8 +17,10 @@ function changeUrl(ev: MouseEvent, link: string) {
     const btns: NodeListOf<HTMLButtonElement> = document.querySelectorAll("button.nav");
     btns.forEach(btn => {
         btn.className = "nav";
+        btn.disabled = false;
     });
     (ev.target as HTMLButtonElement).className += " active";
+    (ev.target as HTMLButtonElement).disabled = true;
 
 }
 

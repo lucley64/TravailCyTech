@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="yahtzee" version="4">
+  <OBJECT>
+    <ID name="yahtzee" mc="Standard.Package" uid="41e480ae-0984-45aa-9b29-ac7fbb4e216d"/>
+    <PID name="Yahtzee" mc="Standard.Project" uid="d599d4e9-d864-4b99-857a-1b36fcad8bd9"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[yahtzee]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Standard.Activity" uid="b6f67930-073b-4c11-9511-d33bf6c27e2b"/>
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="e12613a8-e0ae-4ea1-97c7-6505e00d458a"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Joueur" mc="Standard.Actor" uid="b2344a72-e858-4478-abce-bccdaf92c43d"/>
+        <COMPID name="Lancer les dés" mc="Standard.UseCase" uid="9e2dcc6b-7d6a-4d5a-a167-2d23a34569c8"/>
+        <COMPID name="Selectionner des" mc="Standard.UseCase" uid="2b093708-9d6f-436c-a488-c95ee0f2601d"/>
+        <COMPID name="Demarrer une partie" mc="Standard.UseCase" uid="3cabb460-1dc7-42a1-9907-4ce25c982c95"/>
+        <COMPID name="Jouer un tour" mc="Standard.UseCase" uid="b5ecb0fe-fce8-4cb4-99d1-20513908c092"/>
+        <COMPID name="Consulter score" mc="Standard.UseCase" uid="b1ad4cb2-243f-4b1c-b3d8-e6a5d948c3a7"/>
+        <COMPID name="Partie" mc="Standard.Class" uid="82a2ad78-044e-4536-b09e-1958dc6ed36a"/>
+        <COMPID name="Joueur" mc="Standard.Class" uid="d114a4b3-ea1a-466c-aa3e-20b465f780da"/>
+        <COMPID name="De" mc="Standard.Class" uid="f20b10dd-4dc8-45c6-a78a-1348dd525ead"/>
+        <OBJECT>
+          <ID name="Combinaison" mc="Standard.Enumeration" uid="ecb13338-167b-4d54-92b4-63a52527b8c4"/>
+          <ATTRIBUTES>
+            <ATT name="IsElementary">true</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[Combinaison]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Value">
+              <OBJECT>
+                <ID name="Yahtzee" mc="Standard.EnumerationLiteral" uid="4e108ade-1c6b-4725-86ed-1bd29b1e8e4b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Yahtzee]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Carré" mc="Standard.EnumerationLiteral" uid="3903dd9e-579a-4178-bc2b-6a609e73bc8e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Carré]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Full" mc="Standard.EnumerationLiteral" uid="6a56e15e-691c-42d5-9874-5ce66801612f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Full]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PetiteSuite" mc="Standard.EnumerationLiteral" uid="755204a2-d99a-45ce-8b91-d67c1392f636"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[PetiteSuite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="GrandeSuite" mc="Standard.EnumerationLiteral" uid="75d9a44a-7b69-494a-819e-667c06d3b874"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[GrandeSuite]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Brelan" mc="Standard.EnumerationLiteral" uid="6b5ab0e6-108c-4f7d-8821-6883bc2accb3"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Brelan]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Paire" mc="Standard.EnumerationLiteral" uid="321ef653-a441-4baa-9288-94a314f1d7b4"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Paire]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Chance" mc="Standard.EnumerationLiteral" uid="057ce5e6-4452-4ccc-8bec-537a71797c52"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Chance]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="OwnedOperation">
+              <OBJECT>
+                <ID name="getCombinaison" mc="Standard.Operation" uid="cfb7829c-9df9-4238-be16-d52358431088"/>
+                <ATTRIBUTES>
+                  <ATT name="Concurrency">false</ATT>
+                  <ATT name="Final">false</ATT>
+                  <ATT name="Passing">MethodOut</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="IsClass">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="Name"><![CDATA[getCombinaison]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="IO">
+                    <OBJECT>
+                      <ID name="des" mc="Standard.Parameter" uid="90bb3c2a-f120-4d2c-935e-c6ccb7cafda9"/>
+                      <ATTRIBUTES>
+                        <ATT name="ParameterPassing">In</ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="TypeConstraint"></ATT>
+                        <ATT name="DefaultValue"></ATT>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="IsException">false</ATT>
+                        <ATT name="IsStream">false</ATT>
+                        <ATT name="Effect">ReadEffect</ATT>
+                        <ATT name="Name"><![CDATA[des]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Type">
+                          <ID name="De" mc="Standard.Class" uid="f20b10dd-4dc8-45c6-a78a-1348dd525ead"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="yahtzee Use Case diagram" mc="Standard.UseCaseDiagram" uid="6f42d1a8-9ea6-4bd4-8c3f-cf3bb7ae9d5a"/>
+        <COMPID name="yahtzee Class diagram" mc="Standard.ClassDiagram" uid="48478984-9924-47a0-a118-35467d2d24ca"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
