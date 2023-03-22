@@ -1,0 +1,98 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        "logo header"
+        "sidebar main"
+        "footer footer";
+}
+
+body>header {
+    grid-area: header;
+    grid-row: 1;
+    align-items: center;
+    display: grid;
+    border-bottom: solid;
+}
+
+div#logo {
+    justify-items: center;
+    align-items: center;
+    grid-area: logo;
+    border-bottom: solid;
+    display: grid;
+}
+
+body>header>h1 {
+    grid-column: 2;
+}
+
+body>#menu {
+    padding: 8px 8px 8px 2px;
+    grid-area: sidebar;
+    display: inline-flex;
+    background-color: hsla(192, 94%, 65%, 0.178);
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+body>main {
+    grid-area: main;
+    margin: 1rem;
+}
+
+body>footer {
+    grid-area: footer;
+}
+
+p {
+    text-align: center;
+}
+
+body>main>iframe {
+    width: 100%;
+    display: block;
+    border: none;
+
+}
+
+div#navCont {
+    transition: 0.5s;
+    padding-left: 10px;
+}
+
+button#navBtn{
+    background-color: #a5a5a5;
+    color: white;
+    padding: 12px 20px;
+    border: solid 1px black;
+    cursor: pointer;
+    height: min-content;
+    width: min-content;
+}
+
+button#navBtn:hover{
+    background-color: #6b6b6b;
+}
+
+button.nav {
+    background-color: hsl(32, 100%, 82%);
+    padding: 12px 20px;
+    border: solid 1px black;
+    cursor: pointer;
+    width: 100%;
+    /* border-radius: 5px;
+    margin: 2px; */
+}
+
+button.nav:hover,
+button.nav.active {
+    background-color: hsl(32, 100%, 50%);
+}

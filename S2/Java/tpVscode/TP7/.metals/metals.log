@@ -1,0 +1,81 @@
+2023.03.22 11:37:05 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP7' for client Visual Studio Code 1.76.1.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.22 11:37:05 INFO  time: initialize in 0.55s[0m
+2023.03.22 11:37:07 WARN  Build server is not auto-connectable.[0m
+Mar 22, 2023 11:37:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+Mar 22, 2023 11:37:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.03.22 11:37:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java[0m
+Mar 22, 2023 11:37:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+Mar 22, 2023 11:37:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+2023.03.22 11:37:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java[0m
+2023.03.22 11:37:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java:1: error: reached end of file while parsing
+package com
+           ^
+1 error[0m
+2023.03.22 11:37:08 INFO  time: code lens generation in 1.16s[0m
+2023.03.22 11:37:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java[0m
+2023.03.22 11:37:12 INFO  running '/usr/lib/jvm/java-11-openjdk-amd64/bin/java -Dfile.encoding=UTF-8 -Dmaven.multiModuleProjectDirectory=/home/cytech/Travail/S2/Java/tpVscode/TP7 -Dmaven.home=/tmp/metals12708830524880871588 -cp /tmp/metals12708830524880871588/maven-wrapper.jar org.apache.maven.wrapper.MavenWrapperMain generate-sources ch.epfl.scala:bloop-maven-plugin:2.0.0:bloopInstall -DdownloadSources=true'[0m
+2023.03.22 11:37:13 INFO  [INFO] Scanning for projects...[0m
+2023.03.22 11:37:13 INFO  [WARNING] [0m
+2023.03.22 11:37:13 INFO  [WARNING] Some problems were encountered while building the effective model for com.example.tp:tp7:jar:1.0[0m
+2023.03.22 11:37:13 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 16, column 21[0m
+2023.03.22 11:37:13 INFO  [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing. @ line 42, column 21[0m
+2023.03.22 11:37:13 INFO  [WARNING] [0m
+2023.03.22 11:37:13 INFO  [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.[0m
+2023.03.22 11:37:13 INFO  [WARNING] [0m
+2023.03.22 11:37:13 INFO  [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.[0m
+2023.03.22 11:37:13 INFO  [WARNING] [0m
+2023.03.22 11:37:13 INFO  [INFO] [0m
+2023.03.22 11:37:13 INFO  [INFO] -------------------------< com.example.tp:tp7 >-------------------------[0m
+2023.03.22 11:37:13 INFO  [INFO] Building tp7 1.0[0m
+2023.03.22 11:37:13 INFO  [INFO] --------------------------------[ jar ]---------------------------------[0m
+2023.03.22 11:37:13 INFO  [INFO] [0m
+2023.03.22 11:37:13 INFO  [INFO] --- bloop-maven-plugin:2.0.0:bloopInstall (default-cli) @ tp7 ---[0m
+2023.03.22 11:37:13 INFO  [INFO] Using empty launcher: no run setup for tp7.[0m
+2023.03.22 11:37:13 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.03.22 11:37:13 INFO  [ERROR] org.scala-lang:scala([0-9]?)-library is missing from project dependencies[0m
+2023.03.22 11:37:13 INFO  [INFO] Generated .bloop/tp7.json[0m
+2023.03.22 11:37:13 INFO  [INFO] Generated .bloop/tp7-test.json[0m
+2023.03.22 11:37:13 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.03.22 11:37:13 INFO  [INFO] BUILD SUCCESS[0m
+2023.03.22 11:37:13 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.03.22 11:37:13 INFO  [INFO] Total time:  0.811 s[0m
+2023.03.22 11:37:13 INFO  [INFO] Finished at: 2023-03-22T11:37:14+01:00[0m
+2023.03.22 11:37:13 INFO  [INFO] ------------------------------------------------------------------------[0m
+2023.03.22 11:37:14 INFO  time: ran 'mvn bloopInstall' in 1.55s[0m
+2023.03.22 11:37:14 INFO  Attempting to connect to the build server...[0m
+2023.03.22 11:37:14 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json[0m
+2023.03.22 11:37:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java[0m
+2023.03.22 11:37:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP7/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json[0m
+2023.03.22 11:37:16 INFO  time: Connected to build server in 2.06s[0m
+2023.03.22 11:37:16 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.03.22 11:37:17 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.22 11:37:17 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.22 11:37:17 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.22 11:37:17 INFO  time: indexed workspace in 1.16s[0m
+2023.03.22 11:37:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:18 INFO  time: compiled tp7 in 0.59s[0m
+2023.03.22 11:37:24 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:24 INFO  time: compiled tp7 in 0.32s[0m
+2023.03.22 11:37:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:26 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:37:31 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:31 INFO  time: compiled tp7 in 83ms[0m
+2023.03.22 11:37:39 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:39 INFO  time: compiled tp7 in 73ms[0m
+2023.03.22 11:37:40 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:40 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:37:44 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:37:44 INFO  time: compiled tp7 in 0.11s[0m
+Mar 22, 2023 11:38:40 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

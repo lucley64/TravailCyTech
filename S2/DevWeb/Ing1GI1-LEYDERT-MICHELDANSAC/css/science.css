@@ -1,0 +1,134 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #52d8fa;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:hover {
+    background-color: #52d8fa7c;
+}
+
+div#contenu {
+    border: solid 1px #52d8fa;
+}
+
+div#tab-buttons,
+div#downMenu {
+    display: flex;
+}
+
+button.menu {
+    background-color: hsl(32, 100%, 82%);
+    padding: 12px 20px;
+    border: solid 1px black;
+    cursor: pointer;
+    width: 100%;
+    /* border-radius: 5px;
+    margin: 2px; */
+}
+
+button.menu:hover,
+button.menu.active {
+    background-color: hsl(32, 100%, 50%);
+}
+
+button.panier {
+    width: 100%;
+    height: 10%;border: none;
+    font-size: 1.5em;
+    color: #5f5fce;
+    background-color: #a5a5a500;
+    cursor: pointer;
+}
+
+input.counter {
+    text-align: center;
+    -webkit-appearance: textfield !important;
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+    height: 100%;
+    width: 39%;
+    border: none;
+    font-size: 1.5em;
+
+}
+
+div.counter {
+    border: 2px #dcd3d3 solid;
+    width: 40vw;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px;
+}
+
+button.counter {
+    cursor: pointer;
+    height: 100%;
+    width: 29%;
+    border: none;
+    font-size: 1.5em;
+    color: #5f5fce;
+    background-color: #a5a5a500;
+
+}
+
+button.counter:hover,
+button.panier:hover {
+    background-color: #00000028;
+}
+
+button.counter:disabled {
+    color: #5f5fce00;
+}
+
+button.counter:hover:disabled {
+    cursor: default;
+    background-color: #a5a5a500;
+}
+
+div#zoomLens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+}
+
+div#zoomImage {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 201;
+}
