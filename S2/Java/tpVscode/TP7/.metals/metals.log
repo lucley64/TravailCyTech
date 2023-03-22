@@ -1134,3 +1134,386 @@ WARNING: stale range: Some([95 (}) <-> [95 (})) None
 2023.03.22 12:21:34 INFO  time: compiled tp7 in 83ms[0m
 2023.03.22 12:21:34 INFO  compiling tp7 (4 java sources)[0m
 2023.03.22 12:21:34 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:44:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:44:01 INFO  time: compiled tp7 in 21ms[0m
+2023.03.22 12:49:12 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:12 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 12:49:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:13 INFO  time: compiled tp7 in 30ms[0m
+2023.03.22 12:49:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:18 INFO  time: compiled tp7 in 11ms[0m
+2023.03.22 12:49:20 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 12:49:20 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Cry) <-> [5 (Cry)) None
+2023.03.22 12:49:20 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:21: stale bloop error: reached end of file while parsing
+public interface Cry
+                    ^[0m
+2023.03.22 12:49:20 INFO  time: compiled tp7 in 39ms[0m
+Mar 22, 2023 12:49:21 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 12:49:21 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:21: stale bloop error: reached end of file while parsing
+public interface Cry
+                    ^[0m
+Mar 22, 2023 12:49:21 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 12:49:21 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:21: stale bloop error: reached end of file while parsing
+public interface Cry
+                    ^[0m
+Mar 22, 2023 12:49:22 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 12:49:22 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:21: stale bloop error: reached end of file while parsing
+public interface Cry
+                    ^[0m
+Mar 22, 2023 12:49:22 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 12:49:22 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:21: stale bloop error: reached end of file while parsing
+public interface Cry
+                    ^[0m
+2023.03.22 12:49:23 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 12:49:23 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Cryptage) <-> [5 (Cryptage)) None
+2023.03.22 12:49:23 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:26: stale bloop error: reached end of file while parsing
+public interface Cryptage
+                         ^[0m
+2023.03.22 12:49:23 INFO  time: compiled tp7 in 12ms[0m
+Mar 22, 2023 12:49:25 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Cryptage) <-> [5 (Cryptage)) None
+2023.03.22 12:49:25 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/secret/Cryptage.java:3:26: stale bloop error: reached end of file while parsing
+public interface Cryptage
+                         ^[0m
+2023.03.22 12:49:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:26 INFO  time: compiled tp7 in 68ms[0m
+2023.03.22 12:49:27 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:27 INFO  time: compiled tp7 in 59ms[0m
+2023.03.22 12:49:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:33 INFO  time: compiled tp7 in 13ms[0m
+Mar 22, 2023 12:49:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6849
+2023.03.22 12:49:38 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:38 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:49:41 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:41 INFO  time: compiled tp7 in 10ms[0m
+2023.03.22 12:49:42 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:42 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:49:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:43 INFO  time: compiled tp7 in 9ms[0m
+2023.03.22 12:49:45 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:45 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:49:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:50 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 12:49:52 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:52 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:49:59 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:49:59 INFO  time: compiled tp7 in 0.28s[0m
+2023.03.22 12:52:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:17 INFO  time: compiled tp7 in 97ms[0m
+2023.03.22 12:52:19 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 22, 2023 12:52:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:147)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.03.22 12:52:19 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:62)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.22 12:52:19 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.22 12:52:21 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:226)
+	at scala.meta.internal.metals.Diagnostics.publishDiagnostics(Diagnostics.scala:188)
+	at scala.meta.internal.metals.Diagnostics.didChange(Diagnostics.scala:136)
+	at scala.meta.internal.metals.MetalsLspService.didChange(MetalsLspService.scala:1248)
+	at scala.meta.metals.lsp.DelegatingScalaService.didChange(DelegatingScalaService.scala:50)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(null)
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+Mar 22, 2023 12:52:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+java.util.concurrent.CompletionException: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:331)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:346)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:704)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2088)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.next$1(JavaFoldingRangeExtractor.scala:100)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.gather$1(JavaFoldingRangeExtractor.scala:145)
+	at scala.meta.internal.parsing.JavaFoldingRangeExtractor.extract(JavaFoldingRangeExtractor.scala:155)
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:43)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1776)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2023.03.22 12:52:22 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.RunTestCodeLens.codeLenses(RunTestCodeLens.scala:62)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.22 12:52:22 WARN  Cannot tokenize Java file file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/App.java
+org.eclipse.jdt.core.compiler.InvalidInputException: Invalid_Character_Constant
+	at org.eclipse.jdt.internal.core.util.PublicScanner.getNextToken(PublicScanner.java:1442)
+	at scala.meta.internal.parsing.JavaTokens$.loop$1(JavaTokens.scala:71)
+	at scala.meta.internal.parsing.JavaTokens$.$anonfun$tokenize$1(JavaTokens.scala:75)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.parsing.JavaTokens$.tokenize(JavaTokens.scala:35)
+	at scala.meta.internal.parsing.TokenEditDistance$.apply(TokenEditDistance.scala:370)
+	at scala.meta.internal.metals.Buffers.tokenEditDistance(Buffers.scala:30)
+	at scala.meta.internal.metals.codelenses.SuperMethodCodeLens.codeLenses(SuperMethodCodeLens.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$3(CodeLensProvider.scala:26)
+	at scala.collection.immutable.List.flatMap(List.scala:293)
+	at scala.meta.internal.metals.CodeLensProvider.$anonfun$findLenses$2(CodeLensProvider.scala:26)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:24)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$2(MetalsLspService.scala:1761)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$codeLens$1(MetalsLspService.scala:1759)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:678)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2023.03.22 12:52:23 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:23 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:52:31 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:31 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:52:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:43 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:52:45 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:45 INFO  time: compiled tp7 in 7ms[0m
+2023.03.22 12:52:47 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:47 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:52:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:52:56 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:53:08 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:53:08 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:53:14 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:53:14 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 12:53:15 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:53:15 INFO  time: compiled tp7 in 87ms[0m
+2023.03.22 12:57:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:13 INFO  time: compiled tp7 in 25ms[0m
+2023.03.22 12:57:14 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:14 INFO  time: compiled tp7 in 30ms[0m
+2023.03.22 12:57:25 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:25 INFO  time: compiled tp7 in 11ms[0m
+2023.03.22 12:57:28 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:28 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:57:29 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:29 INFO  time: compiled tp7 in 76ms[0m
+2023.03.22 12:57:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:50 INFO  time: compiled tp7 in 15ms[0m
+2023.03.22 12:57:51 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:51 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:57:52 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:52 INFO  time: compiled tp7 in 9ms[0m
+2023.03.22 12:57:59 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:57:59 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:58:04 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:04 INFO  time: compiled tp7 in 11ms[0m
+2023.03.22 12:58:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:06 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:58:09 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:09 INFO  time: compiled tp7 in 17ms[0m
+2023.03.22 12:58:10 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:10 INFO  time: compiled tp7 in 10ms[0m
+2023.03.22 12:58:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:13 INFO  time: compiled tp7 in 10ms[0m
+2023.03.22 12:58:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:18 INFO  time: compiled tp7 in 30ms[0m
+2023.03.22 12:58:19 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:19 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:58:23 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:23 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:58:27 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:27 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 12:58:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:32 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:58:35 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:35 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 12:58:36 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:36 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:58:37 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:37 INFO  time: compiled tp7 in 77ms[0m
+2023.03.22 12:58:44 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:44 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:58:49 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:49 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:58:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:56 INFO  time: compiled tp7 in 29ms[0m
+2023.03.22 12:58:58 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:58:58 INFO  time: compiled tp7 in 15ms[0m
+2023.03.22 12:59:00 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:00 INFO  time: compiled tp7 in 76ms[0m
+2023.03.22 12:59:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:06 INFO  time: compiled tp7 in 86ms[0m
+2023.03.22 12:59:07 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:07 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:59:11 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:11 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 12:59:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:26 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:59:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:32 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:59:34 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:59:34 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 13:00:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 13:00:01 INFO  time: compiled tp7 in 21ms[0m
+2023.03.22 13:00:03 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 13:00:03 INFO  time: compiled tp7 in 87ms[0m
+2023.03.22 13:00:03 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 13:00:04 INFO  time: compiled tp7 in 74ms[0m
+2023.03.22 13:00:05 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 13:00:05 INFO  time: compiled tp7 in 81ms[0m
+2023.03.22 13:00:29 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 13:00:29 INFO  time: compiled tp7 in 84ms[0m
+2023.03.22 14:12:14 INFO  Shutting down server[0m
+2023.03.22 14:12:14 INFO  shutting down Metals[0m
+2023.03.22 14:12:14 INFO  Shut down connection with build server.[0m
+2023.03.22 14:12:14 INFO  Exiting server[0m

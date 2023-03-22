@@ -8,7 +8,7 @@ public class App {
     private static Logger logger = System.getLogger("null");
 
     public static void main(String[] args) {
-        testPileFormes();
+        System.out.println((char)('B' - 1));
     }
 
     public static void testFormes() {

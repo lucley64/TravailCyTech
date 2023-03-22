@@ -8263,3 +8263,7 @@ SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
 2023.03.22 11:56:59 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
 2023.03.22 11:56:59 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
 2023.03.22 11:56:59 INFO  time: indexed workspace in 2.7s[0m
+2023.03.22 14:12:02 INFO  Shutting down server[0m
+2023.03.22 14:12:02 INFO  shutting down Metals[0m
+2023.03.22 14:12:02 INFO  Shut down connection with build server.[0m
+2023.03.22 14:12:02 INFO  Exiting server[0m

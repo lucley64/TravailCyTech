@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="singh" version="4">
+  <OBJECT>
+    <ID name="singh" mc="Standard.Package" uid="dd1f4614-8edc-4f51-839a-3e5acffd7071"/>
+    <PID name="Singh" mc="Standard.Project" uid="3671b608-d944-4575-b1d8-1f9f268b8cfd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[singh]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Cryptage" mc="Standard.Interface" uid="087a1aac-3926-4df5-8d1b-2fb9d6668884"/>
+        <COMPID name="Transposition" mc="Standard.Class" uid="641e68d8-b7c8-4eaa-bf69-ac146fb15d3c"/>
+        <COMPID name="Cesar" mc="Standard.Class" uid="9aa27042-57f1-428b-a160-d3e23eb69654"/>
+        <COMPID name="Substitution" mc="Standard.Class" uid="5253e219-7d43-49e3-a179-291328087e28"/>
+        <COMPID name="Vigenere" mc="Standard.Class" uid="78802ee2-51f4-460a-ad77-f20027dbc179"/>
+        <COMPID name="DentsDeScie" mc="Standard.Class" uid="789c760e-697a-4488-947c-e210d0f5a090"/>
+        <COMPID name="PaireLettres" mc="Standard.Class" uid="2ccb20b9-7a29-45a2-aa36-53a1b47c6437"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="singh Class diagram" mc="Standard.ClassDiagram" uid="30aac239-cc88-49da-8a88-7e2c702ca903"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
