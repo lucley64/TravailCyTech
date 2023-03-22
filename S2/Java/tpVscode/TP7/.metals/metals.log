@@ -79,3 +79,1058 @@ package com
 2023.03.22 11:37:44 INFO  time: compiled tp7 in 0.11s[0m
 Mar 22, 2023 11:38:40 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.03.22 11:41:07 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:07 INFO  time: compiled tp7 in 0.34s[0m
+2023.03.22 11:41:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:26 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 11:41:34 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:34 INFO  time: compiled tp7 in 0.34s[0m
+2023.03.22 11:41:35 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:35 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:41:35 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:35 INFO  time: compiled tp7 in 0.22s[0m
+2023.03.22 11:41:36 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:36 INFO  time: compiled tp7 in 0.19s[0m
+2023.03.22 11:41:36 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:36 INFO  time: compiled tp7 in 0.25s[0m
+2023.03.22 11:41:38 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:38 INFO  time: compiled tp7 in 0.33s[0m
+2023.03.22 11:41:39 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:41:39 INFO  time: compiled tp7 in 0.29s[0m
+2023.03.22 11:41:39 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:41:39 ERROR compiler message file broken: key=compiler.misc.msg.bug arguments=11.0.18, {1}, {2}, {3}, {4}, {5}, {6}, {7}[0m
+2023.03.22 11:41:39 ERROR java.nio.file.NoSuchFileException: /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/PileFormesAvecTableauTailleFixe.java[0m
+2023.03.22 11:41:39 ERROR 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.nio.file.Files.newInputStream(Files.java:156)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.file.PathFileObject.openInputStream(PathFileObject.java:461)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.file.PathFileObject.getCharContent(PathFileObject.java:482)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.javac.DiagnosticsReporter$PositionImpl$.apply(DiagnosticsReporter.scala:225)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.javac.DiagnosticsReporter.report(DiagnosticsReporter.scala:50)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.api.ClientCodeWrapper$WrappedDiagnosticListener.report(ClientCodeWrapper.java:736)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log.writeDiagnostic(Log.java:734)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log$DefaultDiagnosticHandler.report(Log.java:718)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log$DeferredDiagnosticHandler.reportDeferredDiagnostics(Log.java:169)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log$DeferredDiagnosticHandler.reportDeferredDiagnostics(Log.java:161)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1174)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:936)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:104)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:147)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)[0m
+2023.03.22 11:41:39 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)[0m
+2023.03.22 11:41:39 ERROR 	at bloop.CompilerCache$BloopJavaCompiler.run(CompilerCache.scala:313)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.javac.AnalyzingJavaCompiler.$anonfun$compile$12(AnalyzingJavaCompiler.scala:172)[0m
+2023.03.22 11:41:39 ERROR 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.javac.AnalyzingJavaCompiler.timed(AnalyzingJavaCompiler.scala:262)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.javac.AnalyzingJavaCompiler.compile(AnalyzingJavaCompiler.scala:161)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$9(BloopHighLevelCompiler.scala:167)[0m
+2023.03.22 11:41:39 ERROR 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$1(BloopHighLevelCompiler.scala:71)[0m
+2023.03.22 11:41:39 ERROR 	at bloop.tracing.BraveTracer.traceInternal(BraveTracer.scala:67)[0m
+2023.03.22 11:41:39 ERROR 	at bloop.tracing.BraveTracer.trace(BraveTracer.scala:41)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.timed$1(BloopHighLevelCompiler.scala:70)[0m
+2023.03.22 11:41:39 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$8(BloopHighLevelCompiler.scala:160)[0m
+2023.03.22 11:41:39 ERROR 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+2023.03.22 11:41:39 ERROR 	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)[0m
+2023.03.22 11:41:39 ERROR 	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)[0m
+2023.03.22 11:41:39 ERROR 	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)[0m
+2023.03.22 11:41:39 ERROR 	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)[0m
+2023.03.22 11:41:39 ERROR 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)[0m
+2023.03.22 11:41:39 INFO  time: compiled tp7 in 0.19s[0m
+2023.03.22 11:41:39 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:39 INFO  time: compiled tp7 in 0.3s[0m
+2023.03.22 11:41:40 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:40 INFO  time: compiled tp7 in 0.19s[0m
+2023.03.22 11:41:40 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:40 ERROR compiler message file broken: key=compiler.misc.msg.bug arguments=11.0.18, {1}, {2}, {3}, {4}, {5}, {6}, {7}[0m
+2023.03.22 11:41:40 ERROR java.nio.file.NoSuchFileException: /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/PileFormesBetter.java[0m
+2023.03.22 11:41:40 ERROR 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.nio.file.Files.newInputStream(Files.java:156)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.file.PathFileObject.openInputStream(PathFileObject.java:461)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.file.PathFileObject.getCharContent(PathFileObject.java:482)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.javac.DiagnosticsReporter$PositionImpl$.apply(DiagnosticsReporter.scala:225)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.javac.DiagnosticsReporter.report(DiagnosticsReporter.scala:50)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.api.ClientCodeWrapper$WrappedDiagnosticListener.report(ClientCodeWrapper.java:736)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log.writeDiagnostic(Log.java:734)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log$DefaultDiagnosticHandler.report(Log.java:718)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log$DeferredDiagnosticHandler.reportDeferredDiagnostics(Log.java:169)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.util.Log$DeferredDiagnosticHandler.reportDeferredDiagnostics(Log.java:161)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.processAnnotations(JavaCompiler.java:1174)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:936)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.lambda$doCall$0(JavacTaskImpl.java:104)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.handleExceptions(JavacTaskImpl.java:147)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.doCall(JavacTaskImpl.java:100)[0m
+2023.03.22 11:41:40 ERROR 	at jdk.compiler/com.sun.tools.javac.api.JavacTaskImpl.call(JavacTaskImpl.java:94)[0m
+2023.03.22 11:41:40 ERROR 	at bloop.CompilerCache$BloopJavaCompiler.run(CompilerCache.scala:313)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.javac.AnalyzingJavaCompiler.$anonfun$compile$12(AnalyzingJavaCompiler.scala:172)[0m
+2023.03.22 11:41:40 ERROR 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.javac.AnalyzingJavaCompiler.timed(AnalyzingJavaCompiler.scala:262)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.javac.AnalyzingJavaCompiler.compile(AnalyzingJavaCompiler.scala:161)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$9(BloopHighLevelCompiler.scala:167)[0m
+2023.03.22 11:41:40 ERROR 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$1(BloopHighLevelCompiler.scala:71)[0m
+2023.03.22 11:41:40 ERROR 	at bloop.tracing.BraveTracer.traceInternal(BraveTracer.scala:67)[0m
+2023.03.22 11:41:40 ERROR 	at bloop.tracing.BraveTracer.trace(BraveTracer.scala:41)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.timed$1(BloopHighLevelCompiler.scala:70)[0m
+2023.03.22 11:41:40 ERROR 	at sbt.internal.inc.bloop.internal.BloopHighLevelCompiler.$anonfun$compile$8(BloopHighLevelCompiler.scala:160)[0m
+2023.03.22 11:41:40 ERROR 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)[0m
+2023.03.22 11:41:40 ERROR 	at monix.eval.internal.TaskRunLoop$.startFull(TaskRunLoop.scala:81)[0m
+2023.03.22 11:41:40 ERROR 	at monix.eval.internal.TaskRestartCallback.syncOnSuccess(TaskRestartCallback.scala:101)[0m
+2023.03.22 11:41:40 ERROR 	at monix.eval.internal.TaskRestartCallback.onSuccess(TaskRestartCallback.scala:74)[0m
+2023.03.22 11:41:40 ERROR 	at monix.eval.internal.TaskExecuteOn$AsyncRegister$$anon$1.run(TaskExecuteOn.scala:71)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)[0m
+2023.03.22 11:41:40 ERROR 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)[0m
+2023.03.22 11:41:40 INFO  time: compiled tp7 in 50ms[0m
+2023.03.22 11:41:40 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:41 INFO  time: compiled tp7 in 0.25s[0m
+2023.03.22 11:41:41 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:41 INFO  time: compiled tp7 in 0.27s[0m
+2023.03.22 11:41:41 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:41:41 INFO  time: compiled tp7 in 0.21s[0m
+2023.03.22 11:41:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:50 INFO  time: compiled tp7 in 28ms[0m
+2023.03.22 11:41:52 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:52 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 11:41:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:41:56 INFO  time: compiled tp7 in 0.18s[0m
+2023.03.22 11:42:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:01 INFO  time: compiled tp7 in 33ms[0m
+2023.03.22 11:42:03 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:03 INFO  time: compiled tp7 in 0.15s[0m
+2023.03.22 11:42:10 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:10 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 11:42:18 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:42:18 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 11:42:19 INFO  compiling tp7 (7 java sources)[0m
+2023.03.22 11:42:19 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 11:42:23 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:23 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 11:42:31 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:31 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:42:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:32 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 11:42:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:33 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 11:42:37 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:42:37 INFO  time: compiled tp7 in 0.18s[0m
+2023.03.22 11:49:46 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:49:46 INFO  time: compiled tp7 in 15ms[0m
+2023.03.22 11:49:49 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:49:49 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 11:49:51 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:49:51 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 11:49:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:49:56 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:50:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:50:43 INFO  time: compiled tp7 in 46ms[0m
+2023.03.22 11:50:44 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:50:44 INFO  time: compiled tp7 in 37ms[0m
+2023.03.22 11:50:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:50:56 INFO  time: compiled tp7 in 19ms[0m
+2023.03.22 11:50:59 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 11:50:59 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (Pile) <-> [5 (Pile)) None
+2023.03.22 11:50:59 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:27: stale bloop error: reached end of file while parsing
+public abstract class Pile
+                          ^[0m
+2023.03.22 11:50:59 INFO  time: compiled tp7 in 16ms[0m
+Mar 22, 2023 11:51:00 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:27: stale bloop error: reached end of file while parsing
+public abstract class Pile
+                          ^[0m
+Mar 22, 2023 11:51:00 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:00 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:27: stale bloop error: reached end of file while parsing
+public abstract class Pile
+                          ^[0m
+2023.03.22 11:51:02 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 11:51:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (PileDe) <-> [5 (PileDe)) None
+2023.03.22 11:51:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:29: stale bloop error: reached end of file while parsing
+public abstract class PileDe
+                            ^[0m
+2023.03.22 11:51:02 INFO  time: compiled tp7 in 14ms[0m
+Mar 22, 2023 11:51:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:29: stale bloop error: reached end of file while parsing
+public abstract class PileDe
+                            ^[0m
+Mar 22, 2023 11:51:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:29: stale bloop error: reached end of file while parsing
+public abstract class PileDe
+                            ^[0m
+Mar 22, 2023 11:51:02 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:29: stale bloop error: reached end of file while parsing
+public abstract class PileDe
+                            ^[0m
+Mar 22, 2023 11:51:03 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:02 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:29: stale bloop error: reached end of file while parsing
+public abstract class PileDe
+                            ^[0m
+Mar 22, 2023 11:51:03 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:51:03 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:29: stale bloop error: reached end of file while parsing
+public abstract class PileDe
+                            ^[0m
+2023.03.22 11:51:04 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 11:51:04 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (PileDeFormes) <-> [5 (PileDeFormes)) None
+2023.03.22 11:51:04 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:35: stale bloop error: reached end of file while parsing
+public abstract class PileDeFormes
+                                  ^[0m
+2023.03.22 11:51:04 INFO  time: compiled tp7 in 24ms[0m
+Mar 22, 2023 11:51:05 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (PileDeFormes) <-> [5 (PileDeFormes)) None
+2023.03.22 11:51:05 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:35: stale bloop error: reached end of file while parsing
+public abstract class PileDeFormes
+                                  ^[0m
+Mar 22, 2023 11:51:05 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([5 (PileDeFormes) <-> [5 (PileDeFormes)) None
+2023.03.22 11:51:05 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:3:35: stale bloop error: reached end of file while parsing
+public abstract class PileDeFormes
+                                  ^[0m
+2023.03.22 11:51:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:06 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:51:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:13 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:51:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:17 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 11:51:20 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:20 INFO  time: compiled tp7 in 87ms[0m
+2023.03.22 11:51:22 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:22 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:51:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:33 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:51:42 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:42 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:51:42 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:42 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:51:47 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:47 INFO  time: compiled tp7 in 0.15s[0m
+2023.03.22 11:51:51 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:51 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:51:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:51:53 INFO  time: compiled tp7 in 0.15s[0m
+2023.03.22 11:52:00 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:52:00 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 11:52:08 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:52:08 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:52:08 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:52:08 INFO  time: compiled tp7 in 0.15s[0m
+2023.03.22 11:52:24 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:52:24 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 11:52:26 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:52:26 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 11:52:28 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:52:28 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:52:49 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:52:49 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:53:31 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:53:31 INFO  time: compiled tp7 in 24ms[0m
+2023.03.22 11:53:33 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:53:33 INFO  time: compiled tp7 in 19ms[0m
+2023.03.22 11:53:39 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:53:39 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 11:53:43 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:53:43 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 11:53:53 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:53:53 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 11:53:56 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:53:56 INFO  time: compiled tp7 in 95ms[0m
+2023.03.22 11:53:56 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:53:56 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 11:54:00 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:54:00 INFO  time: compiled tp7 in 0.17s[0m
+2023.03.22 11:54:00 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:00 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:54:00 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:54:00 INFO  time: compiled tp7 in 0.19s[0m
+2023.03.22 11:54:00 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:00 INFO  time: compiled tp7 in 0.17s[0m
+2023.03.22 11:54:04 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:04 INFO  time: compiled tp7 in 17ms[0m
+2023.03.22 11:54:08 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:08 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 11:54:12 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:12 INFO  time: compiled tp7 in 19ms[0m
+2023.03.22 11:54:15 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:15 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:54:15 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:15 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:54:39 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:54:39 INFO  time: compiled tp7 in 61ms[0m
+2023.03.22 11:54:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java[0m
+2023.03.22 11:54:40 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:54:40 INFO  time: compiled tp7 in 21ms[0m
+2023.03.22 11:54:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java[0m
+2023.03.22 11:54:42 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java[0m
+2023.03.22 11:54:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:54:43 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:54:43 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:54:43 INFO  time: compiled tp7 in 0.15s[0m
+2023.03.22 11:54:48 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:54:48 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 11:54:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:54:53 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:54:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:54:53 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 11:55:29 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:55:29 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:55:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:55:32 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 11:55:32 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:55:32 INFO  time: compiled tp7 in 0.27s[0m
+2023.03.22 11:55:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:55:32 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:55:32 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:55:32 INFO  time: compiled tp7 in 0.15s[0m
+Mar 22, 2023 11:55:34 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 ( ) <-> [1000 ( )) None
+2023.03.22 11:55:34 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:70:5: stale bloop error: ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileFormesBetter cannot override ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileDeFormes
+  attempting to assign weaker access privileges; was protected
+> private void ajouterComp(Forme f){
+>         if(!vide()) {
+>             var s2 = sommet();
+>             if (s2.getSurface() < f.getSurface()) {
+>                 empiler(f);
+>             } else {
+>                 depiler();
+>                 ajouterComp(f);
+>                 empiler(s2);
+>             }
+>         } else {
+>             empiler(f);
+>         }
+>     }[0m
+Mar 22, 2023 11:55:34 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.03.22 11:55:34 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:70:5: stale bloop error: ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileFormesBetter cannot override ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileDeFormes
+  attempting to assign weaker access privileges; was protected
+> private void ajouterComp(Forme f){
+>         if(!vide()) {
+>             var s2 = sommet();
+>             if (s2.getSurface() < f.getSurface()) {
+>                 empiler(f);
+>             } else {
+>                 depiler();
+>                 ajouterComp(f);
+>                 empiler(s2);
+>             }
+>         } else {
+>             empiler(f);
+>         }
+>     }[0m
+Mar 22, 2023 11:55:34 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.03.22 11:55:34 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:70:5: stale bloop error: ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileFormesBetter cannot override ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileDeFormes
+  attempting to assign weaker access privileges; was protected
+> private void ajouterComp(Forme f){
+>         if(!vide()) {
+>             var s2 = sommet();
+>             if (s2.getSurface() < f.getSurface()) {
+>                 empiler(f);
+>             } else {
+>                 depiler();
+>                 ajouterComp(f);
+>                 empiler(s2);
+>             }
+>         } else {
+>             empiler(f);
+>         }
+>     }[0m
+Mar 22, 2023 11:55:35 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.03.22 11:55:35 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:70:5: stale bloop error: ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileFormesBetter cannot override ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileDeFormes
+  attempting to assign weaker access privileges; was protected
+> private void ajouterComp(Forme f){
+>         if(!vide()) {
+>             var s2 = sommet();
+>             if (s2.getSurface() < f.getSurface()) {
+>                 empiler(f);
+>             } else {
+>                 depiler();
+>                 ajouterComp(f);
+>                 empiler(s2);
+>             }
+>         } else {
+>             empiler(f);
+>         }
+>     }[0m
+Mar 22, 2023 11:55:35 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.03.22 11:55:35 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:70:5: stale bloop error: ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileFormesBetter cannot override ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileDeFormes
+  attempting to assign weaker access privileges; was protected
+> private void ajouterComp(Forme f){
+>         if(!vide()) {
+>             var s2 = sommet();
+>             if (s2.getSurface() < f.getSurface()) {
+>                 empiler(f);
+>             } else {
+>                 depiler();
+>                 ajouterComp(f);
+>                 empiler(s2);
+>             }
+>         } else {
+>             empiler(f);
+>         }
+>     }[0m
+2023.03.22 11:55:36 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 11:55:36 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 11:55:36 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:55:36 INFO  time: compiled tp7 in 0.11s[0m
+Mar 22, 2023 11:55:40 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([1000 (
+) <-> [1000 (
+)) None
+2023.03.22 11:55:40 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesAvecTableauTailleFixe.java:60:5: stale bloop error: ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileFormesAvecTableauTailleFixe cannot override ajouterComp(com.example.tp.formes.Forme) in com.example.tp.formes.PileDeFormes
+  attempting to assign weaker access privileges; was protected
+> private void ajouterComp(Forme f){
+>         try {
+>             var s2 = sommet();
+>             if (s2.getSurface() < f.getSurface()) {
+>                 empiler(f);
+>             } else {
+>                 depiler();
+>                 ajouterComp(f);
+>                 empiler(s2);
+>             }
+>         } catch (Exception e) {
+>             empiler(f);
+>         }
+>         
+>     }[0m
+2023.03.22 11:55:41 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:55:41 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:55:41 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:55:41 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 11:55:42 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:55:42 INFO  time: compiled tp7 in 82ms[0m
+2023.03.22 11:57:39 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:39 INFO  time: compiled tp7 in 33ms[0m
+2023.03.22 11:57:39 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:39 INFO  time: compiled tp7 in 25ms[0m
+2023.03.22 11:57:39 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:39 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 11:57:39 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:39 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 11:57:39 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:39 INFO  time: compiled tp7 in 45ms[0m
+2023.03.22 11:57:47 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:47 INFO  time: compiled tp7 in 17ms[0m
+Mar 22, 2023 11:57:47 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:47 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+2023.03.22 11:57:47 INFO  compiling tp7 (8 java sources)[0m
+Mar 22, 2023 11:57:47 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:47 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+Mar 22, 2023 11:57:47 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:47 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+Mar 22, 2023 11:57:47 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:47 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+2023.03.22 11:57:47 INFO  time: compiled tp7 in 31ms[0m
+2023.03.22 11:57:48 INFO  compiling tp7 (8 java sources)[0m
+Mar 22, 2023 11:57:48 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+Mar 22, 2023 11:57:48 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+2023.03.22 11:57:48 INFO  time: compiled tp7 in 26ms[0m
+2023.03.22 11:57:48 INFO  compiling tp7 (4 java sources)[0m
+Mar 22, 2023 11:57:48 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+Mar 22, 2023 11:57:48 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+2023.03.22 11:57:48 INFO  time: compiled tp7 in 26ms[0m
+2023.03.22 11:57:48 INFO  compiling tp7 (4 java sources)[0m
+Mar 22, 2023 11:57:49 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileDeFormes.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+Mar 22, 2023 11:57:49 AM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: None Some([1000 (
+) <-> [1000 (
+))
+2023.03.22 11:57:48 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:1:1: stale bloop error: class, interface, or enum expected
+> iFormege com.example.tp.formes;
+> [0m
+2023.03.22 11:57:48 INFO  time: compiled tp7 in 22ms[0m
+2023.03.22 11:57:48 INFO  compiling tp7 (4 java sources)[0m
+2023.03.22 11:57:48 INFO  time: compiled tp7 in 0.2s[0m
+2023.03.22 11:57:55 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:55 INFO  time: compiled tp7 in 0.25s[0m
+2023.03.22 11:57:55 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:55 INFO  time: compiled tp7 in 0.25s[0m
+2023.03.22 11:57:55 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:56 INFO  Some messages have been simplified; recompile with -Xdiags:verbose to get full output[0m
+2023.03.22 11:57:56 INFO  time: compiled tp7 in 0.22s[0m
+2023.03.22 11:57:56 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:56 INFO  time: compiled tp7 in 0.17s[0m
+2023.03.22 11:57:56 INFO  compiling tp7 (8 java sources)[0m
+2023.03.22 11:57:56 INFO  time: compiled tp7 in 0.19s[0m
+2023.03.22 11:58:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:18 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 11:58:19 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:19 INFO  time: compiled tp7 in 27ms[0m
+2023.03.22 11:58:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:26 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 11:58:31 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:31 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 11:58:37 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:37 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 11:58:45 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:45 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 11:58:45 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:45 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 11:58:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:53 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:58:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:58:53 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 11:59:25 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:25 INFO  time: compiled tp7 in 86ms[0m
+2023.03.22 11:59:28 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:28 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:59:31 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:31 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:59:31 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:59:31 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 11:59:40 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:40 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 11:59:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:43 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 11:59:51 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:51 INFO  time: compiled tp7 in 79ms[0m
+2023.03.22 11:59:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:53 INFO  time: compiled tp7 in 76ms[0m
+2023.03.22 11:59:53 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:59:53 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 11:59:57 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 11:59:57 INFO  time: compiled tp7 in 97ms[0m
+2023.03.22 11:59:57 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 11:59:57 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:00:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:06 INFO  time: compiled tp7 in 11ms[0m
+2023.03.22 12:00:10 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:10 INFO  time: compiled tp7 in 78ms[0m
+2023.03.22 12:00:14 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:14 INFO  time: compiled tp7 in 79ms[0m
+2023.03.22 12:00:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:17 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:00:21 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:21 INFO  time: compiled tp7 in 79ms[0m
+2023.03.22 12:00:47 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:47 INFO  time: compiled tp7 in 30ms[0m
+2023.03.22 12:00:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:50 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:00:54 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:54 INFO  time: compiled tp7 in 88ms[0m
+2023.03.22 12:00:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:00:56 INFO  time: compiled tp7 in 78ms[0m
+2023.03.22 12:01:00 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:00 INFO  time: compiled tp7 in 17ms[0m
+2023.03.22 12:01:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:01 INFO  time: compiled tp7 in 75ms[0m
+2023.03.22 12:01:01 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:01:01 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:01:04 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:04 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:01:04 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:01:04 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:01:11 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:11 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:01:11 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:01:11 INFO  time: compiled tp7 in 0.2s[0m
+2023.03.22 12:01:15 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:15 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:01:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:17 INFO  time: compiled tp7 in 10ms[0m
+2023.03.22 12:01:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:18 INFO  time: compiled tp7 in 72ms[0m
+2023.03.22 12:01:18 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:01:18 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:01:24 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:24 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:01:24 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:01:24 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:01:30 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:01:30 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:01:30 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:01:30 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:01:52 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:01:52 INFO  time: compiled tp7 in 17ms[0m
+2023.03.22 12:01:53 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:01:53 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:01:55 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:01:55 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:01:59 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:01:59 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 12:02:00 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:02:00 INFO  time: compiled tp7 in 87ms[0m
+2023.03.22 12:02:00 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:02:00 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:02:33 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:02:33 INFO  time: compiled tp7 in 20ms[0m
+2023.03.22 12:02:36 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:02:36 INFO  time: compiled tp7 in 19ms[0m
+2023.03.22 12:02:39 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:02:39 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:02:41 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:02:41 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:02:41 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:02:41 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:03:41 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:03:41 INFO  time: compiled tp7 in 88ms[0m
+2023.03.22 12:03:41 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Carre.java[0m
+2023.03.22 12:03:46 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:03:46 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:03:46 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:03:46 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:03:54 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:03:54 INFO  time: compiled tp7 in 96ms[0m
+2023.03.22 12:03:54 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:03:54 INFO  time: compiled tp7 in 90ms[0m
+2023.03.22 12:04:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:04:01 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:04:06 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:04:06 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:04:06 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:04:06 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:04:12 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:04:12 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:04:12 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:04:12 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:05:07 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:05:07 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:05:11 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:05:11 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:05:23 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:05:23 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:05:23 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:05:23 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:05:44 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:05:44 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:05:49 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:05:49 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:05:50 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesAvecTableauTailleFixe.java[0m
+2023.03.22 12:05:50 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:05:50 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:05:59 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:05:59 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:05:59 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:05:59 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 12:06:12 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:12 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 12:06:12 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:12 INFO  time: compiled tp7 in 0.18s[0m
+2023.03.22 12:06:15 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:06:15 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:06:18 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:06:18 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:06:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:18 INFO  time: compiled tp7 in 85ms[0m
+2023.03.22 12:06:39 WARN  Using indexes to guess the definition of toString[0m
+2023.03.22 12:06:41 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 12:06:41 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:06:41 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.22 12:06:41 INFO  time: compiled tp7 in 12ms[0m
+Mar 22, 2023 12:06:42 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:06:42 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/PileFormesBetter.java:43:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.22 12:06:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:43 INFO  time: compiled tp7 in 0.26s[0m
+2023.03.22 12:06:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:43 INFO  time: compiled tp7 in 92ms[0m
+2023.03.22 12:06:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:50 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:06:53 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:53 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:06:58 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:06:58 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:06:58 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:06:58 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:07:04 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:07:04 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:07:08 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:07:08 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:08:25 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:08:25 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:08:39 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:08:39 INFO  time: compiled tp7 in 83ms[0m
+2023.03.22 12:08:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:08:50 INFO  time: compiled tp7 in 87ms[0m
+2023.03.22 12:09:28 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:09:28 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:09:28 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:09:28 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:10:05 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:10:05 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:10:11 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:10:11 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:10:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:10:13 INFO  time: compiled tp7 in 27ms[0m
+2023.03.22 12:10:20 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:10:20 INFO  time: compiled tp7 in 74ms[0m
+2023.03.22 12:10:20 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:10:20 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:10:38 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:10:38 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:11:19 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:11:19 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 12:11:58 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:11:58 INFO  time: compiled tp7 in 14ms[0m
+Mar 22, 2023 12:11:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4582
+2023.03.22 12:12:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:12:01 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:12:02 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:12:02 INFO  time: compiled tp7 in 10ms[0m
+2023.03.22 12:12:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:12:06 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 12:12:09 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:12:09 INFO  time: compiled tp7 in 81ms[0m
+2023.03.22 12:13:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:13:06 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:13:15 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:13:15 INFO  time: compiled tp7 in 84ms[0m
+2023.03.22 12:13:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:13:17 INFO  time: compiled tp7 in 19ms[0m
+2023.03.22 12:13:23 INFO  compiling tp7 (1 java source)[0m
+Mar 22, 2023 12:13:23 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:13:23 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java:38:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.22 12:13:23 INFO  time: compiled tp7 in 14ms[0m
+Mar 22, 2023 12:13:24 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:13:24 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java:38:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 22, 2023 12:13:25 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:13:24 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java:38:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 22, 2023 12:13:25 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:13:24 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java:38:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+Mar 22, 2023 12:13:25 PM scala.meta.internal.parsing.TokenEditDistance$Diff $anonfun$toRevised$1
+WARNING: stale range: Some([95 (}) <-> [95 (})) None
+2023.03.22 12:13:25 INFO  file:///home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java:38:2: stale bloop error: reached end of file while parsing
+}
+ ^[0m
+2023.03.22 12:13:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:13:26 INFO  time: compiled tp7 in 89ms[0m
+2023.03.22 12:13:26 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:13:26 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:13:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:13:33 INFO  time: compiled tp7 in 31ms[0m
+2023.03.22 12:13:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:13:33 INFO  time: compiled tp7 in 9ms[0m
+2023.03.22 12:14:03 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:03 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 12:14:03 INFO  compiling tp7 (4 java sources)[0m
+2023.03.22 12:14:03 INFO  time: compiled tp7 in 0.14s[0m
+2023.03.22 12:14:06 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:06 INFO  time: compiled tp7 in 74ms[0m
+2023.03.22 12:14:09 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:09 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:14:16 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:16 INFO  time: compiled tp7 in 81ms[0m
+2023.03.22 12:14:18 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:18 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:14:20 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:20 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:14:23 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:23 INFO  time: compiled tp7 in 91ms[0m
+2023.03.22 12:14:23 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:14:23 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:14:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:32 INFO  time: compiled tp7 in 89ms[0m
+2023.03.22 12:14:32 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:14:32 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:14:36 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:36 INFO  time: compiled tp7 in 95ms[0m
+2023.03.22 12:14:36 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:14:36 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:14:41 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:41 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:14:48 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:48 INFO  time: compiled tp7 in 8ms[0m
+2023.03.22 12:14:52 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:52 INFO  time: compiled tp7 in 82ms[0m
+2023.03.22 12:14:52 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:14:52 INFO  time: compiled tp7 in 97ms[0m
+2023.03.22 12:14:55 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:55 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 12:14:55 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:14:55 INFO  time: compiled tp7 in 95ms[0m
+2023.03.22 12:14:59 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:14:59 INFO  time: compiled tp7 in 82ms[0m
+2023.03.22 12:14:59 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:14:59 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:15:04 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:04 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:15:10 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:10 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:15:10 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:10 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:15:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:13 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:15:15 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:15 INFO  time: compiled tp7 in 85ms[0m
+2023.03.22 12:15:15 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:15 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:15:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:17 INFO  time: compiled tp7 in 18ms[0m
+2023.03.22 12:15:20 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:20 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:15:22 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:22 INFO  time: compiled tp7 in 95ms[0m
+2023.03.22 12:15:22 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:22 INFO  time: compiled tp7 in 96ms[0m
+2023.03.22 12:15:24 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:24 INFO  time: compiled tp7 in 95ms[0m
+2023.03.22 12:15:24 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:24 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 12:15:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:26 INFO  time: compiled tp7 in 14ms[0m
+2023.03.22 12:15:28 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:28 INFO  time: compiled tp7 in 76ms[0m
+2023.03.22 12:15:28 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:28 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:15:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:33 INFO  time: compiled tp7 in 15ms[0m
+2023.03.22 12:15:34 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:34 INFO  time: compiled tp7 in 76ms[0m
+2023.03.22 12:15:34 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:34 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:15:40 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:40 INFO  time: compiled tp7 in 89ms[0m
+2023.03.22 12:15:40 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:40 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:15:44 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:44 INFO  time: compiled tp7 in 84ms[0m
+2023.03.22 12:15:44 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:44 INFO  time: compiled tp7 in 84ms[0m
+2023.03.22 12:15:48 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:15:48 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 12:15:48 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:15:48 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 12:15:56 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:15:56 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:15:58 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:15:58 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:16:00 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:16:00 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:16:02 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:16:02 INFO  time: compiled tp7 in 98ms[0m
+2023.03.22 12:16:02 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:16:02 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:16:04 INFO  compiling tp7 (2 java sources)[0m
+2023.03.22 12:16:04 INFO  time: compiled tp7 in 0.17s[0m
+2023.03.22 12:16:04 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:16:04 INFO  time: compiled tp7 in 0.16s[0m
+2023.03.22 12:16:11 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:16:11 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:16:14 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:16:14 INFO  time: compiled tp7 in 95ms[0m
+2023.03.22 12:16:14 INFO  compiling tp7 (3 java sources)[0m
+2023.03.22 12:16:14 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:16:38 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:38 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:16:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java[0m
+2023.03.22 12:16:38 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java[0m
+2023.03.22 12:16:39 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java[0m
+2023.03.22 12:16:40 WARN  Could not load snapshot text for /home/cytech/Travail/S2/Java/tpVscode/TP7/src/main/java/com/example/tp/formes/Forme.java[0m
+2023.03.22 12:16:41 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:41 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:16:45 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:45 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:16:47 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:47 INFO  time: compiled tp7 in 97ms[0m
+2023.03.22 12:16:51 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:51 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:16:55 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:55 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:16:58 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:16:58 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:17:00 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:00 INFO  time: compiled tp7 in 92ms[0m
+2023.03.22 12:17:02 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:02 INFO  time: compiled tp7 in 97ms[0m
+2023.03.22 12:17:08 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:08 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:17:09 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:09 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:17:35 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:35 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:17:42 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:42 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:17:49 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:17:49 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:18:30 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:30 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:18:32 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:32 INFO  time: compiled tp7 in 86ms[0m
+2023.03.22 12:18:32 INFO  compiling tp7 (4 java sources)[0m
+2023.03.22 12:18:32 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:18:41 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:41 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:18:45 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:45 INFO  time: compiled tp7 in 80ms[0m
+2023.03.22 12:18:45 ERROR Unexpected error when compiling tp7: 'java.lang.RuntimeException: boom'[0m
+2023.03.22 12:18:50 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:50 INFO  time: compiled tp7 in 7ms[0m
+2023.03.22 12:18:52 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:52 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:18:57 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:57 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:18:58 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:18:58 INFO  time: compiled tp7 in 10ms[0m
+2023.03.22 12:19:01 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:01 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:19:09 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:09 INFO  time: compiled tp7 in 88ms[0m
+2023.03.22 12:19:11 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:11 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:19:15 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:15 INFO  time: compiled tp7 in 2ms[0m
+2023.03.22 12:19:19 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:19 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:19:22 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:22 INFO  time: compiled tp7 in 89ms[0m
+2023.03.22 12:19:25 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:25 INFO  time: compiled tp7 in 11ms[0m
+2023.03.22 12:19:39 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:39 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:19:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:43 INFO  time: compiled tp7 in 94ms[0m
+2023.03.22 12:19:48 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:48 INFO  time: compiled tp7 in 99ms[0m
+2023.03.22 12:19:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:56 INFO  time: compiled tp7 in 0.12s[0m
+2023.03.22 12:19:56 INFO  compiling tp7 (4 java sources)[0m
+2023.03.22 12:19:56 INFO  time: compiled tp7 in 0.22s[0m
+2023.03.22 12:19:59 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:19:59 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:20:00 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:00 INFO  time: compiled tp7 in 0.11s[0m
+2023.03.22 12:20:31 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:31 INFO  time: compiled tp7 in 15ms[0m
+2023.03.22 12:20:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:33 INFO  time: compiled tp7 in 83ms[0m
+2023.03.22 12:20:34 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:34 INFO  time: compiled tp7 in 97ms[0m
+2023.03.22 12:20:36 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:36 INFO  time: compiled tp7 in 0.17s[0m
+2023.03.22 12:20:38 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:38 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:20:42 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:42 INFO  time: compiled tp7 in 13ms[0m
+2023.03.22 12:20:43 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:43 INFO  time: compiled tp7 in 0.1s[0m
+2023.03.22 12:20:48 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:48 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:20:52 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:52 INFO  time: compiled tp7 in 0.13s[0m
+2023.03.22 12:20:54 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:54 INFO  time: compiled tp7 in 93ms[0m
+2023.03.22 12:20:56 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:56 INFO  time: compiled tp7 in 16ms[0m
+2023.03.22 12:20:57 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:20:57 INFO  time: compiled tp7 in 83ms[0m
+2023.03.22 12:21:13 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:21:13 INFO  time: compiled tp7 in 12ms[0m
+2023.03.22 12:21:17 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:21:17 INFO  time: compiled tp7 in 71ms[0m
+2023.03.22 12:21:17 ERROR Unexpected error when compiling tp7: 'java.lang.RuntimeException: boom'[0m
+2023.03.22 12:21:21 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:21:21 INFO  time: compiled tp7 in 19ms[0m
+2023.03.22 12:21:26 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:21:26 INFO  time: compiled tp7 in 8ms[0m
+2023.03.22 12:21:33 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:21:33 INFO  time: compiled tp7 in 11ms[0m
+2023.03.22 12:21:34 INFO  compiling tp7 (1 java source)[0m
+2023.03.22 12:21:34 INFO  time: compiled tp7 in 83ms[0m
+2023.03.22 12:21:34 INFO  compiling tp7 (4 java sources)[0m
+2023.03.22 12:21:34 INFO  time: compiled tp7 in 0.13s[0m

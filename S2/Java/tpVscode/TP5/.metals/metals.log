@@ -8244,3 +8244,22 @@ java.util.concurrent.RejectedExecutionException: Task Future(<not completed>) re
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+2023.03.22 11:56:49 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP5' for client Visual Studio Code 1.76.1.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.22 11:56:52 INFO  time: initialize in 3.07s[0m
+2023.03.22 11:56:55 INFO  Attempting to connect to the build server...[0m
+2023.03.22 11:56:55 INFO  Bloop uses /usr/lib/jvm/java-11-openjdk-amd64 defined at /home/cytech/.bloop/bloop.json[0m
+2023.03.22 11:56:55 INFO  skipping build import with status 'Installed'[0m
+2023.03.22 11:56:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/cytech/Travail/S2/Java/tpVscode/TP5/.metals/bsp.trace.json or /home/cytech/.cache/metals/bsp.trace.json[0m
+2023.03.22 11:56:56 INFO  time: Connected to build server in 1.03s[0m
+2023.03.22 11:56:56 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.03.22 11:56:57 INFO  time: code lens generation in 2.18s[0m
+2023.03.22 11:56:59 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.22 11:56:59 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.22 11:56:59 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/src.zip, /usr/lib/jvm/java-11-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2023.03.22 11:56:59 INFO  time: indexed workspace in 2.7s[0m
