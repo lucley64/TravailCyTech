@@ -25,9 +25,9 @@
                 height="12px" width="12px"></button>
         <div id="navCont" hidden>
             <h2>Navigation</h2>
-            <button id="lien-accueil" class="nav" onclick="changeUrl(event, './accueil.html')">Accueil</button>
-            <button class="nav" onclick="changeUrl(event, './science.html')">La science</button>
-            <button class="nav" onclick="changeUrl(event, './contact.html')">Contact</button>
+            <button id="lien-accueil" class="nav" onclick="changeUrl(event, './accueil.php')">Accueil</button>
+            <button class="nav" onclick="changeUrl(event, './science.php')">La science</button>
+            <button class="nav" onclick="changeUrl(event, './contact.php')">Contact</button>
         </div>
     </div>
     <main>
