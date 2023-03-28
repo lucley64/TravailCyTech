@@ -65,7 +65,7 @@ public class App {
 
         @Override
         public String toString() {
-            return getClass() + ": " + getMessage() + "\n" + trace.toString();
+            return super.toString() + "\n" + trace.toString();
         }
     }
 

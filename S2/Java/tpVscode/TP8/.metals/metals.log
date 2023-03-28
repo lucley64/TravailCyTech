@@ -4580,3 +4580,16 @@ WARNING: Unmatched cancel notification for request id 112
 2023.03.23 11:14:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java[0m
 Mar 23, 2023 11:15:00 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.03.23 11:16:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java[0m
+2023.03.23 11:16:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java:68: error: ')' expected
+            return toString(+ ": " + getMessage() + "\n" + trace.toString();
+                                                                           ^
+1 error[0m
+2023.03.23 11:16:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java[0m
+2023.03.23 11:16:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java[0m
+2023.03.23 11:16:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java[0m
+2023.03.23 11:16:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP8/src/main/java/com/example/tp/App.java[0m
+2023.03.27 09:44:28 INFO  Shutting down server[0m
+2023.03.27 09:44:28 INFO  shutting down Metals[0m
+2023.03.27 09:44:28 INFO  Exiting server[0m
