@@ -5423,3 +5423,6 @@ WARNING: Unmatched cancel notification for request id 18406
                                        ^
 1 error[0m
 2023.03.29 13:03:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 14:21:38 INFO  Shutting down server[0m
+2023.03.29 14:21:38 INFO  shutting down Metals[0m
+2023.03.29 14:21:38 INFO  Exiting server[0m
