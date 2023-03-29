@@ -4363,3 +4363,1063 @@ WARNING: Unmatched cancel notification for request id 13573
 2023.03.29 12:28:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/vote/ResultatScrutin.java[0m
 Mar 29, 2023 12:29:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.03.29 12:30:16 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
+2023.03.29 12:30:17 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java:5: error: not a statement
+        Res
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java:5: error: ';' expected
+        Res
+           ^
+2 errors[0m
+2023.03.29 12:30:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
+2023.03.29 12:30:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java:5: error: not a statement
+        Resul
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java:5: error: ';' expected
+        Resul
+             ^
+2 errors[0m
+2023.03.29 12:30:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
+2023.03.29 12:30:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java:7: error: not a statement
+        ResultatScrutin
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java:7: error: ';' expected
+        ResultatScrutin
+                       ^
+2 errors[0m
+2023.03.29 12:30:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
+2023.03.29 12:31:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:31:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:31:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:31:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:31:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:31:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:32:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:32:49 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:5: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:32:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:32:52 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:4: error: <identifier> expected
+    private Strin
+                 ^
+1 error[0m
+2023.03.29 12:32:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:33:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:33:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:33:49 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java:4: error: <identifier> expected
+    private String 
+                  ^
+1 error[0m
+2023.03.29 12:33:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:33:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java:4: error: ';' expected
+    private String ty
+                     ^
+1 error[0m
+2023.03.29 12:33:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:34:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:34:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java:5: error: ';' expected
+    private String num
+                      ^
+1 error[0m
+2023.03.29 12:34:03 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:34:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:34:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:34:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:34:30 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:35:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:35:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:35:55 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:6: error: <identifier> expected
+    private List
+                ^
+1 error[0m
+2023.03.29 12:35:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:35:56 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:7: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:35:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:35:58 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:7: error: > expected
+}
+^
+1 error[0m
+2023.03.29 12:36:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:02 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:6: error: <identifier> expected
+    private List<NumeroTelephone>
+                                 ^
+1 error[0m
+2023.03.29 12:36:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:03 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:6: error: <identifier> expected
+    private List<NumeroTelephone> 
+                                 ^
+1 error[0m
+2023.03.29 12:36:05 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:6: error: ';' expected
+    private List<NumeroTelephone> nu
+                                    ^
+1 error[0m
+2023.03.29 12:36:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:45 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:12: error: not a statement
+        nu
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:12: error: ';' expected
+        nu
+          ^
+2 errors[0m
+2023.03.29 12:36:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:49 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:13: error: illegal start of expression
+    }
+    ^
+1 error[0m
+2023.03.29 12:36:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:36:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:37:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+Mar 29, 2023 12:37:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 14723
+2023.03.29 12:37:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:37:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:37:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:37:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:37:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:37:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:38:05 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:39: error: <identifier> expected
+    public void 
+               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:41: error: '(' expected
+}
+^
+2 errors[0m
+2023.03.29 12:38:21 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:21 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:41: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:38:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:27 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:41: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:38:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:39: error: ';' expected
+    public void ajouterNum()
+                            ^
+1 error[0m
+2023.03.29 12:38:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:39 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:40: error: not a statement
+        nu
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:40: error: ';' expected
+        nu
+          ^
+2 errors[0m
+2023.03.29 12:38:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:40: error: <identifier> expected
+        nums.
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:40: error: not a statement
+        nums.
+            ^
+2 errors[0m
+2023.03.29 12:38:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:40: error: ';' expected
+        nums.add(null)
+                      ^
+1 error[0m
+2023.03.29 12:38:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:38:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:40: error: ';' expected
+        nums.add(new NumeroTelephone(num))
+                                          ^
+1 error[0m
+2023.03.29 12:38:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:39:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:39:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:39:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:39:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:39:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/NumeroTelephone.java[0m
+2023.03.29 12:39:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:39:50 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:39: error: <identifier> expected
+    public void ajouterNum(Nu){
+                             ^
+1 error[0m
+2023.03.29 12:39:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:39:52 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:39: error: <identifier> expected
+    public void ajouterNum(Num){
+                              ^
+1 error[0m
+2023.03.29 12:39:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:39:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:09 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: <identifier> expected
+    publi
+         ^
+1 error[0m
+2023.03.29 12:40:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: <identifier> expected
+    public void 
+               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:47: error: '(' expected
+}
+^
+2 errors[0m
+2023.03.29 12:40:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: ';' expected
+    public void modifierNum(NumeroTelephone num)
+                                                ^
+1 error[0m
+2023.03.29 12:40:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: ';' expected
+    public void modifierNum(NumeroTelephone oldNum)
+                                                   ^
+1 error[0m
+2023.03.29 12:40:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:25 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: illegal start of type
+    public void modifierNum(NumeroTelephone oldNum, )
+                                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: ';' expected
+    public void modifierNum(NumeroTelephone oldNum, )
+                                                     ^
+2 errors[0m
+2023.03.29 12:40:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: <identifier> expected
+    public void modifierNum(NumeroTelephone oldNum, NumeroTelephone )
+                                                                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: ';' expected
+    public void modifierNum(NumeroTelephone oldNum, NumeroTelephone )
+                                                                     ^
+2 errors[0m
+2023.03.29 12:40:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: ';' expected
+    public void modifierNum(NumeroTelephone oldNum, NumeroTelephone newNum)
+                                                                           ^
+1 error[0m
+2023.03.29 12:40:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: <identifier> expected
+        nums.
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: not a statement
+        nums.
+            ^
+2 errors[0m
+2023.03.29 12:40:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:40:49 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: not a statement
+        nums.co
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: ';' expected
+        nums.co
+               ^
+2 errors[0m
+2023.03.29 12:41:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:41:04 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: <identifier> expected
+        nums.
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: not a statement
+        nums.
+            ^
+2 errors[0m
+2023.03.29 12:41:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:41:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: ';' expected
+        nums.remove(oldNum)
+                           ^
+1 error[0m
+2023.03.29 12:41:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: not a statement
+        nums.remove
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: ';' expected
+        nums.remove
+                   ^
+2 errors[0m
+2023.03.29 12:42:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:27 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:44: error: ';' expected
+        nums.remove(oldNum)
+                           ^
+1 error[0m
+2023.03.29 12:42:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:45: error: ';' expected
+        nums.add(newNum)
+                        ^
+1 error[0m
+2023.03.29 12:42:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:48: error: <identifier> expected
+    public void modifierNum(Strin){
+                                 ^
+1 error[0m
+2023.03.29 12:42:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:42:56 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:48: error: <identifier> expected
+    public void modifierNum(String nomNum, String ){
+                                                 ^
+1 error[0m
+Mar 29, 2023 12:42:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 15743
+2023.03.29 12:42:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:05 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:05 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: not a statement
+        nu
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: ';' expected
+        nu
+          ^
+2 errors[0m
+2023.03.29 12:43:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: <identifier> expected
+        nums.
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: not a statement
+        nums.
+            ^
+2 errors[0m
+2023.03.29 12:43:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: not a statement
+        nums.g
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: ';' expected
+        nums.g
+              ^
+2 errors[0m
+2023.03.29 12:43:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: <identifier> expected
+        nums.
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: not a statement
+        nums.
+            ^
+2 errors[0m
+2023.03.29 12:43:30 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: not a statement
+        nums.re
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: ';' expected
+        nums.re
+               ^
+2 errors[0m
+2023.03.29 12:43:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: ';' expected
+        nums.removeIf(null)
+                           ^
+1 error[0m
+2023.03.29 12:43:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: illegal start of expression
+        nums.removeIf(num -> )
+                             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: ';' expected
+        nums.removeIf(num -> )
+                              ^
+2 errors[0m
+2023.03.29 12:43:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:43:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:49: error: ')' expected
+        nums.removeIf(num -> num.equals(nomNum)
+                                               ^
+1 error[0m
+2023.03.29 12:43:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:14 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: not a statement
+        num
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: ';' expected
+        num
+           ^
+2 errors[0m
+2023.03.29 12:44:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:17 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: not a statement
+        nums.add
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: ';' expected
+        nums.add
+                ^
+2 errors[0m
+2023.03.29 12:44:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: <identifier> expected
+        nums.add(new )
+                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: '(' or '[' expected
+        nums.add(new )
+                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: ';' expected
+        nums.add(new )
+                      ^
+3 errors[0m
+2023.03.29 12:44:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:25 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:50: error: ';' expected
+        nums.add(new NumeroTelephone(nomNum, newNum))
+                                                     ^
+1 error[0m
+2023.03.29 12:44:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:38 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: <identifier> expected
+    public void ajouterNum(Strin){
+                                ^
+1 error[0m
+2023.03.29 12:44:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:43: error: illegal start of type
+    public void ajouterNum(String nomNum, ){
+                                          ^
+1 error[0m
+2023.03.29 12:44:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:44:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:09 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:57: error: <identifier> expected
+    public void 
+               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:59: error: '(' expected
+}
+^
+2 errors[0m
+2023.03.29 12:45:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:57: error: ',', ')', or '[' expected
+    public void supprimerNum(String nomNum, String newNum
+                                                         ^
+1 error[0m
+2023.03.29 12:45:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:17 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:59: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:45:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:57: error: <identifier> expected
+    public void supprimerNum(Num
+                                ^
+1 error[0m
+2023.03.29 12:45:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:28 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:58: error: not a statement
+        nums.re
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:58: error: ';' expected
+        nums.re
+               ^
+2 errors[0m
+2023.03.29 12:45:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:36 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:58: error: ';' expected
+        nums.remove(num)
+                        ^
+1 error[0m
+2023.03.29 12:45:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:63: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:45:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:61: error: <identifier> expected
+    public void 
+               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:63: error: '(' expected
+}
+^
+2 errors[0m
+2023.03.29 12:45:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:63: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:45:48 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:48 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:63: error: reached end of file while parsing
+}
+ ^
+1 error[0m
+2023.03.29 12:45:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:45:58 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: not a statement
+        rem
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: ';' expected
+        rem
+           ^
+2 errors[0m
+2023.03.29 12:46:03 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:46:03 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: not a statement
+        nums.re
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: ';' expected
+        nums.re
+               ^
+2 errors[0m
+2023.03.29 12:46:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:46:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: ';' expected
+        nums.removeIf(null)
+                           ^
+1 error[0m
+2023.03.29 12:46:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:46:11 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: illegal start of expression
+        nums.removeIf(num -> )
+                             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:62: error: ';' expected
+        nums.removeIf(num -> )
+                              ^
+2 errors[0m
+2023.03.29 12:46:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:47:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    private List
+                ^
+1 error[0m
+2023.03.29 12:47:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:5: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:47:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: ';' expected
+    private List<Contact> contacts
+                                  ^
+1 error[0m
+2023.03.29 12:47:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:47:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:8: error: <identifier> expected
+    public Repertoire(Repertoire ) {
+                                ^
+1 error[0m
+2023.03.29 12:48:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:9: error: not a statement
+        th
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:9: error: ';' expected
+        th
+          ^
+2 errors[0m
+2023.03.29 12:48:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:38 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:9: error: not a statement
+        this
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:9: error: ';' expected
+        this
+            ^
+2 errors[0m
+2023.03.29 12:48:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:43 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:10: error: illegal start of expression
+    }
+    ^
+1 error[0m
+2023.03.29 12:48:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:48:53 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:9: error: <identifier> expected
+        this.contacts = new ArrayList<>(that.);
+                                             ^
+1 error[0m
+2023.03.29 12:48:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:49:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:49:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:49:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:49:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:49:21 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:49:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 12:50:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 12:50:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:53 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:5: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:50:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:56 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajou
+               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:5: error: = expected
+}
+^
+2 errors[0m
+2023.03.29 12:50:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:50:58 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouter
+                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:5: error: = expected
+}
+^
+2 errors[0m
+2023.03.29 12:51:03 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:03 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouterContact()
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: ';' expected
+    public ajouterContact()
+                           ^
+2 errors[0m
+2023.03.29 12:51:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouterContact(Contact)
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouterContact(Contact)
+                                 ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: ';' expected
+    public ajouterContact(Contact)
+                                  ^
+3 errors[0m
+2023.03.29 12:51:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouterContact(Contact);
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouterContact(Contact);
+                                 ^
+2 errors[0m
+2023.03.29 12:51:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public ajouterContact(Contact c);
+                         ^
+1 error[0m
+2023.03.29 12:51:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:27 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:4: error: <identifier> expected
+    public void ajouterContact(Contact );
+                                      ^
+1 error[0m
+2023.03.29 12:51:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:51:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:03 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:8: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:52:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:11 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:8: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:52:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:14 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:8: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:52:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum()
+                            ^
+1 error[0m
+2023.03.29 12:52:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:21 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum(Contact c )
+                                      ^
+1 error[0m
+2023.03.29 12:52:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: illegal start of type
+    public void ajouterNum(Contact c, )
+                                      ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum(Contact c, )
+                                       ^
+2 errors[0m
+2023.03.29 12:52:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:39 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: <identifier> expected
+    public void ajouterNum(Contact c, Nu)
+                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum(Contact c, Nu)
+                                         ^
+2 errors[0m
+2023.03.29 12:52:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:40 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: <identifier> expected
+    public void ajouterNum(Contact c, Num)
+                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum(Contact c, Num)
+                                          ^
+2 errors[0m
+2023.03.29 12:52:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: <identifier> expected
+    public void ajouterNum(Contact c, NumeroTelephone, )
+                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: illegal start of type
+    public void ajouterNum(Contact c, NumeroTelephone, )
+                                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum(Contact c, NumeroTelephone, )
+                                                        ^
+3 errors[0m
+2023.03.29 12:52:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:45 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: <identifier> expected
+    public void ajouterNum(Contact c, NumeroTelephone )
+                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:7: error: ';' expected
+    public void ajouterNum(Contact c, NumeroTelephone )
+                                                       ^
+2 errors[0m
+2023.03.29 12:52:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:52:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.29 12:53:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:27 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:11: error: <identifier> expected
+    public Contact 
+                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: = expected
+}
+^
+2 errors[0m
+2023.03.29 12:53:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:32 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: = expected
+}
+^
+1 error[0m
+2023.03.29 12:53:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: = expected
+}
+^
+1 error[0m
+2023.03.29 12:53:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:38 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: = expected
+}
+^
+1 error[0m
+2023.03.29 12:53:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: = expected
+}
+^
+1 error[0m
+2023.03.29 12:53:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:58 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:12: error: = expected
+}
+^
+1 error[0m
+2023.03.29 12:53:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:53:59 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:11: error: ';' expected
+    public Contact rechercherContactParNom()
+                                            ^
+1 error[0m
+2023.03.29 12:54:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:36 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:13: error: <identifier> expected
+    public Contact rechercherContactParNumero(Num);
+                                                 ^
+1 error[0m
+2023.03.29 12:54:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:38 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:13: error: <identifier> expected
+    public Contact rechercherContactParNumero(NumeroTelephone);
+                                                             ^
+1 error[0m
+2023.03.29 12:54:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:54:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:16: error: <identifier> expected
+    public List
+               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:17: error: = expected
+}
+^
+2 errors[0m
+Mar 29, 2023 12:55:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18406
+2023.03.29 12:55:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:27 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:18: error: <identifier> expected
+    public List<Contact> 
+                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:19: error: = expected
+}
+^
+2 errors[0m
+2023.03.29 12:55:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:19: error: = expected
+}
+^
+1 error[0m
+2023.03.29 12:55:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:54 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:19: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:55:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:55:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java:19: error: '(' expected
+}
+^
+1 error[0m
+2023.03.29 12:55:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:56:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:56:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:57:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:57:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:57:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 12:57:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:57:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:6: error: invalid method declaration; return type required
+    public ContactNum(String nom, String prenom) {
+           ^
+1 error[0m
+2023.03.29 12:57:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:57:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java:6: error: invalid method declaration; return type required
+    public ContactNum(String nom, String prenom) {
+           ^
+1 error[0m
+2023.03.29 12:57:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:58:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Contact.java[0m
+2023.03.29 12:58:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:58:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:9: error: '.' expected
+        super
+             ^
+1 error[0m
+2023.03.29 12:59:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:02 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:9: error: ';' expected
+        super(nom, prenom)
+                          ^
+1 error[0m
+2023.03.29 12:59:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:07 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:13: error: not a statement
+        su
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:13: error: ';' expected
+        su
+          ^
+2 errors[0m
+2023.03.29 12:59:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:09 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:13: error: ';' expected
+        super(nom, prenom)
+                          ^
+1 error[0m
+2023.03.29 12:59:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:16 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 12:59:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:59:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 12:59:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/Repertoire.java[0m
+2023.03.29 13:00:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 13:00:05 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 13:01:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:09 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:16: error: ';' expected
+    public ContactNum(Contact c)
+                                ^
+1 error[0m
+2023.03.29 13:01:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:17: error: '.' expected
+        super
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:18: error: not a statement
+    }
+    ^
+2 errors[0m
+2023.03.29 13:01:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:17: error: ';' expected
+        super(getNom(), getPrenom())
+                                    ^
+1 error[0m
+2023.03.29 13:01:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:17: error: ';' expected
+        super(congetNom(), getPrenom())
+                                       ^
+1 error[0m
+2023.03.29 13:01:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:17: error: ';' expected
+        super(contact.getNom(), getPrenom())
+                                            ^
+1 error[0m
+2023.03.29 13:01:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java:17: error: ';' expected
+        super(contact.getNom(), contact.getPrenom())
+                                                    ^
+1 error[0m
+2023.03.29 13:01:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:01:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/ContactNum.java[0m
+2023.03.29 13:03:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 13:03:01 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java:31: error: <identifier> expected
+        contacts.add(new)
+                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java:31: error: ';' expected
+        contacts.add(new)
+                         ^
+2 errors[0m
+2023.03.29 13:03:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 13:03:02 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java:31: error: <identifier> expected
+        contacts.add(new )
+                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java:31: error: '(' or '[' expected
+        contacts.add(new )
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java:31: error: ';' expected
+        contacts.add(new )
+                          ^
+3 errors[0m
+2023.03.29 13:03:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
+2023.03.29 13:03:04 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java:31: error: ';' expected
+        contacts.add(new ContactNum(c))
+                                       ^
+1 error[0m
+2023.03.29 13:03:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/repertoire/RepertoireListContact.java[0m
