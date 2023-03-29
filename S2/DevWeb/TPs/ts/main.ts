@@ -1,10 +1,10 @@
 function resizeIFrameToFitContent(iFrame: HTMLIFrameElement) {
     if (iFrame.contentWindow) {
         const size = iFrame.contentWindow.document.body.scrollHeight + 50;
-        if (size > window.innerHeight){
+        if (size > window.innerHeight) {
             iFrame.height = size + "px";
         }
-        else{
+        else {
             iFrame.height = window.innerHeight + "px";
         }
     }
@@ -21,11 +21,12 @@ function changeUrl(ev: MouseEvent, link: string) {
     });
     (ev.target as HTMLButtonElement).className += " active";
     (ev.target as HTMLButtonElement).disabled = true;
+    window.history.replaceState(null, document.title, updateUrlParameter(window.location.href, "menu", link));
 
 }
 
 window.onload = () => {
-    (document.querySelector("#lien-accueil") as HTMLAnchorElement).click();
+    (document.querySelector("#this") as HTMLAnchorElement).click();
     if (window.innerWidth >= 750)
         (document.querySelector("button#navBtn") as HTMLButtonElement).click();
 }
@@ -37,4 +38,22 @@ window.onchange = () => {
 
 function toggleNav(elem: HTMLElement) {
     elem.hidden = !elem.hidden;
+}
+
+function updateUrlParameter(url: string, param: string, value: string){
+    var newUrl = "";
+    var tempArray = url.split("?");
+    const additionalUrl = tempArray[1];
+    var temp = "";
+    if (additionalUrl){
+        tempArray = additionalUrl.split("?");
+        for (var i = 0; i < tempArray.length; i++){
+            if (tempArray[i].split('=')[0] != param){
+                newUrl += temp + tempArray[i];
+                temp = "&";
+            }
+        }
+    }
+    const rows_txt = temp + "" + param + "=" + value;
+    return "?" + newUrl + rows_txt;
 }

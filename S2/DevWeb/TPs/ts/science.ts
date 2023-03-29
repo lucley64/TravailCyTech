@@ -98,5 +98,5 @@ window.onload = () => {
     imgs.forEach(image => {
         image.addEventListener("mousemove", moveLens);
     });
-    (document.querySelector("div#tab-buttons>button.menu") as HTMLButtonElement).click();
+    (document.querySelector("#this-btn") as HTMLButtonElement).click();
 }

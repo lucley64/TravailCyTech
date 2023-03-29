@@ -91,5 +91,5 @@ window.onload = function () {
     imgs.forEach(function (image) {
         image.addEventListener("mousemove", moveLens);
     });
-    document.querySelector("div#tab-buttons>button.menu").click();
+    document.querySelector("#this-btn").click();
 };

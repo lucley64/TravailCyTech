@@ -22,7 +22,12 @@
 
         echo "<div id=\"tab-buttons\">";
         foreach ($cats as $cat) {
-            echo "<button class=\"menu\" onclick=\"openTab(this)\">$cat[nom]</button>";
+            $id = "";
+            if ($_GET['cat'] == $cat['nom']) {
+                $id = "this-btn";
+            }
+
+            echo "<button id=\"" . $id . "\" class=\"menu\" onclick=\"openTab(this)\">$cat[nom]</button>";
         }
         echo "</div>";
 
@@ -73,10 +78,13 @@
             </table>
             </div>";
         }
+
+
+        var_dump($_GET);
         ?>
-    <div id="downMenu">
-        <button id="sockButton" class="menu" onclick="afficherStock()">Afficher stocks</button>
-    </div>
+        <div id="downMenu">
+            <button id="sockButton" class="menu" onclick="afficherStock()">Afficher stocks</button>
+        </div>
     </div>
     <div id="zoomImage" hidden></div>
     <div id="zoomLens" hidden></div>

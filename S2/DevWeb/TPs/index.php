@@ -14,20 +14,27 @@
 
 <body>
     <div id="logo">
-        <a href="."><img src="./img/1200px-Aperture_Science_Logo.svg.png" alt="Aperture science logo" height="100px"
-                width="100px" /></a>
+        <a href="."><img src="./img/1200px-Aperture_Science_Logo.svg.png" alt="Aperture science logo" height="100px" width="100px" /></a>
     </div>
     <header>
         <h1>Magasin de la science Aperture</h1>
     </header>
     <div id="menu">
-        <button id="navBtn" onclick="toggleNav(this.nextElementSibling)"><img src="./img/56763.png" alt="nav"
-                height="12px" width="12px"></button>
+        <button id="navBtn" onclick="toggleNav(this.nextElementSibling)"><img src="./img/56763.png" alt="nav" height="12px" width="12px"></button>
         <div id="navCont" hidden>
             <h2>Navigation</h2>
-            <button id="lien-accueil" class="nav" onclick="changeUrl(event, './accueil.php')">Accueil</button>
-            <button class="nav" onclick="changeUrl(event, './science.php')">La science</button>
-            <button class="nav" onclick="changeUrl(event, './contact.php')">Contact</button>
+            <button id="<?php if ($_GET['menu'] != "./science.php" && $_GET['menu'] != "./contact.php") {
+                            echo "this";
+                        } ?>" class="nav" onclick="changeUrl(event, './accueil.php')">Accueil</button>
+            <button id="<?php if ($_GET['menu'] == "./science.php") {
+                            echo "this";
+                        } ?>" class="nav" onclick="changeUrl(event, './science.php<?php
+                                                                                    if ($_GET['cat']) {
+                                                                                        echo "?cat=$_GET[cat]";
+                                                                                    } ?>')">La science</button>
+            <button id="<?php if ($_GET['menu'] == "./contact.php") {
+                            echo "this";
+                        } ?>" class="nav" onclick="changeUrl(event, './contact.php')">Contact</button>
         </div>
     </div>
     <main>
