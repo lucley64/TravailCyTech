@@ -21,7 +21,7 @@ function changeUrl(ev: MouseEvent, link: string) {
     });
     (ev.target as HTMLButtonElement).className += " active";
     (ev.target as HTMLButtonElement).disabled = true;
-    window.history.replaceState(null, document.title, updateUrlParameter(window.location.href, "menu", link));
+    window.history.replaceState(null, document.title, "?menu="+(ev.target as HTMLButtonElement).innerHTML)
 
 }
 
@@ -38,22 +38,4 @@ window.onchange = () => {
 
 function toggleNav(elem: HTMLElement) {
     elem.hidden = !elem.hidden;
-}
-
-function updateUrlParameter(url: string, param: string, value: string){
-    var newUrl = "";
-    var tempArray = url.split("?");
-    const additionalUrl = tempArray[1];
-    var temp = "";
-    if (additionalUrl){
-        tempArray = additionalUrl.split("?");
-        for (var i = 0; i < tempArray.length; i++){
-            if (tempArray[i].split('=')[0] != param){
-                newUrl += temp + tempArray[i];
-                temp = "&";
-            }
-        }
-    }
-    const rows_txt = temp + "" + param + "=" + value;
-    return "?" + newUrl + rows_txt;
 }

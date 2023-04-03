@@ -1,17 +1,26 @@
 package com.example.optilin;
-public class App{
+
+import java.util.List;
+
+public class App {
     public static void main(String[] args) {
-        double[] x = {1, 0.5};
-        double[] y = {1, 1};
-        double[] v = {-3, 1};
-        double[] z = {1, -0.5};
 
-        Probleme p = new Probleme(x);
-
-        p.addContrainte(new Probleme.Contrainte(y, 4));
-        p.addContrainte(new Probleme.Contrainte(v, 3));
-        p.addContrainte(new Probleme.Contrainte(z, 1));
-
+        var p = new Probleme(                   List.of( 1.0,  0.5).toArray(new Double[0]));
+        p.addContrainte(new Probleme.Contrainte(List.of( 1.0,  1.0).toArray(new Double[0]), 4));
+        p.addContrainte(new Probleme.Contrainte(List.of(-3.0,  1.0).toArray(new Double[0]), 3));
+        p.addContrainte(new Probleme.Contrainte(List.of( 1.0, -0.5).toArray(new Double[0]), 1));
+        
         System.out.println(p.toString());
+
+        var t = new Probleme.Tableau(p);
+        try {
+            t.iteration();
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(t.toString());
+
     }
-}   
+}

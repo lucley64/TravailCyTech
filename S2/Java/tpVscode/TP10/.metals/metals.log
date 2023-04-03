@@ -60,3 +60,1705 @@ WARNING: Unmatched cancel notification for request id 121
 2023.03.29 09:56:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
 2023.03.29 09:56:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
 2023.03.29 09:56:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP9/src/main/java/com/example/tp/App.java[0m
+2023.03.30 08:52:42 INFO  Started: Metals version 0.11.11 in workspace '/home/cytech/Travail/S2/Java/tpVscode/TP10' for client Visual Studio Code 1.76.2.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/home/cytech/.cache/coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.03.30 08:52:45 INFO  time: initialize in 3.75s[0m
+2023.03.30 08:52:47 WARN  Build server is not auto-connectable.[0m
+2023.03.30 08:52:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/App.java[0m
+2023.03.30 08:52:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:52:47 INFO  skipping build import with status 'Dismissed'[0m
+2023.03.30 08:52:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:5: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 08:53:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:4: error: <identifier> expected
+    private X 
+             ^
+1 error[0m
+2023.03.30 08:53:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:4: error: ';' expected
+    private X first
+                   ^
+1 error[0m
+2023.03.30 08:53:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:53:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of type
+        Paire<X, Y> other = (Paire<>) obj;
+                                   ^
+1 error[0m
+2023.03.30 08:54:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:54:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: > expected
+        Paire<X, Y> other = (Paire<X, Y) obj;
+                                       ^
+1 error[0m
+2023.03.30 08:54:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:55:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:56:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:56:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of type
+        Paire<X, Y> other = (Paire<>) obj;
+                                   ^
+1 error[0m
+2023.03.30 08:56:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:56:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:56:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:36: error: illegal start of type
+        if (obj instanceof )
+                           ^
+1 error[0m
+2023.03.30 08:57:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:36: error: illegal start of type
+        if (obj instanceof Paire<)
+                                 ^
+1 error[0m
+2023.03.30 08:57:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:35 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of type
+        Paire<?, > other = (Paire<?, ?>) obj;
+                 ^
+1 error[0m
+2023.03.30 08:57:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:57:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:01 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: > expected
+        Paire<?, Y?> other = (Paire<?, Y?>) obj;
+                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: not a statement
+        Paire<?, Y?> other = (Paire<?, Y?>) obj;
+             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: > expected
+        Paire<?, Y?> other = (Paire<?, Y?>) obj;
+                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of expression
+        Paire<?, Y?> other = (Paire<?, Y?>) obj;
+                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of expression
+        Paire<?, Y?> other = (Paire<?, Y?>) obj;
+                                          ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: not a statement
+        Paire<?, Y?> other = (Paire<?, Y?>) obj;
+                                            ^
+6 errors[0m
+2023.03.30 08:58:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:07 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: > expected
+        Paire<?, ?> other = (Paire<?, Y?>) obj;
+                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of expression
+        Paire<?, ?> other = (Paire<?, Y?>) obj;
+                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: illegal start of expression
+        Paire<?, ?> other = (Paire<?, Y?>) obj;
+                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:38: error: not a statement
+        Paire<?, ?> other = (Paire<?, Y?>) obj;
+                                           ^
+4 errors[0m
+2023.03.30 08:58:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:30 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:58: error: <identifier> expected
+        return new 
+                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:59: error: '(' or '[' expected
+    }
+    ^
+2 errors[0m
+2023.03.30 08:58:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:58:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:58: error: ';' expected
+        return new Paire<X,Y>(first, second)
+                                            ^
+1 error[0m
+2023.03.30 08:58:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:16 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:16 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 08:59:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:24 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: > expected
+    public static <X
+                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: illegal start of type
+}
+^
+2 errors[0m
+2023.03.30 08:59:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:25 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 08:59:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 08:59:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: > expected
+    public static <X
+                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: illegal start of type
+}
+^
+2 errors[0m
+2023.03.30 08:59:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 08:59:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:35 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <X> X 
+                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: '(' expected
+}
+^
+2 errors[0m
+2023.03.30 08:59:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:64: error: '(' expected
+}
+^
+1 error[0m
+2023.03.30 08:59:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:43 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <X> X plusGrand()
+                                   ^
+1 error[0m
+2023.03.30 08:59:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <X> X plusGrand(Paire)
+                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <X> X plusGrand(Paire)
+                                        ^
+2 errors[0m
+2023.03.30 08:59:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:48 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <X> X plusGrand(Paire>)
+                                       ^
+1 error[0m
+2023.03.30 08:59:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:50 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <X> X plusGrand(Paire>X, )
+                                       ^
+1 error[0m
+2023.03.30 08:59:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:53 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: illegal start of type
+    public static <X> X plusGrand(Paire<)
+                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <X> X plusGrand(Paire<)
+                                         ^
+2 errors[0m
+2023.03.30 08:59:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:55 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: illegal start of type
+    public static <X> X plusGrand(Paire<X, )
+                                           ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <X> X plusGrand(Paire<X, )
+                                            ^
+2 errors[0m
+2023.03.30 08:59:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 08:59:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <X> X plusGrand(Paire<X, X> )
+                                             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <X> X plusGrand(Paire<X, X> )
+                                               ^
+2 errors[0m
+2023.03.30 09:00:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <T> T plusGrand(Paire<T, T> )
+                                             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <T> T plusGrand(Paire<T, T> )
+                                               ^
+2 errors[0m
+2023.03.30 09:00:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <T> T plusGrand(Paire<? extends T, T> )
+                                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <T> T plusGrand(Paire<? extends T, T> )
+                                                         ^
+2 errors[0m
+2023.03.30 09:00:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <T> T plusGrand(Paire<? extends T, ? extends T> )
+                                                                 ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <T> T plusGrand(Paire<? extends T, ? extends T> )
+                                                                   ^
+2 errors[0m
+2023.03.30 09:00:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:40 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: <identifier> expected
+    public static <T> T plusGrand(Paire<T, T> )
+                                             ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <T> T plusGrand(Paire<T, T> )
+                                               ^
+2 errors[0m
+2023.03.30 09:00:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: ';' expected
+    public static <T> T plusGrand(Paire<T, T> p)
+                                                ^
+1 error[0m
+2023.03.30 09:00:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:00:54 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:63: error: illegal start of expression
+    }
+    ^
+1 error[0m
+2023.03.30 09:01:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:07 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:61: error: illegal start of type
+    public static <T extends > T plusGrand(Paire<T, T> p){
+                             ^
+1 error[0m
+2023.03.30 09:01:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:62: error: <identifier> expected
+        return p.;
+                 ^
+1 error[0m
+2023.03.30 09:01:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:62: error: -> expected
+        return ();
+                 ^
+1 error[0m
+2023.03.30 09:01:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:43 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:62: error: <identifier> expected
+        return (p.);
+                  ^
+1 error[0m
+2023.03.30 09:01:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:52 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:62: error: illegal start of expression
+        return (p.first.compareTo(p.second)? );
+                                             ^
+1 error[0m
+2023.03.30 09:01:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:01:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:02:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:02:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:02:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:02:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:02:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:3: error: illegal start of type
+public class Paire<X, Y> implements Cloneable, Comparable< {
+                                                           ^
+1 error[0m
+2023.03.30 09:02:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:02:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:03:03 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:03:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:03:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:03:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:76: error: '(' expected
+        if 
+          ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return 0;
+        ^
+2 errors[0m
+2023.03.30 09:03:46 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:03:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:76: error: illegal start of expression
+        if ()
+            ^
+1 error[0m
+2023.03.30 09:03:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:03:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:09 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: -> expected
+        return ();
+                 ^
+1 error[0m
+2023.03.30 09:04:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: -> expected
+        return ();
+                 ^
+1 error[0m
+2023.03.30 09:04:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return (first > );
+                        ^
+1 error[0m
+2023.03.30 09:04:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return (first > o.first) ?;
+                                  ^
+1 error[0m
+2023.03.30 09:04:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first)) ?;
+                                    ^
+1 error[0m
+2023.03.30 09:04:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) ) ?;
+                                     ^
+1 error[0m
+2023.03.30 09:04:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || ) ?;
+                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || ) ?;
+                                        ^
+2 errors[0m
+2023.03.30 09:04:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:36 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: -> expected
+        return ((first > o.first) || ()) ?;
+                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || ()) ?;
+                                          ^
+2 errors[0m
+2023.03.30 09:04:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:40 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == )) ?;
+                                               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == )) ?;
+                                                   ^
+2 errors[0m
+2023.03.30 09:04:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:04:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first)) ?;
+                                                          ^
+1 error[0m
+2023.03.30 09:05:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:01 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && )) ?;
+                                                          ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && )) ?;
+                                                              ^
+2 errors[0m
+2023.03.30 09:05:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > )) ?;
+                                                                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > )) ?;
+                                                                       ^
+2 errors[0m
+2023.03.30 09:05:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:10 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:05:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: > expected
+    public int compareTo(Paire<X extends Co, Y> o) {
+                                 ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+2 errors[0m
+2023.03.30 09:05:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:05:42 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:43 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:05:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: <identifier> expected
+    public < int compareTo(Paire<X, Y> o) {
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+2 errors[0m
+2023.03.30 09:05:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:05:53 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:06:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:06:24 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:06:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:06:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: <identifier> expected
+    public < int compareTo(Paire<X, Y> o) {
+            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+2 errors[0m
+2023.03.30 09:07:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: <identifier> expected
+    public <X extends Comparable<X>,  int compareTo(Paire<X, Y> o) {
+                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+2 errors[0m
+2023.03.30 09:07:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:02 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X extends Comparable<X>, Y int compareTo(Paire<X, Y> o) {
+                                      ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+2 errors[0m
+2023.03.30 09:07:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:05 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X extends Comparable<X>, Y extends  int compareTo(Paire<X, Y> o) {
+                                                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: invalid method declaration; return type required
+    public <X extends Comparable<X>, Y extends  int compareTo(Paire<X, Y> o) {
+                                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+3 errors[0m
+2023.03.30 09:07:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:11 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X extends Comparable<X>, Y extends Comparable<Y> int compareTo(Paire<X, Y> o) {
+                                                            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+2 errors[0m
+2023.03.30 09:07:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:13 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:07:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:07:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:07:32 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first > o.first) || (first == o.first && second > o.second)) ?;
+                                                                               ^
+1 error[0m
+2023.03.30 09:08:05 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:05 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first. o.first) || (first == o.first && second > o.second)) ?;
+                                                                              ^
+1 error[0m
+2023.03.30 09:08:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+    }
+    ^
+1 error[0m
+2023.03.30 09:08:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: -> expected
+        return ()
+                 ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: illegal start of expression
+    }
+    ^
+2 errors[0m
+2023.03.30 09:08:24 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:24 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (o.first)
+                        ^
+1 error[0m
+2023.03.30 09:08:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:25 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (o.first )
+                         ^
+1 error[0m
+2023.03.30 09:08:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:28 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (o.first.compareTo(null))
+                                        ^
+1 error[0m
+2023.03.30 09:08:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:08:32 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (o.first.compareTo(first))
+                                         ^
+1 error[0m
+2023.03.30 09:09:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:09:09 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (o.first.compareTo(first))
+                                         ^
+1 error[0m
+2023.03.30 09:09:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:09:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:09:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:09:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:3: error: illegal start of type
+public class Paire<X extends , Y> implements Cloneable{
+                             ^
+1 error[0m
+2023.03.30 09:10:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:56 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:3: error: > expected
+public class Paire<X, Y> implements Cloneable, Comparable<Paire{
+                                                               ^
+1 error[0m
+2023.03.30 09:10:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:10:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:3: error: illegal start of type
+public class Paire<X, Y> implements Cloneable, Comparable<Paire<{
+                                                                ^
+1 error[0m
+2023.03.30 09:11:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:11:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:11:16 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:11:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:11:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 int compareTo(Paire<X, Y> o) {
+              ^
+1 error[0m
+2023.03.30 09:12:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable int compareTo(Paire<X, Y> o) {
+                                 ^
+1 error[0m
+2023.03.30 09:12:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:21 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1 int compareTo(Paire<X, Y> o) {
+                                     ^
+1 error[0m
+2023.03.30 09:12:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1> int compareTo(Paire<X, Y> o) {
+                                     ^
+1 error[0m
+2023.03.30 09:12:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1>, X int compareTo(Paire<X, Y> o) {
+                                        ^
+1 error[0m
+2023.03.30 09:12:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1>, X2 extends Comparable int compareTo(Paire<X, Y> o) {
+                                                            ^
+1 error[0m
+2023.03.30 09:12:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1>, X2 extends Comparable<X int compareTo(Paire<X, Y> o) {
+                                                               ^
+1 error[0m
+2023.03.30 09:12:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:36 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1>, X2 extends Comparable< int compareTo(Paire<X, Y> o) {
+                                                                  ^
+1 error[0m
+2023.03.30 09:12:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:38 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1>, X2 extends Comparable<Y int compareTo(Paire<X, Y> o) {
+                                                               ^
+1 error[0m
+2023.03.30 09:12:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:40 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:74: error: > expected
+    public <X1 extends Comparable<X1>, X2 extends Comparable<Y1> int compareTo(Paire<X, Y> o) {
+                                                                ^
+1 error[0m
+2023.03.30 09:12:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:12:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:13:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:13:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:13:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:13:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:15:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:15:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:15:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: '(' expected
+        if 
+          ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        ^
+2 errors[0m
+2023.03.30 09:16:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+Mar 30, 2023 9:16:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3569
+2023.03.30 09:16:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: -> expected
+        return ()
+                 ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: illegal start of expression
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        ^
+2 errors[0m
+2023.03.30 09:16:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (first.compareTo(first))
+                                       ^
+1 error[0m
+2023.03.30 09:16:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:50 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (first.compareTo(o.first))
+                                         ^
+1 error[0m
+2023.03.30 09:16:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:52 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (first.compareTo(o.first) )
+                                          ^
+1 error[0m
+2023.03.30 09:16:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:16:54 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return (first.compareTo(o.first) > 0)
+                                             ^
+1 error[0m
+2023.03.30 09:17:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:01 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return ((0))
+                    ^
+1 error[0m
+2023.03.30 09:17:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:03 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return ((first.compareTo(o.first) > 0))
+                                               ^
+1 error[0m
+2023.03.30 09:17:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: illegal start of expression
+        return ((first.compareTo(o.first) > 0) || )
+                                                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return ((first.compareTo(o.first) > 0) || )
+                                                   ^
+2 errors[0m
+2023.03.30 09:17:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: <identifier> expected
+        return ((first.compareTo(o.first) > 0) || (first.compareTo(o.)
+                                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ')' expected
+        return ((first.compareTo(o.first) > 0) || (first.compareTo(o.)
+                                                                      ^
+2 errors[0m
+2023.03.30 09:17:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: illegal start of expression
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        ^
+1 error[0m
+2023.03.30 09:17:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ')' expected
+        return ((first.compareTo(o.first) > 0) || (first.compareTo(o.first) == 0 && second.compareTo(second)
+                                                                                                            ^
+1 error[0m
+2023.03.30 09:17:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ')' expected
+        return ((first.compareTo(o.first) > 0) || (first.compareTo(o.first) == 0 && second.compareTo(o.second)
+                                                                                                              ^
+1 error[0m
+2023.03.30 09:17:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ')' expected
+        return ((first.compareTo(o.first) > 0) || (first.compareTo(o.first) == 0 && second.compareTo(o.second) > 0
+                                                                                                                  ^
+1 error[0m
+2023.03.30 09:17:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:77: error: ';' expected
+        return ((first.compareTo(o.first) > 0) || (first.compareTo(o.first) == 0 && second.compareTo(o.second) > 0))
+                                                                                                                    ^
+1 error[0m
+2023.03.30 09:17:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: illegal start of expression
+        throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
+        ^
+1 error[0m
+2023.03.30 09:17:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:17:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:18:10 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:18:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:18:37 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:18:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:9: error: not a statement
+        set
+        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:9: error: ';' expected
+        set
+           ^
+2 errors[0m
+2023.03.30 09:18:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:19:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:19:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:19:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:19:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public s
+            ^
+1 error[0m
+2023.03.30 09:20:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 09:20:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:35 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <
+                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of type
+}
+^
+2 errors[0m
+2023.03.30 09:20:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:45 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 ext
+                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 ext
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: '(' expected
+}
+^
+3 errors[0m
+2023.03.30 09:20:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 09:20:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:50 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Nu
+                                ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of type
+}
+^
+2 errors[0m
+2023.03.30 09:20:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:20:54 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Number, X2
+                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of type
+}
+^
+2 errors[0m
+2023.03.30 09:21:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:02 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of type
+}
+^
+1 error[0m
+2023.03.30 09:21:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number, X2 extends Number> double 
+                                                               ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: '(' expected
+}
+^
+2 errors[0m
+2023.03.30 09:21:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: '(' expected
+}
+^
+1 error[0m
+2023.03.30 09:21:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:14 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: '(' expected
+}
+^
+1 error[0m
+2023.03.30 09:21:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: '(' expected
+}
+^
+1 error[0m
+2023.03.30 09:21:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: '(' expected
+}
+^
+1 error[0m
+2023.03.30 09:21:21 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire()
+                                                                            ^
+1 error[0m
+2023.03.30 09:21:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Pai)
+                                                                              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Pai)
+                                                                               ^
+2 errors[0m
+2023.03.30 09:21:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<)
+                                                                                 ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<)
+                                                                                  ^
+2 errors[0m
+2023.03.30 09:21:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, )
+                                                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, )
+                                                                                      ^
+2 errors[0m
+2023.03.30 09:21:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:21:32 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2)
+                                                                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2)
+                                                                                        ^
+2 errors[0m
+2023.03.30 09:21:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:03 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:04 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Number && Comparable, X2 extends Number && Comparable> double sumOfPaire(Paire<X1, X2> p){
+                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number && Comparable, X2 extends Number && Comparable> double sumOfPaire(Paire<X1, X2> p){
+                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number && Comparable, X2 extends Number && Comparable> double sumOfPaire(Paire<X1, X2> p){
+                                                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number && Comparable, X2 extends Number && Comparable> double sumOfPaire(Paire<X1, X2> p){
+                                                      ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number && Comparable, X2 extends Number && Comparable> double sumOfPaire(Paire<X1, X2> p){
+                                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number && Comparable, X2 extends Number && Comparable> double sumOfPaire(Paire<X1, X2> p){
+                                                                                   ^
+6 errors[0m
+2023.03.30 09:22:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:08 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number & , X2 extends Number & > double sumOfPaire(Paire<X1, X2> p){
+                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number & , X2 extends Number & > double sumOfPaire(Paire<X1, X2> p){
+                                                             ^
+2 errors[0m
+2023.03.30 09:22:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:16 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number & Comparable<, X2 extends Number & Comparable<> double sumOfPaire(Paire<X1, X2> p){
+                                                  ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Number & Comparable<, X2 extends Number & Comparable<> double sumOfPaire(Paire<X1, X2> p){
+                                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number & Comparable<, X2 extends Number & Comparable<> double sumOfPaire(Paire<X1, X2> p){
+                                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number & Comparable<, X2 extends Number & Comparable<> double sumOfPaire(Paire<X1, X2> p){
+                                                                                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number & Comparable<, X2 extends Number & Comparable<> double sumOfPaire(Paire<X1, X2> p){
+                                                                                    ^
+5 errors[0m
+2023.03.30 09:22:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Number & Comparable<X, X2 extends Number & Comparable<X> double sumOfPaire(Paire<X1, X2> p){
+                                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number & Comparable<X, X2 extends Number & Comparable<X> double sumOfPaire(Paire<X1, X2> p){
+                                                                      ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number & Comparable<X, X2 extends Number & Comparable<X> double sumOfPaire(Paire<X1, X2> p){
+                                                                                      ^
+3 errors[0m
+2023.03.30 09:22:21 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:25 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: > expected
+    public static <X1 extends Number && Comparable<X1>, X2 extends Number && Comparable<X2>> double sumOfPaire(Paire<X1, X2> p){
+                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of type
+    public static <X1 extends Number && Comparable<X1>, X2 extends Number && Comparable<X2>> double sumOfPaire(Paire<X1, X2> p){
+                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number && Comparable<X1>, X2 extends Number && Comparable<X2>> double sumOfPaire(Paire<X1, X2> p){
+                                                      ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+    public static <X1 extends Number && Comparable<X1>, X2 extends Number && Comparable<X2>> double sumOfPaire(Paire<X1, X2> p){
+                                                          ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number && Comparable<X1>, X2 extends Number && Comparable<X2>> double sumOfPaire(Paire<X1, X2> p){
+                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+    public static <X1 extends Number && Comparable<X1>, X2 extends Number && Comparable<X2>> double sumOfPaire(Paire<X1, X2> p){
+                                                                                           ^
+6 errors[0m
+2023.03.30 09:22:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:22:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+Mar 30, 2023 9:22:54 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/java.base/java.lang/Number.class?%3Dtp10%2F%5C%2Fusr%5C%2Flib%5C%2Fjvm%5C%2Fjava-11-openjdk-amd64%5C%2Flib%5C%2Fjrt-fs.jar%60java.base%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F11%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Cjava.lang%28Number.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Mar 30, 2023 9:22:56 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/java.base/java.io/Serializable.class?%3Dtp10%2F%5C%2Fusr%5C%2Flib%5C%2Fjvm%5C%2Fjava-11-openjdk-amd64%5C%2Flib%5C%2Fjrt-fs.jar%60java.base%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F11%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Cjava.io%28Serializable.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+Mar 30, 2023 9:22:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "jdt://contents/java.base/java.lang/Number.class?%3Dtp10%2F%5C%2Fusr%5C%2Flib%5C%2Fjvm%5C%2Fjava-11-openjdk-amd64%5C%2Flib%5C%2Fjrt-fs.jar%60java.base%3D%2Fjavadoc_location%3D%2Fhttps%3A%5C%2F%5C%2Fdocs.oracle.com%5C%2Fen%5C%2Fjava%5C%2Fjavase%5C%2F11%5C%2Fdocs%5C%2Fapi%5C%2F%3D%2F%3D%2Fmaven.pomderived%3D%2Ftrue%3D%2F%3Cjava.lang%28Number.class"
+  ]
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.nio.file.FileSystemNotFoundException: Provider "jdt" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:97)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:120)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:173)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:609)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:606)
+	at scala.meta.internal.metals.MetalsLspService.didFocus(MetalsLspService.scala:1173)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:43)
+	... 16 more
+
+2023.03.30 09:23:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:23:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:83: error: illegal start of expression
+    }
+    ^
+1 error[0m
+2023.03.30 09:23:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:23:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:82: error: <identifier> expected
+        return p.
+                 ^
+1 error[0m
+2023.03.30 09:23:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:23:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:82: error: ';' expected
+        return p.get
+                    ^
+1 error[0m
+2023.03.30 09:23:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:23:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:23:39 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:82: error: <identifier> expected
+        return p.getFirst(). + p.getSecond();
+                            ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:82: error: ';' expected
+        return p.getFirst(). + p.getSecond();
+                              ^
+2 errors[0m
+2023.03.30 09:23:40 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:23:43 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:16 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: repeated modifier
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: repeated modifier
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+           ^
+2 errors[0m
+2023.03.30 09:24:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:48 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: <identifier> expected
+    public static <
+                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+2 errors[0m
+2023.03.30 09:24:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:50 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: > expected
+    public static <iX
+                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+2 errors[0m
+2023.03.30 09:24:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:55 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: <identifier> expected
+    public static <X1, 
+                      ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+2 errors[0m
+2023.03.30 09:24:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:56 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: > expected
+    public static <X1, X
+                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+2 errors[0m
+2023.03.30 09:24:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:24:59 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: > expected
+    public static <X1 ext
+                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: <identifier> expected
+    public static <X1 ext
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: '(' expected
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+3 errors[0m
+2023.03.30 09:25:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:01 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: > expected
+    public static <X1 extends Comparable
+                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+2 errors[0m
+2023.03.30 09:25:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:03 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+1 error[0m
+2023.03.30 09:25:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:06 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: > expected
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>
+                                                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    ^
+2 errors[0m
+2023.03.30 09:25:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: illegal start of type
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class
+                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: <identifier> expected
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class
+                                                                              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: reached end of file while parsing
+}
+ ^
+3 errors[0m
+2023.03.30 09:25:13 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:13 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: illegal start of type
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class 
+                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: <identifier> expected
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class 
+                                                                              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: reached end of file while parsing
+}
+ ^
+3 errors[0m
+2023.03.30 09:25:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: illegal start of type
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp
+                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: '{' expected
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp
+                                                                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: reached end of file while parsing
+}
+ ^
+3 errors[0m
+2023.03.30 09:25:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: illegal start of type
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp implements Comp
+                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:73: error: '{' expected
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp implements Comp
+                                                                                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: reached end of file while parsing
+}
+ ^
+3 errors[0m
+2023.03.30 09:25:31 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp implements Comparator
+                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: '{' expected
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp implements Comparator
+                                                                                                              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: reached end of file while parsing
+}
+ ^
+3 errors[0m
+2023.03.30 09:25:33 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:25:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static <X1 extends Comparable<X1>, X2 extends Comparable<X2>> class PaireComp implements Comparator{
+                                                                         ^
+1 error[0m
+2023.03.30 09:25:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:01 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:06 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:18 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:20 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:20 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: > expected
+        public int compare(Paire< arg0, Paire< arg1) {
+                                                   ^
+1 error[0m
+2023.03.30 09:26:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: > expected
+        public int compare(Paire<X1, X arg0, Paire<X1, X arg1) {
+                                       ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:78: error: > expected
+        public int compare(Paire<X1, X arg0, Paire<X1, X arg1) {
+                                                         ^
+2 errors[0m
+2023.03.30 09:26:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:53 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:55 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:56 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static class PaireComp<X1 extends Comparable<X1>, X2 extends Comparable<X2>> implements Comparator<Paire<>{
+                                                                                                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: > expected
+    public static class PaireComp<X1 extends Comparable<X1>, X2 extends Comparable<X2>> implements Comparator<Paire<>{
+                                                                                                                     ^
+2 errors[0m
+2023.03.30 09:26:58 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:26:58 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:75: error: illegal start of type
+    public static class PaireComp<X1 extends Comparable<X1>, X2 extends Comparable<X2>> implements Comparator<Paire<>>{
+                                                                                                                    ^
+1 error[0m
+2023.03.30 09:27:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:14 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:79: error: '(' expected
+            if 
+              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:80: error: illegal start of expression
+            throw new UnsupportedOperationException("Unimplemented method 'compare'");
+            ^
+2 errors[0m
+2023.03.30 09:27:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:29 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of expression
+            throw new UnsupportedOperationException("Unimplemented method 'compare'");
+            ^
+1 error[0m
+2023.03.30 09:27:30 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:34 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:34 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:82: error: illegal start of expression
+            throw new UnsupportedOperationException("Unimplemented method 'compare'");
+            ^
+1 error[0m
+2023.03.30 09:27:35 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:35 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: -> expected
+            return ()
+                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:82: error: illegal start of expression
+            throw new UnsupportedOperationException("Unimplemented method 'compare'");
+            ^
+2 errors[0m
+2023.03.30 09:27:44 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+            return (arg0.)
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.)
+                          ^
+2 errors[0m
+2023.03.30 09:27:45 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.com)
+                             ^
+1 error[0m
+2023.03.30 09:27:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+            return (arg0.)
+                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.)
+                          ^
+2 errors[0m
+2023.03.30 09:27:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:54 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.first.compareTo(null))
+                                               ^
+1 error[0m
+2023.03.30 09:27:57 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:27:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.first.compareTo(arg))
+                                              ^
+1 error[0m
+2023.03.30 09:28:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.first.compareTo(argg1.f))
+                                                  ^
+1 error[0m
+2023.03.30 09:28:02 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:02 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.first.compareTo(arg))
+                                              ^
+1 error[0m
+2023.03.30 09:28:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:04 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.first.compareTo(arg1))
+                                               ^
+1 error[0m
+2023.03.30 09:28:07 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:07 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.first.compareTo(arg1.getFirst()))
+                                                          ^
+1 error[0m
+2023.03.30 09:28:11 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:11 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.getFirst().compareTo(arg1.getFirst()))
+                                                               ^
+1 error[0m
+2023.03.30 09:28:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.getFirst().compareTo(arg1.getFirst() ))
+                                                                ^
+1 error[0m
+2023.03.30 09:28:22 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:22 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return (arg0.getFirst().compareTo(arg1.getFirst()))
+                                                               ^
+1 error[0m
+2023.03.30 09:28:28 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:29 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst())))
+                                                                 ^
+1 error[0m
+2023.03.30 09:28:32 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) ))
+                                                                  ^
+1 error[0m
+2023.03.30 09:28:36 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:36 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1))
+                                                                     ^
+1 error[0m
+2023.03.30 09:28:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:40 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) )
+                                                                      ^
+1 error[0m
+2023.03.30 09:28:41 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of expression
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || )
+                                                                        ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || )
+                                                                         ^
+2 errors[0m
+2023.03.30 09:28:47 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:48 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.))
+                                                                              ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.))
+                                                                                ^
+2 errors[0m
+2023.03.30 09:28:49 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:49 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.get))
+                                                                                   ^
+1 error[0m
+2023.03.30 09:28:50 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:51 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getF))
+                                                                                    ^
+1 error[0m
+2023.03.30 09:28:52 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:53 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().))
+                                                                                         ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ')' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().))
+                                                                                           ^
+2 errors[0m
+2023.03.30 09:28:54 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:55 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1)))
+                                                                                                       ^
+1 error[0m
+2023.03.30 09:28:59 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:28:59 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.g)))
+                                                                                                         ^
+1 error[0m
+2023.03.30 09:29:00 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:00 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst())))
+                                                                                                                  ^
+1 error[0m
+2023.03.30 09:29:04 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:04 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of expression
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && ))
+                                                                                                                    ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && ))
+                                                                                                                      ^
+2 errors[0m
+2023.03.30 09:29:09 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:10 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.get))
+                                                                                                                              ^
+1 error[0m
+2023.03.30 09:29:12 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:13 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: <identifier> expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().))
+                                                                                                                                     ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ')' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().))
+                                                                                                                                       ^
+2 errors[0m
+2023.03.30 09:29:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:14 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(null)))
+                                                                                                                                                      ^
+1 error[0m
+2023.03.30 09:29:17 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:18 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg)))
+                                                                                                                                                     ^
+1 error[0m
+2023.03.30 09:29:19 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg1)))
+                                                                                                                                                      ^
+1 error[0m
+2023.03.30 09:29:23 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:23 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg1.getSecond())))
+                                                                                                                                                                  ^
+1 error[0m
+2023.03.30 09:29:26 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:26 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: illegal start of expression
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg1.getSecond()) > ))
+                                                                                                                                                                   ^
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg1.getSecond()) > ))
+                                                                                                                                                                     ^
+2 errors[0m
+2023.03.30 09:29:27 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:27 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg1.getSecond()) > 1))
+                                                                                                                                                                      ^
+1 error[0m
+2023.03.30 09:29:38 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:39 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java. Output:
+/home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java:81: error: ';' expected
+            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg1.getSecond().compareTo(arg1.getSecond()) > 1))? 1 : -1
+                                                                                                                                                                              ^
+1 error[0m
+2023.03.30 09:29:39 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:48 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:29:51 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:30:08 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:30:14 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 09:30:15 WARN  no build target for: /home/cytech/Travail/S2/Java/tpVscode/TP10/src/main/java/com/example/tp/paires/Paire.java[0m
+2023.03.30 11:32:13 INFO  Shutting down server[0m
+2023.03.30 11:32:13 INFO  shutting down Metals[0m
+2023.03.30 11:32:13 INFO  Exiting server[0m

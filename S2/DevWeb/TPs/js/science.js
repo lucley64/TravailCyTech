@@ -2,6 +2,7 @@ var lens;
 var result;
 var image;
 function openTab(elem) {
+    var _a, _b;
     var tab = elem.innerHTML;
     var tabs = document.querySelectorAll("div.tab");
     tabs.forEach(function (tab) { return tab.hidden = true; });
@@ -12,6 +13,7 @@ function openTab(elem) {
     elem.className += " active";
     var openTab = document.getElementById(tab);
     openTab.hidden = false;
+    (_a = window.parent) === null || _a === void 0 ? void 0 : _a.history.replaceState(null, (_b = window.parent) === null || _b === void 0 ? void 0 : _b.document.title, "?menu=La science&cat=" + tab);
 }
 var stock = true;
 function afficherStock() {
@@ -91,5 +93,6 @@ window.onload = function () {
     imgs.forEach(function (image) {
         image.addEventListener("mousemove", moveLens);
     });
-    document.querySelector("#this-btn").click();
+    var a = document.querySelector("#this-btn");
+    (a != null ? a : document.querySelector("#tab-buttons > button:nth-child(1)")).click();
 };

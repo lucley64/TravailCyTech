@@ -1,22 +1,14 @@
 window.onload = () => {
-    const errorCont: HTMLDivElement = document.getElementById("ErrorContainer") as HTMLDivElement;
-    const inp: HTMLInputElement = document.getElementById(errorCont?.children[0]?.getAttribute("name") + "") as HTMLInputElement;
-    if (inp?.name == "genreContact") {
-        inp?.parentElement?.insertBefore(errorCont, inp.previousElementSibling);
-    }
-    else {
-        inp?.parentNode?.insertBefore(errorCont, inp);
-    }
+    const form: HTMLFormElement = document.querySelector("#formContact") as HTMLFormElement;
+    form.onsubmit = (ev: SubmitEvent) => {
+        ev.preventDefault();
+        console.log(ev);
+        const form = ev.currentTarget as HTMLFormElement;
+        const elems = form.elements;
 
-    const form: HTMLButtonElement = document.getElementById("submitBtn") as HTMLButtonElement;
-    form.onclick = (ev) => {
-        const genreDiv: HTMLDivElement = document.getElementById("genreContactDiv") as HTMLDivElement;
-        const genreInp: HTMLInputElement = document.getElementById("genreContact") as HTMLInputElement;
-        genreDiv.childNodes.forEach((val) => {
-            const inp = val as HTMLInputElement;
-            if (inp.checked) {
-                genreInp.value = inp.id;
-            }
-        });
-    };
+        const nom = elems.namedItem("nomContact") as HTMLInputElement;
+        
+        const nomValid = nom.value.length > 0;
+        
+    }
 }

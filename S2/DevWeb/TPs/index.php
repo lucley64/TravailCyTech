@@ -23,18 +23,18 @@
         <button id="navBtn" onclick="toggleNav(this.nextElementSibling)"><img src="./img/56763.png" alt="nav" height="12px" width="12px"></button>
         <div id="navCont" hidden>
             <h2>Navigation</h2>
-            <button id="<?php if ($_GET['menu'] != "./science.php" && $_GET['menu'] != "./contact.php") {
+            <button id="<?php if ($_GET['menu'] != "La science" && $_GET['menu'] != "Contact") {
                             echo "this";
-                        } ?>" class="nav" onclick="changeUrl(event, './accueil.php')">Accueil</button>
-            <button id="<?php if ($_GET['menu'] == "./science.php") {
+                        } ?>" class="nav" onclick="changeUrl(event, 'accueil.php')">Accueil</button>
+            <button id="<?php if ($_GET['menu'] == "La science") {
                             echo "this";
-                        } ?>" class="nav" onclick="changeUrl(event, './science.php<?php
-                                                                                    if ($_GET['cat']) {
-                                                                                        echo "?cat=$_GET[cat]";
-                                                                                    } ?>')">La science</button>
-            <button id="<?php if ($_GET['menu'] == "./contact.php") {
+                        } ?>" class="nav" onclick="changeUrl(event, 'science.php<?php
+                                                                                if ($_GET['cat']) {
+                                                                                    echo "?cat=$_GET[cat]";
+                                                                                } ?>')">La science</button>
+            <button id="<?php if ($_GET['menu'] == "Contact") {
                             echo "this";
-                        } ?>" class="nav" onclick="changeUrl(event, './contact.php')">Contact</button>
+                        } ?>" class="nav" onclick="changeUrl(event, 'contact.php')">Contact</button>
         </div>
     </div>
     <main>
@@ -45,6 +45,7 @@
         <br />
         <p>CY tech</p>
     </footer>
+    <!-- <?php var_dump($_GET); ?> -->
 </body>
 
 </html>

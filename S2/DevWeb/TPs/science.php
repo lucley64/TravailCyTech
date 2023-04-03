@@ -80,7 +80,6 @@
         }
 
 
-        var_dump($_GET);
         ?>
         <div id="downMenu">
             <button id="sockButton" class="menu" onclick="afficherStock()">Afficher stocks</button>

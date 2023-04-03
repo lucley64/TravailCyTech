@@ -13,6 +13,7 @@ function openTab(elem: HTMLButtonElement) {
     elem.className += " active";
     const openTab: HTMLDivElement = document.getElementById(tab) as HTMLDivElement;
     openTab.hidden = false;
+    window.parent?.history.replaceState(null, window.parent?.document.title, "?menu=La science&cat=" + tab);
 }
 
 var stock: boolean = true;
@@ -98,5 +99,6 @@ window.onload = () => {
     imgs.forEach(image => {
         image.addEventListener("mousemove", moveLens);
     });
-    (document.querySelector("#this-btn") as HTMLButtonElement).click();
+    const a = document.querySelector("#this-btn");
+    ((a!=null? a : document.querySelector("#tab-buttons > button:nth-child(1)")) as HTMLButtonElement).click();
 }

@@ -14,12 +14,22 @@ input[type=date] {
     border-radius: 4px;
 }
 
-div#genreContactDiv {
+
+label#genreContactLabel {
     width: 100%;
     resize: vertical;
+    display: flex;
+    padding: 12px 12px 12px 0;
+}
+
+label#genreContactLabel>label {
+    display: inline-block;
+    padding: 12px 12px 12px 0;
+    width: auto;
 }
 
 label {
+    width: 100%;
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
@@ -65,7 +75,7 @@ form>button:hover {
     clear: both;
 }
 
-form>div#ErrorContainer{
+form>div#ErrorContainer {
     border: 1px solid;
     margin: 10px 0px;
     padding: 15px 10px 15px 50px;
@@ -74,4 +84,21 @@ form>div#ErrorContainer{
     color: #D8000C;
     background-color: #FFBABA;
     background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+
+.error {
+    width: 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
 }

@@ -20,7 +20,7 @@ function changeUrl(ev, link) {
     });
     ev.target.className += " active";
     ev.target.disabled = true;
-    window.history.replaceState(null, document.title, updateUrlParameter(window.location.href, "menu", link));
+    window.history.replaceState(null, document.title, "?menu=" + ev.target.innerHTML);
 }
 window.onload = function () {
     document.querySelector("#this").click();
@@ -33,21 +33,4 @@ window.onchange = function () {
 };
 function toggleNav(elem) {
     elem.hidden = !elem.hidden;
-}
-function updateUrlParameter(url, param, value) {
-    var newUrl = "";
-    var tempArray = url.split("?");
-    var additionalUrl = tempArray[1];
-    var temp = "";
-    if (additionalUrl) {
-        tempArray = additionalUrl.split("?");
-        for (var i = 0; i < tempArray.length; i++) {
-            if (tempArray[i].split('=')[0] != param) {
-                newUrl += temp + tempArray[i];
-                temp = "&";
-            }
-        }
-    }
-    var rows_txt = temp + "" + param + "=" + value;
-    return "?" + newUrl + rows_txt;
 }
