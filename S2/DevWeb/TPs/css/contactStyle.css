@@ -75,15 +75,15 @@ form>button:hover {
     clear: both;
 }
 
-form>div#ErrorContainer {
-    border: 1px solid;
-    margin: 10px 0px;
-    padding: 15px 10px 15px 50px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    color: #D8000C;
-    background-color: #FFBABA;
-    background-image: url('https://i.imgur.com/GnyDvKN.png');
+input.invalid,
+textarea.invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+input:focus.invalid,
+textarea:focus.invalid {
+    outline: none;
 }
 
 
@@ -97,6 +97,8 @@ form>div#ErrorContainer {
     border-radius: 0 0 5px 5px;
 
     box-sizing: border-box;
+
+    display: inherit;
 }
 
 .error.active {
