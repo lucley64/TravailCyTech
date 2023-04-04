@@ -45,7 +45,6 @@
         <br />
         <p>CY tech</p>
     </footer>
-    <!-- <?php var_dump($_GET); ?> -->
 </body>
 
 </html>
