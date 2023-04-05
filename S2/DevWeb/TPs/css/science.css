@@ -60,7 +60,7 @@ button.menu {
 
 button.menu:hover,
 button.menu.active {
-    background-color: hsl(32, 100%, 50%);
+    background-color: #ff8800;
 }
 
 button.panier {

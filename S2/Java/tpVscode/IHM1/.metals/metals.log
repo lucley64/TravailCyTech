@@ -451,3 +451,6 @@ INFO: Unsupported notification method: $/setTrace
 2023.04.05 08:27:52 INFO  skipping build import with status 'Dismissed'
 Apr 05, 2023 8:30:06 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.04.05 08:30:25 INFO  Shutting down server
+2023.04.05 08:30:25 INFO  shutting down Metals
+2023.04.05 08:30:25 INFO  Exiting server

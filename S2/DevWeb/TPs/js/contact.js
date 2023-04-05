@@ -18,7 +18,7 @@ window.onload = function () {
             prenom.className = "invalid";
         }
         var mail = elems.namedItem("mailContact");
-        var mailValid = mail.value.length > 0 && mail.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+        var mailValid = mail.value.length > 0 && mail.value.match(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
         if (!mailValid) {
             mail.nextElementSibling.innerHTML = "Erreur cet element est requis";
             mail.nextElementSibling.className = "error active";

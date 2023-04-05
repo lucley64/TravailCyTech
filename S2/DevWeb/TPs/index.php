@@ -22,6 +22,17 @@
     <div id="menu">
         <button id="navBtn" onclick="toggleNav(this.nextElementSibling)"><img src="./img/56763.png" alt="nav" height="12px" width="12px"></button>
         <div id="navCont" hidden>
+            <div id="users">
+                <?php
+                session_start();
+                if (isset($_SESSION['login'])) {
+                    echo "<button class=\"nav\" onclick=\"window.location.href='logout.php'\">Se Déconnecter</button>";
+                } else {
+                    echo "<button class=\"nav\" onclick=\"window.location.href='login.php'\">Se connecter</button>";
+                    echo "<button class=\"nav\" onclick=\"window.location.href='signin.php'\">Créer compte</button>";
+                }
+                ?>
+            </div>
             <h2>Navigation</h2>
             <button id="<?php if ($_GET['menu'] != "La science" && $_GET['menu'] != "Contact") {
                             echo "this";
