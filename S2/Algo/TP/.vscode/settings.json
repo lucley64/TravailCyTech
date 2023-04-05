@@ -1,0 +1,9 @@
+{
+    "files.watcherExclude": {
+        "**/target": true
+    },
+    "java.project.sourcePaths": [
+        "src/main/java"
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic"
+}

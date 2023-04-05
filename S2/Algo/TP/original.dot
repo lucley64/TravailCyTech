@@ -1,0 +1,43 @@
+digraph G {
+  A
+  B
+  C
+  D
+  E
+  D -> E [
+    label = 2
+  ];
+  B -> C [
+    label = 27
+  ];
+  D -> D [
+    label = 27
+  ];
+  E -> A [
+    label = 20
+  ];
+  A -> D [
+    label = 19
+  ];
+  D -> B [
+    label = 29
+  ];
+  E -> B [
+    label = 1
+  ];
+  C -> C [
+    label = 18
+  ];
+  E -> D [
+    label = 23
+  ];
+  B -> D [
+    label = 18
+  ];
+  D -> C [
+    label = 14
+  ];
+  C -> B [
+    label = 23
+  ];
+}
