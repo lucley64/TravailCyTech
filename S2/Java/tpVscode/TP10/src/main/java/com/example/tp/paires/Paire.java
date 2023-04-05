@@ -1,8 +1,10 @@
 package com.example.tp.paires;
 
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
 import java.util.Comparator;
 
-public class Paire<X, Y> implements Cloneable {
+public class Paire<X extends Comparable<X>, Y extends Comparable<Y>> implements Cloneable, Comparable<Paire<X, Y>> {
     private X first;
     private Y second;
 
@@ -72,19 +74,67 @@ public class Paire<X, Y> implements Cloneable {
         return (p.getFirst().compareTo(p.getSecond()) > 0 ? p.getFirst() : p.getSecond());
     }
 
-    public static class PaireComp<X1 extends Comparable<X1>, Y1 extends Comparable<Y1>> implements Comparator<Paire<X1, Y1>>{
-
-        @Override
-        public int compare(Paire<X1, Y1> arg0, Paire<X1, Y1> arg1) {
-            if (arg0.equals(arg1))
-                return 0;
-            return ((arg0.getFirst().compareTo(arg1.getFirst()) > 1) || (arg0.getFirst().equals(arg1.getFirst()) && arg0.getSecond().compareTo(arg1.getSecond()) > 1))? 1 : -1;
-        }
-
-    }
-
-    public static <X1 extends Number, X2 extends Number> double sumOfPaire(Paire<X1, X2> p){
+    public static <X1 extends Number & Comparable<X1>, X2 extends Number & Comparable<X2>> double sumOfPaire(
+            Paire<X1, X2> p) {
         return p.getFirst().doubleValue() + p.getSecond().doubleValue();
     }
 
+    @Override
+    public int compareTo(Paire<X, Y> o) {
+        if (equals(o)) {
+            return 0;
+        }
+        if (getFirst().compareTo(o.getFirst()) > 0
+                || (getFirst().equals(o.getFirst()) && getSecond().compareTo(o.getSecond()) > 0)) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+
+    public static class CompPaire1<X1 extends Comparable<X1>, Y1 extends Comparable<Y1>>
+            implements Comparator<Paire<X1, Y1>> {
+        @Override
+        public int compare(Paire<X1, Y1> arg0, Paire<X1, Y1> arg1) {
+            return arg0.getFirst().compareTo(arg1.getFirst());
+        }
+    }
+
+    public static class CompPaire2<X1 extends Comparable<X1>, Y1 extends Comparable<Y1>>
+            implements Comparator<Paire<X1, Y1>> {
+        @Override
+        public int compare(Paire<X1, Y1> arg0, Paire<X1, Y1> arg1) {
+            return arg0.getSecond().compareTo(arg1.getSecond());
+        }
+    }
+
+    public static class CompPaireSum<X1 extends Number & Comparable<X1>, Y1 extends Number & Comparable<Y1>>
+            implements Comparator<Paire<X1, Y1>> {
+        @Override
+        public int compare(Paire<X1, Y1> arg0, Paire<X1, Y1> arg1) {
+            double sum1 = sumOfPaire(arg0);
+            double sum2 = sumOfPaire(arg1);
+            if (sum1 < sum2) {
+                return -1;
+            } else if (sum1 > sum2) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Paire<Integer, Double> p1 = new Paire<>(12, 0.5);
+        Paire<Integer, Double> p2 = new Paire<>(24, 75.2);
+        Paire<Integer, Double> p3 = new Paire<>(24, 99.0);
+
+        Logger logger = System.getLogger("null");
+        logger.log(Level.INFO, "p1.compareTo(p2) = " + p1.compareTo(p2));
+        logger.log(Level.INFO, "p3.compareTo(p2) = " + p3.compareTo(p2));
+        logger.log(Level.INFO, "p2.compareTo(p2) = " + p2.compareTo(p2));
+        logger.log(Level.INFO, "new CompPaire1().compare(p2, p3) = " + new CompPaire1<Integer, Double>().compare(p2, p3));
+        logger.log(Level.INFO, "new CompPaire2().compare(p2, p3) = " + new CompPaire2<Integer, Double>().compare(p2, p3));
+        logger.log(Level.INFO, "new CompPaireSum().compare(p2, p3) = " + new CompPaireSum<Integer, Double>().compare(p2, p3));
+    }
 }
