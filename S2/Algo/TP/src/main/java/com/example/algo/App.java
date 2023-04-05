@@ -23,34 +23,34 @@ import net.bubuntu.graph.VertexDirected;
 
 public class App {
 
-    private static void creerAretes(final GraphSimpleValuated<Character, Integer> graph, final int nbSommets,
+    private static void creerAretes(final GraphSimpleValuated<Integer, Integer> graph, final int nbSommets,
             final int nbAretes) {
         graph.getEdges().clear();
         var r = new Random(System.currentTimeMillis());
         while (graph.getEdges().size() < nbAretes) {
-            final Character head = (char) ('A' + (r.nextInt(nbSommets)));
-            final Character tail = (char) ('A' + (r.nextInt(nbSommets)));
+            final Integer head = (r.nextInt(nbSommets));
+            final Integer tail = (r.nextInt(nbSommets));
             graph.getEdges().add(head, tail, (r.nextInt(30)) + 1);
         }
     }
 
-    private static void creerGrapheAleatoire(final GraphSimpleValuated<Character, Integer> graph, final int nbSommets,
+    private static void creerGrapheAleatoire(final GraphSimpleValuated<Integer, Integer> graph, final int nbSommets,
             final int nbAretes) {
         creerSommets(graph, nbSommets);
         creerAretes(graph, nbSommets, nbAretes);
     }
 
-    private static void creerSommets(final GraphSimple<Character> graph, final int nbSommets) {
+    private static void creerSommets(final GraphSimple<Integer> graph, final int nbSommets) {
         graph.getVertices().clear();
         for (int i = 0; i < nbSommets; ++i) {
-            graph.getVertices().add((char) ('A' + i));
+            graph.getVertices().add(i);
         }
     }
 
-    private static void marquesSuivants(VertexDirected<Character> sommet,
-            GraphVIZSimpleDirectedValuated<Character, Integer> original,
-            final Map<VertexDirected<Character>, VertexDirected<Character>> peres,
-            final Map<VertexDirected<Character>, Integer> poids) {
+    private static void marquesSuivants(VertexDirected<Integer> sommet,
+            GraphVIZSimpleDirectedValuated<Integer, Integer> original,
+            final Map<VertexDirected<Integer>, VertexDirected<Integer>> peres,
+            final Map<VertexDirected<Integer>, Integer> poids) {
         if (sommet != null) {
             var suivants = sommet.getNextVertices();
             for (var next : suivants) {
@@ -67,14 +67,12 @@ public class App {
         }
     }
 
-    private static void construireGraphe(final Map<VertexDirected<Character>, VertexDirected<Character>> peres,
-            final GraphVIZSimpleDirectedValuated<Character, Integer> original,
-            final GraphVIZSimpleDirectedValuated<Character, Integer> resultat) {
+    private static void construireGraphe(final Map<VertexDirected<Integer>, VertexDirected<Integer>> peres,
+            final GraphVIZSimpleDirectedValuated<Integer, Integer> original,
+            final GraphVIZSimpleDirectedValuated<Integer, Integer> resultat) {
         for (var kv : peres.entrySet()) {
             try {
-                if (!resultat.getVertices().contains(kv.getValue())) {
-                    resultat.getVertices().add(kv.getValue());
-                }
+                resultat.getVertices().add(kv.getValue());
                 resultat.getVertices().add(kv.getKey());
                 resultat.getEdges().add(kv.getValue(), kv.getKey(),
                         original.getEdges().get(kv.getValue(), kv.getKey()).getValue());
@@ -84,16 +82,16 @@ public class App {
         }
     }
 
-    private static void dijkstra(final GraphVIZSimpleDirectedValuated<Character, Integer> original,
-            final Character depart, final GraphVIZSimpleDirectedValuated<Character, Integer> resultat) {
-        final Set<VertexDirected<Character>> marques = new HashSet<>();
-        final Map<VertexDirected<Character>, VertexDirected<Character>> peres = new HashMap<>();
-        final Map<VertexDirected<Character>, Integer> poids = new HashMap<>();
+    private static void dijkstra(final GraphVIZSimpleDirectedValuated<Integer, Integer> original,
+            final Integer depart, final GraphVIZSimpleDirectedValuated<Integer, Integer> resultat) {
+        final Set<VertexDirected<Integer>> marques = new HashSet<>();
+        final Map<VertexDirected<Integer>, VertexDirected<Integer>> peres = new HashMap<>();
+        final Map<VertexDirected<Integer>, Integer> poids = new HashMap<>();
 
         initialisation(poids, original, depart);
 
         do {
-            final VertexDirected<Character> sommet = plusPetitSommetNonMarque(marques, poids);
+            final VertexDirected<Integer> sommet = plusPetitSommetNonMarque(marques, poids);
             marquesSuivants(sommet, original, peres, poids);
             marques.add(sommet);
         } while (marques.size() < original.getVertices().size());
@@ -101,9 +99,9 @@ public class App {
         construireGraphe(peres, original, resultat);
     }
 
-    private static void initialisation(final Map<VertexDirected<Character>, Integer> poids,
-            final GraphVIZSimpleDirectedValuated<Character, Integer> graph, final Character depart) {
-        for (final VertexDirected<Character> sommet : graph.getVertices()) {
+    private static void initialisation(final Map<VertexDirected<Integer>, Integer> poids,
+            final GraphVIZSimpleDirectedValuated<Integer, Integer> graph, final Integer depart) {
+        for (final VertexDirected<Integer> sommet : graph.getVertices()) {
             if (sommet.getValue().equals(depart)) {
                 poids.put(sommet, 0);
             } else {
@@ -113,14 +111,14 @@ public class App {
     }
 
     public static void main(final String[] args) throws IOException, EGraphIncorrectVertex {
-        final GraphVIZSimpleDirectedValuated<Character, Integer> original = new GraphVIZSimpleDirectedValuated<>(
-                0, Convertor.CHARACTER, Convertor.INTEGER);
-        final GraphVIZSimpleDirectedValuated<Character, Integer> resultat = new GraphVIZSimpleDirectedValuated<>(
-                0, Convertor.CHARACTER, Convertor.INTEGER);
+        final GraphVIZSimpleDirectedValuated<Integer, Integer> original = new GraphVIZSimpleDirectedValuated<>(
+                0, Convertor.INTEGER, Convertor.INTEGER);
+        final GraphVIZSimpleDirectedValuated<Integer, Integer> resultat = new GraphVIZSimpleDirectedValuated<>(
+                0, Convertor.INTEGER, Convertor.INTEGER);
 
-        final int NB_SOMMETS = 5;
-        final int NB_ARETES = 12;
-        final Character DEPART = 'A';
+        final int NB_SOMMETS = 100;
+        final int NB_ARETES = 2000;
+        final Integer DEPART = 0;
         final String DOSSIER = ""; // par defaut, dans le dossier du projet Eclipse
 
         creerGrapheAleatoire(original, NB_SOMMETS, NB_ARETES);
@@ -133,9 +131,9 @@ public class App {
 
     }
 
-    private static VertexDirected<Character> plusPetitSommetNonMarque(final Set<VertexDirected<Character>> marques,
-            final Map<VertexDirected<Character>, Integer> poids) {
-        VertexDirected<Character> min = null;
+    private static VertexDirected<Integer> plusPetitSommetNonMarque(final Set<VertexDirected<Integer>> marques,
+            final Map<VertexDirected<Integer>, Integer> poids) {
+        VertexDirected<Integer> min = null;
         for (var kv : poids.entrySet()) {
             if (!marques.contains(kv.getKey()) && (min == null || poids.get(min).compareTo(kv.getValue()) > 0)) {
                 min = kv.getKey();
@@ -144,8 +142,8 @@ public class App {
         return min;
     }
 
-    private static boolean verifDijkstra(final GraphVIZSimpleDirectedValuated<Character, Integer> graph,
-            final Character depart) throws EGraphIncorrectVertex {
+    private static boolean verifDijkstra(final GraphVIZSimpleDirectedValuated<Integer, Integer> graph,
+            final Integer depart) throws EGraphIncorrectVertex {
         boolean result;
 
         result = verifDijkstraDepartExistant(graph, depart);
@@ -155,27 +153,27 @@ public class App {
         return result;
     }
 
-    private static boolean verifDijkstraDepartExistant(final GraphVIZSimpleDirectedValuated<Character, Integer> graph,
-            final Character depart) {
+    private static boolean verifDijkstraDepartExistant(final GraphVIZSimpleDirectedValuated<Integer, Integer> graph,
+            final Integer depart) {
         return graph.getVertices().contains(depart);
     }
 
     private static boolean verifDijkstraSommetsAtteignables(
-            final GraphVIZSimpleDirectedValuated<Character, Integer> graph, final Character depart)
+            final GraphVIZSimpleDirectedValuated<Integer, Integer> graph, final Integer depart)
             throws EGraphIncorrectVertex {
-        final VertexDirected<Character> sommetDepart = graph.getVertices().get(depart);
+        final VertexDirected<Integer> sommetDepart = graph.getVertices().get(depart);
 
-        final Deque<VertexDirected<Character>> pile = new LinkedBlockingDeque<>();
-        final Set<VertexDirected<Character>> marques = new HashSet<>();
+        final Deque<VertexDirected<Integer>> pile = new LinkedBlockingDeque<>();
+        final Set<VertexDirected<Integer>> marques = new HashSet<>();
 
         pile.add(sommetDepart);
 
         while (!(pile.isEmpty())) {
-            final VertexDirected<Character> sommetPile = pile.pop(); // recupere le sommet et depile
+            final VertexDirected<Integer> sommetPile = pile.pop(); // recupere le sommet et depile
             if (!(marques.contains(sommetPile))) {
                 marques.add(sommetPile);
 
-                for (final VertexDirected<Character> suivant : sommetPile.getNextVertices()) {
+                for (final VertexDirected<Integer> suivant : sommetPile.getNextVertices()) {
                     pile.add(suivant);
                 }
             }
@@ -185,9 +183,9 @@ public class App {
     }
 
     private static boolean verifDijkstraValuationsPositives(
-            final GraphVIZSimpleDirectedValuated<Character, Integer> graph) {
+            final GraphVIZSimpleDirectedValuated<Integer, Integer> graph) {
         boolean result = true;
-        for (final EdgeDirectedValuated<Character, Integer> e : graph.getEdges()) {
+        for (final EdgeDirectedValuated<Integer, Integer> e : graph.getEdges()) {
             result = result && (e.getValue() >= 0);
         }
         return result;

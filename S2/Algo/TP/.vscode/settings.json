@@ -5,5 +5,6 @@
     "java.project.sourcePaths": [
         "src/main/java"
     ],
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "graphviz-interactive-preview.renderLockAdditionalTimeout": 1000
 }
