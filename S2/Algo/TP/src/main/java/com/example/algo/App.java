@@ -5,11 +5,13 @@ package com.example.algo;
  */
 
 import java.io.IOException;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
-import java.util.Stack;
+import java.util.concurrent.LinkedBlockingDeque;
 
 import net.bubuntu.graph.Convertor;
 import net.bubuntu.graph.EGraphIncorrectVertex;
@@ -24,10 +26,11 @@ public class App {
     private static void creerAretes(final GraphSimpleValuated<Character, Integer> graph, final int nbSommets,
             final int nbAretes) {
         graph.getEdges().clear();
+        var r = new Random(System.currentTimeMillis());
         while (graph.getEdges().size() < nbAretes) {
-            final Character head = (char) ('A' + (int) (Math.random() * nbSommets));
-            final Character tail = (char) ('A' + (int) (Math.random() * nbSommets));
-            graph.getEdges().add(head, tail, (int) (Math.random() * 30) + 1);
+            final Character head = (char) ('A' + (r.nextInt(nbSommets)));
+            final Character tail = (char) ('A' + (r.nextInt(nbSommets)));
+            graph.getEdges().add(head, tail, (r.nextInt(30)) + 1);
         }
     }
 
@@ -48,23 +51,25 @@ public class App {
             GraphVIZSimpleDirectedValuated<Character, Integer> original,
             final Map<VertexDirected<Character>, VertexDirected<Character>> peres,
             final Map<VertexDirected<Character>, Integer> poids) {
-        var suivants = sommet.getNextVertices();
-        for (var next : suivants) {
-            try {
-                var a = original.getEdges().get(sommet, next).getValue() + poids.get(sommet);
-                if (poids.get(next).intValue() > a) {
-                    poids.replace(next, a);
-                    peres.put(next, sommet);
+        if (sommet != null) {
+            var suivants = sommet.getNextVertices();
+            for (var next : suivants) {
+                try {
+                    var a = original.getEdges().get(sommet, next).getValue() + poids.get(sommet);
+                    if (poids.get(next).intValue() > a) {
+                        poids.replace(next, a);
+                        peres.put(next, sommet);
+                    }
+                } catch (Exception e) {
+                    // unhandeled exception
                 }
-            } catch (Exception e) {
-                // unhandeled
             }
         }
     }
 
     private static void construireGraphe(final Map<VertexDirected<Character>, VertexDirected<Character>> peres,
             final GraphVIZSimpleDirectedValuated<Character, Integer> original,
-            final GraphVIZSimpleDirectedValuated<Character, Integer> resultat) throws EGraphIncorrectVertex {
+            final GraphVIZSimpleDirectedValuated<Character, Integer> resultat) {
         for (var kv : peres.entrySet()) {
             try {
                 if (!resultat.getVertices().contains(kv.getValue())) {
@@ -80,11 +85,10 @@ public class App {
     }
 
     private static void dijkstra(final GraphVIZSimpleDirectedValuated<Character, Integer> original,
-            final Character depart, final GraphVIZSimpleDirectedValuated<Character, Integer> resultat)
-            throws EGraphIncorrectVertex {
-        final Set<VertexDirected<Character>> marques = new HashSet<VertexDirected<Character>>();
-        final Map<VertexDirected<Character>, VertexDirected<Character>> peres = new HashMap<VertexDirected<Character>, VertexDirected<Character>>();
-        final Map<VertexDirected<Character>, Integer> poids = new HashMap<VertexDirected<Character>, Integer>();
+            final Character depart, final GraphVIZSimpleDirectedValuated<Character, Integer> resultat) {
+        final Set<VertexDirected<Character>> marques = new HashSet<>();
+        final Map<VertexDirected<Character>, VertexDirected<Character>> peres = new HashMap<>();
+        final Map<VertexDirected<Character>, Integer> poids = new HashMap<>();
 
         initialisation(poids, original, depart);
 
@@ -98,8 +102,7 @@ public class App {
     }
 
     private static void initialisation(final Map<VertexDirected<Character>, Integer> poids,
-            final GraphVIZSimpleDirectedValuated<Character, Integer> graph, final Character depart)
-            throws EGraphIncorrectVertex {
+            final GraphVIZSimpleDirectedValuated<Character, Integer> graph, final Character depart) {
         for (final VertexDirected<Character> sommet : graph.getVertices()) {
             if (sommet.getValue().equals(depart)) {
                 poids.put(sommet, 0);
@@ -110,9 +113,9 @@ public class App {
     }
 
     public static void main(final String[] args) throws IOException, EGraphIncorrectVertex {
-        final GraphVIZSimpleDirectedValuated<Character, Integer> original = new GraphVIZSimpleDirectedValuated<Character, Integer>(
+        final GraphVIZSimpleDirectedValuated<Character, Integer> original = new GraphVIZSimpleDirectedValuated<>(
                 0, Convertor.CHARACTER, Convertor.INTEGER);
-        final GraphVIZSimpleDirectedValuated<Character, Integer> resultat = new GraphVIZSimpleDirectedValuated<Character, Integer>(
+        final GraphVIZSimpleDirectedValuated<Character, Integer> resultat = new GraphVIZSimpleDirectedValuated<>(
                 0, Convertor.CHARACTER, Convertor.INTEGER);
 
         final int NB_SOMMETS = 5;
@@ -143,9 +146,9 @@ public class App {
 
     private static boolean verifDijkstra(final GraphVIZSimpleDirectedValuated<Character, Integer> graph,
             final Character depart) throws EGraphIncorrectVertex {
-        boolean result = true;
+        boolean result;
 
-        result = result && verifDijkstraDepartExistant(graph, depart);
+        result = verifDijkstraDepartExistant(graph, depart);
         result = result && verifDijkstraValuationsPositives(graph);
         result = result && verifDijkstraSommetsAtteignables(graph, depart);
 
@@ -162,8 +165,8 @@ public class App {
             throws EGraphIncorrectVertex {
         final VertexDirected<Character> sommetDepart = graph.getVertices().get(depart);
 
-        final Stack<VertexDirected<Character>> pile = new Stack<VertexDirected<Character>>();
-        final Set<VertexDirected<Character>> marques = new HashSet<VertexDirected<Character>>();
+        final Deque<VertexDirected<Character>> pile = new LinkedBlockingDeque<>();
+        final Set<VertexDirected<Character>> marques = new HashSet<>();
 
         pile.add(sommetDepart);
 

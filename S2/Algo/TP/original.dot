@@ -4,40 +4,40 @@ digraph G {
   C
   D
   E
-  D -> E [
-    label = 2
+  D -> A [
+    label = 5
   ];
-  B -> C [
-    label = 27
-  ];
-  D -> D [
-    label = 27
-  ];
-  E -> A [
-    label = 20
-  ];
-  A -> D [
-    label = 19
-  ];
-  D -> B [
-    label = 29
-  ];
-  E -> B [
-    label = 1
-  ];
-  C -> C [
-    label = 18
-  ];
-  E -> D [
-    label = 23
-  ];
-  B -> D [
-    label = 18
+  C -> E [
+    label = 13
   ];
   D -> C [
-    label = 14
+    label = 13
   ];
-  C -> B [
-    label = 23
+  E -> E [
+    label = 30
+  ];
+  C -> A [
+    label = 22
+  ];
+  D -> E [
+    label = 26
+  ];
+  E -> C [
+    label = 26
+  ];
+  E -> D [
+    label = 24
+  ];
+  B -> C [
+    label = 21
+  ];
+  A -> D [
+    label = 6
+  ];
+  C -> C [
+    label = 7
+  ];
+  C -> D [
+    label = 1
   ];
 }

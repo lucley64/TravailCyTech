@@ -4,16 +4,16 @@ digraph G {
   C
   D
   E
-  D -> C [
-    label = 14
-  ];
-  D -> E [
-    label = 2
-  ];
-  E -> B [
-    label = 1
+  A -> C [
+    label = 3
   ];
   A -> D [
+    label = 7
+  ];
+  C -> E [
+    label = 6
+  ];
+  E -> B [
     label = 19
   ];
 }
