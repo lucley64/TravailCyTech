@@ -1,0 +1,12 @@
+#cliqueMoi{
+    -fx-background-image: url("../img/unpressed.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%;
+}
+
+#cliqueMoi:pressed{
+    -fx-background-image: url("../img/pressed.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 50%;
+
+}
