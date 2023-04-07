@@ -1,27 +1,27 @@
 package com.example.optilin;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.StringJoiner;
 import java.util.stream.IntStream;
 import static java.util.Comparator.comparingDouble;
 
 public class Probleme {
     public static class Contrainte {
-        private Double[] coeficients;
+        private List<Double> coeficients;
         private double secondMembre;
 
-        public Contrainte(Double[] coeficients, double secondMembre) {
+        public Contrainte(List<Double> coeficients, double secondMembre) {
             this.coeficients = coeficients;
             this.secondMembre = secondMembre;
         }
 
-        public Double[] getCoeficients() {
+        public List<Double> getCoeficients() {
             return coeficients;
         }
 
-        public void setCoeficients(Double[] coeficients) {
+        public void setCoeficients(List<Double> coeficients) {
             this.coeficients = coeficients;
         }
 
@@ -46,17 +46,17 @@ public class Probleme {
     }
 
     public static class Critaire {
-        private Double[] coeficients;
+        private List<Double> coeficients;
 
-        public Critaire(Double[] coeficients) {
+        public Critaire(List<Double> coeficients) {
             this.coeficients = coeficients;
         }
 
-        public Double[] getCoeficients() {
+        public List<Double> getCoeficients() {
             return coeficients;
         }
 
-        public void setCoeficients(Double[] coeficients) {
+        public void setCoeficients(List<Double> coeficients) {
             this.coeficients = coeficients;
         }
 
@@ -76,7 +76,7 @@ public class Probleme {
     private List<Contrainte> contraintes = new ArrayList<>();
     private Critaire critaire;
 
-    public Probleme(Double[] coefCritaire) {
+    public Probleme(List<Double> coefCritaire) {
         this.critaire = new Critaire(coefCritaire);
     }
 
@@ -106,11 +106,11 @@ public class Probleme {
         ret.add(critaire.toString());
         contraintes.forEach(c -> ret.add(c.toString()));
         StringJoiner sj2 = new StringJoiner(", ");
-        for (var i = 1; i < critaire.getCoeficients().length + 1; i++) {
+        for (var i = 1; i < critaire.getCoeficients().size() + 1; i++) {
             sj2.add("x" + i);
         }
         ret.add(sj2.toString() + " ≥ 0");
-        return ret.toString();
+        return "\n" + ret.toString();
     }
 
     public static class Tableau {
@@ -127,40 +127,46 @@ public class Probleme {
 
         public Tableau(Probleme pb) {
             var l = new ArrayList<Double>();
-            l.addAll(Arrays.asList(pb.critaire.coeficients));
-            l.addAll(List.of(0.0, 0.0, 0.0));
-            critair = new Ligne(l, 0.0, "f");
+            l.addAll(pb.critaire.coeficients);
             contraintes = new ArrayList<>();
             int i = 1;
             for (var c : pb.contraintes) {
-                l = new ArrayList<Double>();
-                l.addAll(Arrays.asList(c.coeficients));
+                var l2 = new ArrayList<Double>();
+                l2.addAll(c.coeficients);
                 for (var j = 0; j < pb.contraintes.size() - 1; j++) {
-                    l.add(0.0);
+                    l2.add(0.0);
                 }
-                l.add(pb.contraintes.size() - 1 + i - 1, 1.0);
-                contraintes.add(new Ligne(l, c.secondMembre, "y" + i++));
+                l2.add(pb.contraintes.size() - 1 + i - 1, 1.0);
+                l.add(0.0);
+                contraintes.add(new Ligne(l2, c.secondMembre, "y" + i++));
             }
+            critair = new Ligne(l, 0.0, "f");
         }
 
-        public void iteration() throws Exception {
+        public void iteration() throws ProblemeResoluException, ProblemeNonBorneException {
             var max = critair.maxIndex();
             var min = Double.MAX_VALUE;
             String minName = null;
-            if (max >= 0) {
-                for (var c : contraintes) {
-                    if (c.coefs.get(max) > 0 && min > c.secondMembre / c.coefs.get(max)) {
-                        min = c.secondMembre / c.coefs.get(max);
-                        minName = c.nom;
-                    }
+            if (critair.getCoefs().get(max) <= 0)
+                throw new ProblemeResoluException();
+
+            for (var c : contraintes) {
+                if (c.coefs.get(max) > 0 && min > (c.secondMembre / c.coefs.get(max))) {
+                    min = c.secondMembre / c.coefs.get(max);
+                    minName = c.nom;
                 }
             }
 
-            if (max < 0 || minName == null) {
-                throw new Exception("fin");
+            if (minName == null){
+                throw new ProblemeNonBorneException();
             }
 
-            var plusPetit = getFromName(minName);
+            var plusPetitOption = getFromName(minName);
+            if (plusPetitOption.isEmpty()) {
+                return;
+            }
+
+            var plusPetit = plusPetitOption.get();
             plusPetit.multiplication(1 / plusPetit.coefs.get(max));
             plusPetit.setNom(getColName(max + 1));
 
@@ -173,12 +179,12 @@ public class Probleme {
 
         }
 
-        public Ligne getFromName(String name) {
+        public Optional<Ligne> getFromName(String name) {
             for (var c : contraintes) {
                 if (c.nom.equals(name))
-                    return c;
+                    return Optional.of(c);
             }
-            return null;
+            return Optional.empty();
         }
 
         public String getColName(int col) {
@@ -193,13 +199,30 @@ public class Probleme {
 
         @Override
         public String toString() {
+            var x1 = getFromName("x1");
+            var x2 = getFromName("x2");
             var sj = new StringJoiner(", ");
-            for (var c : contraintes) {
-                sj.add(c.nom + ": " + c.secondMembre);
-            }
-            return "Optimum = (" + sj.toString() + "), Valeur = " + -critair.secondMembre;
+
+            x1.ifPresentOrElse(l -> sj.add("x1 : " + l.getSecondMembre()), () -> sj.add("x1 : 0.0"));
+            x2.ifPresentOrElse(l -> sj.add("x2 : " + l.getSecondMembre()), () -> sj.add("x2 : 0.0"));
+
+            return "Optimum = (" + sj.toString() + "), Valeur = " + -critair.getSecondMembre();
         }
 
+    }
+
+    public static class ProblemeResoluException extends Exception {
+
+        public ProblemeResoluException() {
+            super("Le problème est resolu");
+        }
+
+    }
+
+    public static class ProblemeNonBorneException extends Exception {
+        public ProblemeNonBorneException() {
+            super("Le problème est non borné");
+        }
     }
 
     public static class Ligne {
@@ -220,7 +243,7 @@ public class Probleme {
         public Ligne(Ligne that) {
             nom = that.nom;
             secondMembre = that.secondMembre;
-            coefs = List.copyOf(that.coefs);
+            coefs = new ArrayList<>(that.coefs);
         }
 
         public List<Double> getCoefs() {
@@ -236,7 +259,9 @@ public class Probleme {
         }
 
         public void multiplication(double coef) {
-            coefs.forEach(v -> v = v.doubleValue() * coef);
+            for (var i = 0; i < coefs.size(); i++) {
+                coefs.set(i, coefs.get(i) * coef);
+            }
             secondMembre *= coef;
         }
 
