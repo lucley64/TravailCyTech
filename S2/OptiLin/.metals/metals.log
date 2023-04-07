@@ -7302,3 +7302,6 @@ WARNING: Unmatched cancel notification for request id 11
 2023.04.07 09:58:34 INFO  time: code lens generation in 2.17s
 2023.04.07 09:58:34 INFO  time: code lens generation in 1.78s
 2023.04.07 09:58:34 INFO  time: code lens generation in 2.33s
+2023.04.07 09:58:46 INFO  Shutting down server
+2023.04.07 09:58:46 INFO  shutting down Metals
+2023.04.07 09:58:46 INFO  Exiting server
