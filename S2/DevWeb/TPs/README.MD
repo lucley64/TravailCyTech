@@ -1,3 +1,7 @@
-# TP1 de Dev Web
+# TP3 de Dev Web
 
-Pour executer le code, il faut simplement ouvrir le fichier index.html
+## Ouvrir le site
+
+    1- Importer la base de données
+    2- Modifier le fichier config.json pour la connextion bdd
+    3- Ouvrir le site via le serveur

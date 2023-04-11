@@ -1,10 +1,11 @@
 <?php
 session_start();
 if (isset($_SESSION["panier"])) {
-    $db = "ProduitsScience";
-    $host = "localhost";
-    $user = "user";
-    $passworddb = "password";
+    include "./php/bdd.php";
+    $db = getBdd();
+    $host = getHost();
+    $user = getLogin();
+    $passworddb = getPassword();
     $dbConnect = new PDO("mysql:host=" . $host . ";dbname=" . $db, $user, $passworddb);
     $panier = json_encode($_SESSION["panier"], JSON_UNESCAPED_UNICODE);
     $panier = str_replace("'", "\'", $panier);

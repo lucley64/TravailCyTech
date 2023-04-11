@@ -15,10 +15,11 @@
 <body>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $db = "ProduitsScience";
-        $host = "localhost";
-        $user = "user";
-        $passworddb = "password";
+        include "./php/bdd.php";
+        $db = getBdd();
+        $host = getHost();
+        $user = getLogin();
+        $passworddb = getPassword();
         $errEmpty = "Veuillez remplir ce champ.";
         $login = $_POST['login'];
         $password = $_POST['mdp'];
@@ -52,7 +53,7 @@
     }
     ?>
     <div id="container">
-    <button onclick="window.history.back()" class="nav">Retour</button>
+        <button onclick="window.history.back()" class="nav">Retour</button>
         <h1>Se login</h1>
         <form action="" method="post" id="login">
             <label for="login"> Login

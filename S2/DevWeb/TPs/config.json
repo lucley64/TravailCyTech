@@ -1,0 +1,8 @@
+{
+    "bdd": {
+        "name": "ProduitsScience",
+        "host": "localhost",
+        "login": "user",
+        "password": "password"
+    }
+}

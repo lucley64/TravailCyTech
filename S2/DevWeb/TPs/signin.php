@@ -21,10 +21,11 @@
         $data = htmlspecialchars($data);
         return $data;
     }
-    $db = "ProduitsScience";
-    $host = "localhost";
-    $user = "user";
-    $passworddb = "password";
+    include "./php/bdd.php";
+    $db = getBdd();
+    $host = getHost();
+    $user = getLogin();
+    $passworddb = getPassword();
     $invalid = "class = \"invalid\"";
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $login = $_POST['login'];
