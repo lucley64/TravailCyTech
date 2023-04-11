@@ -122,5 +122,8 @@ function viderPanier(elem) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "./php/viderPanier.php", true);
     xhr.send();
-    window.location.href = "";
+    xhr.onreadystatechange = function (ev) {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+            window.location.href = "";
+    };
 }

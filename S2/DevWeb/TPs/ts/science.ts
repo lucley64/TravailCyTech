@@ -133,6 +133,8 @@ function viderPanier(elem: HTMLButtonElement) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET',"./php/viderPanier.php", true);
     xhr.send();
-    window.location.href = "";
-
+    xhr.onreadystatechange = (ev) => {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+            window.location.href = "";
+    }
 }
