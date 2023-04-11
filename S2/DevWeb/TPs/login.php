@@ -43,6 +43,8 @@
                     session_start();
                     $_SESSION["login"] = $login;
                     $_SESSION["role"] = $fetch["Niveau"];
+                    $_SESSION["id"] = $fetch["Id"];
+                    $_SESSION["panier"] = json_decode($fetch["Panier"], true);
                     header('location: index.php');
                 }
             }

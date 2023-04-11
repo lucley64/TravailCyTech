@@ -13,7 +13,27 @@
 </head>
 
 <body>
+    <?php
+    session_start();
+    ?>
     <div id="contenu">
+        <div id="panier-menu" <?php if (!isset($_SESSION["panier"])) {
+                                    echo "hidden";
+                                } ?>>
+            <button class="menu" id="toggle" onclick="togglePanier(this)" >Voir panier</button>
+            <div id="panier" hidden>
+                <ul>
+                    <?php
+                    $panier = $_SESSION["panier"];
+                    foreach ($panier as $key => $value) {
+                        echo "<li>$key : $value</li>";
+                    }
+                    ?>
+
+                </ul>
+                <button class="menu" onclick="viderPanier(this)">Vider le panier</button>
+            </div>
+        </div>
         <?php
         $json = file_get_contents("json/produits.json");
         $obj = json_decode($json, true);
@@ -62,12 +82,12 @@
                 $value[prix] €
             </td>
             <td class=\"cmd\">
-                <div id=\"counter\">
+                <div class=\"counter\">
                     <button class=\"counter\" onclick=\"remCmd(this)\" disabled>-</button>
                     <input class=\"counter\" type=\"number\" value=\"0\" disabled />
                     <button class=\"counter\" onclick=\"addCmd(this)\">+</button>
                 </div>
-                <button id=\"panier\" class=\"panier\" onclick=\"\">Ajouter au panier</button>
+                <button name=\"$value[nom]\" id=\"panier\" class=\"panier\" onclick=\"ajouterAuPanier(this)\">Ajouter au panier</button>
             </td>
             <td class=\"qte\" hidden>
                 $value[stock]

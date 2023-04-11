@@ -1,9 +1,9 @@
 {
     "users": [
         {
-            "type": "admin",
+            "niveau": "99",
             "login": "admin",
-            "password": "$2y$10$aYvIh4Ur0.tHN7kUSklkCOFnibk1uHlW/Vg8BTnWeT478V1DRMbJ."
+            "password": "password"
         }
     ]
 }

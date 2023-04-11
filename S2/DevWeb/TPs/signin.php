@@ -55,14 +55,17 @@
             $res = $dbConnect->prepare("Insert into `user` (`mail`, `login`, `password`, `role`) values (?, ?, ?)");
             var_dump($res->execute([$mail, $login, $password, 3]));
             session_start();
+            $res = $dbConnect->prepare("select * from user where login = '$login' and password = '$password'");
+            $fetch = $request->fetch();
             $_SESSION["login"] = $login;
             $_SESSION["role"] = 1;
+            $_SESSION["id"] = $fetch["Id"];
             header('location: index.php');
         }
     }
     ?>
     <div id="container">
-    <button onclick="window.history.back()" class="nav">Retour</button>
+        <button onclick="window.history.back()" class="nav">Retour</button>
         <h1>Creer un compte</h1>
         <form action="" method="post" id="signin">
             <label for="login"> Login
