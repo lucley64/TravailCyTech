@@ -1,0 +1,9 @@
+{
+    "users": [
+        {
+            "niveau": "99",
+            "login": "admin",
+            "password": "password"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "categories": [
+        {
+            "nom": "Experimental",
+            "produits": [
+                {
+                    "image": "img/Aperture_Science_Handheld_Portal_Device_Portal.webp",
+                    "nom": "Aperture Science Quantum Tunneling Device",
+                    "prix": 125000,
+                    "stock": 25
+                },
+                {
+                    "image": "img/P2_afp.webp",
+                    "nom": "Plaque de foie aérienne d'Aperture Science",
+                    "prix": 60000,
+                    "stock": 25
+                },
+                {
+                    "image": "img/400px-Excursion_Funnel.jpeg",
+                    "nom": "Tunnel D'éxcurtion d'Aperture Science",
+                    "prix": 250000,
+                    "stock": 10
+                },
+                {
+                    "image": "img/Early_Grill.jpg",
+                    "nom": "Grille d'émencipation matérielle d'Aperture Science",
+                    "prix": 60000,
+                    "stock": 50
+                },
+                {
+                    "image": "img/200px-Puzzle_Creator_-_Hard_Light_Bridge.png",
+                    "nom": "Ponts de lumière tangible d'Aperture Science",
+                    "prix": 160000,
+                    "stock": 58
+                }
+            ]
+        },
+        {
+            "nom": "Utilitaires",
+            "produits": [
+                {
+                    "image": "img/tumblr_m9nbkkBi1Z1rnrq03o1_1280.webp",
+                    "nom": "Aperture Science Long Fall Boots",
+                    "prix": 25000,
+                    "stock": 155
+                },
+                {
+                    "image": "img/85.2_FM.webp",
+                    "nom": "Aperture Science Radio",
+                    "prix": 100,
+                    "stock": 5000
+                },
+                {
+                    "image": "img/Weighted_Storage_Cube_p2.webp",
+                    "nom": "Cube de stockage d'Aperture Science",
+                    "prix": 500,
+                    "stock": 660
+                }
+            ]
+        },
+        {
+            "nom": "Inteligences artificielles",
+            "produits": [
+                {
+                    "image": "img/Portal2_Turret_Standard.webp",
+                    "nom": "Tourelle automatique d'Aperture Science",
+                    "prix": 150000,
+                    "stock": 50
+                },
+                {
+                    "image": "img/Crap_turret.webp",
+                    "nom": "Tourelle automatique au rabais d'Aperture Science",
+                    "prix": 20000,
+                    "stock": 150
+                },
+                {
+                    "image": "img/Wheatley_model.webp",
+                    "nom": "Cœur de personalité d'Aperture Science",
+                    "prix": 200000,
+                    "stock": 2
+                },
+                {
+                    "image": "img/Companion_Cube_p2.webp",
+                    "nom": "Cube de stockage lesté d'Aperture Science",
+                    "prix": 1000000,
+                    "stock": 395
+                },
+                {
+                    "image": "img/Potatos.webp",
+                    "nom": "PotatOS",
+                    "prix": 1000000,
+                    "stock": 1
+                }
+            ]
+        }
+    ]
+}

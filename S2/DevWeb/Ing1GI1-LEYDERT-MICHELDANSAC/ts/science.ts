@@ -13,6 +13,7 @@ function openTab(elem: HTMLButtonElement) {
     elem.className += " active";
     const openTab: HTMLDivElement = document.getElementById(tab) as HTMLDivElement;
     openTab.hidden = false;
+    window.parent?.history.replaceState(null, window.parent?.document.title, "?menu=La science&cat=" + tab);
 }
 
 var stock: boolean = true;
@@ -98,5 +99,42 @@ window.onload = () => {
     imgs.forEach(image => {
         image.addEventListener("mousemove", moveLens);
     });
-    (document.querySelector("div#tab-buttons>button.menu") as HTMLButtonElement).click();
+    const a = document.querySelector("#this-btn");
+    ((a != null ? a : document.querySelector("#tab-buttons > button:nth-child(1)")) as HTMLButtonElement).click();
+}
+
+function ajouterAuPanier(elem: HTMLButtonElement) {
+    const contDiv = elem.previousElementSibling as HTMLDivElement;
+    const inp = contDiv.querySelector("input.counter") as HTMLInputElement;
+    const qtestr = elem.parentElement?.parentElement?.getElementsByClassName("qte")[0].textContent as string;
+    if (parseInt(inp.value) > 0 && parseInt(inp.value) < parseInt(qtestr)) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "./php/panier.php", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.onreadystatechange = (ev) => {
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+                window.location.href = "";
+            if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 401)
+                alert("Vous devez vous connecter pour acceder au panier")
+
+        }
+        xhr.send(JSON.stringify({ "produit": { "nom": elem.name, "img": "a", "qte": inp.value } }));
+
+    }
+
+}
+
+function togglePanier(elem: HTMLButtonElement) {
+    const div = elem.nextElementSibling as HTMLDivElement;
+    div.hidden = !div.hidden;
+}
+
+function viderPanier(elem: HTMLButtonElement) {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',"./php/viderPanier.php", true);
+    xhr.send();
+    xhr.onreadystatechange = (ev) => {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+            window.location.href = "";
+    }
 }

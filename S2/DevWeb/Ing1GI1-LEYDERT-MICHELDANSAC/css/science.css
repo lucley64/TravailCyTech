@@ -60,12 +60,13 @@ button.menu {
 
 button.menu:hover,
 button.menu.active {
-    background-color: hsl(32, 100%, 50%);
+    background-color: #ff8800;
 }
 
 button.panier {
     width: 100%;
-    height: 10%;border: none;
+    height: 10%;
+    border: none;
     font-size: 1.5em;
     color: #5f5fce;
     background-color: #a5a5a500;
@@ -84,14 +85,14 @@ input.counter {
 
 }
 
-div.counter {
+/* div#counter {
     border: 2px #dcd3d3 solid;
     width: 40vw;
     height: 50px;
     padding: 10px;
     display: flex;
     border-radius: 15px;
-}
+} */
 
 button.counter {
     cursor: pointer;
@@ -131,4 +132,18 @@ div#zoomImage {
     width: 300px;
     height: 300px;
     z-index: 201;
+}
+
+div#panier {
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    padding: 1%;
+    overflow: auto;
+    background: #52d8fa;
+    border-radius: 25px;
+    color: #ffffff;
+    transition: .5;
 }

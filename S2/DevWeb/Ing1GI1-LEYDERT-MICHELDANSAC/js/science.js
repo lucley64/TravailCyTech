@@ -2,6 +2,7 @@ var lens;
 var result;
 var image;
 function openTab(elem) {
+    var _a, _b;
     var tab = elem.innerHTML;
     var tabs = document.querySelectorAll("div.tab");
     tabs.forEach(function (tab) { return tab.hidden = true; });
@@ -12,6 +13,7 @@ function openTab(elem) {
     elem.className += " active";
     var openTab = document.getElementById(tab);
     openTab.hidden = false;
+    (_a = window.parent) === null || _a === void 0 ? void 0 : _a.history.replaceState(null, (_b = window.parent) === null || _b === void 0 ? void 0 : _b.document.title, "?menu=La science&cat=" + tab);
 }
 var stock = true;
 function afficherStock() {
@@ -91,5 +93,37 @@ window.onload = function () {
     imgs.forEach(function (image) {
         image.addEventListener("mousemove", moveLens);
     });
-    document.querySelector("div#tab-buttons>button.menu").click();
+    var a = document.querySelector("#this-btn");
+    (a != null ? a : document.querySelector("#tab-buttons > button:nth-child(1)")).click();
 };
+function ajouterAuPanier(elem) {
+    var _a, _b;
+    var contDiv = elem.previousElementSibling;
+    var inp = contDiv.querySelector("input.counter");
+    var qtestr = (_b = (_a = elem.parentElement) === null || _a === void 0 ? void 0 : _a.parentElement) === null || _b === void 0 ? void 0 : _b.getElementsByClassName("qte")[0].textContent;
+    if (parseInt(inp.value) > 0 && parseInt(inp.value) < parseInt(qtestr)) {
+        var xhr_1 = new XMLHttpRequest();
+        xhr_1.open("POST", "./php/panier.php", true);
+        xhr_1.setRequestHeader("Content-Type", "application/json");
+        xhr_1.onreadystatechange = function (ev) {
+            if (xhr_1.readyState == XMLHttpRequest.DONE && xhr_1.status == 200)
+                window.location.href = "";
+            if (xhr_1.readyState == XMLHttpRequest.DONE && xhr_1.status == 401)
+                alert("Vous devez vous connecter pour acceder au panier");
+        };
+        xhr_1.send(JSON.stringify({ "produit": { "nom": elem.name, "img": "a", "qte": inp.value } }));
+    }
+}
+function togglePanier(elem) {
+    var div = elem.nextElementSibling;
+    div.hidden = !div.hidden;
+}
+function viderPanier(elem) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "./php/viderPanier.php", true);
+    xhr.send();
+    xhr.onreadystatechange = function (ev) {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+            window.location.href = "";
+    };
+}

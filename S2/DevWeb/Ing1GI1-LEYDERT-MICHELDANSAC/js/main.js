@@ -20,9 +20,10 @@ function changeUrl(ev, link) {
     });
     ev.target.className += " active";
     ev.target.disabled = true;
+    window.history.replaceState(null, document.title, "?menu=" + ev.target.innerHTML);
 }
 window.onload = function () {
-    document.querySelector("#lien-accueil").click();
+    document.querySelector("#this").click();
     if (window.innerWidth >= 750)
         document.querySelector("button#navBtn").click();
 };

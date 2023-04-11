@@ -1,22 +1,62 @@
 window.onload = function () {
-    var _a, _b, _c;
-    var errorCont = document.getElementById("ErrorContainer");
-    var inp = document.getElementById(((_a = errorCont === null || errorCont === void 0 ? void 0 : errorCont.children[0]) === null || _a === void 0 ? void 0 : _a.getAttribute("name")) + "");
-    if ((inp === null || inp === void 0 ? void 0 : inp.name) == "genreContact") {
-        (_b = inp === null || inp === void 0 ? void 0 : inp.parentElement) === null || _b === void 0 ? void 0 : _b.insertBefore(errorCont, inp.previousElementSibling);
-    }
-    else {
-        (_c = inp === null || inp === void 0 ? void 0 : inp.parentNode) === null || _c === void 0 ? void 0 : _c.insertBefore(errorCont, inp);
-    }
-    var form = document.getElementById("submitBtn");
-    form.onclick = function (ev) {
-        var genreDiv = document.getElementById("genreContactDiv");
-        var genreInp = document.getElementById("genreContact");
-        genreDiv.childNodes.forEach(function (val) {
-            var inp = val;
-            if (inp.checked) {
-                genreInp.value = inp.id;
-            }
-        });
+    var form = document.querySelector("#formContact");
+    form.onsubmit = function (ev) {
+        var form = ev.currentTarget;
+        var elems = form.elements;
+        var nom = elems.namedItem("nomContact");
+        var nomValid = nom.value.length > 0;
+        if (!nomValid) {
+            nom.nextElementSibling.innerHTML = "Erreur cet element est requis";
+            nom.nextElementSibling.className = "error active";
+            nom.className = "invalid";
+        }
+        var prenom = elems.namedItem("prenomContact");
+        var prenomValid = prenom.value.length > 0;
+        if (!prenomValid) {
+            prenom.nextElementSibling.innerHTML = "Erreur cet element est requis";
+            prenom.nextElementSibling.className = "error active";
+            prenom.className = "invalid";
+        }
+        var mail = elems.namedItem("mailContact");
+        var mailValid = mail.value.length > 0 && mail.value.match(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/);
+        if (!mailValid) {
+            mail.nextElementSibling.innerHTML = "Erreur cet element est requis";
+            mail.nextElementSibling.className = "error active";
+            mail.className = "invalid";
+        }
+        var dateNaiss = elems.namedItem("dateNaiss");
+        var dateNaissValid = new Date(dateNaiss.value) < new Date();
+        if (!dateNaissValid) {
+            dateNaiss.nextElementSibling.innerHTML = "Erreur la date doit être inférieur à aujourd'hui";
+            dateNaiss.nextElementSibling.className = "error active";
+            dateNaiss.className = "invalid";
+        }
+        var sujet = elems.namedItem("sujetContact");
+        var sujetValid = sujet.value.length > 0;
+        if (!sujetValid) {
+            sujet.nextElementSibling.innerHTML = "Erreur cet element est requis";
+            sujet.nextElementSibling.className = "error active";
+            sujet.className = "invalid";
+        }
+        var contenu = elems.namedItem("contenuContact");
+        var contenuValid = contenu.value.length > 0;
+        if (!contenuValid) {
+            contenu.nextElementSibling.innerHTML = "Erreur cet element est requis";
+            contenu.nextElementSibling.className = "error active";
+            contenu.className = "invalid";
+        }
+        if (!(nomValid && prenomValid && mailValid && dateNaissValid && sujetValid && contenuValid)) {
+            ev.preventDefault();
+        }
     };
+    var inputs = document.querySelectorAll("input[type=text],select,textarea,input[type=email],input[type=date]");
+    inputs.forEach(function (inp) {
+        inp.oninput = function (ev) {
+            var elem = ev.target;
+            var cont = elem.nextElementSibling;
+            cont.innerText = "";
+            cont.className = "error";
+            elem.className = "";
+        };
+    });
 };
