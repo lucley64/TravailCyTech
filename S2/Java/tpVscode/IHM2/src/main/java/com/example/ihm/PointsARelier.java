@@ -2,7 +2,6 @@ package com.example.ihm;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import javafx.application.Application;
 import javafx.geometry.Point2D;
