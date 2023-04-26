@@ -1,0 +1,8 @@
+HBox, VBox {
+    -fx-alignment: center ;
+    -fx-padding: 10 ;
+}
+
+Hbox {
+    -fx-background-color: red;
+}
