@@ -1,6 +1,6 @@
-var lens: HTMLDivElement;
-var result: HTMLDivElement;
-var image: HTMLImageElement;
+let lens: HTMLDivElement;
+let result: HTMLDivElement;
+let image: HTMLImageElement;
 
 function openTab(elem: HTMLButtonElement) {
     const tab = elem.innerHTML;
@@ -16,7 +16,7 @@ function openTab(elem: HTMLButtonElement) {
     window.parent?.history.replaceState(null, window.parent?.document.title, "?menu=La science&cat=" + tab);
 }
 
-var stock: boolean = true;
+let stock: boolean = true;
 function afficherStock() {
     stock = !stock;
     const colStocks: NodeListOf<HTMLElement> = document.querySelectorAll(".qte");
@@ -107,7 +107,8 @@ function ajouterAuPanier(elem: HTMLButtonElement) {
     const contDiv = elem.previousElementSibling as HTMLDivElement;
     const inp = contDiv.querySelector("input.counter") as HTMLInputElement;
     const qtestr = elem.parentElement?.parentElement?.getElementsByClassName("qte")[0].textContent as string;
-    if (parseInt(inp.value) > 0 && parseInt(inp.value) < parseInt(qtestr)) {
+    const elemP = elem.parentElement?.parentElement?.getElementsByClassName("name")[0] as HTMLTableCellElement;
+    if (parseInt(inp.value) > 0 && parseInt(inp.value) <= parseInt(qtestr)) {
         const xhr = new XMLHttpRequest();
         xhr.open("POST", "./php/panier.php", true);
         xhr.setRequestHeader("Content-Type", "application/json");
@@ -118,7 +119,7 @@ function ajouterAuPanier(elem: HTMLButtonElement) {
                 alert("Vous devez vous connecter pour acceder au panier")
 
         }
-        xhr.send(JSON.stringify({ "produit": { "nom": elem.name, "img": "a", "qte": inp.value } }));
+        xhr.send(JSON.stringify({ "produit": { "id": elemP.id, "nom": elem.name, "img": "a", "qte": inp.value } }));
 
     }
 
@@ -132,6 +133,16 @@ function togglePanier(elem: HTMLButtonElement) {
 function viderPanier(elem: HTMLButtonElement) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET',"./php/viderPanier.php", true);
+    xhr.send();
+    xhr.onreadystatechange = (ev) => {
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+            window.location.href = "";
+    }
+}
+
+function commander(elem: HTMLButtonElement){
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',"./php/majStock.php", true);
     xhr.send();
     xhr.onreadystatechange = (ev) => {
         if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)

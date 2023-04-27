@@ -53,25 +53,33 @@
 
         if (!(isset($loginErr) || isset($mailErr) || isset($passwordConfirmErr) || isset($passwordErr))) {
             $dbConnect = new PDO("mysql:host=" . $host . ";dbname=" . $db, $user, $passworddb);
-            $res = $dbConnect->prepare("Insert into `user` (`mail`, `login`, `password`, `role`) values (?, ?, ?)");
-            var_dump($res->execute([$mail, $login, $password, 3]));
-            session_start();
-            $res = $dbConnect->prepare("select * from user where login = '$login' and password = '$password'");
-            $fetch = $request->fetch();
-            $_SESSION["login"] = $login;
-            $_SESSION["role"] = 1;
-            $_SESSION["id"] = $fetch["Id"];
-            header('location: index.php');
+            $res = $dbConnect->query("select * from user where login = '$login'");
+            if (!$res->fetch()) {
+                $res = $dbConnect->prepare("Insert into `user` (`mail`, `login`, `password`, `role`) values (?, ?, ?, ?)");
+                $res->execute([$mail, $login, $password, 3]);
+                session_start();
+                $res = $dbConnect->query("select * from user where login = '$login' and password = '$password'");
+                $fetch = $res->fetch();
+                $_SESSION["login"] = $login;
+                $_SESSION["role"] = 1;
+                $_SESSION["id"] = $fetch["Id"];
+                header('location: index.php');
+            } else {
+                $loginErr = "Erreur cet utilisateur existe déjà";
+            }
         }
     }
     ?>
     <div id="container">
-        <button onclick="window.history.back()" class="nav">Retour</button>
+        <button onclick="window.location='./'" class="nav">Retour</button>
         <h1>Creer un compte</h1>
         <form action="" method="post" id="signin">
             <label for="login"> Login
                 <input <?php if (isset($loginErr)) {
                             echo $invalid;
+                        }
+                        if (isset($login)) {
+                            echo " value=" . $login;
                         } ?> type="text " name="login" id="loginInp">
                 <span class="error <?php if (isset($loginErr)) {
                                         echo "active";
@@ -80,7 +88,10 @@
             <label for="mail"> Email
                 <input <?php if (isset($mailErr)) {
                             echo $invalid;
-                        } ?> type="mail" name="mail" id="mailInp">
+                        }
+                        if (isset($mail)) {
+                            echo " value=" . $mail;
+                        }  ?> type="mail" name="mail" id="mailInp">
                 <span class="error <?php if (isset($mailErr)) {
                                         echo "active";
                                     } ?>" aria-live="polite"><?php echo $mailErr ?></span>
@@ -88,7 +99,7 @@
             <label for="mdp"> Mot de passe
                 <input <?php if (isset($passwordErr)) {
                             echo $invalid;
-                        } ?> type="password" name="mdp" id="mdpInp">
+                        }?> type="password" name="mdp" id="mdpInp">
                 <span class="error <?php if (isset($passwordErr)) {
                                         echo "active";
                                     } ?>" aria-live="polite"><?php echo $passwordErr ?></span>
@@ -96,7 +107,7 @@
             <label for="mdp2"> Repeter mot de passe
                 <input <?php if (isset($passwordConfirmErr)) {
                             echo $invalid;
-                        } ?> type="password" name="mdp2" id="mdp2Inp">
+                        }?> type="password" name="mdp2" id="mdp2Inp">
                 <span class="error <?php if (isset($passwordConfirmErr)) {
                                         echo "active";
                                     } ?>" aria-live="polite"><?php echo $passwordConfirmErr ?></span>

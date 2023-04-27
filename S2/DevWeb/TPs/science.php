@@ -20,7 +20,7 @@
         <div id="panier-menu" <?php if (!isset($_SESSION["panier"])) {
                                     echo "hidden";
                                 } ?>>
-            <button class="menu" id="toggle" onclick="togglePanier(this)" >Voir panier</button>
+            <button class="menu" id="toggle" onclick="togglePanier(this)">Voir panier</button>
             <div id="panier" hidden>
                 <ul>
                     <?php
@@ -32,31 +32,33 @@
 
                 </ul>
                 <button class="menu" onclick="viderPanier(this)">Vider le panier</button>
+                <button class="menu" onclick="commander(this)">Vider le panier</button>
             </div>
         </div>
         <?php
-        $json = file_get_contents("json/produits.json");
-        $obj = json_decode($json, true);
+        include "./php/bdd.php";
+        $db = getBdd();
+        $host = getHost();
+        $user = getLogin();
+        $passworddb = getPassword();
 
-        $cats = $obj['categories'];
+        $dbConnect = new PDO("mysql:host=" . $host . ";dbname=" . $db, $user, $passworddb);
+        $request1 = $dbConnect->query("SELECT * FROM `Categorie`");
 
-        echo "<div id=\"tab-buttons\">";
-        foreach ($cats as $cat) {
+        $headbtn = "<div id=\"tab-buttons\">";
+        $content = "";
+        while ($cats = $request1->fetch()) {
             $id = "";
-            if ($_GET['cat'] == $cat['nom']) {
+            if ($_GET['cat'] == $cats['Nom']) {
                 $id = "this-btn";
             }
 
-            echo "<button id=\"" . $id . "\" class=\"menu\" onclick=\"openTab(this)\">$cat[nom]</button>";
-        }
-        echo "</div>";
-
-
-        foreach ($cats as $cat) {
-            echo "<div id=\"$cat[nom]\" class=\"tab\" hidden>
+            $headbtn = $headbtn . "<button id=\"" . $id . "\" class=\"menu\" onclick=\"openTab(this)\">$cats[Nom]</button>";
+            $request2 = $dbConnect->query("SELECT p.* FROM `Produit` p JOIN `Categorie` c ON c.Id = p.Categorie WHERE c.Id = $cats[Id]");
+            $content = $content . "<div id=\"$cats[Nom]\" class=\"tab\" hidden>
             <table>
                 <caption>
-                    <h1>$cat[nom]</h1>
+                    <h1>$cats[Nom]</h1>
                 </caption>
                 <thead>
                     <tr>
@@ -67,37 +69,37 @@
                     <th class=\"qte\" hidden>Stock</th>
                     </tr>
             </thead>
-            <tbody>
-            ";
-            foreach ($cat["produits"] as $value) {
-                echo "<tr>
-                
+            <tbody>";
+            while ($value = $request2->fetch()) {
+                $content = $content . "<tr>
                 <td>
-                <img class=\"image\" src=\"$value[image]\" alt=\"$value[nom]\" height=\"100\" width=\"100\" />
-            </td>
-            <td>
-                $value[nom]
-            </td>
-            <td>
-                $value[prix] €
-            </td>
-            <td class=\"cmd\">
-                <div class=\"counter\">
-                    <button class=\"counter\" onclick=\"remCmd(this)\" disabled>-</button>
-                    <input class=\"counter\" type=\"number\" value=\"0\" disabled />
-                    <button class=\"counter\" onclick=\"addCmd(this)\">+</button>
-                </div>
-                <button name=\"$value[nom]\" id=\"panier\" class=\"panier\" onclick=\"ajouterAuPanier(this)\">Ajouter au panier</button>
-            </td>
-            <td class=\"qte\" hidden>
-                $value[stock]
-            </td>
+                    <img class=\"image\" src=\"$value[Image]\" alt=\"$value[Nom]\" height=\"100\" width=\"100\" />
+                </td>
+                <td class='name' id=$value[Id]>
+                    $value[Nom]
+                </td>
+                <td>
+                    $value[Prix] €
+                </td>
+                <td class=\"cmd\">
+                    <div class=\"counter\">
+                        <button class=\"counter\" onclick=\"remCmd(this)\" disabled>-</button>
+                        <input class=\"counter\" type=\"number\" value=\"0\" disabled />
+                        <button class=\"counter\" onclick=\"addCmd(this)\">+</button>
+                    </div>
+                    <button name=\"$value[Nom]\" id=\"panier\" class=\"panier\" onclick=\"ajouterAuPanier(this)\">Ajouter au panier</button>
+                </td>
+                <td class=\"qte\" hidden>
+                    $value[Stock]
+                </td>
                 </tr>";
             }
-            echo "</tbody>
+            $content = $content."</tbody>
             </table>
             </div>";
         }
+        echo $headbtn . "</div>";
+        echo $content;
 
 
         ?>
