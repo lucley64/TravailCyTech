@@ -1,4 +1,4 @@
-use_module(library(clpfd)).
+:- use_module(library(clpfd)).
 
 % 1.01 (*) Find the last element of a list.
 % Example:
@@ -251,6 +251,21 @@ encode_modified_aux(P, [Y,X], X) :-
 % ?- is_prime(7).
 % Yes
 
+is_prime(2).
+is_prime(N):-
+    N#>2,
+    NM1 #= N-1,
+    non_div(N, NM1).
+
+non_div(N,2):- 
+    N mod 2 #\= 0.
+
+non_div(N,I):- 
+    N mod I #\= 0,
+    IM1 #= I-1,
+    non_div(N,IM1).
+
+
 % 2.02 (**) Determine the prime factors of a given positive integer.
 % Construct a flat list containing the prime factors in ascending order.
 % Example:
@@ -268,12 +283,39 @@ encode_modified_aux(P, [Y,X], X) :-
 % 2.04 (*) A list of prime numbers.
 % Given a range of integers by its lower and upper limit, construct a list of all prime numbers in that range.
 
+prime_list(Low, Up, [Low|Res]) :-
+    dif(Low, Up),
+    is_prime(Low),
+    LowP1 #= Low + 1,
+    prime_list(LowP1, Up, Res).
+
+prime_list(Low, Up, Res) :-
+    \+ is_prime(Low),
+    dif(Low, Up),
+    LowP1 #= Low + 1,
+    prime_list(LowP1, Up, Res).
+
+prime_list(S, S, [S]):-
+    is_prime(S).
+
+prime_list(S, S, []) :-
+    \+ is_prime(S).
+
 % 2.05 (**) Goldbach's conjecture.
-% Goldbach's conjecture says that every positive even number greater than 2 is the sum of two prime numbers. Example: 28 = 5 + 23. It is one of the most famous facts in number theory that has not been proved to be correct in the general case. It has been numerically confirmed up to very large numbers (much larger than we can go with our Prolog system). Write a predicate to find the two prime numbers that sum up to a given even integer.
+% Goldbach's conjecture says that every positive even number greater than 2 is the sum of two prime numbers. 
+% Example: 28 = 5 + 23. It is one of the most famous facts in number theory that has not been proved to be correct in the general case. 
+% It has been numerically confirmed up to very large numbers (much larger than we can go with our Prolog system). 
+% Write a predicate to find the two prime numbers that sum up to a given even integer.
+
 
 % Example:
 % ?- goldbach(28, L).
 % L = [5,23]
+goldbach(S, [X, Y]):-
+    S #> 2, X #< S, Y #< S,
+    is_prime(X),
+    is_prime(Y),
+    S #= X + Y.
 
 % 2.06 (**) A list of Goldbach compositions.
 % Given a range of integers by its lower and upper limit, print a list of all even numbers and their Goldbach composition.
@@ -305,6 +347,8 @@ encode_modified_aux(P, [Y,X], X) :-
 % Define gcd as an arithmetic function; so you can use it like this:
 % ?- G is gcd(36,63).
 % G = 9
+
+
 
 % 2.08 (*) Determine whether two positive integer numbers are coprime.
 % Two numbers are coprime if their greatest common divisor equals 1.
