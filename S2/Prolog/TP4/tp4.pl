@@ -436,7 +436,17 @@ gcd(X, Y, Y):-
 
 % Can you apply the method of "result caching" in order to make the predicate more efficient, when it is to be used repeatedly?
 
+gray(1, ['0','1']).
 
+gray(N, C):-
+    N #> 1,
+    N1 #= N - 1,
+    gray(N1, C1),
+    maplist(atom_concat('0'), C1, C1R),
+    reverse(C1, C2),
+    maplist(atom_concat('1'), C2, C2R),
+    append(C1R, C2R, C).
+    
 
 % 3.05 (***) Huffman code.
 % First of all, study a good book on discrete mathematics or algorithms for a detailed description of Huffman codes, or consult Wikipedia
