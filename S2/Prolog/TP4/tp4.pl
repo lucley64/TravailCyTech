@@ -1,3 +1,5 @@
+use_module(library(clpfd)).
+
 % 1.01
 my_last(X, [X]).
 my_last(X, [_|Ls]) :-
@@ -31,5 +33,14 @@ compress([X, Y|R], [X|Res]) :-
 
 % 1.09
 pack([],[]).
-pack([X], [X]).
+pack([X|L], [P|S]):-
+    pack_aux(X, L, R, P),
+    pack(R, S).
 
+pack_aux(X, [], [], [X]).
+
+pack_aux(X, [Y|L], [Y|L], [X]):-
+    dif(X,Y).
+
+pack_aux(X, [X|L], NR, [X|P]):-
+    pack_aux(X, L, NR, P).
