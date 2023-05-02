@@ -133,7 +133,9 @@ function commander(elem) {
     xhr.open('GET', "./php/majStock.php", true);
     xhr.send();
     xhr.onreadystatechange = function (ev) {
-        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            alert("Commande validée");
             window.location.href = "";
+        }
     };
 }

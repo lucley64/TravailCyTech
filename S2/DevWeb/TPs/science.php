@@ -26,13 +26,14 @@
                     <?php
                     $panier = $_SESSION["panier"];
                     foreach ($panier as $key => $value) {
-                        echo "<li>$key : $value</li>";
+                        $prod = explode(".", $key);
+                        echo "<li id=$prod[1]>$prod[0] : $value</li>";
                     }
                     ?>
 
                 </ul>
                 <button class="menu" onclick="viderPanier(this)">Vider le panier</button>
-                <button class="menu" onclick="commander(this)">Vider le panier</button>
+                <button class="menu" onclick="commander(this)">Valider la commande</button>
             </div>
         </div>
         <?php
@@ -71,6 +72,13 @@
             </thead>
             <tbody>";
             while ($value = $request2->fetch()) {
+                $isDisabled = $value["Stock"] > 0 ? "
+                    <div class=\"counter\">
+                        <button class=\"counter\" onclick=\"remCmd(this)\" disabled>-</button>
+                        <input class=\"counter\" type=\"number\" value=\"0\" disabled />
+                        <button class=\"counter\" onclick=\"addCmd(this)\">+</button>
+                    </div>
+                    <button name=\"$value[Nom]\" id=\"panier\" class=\"panier\" onclick=\"ajouterAuPanier(this)\">Ajouter au panier</button>" : "<p> Rupture de stock</p>";
                 $content = $content . "<tr>
                 <td>
                     <img class=\"image\" src=\"$value[Image]\" alt=\"$value[Nom]\" height=\"100\" width=\"100\" />
@@ -82,19 +90,14 @@
                     $value[Prix] €
                 </td>
                 <td class=\"cmd\">
-                    <div class=\"counter\">
-                        <button class=\"counter\" onclick=\"remCmd(this)\" disabled>-</button>
-                        <input class=\"counter\" type=\"number\" value=\"0\" disabled />
-                        <button class=\"counter\" onclick=\"addCmd(this)\">+</button>
-                    </div>
-                    <button name=\"$value[Nom]\" id=\"panier\" class=\"panier\" onclick=\"ajouterAuPanier(this)\">Ajouter au panier</button>
+                    $isDisabled
                 </td>
                 <td class=\"qte\" hidden>
                     $value[Stock]
                 </td>
                 </tr>";
             }
-            $content = $content."</tbody>
+            $content = $content . "</tbody>
             </table>
             </div>";
         }
@@ -104,7 +107,11 @@
 
         ?>
         <div id="downMenu">
-            <button id="sockButton" class="menu" onclick="afficherStock()">Afficher stocks</button>
+            <?php
+            if (isset($_SESSION["role"]) && $_SESSION["role"] >= 99) {
+                echo '<button id="sockButton" class="menu" onclick="afficherStock()">Afficher stocks</button>';
+            }
+            ?>
         </div>
     </div>
     <div id="zoomImage" hidden></div>

@@ -107,7 +107,7 @@ public class Visionneuse extends Application {
 
     private Pane creerBandeauBas(){
         var listB = new ArrayList<Button>();
-        for (int i = 0; i < album.getSize(); ++i){
+        for (var i = 0; i < album.getSize(); ++i){
             var b = new Button("",new ImageView(album.getPhoto(i).getIcone()));
             b.setOnAction(ev -> {
                 lv.getSelectionModel().select(listB.indexOf(b));

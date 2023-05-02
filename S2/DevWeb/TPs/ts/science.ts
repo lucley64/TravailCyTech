@@ -132,7 +132,7 @@ function togglePanier(elem: HTMLButtonElement) {
 
 function viderPanier(elem: HTMLButtonElement) {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET',"./php/viderPanier.php", true);
+    xhr.open('GET', "./php/viderPanier.php", true);
     xhr.send();
     xhr.onreadystatechange = (ev) => {
         if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
@@ -140,12 +140,14 @@ function viderPanier(elem: HTMLButtonElement) {
     }
 }
 
-function commander(elem: HTMLButtonElement){
+function commander(elem: HTMLButtonElement) {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET',"./php/majStock.php", true);
+    xhr.open('GET', "./php/majStock.php", true);
     xhr.send();
     xhr.onreadystatechange = (ev) => {
-        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200)
+        if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+            alert("Commande validée");
             window.location.href = "";
+        }
     }
 }

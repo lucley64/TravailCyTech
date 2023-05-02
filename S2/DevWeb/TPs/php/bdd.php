@@ -1,4 +1,9 @@
 <?php
+function getCred(string $pathToCfg)
+{
+    return json_decode(file_get_contents($pathToCfg), true);
+}
+
 function getLogin()
 {
     $cfg = getJson();
