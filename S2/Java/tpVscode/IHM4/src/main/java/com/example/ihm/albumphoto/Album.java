@@ -6,9 +6,9 @@ import java.util.Observable;
 
 public class Album extends Observable {
 
-	public static final Integer CHANGEMENT_IMAGE_COURANTE = new Integer(0); // PAC
-	public static final Integer CHANGEMENT_TAILLE = new Integer(1); // PAC
-	public static final Integer NOUVELLE_IMAGE = new Integer(2); // PAC
+	public static final Integer CHANGEMENT_IMAGE_COURANTE = 0; // PAC
+	public static final Integer CHANGEMENT_TAILLE = 1; // PAC
+	public static final Integer NOUVELLE_IMAGE = 2; // PAC
 	
 	private ArrayList<Photo> lesPhotos; // biblioth�que d'images
 	private int indexCourant; // index de l'image courante
@@ -21,7 +21,7 @@ public class Album extends Observable {
 	 *            le dossier contenant les photos de l'album
 	 */
 	public Album(String repertoire) {
-		this.lesPhotos = new ArrayList<Photo>();
+		this.lesPhotos = new ArrayList<>();
 		File repImages = new File(repertoire);
 		for (String s : repImages.list()) {
 			this.addPhoto("file:" + repertoire + "/" + s);
