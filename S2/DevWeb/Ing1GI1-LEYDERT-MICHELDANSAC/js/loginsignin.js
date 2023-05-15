@@ -20,7 +20,7 @@ function signin() {
         err.innerHTML = 'Veuillez remplir ce champ.';
         mail.className = 'invalid';
     }
-    else if (!mail.value.match(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+    else if (!mail.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
         var err = mail.nextElementSibling;
         err.className = 'error active';
         err.innerHTML = 'Veuillez inserer un mail valide.';

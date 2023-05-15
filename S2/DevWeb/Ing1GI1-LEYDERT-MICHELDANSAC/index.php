@@ -26,6 +26,7 @@
                 <?php
                 session_start();
                 if (isset($_SESSION['login'])) {
+                    echo "<p> Connecté en tant que <b>$_SESSION[login]</b> </p>";
                     echo "<button class=\"nav\" onclick=\"window.location.href='logout.php'\">Se Déconnecter</button>";
                 } else {
                     echo "<button class=\"nav\" onclick=\"window.location.href='login.php'\">Se connecter</button>";
@@ -46,6 +47,12 @@
             <button id="<?php if ($_GET['menu'] == "Contact") {
                             echo "this";
                         } ?>" class="nav" onclick="changeUrl(event, 'contact.php')">Contact</button>
+
+            <?php
+            if (isset($_SESSION["role"]) && $_SESSION["role"] >= 99) {
+                echo '<button class="nav" onclick="window.location.href=\'./admin\'">Administartion</button>';
+            }
+            ?>
         </div>
     </div>
     <main>

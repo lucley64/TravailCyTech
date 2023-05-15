@@ -36,12 +36,13 @@
             if (!isset($fetch[0])) {
                 $loginErr = "Le login est invalide.";
             } else {
-                $request = $dbConnect->query("select * from user u JOIN role r on r.Id = u.role where u.login = '$login' and u.password = '$password'");
+                $request = $dbConnect->query("select u.*,r.Niveau from user u JOIN role r on r.Id = u.role where u.login = '$login' and u.password = '$password'");
                 $fetch = $request->fetch();
                 if (!isset($fetch[0])) {
-                    $loginErr = "Le mot de passe est invalide.";
+                    $passwordErr = "Le mot de passe est invalide.";
                 } else {
                     session_start();
+                    var_dump($fetch);
                     $_SESSION["login"] = $login;
                     $_SESSION["role"] = $fetch["Niveau"];
                     $_SESSION["id"] = $fetch["Id"];
@@ -53,12 +54,15 @@
     }
     ?>
     <div id="container">
-        <button onclick="window.history.back()" class="nav">Retour</button>
+        <button onclick="window.location='./'" class="nav">Retour</button>
         <h1>Se login</h1>
         <form action="" method="post" id="login">
             <label for="login"> Login
                 <input <?php if (isset($loginErr)) {
                             echo $invalid;
+                        }
+                        if (isset($login)) {
+                            echo " value=" . $login;
                         } ?> type="text " name="login" id="loginInp">
                 <span class="error <?php if (isset($loginErr)) {
                                         echo "active";
@@ -67,6 +71,9 @@
             <label for="mdp"> Mot de passe
                 <input <?php if (isset($passwordErr)) {
                             echo $invalid;
+                        }
+                        if (isset($password)) {
+                            echo " value=" . $password;
                         } ?> type="password" name="mdp" id="mdpInp">
                 <span class="error <?php if (isset($passwordErr)) {
                                         echo "active";

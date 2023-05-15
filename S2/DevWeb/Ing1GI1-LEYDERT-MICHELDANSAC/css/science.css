@@ -110,7 +110,7 @@ button.panier:hover {
     background-color: #00000028;
 }
 
-button.counter:disabled {
+button.counter:disabled{
     color: #5f5fce00;
 }
 
@@ -146,4 +146,10 @@ div#panier {
     border-radius: 25px;
     color: #ffffff;
     transition: .5;
+}
+
+.cmd >p{
+    text-align: center;
+    color: red;
+    font-size: 150%;
 }

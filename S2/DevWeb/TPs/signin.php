@@ -85,7 +85,7 @@
                         } ?> type="text " name="login" id="loginInp">
                 <span class="error <?php if (isset($loginErr)) {
                                         echo "active";
-                                    } ?>" aria-live="polite"><?php echo $loginErr ?></span>
+                                    } ?>" aria-live="polite"><?php if (isset($loginErr)){echo $loginErr;} ?></span>
             </label>
             <label for="mail"> Email
                 <input <?php if (isset($mailErr)) {
@@ -96,7 +96,7 @@
                         }  ?> type="mail" name="mail" id="mailInp">
                 <span class="error <?php if (isset($mailErr)) {
                                         echo "active";
-                                    } ?>" aria-live="polite"><?php echo $mailErr ?></span>
+                                    } ?>" aria-live="polite"><?php if (isset($mailErr)){echo $mailErr;} ?></span>
             </label>
             <label for="mdp"> Mot de passe
                 <input <?php if (isset($passwordErr)) {
@@ -104,7 +104,7 @@
                         }?> type="password" name="mdp" id="mdpInp">
                 <span class="error <?php if (isset($passwordErr)) {
                                         echo "active";
-                                    } ?>" aria-live="polite"><?php echo $passwordErr ?></span>
+                                    } ?>" aria-live="polite"><?php if (isset($passwordErr)){echo $passwordErr;} ?></span>
             </label>
             <label for="mdp2"> Repeter mot de passe
                 <input <?php if (isset($passwordConfirmErr)) {
@@ -112,7 +112,7 @@
                         }?> type="password" name="mdp2" id="mdp2Inp">
                 <span class="error <?php if (isset($passwordConfirmErr)) {
                                         echo "active";
-                                    } ?>" aria-live="polite"><?php echo $passwordConfirmErr ?></span>
+                                    } ?>" aria-live="polite"><?php if (isset($passwordConfirmErr)){echo $passwordConfirmErr;} ?></span>
             </label>
         </form>
         <button onclick="signin()" class="val">Creer compte</button>
