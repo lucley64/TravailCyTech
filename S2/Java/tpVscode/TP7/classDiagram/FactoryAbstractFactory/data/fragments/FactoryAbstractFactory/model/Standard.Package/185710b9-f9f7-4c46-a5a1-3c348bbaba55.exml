@@ -12,6 +12,12 @@
       <ATT name="Name"><![CDATA[factoryabstractfactory]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
-    <DEPENDENCIES></DEPENDENCIES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="factory" mc="Standard.Package" uid="e5325c30-6401-4061-b129-d4af4c52b86b"/>
+        <COMPID name="abstractFactory" mc="Standard.Package" uid="784d937f-292c-4fee-94b6-2c7ceb6e5614"/>
+        <COMPID name="Maze" mc="Standard.Class" uid="551e2a7c-0b7f-4974-b36c-a21471f6a714"/>
+      </COMP>
+    </DEPENDENCIES>
   </OBJECT>
 </EXT>
