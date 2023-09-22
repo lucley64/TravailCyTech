@@ -1,0 +1,87 @@
+java.util.NoSuchElementException: next on empty iterator
+occurred in the presentation compiler.
+
+action parameters:
+uri: file://<WORKSPACE>/src/main/java/com/example/designpatterts/SimpleMazeGame.java
+text:
+package com.example.designpatterts;
+
+import maze.Maze;
+import maze.door.Door;
+import maze.door.MagicalDoor;
+import maze.room.EnchantedRoom;
+import maze.room.MinedRoom;
+import maze.room.Room;
+import maze.room.Room.Direction;
+import maze.wall.CrackedWall;
+
+public class SimpleMazeGame {
+    public Maze createMaze(){
+        Room room1 = new Room(0);
+        Room room2 = new Room(1);
+        Door door = new Door(room1, room2);
+        room1.setSide(Direction.SOUTH, door);
+        room2.setSide(Direction.NORTH, door);
+
+        Maze maze = new Maze();
+
+        maze.addRoom(room1);
+        maze.addRoom(room2);
+        
+
+        return maze;
+    }
+
+    public Maze createEnchantedMaze(){
+        EnchantedRoom room1 = new EnchantedRoom(0);
+        EnchantedRoom room2 = new EnchantedRoom(1);
+        MagicalDoor door = new MagicalDoor(room1, room2);
+        room1.setSide(Direction.SOUTH, door);
+        room2.setSide(Direction.NORTH, door);
+
+        Maze maze = new Maze();
+
+        maze.addRoom(room1);
+        maze.addRoom(room2);
+        
+
+        return maze;
+    }
+
+    public Maze createMinedMaze(){
+        MinedRoom room1 = new MinedRoom(0);
+        MinedRoom room2 = new MinedRoom(1);
+        Door door = new Door(room1, room2);
+        CrackedWall crackedWall = new CrackedWall();
+        room1.setSide(Direction.NORTH, crackedWall);
+        room1.setSide(Direction.SOUTH, door);
+        room2.setSide(Direction.NORTH, door);
+
+
+        Maze maze = new Maze();
+
+        maze.addRoom(room1);
+        maze.addRoom(room2);
+        
+
+        return maze;
+    }
+}
+
+
+
+error stacktrace:
+scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
+	scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
+	scala.collection.mutable.MutationTracker$CheckedIterator.next(MutationTracker.scala:76)
+	scala.collection.IterableOps.head(Iterable.scala:222)
+	scala.collection.IterableOps.head$(Iterable.scala:222)
+	scala.collection.AbstractIterable.head(Iterable.scala:933)
+	dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:168)
+	scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	scala.meta.internal.pc.PcCollector.<init>(PcCollector.scala:42)
+	scala.meta.internal.pc.PcSemanticTokensProvider$Collector$.<init>(PcSemanticTokensProvider.scala:60)
+	scala.meta.internal.pc.PcSemanticTokensProvider.Collector$lzyINIT1(PcSemanticTokensProvider.scala:60)
+	scala.meta.internal.pc.PcSemanticTokensProvider.Collector(PcSemanticTokensProvider.scala:60)
+	scala.meta.internal.pc.PcSemanticTokensProvider.provide(PcSemanticTokensProvider.scala:81)
+	scala.meta.internal.pc.ScalaPresentationCompiler.semanticTokens$$anonfun$1(ScalaPresentationCompiler.scala:95)

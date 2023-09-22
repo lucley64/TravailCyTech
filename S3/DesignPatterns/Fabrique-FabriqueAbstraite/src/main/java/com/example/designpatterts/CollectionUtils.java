@@ -13,4 +13,12 @@ public class CollectionUtils {
         }
         return result;
     }
+
+    public static <T, Y> Collection<Y> selectMany(Iterable<T> collection, Function<? super T, Collection<Y>> function) {
+        List<Y> res = new ArrayList<>();
+        for (T item : collection) {
+            res.addAll(function.apply(item));
+        }
+        return res;
+    }
 }

@@ -1,0 +1,44 @@
+java.util.NoSuchElementException: next on empty iterator
+occurred in the presentation compiler.
+
+action parameters:
+offset: 665
+uri: file://<WORKSPACE>/src/main/java/com/example/designpatterts/CollectionUtils.java
+text:
+package com.example.designpatterts;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.function.Function;
+
+public class CollectionUtils {
+    public static <T, Y> Collection<Y> select(Iterable<T> collection, Function<? super T, Y> function) {
+        List<Y> result = new ArrayList<>();
+        for (T item : collection) {
+            result.add(function.apply(item));
+        }
+        return result;
+    }
+
+    public static <T, Y> Collection<Y> selectMany(Iterable<T> collection, Function<? super T, Collection<Y>> function){
+        List<Y> res = new ArrayList<>();
+        for (T item : collection){
+            $@@
+        }
+    }
+}
+
+
+
+error stacktrace:
+scala.collection.Iterator$$anon$19.next(Iterator.scala:973)
+	scala.collection.Iterator$$anon$19.next(Iterator.scala:971)
+	scala.collection.mutable.MutationTracker$CheckedIterator.next(MutationTracker.scala:76)
+	scala.collection.IterableOps.head(Iterable.scala:222)
+	scala.collection.IterableOps.head$(Iterable.scala:222)
+	scala.collection.AbstractIterable.head(Iterable.scala:933)
+	dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:168)
+	scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	scala.meta.internal.pc.completions.CompletionProvider.completions(CompletionProvider.scala:46)
+	scala.meta.internal.pc.ScalaPresentationCompiler.complete$$anonfun$1(ScalaPresentationCompiler.scala:119)

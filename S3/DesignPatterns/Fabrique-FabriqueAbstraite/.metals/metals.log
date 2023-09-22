@@ -1,0 +1,665 @@
+2023.09.21 11:11:44 INFO  Started: Metals version 1.0.1 in folders '/home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite' for client Visual Studio Code 1.82.2.[0m
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.21.2 by Redgate
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.FlywayExecutor execute
+INFO: Database: jdbc:h2:file:/home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/metals (H2 2.1)
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.009s)
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Sep 21, 2023 11:11:44 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.017s)
+2023.09.21 11:11:44 INFO  time: initialize in 0.44s[0m
+2023.09.21 11:11:45 WARN  Build server is not auto-connectable.[0m
+2023.09.21 11:11:45 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/abtractfactory/MazeFactory.java[0m
+2023.09.21 11:11:54 INFO  no build target found for /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/abtractfactory/MazeFactory.java. Using presentation compiler with project's scala-library version: 3.3.0[0m
+Sep 21, 2023 11:11:55 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-11-55-435
+2023.09.21 11:13:26 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/SimpleMazeGame.java[0m
+Sep 21, 2023 11:13:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-27-137
+Sep 21, 2023 11:13:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-27-749
+Sep 21, 2023 11:13:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-30-742
+Sep 21, 2023 11:13:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-31-106
+2023.09.21 11:13:33 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/App.java[0m
+Sep 21, 2023 11:13:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-34-092
+Sep 21, 2023 11:13:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-34-704
+Sep 21, 2023 11:13:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-34-848
+Sep 21, 2023 11:13:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-37-697
+2023.09.21 11:13:39 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:13:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-39-447
+2023.09.21 11:13:40 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:13:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-40-365
+Sep 21, 2023 11:13:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-41-022
+Sep 21, 2023 11:13:48 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-48-029
+Sep 21, 2023 11:13:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-13-48-999
+Sep 21, 2023 11:14:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-14-51-299
+Sep 21, 2023 11:15:04 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-04-306
+Sep 21, 2023 11:15:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-08-058
+2023.09.21 11:15:08 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:15:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-08-685
+Sep 21, 2023 11:15:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-08-839
+Sep 21, 2023 11:15:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-09-338
+Sep 21, 2023 11:15:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-09-858
+Sep 21, 2023 11:15:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-10-623
+Sep 21, 2023 11:15:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-10-762
+Sep 21, 2023 11:15:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-11-184
+Sep 21, 2023 11:15:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-11-612
+2023.09.21 11:15:12 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:12 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-12-479
+Sep 21, 2023 11:15:13 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-13-309
+2023.09.21 11:15:14 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:14 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-14-200
+Sep 21, 2023 11:15:15 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-15-357
+2023.09.21 11:15:15 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:15 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-15-925
+Sep 21, 2023 11:15:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-16-729
+Sep 21, 2023 11:15:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-17-182
+Sep 21, 2023 11:15:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-17-277
+Sep 21, 2023 11:15:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-17-329
+Sep 21, 2023 11:15:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-17-679
+Sep 21, 2023 11:15:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-17-715
+Sep 21, 2023 11:15:19 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-19-002
+2023.09.21 11:15:19 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:19 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-19-584
+Sep 21, 2023 11:15:20 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-20-121
+Sep 21, 2023 11:15:20 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-20-605
+Sep 21, 2023 11:15:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-21-051
+Sep 21, 2023 11:15:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-21-576
+Sep 21, 2023 11:15:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-21-634
+Sep 21, 2023 11:15:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-22-592
+Sep 21, 2023 11:15:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-22-949
+Sep 21, 2023 11:15:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-23-339
+Sep 21, 2023 11:15:24 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-24-099
+2023.09.21 11:15:24 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:25 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-25-073
+Sep 21, 2023 11:15:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-25-215
+Sep 21, 2023 11:15:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-25-607
+Sep 21, 2023 11:15:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 168
+Sep 21, 2023 11:15:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-26-230
+Sep 21, 2023 11:15:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 170
+Sep 21, 2023 11:15:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-26-760
+Sep 21, 2023 11:15:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-27-130
+Sep 21, 2023 11:15:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-27-230
+Sep 21, 2023 11:15:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-27-312
+Sep 21, 2023 11:15:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-27-619
+Sep 21, 2023 11:15:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-27-725
+2023.09.21 11:15:28 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:28 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:28 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-28-614
+Sep 21, 2023 11:15:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-29-407
+Sep 21, 2023 11:15:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-29-804
+2023.09.21 11:15:30 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-30-310
+Sep 21, 2023 11:15:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-30-714
+Sep 21, 2023 11:15:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-31-125
+2023.09.21 11:15:31 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:31 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:31 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-31-707
+Sep 21, 2023 11:15:32 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-32-315
+2023.09.21 11:15:33 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:33 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-33-208
+Sep 21, 2023 11:15:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-34-317
+Sep 21, 2023 11:15:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-34-726
+Sep 21, 2023 11:15:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-35-585
+Sep 21, 2023 11:15:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-35-816
+Sep 21, 2023 11:15:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-36-300
+Sep 21, 2023 11:15:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-36-879
+Sep 21, 2023 11:15:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-37-410
+2023.09.21 11:15:37 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-38-019
+Sep 21, 2023 11:15:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-38-228
+Sep 21, 2023 11:15:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-38-639
+Sep 21, 2023 11:15:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-39-294
+Sep 21, 2023 11:15:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-39-617
+Sep 21, 2023 11:15:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-39-857
+Sep 21, 2023 11:15:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-40-056
+Sep 21, 2023 11:15:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-40-139
+Sep 21, 2023 11:15:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-40-475
+Sep 21, 2023 11:15:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-40-582
+Sep 21, 2023 11:15:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-41-064
+Sep 21, 2023 11:15:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-41-286
+Sep 21, 2023 11:15:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-41-731
+Sep 21, 2023 11:15:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-41-849
+Sep 21, 2023 11:15:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-42-824
+Sep 21, 2023 11:15:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-42-968
+Sep 21, 2023 11:15:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-43-234
+Sep 21, 2023 11:15:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-43-288
+2023.09.21 11:15:44 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:44 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-44-263
+Sep 21, 2023 11:15:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-44-755
+Sep 21, 2023 11:15:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-44-942
+Sep 21, 2023 11:15:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-45-393
+Sep 21, 2023 11:15:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-45-823
+Sep 21, 2023 11:15:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-46-490
+Sep 21, 2023 11:15:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-46-752
+Sep 21, 2023 11:15:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-47-161
+2023.09.21 11:15:47 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-47-757
+Sep 21, 2023 11:15:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-49-599
+2023.09.21 11:15:50 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:50 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-50-184
+Sep 21, 2023 11:15:53 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-53-927
+Sep 21, 2023 11:15:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-54-151
+2023.09.21 11:15:54 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:54 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-54-853
+Sep 21, 2023 11:15:55 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-55-028
+Sep 21, 2023 11:15:55 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-55-421
+Sep 21, 2023 11:15:56 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-56-272
+2023.09.21 11:15:57 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:57 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-57-239
+Sep 21, 2023 11:15:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-57-284
+Sep 21, 2023 11:15:57 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-57-901
+Sep 21, 2023 11:15:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-58-420
+2023.09.21 11:15:58 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:15:58 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:15:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-15-59-009
+Sep 21, 2023 11:16:00 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-00-918
+2023.09.21 11:16:01 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:16:01 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:16:01 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-01-766
+Sep 21, 2023 11:16:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-34-349
+Sep 21, 2023 11:16:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-35-026
+Sep 21, 2023 11:16:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-39-950
+Sep 21, 2023 11:16:40 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 384
+Sep 21, 2023 11:16:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-40-137
+Sep 21, 2023 11:16:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-40-610
+Sep 21, 2023 11:16:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-41-592
+Sep 21, 2023 11:16:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-42-055
+Sep 21, 2023 11:16:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-42-630
+Sep 21, 2023 11:16:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-42-955
+Sep 21, 2023 11:16:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-43-401
+2023.09.21 11:16:43 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:16:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-44-033
+Sep 21, 2023 11:16:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-44-731
+2023.09.21 11:16:45 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:16:45 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:16:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-45-323
+Sep 21, 2023 11:16:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-45-400
+Sep 21, 2023 11:16:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-45-830
+Sep 21, 2023 11:16:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-46-731
+2023.09.21 11:16:47 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:16:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-47-250
+Sep 21, 2023 11:16:48 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-48-913
+Sep 21, 2023 11:16:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-49-314
+Sep 21, 2023 11:16:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-49-869
+Sep 21, 2023 11:16:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-50-090
+Sep 21, 2023 11:16:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-50-575
+2023.09.21 11:16:51 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:16:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-51-096
+Sep 21, 2023 11:16:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-51-665
+2023.09.21 11:16:52 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:16:52 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:16:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-52-245
+Sep 21, 2023 11:16:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-58-018
+Sep 21, 2023 11:16:58 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-58-487
+Sep 21, 2023 11:16:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-59-407
+2023.09.21 11:16:59 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:16:59 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-16-59-999
+Sep 21, 2023 11:17:01 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-01-327
+Sep 21, 2023 11:17:20 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-20-660
+2023.09.21 11:17:21 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:17:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-21-231
+Sep 21, 2023 11:17:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-25-272
+Sep 21, 2023 11:17:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-25-704
+Sep 21, 2023 11:17:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-26-432
+Sep 21, 2023 11:17:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-27-191
+Sep 21, 2023 11:17:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-27-699
+Sep 21, 2023 11:17:28 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-28-175
+Sep 21, 2023 11:17:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 510
+Sep 21, 2023 11:17:28 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-28-675
+Sep 21, 2023 11:17:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-29-376
+Sep 21, 2023 11:17:29 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 517
+Sep 21, 2023 11:17:29 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-29-820
+Sep 21, 2023 11:17:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-30-303
+2023.09.21 11:17:30 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:30 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:30 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-30-871
+Sep 21, 2023 11:17:32 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-32-481
+Sep 21, 2023 11:17:32 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-32-721
+Sep 21, 2023 11:17:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-33-181
+Sep 21, 2023 11:17:33 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-33-766
+Sep 21, 2023 11:17:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-34-544
+Sep 21, 2023 11:17:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-34-982
+2023.09.21 11:17:35 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:35 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:35 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-35-597
+Sep 21, 2023 11:17:36 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-36-873
+2023.09.21 11:17:37 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:37 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-37-484
+Sep 21, 2023 11:17:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-38-091
+Sep 21, 2023 11:17:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-39-036
+2023.09.21 11:17:39 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:17:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-39-596
+Sep 21, 2023 11:17:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-40-034
+Sep 21, 2023 11:17:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-40-492
+Sep 21, 2023 11:17:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-40-965
+2023.09.21 11:17:41 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:41 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-41-710
+Sep 21, 2023 11:17:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-42-085
+Sep 21, 2023 11:17:42 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-42-471
+2023.09.21 11:17:42 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:42 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-43-074
+Sep 21, 2023 11:17:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-43-113
+Sep 21, 2023 11:17:43 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-43-967
+Sep 21, 2023 11:17:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-44-057
+Sep 21, 2023 11:17:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-44-488
+Sep 21, 2023 11:17:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-44-845
+Sep 21, 2023 11:17:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-45-052
+Sep 21, 2023 11:17:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-45-086
+Sep 21, 2023 11:17:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-45-534
+2023.09.21 11:17:46 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:46 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-46-125
+Sep 21, 2023 11:17:46 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-46-613
+Sep 21, 2023 11:17:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-47-218
+2023.09.21 11:17:47 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:47 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:47 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-47-779
+Sep 21, 2023 11:17:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-49-298
+Sep 21, 2023 11:17:49 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 623
+Sep 21, 2023 11:17:49 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-49-726
+Sep 21, 2023 11:17:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-50-388
+Sep 21, 2023 11:17:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-50-510
+Sep 21, 2023 11:17:51 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 637
+Sep 21, 2023 11:17:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-51-778
+Sep 21, 2023 11:17:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-52-052
+Sep 21, 2023 11:17:52 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-52-491
+2023.09.21 11:17:53 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:17:53 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:17:53 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-53-090
+Sep 21, 2023 11:17:53 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-53-616
+2023.09.21 11:17:54 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:17:54 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-17-54-196
+Sep 21, 2023 11:18:05 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-05-861
+Sep 21, 2023 11:18:06 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-06-284
+Sep 21, 2023 11:18:07 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-07-358
+Sep 21, 2023 11:18:07 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-07-450
+Sep 21, 2023 11:18:07 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-07-898
+Sep 21, 2023 11:18:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-08-152
+Sep 21, 2023 11:18:08 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-08-607
+Sep 21, 2023 11:18:09 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-09-322
+2023.09.21 11:18:10 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:18:10 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:18:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-10-144
+Sep 21, 2023 11:18:10 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-10-203
+2023.09.21 11:18:11 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:18:11 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:18:11 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-11-131
+Sep 21, 2023 11:18:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-12-510
+Sep 21, 2023 11:18:12 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-12-948
+Sep 21, 2023 11:18:13 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-13-448
+Sep 21, 2023 11:18:13 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-13-899
+Sep 21, 2023 11:18:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-14-108
+Sep 21, 2023 11:18:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-14-537
+Sep 21, 2023 11:18:14 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-14-976
+Sep 21, 2023 11:18:15 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-15-432
+2023.09.21 11:18:15 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:18:15 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:18:16 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-16-032
+Sep 21, 2023 11:18:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-17-130
+Sep 21, 2023 11:18:17 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-17-514
+Sep 21, 2023 11:18:18 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-18-423
+2023.09.21 11:18:19 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+2023.09.21 11:18:19 WARN  Running javac-semanticdb failed for file:///home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java. Output:
+[0m
+Sep 21, 2023 11:18:19 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-19-191
+Sep 21, 2023 11:18:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-21-269
+Sep 21, 2023 11:18:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-22-209
+Sep 21, 2023 11:18:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-22-334
+Sep 21, 2023 11:18:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-22-778
+Sep 21, 2023 11:18:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-23-144
+Sep 21, 2023 11:18:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-23-579
+Sep 21, 2023 11:18:23 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-23-809
+Sep 21, 2023 11:18:24 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-24-030
+Sep 21, 2023 11:18:24 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-24-690
+Sep 21, 2023 11:18:25 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-25-512
+2023.09.21 11:18:26 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:18:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-26-087
+Sep 21, 2023 11:18:26 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-26-604
+Sep 21, 2023 11:18:27 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-27-204
+Sep 21, 2023 11:18:37 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-37-179
+Sep 21, 2023 11:18:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-38-147
+Sep 21, 2023 11:18:38 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-38-616
+2023.09.21 11:18:39 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:18:39 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-39-174
+Sep 21, 2023 11:18:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-40-011
+Sep 21, 2023 11:18:40 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-40-452
+2023.09.21 11:18:40 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 11:18:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-41-044
+Sep 21, 2023 11:18:45 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-45-420
+Sep 21, 2023 11:18:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-50-108
+Sep 21, 2023 11:18:50 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_11-18-50-674
+Sep 21, 2023 12:15:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_12-15-57-336
+Sep 21, 2023 12:15:58 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_12-15-58-356
+Sep 21, 2023 1:31:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_13-31-42-276
+Sep 21, 2023 1:31:42 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_13-31-42-984
+Sep 21, 2023 1:31:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_13-31-44-247
+Sep 21, 2023 1:31:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_13-31-45-489
+Sep 21, 2023 1:31:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_13-31-51-238
+2023.09.21 13:31:51 WARN  no build target for: /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/src/main/java/com/example/designpatterts/CollectionUtils.java[0m
+Sep 21, 2023 1:31:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /home/cytech/Travail/S3/DesignPatterns/Fabrique-FabriqueAbstraite/.metals/.reports/metals-full/2023-09-21/r_compiler-error_13-31-51-867
+2023.09.22 08:08:36 INFO  Shutting down server[0m
+2023.09.22 08:08:36 INFO  shutting down Metals[0m
+2023.09.22 08:08:36 INFO  Exiting server[0m
