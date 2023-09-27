@@ -1,0 +1,8 @@
+library(rpart)
+library(rpart.plot)
+myData = read.table("Test_Classif_dpt.txt", header = T)
+plot(myData$X1, myData$X2, col = myData$Y)
+tree = rpart(Y ~ ., myData)
+prp(tree, extra = 1)
+tree = rpart(Y ~ ., myData, control = rpart.control(minsplit = 5, cp = 0))
+prp(tree, extra = 1)
