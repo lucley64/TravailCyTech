@@ -1,4 +1,4 @@
-package com.example;
+package com.example.commande;
 
 public class Transfer extends WaterMovement {
     private final Can target;

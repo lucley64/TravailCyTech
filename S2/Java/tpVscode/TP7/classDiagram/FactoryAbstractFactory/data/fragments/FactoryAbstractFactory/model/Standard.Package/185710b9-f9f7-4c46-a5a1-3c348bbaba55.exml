@@ -17,6 +17,10 @@
         <COMPID name="factory" mc="Standard.Package" uid="e5325c30-6401-4061-b129-d4af4c52b86b"/>
         <COMPID name="abstractFactory" mc="Standard.Package" uid="784d937f-292c-4fee-94b6-2c7ceb6e5614"/>
         <COMPID name="Maze" mc="Standard.Class" uid="551e2a7c-0b7f-4974-b36c-a21471f6a714"/>
+        <COMPID name="Commande" mc="Standard.Package" uid="1d235805-c6ab-4b67-8b20-6e722c83f7e3"/>
+        <COMPID name="Observer" mc="Standard.Package" uid="38796d20-5c07-4b41-8a92-a07f78534d7f"/>
+        <COMPID name="composite" mc="Standard.Package" uid="5f914d45-cbab-4d6f-b59c-898b64bb055e"/>
+        <COMPID name="Decorator" mc="Standard.Package" uid="401c9bcc-ab2b-4ab0-953f-1e4228698522"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

@@ -1,4 +1,4 @@
-package com.example;
+package com.example.commande;
 
 public abstract class WaterMovement implements Command{
     protected Can source;

@@ -1,4 +1,4 @@
-package com.example;
+package com.example.commande;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

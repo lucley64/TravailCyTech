@@ -1,4 +1,4 @@
-package com.example;
+package com.example.commande;
 
 public class Empty extends WaterMovement{
     protected Empty(Can source) {
