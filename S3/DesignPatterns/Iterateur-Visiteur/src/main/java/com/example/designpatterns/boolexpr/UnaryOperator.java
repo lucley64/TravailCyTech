@@ -1,10 +1,12 @@
 package com.example.designpatterns.boolexpr;
 
+import com.example.designpatterns.visitor.BooleanExpressionWalker;
+
 public abstract class UnaryOperator implements Operator {
 
 	protected Node operand;
 
-	public UnaryOperator(Node operand) {
+	UnaryOperator(Node operand) {
 		this.operand = operand;
 	}
 
@@ -12,4 +14,10 @@ public abstract class UnaryOperator implements Operator {
 		return operand;
 	}
 
+
+	@Override
+	public void accept(BooleanExpressionWalker visitor) {
+		visitor.visit(this);
+		visitor.visit(operand);
+	}
 }
