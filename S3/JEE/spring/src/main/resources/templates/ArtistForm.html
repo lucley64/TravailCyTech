@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<form action="" method="post">
+    <label for="name"> Artist Name
+        <input type="text" name="name" id="name">
+    </label>
+    <label for="surname"> Artist surname
+        <input type="text" name="surname" id="surname">
+    </label>
+    <label for="birthdate"> Birthdate
+        <input type="date" name="birthdate" id="birthdate">
+    </label>
+    <label for="movies"> Movies
+        <select name="movies" id="movies" multiple>
+            <option th:each="movie: ${movies}" th:text="${movie.getId()} ':' ${movie.getTitle()}" th:value="${movie.getId()}"></option>
+        </select>
+        <a href="/Add-Movie"><input type="button" value="+"></a>
+    </label>
+
+    <label for="directed"> Directed
+        <select name="directed" id="directed" multiple>
+            <option th:each="movie: ${movies}" th:text="${movie.getId()} ':' ${movie.getTitle()}" th:value="${movie.getId()}"></option>
+        </select>
+        <a href="/Add-Movie"><input type="button" value="+"></a>
+    </label>
+
+    <input type="submit" value="Add">
+</form>
+</body>
+</html>

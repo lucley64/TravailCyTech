@@ -7,6 +7,8 @@ import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Entity
 @Setter
 @Getter
@@ -27,5 +29,13 @@ public class Movie {
     @Column
     private String genre;
 
+    @ManyToMany(targetEntity = Artist.class)
+    private Set<Artist> artists;
 
+    @ManyToMany(targetEntity = Artist.class)
+    private Set<Artist> directors;
+
+
+    @OneToOne(targetEntity = Country.class)
+    private Country country;
 }

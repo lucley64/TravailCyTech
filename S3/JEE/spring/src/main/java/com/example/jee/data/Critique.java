@@ -1,16 +1,14 @@
 package com.example.jee.data;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.Date;
-import java.util.Set;
 
 @Entity
 @Getter
 @Setter
-public class Artist {
+public class Critique {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -22,11 +20,9 @@ public class Artist {
     private String surname;
 
     @Column
-    private Date birthDate;
+    @Email
+    private String eMail;
 
-    @ManyToMany(targetEntity = Movie.class, mappedBy = "artists")
-    private Set<Movie> movies;
-
-    @ManyToMany(targetEntity = Movie.class, mappedBy = "directors")
-    private Set<Movie> directed;
+    @Column
+    private String address;
 }

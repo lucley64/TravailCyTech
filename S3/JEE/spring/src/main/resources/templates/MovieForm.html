@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form movie</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<form method="post" action="">
+    <h1>Create a movie</h1>
+    <label for="title">Movie Title
+        <input type="text" name="title" id="title">
+    </label>
+    <label for="date">Production date
+        <input type="date" name="date" id="date">
+    </label>
+    <label for="genre">Genre
+        <input type="text" name="genre" id="genre">
+    </label>
+
+    <label for="artists">Select artists
+        <select multiple name="artists" id="artists" >
+            <option th:each="artist: ${artists}" th:text="${artist.getId()}':' ${artist.getName()}"></option>
+        </select>
+        <a href="/Add-Artist"> <input type="button" value="+"></a>
+    </label>
+
+
+    <input type="submit" value="Add">
+</form>
+</body>
+</html>
