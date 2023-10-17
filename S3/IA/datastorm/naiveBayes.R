@@ -74,5 +74,49 @@ rm(list = ls())
 # Exercice 3
 library(e1071)
 
-modele <- naiveBayes(Species ~ Petal.Length + Petal.Width, data = iris)
-print(modele)
+model <- naiveBayes(Species ~ Petal.Length + Petal.Width, data = iris)
+print(model)
+
+# New iris
+newIris <- matrix(0, 3, 2)
+newIris[1, ] <- c(2, .2)
+newIris[2, ] <- c(5, 1.65)
+newIris[3, ] <- c(7, 3)
+newIris <- as.data.frame(newIris)
+names(newIris) <- names(iris)[3:4]
+
+predict(model, newdata = newIris, type = "raw")
+
+rm(list = ls())
+# Classif correl
+tab <- read.table("Test_Classif_Correl.txt", header = T)
+tab$Y <- as.factor(tab$Y)
+plot(tab$X1, tab$X2, col = tab$Y)
+
+
+rm(list = ls())
+# Exercice 4
+data <- read.table("lenses.txt", header = T)
+
+data$Age <- as.factor(data$Age)
+data$Prescription <- as.factor(data$Prescription)
+data$Astigmatic <- as.factor(data$Astigmatic)
+data$Tears <- as.factor(data$Tears)
+data$Recommendation <- as.factor(data$Recommendation)
+
+n <- nrow(data)
+ntrain <- floor(2 * n / 3)
+i <- sample(1:n, ntrain, replace = F) # n° des lignes à mettre dans la base d'apprentissage
+
+train <- data[i,] # base d'apprentissage
+validation <- data[-i,] # base de validation
+
+
+model <- naiveBayes(Recommendation ~ Age+Prescription+Astigmatic+Tears, data = train)
+print(model)
+
+prediction <- predict(model, validation)
+matConf <- table(validation$Recommendation, prediction)
+print(matConf)
+sum(diag(matConf))/sum(matConf)
+
