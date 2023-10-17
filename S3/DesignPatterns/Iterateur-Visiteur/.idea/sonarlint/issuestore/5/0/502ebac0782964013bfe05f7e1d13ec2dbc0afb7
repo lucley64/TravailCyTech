@@ -1,0 +1,6 @@
+
+W	java:S125	"<This block of commented-out lines of code should be removed.(âÄÛ58ğÖ˜²1
+L	java:S106"+Replace this use of System.out by a logger.(Ä©‚šÿÿÿÿÿ8×âÓ˜²1
+L	java:S106"+Replace this use of System.out by a logger.(‚é€Şûÿÿÿÿ8Ô®Ö˜²1
+O
+java:S1144"-Remove this unused private "iterator" method.(õÿèÙÿÿÿÿÿ8¡ğÖ˜²1
