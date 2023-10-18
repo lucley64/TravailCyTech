@@ -24,7 +24,9 @@ spw <- sd(setosa$Petal.Width)
 
 # Calcul de PPsetosa
 
-ppsetosa <- (50 / 150) * dnorm(x1, mpl, spl) * dnorm(x2, mpw, spw)
+ppsetosa <- (50 / 150) *
+    dnorm(x1, mpl, spl) *
+    dnorm(x2, mpw, spw)
 
 
 # Versicolor
@@ -44,7 +46,9 @@ spw <- sd(versicolor$Petal.Width)
 
 # Calcul de PPversicolor
 
-ppversicolor <- (50 / 150) * dnorm(x1, mpl, spl) * dnorm(x2, mpw, spw)
+ppversicolor <- (50 / 150) *
+    dnorm(x1, mpl, spl) *
+    dnorm(x2, mpw, spw)
 
 # Virginica
 
@@ -63,7 +67,9 @@ spw <- sd(virginica$Petal.Width)
 
 # Calcul de PPvirginica
 
-ppvirginica <- (50 / 150) * dnorm(x1, mpl, spl) * dnorm(x2, mpw, spw)
+ppvirginica <- (50 / 150) *
+    dnorm(x1, mpl, spl) *
+    dnorm(x2, mpw, spw)
 
 # Probabilité
 psetosa <- ppsetosa / (ppsetosa + ppversicolor + ppvirginica)
@@ -79,9 +85,9 @@ print(model)
 
 # New iris
 newIris <- matrix(0, 3, 2)
-newIris[1, ] <- c(2, .2)
-newIris[2, ] <- c(5, 1.65)
-newIris[3, ] <- c(7, 3)
+newIris[1,] <- c(2, .2)
+newIris[2,] <- c(5, 1.65)
+newIris[3,] <- c(7, 3)
 newIris <- as.data.frame(newIris)
 names(newIris) <- names(iris)[3:4]
 
@@ -112,11 +118,11 @@ train <- data[i,] # base d'apprentissage
 validation <- data[-i,] # base de validation
 
 
-model <- naiveBayes(Recommendation ~ Age+Prescription+Astigmatic+Tears, data = train)
+model <- naiveBayes(Recommendation ~ Age + Prescription + Astigmatic + Tears, data = data)
 print(model)
 
-prediction <- predict(model, validation)
-matConf <- table(validation$Recommendation, prediction)
+prediction <- predict(model, data)
+matConf <- table(data$Recommendation, prediction)
 print(matConf)
-sum(diag(matConf))/sum(matConf)
+sum(diag(matConf)) / sum(matConf)
 

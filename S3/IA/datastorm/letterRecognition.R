@@ -7,13 +7,18 @@ data$V1 <- as.factor(data$V1)
 # Verification repartition des classes
 pie(table(data$V1))
 
-# Construction des bases train et validation
+# Création bases apprentissage (2/3), validation (1/6) et test (1/6)
 n <- nrow(data)
+# Base apprentissage
 ntrain <- floor(2 * n / 3)
-i <- sample(1:n, ntrain, replace = F) # n° des lignes à mettre dans la base d'apprentissage
-
-train <- data[i,] # base d'apprentissage
-validation <- data[-i,] # base de validation
+index <- sample(1:n, ntrain, replace = F)
+train <- data[index,]
+reste <- data[-index,]
+# Bases validation et test
+nval <- floor(n / 6)
+indexval <- sample(seq_len(nrow(reste)), nval, replace = F)
+validation <- reste[indexval,]
+test <- reste[-indexval,]
 
 #construction d'un arbre
 tree <- rpart(V1 ~ ., train)
@@ -25,14 +30,14 @@ prp(cutTree)
 prevision <- predict(cutTree, validation, type = "class")
 matConf <- table(validation$V1, prevision)
 print(matConf)
-sum(diag(matConf))/sum(matConf)
+sum(diag(matConf)) / sum(matConf)
 
 bestTree <- tune.rpart(V1 ~ ., train, minbucket = c(5, 10, 20, 30))
 prp(bestTree$best.model)
 prevision <- predict(bestTree$best.model, validation, type = "class")
 matConf <- table(validation$V1, prevision)
 print(matConf)
-sum(diag(matConf))/sum(matConf)
+sum(diag(matConf)) / sum(matConf)
 
 
 # construction d'une forêt
@@ -45,4 +50,11 @@ matConf <- table(validation$V1, prevision)
 print(matConf)
 
 
-
+# Naive bayes
+library(e1071)
+model <- naiveBayes(V1 ~ ., data = train)
+print(model)
+prevision <- predict(model, validation)
+matConf <- table(validation$V1, prevision)
+print(matConf)
+sum(diag(matConf)) / sum(matConf)
