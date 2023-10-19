@@ -6,43 +6,38 @@ import com.example.designpatterns.boolexpr.Not;
 import com.example.designpatterns.boolexpr.Or;
 import org.jetbrains.annotations.NotNull;
 
-public class PrintVisitor implements Visitor {
-    StringBuilder sj = new StringBuilder();
+public class EvaluateVisitor implements Visitor {
+    boolean eval;
 
 
     @Override
     public void visit(@NotNull Bool bool) {
-        sj.append(bool.getValue());
+        eval = bool.getValue();
     }
 
     @Override
     public void visit(Not not) {
-        sj.append("NOT(");
         not.getOperand().accept(this);
-        sj.append(")");
+        eval = !eval;
     }
 
     @Override
     public void visit(Or or) {
-        sj.append("(");
         or.getLeftOperand().accept(this);
-        sj.append(" OR ");
+        boolean sav = eval;
         or.getRightOperand().accept(this);
-        sj.append(")");
+        eval = sav || eval;
     }
 
     @Override
     public void visit(And and) {
-        sj.append("(");
         and.getLeftOperand().accept(this);
-        sj.append(" AND ");
+        boolean sav = eval;
         and.getRightOperand().accept(this);
-        sj.append(")");
+        eval = sav && eval;
     }
 
-
-    @Override
-    public String toString() {
-        return sj.toString();
+    public boolean evaluate() {
+        return eval;
     }
 }

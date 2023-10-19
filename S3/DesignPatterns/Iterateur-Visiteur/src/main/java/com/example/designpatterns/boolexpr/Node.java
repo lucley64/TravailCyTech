@@ -1,11 +1,10 @@
 package com.example.designpatterns.boolexpr;
 
-import com.example.designpatterns.visitor.BooleanExpressionWalker;
+import com.example.designpatterns.visitor.Visitor;
 
 public interface Node {
 
     boolean evaluate();
 
-    void accept(BooleanExpressionWalker visitor);
-
+    void accept(Visitor v);
 }

@@ -42,7 +42,7 @@ public class InfixOrderIterator<T> implements Iterator<T> {
         throw new NoSuchElementException();
     }
 
-    private void moveRight(@NotNull Tree<? extends T> tree){
+    private void moveRight(@NotNull Tree<? extends T> tree) {
         actual = Optional.of(tree.getRight());
 
         while (actual.get().getLeft() != null) {
@@ -50,10 +50,10 @@ public class InfixOrderIterator<T> implements Iterator<T> {
         }
     }
 
-    private void goBack(@NotNull Tree<? extends T> tree){
+    private void goBack(@NotNull Tree<? extends T> tree) {
         if (tree.getParent() != null && tree.equals(tree.getParent().getRight())) {
             actual = Optional.ofNullable(tree.getParent().getParent());
-            while (actual.isPresent() && actual.get().getParent() != null && actual.get().equals(actual.get().getParent().getRight())){
+            while (actual.isPresent() && actual.get().getParent() != null && actual.get().equals(actual.get().getParent().getRight())) {
                 actual = Optional.ofNullable(actual.get().getParent().getParent());
             }
         } else {
