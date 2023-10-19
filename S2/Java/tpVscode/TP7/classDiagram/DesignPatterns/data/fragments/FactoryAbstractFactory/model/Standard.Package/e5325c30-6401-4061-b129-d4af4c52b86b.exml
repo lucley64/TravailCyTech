@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="factory" version="4">
+  <OBJECT>
+    <ID name="factory" mc="Standard.Package" uid="e5325c30-6401-4061-b129-d4af4c52b86b"/>
+    <PID name="factoryabstractfactory" mc="Standard.Package" uid="185710b9-f9f7-4c46-a5a1-3c348bbaba55"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[factory]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="MazeCreator" mc="Standard.Class" uid="5d2f4410-9bd9-4c42-be5a-c74f225463e4"/>
+        <COMPID name="SimpleMazeCreator" mc="Standard.Class" uid="540b5258-4de5-47ff-aa6a-4e1a471eeb12"/>
+        <COMPID name="EnchantedMazeCreator" mc="Standard.Class" uid="b6970055-d29b-4a54-b5d3-df0b7ea97c2d"/>
+        <COMPID name="MinedMazeCreator" mc="Standard.Class" uid="e593304f-74fd-4bbe-b004-20ba961f0ff2"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="factory Class diagram" mc="Standard.ClassDiagram" uid="35f25957-1a70-476c-bb62-455e47803827"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
