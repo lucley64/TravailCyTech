@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Adapter" version="4">
+  <OBJECT>
+    <ID name="Adapter" mc="Standard.Package" uid="72421a1b-4953-49cd-8189-dba4372e87d9"/>
+    <PID name="factoryabstractfactory" mc="Standard.Package" uid="185710b9-f9f7-4c46-a5a1-3c348bbaba55"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Adapter]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Iterator&lt;T&gt;" mc="Standard.Interface" uid="d1409f15-f7da-42aa-956e-355d16e0b4f2"/>
+        <COMPID name="Enumeration&lt;T&gt;" mc="Standard.Interface" uid="d7168024-5d5e-4411-bbae-c0b1c711fa56"/>
+        <COMPID name="Adapter" mc="Standard.Class" uid="4b08c73a-d953-46f1-8ea9-9ab87a571480"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Adapter Class diagram" mc="Standard.ClassDiagram" uid="e84aa8a1-19fd-476e-a2e4-6feb8b3bd3d5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -21,6 +21,9 @@
         <COMPID name="Observer" mc="Standard.Package" uid="38796d20-5c07-4b41-8a92-a07f78534d7f"/>
         <COMPID name="composite" mc="Standard.Package" uid="5f914d45-cbab-4d6f-b59c-898b64bb055e"/>
         <COMPID name="Decorator" mc="Standard.Package" uid="401c9bcc-ab2b-4ab0-953f-1e4228698522"/>
+        <COMPID name="Adapter" mc="Standard.Package" uid="72421a1b-4953-49cd-8189-dba4372e87d9"/>
+        <COMPID name="Proxy" mc="Standard.Package" uid="ab5a7be4-7f5d-4098-9870-f498897d455f"/>
+        <COMPID name="Visitor" mc="Standard.Package" uid="caa0fc2d-dc32-4d09-b2ac-feeb1fa7df95"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

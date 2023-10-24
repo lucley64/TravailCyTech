@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Iterator&lt;T&gt;" version="4">
+  <OBJECT>
+    <ID name="Iterator&lt;T&gt;" mc="Standard.Interface" uid="d1409f15-f7da-42aa-956e-355d16e0b4f2"/>
+    <PID name="Adapter" mc="Standard.Package" uid="72421a1b-4953-49cd-8189-dba4372e87d9"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Iterator<T>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

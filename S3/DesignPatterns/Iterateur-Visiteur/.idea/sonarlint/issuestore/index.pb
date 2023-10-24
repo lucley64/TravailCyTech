@@ -34,3 +34,7 @@ b
 2src/main/java/com/example/designpatterns/Main.java,5/0/502ebac0782964013bfe05f7e1d13ec2dbc0afb7
 j
 :src/main/java/com/example/designpatterns/boolexpr/Not.java,0/6/068eabada985cbee8d840a6b7ba8b2288e39cc5f
+u
+Esrc/main/java/com/example/designpatterns/visitor/EvaluateVisitor.java,d/a/da809fb597fbf69e78b71a9d15a718448b5e5957
+m
+=src/main/java/com/example/designpatterns/visitor/Visitor.java,8/5/85ea30cb20044eb153cfce1219ed299201c0b0b4

@@ -34,3 +34,7 @@ u
 Esrc/main/java/com/example/designpatterns/boolexpr/BinaryOperator.java,b/3/b3d69e9d105f50e7f288e7faf134462503212d2a
 j
 :src/main/java/com/example/designpatterns/boolexpr/Not.java,0/6/068eabada985cbee8d840a6b7ba8b2288e39cc5f
+u
+Esrc/main/java/com/example/designpatterns/visitor/EvaluateVisitor.java,d/a/da809fb597fbf69e78b71a9d15a718448b5e5957
+m
+=src/main/java/com/example/designpatterns/visitor/Visitor.java,8/5/85ea30cb20044eb153cfce1219ed299201c0b0b4

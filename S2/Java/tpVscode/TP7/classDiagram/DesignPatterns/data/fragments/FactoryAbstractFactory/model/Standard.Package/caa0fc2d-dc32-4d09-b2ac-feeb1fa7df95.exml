@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Visitor" version="4">
+  <OBJECT>
+    <ID name="Visitor" mc="Standard.Package" uid="caa0fc2d-dc32-4d09-b2ac-feeb1fa7df95"/>
+    <PID name="factoryabstractfactory" mc="Standard.Package" uid="185710b9-f9f7-4c46-a5a1-3c348bbaba55"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Visitor]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Node" mc="Standard.Interface" uid="f1400420-bf46-4680-8c1e-230d6fac840c"/>
+        <COMPID name="Operator" mc="Standard.Interface" uid="5d151d0b-bf8b-46a0-b8d7-ef9ae8798314"/>
+        <COMPID name="Bool" mc="Standard.Class" uid="f8e77834-89a6-4ce3-93bd-8a8c03613ffc"/>
+        <COMPID name="BinaryOperator" mc="Standard.Class" uid="e7b54d91-9717-467f-9cad-29631c372f0d"/>
+        <COMPID name="UnaryOperator" mc="Standard.Class" uid="3e308cc2-594e-47f3-acda-d0ef9f1c6dc7"/>
+        <COMPID name="And" mc="Standard.Class" uid="3e963012-7dfe-4298-87fb-78dc1019c8ab"/>
+        <COMPID name="Or" mc="Standard.Class" uid="a3744fa3-1d2d-4f52-bd0e-1bc9b4789670"/>
+        <COMPID name="Not" mc="Standard.Class" uid="5ccbb27f-7eac-4e21-bfd7-dda9bd4d701f"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Visitor Class diagram" mc="Standard.ClassDiagram" uid="6591fad9-e417-4697-8a52-6281b8afb8a9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

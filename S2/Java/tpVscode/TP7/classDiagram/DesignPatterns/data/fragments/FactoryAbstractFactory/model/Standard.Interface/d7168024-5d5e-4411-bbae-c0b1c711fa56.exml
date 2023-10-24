@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Enumeration&lt;T&gt;" version="4">
+  <OBJECT>
+    <ID name="Enumeration&lt;T&gt;" mc="Standard.Interface" uid="d7168024-5d5e-4411-bbae-c0b1c711fa56"/>
+    <PID name="Adapter" mc="Standard.Package" uid="72421a1b-4953-49cd-8189-dba4372e87d9"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Enumeration<T>]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

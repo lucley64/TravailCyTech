@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Proxy" version="4">
+  <OBJECT>
+    <ID name="Proxy" mc="Standard.Package" uid="ab5a7be4-7f5d-4098-9870-f498897d455f"/>
+    <PID name="factoryabstractfactory" mc="Standard.Package" uid="185710b9-f9f7-4c46-a5a1-3c348bbaba55"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Proxy]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Provider" mc="Standard.Interface" uid="f50f6478-5622-4ccb-80df-b629a6140538"/>
+        <COMPID name="ServiceProvider" mc="Standard.Class" uid="7b03fa1b-abcb-415d-9a5d-f33f561be67c"/>
+        <COMPID name="Facturer" mc="Standard.Class" uid="d056554a-7bb1-4a45-86c0-4b72e059c9e4"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Proxy Class diagram" mc="Standard.ClassDiagram" uid="5d8a24fb-3ecb-4aa3-854f-4ad4c892aafa"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
