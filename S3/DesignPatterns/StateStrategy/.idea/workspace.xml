@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fdab2a1-fcfe-46b4-83fd-999523fa4fa2" name="Changes" comment="state strategy">
-      <change afterPath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/.runtime/lock.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/.runtime/lock.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/Keypad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadNoOK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadOK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadThee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/state/KeypadZero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/strategy/Attack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/strategy/ChooseStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/strategy/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/strategy/RandomStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/strategy/SameStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/strategy/Strategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/td7.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.dbf.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.dbf.t" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.dbr.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.dbr.t" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.idf.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.idf.t" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.idr.t" beforeDir="false" afterPath="$PROJECT_DIR$/../../../S2/Java/tpVscode/TP7/classDiagram/DesignPatterns/data/localmodel/localmodel.idr.t" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpatterns/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="6fdab2a1-fcfe-46b4-83fd-999523fa4fa2" name="Changes" comment="state strategy" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698300376381</updated>
-      <workItem from="1698300377546" duration="7528000" />
+      <workItem from="1698300377546" duration="7656000" />
     </task>
     <task id="LOCAL-00001" summary="tests">
       <option name="closed" value="true" />
@@ -122,7 +97,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698300415701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="state strategy">
+      <option name="closed" value="true" />
+      <created>1698307927392</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698307927392</updated>
+    </task>
+    <task id="LOCAL-00004" summary="state strategy">
+      <option name="closed" value="true" />
+      <created>1698307967172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698307967172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
