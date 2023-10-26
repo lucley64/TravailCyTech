@@ -21,9 +21,14 @@
         <COMPID name="Vigenere" mc="Standard.Class" uid="78802ee2-51f4-460a-ad77-f20027dbc179"/>
         <COMPID name="DentsDeScie" mc="Standard.Class" uid="789c760e-697a-4488-947c-e210d0f5a090"/>
         <COMPID name="PaireLettres" mc="Standard.Class" uid="2ccb20b9-7a29-45a2-aa36-53a1b47c6437"/>
+        <COMPID name="User" mc="Standard.Class" uid="4ad341be-bf4d-4536-8bb4-b294de135fbd"/>
+        <COMPID name="Role" mc="Standard.Class" uid="b7fb1dc7-4c38-4c90-9103-4b5acd3156ad"/>
+        <COMPID name="Science" mc="Standard.Class" uid="90bbb0f6-231f-4d96-a190-0eec89888e4c"/>
+        <COMPID name="Category" mc="Standard.Class" uid="c0e5ccdf-c7fc-4601-b1cd-caf3d85b15ca"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="singh Class diagram" mc="Standard.ClassDiagram" uid="30aac239-cc88-49da-8a88-7e2c702ca903"/>
+        <COMPID name="singh Class diagram (1)" mc="Standard.ClassDiagram" uid="4637809b-9d90-459b-9f8d-c2d345f97e64"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

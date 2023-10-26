@@ -1,6 +1,6 @@
-#Wed Mar 22 14:12:04 CET 2023
+#Tue Oct 24 23:16:44 CEST 2023
 org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.app.diagram.editor.OpenedDiagrams0='singh Class diagram' {30aac239-cc88-49da-8a88-7e2c702ca903} Standard.ClassDiagram
-org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.diagram.editor.OpenedDiagrams0='singh Class diagram (1)' {4637809b-9d90-459b-9f8d-c2d345f97e64} Standard.ClassDiagram
 org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
