@@ -24,6 +24,8 @@
         <COMPID name="Adapter" mc="Standard.Package" uid="72421a1b-4953-49cd-8189-dba4372e87d9"/>
         <COMPID name="Proxy" mc="Standard.Package" uid="ab5a7be4-7f5d-4098-9870-f498897d455f"/>
         <COMPID name="Visitor" mc="Standard.Package" uid="caa0fc2d-dc32-4d09-b2ac-feeb1fa7df95"/>
+        <COMPID name="State" mc="Standard.Package" uid="e8d88cf4-556c-42e9-8474-ee07d427dfed"/>
+        <COMPID name="Strategy" mc="Standard.Package" uid="9b0a6f39-3525-4ae0-ad6e-a0f71a5cad22"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

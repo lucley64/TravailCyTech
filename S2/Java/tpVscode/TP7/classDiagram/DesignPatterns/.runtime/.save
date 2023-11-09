@@ -1,9 +1,11 @@
-#Fri Oct 20 07:57:49 CEST 2023
-org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+#Fri Oct 27 08:22:39 CEST 2023
+org.modelio.app.diagram.editor.OpenedDiagrams4='State Class diagram' {e7ee6839-bda4-48cd-9eb0-53ef1f35e140} Standard.ClassDiagram
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.diagram.editor.OpenedDiagrams3='Visitor Class diagram' {6591fad9-e417-4697-8a52-6281b8afb8a9} Standard.ClassDiagram
 org.modelio.app.diagram.editor.OpenedDiagrams2='Proxy Class diagram' {5d8a24fb-3ecb-4aa3-854f-4ad4c892aafa} Standard.ClassDiagram
 org.modelio.app.diagram.editor.OpenedDiagrams1='Adapter Class diagram' {e84aa8a1-19fd-476e-a2e4-6feb8b3bd3d5} Standard.ClassDiagram
-org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.diagram.editor.OpenedDiagrams0='composite Class diagram' {6a3e3683-294c-4e78-b918-164a2924574c} Standard.ClassDiagram
 org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.app.diagram.editor.OpenedDiagrams5='Strategy Class diagram' {94fbe628-b177-48fc-ab80-c8a2d8d62280} Standard.ClassDiagram
 org.modelio.app.module.propertytab.JavaDesigner\ v3.10.00\ GModule\ @file\:///home/cytech/.modelio/4.1/modules/JavaDesigner_3.10.00/JavaDesigner_3.10.00.jmdac\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
