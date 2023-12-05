@@ -1,0 +1,326 @@
+;Industry classfication;Country ;Continent;Capital expenditure;Net sales ;Number of employees;Operating profits;R&D investment
+ATI Technologies;Computer hardware;CA;AMERIQUE;63;2197;8000;309;35,69
+Hewlett-Packard;Computer hardware;US;AMERIQUE;7;167;1047;10;79,29
+Sun Microsystems;Computer hardware;US;AMERIQUE;8;438;2717;96;43,19
+EMC;Computer hardware;US;AMERIQUE;4;253;1874;8;36,1
+Apple Computer;Computer hardware;US;AMERIQUE;2;229;2453;10;32,81
+Dell;Computer hardware;US;AMERIQUE;3;47;1784;-1;28,5
+Lexmark;Computer hardware;US;AMERIQUE;5;381;2546;70;26,61
+NCR;Computer hardware;US;AMERIQUE;4;356;2040;22;24,93
+Maxtor;Computer hardware;US;AMERIQUE;23;382;2137;6;24,47
+Network Appliance;Computer hardware;US;AMERIQUE;9;169;1438;-7;24,03
+Western Digital;Computer hardware;US;AMERIQUE;3;106;665;5;23,08
+Storage Technology;Computer hardware;US;AMERIQUE;1;102;595;22;21,41
+Tektronix;Computer hardware;US;AMERIQUE;4;165;1388;12;20,63
+Palm;Computer hardware;US;AMERIQUE;1;96;486;16;20,3
+McData;Computer hardware;US;AMERIQUE;1;128;486;30;19,84
+Avid Technology;Computer hardware;US;AMERIQUE;3;224;2050;14;19,54
+Electronics For Imaging;Computer hardware;US;AMERIQUE;0;81;318;8;18,59
+Quantum;Computer hardware;US;AMERIQUE;8;70;678;14;18,46
+Silicon Graphics;Computer hardware;US;AMERIQUE;3;211;1532;-11;18,28
+American Power Conversion;Computer hardware;US;AMERIQUE;1;58;492;-2;17,12
+Emulex;Computer hardware;US;AMERIQUE;2;137;915;21;17,12
+Unova (now Intermec);Computer hardware;US;AMERIQUE;1;76;547;5;16,37
+Adaptec;Computer hardware;US;AMERIQUE;2;103;754;-7;16,04
+Diebold;Computer hardware;US;AMERIQUE;8;108;588;14;15,33
+Avocent;Computer hardware;US;AMERIQUE;6;225;2650;41;15,26
+Imation;Computer hardware;US;AMERIQUE;1;30;240;-28;14,75
+Mercury Computer Systems;Computer hardware;US;AMERIQUE;5;262;1093;15;14,39
+Komag;Computer hardware;US;AMERIQUE;2;106;843;11;12,81
+Zebra Technologies;Computer hardware;US;AMERIQUE;0;43;121;1;12,26
+Verifone;Computer hardware;US;AMERIQUE;2;83;518;4;10,99
+Advanced Digital Information;Computer hardware;US;AMERIQUE;0;44;397;7;10,73
+Cray;Computer hardware;US;AMERIQUE;1;113;698;13;10,5
+Hutchinson Technology;Computer hardware;US;AMERIQUE;0;45;246;5;10,1
+Micros Systems;Computer hardware;US;AMERIQUE;3;318;2297;30;9,52
+Radisys;Computer hardware;US;AMERIQUE;1;34;378;3;9,47
+Lenovo;Computer hardware;HK;ASIE;95;8941;40000;1143;137,67
+M-Systems Flash Disk Pioneers (now M-Systems);Computer hardware;IL;ASIE;82;2375;12403;160;79,76
+Hitachi;Computer hardware;JP;ASIE;7;212;1647;24;15,01
+Toshiba;Computer hardware;JP;ASIE;7;238;2316;19;14,85
+NEC;Computer hardware;JP;ASIE;10;139;861;33;14,63
+Fujitsu;Computer hardware;JP;ASIE;6;177;601;16;12,28
+Mitsubishi Electric;Computer hardware;JP;ASIE;6;279;1818;37;12,08
+Rohm;Computer hardware;JP;ASIE;5;720;316;195;10,2
+Nidec;Computer hardware;JP;ASIE;7;121;614;13;9,52
+Tokyo Seimitsu;Computer hardware;JP;ASIE;4;118;506;9;7,91
+Eizo Nanao;Computer hardware;JP;ASIE;11;146;1296;13;7,69
+Creative Technology;Computer hardware;SG;ASIE;984;30395;137799;1577;2337
+Benq;Computer hardware;TW;ASIE;0;5;76;-8;2,98
+MediaTek;Computer hardware;TW;ASIE;2562;63885;334402;2670;4056,61
+Asustek Computer;Computer hardware;TW;ASIE;3322;49873;158500;2570;3819,68
+Pou Chen;Computer hardware;TW;ASIE;146;2569;10845;293;188,71
+Lite-On Technology;Computer hardware;TW;ASIE;154;3836;18574;204;164,86
+Wistron;Computer hardware;TW;ASIE;143;4168;12673;280;130,76
+Inventec Appliances;Computer hardware;TW;ASIE;23;871;3034;286;63,48
+Inventec;Computer hardware;TW;ASIE;365;1610;2060;-194;41,25
+Micro-Star International;Computer hardware;TW;ASIE;6;166;400;-32;34,83
+Kinpo Electronics;Computer hardware;TW;ASIE;96;2222;12360;210;230
+Accton Technology;Computer hardware;TW;ASIE;348;7889;71611;969;149
+Logitech International;Computer hardware;CH;EUROPE;994;20428;68700;1090;53,41
+Kontron;Computer hardware;DE;EUROPE;0;0;30;-9;3,64
+Softing;Computer hardware;DE;EUROPE;1;18;132;-3;3,24
+Glunz and Jensen;Computer hardware;DK;EUROPE;13;270;1316;27;3,2
+Bull;Computer hardware;FR;EUROPE;218;4214;6695;258;4,34
+Axis;Computer hardware;SE;EUROPE;6;131;520;17;9,65
+Anoto;Computer hardware;SE;EUROPE;1;124;334;10;8,74
+Switchcore;Computer hardware;SE;EUROPE;3;210;708;18;7,49
+AudioDev;Computer hardware;SE;EUROPE;3;1;108;-20;6,87
+Psion;Computer hardware;UK;EUROPE;1;37;378;-1;3,23
+Plasmon;Computer hardware;UK;EUROPE;0;0;21;-5;3,2
+Radstone Technology;Computer hardware;UK;EUROPE;1003;22844;184200;-1851;1865,03
+CGI;Computer services;CA;AMERIQUE;56;1778;4425;398;42
+Macdonald Dettwiler and Associates;Computer services;CA;AMERIQUE;690;14556;57778;2573;38
+IBM;Computer services;US;AMERIQUE;303;730;1786;303;15,52
+Unisys;Computer services;US;AMERIQUE;45;467;2191;84;13,8
+SunGard Data Systems;Computer services;US;AMERIQUE;9;189;2654;19;8,95
+DST Systems;Computer services;US;AMERIQUE;13;626;6449;16;7,77
+Ixia;Computer services;US;AMERIQUE;23;937;7515;109;7
+Quadramed;Computer services;US;AMERIQUE;1;104;438;6;6,91
+Formula Systems (1985);Computer services;IL;ASIE;28;1257;8800;148;69,42
+IONA Technologies;Computer services;IR;ASIE;153;13035;55200;821;640,04
+Nihon Unisys;Computer services;JP;ASIE;35;2264;4287;288;551,56
+D-Link;Computer services;TW;ASIE;345;9573;36000;2606;943,45
+H-Link;Computer services;TW;ASIE;140;6532;26071;965;551
+Wincor Nixdorf;Computer services;DE;EUROPE;223;8459;32530;844;213,94
+PSI;Computer services;DE;EUROPE;288;2756;14434;241;146,9
+SoftM Software und Beratung;Computer services;DE;EUROPE;931;10435;35900;1456;141,1
+Mensch und Maschine Software;Computer services;DE;EUROPE;258;5399;19444;274;134
+GFT Technologies;Computer services;DE;EUROPE;243;7150;18282;-7;101
+Realtech;Computer services;DE;EUROPE;47;779;4719;-87;94,6
+CENIT AG Systemhaus;Computer services;DE;EUROPE;122;3176;7938;55;92
+Indra Sistemas;Computer services;ES;EUROPE;86;1417;2721;163;68,44
+TietoEnator;Computer services;FI;EUROPE;110;2244;15294;55;18,7
+F-Secure;Computer services;FI;EUROPE;6;246;792;67;10,01
+Stonesoft;Computer services;FI;EUROPE;71;992;5631;88;6,04
+Sopra;Computer services;FR;EUROPE;17;508;3899;82;7,81
+Sword;Computer services;FR;EUROPE;26;1551;9362;153;7,71
+GFI Informatique;Computer services;FR;EUROPE;31;1199;7817;58;7,63
+Ares;Computer services;FR;EUROPE;17;548;3065;53;7,13
+Prosodie;Computer services;FR;EUROPE;1;101;801;10;6,9
+ALTEC;Computer services;GR;EUROPE;31;1914;9991;43;3,66
+Unisystems Information Systems;Computer services;GR;EUROPE;2;109;537;4;3,62
+Intentia International;Computer services;SE;EUROPE;8;577;732;45;50,98
+Teleca;Computer services;SE;EUROPE;10;130;505;-17;49,46
+Protect Data;Computer services;SE;EUROPE;19;309;3688;-9;44
+LogicaCMG;Computer services;UK;EUROPE;335;7667;33388;291;474,01
+Northgate Information Solutions;Computer services;UK;EUROPE;198;5022;27500;420;122,67
+Torex Retail;Computer services;UK;EUROPE;48;959;1000;41;70,35
+Anite;Computer services;UK;EUROPE;415;10125;58760;705;408
+Microgen;Computer services;UK;EUROPE;5839;51051;156765;7957;402
+Detica;Computer services;UK;EUROPE;1296;13758;32231;3031;114,72
+AIT (now Portrait Software);Computer services;UK;EUROPE;597;3441;23016;-594;80,05
+TTP;Computer services;UK;EUROPE;579;10817;17926;1265;24
+Newchurch;Computer services;UK;EUROPE;1302;6099;18485;790;23,04
+ClinPhone;Computer services;UK;EUROPE;766;601;938;-11;21,5
+Google;Internet;US;AMERIQUE;9;233;1624;12;5,62
+Yahoo!;Internet;US;AMERIQUE;286;3497;90096;373;5,39
+United Online;Internet;US;AMERIQUE;6;279;2175;1;4,95
+F5 Networks;Internet;US;AMERIQUE;80;1161;8121;142;4,84
+Infospace;Internet;US;AMERIQUE;1;113;1330;6;4,25
+Check Point Software Technologies;Internet;IL;ASIE;22;1023;5587;48;58,6
+Softbank;Internet;JP;ASIE;903;4137;18800;171;511,78
+Ubizen;Internet;BE;EUROPE;56;883;4541;25;8
+ComBOTS;Internet;DE;EUROPE;166;6922;7451;331;85,58
+TELES;Internet;DE;EUROPE;22;593;2527;-89;66,08
+PlusNet;Internet;UK;EUROPE;3037;35525;60084;5840;20
+Tadpole Technology;Internet;UK;EUROPE;335;3877;8939;1861;14
+Alltel;Mobile telecommunications;US;AMERIQUE;4;64;416;0;3,51
+Sprint Nextel;Mobile telecommunications;US;AMERIQUE;0;0;19;-5;3,49
+SK Telecom;Mobile telecommunications;KR;ASIE;618;738;4497;-36;150,85
+Pantech and Curitel;Mobile telecommunications;KR;ASIE;56;653;3011;17;143,15
+Pantech;Mobile telecommunications;KR;ASIE;32;672;4000;47;129,04
+Telenor;Mobile telecommunications;NO;EUROPE;127;871;5000;228;32,19
+Vodafone;Mobile telecommunications;UK;EUROPE;26;1244;2149;15;111,72
+Inmarsat;Mobile telecommunications;UK;EUROPE;5;127;820;-92;92,18
+O2;Mobile telecommunications;UK;EUROPE;20;684;1600;29;71,42
+Cognos;Software;CA;AMERIQUE;1870;82955;199000;14075;799,42
+Open Text;Software;CA;AMERIQUE;517;33503;32640;328;291,19
+Cae;Software;CA;AMERIQUE;89;6999;8200;1291;44,93
+Hummingbird;Software;CA;AMERIQUE;188;6636;17265;672;63
+Microsoft;Software;US;AMERIQUE;0;6;63;-14;2,77
+Oracle;Software;US;AMERIQUE;735;10537;16500;4110;1961,67
+CA;Software;US;AMERIQUE;270;2054;3340;180;633,83
+Symantec;Software;US;AMERIQUE;130;2193;4750;-108;515,34
+Cadence Design Systems;Software;US;AMERIQUE;163;2318;8000;523;409,03
+Adobe Systems;Software;US;AMERIQUE;170;1627;5500;131;356,74
+Intuit;Software;US;AMERIQUE;78;1055;2215;-38;326,04
+Synopsys;Software;US;AMERIQUE;80;1564;4930;122;280,38
+Autodesk;Software;US;AMERIQUE;11;473;1142;-184;270,18
+Cerner;Software;US;AMERIQUE;65;2539;5800;157;236,14
+BMC Software;Software;US;AMERIQUE;41;1720;1900;940;235,44
+Mentor Graphics;Software;US;AMERIQUE;81;16;880;-213;177,69
+Novell;Software;US;AMERIQUE;35;237;977;-140;145,84
+BEA Systems;Software;US;AMERIQUE;30;455;944;65;126,74
+McAfee;Software;US;AMERIQUE;8;44;461;-136;115,16
+Sybase;Software;US;AMERIQUE;3;10;270;-127;107,03
+Compuware;Software;US;AMERIQUE;23;148;655;-140;106,78
+Parametric Technology;Software;US;AMERIQUE;6;16;440;-175;100,6
+Citrix Systems;Software;US;AMERIQUE;8;16;627;-191;92,83
+Hyperion Solutions;Software;US;AMERIQUE;14;136;813;-168;91,76
+SSA Global Technologies;Software;US;AMERIQUE;65;1710;6474;241;90,62
+Macromedia;Software;US;AMERIQUE;11;11;355;-131;88,69
+Reynolds and Reynolds;Software;US;AMERIQUE;4;56;588;-80;87,43
+Verisign;Software;US;AMERIQUE;61;1016;4800;115;84,18
+Openwave Systems;Software;US;AMERIQUE;6;105;588;-21;82,61
+Quest Software;Software;US;AMERIQUE;1;7;177;-85;81,06
+CheckFree;Software;US;AMERIQUE;2;4;267;-90;78,34
+Fair Isaac;Software;US;AMERIQUE;6;55;218;-47;73,15
+FileNET;Software;US;AMERIQUE;2;125;193;-35;70,14
+Mercury Interactive;Software;US;AMERIQUE;25;119;1150;-177;66,44
+Tibco Software;Software;US;AMERIQUE;71;325;991;57;60,96
+Eclipsys;Software;US;AMERIQUE;15;107;777;-156;59,39
+Realnetworks;Software;US;AMERIQUE;2;14;214;-115;58,3
+Intergraph;Software;US;AMERIQUE;7;92;776;-111;56,66
+IDX Systems;Software;US;AMERIQUE;4;61;700;-63;55,2
+Wind River Systems;Software;US;AMERIQUE;8;20;666;-65;51,13
+Progress Software;Software;US;AMERIQUE;2;0;103;-62;48,98
+RSA Security;Software;US;AMERIQUE;3;31;480;-58;48,5
+Lawson Software;Software;US;AMERIQUE;17;553;3115;63;46,75
+Borland Software;Software;US;AMERIQUE;1;20;1361;-33;46,57
+Aspen Technology;Software;US;AMERIQUE;2;102;369;-21;41,51
+SPSS;Software;US;AMERIQUE;8;38;182;-20;40,61
+Kronos;Software;US;AMERIQUE;2;1;171;-63;39,91
+NetIQ;Software;US;AMERIQUE;38;259;866;78;39
+Msc Software;Software;US;AMERIQUE;3;22;314;-54;37,1
+Ariba;Software;US;AMERIQUE;27;569;5140;-1;36,79
+DoubleClick;Software;US;AMERIQUE;1;3;192;-54;33,46
+Magma Design Automation;Software;US;AMERIQUE;9;110;715;-10;32,35
+Webex Communications;Software;US;AMERIQUE;5;98;210;36;30,56
+S1;Software;US;AMERIQUE;1;5;90;-32;29,74
+Internet Security Systems;Software;US;AMERIQUE;2;6;175;-34;29,3
+Aspect Communications (now Aspect Software);Software;US;AMERIQUE;2;131;215;-52;29,29
+JDA Software;Software;US;AMERIQUE;4;16;218;-30;29,13
+Informatica;Software;US;AMERIQUE;2;12;144;-20;25,6
+Altiris;Software;US;AMERIQUE;3;222;1026;15;25,16
+Red Hat;Software;US;AMERIQUE;3;130;399;5;42,57
+Sonic Solutions;Software;US;AMERIQUE;166;7205;44000;1370;529,08
+Trizetto;Software;US;AMERIQUE;54;996;19323;165;96,22
+Portal Software;Software;US;AMERIQUE;53;1082;6100;63;49,59
+webMethods;Software;US;AMERIQUE;140;3441;22000;636;42,39
+Transaction Systems Architects;Software;US;AMERIQUE;;11562;14399;529;12,24
+Scansoft (now Nuance Communications);Software;US;AMERIQUE;48;6639;267830;267;9,9
+SeeBeyond Technology;Software;US;AMERIQUE;4;99;645;11;4,37
+I2 Technologies;Software;US;AMERIQUE;175;3551;27743;217;179
+Verint Systems;Software;US;AMERIQUE;342;4837;33420;329;165,5
+Jack Henry and Associates;Software;US;AMERIQUE;52;1648;10294;45;160
+Micromuse;Software;US;AMERIQUE;48;1396;5970;141;107
+Macrovision;Software;US;AMERIQUE;186;4632;37324;417;67,97
+SeaChange International;Software;US;AMERIQUE;292;2024;11082;165;55,79
+Manhattan Associates;Software;US;AMERIQUE;14;668;3844;41;38,86
+CSG Systems International;Software;US;AMERIQUE;63;2379;15774;166;32,46
+Advent Software;Software;US;AMERIQUE;1333;22343;99735;-2109;26,4
+Vignette;Software;US;AMERIQUE;14;694;5972;83;12,1
+QAD;Software;US;AMERIQUE;8;877;3954;34;8,72
+Microstrategy;Software;US;AMERIQUE;232;3383;10125;253;6,88
+PalmSource;Software;US;AMERIQUE;60;501;2784;27;5,23
+Interwoven;Software;US;AMERIQUE;53;1235;7425;82;67,61
+Safenet;Software;US;AMERIQUE;38;3290;37253;141;65,93
+Manugistics;Software;US;AMERIQUE;10;1014;4661;152;20,97
+ANSYS;Software;US;AMERIQUE;22;889;6022;108;19,94
+Peregrine Systems;Software;US;AMERIQUE;24;3024;21194;225;19,15
+Mro Software;Software;US;AMERIQUE;5;242;1278;16;18,51
+Retalix;Software;IL;ASIE;76;1570;10021;88;71,55
+Nice Systems;Software;IL;ASIE;64;5706;39651;407;70,76
+Trintech;Software;IR;ASIE;731;13755;76150;1112;792,85
+Sega Sammy;Software;JP;ASIE;1283;4957;9860;86;969,84
+Nintendo;Software;JP;ASIE;169;5927;12576;1227;797,31
+Fabasoft;Software;AT;EUROPE;8;542;9387;13;4,76
+Update Software;Software;AT;EUROPE;0;41;207;-3;3,78
+Artwork Systems;Software;BE;EUROPE;87;1500;8130;75;9,96
+IRIS;Software;BE;EUROPE;9;196;1408;9;9,9
+SAP;Software;DE;EUROPE;330;9662;35800;1752;208,8
+Software;Software;DE;EUROPE;522;8882;28700;2052;177,18
+Beta Systems Software;Software;DE;EUROPE;79;1690;5160;229;152,43
+PandI Personal and Informatik;Software;DE;EUROPE;104;1787;5924;330;141,51
+IDS Scheer;Software;DE;EUROPE;144;4819;25781;203;118,17
+Infor Business Solutions;Software;DE;EUROPE;195;5372;23700;611;61,29
+SQS Software Quality Systems;Software;DE;EUROPE;175;6909;49000;978;54,43
+Atoss Software;Software;DE;EUROPE;1292;27383;93163;2833;1886
+Utimaco Safeware;Software;DE;EUROPE;2188;42745;80992;6107;1086,3
+Parsytec;Software;DE;EUROPE;514;13000;61400;1441;837
+Nexus;Software;DE;EUROPE;555;9053;28730;549;477
+IBS;Software;DE;EUROPE;378;8195;22839;710;290
+Intershop Communications;Software;DE;EUROPE;715;9501;42081;914;227
+Simcorp;Software;DK;EUROPE;282;6777;16519;831;231,43
+Maconomy;Software;DK;EUROPE;910;8101;18888;1352;229,87
+Aldata Solution;Software;FI;EUROPE;47;1243;4436;146;6,4
+Comptel;Software;FI;EUROPE;57;644;2979;28;5,83
+Tekla;Software;FI;EUROPE;6;284;1999;15;5,24
+Proha;Software;FI;EUROPE;78;1724;12179;269;4,02
+Basware;Software;FI;EUROPE;268;1955;13327;279;3,6
+SSH Communications Security;Software;FI;EUROPE;233;4711;21700;613;30,56
+Dassault Systemes;Software;FR;EUROPE;41;1390;12913;44;24,73
+Business Objects;Software;FR;EUROPE;17;491;3187;87;20,67
+UBIsoft Entertainment;Software;FR;EUROPE;7;399;2686;36;19,37
+Infogrames Entertainment;Software;FR;EUROPE;4;232;666;2;19,35
+Gameloft;Software;FR;EUROPE;14;551;4186;39;18,27
+Ilog;Software;FR;EUROPE;18;968;6038;44;18,19
+CEGID;Software;FR;EUROPE;40;526;3987;117;17,9
+Lectra;Software;FR;EUROPE;1;105;556;-12;11,36
+ESI;Software;FR;EUROPE;16;284;1538;26;11,35
+XRT;Software;FR;EUROPE;24;493;4918;30;11,21
+Linedata Services;Software;FR;EUROPE;37;1948;12407;157;10,92
+Avanquest Software;Software;FR;EUROPE;15;520;3087;65;10,76
+Infovista;Software;FR;EUROPE;6;328;599;-5;10,03
+Global Graphics;Software;FR;EUROPE;31;1201;3731;57;9
+Systar;Software;FR;EUROPE;3;309;721;-5;8,95
+Cast;Software;FR;EUROPE;7;267;1222;36;8,82
+Ige Plus Xao;Software;FR;EUROPE;14;971;5087;49;8,8
+Esker;Software;FR;EUROPE;;147;750;16;7,81
+Graphisoft;Software;HU;EUROPE;43;1357;5221;232;93,72
+Txt E-Solutions;Software;IT;EUROPE;11;521;1447;-26;95,82
+Unit 4 Agresso;Software;NL;EUROPE;19;258;1575;3;39,6
+Exact;Software;NL;EUROPE;7;228;563;16;38,9
+Seagull;Software;NL;EUROPE;2;164;424;33;38,23
+Blue Fox Enterprises;Software;NL;EUROPE;12;212;884;28;38,21
+IBS;Software;SE;EUROPE;7;303;1150;-74;62,57
+Industrial and Financial Systems;Software;SE;EUROPE;26;998;8200;61;60,7
+Telelogic;Software;SE;EUROPE;35;636;7300;94;53,24
+Teligent;Software;SE;EUROPE;8;435;1594;124;53,11
+Orc Software;Software;SE;EUROPE;6;325;834;11;51,94
+Misys;Software;UK;EUROPE;79;2463;14505;183;41,5
+Amdocs;Software;UK;EUROPE;124;3064;17306;117;28,5
+Sage;Software;UK;EUROPE;69;1381;8474;234;28,29
+Symbian;Software;UK;EUROPE;37;620;1437;109;28,27
+ISOFT;Software;UK;EUROPE;17;993;5383;59;20,02
+RM;Software;UK;EUROPE;33;893;9521;24;12,55
+Intec Telecom Systems;Software;UK;EUROPE;28;407;4339;33;9,05
+Systems Union;Software;UK;EUROPE;12;733;8536;-201;7,7
+AVEVA;Software;UK;EUROPE;80;1411;10163;5;6,77
+Micro Focus International;Software;UK;EUROPE;25;782;4208;45;6,55
+Autonomy;Software;UK;EUROPE;2;160;691;36;6,43
+NSB;Software;UK;EUROPE;15;730;5641;61;6,11
+Royalblue;Software;UK;EUROPE;7;296;1862;3;5,93
+SCI Entertainment;Software;UK;EUROPE;19;551;3476;75;5,6
+DICOM;Software;UK;EUROPE;4;227;3019;3;4,9
+CODASciSys;Software;UK;EUROPE;6;183;786;17;4,27
+Empire Interactive;Software;UK;EUROPE;7;254;1659;5;3,19
+SurfControl;Software;UK;EUROPE;23;1364;4968;76;39,4
+Delcam;Software;UK;EUROPE;11;382;1582;18;14,59
+Cramer Systems;Software;UK;EUROPE;16;379;211;10;11,7
+Ubiquity Software;Software;UK;EUROPE;376;8349;47000;1322;451,85
+Marlborough Stirling (now Vertex Financial Sercies);Software;UK;EUROPE;269;4590;25571;881;230,27
+Superscape;Software;UK;EUROPE;82;1502;8900;377;97,15
+Macro 4;Software;UK;EUROPE;41;846;5400;93;83,93
+MessageLabs;Software;UK;EUROPE;14;557;3166;136;40,55
+Clearswift Systems;Software;UK;EUROPE;38;1454;8000;62;39,84
+Redac;Software;UK;EUROPE;108;4739;19500;558;37,47
+Meridio;Software;UK;EUROPE;21;541;3300;97;34,71
+SDL;Software;UK;EUROPE;11;431;1331;156;27,41
+StatPro;Software;UK;EUROPE;17;358;2360;8;26,27
+Transitive;Software;UK;EUROPE;1849;48102;110000;9557;1644,62
+Alphameric;Software;UK;EUROPE;419;12137;66000;617;287,38
+Comino;Software;UK;EUROPE;94;5530;27200;733;113,43
+nCipher;Software;UK;EUROPE;120;2761;20730;473;95,84
+Innovation;Software;UK;EUROPE;78;5377;27900;374;87,32
+Pilat Media Global;Software;UK;EUROPE;79;4155;17800;-46;77,14
+Kewill Systems;Software;UK;EUROPE;34;2003;11400;143;42,39
+XKO;Software;UK;EUROPE;53;2498;14700;278;39,03
+Searchspace;Software;UK;EUROPE;37;1264;4765;57;36,82
+Workplace Systems International;Software;UK;EUROPE;23;919;7642;63;34,84
+Flomerics;Software;UK;EUROPE;32;1472;3700;183;32,81
+Alterian;Software;UK;EUROPE;48;1399;8560;239;29,34
+Bond International Software;Software;UK;EUROPE;73;2251;9073;195;28,4
+Ant;Software;UK;EUROPE;1343;19160;75845;487;1308,34
+Planit;Software;UK;EUROPE;400;12096;51100;-532;756,18
