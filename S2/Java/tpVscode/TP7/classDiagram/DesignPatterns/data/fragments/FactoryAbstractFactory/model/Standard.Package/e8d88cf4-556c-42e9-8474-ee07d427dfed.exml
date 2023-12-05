@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="State" version="4">
+  <OBJECT>
+    <ID name="State" mc="Standard.Package" uid="e8d88cf4-556c-42e9-8474-ee07d427dfed"/>
+    <PID name="factoryabstractfactory" mc="Standard.Package" uid="185710b9-f9f7-4c46-a5a1-3c348bbaba55"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[State]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Keypad" mc="Standard.Class" uid="aba50784-cec3-4608-a2b6-c065751e0dd2"/>
+        <COMPID name="KeypadZero" mc="Standard.Class" uid="95e3d71c-d102-430c-9279-c2173f99194c"/>
+        <COMPID name="KeypadOK" mc="Standard.Class" uid="15a373f6-4f21-4d8c-9f7a-4bf301640f96"/>
+        <COMPID name="KeypadNoOK" mc="Standard.Class" uid="3dddac4c-b260-4269-989a-d273eeeee36d"/>
+        <COMPID name="KeypadState" mc="Standard.Interface" uid="73874599-83ff-4ff2-b2d4-097ef3c246e1"/>
+        <COMPID name="KeypadOne" mc="Standard.Class" uid="f5ed1bbf-b228-40fb-af93-98e2226da441"/>
+        <COMPID name="KeypadTwo" mc="Standard.Class" uid="a89a4fca-ba02-4a3d-8292-b0bb87c94179"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="State Class diagram" mc="Standard.ClassDiagram" uid="e7ee6839-bda4-48cd-9eb0-53ef1f35e140"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
