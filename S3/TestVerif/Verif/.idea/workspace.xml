@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dbdd7d85-a4ac-43d4-98e0-65cfd23e0611" name="Changes" comment="verif">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Min.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/td3_verif.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/Tic-Tac-Toe" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/Tic-Tac-Toe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/Tic-Tac-Toe/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/Tic-Tac-Toe/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/Tic-Tac-Toe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/Tic-Tac-Toe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/fifteen" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/fifteen" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/fifteen/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/fifteen/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/fifteen/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/fifteen/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/fifteen/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/fifteen/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/qodana.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/qodana.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/ProjetJeeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/ProjetJeeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/actions/ScienceActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/actions/ScienceActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/actions/UserActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/actions/UserActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/configurations/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/configurations/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/configurations/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/configurations/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/configurations/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/configurations/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/ScienceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/controllers/ScienceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Science.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/Science.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/ScienceQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/ScienceQuantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/CategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/CategoryDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/LoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/RoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/RoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/ScienceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/ScienceDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/SignUpDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/SignUpDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/ScienceQuantityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/ScienceQuantityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/ScienceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/ScienceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/java/com/example/jee/projetjee/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/frontend/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/img/200px-Puzzle_Creator_-_Hard_Light_Bridge.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/img/200px-Puzzle_Creator_-_Hard_Light_Bridge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/img/56763.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/img/56763.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/img/Potatos.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/img/Potatos.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/js/darkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/js/darkMode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/js/science.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/static/js/science.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/adminPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/adminPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/categoryForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/categoryForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/fragments/adminFragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/fragments/adminFragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/role.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/role.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/roleForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/roleForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/science.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/science.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/scienceForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/scienceForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/userForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/admin/userForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/fragments/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/fragments/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/science.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/science.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/main/resources/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/test/java/com/example/jee/projetjee/ProjetJeeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../JEE/ProjetJEE/src/test/java/com/example/jee/projetjee/ProjetJeeApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Z7IUQ0PBpfP3DQ982L8u04YLJ9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;java.suggest.annotation.dependency&quot;: &quot;false&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-920bfa72" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbdd7d85-a4ac-43d4-98e0-65cfd23e0611" name="Changes" comment="" />
+      <created>1701766706778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701766706778</updated>
+      <workItem from="1701766707805" duration="4337000" />
+      <workItem from="1701939566305" duration="634000" />
+      <workItem from="1702019388618" duration="1428000" />
+      <workItem from="1702020883875" duration="1932000" />
+      <workItem from="1702022827388" duration="1589000" />
+    </task>
+    <task id="LOCAL-00001" summary="stat">
+      <option name="closed" value="true" />
+      <created>1701766788038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701766788038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ia">
+      <option name="closed" value="true" />
+      <created>1701766805592</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701766805592</updated>
+    </task>
+    <task id="LOCAL-00003" summary="verif">
+      <option name="closed" value="true" />
+      <created>1701766820656</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701766820656</updated>
+    </task>
+    <task id="LOCAL-00004" summary="verif">
+      <option name="closed" value="true" />
+      <created>1701766827354</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701766827354</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="stat" />
+    <MESSAGE value="ia" />
+    <MESSAGE value="verif" />
+    <option name="LAST_COMMIT_MESSAGE" value="verif" />
+  </component>
+</project>
