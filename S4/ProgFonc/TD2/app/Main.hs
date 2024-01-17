@@ -1,4 +1,4 @@
-module TD1.Main (main) where
+module TD2.Main (main) where
 
 main :: IO ()
 main = putStrLn "hello world"
