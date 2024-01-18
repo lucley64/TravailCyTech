@@ -57,5 +57,10 @@ fixed = fixedA 1
 
 fixedA :: Int -> (a -> a) -> a -> Int -> a
 fixedA a next x times 
-  | a == times = x
+  | a > times = x
   | otherwise = fixedA (a + 1) next (next x) times
+
+whilst :: (a -> a) -> a -> (a -> Bool) -> a
+whilst next initial cont 
+  | not (cont initial) = initial
+  | otherwise = whilst next (next initial) cont 
