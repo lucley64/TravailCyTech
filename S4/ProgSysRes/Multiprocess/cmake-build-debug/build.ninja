@@ -55,12 +55,6 @@ build CMakeFiles/Multiprocess.dir/main.c.o: C_COMPILER__Multiprocess_unscanned_D
   OBJECT_DIR = CMakeFiles/Multiprocess.dir
   OBJECT_FILE_DIR = CMakeFiles/Multiprocess.dir
 
-build CMakeFiles/Multiprocess.dir/compte_argc.c.o: C_COMPILER__Multiprocess_unscanned_Debug /home/cytech/Travail/S4/ProgSysRes/Multiprocess/compte_argc.c || cmake_object_order_depends_target_Multiprocess
-  DEP_FILE = CMakeFiles/Multiprocess.dir/compte_argc.c.o.d
-  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/Multiprocess.dir
-  OBJECT_FILE_DIR = CMakeFiles/Multiprocess.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Multiprocess
@@ -69,7 +63,7 @@ build CMakeFiles/Multiprocess.dir/compte_argc.c.o: C_COMPILER__Multiprocess_unsc
 #############################################
 # Link the executable Multiprocess
 
-build Multiprocess: C_EXECUTABLE_LINKER__Multiprocess_Debug CMakeFiles/Multiprocess.dir/main.c.o CMakeFiles/Multiprocess.dir/compte_argc.c.o
+build Multiprocess: C_EXECUTABLE_LINKER__Multiprocess_Debug CMakeFiles/Multiprocess.dir/main.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Multiprocess.dir
   POST_BUILD = :
