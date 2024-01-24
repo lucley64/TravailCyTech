@@ -1,4 +1,4 @@
-module TD1 where
+module TD1Ex where
 
 triangleArea :: (Double, Double, Double) -> Double
 triangleArea(a, b, c) =

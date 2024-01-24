@@ -53,14 +53,22 @@ fastPow n x
 -- Execice 4
 
 fixed :: (a -> a) -> a -> Int -> a
-fixed = fixedA 1
-
-fixedA :: Int -> (a -> a) -> a -> Int -> a
-fixedA a next x times 
-  | a > times = x
-  | otherwise = fixedA (a + 1) next (next x) times
+fixed = fixedA 1 where
+  fixedA :: Int -> (a -> a) -> a -> Int -> a
+  fixedA a next x times
+    | a > times = x
+    | otherwise = fixedA (a + 1) next (next x) times
 
 whilst :: (a -> a) -> a -> (a -> Bool) -> a
-whilst next initial cont 
+whilst next initial cont
   | not (cont initial) = initial
-  | otherwise = whilst next (next initial) cont 
+  | otherwise = whilst next (next initial) cont
+
+
+squareRoot :: Double -> Double -> Double
+squareRoot = squareRootA 1 0 where
+  squareRootA :: Double -> Double -> Double -> Double -> Double
+  squareRootA x n eps a
+    | n >= eps = x
+    | otherwise = squareRootA ((x + a / x) / 2) (n + 1) eps a
+
