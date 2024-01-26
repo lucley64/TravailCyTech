@@ -10,8 +10,6 @@ int main() {
 
     v[5] = 5;
 
-    std::vector<int> a;
-
     std::cout << v[5] << std::endl;
 
     exit(EXIT_SUCCESS);
