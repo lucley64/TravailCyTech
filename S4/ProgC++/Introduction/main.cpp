@@ -1,21 +1,18 @@
 #include <iostream>
+#include <vector>
 
-template <typename T>
-void swap(T &a, T &b) noexcept {
-    T temp = a;
-    a = b;
-    b = temp;
-}
+#include "vector.h"
 
 int main() {
+    const my::vector v(12);
 
-    int i = 2, j = 3;
+    std::cout << v[5] << std::endl;
 
-    std::cout << "i = " << i << ", j = " << j << std::endl;
+    v[5] = 5;
 
-    swap(i, j);
+    std::vector<int> a;
 
-    std::cout << "i = " << i << ", j = " << j << std::endl;
+    std::cout << v[5] << std::endl;
 
     exit(EXIT_SUCCESS);
 }
