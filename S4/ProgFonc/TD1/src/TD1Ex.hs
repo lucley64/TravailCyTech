@@ -5,12 +5,12 @@ triangleArea(a, b, c) =
     let p = 0.5 * (a + b + c) in
         sqrt (p * (p - a) *(p - b) + (p - c))
 
-isLeap :: Int -> Bool
-isLeap y 
-        | mod y 400 == 0 = True
-        | mod y 100 == 0 = False
-        | mod y 4 == 0 = True
-        | otherwise = False
+-- isLeap :: Int -> Bool
+-- isLeap y 
+--         | mod y 400 == 0 = True
+--         | mod y 100 == 0 = False
+--         | mod y 4 == 0 = True
+--         | otherwise = False
     -- mod y 400 == 0 || mod y 100 /= 0 && mod y 4 == 0
 
 type Date = (Int, Int, Int)
