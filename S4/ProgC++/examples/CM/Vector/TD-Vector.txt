@@ -1,0 +1,15 @@
+TP Vector Sur la base du code que vous avez réalisé pour le TP1 :
+
+Réaliser les exemples ci dessous
+Ex1 :
+. Tester le code dans Ex1\main.1.cpp
+
+Ex2 : Creation du constructeur par copie
+. Modifier le code de la classe Vector (voir Ex2\Vector.hpp et Ex2\Vector.cpp)
+. Tester le code avec le main fourni dans l'Ex1
+
+Ex3 : Operateur d’affectation
+. Modifier le code de la classe Vector (voir Ex3\Vector.hpp et Ex3\Vector.cpp)
+. Tester le code avec le main fourni dans l'Ex1
+
+A rendre avant le TP

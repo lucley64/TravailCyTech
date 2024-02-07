@@ -1,0 +1,15 @@
+TP Fraction Sur la base de l'exemple 0 (voir Ex0) :
+
+Réaliser les exemples ci dessous
+Ex1 :
+. Créer le code de la classe Fraction.cpp pour tester avec le programme main.cpp
+. Ajouter la fonction amie
+
+Ex2 : Utilisation new et delete
+. Tester le code dans Ex2\main.cpp
+
+Ex3 : Utilisation new et delete
+. Tester le code dans Ex3\main.1.cpp (Tableau dynamique de fraction)
+. Tester le code dans Ex3\main.2.cpp (Tableau pointeurs de fraction)
+
+A rendre avant le TP
