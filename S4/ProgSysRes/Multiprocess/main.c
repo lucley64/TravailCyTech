@@ -3,7 +3,26 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <sys/wait.h>
 
+
+void print_all(const pid_t child_pid) {
+    const pid_t pid = getpid();
+    const pid_t ppid = getppid();
+    const uid_t uid = getuid();
+    const uid_t euid = geteuid();
+    const gid_t gid = getgid();
+    const gid_t egid = getegid();
+
+    printf("Je suis le processus de pid : %d \n"
+           "Mon père est le processus de pid : %d \n"
+           "Mon uid : %d \nMon euid : %d \n"
+           "Mon gid : %d \nMon egid : %d \n", pid, ppid, uid, euid, gid, egid);
+    if (child_pid) {
+        printf("Mon fils est le processus de pid : %d.", child_pid);
+    }
+    printf("\n\n");
+}
 
 int compte_arg(const int argC, char** argv) {
     int sum = 0;
@@ -84,9 +103,128 @@ void processus_3() {
     processus_1();
 }
 
-int main(const int argc, const char** argv) {
-    processus_3();
-    return 0;
+void exercice_7() {
+    int x = 2;
+    printf("x = %d\n", x);
+    const pid_t pid = fork();
+    switch (pid) {
+        case 0:
+            printf("Le fils est pid = %d et mon ppid = %d. \n", getpid(), getppid());
+            processus_1();
+            x += 3;
+            printf("x = %d\n", x);
+            break;
+        case -1:
+            fprintf(stderr, "Erreur fork. \n");
+            break;;
+        default:
+            printf("Le père est pid = %d et mon ppid = %d. \n", getpid(), getppid());
+            processus_1();
+            x *= 5;
+            printf("x = %d\n", x);
+            break;
+    }
+    printf("Fin proccessus %d. \n", getpid());
 }
 
+void exercice_8_a() {
+    const pid_t pid = fork();
 
+    if (pid != 0) {
+        if (pid == -1) {
+            fprintf(stderr, "Erreur fork. \n");
+            return;
+        }
+        print_all(pid);
+        int wstatus;
+        wait(&wstatus);
+    }
+}
+
+void exercice_8_b() {
+    const pid_t pid = fork();
+
+    if (pid != 0) {
+        if (pid == -1) {
+            fprintf(stderr, "Erreur fork. \n");
+            return;
+        }
+        print_all(pid);
+        int wstatus;
+        waitpid(pid, &wstatus, 0);
+        if (WIFEXITED(wstatus)) {
+            printf("Le fils à bien terminer avec le code %d", WEXITSTATUS(wstatus));
+        }
+    }
+}
+
+void exercice_9(const int argc, const char** argv) {
+    if (argc < 2) {
+        fprintf(stderr, "Entrer le nombre d'itération");
+        return;
+    }
+    const int n = atoi(argv[1]);
+    for (int i = 0; i < n; i++) {
+        const pid_t pid = fork();
+        print_all(pid);
+    }
+}
+
+/**
+ * \brief matrix is [[x1, y1], [x2, y2]]
+ */
+int** exercice_10(const int x1, const int y1, const int x2, const int y2) {
+    int calc;
+    const pid_t pork1 = fork();
+    if (pork1 == 0) {
+        calc = x1 * x1 + y1 * x2;
+        exit(calc);
+    }
+    const pid_t pork2 = fork();
+    if (pork2 == 0) {
+        calc = x1 * y1 + y1 * y2;
+        exit(calc);
+
+    }
+    const pid_t pork3 = fork();
+    if (pork3==0) {
+        calc = x1 * x2 + x2 * y2;
+        exit(calc);
+
+    }
+    const pid_t pork4 = fork();
+    if (pork4 == 0) {
+        calc = x2 * y1 + y2 * y2;
+        exit(calc);
+
+    }
+    int wstatus[4];
+    waitpid(pork1, &wstatus[0], 0);
+    waitpid(pork2, &wstatus[1], 0);
+    waitpid(pork3, &wstatus[2], 0);
+    waitpid(pork4, &wstatus[3], 0);
+    int** matrix = malloc(2 * sizeof(int *));
+    matrix[0] = (int*) malloc(2 * sizeof(int));
+    matrix[1] = (int*) malloc(2 * sizeof(int));
+
+    if (WIFEXITED(wstatus[0]) && WIFEXITED(wstatus[1]) && WIFEXITED(wstatus[2]) && WIFEXITED(wstatus[3])) {
+        matrix[0][0] = WEXITSTATUS(wstatus[0]);
+        matrix[0][1] = WEXITSTATUS(wstatus[1]);
+        matrix[1][0] = WEXITSTATUS(wstatus[2]);
+        matrix[1][1] = WEXITSTATUS(wstatus[3]);
+    }
+    return matrix;
+}
+
+int main(const int argc, const char** argv) {
+    int** ret_mat = exercice_10(1, 1, 3, 2);
+
+    printf("%d %d \n%d %d\n", ret_mat[0][0], ret_mat[0][1], ret_mat[1][0], ret_mat[1][1]);
+
+
+    free(ret_mat[0]);
+    free(ret_mat[1]);
+    free(ret_mat);
+
+    exit(EXIT_SUCCESS);
+}

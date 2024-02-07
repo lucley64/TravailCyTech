@@ -1,19 +1,5 @@
 # ninja log v5
-0	390	1706269947366409428	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
-440	508	1706268358677032479	Introduction	53977254082e64e1
-1	24	1706268247493759854	CMakeFiles/Introduction.dir/light.cpp.o	ce3dbb22afbdebf9
-0	272	1706269947246410249	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
-0	334	1706270104869334365	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
-0	459	1706270104993333521	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
-1	271	1706270133845137111	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
-1	396	1706270133969136267	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
-1	273	1706270269096218480	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
-0	388	1706270269212217693	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
-1	407	1706270339227743480	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
-1	314	1706270380087467150	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
-314	378	1706270380151466718	Introduction	13610ba4c394250e
-1	378	1706270395727361456	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
-1	443	1706270395791361024	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
-443	507	1706270395855360593	Introduction	13610ba4c394250e
 1	400	1706270538162400901	CMakeFiles/Introduction.dir/main.cpp.o	b56c7f4964598055
 400	457	1706270538218400524	Introduction	13610ba4c394250e
+1	24	1706268247493759854	CMakeFiles/Introduction.dir/light.cpp.o	ce3dbb22afbdebf9
+1	378	1706270395727361456	CMakeFiles/Introduction.dir/vector.cpp.o	e8bc6aa52b707711
