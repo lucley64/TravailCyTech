@@ -1,4 +1,12 @@
 # ninja log v5
+1	29	1707304905496680896	build.ninja	11ee710492ad5a48
 1	532	1707303684006955048	CMakeFiles/ConstructeurDestructeur.dir/fraction.cpp.o	f77f9263ca9b474e
-2	416	1707304109217205985	CMakeFiles/ConstructeurDestructeur.dir/main.cpp.o	1661588752d9c999
+0	478	1707304883544786598	CMakeFiles/ConstructeurDestructeur.dir/main.cpp.o	1661588752d9c999
 416	535	1707304109333206635	ConstructeurDestructeur	5d6f4ba7fde758f8
+1	653	1707304907948669164	CMakeFiles/ConstructeurDestructeur.dir/vector.cpp.o	364893d077ca7b2f
+653	823	1707304908116668360	ConstructeurDestructeur	938868cad8163fce
+2	558	1707306253899947820	CMakeFiles/ConstructeurDestructeur.dir/main.cpp.o	1661588752d9c999
+1	402	1707306261355895983	CMakeFiles/ConstructeurDestructeur.dir/vector.cpp.o	364893d077ca7b2f
+402	535	1707306261487895066	ConstructeurDestructeur	938868cad8163fce
+3	516	1707306357883239530	CMakeFiles/ConstructeurDestructeur.dir/main.cpp.o	1661588752d9c999
+516	658	1707306358019238624	ConstructeurDestructeur	938868cad8163fce

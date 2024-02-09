@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
 
@@ -184,19 +185,16 @@ int** exercice_10(const int x1, const int y1, const int x2, const int y2) {
     if (pork2 == 0) {
         calc = x1 * y1 + y1 * y2;
         exit(calc);
-
     }
     const pid_t pork3 = fork();
-    if (pork3==0) {
+    if (pork3 == 0) {
         calc = x1 * x2 + x2 * y2;
         exit(calc);
-
     }
     const pid_t pork4 = fork();
     if (pork4 == 0) {
         calc = x2 * y1 + y2 * y2;
         exit(calc);
-
     }
     int wstatus[4];
     waitpid(pork1, &wstatus[0], 0);
@@ -204,8 +202,8 @@ int** exercice_10(const int x1, const int y1, const int x2, const int y2) {
     waitpid(pork3, &wstatus[2], 0);
     waitpid(pork4, &wstatus[3], 0);
     int** matrix = malloc(2 * sizeof(int *));
-    matrix[0] = (int*) malloc(2 * sizeof(int));
-    matrix[1] = (int*) malloc(2 * sizeof(int));
+    matrix[0] = (int *) malloc(2 * sizeof(int));
+    matrix[1] = (int *) malloc(2 * sizeof(int));
 
     if (WIFEXITED(wstatus[0]) && WIFEXITED(wstatus[1]) && WIFEXITED(wstatus[2]) && WIFEXITED(wstatus[3])) {
         matrix[0][0] = WEXITSTATUS(wstatus[0]);
@@ -216,15 +214,156 @@ int** exercice_10(const int x1, const int y1, const int x2, const int y2) {
     return matrix;
 }
 
-int main(const int argc, const char** argv) {
-    int** ret_mat = exercice_10(1, 1, 3, 2);
+void exercice_11() {
+    const pid_t res = fork();
+    pid_t pid;
+    int status;
+    switch (res) {
+        case -1:
+            fprintf(stderr, "Erreur fork.");
+            break;
+        case 0:
+            printf("processus fils %d execute ls\n", getpid());
+            execlp("ls", "ls", "-al", NULL);
+            fprintf(stderr, "Ce message n'apparait pas si tout va bien ");
+            fprintf(stderr, "car le code est changé\n");
+            exit(10);
+        default:
+            pid = wait(&status); // Le père attend le fils. Wait retourne le pid du fils
+            printf("processus père %d\n", getpid());
+            printf("PID = %d, status = %d\n", pid, status);
+            break;
+    }
+}
 
-    printf("%d %d \n%d %d\n", ret_mat[0][0], ret_mat[0][1], ret_mat[1][0], ret_mat[1][1]);
+void exercice_12_calc(const int argc, const char** argv) {
+    if (argc != 3) {
+        fprintf(stderr, "usage: %s <operande_1> <operande_2>\n", argv[0]);
+        exit(EXIT_FAILURE);
+    }
+    const int somme = atoi(argv[1]) + atoi(argv[2]);
+    printf("%s + %s = %d\n", argv[1], argv[2], somme);
+}
 
+void exercice_12_recouv(const int argc, char** const argv) {
+    if (argc < 2) {
+        fprintf(stderr, "usage: %s <nom_du_programme> [args]\n", argv[0]);
+        exit(10);
+    }
+    switch (fork()) {
+        case -1:
+            printf("fork impossible...\n");
+            exit(5);
+        case 0:
+            execvp(argv[1], argv + 1);
+            printf("Recouvrement du code de %s impossible...", argv[1]);
+            exit(15);
+        default:
+            wait(NULL);
+    }
+}
 
-    free(ret_mat[0]);
-    free(ret_mat[1]);
-    free(ret_mat);
+void exercice_13_nouveau(const int argc, const char** argv) {
+    if (argc != 2) {
+        printf("usage: %s <nb_se_secondes>\n", argv[0]);
+        exit(EXIT_FAILURE);
+    }
+    const int temps = atoi(argv[1]);
+    printf("Nouveau code du fils\n");
+    printf("Duree du sommeil : %d\n", temps);
+    sleep(temps);
+    printf("Réveil et fin du fils après %d secondes \n", temps);
+}
+
+size_t count_delim(const char* input, const char tok) {
+    const char* tmp = input;
+    size_t count = 0;
+    while (*tmp != '\0') {
+        if (*tmp == tok) {
+            count++;
+        }
+        tmp++;
+    }
+    return count;
+}
+
+char* rem_trail_nl(char* input) {
+    char* tmp = input;
+    while (*tmp != '\0') {
+        if (*tmp == '\n') {
+            *tmp = '\0';
+        }
+        tmp++;
+    }
+}
+
+void exercice_14(const int argc, char** const argv) {
+    printf("Starting my shell\n");
+    const char check[255] = "exit";
+    char input[255] = "";
+    while (strcmp(input, check) != 0) {
+        printf("my_shell$ ");
+        fgets(input, 255, stdin);
+        if (strcmp(input, check) != 0) {
+            rem_trail_nl(input);
+            char** args = malloc(sizeof(char *) * count_delim(input, ' ') + 1);
+            size_t offs = 0;
+            const char* token = strtok(input, " ");
+            while (token) {
+                *(args + offs++) = strdup(token);
+                token = strtok(0, " ");
+            }
+            *(args + offs) = 0;
+            switch (fork()) {
+                case -1:
+                    fprintf(stderr, "fork impossible...\n");
+                    exit(5);
+                case 0:
+                    execvp(args[0], args);
+                    exit(EXIT_FAILURE);
+                default:
+                    wait(NULL);
+                    break;
+            }
+            free(args);
+        }
+    }
+}
+
+void exercice_15() {
+    int toto = open("toto", O_APPEND | O_CREAT, S_IRWXU | S_IRWXG | S_IRWXO);
+    char buf[32];
+    const pid_t pork = fork();
+    switch (pork) {
+        case -1:
+            fprintf(stderr, "Erreur pork.");
+            exit(EXIT_FAILURE);
+        case 0:
+            write(toto, "ab", sizeof(char) * 2);
+            sleep(5);
+            read(toto, buf, 2);
+            printf("fils lit : %s\n", buf);
+            break;
+        default:
+            sleep(1);
+            read(toto, buf, 2);
+            printf("père lit : %s\n", buf);
+            write(toto, "AB", sizeof(char) * 2);
+            break;
+    }
+}
+
+int main(const int argc, char** const argv) {
+    // int** ret_mat = exercice_10(1, 1, 3, 2);
+    //
+    // printf("%d %d \n%d %d\n", ret_mat[0][0], ret_mat[0][1], ret_mat[1][0], ret_mat[1][1]);
+    //
+    //
+    // free(ret_mat[0]);
+    // free(ret_mat[1]);
+    // free(ret_mat);
+
+    exercice_15();
 
     exit(EXIT_SUCCESS);
 }
