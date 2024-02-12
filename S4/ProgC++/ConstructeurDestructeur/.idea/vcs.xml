@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/../../../S3/IA/Tic-Tac-Toe" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../S3/IA/fifteen" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../../S3/JEE/ProjetJEE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Projects/compress_haskell" vcs="Git" />
   </component>
 </project>

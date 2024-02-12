@@ -26,6 +26,8 @@ source-repository head
 library
   exposed-modules:
       Document
+      Pupil
+      ReportCard
       TD4Exo
   other-modules:
       Paths_TD4

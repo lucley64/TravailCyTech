@@ -8,4 +8,16 @@ add_executable(ConstructeurDestructeur main.cpp
         fraction.h
         vector.cpp
         vector.h
+        pair.h
+        pair.cpp
+        light.cpp
+        light.h
+        garland.cpp
+        garland.h
+        disk.cpp
+        disk.h
+        tower.cpp
+        tower.h
+        game.cpp
+        game.h
 )
