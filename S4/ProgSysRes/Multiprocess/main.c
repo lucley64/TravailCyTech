@@ -331,24 +331,29 @@ void exercice_14(const int argc, char** const argv) {
 }
 
 void exercice_15() {
-    int toto = open("toto", O_APPEND | O_CREAT, S_IRWXU | S_IRWXG | S_IRWXO);
     char buf[32];
+    FILE* toto = fopen("toto", "w+");
+    fwrite("123456789", sizeof(char), 9, toto);
+
     const pid_t pork = fork();
     switch (pork) {
         case -1:
             fprintf(stderr, "Erreur pork.");
             exit(EXIT_FAILURE);
         case 0:
-            write(toto, "ab", sizeof(char) * 2);
+            fwrite("ab", sizeof(char), 2, toto);
             sleep(5);
-            read(toto, buf, 2);
+            fread(buf, sizeof(char), 2, toto);
             printf("fils lit : %s\n", buf);
+            fclose(toto);
             break;
         default:
-            sleep(1);
-            read(toto, buf, 2);
+            sleep(4);
+            fread(buf, sizeof(char), 2, toto);
             printf("père lit : %s\n", buf);
-            write(toto, "AB", sizeof(char) * 2);
+            fwrite("AB", sizeof(char), 2, toto);
+            fclose(toto);
+            wait(NULL);
             break;
     }
 }
