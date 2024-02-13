@@ -415,8 +415,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/cytech/Travail/S4/ProgPara/Pipes/cmake-build-debug",
-		"source" : "/home/cytech/Travail/S4/ProgPara/Pipes"
+		"build" : "/home/cytech/Travail/S4/ProgSysRes/Pipes/cmake-build-debug",
+		"source" : "/home/cytech/Travail/S4/ProgSysRes/Pipes"
 	},
 	"version" : 
 	{
