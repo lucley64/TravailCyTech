@@ -25,10 +25,14 @@ source-repository head
 
 library
   exposed-modules:
+      Classroom
       Document
+      Lecture
       Pupil
-      ReportCard
+      Student
       TD4Exo
+      Teacher
+      User
   other-modules:
       Paths_TD4
   autogen-modules:
