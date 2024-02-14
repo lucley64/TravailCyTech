@@ -1,0 +1,28 @@
+TD3-Fraction Sur la base du code que vous avez réalisé pour le TD2 :
+
+Réaliser les exemples ci dessous
+Ex1 : opérateur *=
+. hpp ajout de la déclaration de l'opérateur *=
+. cpp créer le code de l'opérateur *=
+. Tester et valider votre développement avec le code Ex1\main.cpp
+
+Ex2 : ajout d'une méthode pour l'opérateur *
+. hpp ajout de la déclaration de la méthode pour l'opérateur *
+. cpp créer le code de la méhode de l'opérateur *
+. Tester et valider votre développement avec le code Ex2\main.cpp
+. Mettre en commentaire le code produisant une erreur fonctionnelle dans le main
+
+Ex3 : ajout de fonctions pour l'opérateur *
+. hpp ajout de la déclaration des fonctions pour les opérateurs *
+. cpp créer le code de la première fonction de l'opérateur * (en fonction des autres opérateurs)
+. cpp créer le code de la deuxième fonction de l'opérateur * (en utilisant un scalaire)
+. Tester et valider votre développement avec le code Ex3\main.cpp
+
+Ex4 : généraliser le développement précédent pour les opérateurs arithmétique
+. hpp ajout des déclarations nécessaires
+. cpp ajout des méthodes et ou fonctions nécessaire
+. Ecrire un programme main de test, utiliser les commentaires pour expliquer votre démarche
+
+NOTA : Les programmes main ne comportent pas de commentaires, a vous de les ajouter...
+
+A rendre avant le TP3
