@@ -6,9 +6,7 @@
 
 #include <complex>
 
-fraction::fraction(const int n, const int d) : numerator(n), denominator(d) {
-    simplify();
-}
+fraction::fraction(const int n, const int d) : numerator(n), denominator(d) { simplify(); }
 
 fraction::fraction(const double d) {
     int count = 0;
@@ -24,14 +22,10 @@ fraction::fraction(const double d) {
     simplify();
 }
 
-fraction::fraction(const fraction& f) : numerator(f.numerator), denominator(f.denominator) {
-    simplify();
-}
+fraction::fraction(const fraction &f) : numerator(f.numerator), denominator(f.denominator) { simplify(); }
 
 
-double fraction::decimal() const {
-    return static_cast<double>(numerator) / denominator;
-}
+double fraction::decimal() const { return static_cast<double>(numerator) / denominator; }
 
 
 void fraction::simplify() {
@@ -45,93 +39,77 @@ void fraction::simplify() {
     denominator /= a;
 }
 
-fraction& fraction::operator=(const fraction& f) {
-    fraction(f);
-    return *this;
-}
+// fraction &fraction::operator=(const fraction &f) {
+//     fraction(f);
+//     return *this;
+// }
 
 
-fraction fraction::operator*(const fraction& f) const {
+fraction fraction::operator*(const fraction &f) const {
     return fraction(numerator * f.numerator, denominator * f.denominator);
 }
 
-fraction fraction::operator*(const int i) const {
-    return fraction(numerator * i, denominator);
-}
+fraction fraction::operator*(const int i) const { return fraction(numerator * i, denominator); }
 
 
-fraction fraction::operator*=(const fraction& f) {
+fraction fraction::operator*=(const fraction &f) {
     numerator *= f.numerator;
     denominator *= f.denominator;
     return *this;
 }
 
 
-fraction operator*(const int i, const fraction& f) {
-    return fraction(i * f.numerator, f.denominator);
-}
+fraction operator*(const int i, const fraction &f) { return fraction(i * f.numerator, f.denominator); }
 
-fraction fraction::operator+(const fraction& f) const {
+fraction fraction::operator+(const fraction &f) const {
     return fraction(numerator * f.denominator + denominator * f.numerator, denominator * f.denominator);
 }
 
-fraction fraction::operator+(const int i) const {
-    return fraction(numerator + i * denominator, denominator);
-}
+fraction fraction::operator+(const int i) const { return fraction(numerator + i * denominator, denominator); }
 
 
-fraction fraction::operator+=(const fraction& f) {
+fraction fraction::operator+=(const fraction &f) {
     numerator = numerator * f.denominator + denominator * f.numerator;
     denominator *= f.denominator;
     return *this;
 }
 
 
-fraction operator+(const int i, const fraction& f) {
-    return fraction(i * f.denominator + f.numerator, f.denominator);
-}
+fraction operator+(const int i, const fraction &f) { return fraction(i * f.denominator + f.numerator, f.denominator); }
 
-fraction fraction::operator-(const fraction& f) const {
+fraction fraction::operator-(const fraction &f) const {
     return fraction(numerator * f.denominator - denominator * f.numerator, denominator * f.denominator);
 }
 
-fraction fraction::operator-(const int i) const {
-    return fraction(numerator - i * denominator, denominator);
-}
+fraction fraction::operator-(const int i) const { return fraction(numerator - i * denominator, denominator); }
 
 
-fraction fraction::operator-=(const fraction& f) {
+fraction fraction::operator-=(const fraction &f) {
     numerator = numerator * f.denominator - denominator * f.numerator;
     denominator *= f.denominator;
     return *this;
 }
 
 
-fraction operator-(const int i, const fraction& f) {
-    return fraction(i * f.denominator - f.numerator, f.denominator);
-}
+fraction operator-(const int i, const fraction &f) { return fraction(i * f.denominator - f.numerator, f.denominator); }
 
-fraction fraction::operator/(const fraction& f) const {
+fraction fraction::operator/(const fraction &f) const {
     return fraction(numerator * f.denominator, denominator * f.numerator);
 }
 
-fraction fraction::operator/(const int i) const {
-    return fraction(numerator, denominator * i);
-}
+fraction fraction::operator/(const int i) const { return fraction(numerator, denominator * i); }
 
 
-fraction fraction::operator/=(const fraction& f) {
+fraction fraction::operator/=(const fraction &f) {
     numerator *= f.denominator;
     denominator *= f.numerator;
     return *this;
 }
 
 
-fraction operator/(const int i, const fraction& f) {
-    return fraction(f.denominator * i, f.numerator);
-}
+fraction operator/(const int i, const fraction &f) { return fraction(f.denominator * i, f.numerator); }
 
-std::ostream& operator<<(std::ostream& out, const fraction& f) {
+std::ostream &operator<<(std::ostream &out, const fraction &f) {
     out << "fraction: " << f.numerator << "/" << f.denominator;
     return out;
 }

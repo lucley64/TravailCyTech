@@ -9,7 +9,7 @@ module TD4Exo where
 
 import Classroom (Classroom (clssrmCapacity))
 import Data.Char (isUpper)
-import Data.List (sort, sortOn)
+import Data.List (sort, sortOn, unfoldr)
 import Lecture (Lecture (lctrRoom, lctrStart, lctrTeacher, lctrYear))
 import Student (Student (stuUser, year))
 import Teacher (Teacher (dep, seniority, tchrUser))
@@ -109,7 +109,20 @@ overbooked sts cs = [x | x <- cs, clssrmCapacity (lctrRoom x) < length (yearList
 conflicts :: [Lecture] -> [(Lecture, Lecture)]
 conflicts cs = [(x, y) | x <- cs, y <- cs, x `conflictsWith` y]
   where
-    c1 `conflictsWith` c2 = 
-      lctrStart c1 == lctrStart c2 && lctrRoom c1 == lctrRoom c2 || 
-      lctrTeacher c1 == lctrTeacher c2 || 
-      lctrYear c1 == lctrYear c2
+    c1 `conflictsWith` c2 =
+      lctrStart c1 == lctrStart c2
+        && ( lctrRoom c1 == lctrRoom c2
+               || lctrTeacher c1 == lctrTeacher c2
+               || lctrYear c1 == lctrYear c2
+           )
+
+fixed :: (a -> a) -> a -> Int -> a
+-- fixed next initial times = head $ drop times $ iterate next initial
+fixed next initial times = iterate next initial !! times
+
+whilst :: (a -> a) -> a -> (a -> Bool) -> a
+whilst next initial cont = head $ dropWhile cont $ iterate next initial
+
+recurrence :: (Integer -> a -> a) -> a -> [a]
+-- recurrence f u0 = map snd $ iterate (\(n, u) -> (n + 1, f n u)) (0, u0)
+recurrence f u0 = unfoldr (\(n, u) -> Just (u, (n + 1, f n u))) (0, u0) -- <=> [u0 , f 0 u0 , f 1 $ f 0 u0 , ...]
