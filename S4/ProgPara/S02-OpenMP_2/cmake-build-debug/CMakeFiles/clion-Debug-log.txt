@@ -1,0 +1,4 @@
+/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/ninja/linux/x64/ninja -G Ninja -S /home/cytech/Travail/S4/ProgPara/S02-OpenMP_2 -B /home/cytech/Travail/S4/ProgPara/S02-OpenMP_2/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/cytech/Travail/S4/ProgPara/S02-OpenMP_2/cmake-build-debug
