@@ -1,3 +1,6 @@
 [submodule "S3/JEE/ProjetJEE"]
 	path = S3/JEE/ProjetJEE
 	url = https://github.com/lucley64/projet-jee
+[submodule "S4/Projects/compress_haskell"]
+	path = S4/Projects/compress_haskell
+	url = git@github.com:eclausse/compress_haskell.git
