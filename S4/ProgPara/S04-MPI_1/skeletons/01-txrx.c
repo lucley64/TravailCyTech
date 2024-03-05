@@ -1,4 +1,4 @@
-# include <mpi.h>
+-# include <mpi.h>
 # include <stdio.h>
 
 # define MPI_TAG_VALUE 123456

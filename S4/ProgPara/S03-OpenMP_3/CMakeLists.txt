@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.28)
 project(S03_OpenMP_3 C)
 
 set(CMAKE_C_STANDARD 23)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -O3")
 
 add_executable(S03_OpenMP_3 main.c)
 

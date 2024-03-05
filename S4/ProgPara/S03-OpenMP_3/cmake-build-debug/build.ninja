@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_S03_OpenMP_3: phony || CMakeFiles/S03_Op
 
 build CMakeFiles/S03_OpenMP_3.dir/main.c.o: C_COMPILER__S03_OpenMP_3_unscanned_Debug /home/cytech/Travail/S4/ProgPara/S03-OpenMP_3/main.c || cmake_object_order_depends_target_S03_OpenMP_3
   DEP_FILE = CMakeFiles/S03_OpenMP_3.dir/main.c.o.d
-  FLAGS = -Wall -Wextra -g -std=gnu2x -fdiagnostics-color=always -fopenmp
+  FLAGS = -Wall -Wextra -O3 -g -std=gnu2x -fdiagnostics-color=always -fopenmp
   OBJECT_DIR = CMakeFiles/S03_OpenMP_3.dir
   OBJECT_FILE_DIR = CMakeFiles/S03_OpenMP_3.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/S03_OpenMP_3.dir/main.c.o: C_COMPILER__S03_OpenMP_3_unscanned_D
 # Link the executable S03_OpenMP_3
 
 build S03_OpenMP_3: C_EXECUTABLE_LINKER__S03_OpenMP_3_Debug CMakeFiles/S03_OpenMP_3.dir/main.c.o | /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so
-  FLAGS = -Wall -Wextra -g
+  FLAGS = -Wall -Wextra -O3 -g
   LINK_LIBRARIES = -lm  /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so  /usr/lib/x86_64-linux-gnu/libpthread.so
   OBJECT_DIR = CMakeFiles/S03_OpenMP_3.dir
   POST_BUILD = :

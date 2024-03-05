@@ -1,0 +1,6 @@
+/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/ninja/linux/x64/ninja -G Ninja -S /home/cytech/Travail/S4/ProgPara/S04-MPI_1 -B /home/cytech/Travail/S4/ProgPara/S04-MPI_1/cmake-build-debug
+-- Found MPI_C: /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/cytech/Travail/S4/ProgPara/S04-MPI_1/cmake-build-debug
