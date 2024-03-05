@@ -4,5 +4,13 @@ project(HeritagePolymorphisme)
 set(CMAKE_CXX_STANDARD 26)
 
 add_executable(HeritagePolymorphisme main.cpp
-        personne.cpp
-        personne.h)
+        person.cpp
+        person.h
+        student.cpp
+        student.h
+        polygon.cpp
+        polygon.h
+        rectangle.cpp
+        rectangle.h
+        triangle.cpp
+        triangle.h)

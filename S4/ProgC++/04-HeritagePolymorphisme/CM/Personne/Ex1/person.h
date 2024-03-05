@@ -7,12 +7,16 @@
 #include <string>
 
 
-class personne {
+class person {
     std::string name;
-public:
-    [[nodiscard]] std::string get_name() const;
-};
 
+public:
+    explicit person(std::string name);
+
+    [[nodiscard]] std::string get_name() const;
+
+    void print() const;
+};
 
 
 #endif //PERSONNE_H
