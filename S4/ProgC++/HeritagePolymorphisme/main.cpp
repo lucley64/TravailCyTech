@@ -10,7 +10,8 @@ int main() {
         new triangle(4, 5),
     };
 
-    std::for_each(polygons.begin(), polygons.end(), [](const polygon* p) { std::cout << p->get_area() << std::endl; });
+    std::for_each(polygons.begin(), polygons.end(), [](const polygon* p) { std::cout << p->get_area() << "\n"; });
+    std::cout << std::endl;
 
     exit(EXIT_SUCCESS);
 }
