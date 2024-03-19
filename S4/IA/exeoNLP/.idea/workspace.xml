@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3a45b054-c617-4ab2-93ed-dd524c77bcc0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/directory.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/directory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/element.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/encoding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/file.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/image.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/text.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/text.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/video.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/filesystem/video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Fichiers/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/electric.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/electric.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/garland.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/garland.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/light.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/light.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/04-HeritagePolymorphisme/TP/Guirlandes/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/TP4-Heritage-Polymorphisme.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/directory.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/directory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/element.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/encoding.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/file.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/image.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/text.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/text.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/video.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/filesystem/video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/garlands/electric.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/garlands/electric.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/garlands/garland.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/garlands/garland.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/garlands/light.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/garlands/light.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-512e0601a079ae74c177.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-05T17-19-13-0825.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.cmake/api/v1/reply/target-HeritagePolymorphisme-Debug-56a792ed1783a8ee30d8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/CMakeFiles/HeritagePolymorphisme.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/CMakeFiles/HeritagePolymorphisme.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/HeritagePolymorphisme" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/HeritagePolymorphisme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/person.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/person.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/person.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/person.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/polygon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/polygon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/polygon.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/polygon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/rectangle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/rectangle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/rectangle.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/rectangle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/student.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/student.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/student.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/student.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/triangle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/triangle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/triangle.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/HeritagePolymorphisme/CM/triangle.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2dM2zISB5AjgAgIDKQ9DYimPgc9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a45b054-c617-4ab2-93ed-dd524c77bcc0" name="Changes" comment="" />
+      <created>1709803888022</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709803888022</updated>
+      <workItem from="1709803889686" duration="172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
