@@ -6,48 +6,60 @@
 # define MPI_TAG_VALUE 123456
 #define ROOT 0
 
-int* gen_array(int* array, const size_t n) {
-    if (array != NULL) {
-        for (int* i = array; i != array + n; i++) {
-            *i = (double) rand() / RAND_MAX * 10;
+# define NRA 50
+# define NCA 100
+# define NRB NCA
+# define NCB 150
+
+int** gen_array(const size_t nr, const size_t nc) {
+    int** array = calloc(nc ,sizeof(int*));
+
+    for (int** i = array; i != array + nr; i++) {
+        *i = malloc(nr * sizeof(int));
+        for (int* j = *i; j != *i + nc; j++) {
+            *j = (double) rand() / RAND_MAX * 10;
         }
     }
-
     return array;
 }
 
-void print_array(const int* array, const size_t n) {
-    if (array != NULL) {
-        printf("[");
-        for (const int* i = array; i != array + n - 1; i++) {
-            printf("%d,", *i);
-        }
-        printf("%d]\n", array[n - 1]);
-    }
-}
 
-void run(const int myid, const int np) {
-    for (int i = 0; i < np; ++i) {
-        if (myid == i % np) {
-            MPI_Send(&myid, 1, MPI_INT, i % np + 1, MPI_TAG_VALUE, MPI_COMM_WORLD);
+void run(const pid_t myid, const int np) {
+    int** A;
+    int** B;
+    if (myid == ROOT) {
+        A = gen_array(NRA, NCA);
+        B = gen_array(NRB, NCB);
+        const size_t nb_workers = np - 1;
+        const size_t npa = NRA / np;
+        size_t rest = NRA % np;
+
+        for (int i = 1; i <= nb_workers; ++i) {
+            const size_t rows = npa + (rest --);
+
         }
-        else if (myid == i % np + 1) {
-            int val;
-            MPI_Recv(&val, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-            printf("Process %d recived %d", myid, val);
-        }
+
     }
+
+
+
+
+
+
 }
 
 int main(int argc, char* argv[]) {
-    int myid, np;
+    pid_t myid;
+    int np;
     MPI_Init(&argc, &argv);
 
     MPI_Comm_size(MPI_COMM_WORLD, &np);
     MPI_Comm_rank(MPI_COMM_WORLD, &myid);
 
-    if (np % 2 == 0) {
+    if (np > 1) {
         run(myid, np);
+    } else {
+        printf("nop\n");
     }
 
     MPI_Finalize();
