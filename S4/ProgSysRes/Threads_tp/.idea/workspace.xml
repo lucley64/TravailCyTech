@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -20,7 +20,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ae51892-474d-4cbe-9c63-166734cf16ae" name="Changes" comment="tp sthreads" />
+    <list default="true" id="0ae51892-474d-4cbe-9c63-166734cf16ae" name="Changes" comment="tp sthreads">
+      <change afterPath="$PROJECT_DIR$/../../IA/exoNLP/Ing2_GSI_LEYDERT_luc_NLP.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IA/exoNLP/Word2Vec.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/IOManagment/robot.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ProgC++/IOManagment/robot.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/exoNLP/travail_nlp.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/exoNLP/travail_nlp.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/IOManagment/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/IOManagment/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProgC++/IOManagment/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProgC++/IOManagment/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend" beforeDir="false" afterPath="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,49 +44,44 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitLabMergeRequestsSettings"><![CDATA[{}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{}]]></component>
+  <component name="GitLabMergeRequestsSettings">{}</component>
+  <component name="GithubPullRequestsUISettings">{}</component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
     <option name="minorVersion" value="1" />
     <option name="productBranch" value="Nova" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2dJE9SzuAszc4jcc86BciaW5uoz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "CMake Application.Threads_tp.executor": "Run",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;CMake Application.Threads_tp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Threads_tp" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="exercice_2" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Threads_tp" TARGET_NAME="Threads_tp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Threads_tp" RUN_TARGET_NAME="Threads_tp">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -92,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709717629285</updated>
       <workItem from="1709717630280" duration="2608000" />
+      <workItem from="1711005058717" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="tp sthreads">
       <option name="closed" value="true" />

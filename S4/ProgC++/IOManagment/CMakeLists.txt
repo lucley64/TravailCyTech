@@ -3,4 +3,6 @@ project(IOManagment)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(IOManagment main.cpp)
+add_executable(IOManagment main.cpp
+        robot.cpp
+        robot.h)
