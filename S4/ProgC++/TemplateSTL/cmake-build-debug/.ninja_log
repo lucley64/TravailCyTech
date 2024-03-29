@@ -1,0 +1,6 @@
+# ninja log v5
+0	23	1711644208391843578	build.ninja	6e165c0336ef9ea
+1	245	1711540635872148753	CMakeFiles/TemplateSTL.dir/my_vector.cpp.o	945a938d6a207463
+279	329	1711616650099303696	TemplateSTL	c81be641a76871e2
+0	381	1711537980088511096	CMakeFiles/TemplateSTL.dir/fraction.cpp.o	b35d6ed15b10fcc4
+0	279	1711616650047304071	CMakeFiles/TemplateSTL.dir/main.cpp.o	43cd83a32ab7b360
