@@ -55,12 +55,6 @@ build CMakeFiles/TemplateSTL.dir/main.cpp.o: CXX_COMPILER__TemplateSTL_unscanned
   OBJECT_DIR = CMakeFiles/TemplateSTL.dir
   OBJECT_FILE_DIR = CMakeFiles/TemplateSTL.dir
 
-build CMakeFiles/TemplateSTL.dir/fraction.cpp.o: CXX_COMPILER__TemplateSTL_unscanned_Debug /home/cytech/Travail/S4/ProgC++/TemplateSTL/fraction.cpp || cmake_object_order_depends_target_TemplateSTL
-  DEP_FILE = CMakeFiles/TemplateSTL.dir/fraction.cpp.o.d
-  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/TemplateSTL.dir
-  OBJECT_FILE_DIR = CMakeFiles/TemplateSTL.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target TemplateSTL
@@ -69,7 +63,7 @@ build CMakeFiles/TemplateSTL.dir/fraction.cpp.o: CXX_COMPILER__TemplateSTL_unsca
 #############################################
 # Link the executable TemplateSTL
 
-build TemplateSTL: CXX_EXECUTABLE_LINKER__TemplateSTL_Debug CMakeFiles/TemplateSTL.dir/main.cpp.o CMakeFiles/TemplateSTL.dir/fraction.cpp.o
+build TemplateSTL: CXX_EXECUTABLE_LINKER__TemplateSTL_Debug CMakeFiles/TemplateSTL.dir/main.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/TemplateSTL.dir
   POST_BUILD = :

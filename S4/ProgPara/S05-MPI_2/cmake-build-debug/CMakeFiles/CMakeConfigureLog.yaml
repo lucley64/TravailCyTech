@@ -4,16 +4,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 5.15.0-100-generic - x86_64
+      The system is: Linux - 5.15.0-101-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -33,14 +33,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hHL3OB"
-      binary: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hHL3OB"
+      source: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uUhX1v"
+      binary: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uUhX1v"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -49,10 +49,10 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hHL3OB'
+        Change Dir: '/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uUhX1v'
         
-        Run Build Command(s): /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/ninja/linux/x64/ninja -v cmTC_81f26
-        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -c /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/ninja/linux/x64/ninja -v cmTC_f7487
+        [1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -c /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:hsa
@@ -61,8 +61,8 @@ events:
         Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
         Thread model: posix
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccmUmyh5.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEJUcUo.s
         GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
         
@@ -82,13 +82,13 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-         as -v --64 -o CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o /tmp/ccmUmyh5.s
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o /tmp/ccEJUcUo.s
         GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-        [2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -o cmTC_81f26   && :
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        [2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -o cmTC_f7487   && :
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
@@ -100,16 +100,16 @@ events:
         gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81f26' '-mtune=generic' '-march=x86-64'
-         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBshmGs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_81f26 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81f26' '-mtune=generic' '-march=x86-64'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f7487' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUa6TCG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f7487 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f7487' '-mtune=generic' '-march=x86-64'
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit include dir info: rv=done
@@ -130,16 +130,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hHL3OB']
+        ignore line: [Change Dir: '/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-uUhX1v']
         ignore line: []
-        ignore line: [Run Build Command(s): /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/ninja/linux/x64/ninja -v cmTC_81f26]
-        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -c /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/ninja/linux/x64/ninja -v cmTC_f7487]
+        ignore line: [[1/2] /usr/bin/cc   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -c /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
@@ -148,8 +148,8 @@ events:
         ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
         ignore line: [Thread model: posix]
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccmUmyh5.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -version -fdiagnostics-color=always -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccEJUcUo.s]
         ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
         ignore line: []
@@ -169,13 +169,13 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 01da938ff5dc2163489aa33cb3b747a7]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o /tmp/ccmUmyh5.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o /tmp/ccEJUcUo.s]
         ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-        ignore line: [[2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -o cmTC_81f26   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [[2/2] : && /usr/bin/cc  -v CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -o cmTC_f7487   && :]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
@@ -187,13 +187,13 @@ events:
         ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81f26' '-mtune=generic' '-march=x86-64']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBshmGs.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_81f26 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f7487' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUa6TCG.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f7487 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccBshmGs.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccUa6TCG.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -211,7 +211,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_81f26] ==> ignore
+          arg [cmTC_f7487] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
@@ -223,7 +223,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
-          arg [CMakeFiles/cmTC_81f26.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_f7487.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -254,21 +254,17 @@ events:
         implicit fwks: []
       
       
-...
-
----
-events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
-      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
       - "CMakeLists.txt:8 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0pYNVs"
-      binary: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0pYNVs"
+      source: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnH8hx"
+      binary: "/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnH8hx"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -277,11 +273,11 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0pYNVs'
+        Change Dir: '/home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnH8hx'
         
-        Run Build Command(s): /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-nova/bin/ninja/linux/x64/ninja -v cmTC_a1ce1
-        [1/2] /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -std=gnu2x -fdiagnostics-color=always -pthread -o CMakeFiles/cmTC_a1ce1.dir/test_mpi.c.o -c /home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-0pYNVs/test_mpi.c
-        [2/2] : && /usr/bin/cc  -pthread CMakeFiles/cmTC_a1ce1.dir/test_mpi.c.o -o cmTC_a1ce1  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib  /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so && :
+        Run Build Command(s): /home/cytech/.local/share/JetBrains/Toolbox/apps/clion-2/bin/ninja/linux/x64/ninja -v cmTC_0c5bc
+        [1/2] /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -std=gnu2x -fdiagnostics-color=always -pthread -o CMakeFiles/cmTC_0c5bc.dir/test_mpi.c.o -c /home/cytech/Travail/S4/ProgPara/S05-MPI_2/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-rnH8hx/test_mpi.c
+        [2/2] : && /usr/bin/cc  -pthread CMakeFiles/cmTC_0c5bc.dir/test_mpi.c.o -o cmTC_0c5bc  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib  /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so && :
         
       exitCode: 0
 ...
