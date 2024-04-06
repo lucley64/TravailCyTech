@@ -65,7 +65,7 @@ build CMakeFiles/S01_OpenMP_1.dir/main.c.o: C_COMPILER__S01_OpenMP_1_unscanned_D
 
 build S01_OpenMP_1: C_EXECUTABLE_LINKER__S01_OpenMP_1_Debug CMakeFiles/S01_OpenMP_1.dir/main.c.o | /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so
   FLAGS = -Wall -Wextra -g
-  LINK_LIBRARIES = /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so  /usr/lib/x86_64-linux-gnu/libpthread.so
+  LINK_LIBRARIES = -lm  /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so  /usr/lib/x86_64-linux-gnu/libpthread.so
   OBJECT_DIR = CMakeFiles/S01_OpenMP_1.dir
   POST_BUILD = :
   PRE_LINK = :

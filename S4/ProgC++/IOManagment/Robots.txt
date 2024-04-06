@@ -1,0 +1,12 @@
+LittleSophia Humanoid 150
+Roomba Autonomous 500
+ParrotARDrone Teleoperated 150
+Atlas Humanoid 750000
+Wall-e Pre-programmed 344
+NAO Humanoid 7000
+TurtleBot Autonomous 590
+Spot Explorer 74500
+Curiosity Rover 2500000
+Kuka Industry 21900
+Mindstorm Education 300
+daVinci Health 65000000

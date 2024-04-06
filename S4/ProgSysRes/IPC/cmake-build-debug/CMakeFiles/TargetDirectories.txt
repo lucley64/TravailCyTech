@@ -1,0 +1,3 @@
+/home/cytech/Travail/S4/ProgSysRes/IPC/cmake-build-debug/CMakeFiles/IPC.dir
+/home/cytech/Travail/S4/ProgSysRes/IPC/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/cytech/Travail/S4/ProgSysRes/IPC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

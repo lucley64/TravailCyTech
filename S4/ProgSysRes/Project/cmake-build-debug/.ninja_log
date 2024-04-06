@@ -1,0 +1,5 @@
+# ninja log v5
+0	19	1712066622942784672	build.ninja	ae15e36203ed6e61
+1	23	1711704871128390299	CMakeFiles/Project.dir/main.c.o	a06fab2bddaf3127
+1	38	1711707621050685874	CMakeFiles/Project.dir/PartA/part_a.c.o	1737df32a9e98722
+38	54	1711707621070685739	Project	87af2b6c00ca32cc

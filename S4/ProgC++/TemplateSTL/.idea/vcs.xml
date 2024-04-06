@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../S3/IA/Tic-Tac-Toe" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../S3/IA/fifteen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../S3/JEE/ProjetJEE" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Projects/compress_haskell" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../Projects/project-solution-finder-ultimate/project-solution-finder-ultimate-backend" vcs="Git" />
+  </component>
+</project>
