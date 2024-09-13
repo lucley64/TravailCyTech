@@ -1,18 +1,16 @@
 package org.example.algorithms;
 
-import org.example.graphics.Line;
-import org.example.graphics.Polygon;
-import org.example.graphics.Vertex;
+import org.example.graphics2d.Line;
+import org.example.graphics2d.Vertex;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
 
-public class ExtremeEdges {
-    public static void draw(Graphics g, @NotNull List<Vertex> vertices) {
+public class ConvexHullAlgorithms {
+    public static void extremeEdges(@NotNull Graphics g, @NotNull List<Vertex> vertices) {
         Color c = g.getColor();
         List<Line> linesDone = new ArrayList<>();
 
@@ -62,6 +60,46 @@ public class ExtremeEdges {
                 vertex.draw(g);
             }
         } catch (InterruptedException e) {System.out.println(e.getMessage());}
+        g.setColor(c);
+    }
+
+    public static void jarvisMarch(@NotNull Graphics g, @NotNull List<Vertex> vertices) {
+        Color c = g.getColor();
+
+        List<Vertex> verticesCopy = new ArrayList<>(vertices);
+        Vertex first = vertices.stream().min(Comparator.comparingInt(Vertex::getY)).get();
+        Vertex current = first;
+        List<Line> linesSelected = new ArrayList<>();
+        try {
+            do {
+                g.setColor(Color.red);
+                current.draw(g);
+                Vertex min = current;
+                for (var vertex : verticesCopy) {
+                    g.setColor(Color.red);
+                    vertex.draw(g);
+                    Line line = new Line(current, vertex);
+                    line.draw(g);
+
+                    if (verticesCopy.stream().allMatch(vertex1 -> line.crossProduct(vertex1) < 0) && vertex != first) {
+                        min = vertex;
+                    }
+                    Thread.sleep(100);
+                    g.setColor(Color.BLACK);
+                    vertex.draw(g);
+                    line.clear(g);
+                }
+                Line line = new Line(current, min);
+                g.setColor(Color.BLACK);
+                line.draw(g);
+                current.draw(g);
+                linesSelected.add(line);
+                verticesCopy.remove(min);
+                current = min;
+            } while (current != first);
+        } catch (InterruptedException e) {System.out.println(e.getMessage());}
+        g.setColor(Color.black);
+        linesSelected.forEach(line -> line.draw(g));
         g.setColor(c);
     }
 }

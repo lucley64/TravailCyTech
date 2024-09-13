@@ -1,11 +1,6 @@
-package org.example.graphics;
+package org.example.graphics2d;
 
-import org.example.canvas.Drawable;
-
-import java.awt.*;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Polygon extends Shape {
 

@@ -1,4 +1,4 @@
-package org.example.graphics;
+package org.example.graphics2d;
 
 import org.example.canvas.Drawable;
 
