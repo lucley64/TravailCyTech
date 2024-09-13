@@ -244,76 +244,299 @@
 
 1. Parallélisation du code OpenMP pour le problème à N corps:
 
-**Étape 1: Détecter les dépendances de données:**
+    1. **Étape 1: Détecter les dépendances de données:**
 
-* La boucle `for` itère sur les particules `i` de 1 à N-1.
-* A chaque itération, la fonction `calculate_force` est appelée avec les positions de deux particules `i` et `j`.
-* Le résultat de la fonction `calculate_force` est utilisé pour mettre à jour les forces `f[x1[i]]` et `f[x2[i]]`.
+        * La boucle `for` itère sur les particules `i` de 1 à N-1.
+        * A chaque itération, la fonction `calculate_force` est appelée avec les positions de deux particules `i` et `j`.
+        * Le résultat de la fonction `calculate_force` est utilisé pour mettre à jour les forces `f[x1[i]]` et `f[x2[i]]`.
 
-**Il existe deux types de dépendances de données dans ce code:**
+        **Il existe deux types de dépendances de données dans ce code:**
 
-* **Dépendances de lecture:** La valeur de `f[x1[i]]` et `f[x2[i]]` est lue avant d'être mise à jour.
-* **Dépendances d'écriture:** La valeur de `f[x1[i]]` et `f[x2[i]]` est écrasée à chaque itération.
+        * **Dépendances de lecture:** La valeur de `f[x1[i]]` et `f[x2[i]]` est lue avant d'être mise à jour.
+        * **Dépendances d'écriture:** La valeur de `f[x1[i]]` et `f[x2[i]]` est écrasée à chaque itération.
 
-**Étape 2: Paralléliser le code:**
+    2. **Étape 2: Paralléliser le code:**
 
-**Deux approches sont possibles pour paralléliser ce code:**
+        **Deux approches sont possibles pour paralléliser ce code:**
 
-**1. Parallélisation par boucles:**
+        1. **Parallélisation par boucles:**
 
-* Utiliser la directive `#pragma omp parallel for` pour paralléliser la boucle `for`.
-* Chaque thread calculera la force pour un ensemble de particules distinctes.
-* **Attention:** Il faut s'assurer que les accès aux tableaux `f`, `x1` et `x2` sont synchronisés pour éviter des écritures concurrentes.
+            * Utiliser la directive `#pragma omp parallel for` pour paralléliser la boucle `for`.
+            * Chaque thread calculera la force pour un ensemble de particules distinctes.
+            * **Attention:** Il faut s'assurer que les accès aux tableaux `f`, `x1` et `x2` sont synchronisés pour éviter des écritures concurrentes.
 
-**2. Parallélisation par réduction:**
+        2. **Parallélisation par réduction:**
 
-* Utiliser la directive `#pragma omp parallel for reduction(+:f[:N])` pour paralléliser la boucle `for`.
-* Chaque thread calculera la force pour un ensemble de particules distinctes et accumulera le résultat dans une variable locale.
-* A la fin de la boucle, les résultats locaux seront réduits en une seule variable `f` en utilisant l'opérateur `+`.
+            * Utiliser la directive `#pragma omp parallel for reduction(+:f[:N])` pour paralléliser la boucle `for`.
+            * Chaque thread calculera la force pour un ensemble de particules distinctes et accumulera le résultat dans une variable locale.
+            * A la fin de la boucle, les résultats locaux seront réduits en une seule variable `f` en utilisant l'opérateur `+`.
 
-**Justification des choix:**
+    **Justification des choix:**
 
-* La parallélisation par boucles est plus simple à implémenter.
-* La parallélisation par réduction est plus efficace car elle évite les écritures concurrentes dans le tableau `f`.
+    * La parallélisation par boucles est plus simple à implémenter.
+    * La parallélisation par réduction est plus efficace car elle évite les écritures concurrentes dans le tableau `f`.
 
-**Code OpenMP parallélisé (par réduction):**
+    **Code OpenMP parallélisé (par réduction):**
 
-```c
-#include <omp.h>
+    ```c
+    #include <omp.h>
 
-void calculate_force(double x1, double x2, double *force);
+    void calculate_force(double x1, double x2, double *force);
 
-int main() {
-  int N;
-  double *x1, *x2, *f;
+    int main() {
+        int N;
+        double *x1, *x2, *f;
 
-  // Initialisation des tableaux
+        // Initialisation des tableaux
 
-  #pragma omp parallel for
-  for (int i = 0; i < N; i++) {
-    f[i] = 0.0;
-  }
+        #pragma omp parallel for
+        for (int i = 0; i < N; i++) {
+            f[i] = 0.0;
+        }
 
-  #pragma omp parallel for reduction(+:f[:N])
-  for (int i = 1; i < N; i++) {
-    double force;
-    calculate_force(x1[i], x2[i], &force);
-    f[x1[i]] += force;
-    f[x2[i]] -= force;
-  }
+        #pragma omp parallel for reduction(+:f[:N])
+        for (int i = 1; i < N; i++) {
+            double force;
+            calculate_force(x1[i], x2[i], &force);
+            #pragma omp atomic
+            f[x1[i]] += force;
+            #pragma omp atomic
+            f[x2[i]] -= force;
+        }
 
-  // Calcul des trajectoires
+        // Calcul des trajectoires
 
-  return 0;
-}
-```
+        return 0;
+    }
+    ```
 
-**Remarques:**
+    **Remarques:**
 
-* Le code ci-dessus est une simplification et peut être optimisé davantage.
-* Il est important de choisir la bonne stratégie de parallélisation en fonction du problème et de l'architecture du système.
+    * Le code ci-dessus est une simplification et peut être optimisé davantage.
+    * Il est important de choisir la bonne stratégie de parallélisation en fonction du problème et de l'architecture du système.
 
-## Conclusion:
+    **Conclusion:**
 
-Le code OpenMP parallélisé permet de calculer la force nette sur chaque particule en parallèle, ce qui peut améliorer significativement les performances pour un grand nombre de particules.
+    Le code OpenMP parallélisé permet de calculer la force nette sur chaque particule en parallèle, ce qui peut améliorer significativement les performances pour un grand nombre de particules.
 
+2. Suite
+
+    1. Explication du résultat final avec la directive "reduction":
+
+        1. **Fonctionnement de la directive "reduction":**
+
+            * La directive `#pragma omp parallel for reduction(+:sum)` permet de paralléliser la boucle `for` et de réduire la variable `sum` en une seule valeur finale.
+            * Chaque thread calcule la somme d'une partie du tableau `array`.
+            * A la fin de la boucle, les sommes locales sont additionnées pour obtenir la somme finale de `sum`.
+
+        2. **Obtention du résultat final:**
+
+            * La variable `sum` est initialisée à 0 avant la boucle `for`.
+            * A chaque itération de la boucle, chaque thread ajoute la valeur de l'élément courant du tableau `array` à la variable `sum` locale.
+            * La directive `reduction(+:sum)` combine les valeurs locales de `sum` en une seule valeur finale stockée dans la variable `sum` globale.
+            * La valeur finale de `sum` est ensuite affichée par la fonction `printf`.
+
+    2. **Modification du programme avec "omp parallel sections":**
+
+        ```c
+        #include <stdio.h>
+        #include <stdlib.h>
+        #include <omp.h>
+        #define ARRAY_SIZE 100
+
+        int main() {
+        int i, sum = 0;
+        int array[ARRAY_SIZE];
+
+        // Initialisation du tableau
+        for (i = 0; i < ARRAY_SIZE; i++) {
+            array[i] = i;
+        }
+
+        #pragma omp parallel sections
+        {
+            #pragma omp section
+            {
+            int local_sum = 0;
+            for (i = 0; i < ARRAY_SIZE / 2; i++) {
+                local_sum += array[i];
+            }
+            #pragma omp critical
+            sum += local_sum;
+            }
+
+            #pragma omp section
+            {
+            int local_sum = 0;
+            for (i = ARRAY_SIZE / 2; i < ARRAY_SIZE; i++) {
+                local_sum += array[i];
+            }
+            #pragma omp critical
+            sum += local_sum;
+            }
+        }
+
+        printf("La somme du tableau est : %d\n", sum);
+        return 0;
+        }
+       ```
+
+    **Explication des modifications:**
+
+    * La directive `#pragma omp parallel sections` divise la région de code en deux sections parallèles.
+    * Chaque section calcule la somme d'une moitié du tableau `array`.
+    * La directive `#pragma omp critical` est utilisée pour garantir un accès mutuel exclusif à la variable `sum` lors de l'addition des sommes locales.
+
+    **Résultat:**
+
+    Le programme affiche la même somme finale que le programme original.
+
+    **Remarques:**
+
+    * Cette solution utilise la directive `omp critical` pour garantir la cohérence des données.
+    * D'autres solutions sont possibles, par exemple en utilisant des variables locales et une réduction finale en dehors de la section parallèle.
+    * Le choix de la meilleure solution dépend du contexte et des performances.
+
+## Exercice 4: MPI
+
+1. Implémentation MPI du tri pair-impair
+
+    **Algorithme:**
+
+    1. **Distribution:** Distribuer le tableau d'entiers de taille `n` sur `P` processus, chaque processus recevant une portion de taille `n/p`.
+    2. **Tri local:** Chaque processus trie sa portion de tableau localement en utilisant un algorithme de tri séquentiel (par exemple, tri à bulles, tri par insertion).
+    3. **Fusion:**
+        * **Étapes paires:**
+            * Les processus pairs envoient leurs `n/p` plus petits éléments à leurs processus de droite.
+            * Les processus pairs reçoivent les `n/p` plus grands éléments de leurs processus de gauche.
+            * Chaque processus fusionne les deux tableaux reçus en un seul tableau trié de taille `n/p`.
+        * **Étapes impaires:**
+            * Les processus pairs envoient leurs `n/p` plus grands éléments à leurs processus de gauche.
+            * Les processus pairs reçoivent les `n/p` plus petits éléments de leurs processus de droite.
+            * Chaque processus fusionne les deux tableaux reçus en un seul tableau trié de taille `n/p`.
+    4. **Répéter les étapes 3 et 4** jusqu'à ce que chaque processus possède un seul élément (i.e., `log2(P)` étapes).
+    5. **Collecte:** Le processus de rang 0 rassemble les éléments triés de tous les processus pour obtenir le tableau final trié.
+
+    **Code MPI:**
+
+    ```c
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <mpi.h>
+
+    #define TAG_SEND 1
+    #define TAG_RECV 2
+
+    void merge(int *data1, int size1, int *data2, int size2, int *data_out) {
+        int i = 0, j = 0, k = 0;
+
+        while (i < size1 && j < size2) {
+            if (data1[i] < data2[j]) {
+            data_out[k++] = data1[i++];
+            } else {
+            data_out[k++] = data2[j++];
+            }
+        }
+
+        while (i < size1) {
+            data_out[k++] = data1[i++];
+        }
+
+        while (j < size2) {
+            data_out[k++] = data2[j++];
+        }
+    }
+
+    int main(int argc, char **argv) {
+        int my_rank, comm_size;
+        int *data, *local_data, *recv_data;
+        int i, step, size, send_size, recv_size;
+
+        MPI_Init(&argc, &argv);
+        MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+        MPI_Comm_size(MPI_COMM_WORLD, &comm_size);
+
+        // Initialisation des données
+        if (my_rank == 0) {
+            data = (int *)malloc(sizeof(int) * n);
+            for (i = 0; i < n; i++) {
+            data[i] = rand() % 100;
+            }
+        }
+
+        // Distribution du tableau
+        local_data = (int *)malloc(sizeof(int) * n / comm_size);
+        MPI_Scatter(data, n / comm_size, MPI_INT, local_data, n / comm_size, MPI_INT, 0, MPI_COMM_WORLD);
+
+        // Tri local
+        qsort(local_data, n / comm_size, sizeof(int), compare);
+
+        for (step = 0; step < log2(comm_size); step++) {
+            if (step % 2 == 0) {
+            // Envoyer les plus petits éléments aux processus de droite
+            send_size = n / comm_size / 2;
+            recv_size = n / comm_size / 2;
+            if (my_rank % 2 == 0) {
+                MPI_Send(local_data, send_size, MPI_INT, my_rank + 1, TAG_SEND, MPI_COMM_WORLD);
+                MPI_Recv(recv_data, recv_size, MPI_INT, my_rank + 1, TAG_RECV, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            } else {
+                MPI_Recv(recv_data, recv_size, MPI_INT, my_rank - 1, TAG_SEND, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                MPI_Send(local_data + send_size, send_size, MPI_INT, my_rank - 1, TAG_RECV, MPI_COMM_WORLD);
+            }
+
+            // Fusionner les deux tableaux reçus
+            merge(local_data, send_size, recv_data, recv_size, local_data);
+            } else {
+            // Envoyer les plus grands éléments aux processus de gauche
+            send_size = n / comm_size / 2;
+            recv_size = n / comm_size / 2;
+            if (my_rank % 2 == 0) {
+                MPI_Send(local_data + send_size, send_size, MPI_INT, my_rank - 1, TAG_SEND, MPI_COMM_WORLD);
+                MPI_Recv(recv_data, recv_size, MPI_INT, my_rank - 1, TAG_RECV, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            } else {
+                MPI_Recv(recv_data, recv_size, MPI_INT, my_rank + 1, TAG_SEND, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                MPI_Send(local_data, send_size, MPI_INT, my_rank + 1, TAG_RECV, MPI_COMM_WORLD);
+            }
+            // Fusionner les deux tableaux reçus
+            merge(local_data + send_size, send_size, recv_data, recv_size, local_data + send_size);
+            }
+        }
+
+        // Collecte des résultats
+        if (my_rank == 0) {
+            data = (int *)malloc(sizeof(int) * n);
+        }
+        MPI_Gather(local_data, n / comm_size, MPI_INT, data, n / comm_size, MPI_INT, 0, MPI_COMM_WORLD);
+
+        // Affichage du tableau trié sur le processus 0
+        if (my_rank == 0) {
+            printf("Tableau trié:\n");
+            for (i = 0; i < n; i++) {
+            printf("%d ", data[i]);
+            }
+            printf("\n");
+            free(data);
+        }
+
+        free(local_data);
+        MPI_Finalize();
+        return 0;
+    }
+    ```
+
+    **Remarques:**
+
+    * Ce code est une implémentation de base du tri pair-impair en MPI.
+    * Il existe des optimisations possibles pour améliorer les performances, comme l'utilisation d'une communication non bloquante.
+    * Le choix de l'algorithme de tri local peut également influencer les performances.
+
+    **Points importants:**
+
+    * Le tri pair-impair est un algorithme de tri parallèle efficace pour les architectures à mémoire distribuée.
+    * L'implémentation en MPI nécessite de gérer la communication entre les processus pour échanger les données et fusionner les tableaux triés.
+    * Le code MPI doit être optimisé pour prendre en compte les caractéristiques de l'architecture et du réseau.
+
+    **Ressources supplémentaires:**
+
+    * Tutoriel MPI: [URL non valide supprimée]
+    * Tri pair-impair: [https://fr.wikipedia.org/wiki/Tri_pair-impair](https://fr.wikipedia.org/wiki/Tri_pair-impair)

@@ -61,6 +61,12 @@ build CMakeFiles/Project.dir/PartA/part_a.c.o: C_COMPILER__Project_unscanned_Deb
   OBJECT_DIR = CMakeFiles/Project.dir
   OBJECT_FILE_DIR = CMakeFiles/Project.dir/PartA
 
+build CMakeFiles/Project.dir/PartB/part_b.c.o: C_COMPILER__Project_unscanned_Debug /home/cytech/Travail/S4/ProgSysRes/Project/PartB/part_b.c || cmake_object_order_depends_target_Project
+  DEP_FILE = CMakeFiles/Project.dir/PartB/part_b.c.o.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/Project.dir/PartB
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Project
@@ -69,7 +75,7 @@ build CMakeFiles/Project.dir/PartA/part_a.c.o: C_COMPILER__Project_unscanned_Deb
 #############################################
 # Link the executable Project
 
-build Project: C_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/main.c.o CMakeFiles/Project.dir/PartA/part_a.c.o
+build Project: C_EXECUTABLE_LINKER__Project_Debug CMakeFiles/Project.dir/main.c.o CMakeFiles/Project.dir/PartA/part_a.c.o CMakeFiles/Project.dir/PartB/part_b.c.o
   FLAGS = -g
   LINK_LIBRARIES = -lm  -lpthread
   OBJECT_DIR = CMakeFiles/Project.dir
