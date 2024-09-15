@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.StringJoiner;
 
 public class Mat4 {
-    private float[][] matrix;
+    protected float[][] matrix;
 
     public Mat4() {
         matrix = new float[4][4];
@@ -92,13 +92,13 @@ public class Mat4 {
                 - matrix[0][3] * matrix[1][2] * matrix[3][1] - matrix[0][2] * matrix[1][1] * matrix[3][3] - matrix[0][1] * matrix[1][3] * matrix[3][2]);
         float a03 = -(matrix[0][1] * matrix[1][2] * matrix[2][3] + matrix[0][2] * matrix[1][3] * matrix[2][1] + matrix[0][3] * matrix[1][1] * matrix[2][2]
                 - matrix[0][3] * matrix[1][2] * matrix[2][1] - matrix[0][2] * matrix[1][1] * matrix[2][3] - matrix[0][1] * matrix[1][3] * matrix[2][2]);
-        float a10 = (matrix[1][0] * matrix[2][2] * matrix[3][3] + matrix[1][2] * matrix[2][3] * matrix[3][0] + matrix[1][3] * matrix[2][0] * matrix[3][2]
+        float a10 = -(matrix[1][0] * matrix[2][2] * matrix[3][3] + matrix[1][2] * matrix[2][3] * matrix[3][0] + matrix[1][3] * matrix[2][0] * matrix[3][2]
                 - matrix[1][3] * matrix[2][2] * matrix[3][0] - matrix[1][2] * matrix[2][0] * matrix[3][3] - matrix[1][0] * matrix[2][3] * matrix[3][2]);
-        float a11 = -(matrix[0][0] * matrix[2][2] * matrix[3][3] + matrix[0][2] * matrix[2][3] * matrix[3][0] + matrix[0][3] * matrix[2][0] * matrix[3][2]
+        float a11 = (matrix[0][0] * matrix[2][2] * matrix[3][3] + matrix[0][2] * matrix[2][3] * matrix[3][0] + matrix[0][3] * matrix[2][0] * matrix[3][2]
                 - matrix[0][3] * matrix[2][2] * matrix[3][0] - matrix[0][2] * matrix[2][0] * matrix[3][3] - matrix[0][0] * matrix[2][3] * matrix[3][2]);
-        float a12 = (matrix[0][0] * matrix[1][2] * matrix[3][3] + matrix[0][2] * matrix[1][3] * matrix[3][0] + matrix[0][3] * matrix[1][0] * matrix[3][2]
+        float a12 = -(matrix[0][0] * matrix[1][2] * matrix[3][3] + matrix[0][2] * matrix[1][3] * matrix[3][0] + matrix[0][3] * matrix[1][0] * matrix[3][2]
                 - matrix[0][3] * matrix[1][2] * matrix[3][0] - matrix[0][2] * matrix[1][0] * matrix[3][3] - matrix[0][0] * matrix[1][3] * matrix[3][2]);
-        float a13 = -(matrix[0][0] * matrix[1][2] * matrix[2][3] + matrix[0][2] * matrix[1][3] * matrix[2][0] + matrix[0][3] * matrix[1][0] * matrix[2][2]
+        float a13 = (matrix[0][0] * matrix[1][2] * matrix[2][3] + matrix[0][2] * matrix[1][3] * matrix[2][0] + matrix[0][3] * matrix[1][0] * matrix[2][2]
                 - matrix[0][3] * matrix[1][2] * matrix[2][0] - matrix[0][2] * matrix[1][0] * matrix[2][3] - matrix[0][0] * matrix[1][3] * matrix[2][2]);
         float a20 = (matrix[1][0] * matrix[2][1] * matrix[3][3] + matrix[1][1] * matrix[2][3] * matrix[3][0] + matrix[1][3] * matrix[2][0] * matrix[3][1]
                 - matrix[1][3] * matrix[2][1] * matrix[3][0] - matrix[1][1] * matrix[2][0] * matrix[3][3] - matrix[1][0] * matrix[2][3] * matrix[3][1]);
@@ -108,13 +108,13 @@ public class Mat4 {
                 - matrix[0][3] * matrix[1][1] * matrix[3][0] - matrix[0][1] * matrix[1][0] * matrix[3][3] - matrix[0][0] * matrix[1][3] * matrix[3][1]);
         float a23 = -(matrix[0][0] * matrix[1][1] * matrix[2][3] + matrix[0][1] * matrix[1][3] * matrix[2][0] + matrix[0][3] * matrix[1][0] * matrix[2][1]
                 - matrix[0][3] * matrix[1][1] * matrix[2][0] - matrix[0][1] * matrix[1][0] * matrix[2][3] - matrix[0][0] * matrix[1][3] * matrix[2][1]);
-        float a30 = (matrix[1][0] * matrix[2][1] * matrix[3][2] + matrix[1][1] * matrix[2][2] * matrix[3][0] + matrix[1][2] * matrix[2][0] * matrix[3][1]
+        float a30 = -(matrix[1][0] * matrix[2][1] * matrix[3][2] + matrix[1][1] * matrix[2][2] * matrix[3][0] + matrix[1][2] * matrix[2][0] * matrix[3][1]
                 - matrix[1][2] * matrix[2][1] * matrix[3][0] - matrix[1][1] * matrix[2][0] * matrix[3][2] - matrix[1][0] * matrix[2][2] * matrix[3][1]);
-        float a31 = -(matrix[0][0] * matrix[2][1] * matrix[3][2] + matrix[0][1] * matrix[2][2] * matrix[3][0] + matrix[0][2] * matrix[2][0] * matrix[3][1]
+        float a31 = (matrix[0][0] * matrix[2][1] * matrix[3][2] + matrix[0][1] * matrix[2][2] * matrix[3][0] + matrix[0][2] * matrix[2][0] * matrix[3][1]
                 - matrix[0][2] * matrix[2][1] * matrix[3][0] - matrix[0][1] * matrix[2][0] * matrix[3][2] - matrix[0][0] * matrix[2][2] * matrix[3][1]);
-        float a32 = (matrix[0][0] * matrix[1][1] * matrix[3][2] + matrix[0][1] * matrix[1][2] * matrix[3][0] + matrix[0][2] * matrix[1][0] * matrix[3][1]
+        float a32 = -(matrix[0][0] * matrix[1][1] * matrix[3][2] + matrix[0][1] * matrix[1][2] * matrix[3][0] + matrix[0][2] * matrix[1][0] * matrix[3][1]
                 - matrix[0][2] * matrix[1][1] * matrix[3][0] - matrix[0][1] * matrix[1][0] * matrix[3][2] - matrix[0][0] * matrix[1][2] * matrix[3][1]);
-        float a33 = -(matrix[0][0] * matrix[1][1] * matrix[2][2] + matrix[0][1] * matrix[1][2] * matrix[2][0] + matrix[0][2] * matrix[1][0] * matrix[2][1]
+        float a33 = (matrix[0][0] * matrix[1][1] * matrix[2][2] + matrix[0][1] * matrix[1][2] * matrix[2][0] + matrix[0][2] * matrix[1][0] * matrix[2][1]
                 - matrix[0][2] * matrix[1][1] * matrix[2][0] - matrix[0][1] * matrix[1][0] * matrix[2][2] - matrix[0][0] * matrix[1][2] * matrix[2][1]);
 
         float[][] newMatrix = {{a00, a01, a02, a03}

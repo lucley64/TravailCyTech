@@ -51,8 +51,8 @@ public class Main {
                 {0, 0, 1f / 2f, 1f / 2f},
                 {0, 0, 0, 1}
         };
-
-        Scene scene = new Scene(new Mat4(orthographicProjectionMatrix), new Mat4(perspectiveProjectionMatrix), new Mat4(viewPortMatrix), new Camera(new Vec3(0, 0, -1000), new Vec3(0, 0, 0)), true);
+        Light light = new Light(1000, 1000, 1000);
+        Scene scene = new Scene(new Mat4(orthographicProjectionMatrix), new Mat4(perspectiveProjectionMatrix), new Mat4(viewPortMatrix), new Camera(new Vec3(0, 0, 200), new Vec3(0, 0, 0)), true, true, light, false);
         scene.render(canvas);
 
         new KeyboardMovement(canvas, scene);

@@ -48,13 +48,15 @@ public class KeyboardMovement extends KeyAdapter {
             case KeyEvent.VK_W -> zoomIn();
             case KeyEvent.VK_X -> zoomOut();
             case KeyEvent.VK_NUMPAD1 -> resetRotationEuler();
-            case KeyEvent.VK_NUMPAD2 -> zoomOut();
+            case KeyEvent.VK_NUMPAD2 -> resetRotationAngleAxis();
             case KeyEvent.VK_NUMPAD3 -> zoomOut();
             case KeyEvent.VK_UP -> rotateXPos();
             case KeyEvent.VK_DOWN -> rotateXNeg();
             case KeyEvent.VK_RIGHT -> rotateYNeg();
             case KeyEvent.VK_LEFT -> rotateYPos();
             case KeyEvent.VK_SUBTRACT -> toggleProjection();
+            case KeyEvent.VK_ADD -> toggleWireFrame();
+            case KeyEvent.VK_MULTIPLY -> toggleBackfaceCulling();
             case KeyEvent.VK_I -> moveUp();
             case KeyEvent.VK_J -> moveLeft();
             case KeyEvent.VK_K -> moveDown();
@@ -67,6 +69,10 @@ public class KeyboardMovement extends KeyAdapter {
         scene.printRotation();
         scene.rerender(canvas);
         super.keyPressed(e);
+    }
+
+    private void toggleBackfaceCulling() {
+        scene.setUseBackfaceCulling(!scene.isUseBackfaceCulling());
     }
 
     private void rotateXNeg() {
@@ -129,12 +135,20 @@ public class KeyboardMovement extends KeyAdapter {
         scene.resetRotationEulerAngles(canvas);
     }
 
+    private void resetRotationAngleAxis(){
+        scene.resetRotationExponentialMap(canvas);
+    }
+
     private void toggleProjection() {
         scene.setUsesPerspective(!scene.isUsesPerspective());
     }
 
+    private void toggleWireFrame(){
+        scene.setWireFrame(!scene.isWireFrame());
+    }
+
     private void moveUp() {
-        scene.getCamera().translate(0, 0, speed);
+        scene.getCamera().translate(0, 0, -speed);
     }
 
     private void moveLeft() {
@@ -146,22 +160,22 @@ public class KeyboardMovement extends KeyAdapter {
     }
 
     private void moveDown() {
-        scene.getCamera().translate(0, 0, -speed);
+        scene.getCamera().translate(0, 0, speed);
     }
 
     private void lookLeft() {
-        scene.getCamera().rotateY((float) (Math.PI / -speed));
+        scene.getCamera().rotateY((float) (-Math.PI/180));
     }
 
     private void lookRight() {
-        scene.getCamera().rotateY((float) (Math.PI / speed));
+        scene.getCamera().rotateY((float) (Math.PI/180));
     }
 
     private void lookUp() {
-        scene.getCamera().rotateX((float) (Math.PI / -speed));
+        scene.getCamera().rotateX((float) (-Math.PI/180));
     }
 
     private void lookDown() {
-        scene.getCamera().rotateX((float) (Math.PI / -speed));
+        scene.getCamera().rotateX((float) (Math.PI/180));
     }
 }

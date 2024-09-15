@@ -12,14 +12,20 @@ public class Scene {
     private final Mat4 perspectiveProjectionMatrix;
     private final Mat4 viewMatrix;
     private TriangleMesh triangleMesh = null;
+    private final Light light;
     private boolean usesPerspective;
+    private boolean isWireFrame;
+    private boolean useBackfaceCulling;
 
-    public Scene(Mat4 projectionMatrix, Mat4 perspectiveProjectionMatrix, Mat4 viewMatrix, Camera camera, boolean usesPerspective) {
+    public Scene(Mat4 projectionMatrix, Mat4 perspectiveProjectionMatrix, Mat4 viewMatrix, Camera camera, boolean usesPerspective, boolean isWireFrame, Light light, boolean useBackfaceCulling) {
         this.projectionMatrix = projectionMatrix;
         this.perspectiveProjectionMatrix = perspectiveProjectionMatrix;
         this.viewMatrix = viewMatrix;
         this.camera = camera;
         this.usesPerspective = usesPerspective;
+        this.isWireFrame = isWireFrame;
+        this.light = light;
+        this.useBackfaceCulling = useBackfaceCulling;
     }
 
     public Camera getCamera() {
@@ -34,6 +40,22 @@ public class Scene {
         this.usesPerspective = usesPerspective;
     }
 
+    public boolean isWireFrame() {
+        return isWireFrame;
+    }
+
+    public void setWireFrame(boolean wireFrame) {
+        isWireFrame = wireFrame;
+    }
+
+    public boolean isUseBackfaceCulling() {
+        return useBackfaceCulling;
+    }
+
+    public void setUseBackfaceCulling(boolean useBackfaceCulling) {
+        this.useBackfaceCulling = useBackfaceCulling;
+    }
+
     public Mat4 getProjectionMatrix() {
         return projectionMatrix;
     }
@@ -44,19 +66,29 @@ public class Scene {
 
     public void render(Canvas canvas) {
         var vertices = List.of(
-                new Vec3(-0.5f, 0.0f, 0.5f),
-                new Vec3(-0.5f, 0.0f, -0.5f),
-                new Vec3(0.5f, 0.0f, -0.5f),
-                new Vec3(0.5f, 0.0f, 0.5f),
-                new Vec3(0.0f, 0.8f, 0.0f));
+                new Vec3(-0.5f, 0.5f, 0.5f),
+                new Vec3(-0.5f, 0.5f, -0.5f),
+                new Vec3(0.5f, 0.5f, -0.5f),
+                new Vec3(0.5f, 0.5f, 0.5f),
+                new Vec3(-0.5f, -0.5f, 0.5f),
+                new Vec3(-0.5f, -0.5f, -0.5f),
+                new Vec3(0.5f, -0.5f, -0.5f),
+                new Vec3(0.5f, -0.5f, 0.5f)
+        );
 
         var indices = List.of(
-                List.of(0, 1, 2),
-                List.of(0, 2, 3),
-                List.of(0, 1, 4),
-                List.of(1, 2, 4),
-                List.of(2, 3, 4),
-                List.of(3, 0, 4)
+                List.of(3, 1, 0),
+                List.of(2, 1, 3),
+                List.of(2, 5, 1),
+                List.of(6, 5, 2),
+                List.of(6, 4, 5),
+                List.of(7, 4, 6),
+                List.of(7, 0, 4),
+                List.of(3, 0, 7),
+                List.of(7, 2, 3),
+                List.of(6, 2, 7),
+                List.of(0, 5, 4),
+                List.of(1, 5, 0)
         );
         float[][] modelMatrix = new float[][]{
                 {100, 0, 0, 0},
@@ -64,7 +96,7 @@ public class Scene {
                 {0, 0, 100, 0},
                 {0, 0, 0, 1}
         };
-        triangleMesh = new TriangleMesh(vertices, indices, new Mat4(modelMatrix));
+        triangleMesh = new TriangleMesh(vertices, indices, new ModelMatrix(modelMatrix));
 
         rerender(canvas);
     }
@@ -74,10 +106,10 @@ public class Scene {
 
         List<ScreenTriangle> triangles;
         if (usesPerspective) {
-            triangles = triangleMesh.renderToScreen(perspectiveProjectionMatrix, viewMatrix, camera.getViewMatrix());
+            triangles = triangleMesh.renderToScreen(perspectiveProjectionMatrix, viewMatrix, camera.getViewMatrix(), isWireFrame, light, useBackfaceCulling);
         }
         else {
-            triangles = triangleMesh.renderToScreen(projectionMatrix, viewMatrix, camera.getViewMatrix());
+            triangles = triangleMesh.renderToScreen(projectionMatrix, viewMatrix, camera.getViewMatrix(), isWireFrame, light, useBackfaceCulling);
         }
 
         triangles.forEach(canvas::addDrawable);
@@ -110,7 +142,7 @@ public class Scene {
     public void resetRotationEulerAngles(Canvas canvas) {
         new Thread(() -> {
             var rot = triangleMesh.getRotationMatrix();
-            var orig = TriangleMesh.eulerAnglesFromRotationMatrix(rot);
+            var orig = ModelMatrix.eulerAnglesFromRotationMatrix(rot);
             var dest = new Vec3(0, 0, 0);
             for (float i = 0.0f; i <= 1.0f; i += 0.01f) {
                 var current = triangleMesh.eulerAnglesLERP(orig, dest, i);
@@ -125,11 +157,11 @@ public class Scene {
         }).start();
     }
 
-    public void resetRotationExponentialMap() {
+    public void resetRotationExponentialMap(Canvas canvas) {
 
         new Thread(() -> {
             var rot = triangleMesh.getRotationMatrix();
-            var orig = TriangleMesh.axisAngleFromRotationMatrix(rot);
+            var orig = ModelMatrix.axisAngleFromRotationMatrix(rot);
             var dest = new Vec4(1, 0, 0, 0);
             for (float i = 0.0f; i <= 1.0f; i += 0.01f) {
                 var current = triangleMesh.anglesAxisLERP(orig, dest, i);
