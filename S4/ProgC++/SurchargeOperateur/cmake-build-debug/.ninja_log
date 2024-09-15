@@ -1,7 +1,18 @@
 # ninja log v5
 768	923	1707923820133284558	SurchargeOperateur	1a9971144a15f21b
-2	543	1707911239281134097	CMakeFiles/SurchargeOperateur.dir/fraction.cpp.o	8b43851600e51f1b
-1	32	1708081355907736824	build.ninja	151fd5d36ca378bc
-2	601	1707922781732430367	CMakeFiles/SurchargeOperateur.dir/light.cpp.o	ca147c2064144fed
-1	768	1707923819981285603	CMakeFiles/SurchargeOperateur.dir/garland.cpp.o	2ef858436a8a4e48
-1	579	1707922917255497411	CMakeFiles/SurchargeOperateur.dir/main.cpp.o	61e64d2e33a99e91
+1	32	7299055810794291	build.ninja	151fd5d36ca378bc
+25	622	7299055906767524	CMakeFiles/SurchargeOperateur.dir/time.cpp.obj	e1d518d25d2f16d1
+18	625	7299055906777526	CMakeFiles/SurchargeOperateur.dir/light.cpp.obj	9f8f58ca3bd20d1e
+9	778	7299055908322855	CMakeFiles/SurchargeOperateur.dir/fraction.cpp.obj	a8a06886ea2fc9b7
+13	875	7299055909268019	CMakeFiles/SurchargeOperateur.dir/garland.cpp.obj	fe53eb8750382b6d
+12	427	7299058669456811	CMakeFiles/SurchargeOperateur.dir/time.cpp.obj	e1d518d25d2f16d1
+10	404	7299059252031284	CMakeFiles/SurchargeOperateur.dir/time.cpp.obj	e1d518d25d2f16d1
+6	405	7299059252041289	CMakeFiles/SurchargeOperateur.dir/main.cpp.obj	df9696092fa7765c
+405	538	7299059253333648	SurchargeOperateur.exe	4e910507093f8241
+13	421	7299061816854499	CMakeFiles/SurchargeOperateur.dir/time.cpp.obj	e1d518d25d2f16d1
+7	423	7299061816874492	CMakeFiles/SurchargeOperateur.dir/main.cpp.obj	df9696092fa7765c
+424	519	7299061817795010	SurchargeOperateur.exe	4e910507093f8241
+6	410	7299062250956091	CMakeFiles/SurchargeOperateur.dir/main.cpp.obj	df9696092fa7765c
+410	502	7299062251835171	SurchargeOperateur.exe	4e910507093f8241
+6	391	7299062427837049	CMakeFiles/SurchargeOperateur.dir/main.cpp.obj	df9696092fa7765c
+392	477	7299062428684731	SurchargeOperateur.exe	4e910507093f8241
