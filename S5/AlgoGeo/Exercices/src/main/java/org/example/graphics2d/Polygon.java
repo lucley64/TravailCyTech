@@ -21,4 +21,6 @@ public class Polygon extends Shape {
     public void remove(Vertex p) {
         super.remove(p);
     }
+
+    public void removeLast() {vertices.removeLast();}
 }

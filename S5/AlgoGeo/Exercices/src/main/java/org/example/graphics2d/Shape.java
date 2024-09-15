@@ -52,6 +52,17 @@ public abstract class Shape implements Drawable {
         Color c = g.getColor();
         g.setColor(Color.white);
         draw(g);
+        g.setColor(Color.black);
+        vertices.forEach(v -> v.draw(g));
+        g.setColor(c);
+    }
+
+    public void clearEdges(Graphics g) {
+        Color c = g.getColor();
+        g.setColor(Color.white);
+        drawEdges(g);
+        g.setColor(Color.black);
+        vertices.forEach(v -> v.draw(g));
         g.setColor(c);
     }
 

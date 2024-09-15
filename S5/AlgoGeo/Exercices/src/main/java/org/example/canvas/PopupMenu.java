@@ -16,13 +16,16 @@ public class PopupMenu extends JPopupMenu {
         isPolygonConvex.addActionListener(e -> JOptionPane.showMessageDialog(canvas, "The polygon is " + (polygon.isConvex() ? "convex" : "concave")));
         add(isPolygonConvex);
         JMenuItem item = new JMenuItem("Algorithm Extreme Edges");
-        item.addActionListener(e -> ConvexHullAlgorithms.extremeEdges(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
+        item.addActionListener(_ -> ConvexHullAlgorithms.extremeEdges(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
         add(item);
         JMenuItem item2 = new JMenuItem("Jarvis's March");
-        item2.addActionListener(e -> ConvexHullAlgorithms.jarvisMarch(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
+        item2.addActionListener(_ -> ConvexHullAlgorithms.jarvisMarch(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
         add(item2);
-        JMenuItem item3 = new JMenuItem("Naive triangulation");
-        item3.addActionListener(e -> new Triangulation().naiveTriangulation(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
+        JMenuItem item3 = new JMenuItem("Graham's Scan");
+        item3.addActionListener(_ -> ConvexHullAlgorithms.grahamsScan(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
         add(item3);
+        JMenuItem item4 = new JMenuItem("Naive triangulation");
+        item4.addActionListener(_ -> new Triangulation().naiveTriangulation(canvas.getGraphics(), canvas.getDrawables().stream().filter(Vertex.class::isInstance).map(Vertex.class::cast).toList()));
+        add(item4);
     }
 }
