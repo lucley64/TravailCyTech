@@ -26,9 +26,11 @@ public abstract class Shape implements Drawable {
     }
 
     protected void add(Vertex p) {
+        vertices.add(p);
     }
 
     protected void remove(Vertex p) {
+        vertices.remove(p);
     }
 
     public void draw(Graphics g) {

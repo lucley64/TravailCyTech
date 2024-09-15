@@ -38,7 +38,7 @@ public class ConvexHullAlgorithms {
                             g.setColor(Color.red);
                             vertex.draw(g);
                             g.setColor(c);
-                            Thread.sleep(100);
+                            Thread.sleep(10);
                             int crossProduct = line.crossProduct(otherVertex);
                             allPos &= crossProduct >= 0;
                             allNeg &= crossProduct <= 0;
@@ -74,14 +74,14 @@ public class ConvexHullAlgorithms {
             do {
                 g.setColor(Color.red);
                 current.draw(g);
-                Vertex min = current;
+                Vertex min = first;
                 for (var vertex : verticesCopy) {
                     g.setColor(Color.red);
                     vertex.draw(g);
                     Line line = new Line(current, vertex);
                     line.draw(g);
 
-                    if (verticesCopy.stream().allMatch(vertex1 -> line.crossProduct(vertex1) < 0) && vertex != first) {
+                    if (verticesCopy.stream().allMatch(vertex1 -> line.crossProduct(vertex1) <= 0) && vertex != first) {
                         min = vertex;
                     }
                     Thread.sleep(100);
