@@ -137,4 +137,7 @@ public abstract class Shape implements Drawable {
         return Objects.hashCode(vertices);
     }
 
+    public boolean contain(Vertex vertex) {
+        return vertices.contains(vertex);
+    }
 }

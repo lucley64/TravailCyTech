@@ -67,11 +67,21 @@ public class Line implements Drawable {
 
     public Line perpendicular(){
         Vertex midpoint = midpoint();
+        return perpendicular(midpoint);
+    }
+
+    public Line perpendicular(Vertex vertex) {
         double slope = (double) (end.getY() - start.getY()) / (end.getX() - start.getX());
         double perpSlope = -1 / slope;
         int delta = (int) length() * 2;
-        return new Line(new Vertex(midpoint.getX() + delta, (int) (midpoint.getY() + perpSlope * delta)), new Vertex(midpoint().getX() - delta, (int) (midpoint().getY() - perpSlope * delta)));
+        return new Line(new Vertex(vertex.getX() + delta, (int) (vertex.getY() + perpSlope * delta)), new Vertex(midpoint().getX() - delta, (int) (midpoint().getY() - perpSlope * delta)));
+    }
 
+    public Line perpendicularA(Vertex vertex) {
+        double slope = (double) (end.getY() - start.getY()) / (end.getX() - start.getX());
+        double perpSlope = -1 / slope;
+        int delta = (int) length() * 200;
+        return new Line(new Vertex(vertex.getX(), vertex.getY()), new Vertex(midpoint().getX() - delta, (int) (midpoint().getY() - perpSlope * delta)));
     }
 
     public Vertex intersection(@NotNull Line line) {

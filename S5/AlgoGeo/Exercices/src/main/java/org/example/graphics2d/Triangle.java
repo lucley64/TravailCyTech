@@ -105,45 +105,66 @@ public class Triangle extends Shape {
     }
 
     public void updateNeighbor(@NotNull Triangle neighbor){
-        if (neighbor.hasLine(new Line(getA(), getB()))) {
-            setNeighborAB(neighbor);
-            neighbor.setNeighborAB(this);
+        if (neighbor != this) {
+            if (neighbor.hasLine(new Line(getA(), getB()))) {
+                setNeighborAB(neighbor);
+            }
+            else if (neighbor.hasLine(new Line(getB(), getC()))) {
+                setNeighborBC(neighbor);
+            }
+            else if (neighbor.hasLine(new Line(getC(), getA()))) {
+                setNeighborCA(neighbor);
+            }
         }
-        else if (neighbor.hasLine(new Line(getB(), getC()))) {
-            setNeighborBC(neighbor);
-            neighbor.setNeighborBC(this);
+    }
+
+    public void removeNeighbour(Triangle neighbor){
+        if (neighborAB != null && neighborAB.equals(neighbor)) {
+            setNeighborAB(null);
         }
-        else if (neighbor.hasLine(new Line(getC(), getA()))) {
-            setNeighborCA(neighbor);
-            neighbor.setNeighborCA(this);
+        else if (neighborBC != null && neighborBC.equals(neighbor)) {
+            setNeighborBC(null);
+        }
+        else if (neighborCA != null && neighborCA.equals(neighbor)) {
+            setNeighborCA(null);
         }
     }
 
     public Vertex otherVertex(Line edge){
-        if(edge.getStart() == getA()){
-            if(edge.getEnd() == getB()){
+        if(edge.getStart().equals(getA())){
+            if(edge.getEnd().equals(getB())){
                 return getC();
             }
-            else if(edge.getEnd() == getC()){
+            else if(edge.getEnd().equals(getC())){
                 return getB();
             }
         }
-        else if(edge.getStart() == getB()){
-            if(edge.getEnd() == getA()){
+        else if(edge.getStart().equals(getB())){
+            if(edge.getEnd().equals(getA())){
                 return getC();
             }
-            else if(edge.getEnd() == getC()){
+            else if(edge.getEnd().equals(getC())){
                 return getA();
             }
         }
-        else if(edge.getStart() == getC()){
-            if(edge.getEnd() == getA()){
+        else if(edge.getStart().equals(getC())){
+            if(edge.getEnd().equals(getA())){
                 return getB();
             }
-            else if(edge.getEnd() == getB()){
+            else if(edge.getEnd().equals(getB())){
                 return getA();
             }
         }
         return null;
+    }
+
+
+    public Vertex cirumcenter() {
+        Line lineAB = new Line(getA(), getB());
+        Line lineBC = new Line(getB(), getC());
+
+        Line perpendicular1 = lineAB.perpendicular();
+        Line perpendicular2 = lineBC.perpendicular();
+        return perpendicular1.intersection(perpendicular2);
     }
 }
