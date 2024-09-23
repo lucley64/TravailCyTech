@@ -248,17 +248,17 @@ public class Triangulation {
             if (triangle.getNeighborAB().isPresent()) {
                 new Line(cirumcenter, triangle.getNeighborAB().get().cirumcenter()).draw(g);
             } else {
-                new Line(triangle.getA(), triangle.getB()).perpendicularA(cirumcenter).draw(g);
+//                new Line(triangle.getA(), triangle.getB()).perpendicularA(cirumcenter).draw(g);
             }
             if (triangle.getNeighborBC().isPresent()) {
                 new Line(cirumcenter, triangle.getNeighborBC().get().cirumcenter()).draw(g);
             } else {
-                new Line(triangle.getB(), triangle.getC()).perpendicularA(cirumcenter).draw(g);
+//                new Line(triangle.getB(), triangle.getC()).perpendicularA(cirumcenter).draw(g);
             }
             if (triangle.getNeighborCA().isPresent()) {
                 new Line(cirumcenter, triangle.getNeighborCA().get().cirumcenter()).draw(g);
             } else {
-                new Line(triangle.getC(), triangle.getA()).perpendicularA(cirumcenter).draw(g);
+//                new Line(triangle.getC(), triangle.getA()).perpendicularA(cirumcenter).draw(g);
             }
         }
     }
