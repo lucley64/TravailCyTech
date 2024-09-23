@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <sstream>
+#include "day1exo1.h"
 
 constexpr const char *TITLE = "Hello OpenGL!";
 constexpr int SCREEN_X = 1024;
@@ -23,7 +24,7 @@ void displayFunc();
 
 void cleanup();
 
-int main(int argc, char **argv) {
+int main11(int argc, char **argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutInitWindowSize(SCREEN_X, SCREEN_Y);
