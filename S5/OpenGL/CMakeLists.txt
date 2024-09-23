@@ -24,8 +24,6 @@ if(NOT GLEW_FOUND)
 endif (NOT GLEW_FOUND)
 
 add_executable(opengl main.cpp
-        day1exo1.cpp
-        day1exo1.h
 )
 
 target_link_libraries(opengl ${GLUT_LIBRARIES} ${OPENGL_LIBRARIES} ${GLEW_LIBRARIES})
