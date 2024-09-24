@@ -23,7 +23,7 @@ public:
 
     camera(int width, int height, glm::vec3 Position);
 
-    void Matrix(float FOVdeg, float nearPlane, float farPlane, shader_class& shader, const char* uniform);
+    void Matrix(float FOVdeg, float nearPlane, float farPlane, gl2::shader_class& shader, const char* uniform);
 
 //    void Inputs(GLFWwindow* window);
 };

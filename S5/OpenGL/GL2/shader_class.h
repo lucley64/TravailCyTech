@@ -12,19 +12,21 @@
 
 std::string get_file_contents(const char *filename);
 
-class shader_class {
-public:
-    GLuint ID;
+namespace gl2 {
+    class shader_class {
+    public:
+        GLuint ID;
 
-    shader_class(const char *vertexFile, const char *fragmentFile);
+        shader_class(const char *vertexFile, const char *fragmentFile);
 
-    void Activate();
+        void activate();
 
-    void Delete();
+        ~shader_class();
 
-private:
-    void compileErrors(unsigned int shader, const char *type);
-};
+    public:
+        static void compileErrors(unsigned int shader, const char *type);
+    };
+}
 
 
 #endif //GL2_SHADER_CLASS_H

@@ -9,20 +9,24 @@
 #include <GL/gl.h>
 #include "vbo.h"
 
-class vao {
-public:
-    GLuint ID;
+namespace gl2 {
+    class vao {
+    public:
+        GLuint ID;
 
-    vao();
+        vao();
 
-    void LinkAttrib(vbo &VBO, GLuint layout, GLuint numComponent, GLenum type, GLsizeiptr stride, void *offset);
+        void linkAttrib(vbo &VBO, GLuint layout, GLuint numComponent, GLenum type, GLsizeiptr stride, void *offset);
 
-    void Bind();
+        void bind();
 
-    void Unbind();
+        void unbind();
 
-    void Delete();
-};
+        ~vao();
+
+        void linkAttrib(vbo *VBO, GLuint layout, GLuint numComponent, GLenum type, GLsizeiptr stride, void *offset);
+    };
+}
 
 
 #endif //GL2_VAO_H

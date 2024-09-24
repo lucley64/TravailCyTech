@@ -5,14 +5,14 @@
 #include <GL/glew.h>
 #include "vbo.h"
 
-void vbo::Bind() {
+void gl2::vbo::bind() {
     glBindBuffer(GL_ARRAY_BUFFER, ID);
 }
 
-void vbo::Unbind() {
+void gl2::vbo::unbind() {
     glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
-void vbo::Delete() {
+gl2::vbo::~vbo() {
     glDeleteBuffers(1, &ID);
 }

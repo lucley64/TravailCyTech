@@ -4,26 +4,26 @@
 
 #include <GL/glew.h>
 #include "vao.h"
+#include "vbo.h"
 
-vao::vao() {
+gl2::vao::vao() {
     glGenVertexArrays(1, &ID);
 }
 
-void vao::LinkAttrib(vbo &VBO, GLuint layout, GLuint numComponent, GLenum type, GLsizeiptr stride, void *offset) {
-    VBO.Bind();
-    glVertexAttribPointer(layout, numComponent, type, GL_FALSE, stride, offset);
+void gl2::vao::linkAttrib(vbo &VBO, GLuint layout, GLuint numComponent, GLenum type, GLsizeiptr stride, void *offset) {
+    VBO.bind();
     glEnableVertexAttribArray(layout);
-    VBO.Unbind();
+    glVertexAttribPointer(layout, numComponent, type, GL_FALSE, stride, offset);
 }
 
-void vao::Bind() {
+void gl2::vao::bind() {
     glBindVertexArray(ID);
 }
 
-void vao::Unbind() {
+void gl2::vao::unbind() {
     glBindVertexArray(0);
 }
 
-void vao::Delete() {
+gl2::vao::~vao() {
     glDeleteVertexArrays(1, &ID);
 }

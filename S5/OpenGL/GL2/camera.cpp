@@ -4,13 +4,14 @@
 
 #include <GL/glew.h>
 #include "camera.h"
+#include "shader_class.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
 camera::camera(int width, int height, glm::vec3 Position): width(width), height(height), Position(Position) {}
 
-void camera::Matrix(float FOVdeg, float nearPlane, float farPlane, shader_class &shader, const char *uniform) {
+void camera::Matrix(float FOVdeg, float nearPlane, float farPlane, gl2::shader_class &shader, const char *uniform) {
     glm::mat4 view = glm::mat4(1.0f);
     glm::mat4 projection = glm::mat4(1.0f);
 

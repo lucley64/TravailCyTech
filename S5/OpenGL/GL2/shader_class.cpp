@@ -21,7 +21,7 @@ std::string get_file_contents(const char *filename) {
 }
 
 
-shader_class::shader_class(const char *vertexFile, const char *fragmentFile) {
+gl2::shader_class::shader_class(const char *vertexFile, const char *fragmentFile) {
     std::string vertexCode = get_file_contents(vertexFile);
     std::string fragmentCode = get_file_contents(fragmentFile);
 
@@ -55,15 +55,15 @@ shader_class::shader_class(const char *vertexFile, const char *fragmentFile) {
     glDeleteShader(fragmentShader);
 }
 
-void shader_class::Activate() {
+void gl2::shader_class::activate() {
     glUseProgram(ID);
 }
 
-void shader_class::Delete() {
+gl2::shader_class::~shader_class() {
     glDeleteProgram(ID);
 }
 
-void shader_class::compileErrors(unsigned int shader, const char *type) {
+void gl2::shader_class::compileErrors(unsigned int shader, const char *type) {
     GLint hasCompiled;
     char infoLog[1024];
     if (type != "PROGRAM") {
