@@ -37,6 +37,7 @@ add_executable(GL2 main.cpp
         camera.cpp
         camera.h
         app.cpp
-        app.h)
+        app.h
+)
 
 target_link_libraries(GL2 ${GLUT_LIBRARIES} ${OPENGL_LIBRARIES} ${GLEW_LIBRARIES})

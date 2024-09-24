@@ -2,7 +2,6 @@
 // Created by cytech on 24/09/24.
 //
 
-#include <GL/glew.h>
 #include "vbo.h"
 
 void gl2::vbo::bind() {

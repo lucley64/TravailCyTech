@@ -14,6 +14,7 @@ void gl2::vao::linkAttrib(vbo &VBO, GLuint layout, GLuint numComponent, GLenum t
     VBO.bind();
     glEnableVertexAttribArray(layout);
     glVertexAttribPointer(layout, numComponent, type, GL_FALSE, stride, offset);
+    VBO.unbind();
 }
 
 void gl2::vao::bind() {

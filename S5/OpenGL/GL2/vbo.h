@@ -5,7 +5,7 @@
 #ifndef GL2_VBO_H
 #define GL2_VBO_H
 
-
+#include <GL/glew.h>
 #include <GL/gl.h>
 #include <array>
 #include <vector>
@@ -16,11 +16,10 @@ namespace gl2 {
     public:
         GLuint ID;
 
-        template<unsigned int size>
-        vbo(const GLfloat (&vertices)[size]) {
+        vbo(const std::vector<glm::vec4> positionsColors) {
             glGenBuffers(1, &ID);
             glBindBuffer(GL_ARRAY_BUFFER, ID);
-            glBufferData(GL_ARRAY_BUFFER, size, vertices, GL_STATIC_DRAW);
+            glBufferData(GL_ARRAY_BUFFER, positionsColors.size() * sizeof (glm::vec4 ), positionsColors.data(), GL_STATIC_DRAW);
         }
 
         vbo(const std::vector<glm::vec4> positions, const std::vector<glm::vec4> colors) {
