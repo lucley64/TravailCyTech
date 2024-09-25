@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="open_link">Open Link</string>
+    <string name="pick_color">Pick Color</string>
+    <string name="pick_contact">Pick Contact</string>
+    <string name="pick_up_color">Pick up color</string>
+    <string name="go_back">Go Back</string>
+</resources>
