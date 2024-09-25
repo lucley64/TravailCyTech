@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="converter_title">Coins Converter!</string>
+    <string name="currency_hint">Insert the input currency</string>
+    <string name="euro">Euro</string>
+    <string name="us_dollar">US Dollar</string>
+    <string name="japanese_yen">Japanese Yen</string>
+    <string name="south_korean_won">South Korean Won</string>
+    <string name="pound_sterling">Pound sterling</string>
+    <string name="mexican_peso">Mexican Peso</string>
+    <string name="russian_ruble">Russian Ruble</string>
+    <string name="convert_button_text">Convert!</string>
+</resources>
