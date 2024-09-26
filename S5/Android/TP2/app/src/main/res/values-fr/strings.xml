@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="open_link">Ouvrir le lien</string>
+    <string name="pick_color">Choisir une couleur</string>
+    <string name="pick_contact">Choisir un contact</string>
+    <string name="go_back">Retour</string>
+</resources>

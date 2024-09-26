@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inspecteur de Maths</string>
+    <string name="settings">Paramètres</string>
+    <string name="about">À propos</string>
+    <string name="help">Aide</string>
+    <string name="exit">Sortir</string>
+    <string name="open">Open</string>
+    <string name="user_guide">Guide d\'utilisation</string>
+    <string name="number_input">Nombre</string>
+    <string name="modulo_of_">Modulo de %d</string>
+    <string name="invalid_result">Entrer un nombre ou un modulo valide</string>
+    <string name="modulo_result">Le modulo de %s par %d est %d</string>
+</resources>
