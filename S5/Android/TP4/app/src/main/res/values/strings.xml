@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">List\'s jobs</string>
+    <string name="read">Read</string>
+    <string name="add_a_job">Add a job</string>
+    <string name="change_name">Change Name</string>
+    <string name="export">Export</string>
+    <string name="import_saved">Import</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/change_name"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/change_name"
+        android:tooltipText="@string/change_name"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/export"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/export"
+        android:tooltipText="@string/export"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/import_saved"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/import_saved"
+        android:tooltipText="@string/import_saved"
+        app:showAsAction="never" />
+</menu>
