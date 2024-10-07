@@ -49,7 +49,7 @@ public class KeyboardMovement extends KeyAdapter {
             case KeyEvent.VK_X -> zoomOut();
             case KeyEvent.VK_NUMPAD1 -> resetRotationEuler();
             case KeyEvent.VK_NUMPAD2 -> resetRotationAngleAxis();
-            case KeyEvent.VK_NUMPAD3 -> zoomOut();
+            case KeyEvent.VK_NUMPAD3 -> resetRotationQuaternions();
             case KeyEvent.VK_UP -> rotateXPos();
             case KeyEvent.VK_DOWN -> rotateXNeg();
             case KeyEvent.VK_RIGHT -> rotateYNeg();
@@ -69,6 +69,10 @@ public class KeyboardMovement extends KeyAdapter {
         scene.printRotation();
         scene.rerender(canvas);
         super.keyPressed(e);
+    }
+
+    private void resetRotationQuaternions() {
+        scene.resetRotationQuaternion(canvas);
     }
 
     private void toggleBackfaceCulling() {

@@ -49,7 +49,16 @@ public class TriangleMesh extends Model {
                 var v1 = viewPortMatrix.mul(projectionMatrix.mul(v1Cam).cartesian().homogenous());
                 var v2 = viewPortMatrix.mul(projectionMatrix.mul(v2Cam).cartesian().homogenous());
 
-                screenTriangles.add(new ScreenTriangle(v0.cartesian(), v1.cartesian(), v2.cartesian(), !isWireframe, color));
+                a = v1.cartesian().sub(v0.cartesian());
+                b = v2.cartesian().sub(v0.cartesian());
+                n = a.cross(b).mul(1/a.cross(b).length());
+                Vec3 v = new Vec3(0, 0, 1);
+                var nv = n.dot(v);
+
+                if (!useBackfaceCulling || nv > 0){
+                    screenTriangles.add(new ScreenTriangle(v0.cartesian(), v1.cartesian(), v2.cartesian(), !isWireframe, color));
+
+                }
             }
         }
         return screenTriangles;
@@ -61,5 +70,9 @@ public class TriangleMesh extends Model {
 
     public Vec4 anglesAxisLERP(Vec4 v0, Vec4 v1, float t) {
         return modelMatrix.anglesAxisLERP(v0, v1, t);
+    }
+
+    public Vec4 quaternionSLERP(Vec4 orig, Vec4 dest, float i) {
+        return modelMatrix.quaternionSLERP(orig, dest, i);
     }
 }

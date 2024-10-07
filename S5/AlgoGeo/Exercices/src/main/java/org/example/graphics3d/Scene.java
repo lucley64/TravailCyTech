@@ -176,7 +176,22 @@ public class Scene {
         }).start();
     }
 
-    public void resetRotationEulerQuaternion() {
+    public void resetRotationQuaternion(Canvas canvas) {
+        new Thread(() -> {
+           var rot = triangleMesh.getRotationMatrix();
+           var orig = ModelMatrix.quaternionFromRotationMatrix(rot);
+           var dest = new Vec4(-1, 0, 0, 0);
+           for (float i = 0.0f; i <= 1.0f; i += 0.01f) {
+               var current = triangleMesh.quaternionSLERP(orig, dest, i);
+               triangleMesh.setRotationQuaternion(current);
+               rerender(canvas);
+               try {
+                   Thread.sleep(10);
+               } catch (InterruptedException e) {
+                   throw new RuntimeException(e);
+               }
+           }
+        }).start();
     }
 
 }

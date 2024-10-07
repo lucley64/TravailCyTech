@@ -37,6 +37,10 @@ public abstract class Model {
         modelMatrix.setRotationAngleAxis(current);
     }
 
+    public void setRotationQuaternion(Vec4 current) {
+        modelMatrix.setRotationQuaternion(current);
+    }
+
     public void translate(Vec3 translation) {
         modelMatrix.translate(translation.getX(), translation.getY(), translation.getZ());
     }
@@ -52,5 +56,4 @@ public abstract class Model {
     public @NotNull Mat4 getRotationMatrix() {
         return modelMatrix.getRotationMatrix();
     }
-
 }
