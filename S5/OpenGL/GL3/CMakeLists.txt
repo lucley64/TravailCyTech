@@ -33,6 +33,9 @@ add_executable(GL3 main.cpp
         ebo.cpp
         shader_class.cpp
         vao.cpp
-        vbo.cpp)
+        vbo.cpp
+        texture.cpp
+        texture.h
+)
 
 target_link_libraries(GL3 ${GLUT_LIBRARIES} ${OPENGL_LIBRARIES} ${GLEW_LIBRARIES})

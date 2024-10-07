@@ -12,7 +12,7 @@
 
 std::string get_file_contents(const char *filename);
 
-namespace gl2 {
+namespace gl3 {
     class shader_class {
     public:
         GLuint ID;

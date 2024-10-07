@@ -21,7 +21,7 @@ std::string get_file_contents(const char *filename) {
 }
 
 
-gl2::shader_class::shader_class(const char *vertexFile, const char *fragmentFile) {
+gl3::shader_class::shader_class(const char *vertexFile, const char *fragmentFile) {
     std::string vertexCode = get_file_contents(vertexFile);
     std::string fragmentCode = get_file_contents(fragmentFile);
 
@@ -31,14 +31,14 @@ gl2::shader_class::shader_class(const char *vertexFile, const char *fragmentFile
     // Create Vertex Shader Object and get its reference
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
     // Attach Vertex Shader source to the Vertex Shader Object
-    glShaderSource(vertexShader, 1, &vertexSource, NULL);
+    glShaderSource(vertexShader, 1, &vertexSource, nullptr);
     // Compile the Vertex Shader into machine code
     glCompileShader(vertexShader);
     compileErrors(vertexShader, "VERTEX");
     // Create Fragment Shader Object and get its reference
     GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     // Attach Fragment Shader source to the Fragment Shader Object
-    glShaderSource(fragmentShader, 1, &fragmentSource, NULL);
+    glShaderSource(fragmentShader, 1, &fragmentSource, nullptr);
     // Compile the Vertex Shader into machine code
     glCompileShader(fragmentShader);
     compileErrors(fragmentShader, "FRAGMENT");
@@ -55,15 +55,15 @@ gl2::shader_class::shader_class(const char *vertexFile, const char *fragmentFile
     glDeleteShader(fragmentShader);
 }
 
-void gl2::shader_class::activate() {
+void gl3::shader_class::activate() {
     glUseProgram(ID);
 }
 
-gl2::shader_class::~shader_class() {
+gl3::shader_class::~shader_class() {
     glDeleteProgram(ID);
 }
 
-void gl2::shader_class::compileErrors(unsigned int shader, const char *type) {
+void gl3::shader_class::compileErrors(unsigned int shader, const char *type) {
     GLint hasCompiled;
     char infoLog[1024];
     if (type != "PROGRAM") {

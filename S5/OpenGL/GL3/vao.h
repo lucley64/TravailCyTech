@@ -9,7 +9,7 @@
 #include <GL/gl.h>
 #include "vbo.h"
 
-namespace gl2 {
+namespace gl3 {
     class vao {
     public:
         GLuint ID;
