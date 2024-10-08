@@ -8,8 +8,10 @@
 #include "QmForceGenerator.h"
 
 namespace Quantum {
-
+    constexpr int GRAVITY = 1;
     class QmGravity final : public QmForceGenerator {
+        public:
+        QmGravity();
         void update(QmParticle *particle) override;
     };
 

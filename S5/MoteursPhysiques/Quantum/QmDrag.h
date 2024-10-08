@@ -8,7 +8,7 @@
 #include "QmForceGenerator.h"
 
 namespace Quantum {
-
+    constexpr int DRAG = 2;
     class QmDrag final : public QmForceGenerator {
         float k1 = 0;
         float k2 = 0;

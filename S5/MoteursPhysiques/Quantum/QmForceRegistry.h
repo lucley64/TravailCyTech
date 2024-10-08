@@ -18,9 +18,9 @@ namespace Quantum {
     public:
         QmForceRegistry(QmParticle *particle, QmForceGenerator *forceGenerator);
 
-        QmParticle *getParticle();
+        [[nodiscard]] QmParticle *getParticle() const;
 
-        QmForceGenerator *getForceGenerator();
+        [[nodiscard]] QmForceGenerator *getForceGenerator() const;
     };
 
 } // Quantum

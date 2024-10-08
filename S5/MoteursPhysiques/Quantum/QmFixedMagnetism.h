@@ -9,7 +9,7 @@
 #include "QmForceGenerator.h"
 
 namespace Quantum {
-
+    constexpr int FIXED_MAGNETISM = 4;
     class QmFixedMagnetism final : public QmForceGenerator{
         const glm::vec3 *fixedPosition;
         const int *fixedCharge;

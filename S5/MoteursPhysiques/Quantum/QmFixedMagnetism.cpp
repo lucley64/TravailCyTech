@@ -13,5 +13,8 @@ namespace Quantum {
     }
 
     QmFixedMagnetism::QmFixedMagnetism(const glm::vec3 *fixedPosition, const int *fixedCharge, float k, float eps)
-            : fixedPosition(fixedPosition), fixedCharge(fixedCharge), k(k), eps(eps) {}
+            : fixedPosition(fixedPosition), fixedCharge(fixedCharge), k(k), eps(eps)
+    {
+        TYPE = FIXED_MAGNETISM;
+    }
 } // Quantum

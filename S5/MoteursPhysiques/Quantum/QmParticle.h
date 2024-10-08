@@ -12,6 +12,7 @@ namespace Quantum {
 	public:
 		QmParticle();
 		QmParticle(glm::vec3 position, glm::vec3 velocity, glm::vec3 acceleration, float mass, int charge);
+		QmParticle(glm::vec3 position, glm::vec3 velocity, glm::vec3 acceleration, float mass, int charge, float damping);
 		~QmParticle() override;
 		void integrate(float) final;
 
@@ -26,9 +27,13 @@ namespace Quantum {
         [[nodiscard]] int getCharge() const;
 
         [[nodiscard]] float getInvMass() const;
+        [[nodiscard]] float getMass() const;
 
         void setUpdater(QmUpdater* updater);
+		[[nodiscard]] QmUpdater* getUpdater() const;
 
+		void setDamping(float damping);
+		[[nodiscard]] float getDamping() const;
 
 	private:
 		QmUpdater* updater = nullptr;

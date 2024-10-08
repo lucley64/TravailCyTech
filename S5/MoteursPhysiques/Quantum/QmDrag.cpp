@@ -11,5 +11,8 @@ namespace Quantum {
         particle->addForce((l != 0 ? glm::normalize(particle->getVel()) : glm::vec3{0}) * coefficient);
     }
 
-    QmDrag::QmDrag(float k1, float k2) : k1(k1), k2(k2) {}
+    QmDrag::QmDrag(float k1, float k2) : k1(k1), k2(k2)
+    {
+        TYPE = DRAG;
+    }
 } // Quantum

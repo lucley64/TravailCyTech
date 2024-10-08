@@ -1,4 +1,5 @@
 #include <iostream>
+#include <utility>
 
 #include "GxWorld.h"
 #include "GxParticle.h"
@@ -25,7 +26,7 @@ std::list<GxParticle*> GxWorld::getParticles()
 
 void GxWorld::setParticles(std::list<GxParticle*> particles)
 {
-	this->particles = particles;
+	this->particles = std::move(particles);
 }
 
 void GxWorld::clear()

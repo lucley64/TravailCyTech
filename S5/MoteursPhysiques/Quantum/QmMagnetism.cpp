@@ -15,5 +15,8 @@ namespace Quantum {
         }
     }
 
-    QmMagnetism::QmMagnetism(std::vector<QmParticle*> &others, float k, float eps) : others(others), k(k), eps(eps) {}
+    QmMagnetism::QmMagnetism(std::vector<QmParticle*> &others, float k, float eps) : others(others), k(k), eps(eps)
+    {
+        TYPE = MAGNETISM;
+    }
 } // Quantum

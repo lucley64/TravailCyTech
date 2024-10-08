@@ -9,7 +9,7 @@
 #include "QmForceGenerator.h"
 
 namespace Quantum {
-
+    constexpr int MAGNETISM = 3;
     class QmMagnetism: public QmForceGenerator{
         std::vector<QmParticle*> &others;
         float k;

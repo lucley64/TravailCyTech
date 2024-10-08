@@ -9,11 +9,13 @@ namespace Quantum {
                                                                                                forceGenerator(
                                                                                                        forceGenerator) {}
 
-    QmParticle *QmForceRegistry::getParticle() {
+    QmParticle *QmForceRegistry::getParticle() const
+    {
         return particle;
     }
 
-    QmForceGenerator *QmForceRegistry::getForceGenerator() {
+    QmForceGenerator *QmForceRegistry::getForceGenerator() const
+    {
         return forceGenerator;
     }
 } // Quantum

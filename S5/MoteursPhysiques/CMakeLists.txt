@@ -44,6 +44,10 @@ add_executable(Application
         Quantum/QmMagnetism.h
         Quantum/QmFixedMagnetism.cpp
         Quantum/QmFixedMagnetism.h
+        Quantum/QmSpring.cpp
+        Quantum/QmSpring.h
+        Quantum/QmFixedSpring.cpp
+        Quantum/QmFixedSpring.h
 )
 
 target_link_libraries(Application ${GLUT_LIBRARIES} ${OPENGL_LIBRARIES} ${GLEW_LIBRARIES})

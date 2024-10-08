@@ -8,7 +8,13 @@ QmParticle::QmParticle() : QmBody(TYPE_PARTICLE), position(0, 0, 0), velocity(0,
 
 QmParticle::QmParticle(glm::vec3 pos, glm::vec3 vel, glm::vec3 acc, float mass, int charge)
         : QmBody(TYPE_PARTICLE), position(pos), velocity(vel), acceleration(acc),
-          charge(charge), invMass(1 - mass), damping(0.9999f) {
+          charge(charge), invMass(1 - mass), damping(0.995f) {
+}
+
+QmParticle::QmParticle(glm::vec3 position, glm::vec3 velocity, glm::vec3 acceleration, float mass, int charge,
+    float damping): QmParticle(position, velocity, acceleration, mass, charge)
+{
+    this->damping = damping;
 }
 
 QmParticle::~QmParticle() {
@@ -19,6 +25,7 @@ void QmParticle::integrate(float t) {
     acceleration = forceAccumulator * invMass;
     position += t * velocity;
     velocity += t * acceleration;
+    velocity *= damping;
     if (updater != nullptr) {
         updater->update(position);
     }
@@ -41,6 +48,21 @@ void QmParticle::setUpdater(QmUpdater *updater) {
     this->updater = updater;
 }
 
+QmUpdater* QmParticle::getUpdater() const
+{
+    return updater;
+}
+
+void QmParticle::setDamping(float damping)
+{
+this->damping = damping;
+}
+
+float QmParticle::getDamping() const
+{
+    return damping;
+}
+
 void QmParticle::addForce(const glm::vec3 &force) {
     forceAccumulator += force;
 }
@@ -56,6 +78,11 @@ int QmParticle::getCharge() const {
 
 float QmParticle::getInvMass() const {
     return invMass;
+}
+
+float QmParticle::getMass() const
+{
+    return 1 - invMass;
 }
 
 

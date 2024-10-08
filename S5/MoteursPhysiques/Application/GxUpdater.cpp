@@ -2,8 +2,7 @@
 #include "GxParticle.h"
 
 GxUpdater::GxUpdater()
-{
-}
+= default;
 
 GxUpdater::GxUpdater(GxParticle* object)
 {
@@ -11,9 +10,9 @@ GxUpdater::GxUpdater(GxParticle* object)
 }
 
 
-void GxUpdater::update(glm::vec3 pos)
+void GxUpdater::update(const glm::vec3 pos)
 {
-	((GxParticle*)gxObject)->setPos(pos);
+	static_cast<GxParticle*>(gxObject)->setPos(pos);
 }
 
 
