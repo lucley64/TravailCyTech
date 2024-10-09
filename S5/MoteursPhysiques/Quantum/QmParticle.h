@@ -1,6 +1,15 @@
 #ifndef QMPARTICLE_H
 #define QMPARTICLE_H
 
+#include <array>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
+#include <Application/GxParticle.h>
 #include <glm/glm.hpp>
 #include "QmBody.h"
 
@@ -14,15 +23,17 @@ namespace Quantum {
 		QmParticle(glm::vec3 position, glm::vec3 velocity, glm::vec3 acceleration, float mass, int charge);
 		QmParticle(glm::vec3 position, glm::vec3 velocity, glm::vec3 acceleration, float mass, int charge, float damping);
 		~QmParticle() override;
-		void integrate(float) final;
-
-        void addForce(const glm::vec3 &force) override;
+		void integrate(float t) override;
+		void integrate(float, unsigned int i) final;
+		void computeAccelerations(unsigned i) override;
+		void integrateRK4(float t) override;
+		void addForce(const glm::vec3 &force, unsigned int i) override;
 
         void reset() override;
 
-        glm::vec3 getAcc();
-		glm::vec3 getVel();
-		[[nodiscard]] glm::vec3 getPos() const;
+		std::array<glm::vec3, 4> getAcc() const;
+		std::array<glm::vec3, 4> getVel() const;
+		[[nodiscard]] std::array<glm::vec3, 4> getPos() const;
 
         [[nodiscard]] int getCharge() const;
 
@@ -37,17 +48,16 @@ namespace Quantum {
 
 	private:
 		QmUpdater* updater = nullptr;
-		glm::vec3 position;
-		glm::vec3 velocity;
-		glm::vec3 acceleration;
-        glm::vec3 forceAccumulator{};
+		std::array<glm::vec3, 4> position;
+		std::array<glm::vec3, 4> velocity;
+		std::array<glm::vec3, 4> acceleration;
+        std::array<glm::vec3, 4> forceAccumulator{};
         int charge = 1;
         float invMass{};
 
 		float damping{};
 
 	};
-
 }
 
 #endif

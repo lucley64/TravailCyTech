@@ -10,7 +10,7 @@ namespace Quantum {
         TYPE = GRAVITY;
     }
 
-    void QmGravity::update(QmParticle *particle) {
-        particle->addForce({0.0, -9.81, 0.0});
+    void QmGravity::update(QmParticle *particle, unsigned int i) {
+        particle->addForce({0.0, -9.81, 0.0}, i);
     }
 } // Quantum

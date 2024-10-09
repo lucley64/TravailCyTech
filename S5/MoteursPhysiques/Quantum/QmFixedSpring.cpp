@@ -10,15 +10,20 @@ namespace Quantum {
         TYPE = FIXED_SPRING;
     }
 
-    void QmFixedSpring::update(QmParticle* particle)
+    void QmFixedSpring::update(QmParticle* particle, unsigned int i)
     {
-        const glm::vec3 d = particle->getPos() - position;
+        const glm::vec3 d = particle->getPos()[i] - position;
         const float coefficient = -(length(d) - rest_length) * spring_constant;
-        particle->addForce((length(d) != 0 ? normalize(d) : glm::vec3(1)) * coefficient);
+        particle->addForce((length(d) != 0 ? normalize(d) : glm::vec3(1)) * coefficient, i);
     }
 
     void QmFixedSpring::setSpringConstant(float spring_constant)
     {
         this->spring_constant = spring_constant;
+    }
+
+    const glm::vec3& QmFixedSpring::getPosition() const
+    {
+        return position;
     }
 } // Quantum

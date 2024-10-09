@@ -13,7 +13,7 @@ namespace Quantum {
 	class QmWorld {
 	public:
 		QmWorld();
-		QmWorld(bool use_delta, float delta);
+		QmWorld(bool use_delta, float delta, bool useRK4 = false);
 		~QmWorld();
 		void simulate(float t);
 		void addBody(QmBody*);
@@ -29,15 +29,32 @@ namespace Quantum {
 		float tick_time = 0.0f;
 		bool use_delta = false;
 		float delta = 0.0f;
+		bool useRK4 = false;
 		std::vector<QmBody*> bodies;
         std::vector<QmForceRegistry> forceRegistries;
         const glm::vec3 gravity {0.0, -9.81, 0.0};
 
-        void resetBodies();
+	public:
+		[[nodiscard]] bool use_rk4() const
+		{
+			return useRK4;
+		}
+
+		void set_use_rk4(bool use_rk4)
+		{
+			useRK4 = use_rk4;
+		}
+
+	private:
+		void resetBodies();
 		float tick(float t);
+		float tickRK4(float t);
 		void interpolate(float dt);
-        void updateForces() const;
+        void updateForces(unsigned int i) const;
 		void integrate(float);
+		void integrate(float, unsigned int i);
+		void integrateRK4(float t);
+		void computeAccelerations(unsigned int i);
 	};
 
 }

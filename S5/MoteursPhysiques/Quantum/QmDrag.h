@@ -15,7 +15,7 @@ namespace Quantum {
 
     public:
         QmDrag(float k1, float k2);
-        void update(QmParticle *particle) override;
+        void update(QmParticle *particle, unsigned int i) override;
     };
 
 } // Quantum

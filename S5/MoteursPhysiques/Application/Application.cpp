@@ -25,7 +25,7 @@ using namespace Quantum;
 
 
 GxWorld gxWorld;
-QmWorld pxWorld{true, 0.002f};
+QmWorld pxWorld{true, 0.0002f, false};
 
 glm::vec3* mousePointer;
 int mouseCharge = -1;
@@ -64,7 +64,7 @@ bool magnetism = false;
 bool spring = false;
 bool fixed_position = false;
 float damping = 0.999f;
-float spring_constant = 10.f;
+float spring_constant = 10000.f;
 std::vector<QmParticle*> other{};
 
 // ********************************************
@@ -102,7 +102,7 @@ createParticle(glm::vec3 color, glm::vec3 pos, glm::vec3 initSpeed, int charge, 
         if (fixed_position && mousePointer)
         {
             pxWorld.addForceRegistry(QmForceRegistry(p, new QmFixedMagnetism(mousePointer, &mouseCharge, 10000, 10)));
-            pxWorld.addForceRegistry(QmForceRegistry(p, new QmMagnetism(others, 10000, 100)));
+            pxWorld.addForceRegistry(QmForceRegistry(p, new QmMagnetism(others, 1000, 100)));
         }
         else { pxWorld.addForceRegistry(QmForceRegistry(p, new QmMagnetism(others, 10000, 100))); }
     }
@@ -130,7 +130,7 @@ void initScene2()
     magnetism = true;
     spring = false;
     other.clear();
-    for (int i = 0; i < 50; i++)
+    for (int i = 0; i < 100; i++)
     {
         int charge = rand() % 2 * 2 - 1;
         glm::vec3 color{charge == -1 ? 255 : 0, 0.0, charge == 1 ? 255 : 0};
@@ -345,6 +345,27 @@ void drawFunc()
         glCallList(DrawListSphere);
         glPopMatrix();
     }
+    for (const auto& g : pxWorld.getForceRegistry())
+    {
+        const auto p1 = g.getParticle()->getPos()[0];
+        glm::vec3 p2(0);
+        if (g.getForceGenerator()->TYPE == SPRING)
+        {
+            p2 = reinterpret_cast<QmSpring*>(g.getForceGenerator())->getOther()->getPos()[0];
+        }
+        else if (g.getForceGenerator()->TYPE == FIXED_SPRING)
+        {
+            p2 = reinterpret_cast<QmFixedSpring*>(g.getForceGenerator())->getPosition();
+        }
+        if (length(p2) != 0)
+        {
+            glBegin(GL_LINES);
+            glColor3f(1.f, 1.f, 1.f);
+            glVertex3f(p1.x, p1.y, p1.z);
+            glVertex3f(p2.x, p2.y, p2.z);
+            glEnd();
+        }
+    }
     glutSwapBuffers();
 }
 
@@ -543,12 +564,16 @@ void keyFunc(unsigned char key, int x, int y)
         update_damping();
         break;
     case '*':
-        spring_constant += 1;
+        spring_constant *= 1.1;
         update_spring_constant();
         break;
     case '/':
-        spring_constant -= 1;
+        spring_constant *= 0.9;
         update_spring_constant();
+        break;
+    case 'r':
+    case 'R':
+        pxWorld.set_use_rk4(!pxWorld.use_rk4());
         break;
     default:
         break;

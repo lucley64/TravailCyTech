@@ -17,8 +17,9 @@ namespace Quantum
 
     public:
         QmSpring(QmParticle* other, float rest_strength, float spring_constant);
-        void update(QmParticle* particle) override;
+        void update(QmParticle* particle, unsigned int i) override;
         void setSpringConstant(float spring_constant);
+        const QmParticle* getOther() const;
     };
 } // Quantum
 

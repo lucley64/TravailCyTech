@@ -12,7 +12,7 @@ namespace Quantum {
     class QmGravity final : public QmForceGenerator {
         public:
         QmGravity();
-        void update(QmParticle *particle) override;
+        void update(QmParticle *particle, unsigned int i) override;
     };
 
 } // Quantum

@@ -17,7 +17,7 @@ namespace Quantum {
     public:
         QmMagnetism(std::vector<QmParticle*> &others, float k, float eps = 10);
 
-        void update(QmParticle *particle) override;
+        void update(QmParticle *particle, unsigned int i) override;
     };
 
 } // Quantum

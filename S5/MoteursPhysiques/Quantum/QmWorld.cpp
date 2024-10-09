@@ -10,10 +10,11 @@ QmWorld::QmWorld()
     std::cout << "Starting Quantum Physics engine." << std::endl;
 }
 
-QmWorld::QmWorld(const bool use_delta, const float delta): QmWorld()
+QmWorld::QmWorld(const bool use_delta, const float delta, const bool useRK4): QmWorld()
 {
     this->use_delta = use_delta;
     this->delta = delta;
+    this->useRK4 = useRK4;
 }
 
 QmWorld::~QmWorld() = default;
@@ -26,13 +27,13 @@ void QmWorld::simulate(const float t)
     {
         while (dt >= delta)
         {
-            dt = tick(delta);
+            dt = useRK4 ? tickRK4(delta) : tick(delta);
         }
         interpolate(dt);
     }
     else
     {
-        tick(t);
+        useRK4 ? tickRK4(t) : tick(t);
         interpolate(0);
     }
 }
@@ -44,6 +45,31 @@ void QmWorld::integrate(const float t)
     for (QmBody* b : bodies)
     {
         b->integrate(t);
+    }
+}
+
+void QmWorld::integrate(const float t, unsigned int i)
+{
+    // time += t;
+    for (QmBody* b : bodies)
+    {
+        b->integrate(t, i);
+    }
+}
+
+void QmWorld::integrateRK4(const float t)
+{
+    for (QmBody* b : bodies)
+    {
+        b->integrateRK4(t);
+    }
+}
+
+void QmWorld::computeAccelerations(const unsigned int i)
+{
+    for (QmBody* b : bodies)
+    {
+        b->computeAccelerations(i);
     }
 }
 
@@ -93,8 +119,29 @@ void QmWorld::resetBodies()
 float QmWorld::tick(const float t)
 {
     resetBodies();
-    updateForces();
+    updateForces(0);
     integrate(t);
+    tick_time += t;
+    return time - tick_time;
+}
+
+float QmWorld::tickRK4(float t)
+{
+    resetBodies();
+
+    updateForces(0);
+    computeAccelerations(0);
+    integrate(t / 2, 1);
+    updateForces(1);
+    computeAccelerations(1);
+    integrate(t / 2, 2);
+    updateForces(2);
+    computeAccelerations(2);
+    integrate(t, 3);
+    updateForces(3);
+    computeAccelerations(3);
+    integrateRK4(t);
+
     tick_time += t;
     return time - tick_time;
 }
@@ -105,16 +152,16 @@ void QmWorld::interpolate(const float dt)
     {
         if (b->getType() == TYPE_PARTICLE)
         {
-            auto* p = reinterpret_cast<QmParticle*>(b);
-            p->getUpdater()->update(p->getPos() + dt * p->getVel());
+            const auto* p = reinterpret_cast<QmParticle*>(b);
+            p->getUpdater()->update(p->getPos()[0] + dt * p->getVel()[0]);
         }
     }
 }
 
-void QmWorld::updateForces() const
+void QmWorld::updateForces(const unsigned int i) const
 {
     for (auto& r : forceRegistries)
     {
-        r.getForceGenerator()->update(r.getParticle());
+        r.getForceGenerator()->update(r.getParticle(), i);
     }
 }
