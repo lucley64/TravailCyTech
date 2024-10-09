@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TP5</string>
+    <string name="fibonacci_calculator">Fibonacci calculator</string>
+    <string name="the_ultimate">The ultimate</string>
+    <string name="choose_your_call">Choose your call</string>
+    <string name="android_java">ANDROID JAVA</string>
+    <string name="android_kotlin">ANDROID KOTLIN</string>
+    <string name="jni_cpp">JNI C++</string>
+    <string name="result">Result: %s</string>
+    <string name="computing_time">Computing time: %.3f</string>
+    <string name="input_number">Input number</string>
+    <string name="error">Error: %s</string>
+</resources>
